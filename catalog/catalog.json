@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-07-29T21:35:22.929Z",
+  "updatedAt": "2026-07-29T21:51:03.913Z",
   "catalogSource": "verified-refresh",
   "manufacturers": [
     {
@@ -2382,9 +2382,9 @@
       "matchPatterns": [
         "BassmentCore"
       ],
-      "latestVersion": "2.4",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -2392,8 +2392,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "bertom--eq-curve-analyzer-2",
@@ -2874,9 +2876,9 @@
       "matchPatterns": [
         "CyberdriveCore"
       ],
-      "latestVersion": "1.5",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -2884,8 +2886,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "d16-group--repeater",
@@ -3430,9 +3434,9 @@
       "matchPatterns": [
         "ElectrumCore"
       ],
-      "latestVersion": "3.4",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -3440,8 +3444,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "avid--eleven-lite",
@@ -4038,9 +4044,9 @@
       "matchPatterns": [
         "FireCharger"
       ],
-      "latestVersion": "4.5",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -4048,8 +4054,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "united-plugins--firepresser",
@@ -4058,9 +4066,9 @@
       "matchPatterns": [
         "FirePresser"
       ],
-      "latestVersion": "4.4",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -4068,8 +4076,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "avid--flanger",
@@ -4876,9 +4886,9 @@
       "matchPatterns": [
         "HyperspaceCore"
       ],
-      "latestVersion": "1.1",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -4886,8 +4896,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "klanghelm--ivgi2",
@@ -8156,9 +8168,9 @@
       "matchPatterns": [
         "OrbitronCore"
       ],
-      "latestVersion": "1.4",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -8166,8 +8178,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "sonnox--oxford-drum-gate-2",
@@ -8400,9 +8414,9 @@
       "matchPatterns": [
         "QuickVoxCore"
       ],
-      "latestVersion": "1.2",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -8410,8 +8424,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "xln-audio--rc-20-retro-color",
@@ -8500,9 +8516,9 @@
       "matchPatterns": [
         "RetronautCore"
       ],
-      "latestVersion": "1.3",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -8510,8 +8526,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "avid--reverse-dc-removal",
@@ -8580,9 +8598,9 @@
       "matchPatterns": [
         "RoyalCompressor"
       ],
-      "latestVersion": "4.4",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -8590,8 +8608,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "sir-audio-tools--standardclip",
@@ -11834,9 +11854,9 @@
       "matchPatterns": [
         "TrapTuneCore"
       ],
-      "latestVersion": "1.1",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -11844,8 +11864,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "avid--tri-knob-fuzz",
@@ -12314,9 +12336,9 @@
       "matchPatterns": [
         "UrbanPuncher"
       ],
-      "latestVersion": "3.5",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -12324,8 +12346,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "slate-digital--vsx",
@@ -12716,9 +12740,9 @@
       "matchPatterns": [
         "VoxDucker"
       ],
-      "latestVersion": "2.2",
+      "latestVersion": "02.19",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://unitedplugins.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -12726,8 +12750,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://unitedplugins.com/download",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "wedgeforce--wedge-force-hydro",
@@ -14596,7 +14622,7 @@
       "matchPatterns": [
         "Nectar 3 Elements"
       ],
-      "latestVersion": "3.9.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/nectar.html",
       "formats": [
@@ -14606,8 +14632,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--neutron-3-elements",
@@ -14616,7 +14644,7 @@
       "matchPatterns": [
         "Neutron 3 Elements"
       ],
-      "latestVersion": "3.10.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html",
       "formats": [
@@ -14626,8 +14654,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--neutron-5",
@@ -15296,7 +15326,7 @@
       "matchPatterns": [
         "Ozone 9"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15306,8 +15336,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-dynamic-eq",
@@ -15316,7 +15348,7 @@
       "matchPatterns": [
         "Ozone 9 Dynamic EQ"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15326,8 +15358,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-dynamics",
@@ -15336,7 +15370,7 @@
       "matchPatterns": [
         "Ozone 9 Dynamics"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15346,8 +15380,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-elements",
@@ -15356,7 +15392,7 @@
       "matchPatterns": [
         "Ozone 9 Elements"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15366,8 +15402,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-equalizer",
@@ -15376,7 +15414,7 @@
       "matchPatterns": [
         "Ozone 9 Equalizer"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15386,8 +15424,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-exciter",
@@ -15396,7 +15436,7 @@
       "matchPatterns": [
         "Ozone 9 Exciter"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15406,8 +15446,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-imager",
@@ -15416,7 +15458,7 @@
       "matchPatterns": [
         "Ozone 9 Imager"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15426,8 +15468,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-low-end-focus",
@@ -15436,7 +15480,7 @@
       "matchPatterns": [
         "Ozone 9 Low End Focus"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15446,8 +15490,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-master-rebalance",
@@ -15456,7 +15502,7 @@
       "matchPatterns": [
         "Ozone 9 Master Rebalance"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15466,8 +15512,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-match-eq",
@@ -15476,7 +15524,7 @@
       "matchPatterns": [
         "Ozone 9 Match EQ"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15486,8 +15534,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-maximizer",
@@ -15496,7 +15546,7 @@
       "matchPatterns": [
         "Ozone 9 Maximizer"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15506,8 +15556,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-spectral-shaper",
@@ -15516,7 +15568,7 @@
       "matchPatterns": [
         "Ozone 9 Spectral Shaper"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15526,8 +15578,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-vintage-compressor",
@@ -15536,7 +15590,7 @@
       "matchPatterns": [
         "Ozone 9 Vintage Compressor"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15546,8 +15600,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-vintage-eq",
@@ -15556,7 +15612,7 @@
       "matchPatterns": [
         "Ozone 9 Vintage EQ"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15566,8 +15622,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-vintage-limiter",
@@ -15576,7 +15634,7 @@
       "matchPatterns": [
         "Ozone 9 Vintage Limiter"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15586,8 +15644,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--ozone-9-vintage-tape",
@@ -15596,7 +15656,7 @@
       "matchPatterns": [
         "Ozone 9 Vintage Tape"
       ],
-      "latestVersion": "9.13.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html",
       "formats": [
@@ -15606,8 +15666,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-11-ambience-match",
@@ -16056,7 +16118,7 @@
       "matchPatterns": [
         "RX 8 Breath Control"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16066,8 +16128,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-connect",
@@ -16076,7 +16140,7 @@
       "matchPatterns": [
         "RX 8 Connect"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16086,8 +16150,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-de-click",
@@ -16096,7 +16162,7 @@
       "matchPatterns": [
         "RX 8 De-click"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16106,8 +16172,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-de-clip",
@@ -16116,7 +16184,7 @@
       "matchPatterns": [
         "RX 8 De-clip"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16126,8 +16194,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-de-crackle",
@@ -16136,7 +16206,7 @@
       "matchPatterns": [
         "RX 8 De-crackle"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16146,8 +16216,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-de-ess",
@@ -16156,7 +16228,7 @@
       "matchPatterns": [
         "RX 8 De-ess"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16166,8 +16238,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-de-hum",
@@ -16176,7 +16250,7 @@
       "matchPatterns": [
         "RX 8 De-hum"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16186,8 +16260,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-de-plosive",
@@ -16196,7 +16272,7 @@
       "matchPatterns": [
         "RX 8 De-plosive"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16206,8 +16282,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-de-reverb",
@@ -16216,7 +16294,7 @@
       "matchPatterns": [
         "RX 8 De-reverb"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16226,8 +16304,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-guitar-de-noise",
@@ -16236,7 +16316,7 @@
       "matchPatterns": [
         "RX 8 Guitar De-noise"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16246,8 +16326,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-monitor",
@@ -16256,7 +16338,7 @@
       "matchPatterns": [
         "RX 8 Monitor"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16266,8 +16348,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-mouth-de-click",
@@ -16276,7 +16360,7 @@
       "matchPatterns": [
         "RX 8 Mouth De-click"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16286,8 +16370,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-music-rebalance",
@@ -16296,7 +16382,7 @@
       "matchPatterns": [
         "RX 8 Music Rebalance"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16306,8 +16392,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-spectral-de-noise",
@@ -16316,7 +16404,7 @@
       "matchPatterns": [
         "RX 8 Spectral De-noise"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16326,8 +16414,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-8-voice-de-noise",
@@ -16336,7 +16426,7 @@
       "matchPatterns": [
         "RX 8 Voice De-noise"
       ],
-      "latestVersion": "8.5.1",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16346,8 +16436,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-ambience-match",
@@ -16356,7 +16448,7 @@
       "matchPatterns": [
         "RX 9 Ambience Match"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16366,8 +16458,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-breath-control",
@@ -16376,7 +16470,7 @@
       "matchPatterns": [
         "RX 9 Breath Control"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16386,8 +16480,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-connect",
@@ -16396,7 +16492,7 @@
       "matchPatterns": [
         "RX 9 Connect"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16406,8 +16502,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-click",
@@ -16416,7 +16514,7 @@
       "matchPatterns": [
         "RX 9 De-click"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16426,8 +16524,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-clip",
@@ -16436,7 +16536,7 @@
       "matchPatterns": [
         "RX 9 De-clip"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16446,8 +16546,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-crackle",
@@ -16456,7 +16558,7 @@
       "matchPatterns": [
         "RX 9 De-crackle"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16466,8 +16568,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-ess",
@@ -16476,7 +16580,7 @@
       "matchPatterns": [
         "RX 9 De-ess"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16486,8 +16590,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-hum",
@@ -16496,7 +16602,7 @@
       "matchPatterns": [
         "RX 9 De-hum"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16506,8 +16612,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-plosive",
@@ -16516,7 +16624,7 @@
       "matchPatterns": [
         "RX 9 De-plosive"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16526,8 +16634,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-reverb",
@@ -16536,7 +16646,7 @@
       "matchPatterns": [
         "RX 9 De-reverb"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16546,8 +16656,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-de-rustle",
@@ -16556,7 +16668,7 @@
       "matchPatterns": [
         "RX 9 De-rustle"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16566,8 +16678,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-dialogue-isolate",
@@ -16576,7 +16690,7 @@
       "matchPatterns": [
         "RX 9 Dialogue Isolate"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16586,8 +16700,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-guitar-de-noise",
@@ -16596,7 +16712,7 @@
       "matchPatterns": [
         "RX 9 Guitar De-noise"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16606,8 +16722,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-monitor",
@@ -16616,7 +16734,7 @@
       "matchPatterns": [
         "RX 9 Monitor"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16626,8 +16744,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-mouth-de-click",
@@ -16636,7 +16756,7 @@
       "matchPatterns": [
         "RX 9 Mouth De-click"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16646,8 +16766,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-music-rebalance",
@@ -16656,7 +16778,7 @@
       "matchPatterns": [
         "RX 9 Music Rebalance"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16666,8 +16788,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-spectral-de-noise",
@@ -16676,7 +16800,7 @@
       "matchPatterns": [
         "RX 9 Spectral De-noise"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16686,8 +16810,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--rx-9-voice-de-noise",
@@ -16696,7 +16822,7 @@
       "matchPatterns": [
         "RX 9 Voice De-noise"
       ],
-      "latestVersion": "9.4.0",
+      "latestVersion": "12.1.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
       "formats": [
@@ -16706,8 +16832,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionEvidence": "search-verified",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "versionVerifiedAt": "2026-07-29"
     },
     {
       "id": "izotope--relay",
