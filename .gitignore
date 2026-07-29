@@ -1,0 +1,11 @@
+node_modules
+out
+dist
+dist-electron
+.DS_Store
+*.log
+.vscode
+.idea
+.cursor
+coverage
+scan-report.json

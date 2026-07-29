@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-29T21:35:20.427Z",
+  "sources": [
+    {
+      "manufacturerId": "soundtoys",
+      "url": "https://www.soundtoys.com/release-log/",
+      "kind": "release-notes",
+      "label": "Soundtoys release log",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "5.5.5",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "kind": "release-notes",
+      "label": "Ozone release notes",
+      "nameIncludes": "Ozone 1",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "12.1.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/ozone-advanced",
+      "kind": "release-notes",
+      "label": "Ozone Advanced release notes",
+      "nameIncludes": "Ozone 1",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "12.1.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/ozone-elements",
+      "kind": "release-notes",
+      "label": "Ozone Elements release notes",
+      "nameIncludes": "Ozone 1",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "12.1.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/neutron",
+      "kind": "release-notes",
+      "label": "Neutron release notes",
+      "nameIncludes": "Neutron 5",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "5.2.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/neutron-elements",
+      "kind": "release-notes",
+      "label": "Neutron Elements release notes",
+      "nameIncludes": "Neutron 5",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "5.2.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/nectar",
+      "kind": "release-notes",
+      "label": "Nectar release notes",
+      "nameIncludes": "Nectar 4",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "4.1.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/rx-standard",
+      "kind": "release-notes",
+      "label": "RX Standard release notes",
+      "nameIncludes": "RX 1",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "12.0.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/rx-advanced",
+      "kind": "release-notes",
+      "label": "RX Advanced release notes",
+      "nameIncludes": "RX 1",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "12.0.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/rx-elements",
+      "kind": "release-notes",
+      "label": "RX Elements release notes",
+      "nameIncludes": "RX 1",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "12.0.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/vocalsynth",
+      "kind": "release-notes",
+      "label": "VocalSynth release notes",
+      "nameIncludes": "VocalSynth",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "2.7.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/neoverb",
+      "kind": "release-notes",
+      "label": "Neoverb release notes",
+      "nameIncludes": "Neoverb",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "1.4.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/insight",
+      "kind": "release-notes",
+      "label": "Insight release notes",
+      "nameIncludes": "Insight",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "2.6.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/trash",
+      "kind": "release-notes",
+      "label": "Trash release notes",
+      "nameIncludes": "Trash",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "1.3.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/relay",
+      "kind": "release-notes",
+      "label": "Relay release notes",
+      "nameIncludes": "Relay",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "1.7.0",
+      "lastVerifiedAt": "2026-07-29"
+    },
+    {
+      "manufacturerId": "izotope",
+      "url": "https://www.izotope.com/pages/release-notes/tonal-balance-control",
+      "kind": "release-notes",
+      "label": "Tonal Balance Control release notes",
+      "nameIncludes": "Tonal Balance",
+      "addedBy": "curated",
+      "addedAt": "2026-07-29",
+      "lastVersion": "3.1.0",
+      "lastVerifiedAt": "2026-07-29"
+    }
+  ]
+}

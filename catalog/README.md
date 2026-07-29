@@ -1,0 +1,72 @@
+## Plugin Version Catalog
+
+Seed + cloud-refreshable source of truth for latest versions, download portals, and DAW compatibility notes.
+
+### Recommended free hosting (suggestion)
+
+| Piece | Choice | Why |
+| --- | --- | --- |
+| Source of truth | Public GitHub repo `catalog.json` | Free, versioned, reviewable PRs |
+| CDN | [jsDelivr](https://www.jsdelivr.com/) `cdn.jsdelivr.net/gh/...` | Free CDN in front of GitHub |
+| Schedule | GitHub Actions weekly (`catalog-refresh.yml`) | Free minutes; can move to daily later |
+| Updates | Curated PRs + optional scrapers that only write **version + portal URL** | Avoid storing installer binaries |
+
+App fetch order (see `catalogService.ts`):
+
+1. jsDelivr CDN copy  
+2. GitHub raw fallback  
+3. Bundled seed  
+4. Local floors (`~/Library/Application Support/DAW Plugin Manager/catalog-overrides.json`)
+
+**Never** publish direct `.dmg` / `.pkg` links as the primary action — prefer manufacturer **download / Native Access / Waves Central / account** pages so users land on an authentic vendor site.
+
+### Grouping rules
+
+- Formats + leftover builds of the same product → one product row  
+- Generations (Kontakt 6 + Kontakt 8) → one **product line**; status uses the newest generation only; older majors show as **legacy** installs  
+- Report UI collapses by **manufacturer → product → bundles**
+
+### Version confidence
+
+Each status badge shows **`Current 87% confidence`** (word “confidence” after the number).
+
+Confidence measures how sure we are about the **status on this machine**:
+- Successful install scan + catalog compare starts high (~90)
+- **100%** requires a public page verification (`live-scrape` / `public-page` / `search-verified` / manufacturer feed) with a source URL, plus a readable installed version and a solid catalog match
+- Seed-only catalog entries land around **87%** until a public page confirms the latest
+
+### Weekly refresh (free, no click required)
+
+Two hands-off paths (use both when possible):
+
+1. **This Mac (LaunchAgent)** — `npm run catalog:install-weekly`  
+   Runs every Monday 08:15 local, updates `catalog/catalog.json` + `catalog/known-sources.json`, logs under `~/Library/Logs/DAW Plugin Manager/`.
+
+2. **GitHub Actions** — `.github/workflows/catalog-refresh.yml` (Mondays 15:00 UTC)  
+   Same refresh in the cloud after the repo is pushed with Actions enabled. Commits catalog + known-sources automatically.
+
+**Sticky scrape knowledge:** release-note URLs (Soundtoys release log, iZotope `/pages/release-notes/…`, anything discovery finds) live in `catalog/known-sources.json` and are re-scraped every week forever. New URLs discovered by search are appended automatically.
+
+GitHub Action `catalog-refresh.yml` (Mondays 15:00 UTC, or manual `workflow_dispatch`):
+
+1. **Known-sources registry** + dedicated manufacturer scrapers
+2. **Free discovery pass** for remaining seed vendors (DuckDuckGo `site:` → fetch → parse; learn new release-note URLs)
+3. Validate + commit if changed
+
+**No paid LLM/Google APIs.** Local: `npm run catalog:refresh`
+
+**Outdated** is always red; **Current/OK** is green at ≥85%.
+
+### Compatibility flags
+
+Optional `dawIssues[]` on catalog plugins. **Only verified, high-confidence issues alert.**
+
+Required fields for an issue to appear:
+- `verified: true`
+- `severity`: `warn` or `block` (`info` is never shown)
+- `minDawVersion` and/or `maxDawVersion` (concrete DAW version bound)
+- `sourceUrl` and/or `verifiedAt` (public proof + last confirmation)
+- Clear `note` describing the actual failure / unsupported range
+
+Advisory “check the release notes” text is **not** an issue and must not be committed.
+Weekly GitHub Action re-validates this and refreshes `updatedAt` / `verifiedAt`.

@@ -1,0 +1,7 @@
+{
+  "comment": "Public catalog endpoints for shipped builds. Synced to GitHub owner/repo.",
+  "urls": [
+    "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json",
+    "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json"
+  ]
+}

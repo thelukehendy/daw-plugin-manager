@@ -1,0 +1,75 @@
+name: Refresh plugin catalog
+
+# Weekly verified-version refresh for every installed copy of the app.
+# Scrapes public download/changelog pages only — never installer binaries.
+# Commits catalog/catalog.json + catalog/known-sources.json to this public repo.
+# Desktop builds fetch (see catalog/remote-urls.json):
+#   https://cdn.jsdelivr.net/gh/<owner>/<repo>@main/catalog/catalog.json
+#   https://raw.githubusercontent.com/<owner>/<repo>/main/catalog/catalog.json
+
+on:
+  schedule:
+    # Weekly Monday 15:00 UTC
+    - cron: '0 15 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Scrape + free discovery for public versions
+        run: npm run catalog:refresh
+        timeout-minutes: 45
+        env:
+          CATALOG_DISCOVERY_MFGS: '25'
+          CATALOG_DISCOVERY_SEARCHES: '40'
+          CATALOG_DISCOVERY_FETCHES: '80'
+
+      - name: Validate catalog schema + portals
+        run: npm run catalog:validate
+
+      - name: Validate verified dawIssues (if any)
+        run: |
+          node <<'NODE'
+          const c = require('./catalog/catalog.json');
+          let issues = 0;
+          for (const p of c.plugins) {
+            for (const issue of p.dawIssues || []) {
+              issues++;
+              const ok =
+                issue.verified === true &&
+                (issue.severity === 'warn' || issue.severity === 'block') &&
+                !!(issue.minDawVersion || issue.maxDawVersion) &&
+                !!(issue.sourceUrl || issue.verifiedAt);
+              if (!ok) {
+                console.error('Unverified/incomplete dawIssue on', p.id, issue);
+                process.exit(1);
+              }
+            }
+          }
+          console.log('OK', c.plugins.length, 'plugins,', issues, 'verified dawIssues, source=', c.catalogSource);
+          NODE
+
+      - name: Commit if changed
+        run: |
+          git config user.name "catalog-bot"
+          git config user.email "catalog-bot@users.noreply.github.com"
+          git add catalog/catalog.json catalog/known-sources.json
+          git diff --staged --quiet || git commit -m "chore(catalog): weekly verified refresh $(date -u +%Y-%m-%d)"
+          git push

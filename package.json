@@ -1,0 +1,65 @@
+{
+  "name": "daw-plugin-manager",
+  "version": "1.0.0",
+  "description": "Read-only discovery utility for installed DAWs and audio plugins, with update status reporting",
+  "main": "./out/main/index.js",
+  "author": "DAW Plugin Manager",
+  "license": "MIT",
+  "scripts": {
+    "dev": "env -u ELECTRON_RUN_AS_NODE electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "env -u ELECTRON_RUN_AS_NODE electron-vite preview",
+    "scan:cli": "tsx scripts/scan-cli.ts",
+    "catalog:validate": "tsx scripts/validate-catalog.ts",
+    "electron:fetch": "node scripts/fetch-electron.js",
+    "catalog:refresh": "tsx scripts/catalog/refresh.ts",
+    "catalog:install-weekly": "bash scripts/catalog/install-weekly-launchd.sh",
+    "catalog:sync-remote-urls": "bash scripts/sync-remote-urls.sh",
+    "dist:mac": "npm run build && env -u ELECTRON_RUN_AS_NODE electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.dawpluginmanager.app",
+    "productName": "DAW Plugin Manager",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*",
+      "catalog/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "catalog",
+        "to": "catalog"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.music",
+      "target": [
+        "dmg",
+        "dir"
+      ]
+    }
+  },
+  "dependencies": {
+    "plist": "^3.1.0",
+    "semver": "^7.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/plist": "^3.0.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/semver": "^7.5.8",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}
