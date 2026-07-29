@@ -13,14 +13,17 @@ Everyone’s copy of the app needs a **public, auto-updating version catalog**. 
 
 Without a public GitHub repo matching `catalog/remote-urls.json`, users still run fine on the **bundled** catalog — they just won’t pick up weekly scrape improvements until you ship a new DMG.
 
-## Cloud checklist (do this once)
+## Cloud setup (one-time)
 
-1. **Re-auth GitHub CLI** (currently expired on this machine):
+1. Public repo: `thelukehendy/daw-plugin-manager` (or your fork — then run `npm run catalog:sync-remote-urls`).
+2. Push `main` including `catalog/` and `.github/workflows/catalog-refresh.yml`.
+3. Confirm **Actions** is enabled. Monday job refreshes `catalog.json` automatically.
+4. Smoke-test after push:
    ```bash
-   gh auth refresh -h github.com
+   curl -sI "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json"
+   curl -sI "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json"
    ```
-Update `catalog/remote-urls.json` (or run `npm run catalog:sync-remote-urls`) so URLs match your public GitHub `owner/repo`, e.g. `thelukehendy/daw-plugin-manager`.
-
+5. Rebuild the DMG so shipped `remote-urls.json` matches.
 
 ## Build a Mac DMG
 
@@ -53,5 +56,5 @@ Other users do **not** need this. They only need network access to fetch the pub
 
 ## After each catalog/repo change
 
-1. Push to GitHub so jsDelivr can serve it (CDN may lag a few minutes; `?purge` or `@main` pin usually updates quickly).
+1. Push to GitHub so jsDelivr can serve it (CDN may lag a few minutes).
 2. Restart / rebuild the app if `remote-urls.json` or main-process code changed.
