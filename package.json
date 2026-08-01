@@ -13,6 +13,7 @@
     "catalog:validate": "tsx scripts/validate-catalog.ts",
     "electron:fetch": "node scripts/fetch-electron.js",
     "catalog:refresh": "tsx scripts/catalog/refresh.ts",
+    "catalog:spark-inventory": "node scripts/catalog/build-spark-inventory.js",
     "catalog:install-weekly": "bash scripts/catalog/install-weekly-launchd.sh",
     "catalog:sync-remote-urls": "bash scripts/sync-remote-urls.sh",
     "dist:mac": "npm run build && env -u ELECTRON_RUN_AS_NODE electron-builder --mac"
