@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-07-29T21:51:03.913Z",
+  "updatedAt": "2026-08-03T17:08:31.848Z",
   "catalogSource": "verified-refresh",
   "manufacturers": [
     {
@@ -975,7 +975,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/flanger",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/flanger",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--ada-std-1-stereo-tapped-delay",
@@ -997,7 +997,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/std-1-stereo-tapped-delay",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/std-1-stereo-tapped-delay",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "adptr--adptr-hype",
@@ -1519,7 +1519,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/eq-200",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq-200",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--amek-eq-250",
@@ -1541,7 +1541,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/eq-250",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq-250",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--amek-mastering-compressor",
@@ -1563,7 +1563,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "sonic-academy--ana-2",
@@ -1825,7 +1825,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.1@https://www.plugin-alliance.com/products/opticom-xla-3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/opticom-xla-3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--ampeg-b15n",
@@ -1847,7 +1847,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/b-15n",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/b-15n",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--ampeg-svt3pro",
@@ -1869,7 +1869,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/svt-3pro",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/svt-3pro",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--ampeg-svtvr-classic",
@@ -1891,7 +1891,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/svt-vr-classic",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/svt-vr-classic",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--ampeg-svtvr",
@@ -1913,7 +1913,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/svt-vr",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/svt-vr",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--ampeg-v4b",
@@ -2437,7 +2437,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/bm60",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bm60",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "bettermaker--bettermaker-c502v-dsp",
@@ -2541,7 +2541,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/hg-2ms",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hg-2ms",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--black-box-analog-design-hg-q",
@@ -2745,7 +2745,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/gav19t",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/gav19t",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "avid--channelstrip",
@@ -2867,7 +2867,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/high-flyer",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/high-flyer",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "united-plugins--cyberdrivecore",
@@ -3011,7 +3011,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.0.2@https://www.plugin-alliance.com/products/tantra-2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/tantra-2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--ds-thorn",
@@ -3033,7 +3033,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.3@https://www.plugin-alliance.com/products/thorn",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/thorn",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "xln-audio--ds-10-drum-shaper",
@@ -3095,7 +3095,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/bax-eq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bax-eq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--dangerous-bax-eq-mix",
@@ -3117,7 +3117,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/bax-eq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bax-eq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--diezel-herbert",
@@ -3139,7 +3139,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/herbert",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/herbert",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--diezel-vh4",
@@ -3261,7 +3261,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.13.0@https://www.plugin-alliance.com/products/e646-vs",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/e646-vs",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--engl-e765-rt",
@@ -3283,7 +3283,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/e765-rt",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/e765-rt",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--engl-savage-120",
@@ -3305,7 +3305,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/savage-120",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/savage-120",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "modalics--eon-arp-midi",
@@ -3669,7 +3669,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.32@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-one",
@@ -3733,7 +3733,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.02@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-pro-ds",
@@ -3755,7 +3755,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.32@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-pro-g",
@@ -3777,7 +3777,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.42@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-pro-l-2",
@@ -3799,7 +3799,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.26@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-pro-mb",
@@ -3821,7 +3821,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.33@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-pro-q-3",
@@ -3863,7 +3863,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:4.13@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-pro-r-2",
@@ -3885,7 +3885,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.06@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-saturn-2",
@@ -3907,7 +3907,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.13@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-simplon",
@@ -3929,7 +3929,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.42@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-timeless-3",
@@ -3951,7 +3951,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.10@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-twin-3",
@@ -3973,7 +3973,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.07@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fabfilter--fabfilter-volcano-3",
@@ -3995,7 +3995,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.09@https://www.fabfilter.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "avid--fairchild660",
@@ -4161,7 +4161,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/be-100",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/be-100",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--friedman-buxom-betty",
@@ -4183,7 +4183,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/buxom-betty",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/buxom-betty",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--friedman-ds40",
@@ -4205,7 +4205,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/ds-40",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/ds-40",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--fuchs-overdrive-supreme-50",
@@ -4227,7 +4227,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/overdrive-supreme-50",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/overdrive-supreme-50",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--fuchs-train-ii",
@@ -4249,7 +4249,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/train-ii",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/train-ii",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "tbproaudio--gsatplus",
@@ -4311,7 +4311,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/800rb",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/800rb",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "safari-pedals--gorilla-drive",
@@ -4453,7 +4453,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/perfection",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/perfection",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--hum-audio-devices-laal",
@@ -4475,7 +4475,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/laal",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/laal",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "antares--harmony-engine-4x",
@@ -4517,7 +4517,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/natalus-dsceq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/natalus-dsceq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "harrison--harrison-32bus",
@@ -5081,7 +5081,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--faturator",
@@ -5103,7 +5103,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--multipass",
@@ -5125,7 +5125,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--snap-heap",
@@ -5147,7 +5147,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-3-band-eq",
@@ -5169,7 +5169,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-bitcrush",
@@ -5191,7 +5191,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-channel-mixer",
@@ -5213,7 +5213,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-chorus",
@@ -5235,7 +5235,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-clipper",
@@ -5257,7 +5257,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-comb-filter",
@@ -5279,7 +5279,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-compactor",
@@ -5301,7 +5301,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-compressor",
@@ -5323,7 +5323,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-delay",
@@ -5345,7 +5345,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-distortion",
@@ -5367,7 +5367,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-dual-delay",
@@ -5389,7 +5389,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-dynamics",
@@ -5411,7 +5411,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-ensemble",
@@ -5433,7 +5433,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-filter",
@@ -5455,7 +5455,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-flanger",
@@ -5477,7 +5477,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-formant-filter",
@@ -5499,7 +5499,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-frequency-shifter",
@@ -5521,7 +5521,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-gain",
@@ -5543,7 +5543,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-gate",
@@ -5565,7 +5565,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-haas",
@@ -5587,7 +5587,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-ladder-filter",
@@ -5609,7 +5609,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-limiter",
@@ -5631,7 +5631,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-nonlinear-filter",
@@ -5653,7 +5653,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-phase-distortion",
@@ -5675,7 +5675,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-phaser",
@@ -5697,7 +5697,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-pitch-shifter",
@@ -5719,7 +5719,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-resonator",
@@ -5741,7 +5741,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-reverb",
@@ -5763,7 +5763,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-reverser",
@@ -5785,7 +5785,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-ring-mod",
@@ -5807,7 +5807,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-shaper",
@@ -5829,7 +5829,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-stereo",
@@ -5851,7 +5851,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-tape-stop",
@@ -5873,7 +5873,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-trance-gate",
@@ -5895,7 +5895,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "kilohearts--khs-transient-shaper",
@@ -5917,7 +5917,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--knif-audio-knifonium",
@@ -5939,7 +5939,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.1@https://www.plugin-alliance.com/products/knifonium",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/knifonium",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--knif-audio-soma",
@@ -5961,7 +5961,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/soma",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/soma",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "native-instruments--kontakt",
@@ -6507,7 +6507,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/sa2rate-2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/sa2rate-2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "con--lurssen-mastering-console",
@@ -6671,7 +6671,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/eq4-ms",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq4-ms",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--maag-eq4",
@@ -6715,7 +6715,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.plugin-alliance.com/products/magnum-k",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/magnum-k",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "avid--mastermeter",
@@ -6777,7 +6777,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mturbodelay",
@@ -6799,7 +6799,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mturbodelaymb",
@@ -6821,7 +6821,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mbitfun",
@@ -6843,7 +6843,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--msaturator",
@@ -6865,7 +6865,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mwavefolder",
@@ -6887,7 +6887,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mwaveshaper",
@@ -6909,7 +6909,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--magc",
@@ -6931,7 +6931,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mcompressor",
@@ -6953,7 +6953,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mtransient",
@@ -6975,7 +6975,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mequalizer",
@@ -6997,7 +6997,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mbandpass",
@@ -7019,7 +7019,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mcomb",
@@ -7041,7 +7041,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mautopan",
@@ -7063,7 +7063,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mflanger",
@@ -7085,7 +7085,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mfreqshifter",
@@ -7107,7 +7107,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mphaser",
@@ -7129,7 +7129,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mringmodulator",
@@ -7151,7 +7151,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mtremolo",
@@ -7173,7 +7173,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mvibrato",
@@ -7195,7 +7195,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mautopitch",
@@ -7217,7 +7217,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mcharmverb",
@@ -7239,7 +7239,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mconvolutionez",
@@ -7261,7 +7261,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mspectralpan",
@@ -7283,7 +7283,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mstereoexpander",
@@ -7305,7 +7305,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mstereoscope",
@@ -7327,7 +7327,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--manalyzer",
@@ -7349,7 +7349,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mautoalign",
@@ -7371,7 +7371,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mccgenerator",
@@ -7393,7 +7393,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mchannelmatrix",
@@ -7415,7 +7415,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mfreeformphase",
@@ -7437,7 +7437,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mloudnessanalyzer",
@@ -7459,7 +7459,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mmetronome",
@@ -7481,7 +7481,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mnoisegenerator",
@@ -7503,7 +7503,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mnotepad",
@@ -7525,7 +7525,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--moscillator",
@@ -7547,7 +7547,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--moscilloscope",
@@ -7569,7 +7569,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mratio",
@@ -7591,7 +7591,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mratiomb",
@@ -7613,7 +7613,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mrecorder",
@@ -7635,7 +7635,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mtuner",
@@ -7657,7 +7657,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "meldaproduction--mutility",
@@ -7679,7 +7679,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "celemony--melodyne",
@@ -7763,7 +7763,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/nseq-2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/nseq-2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--millennia-tcl-2",
@@ -7785,7 +7785,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.1@https://www.plugin-alliance.com/products/tcl-2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/tcl-2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "air--minigrand",
@@ -7867,7 +7867,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/big-al",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/big-al",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--neold-oldtimer",
@@ -7889,7 +7889,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/oldtimer",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/oldtimer",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--neold-u17",
@@ -7951,7 +7951,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/v76u73",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/v76u73",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--neold-warble",
@@ -7973,7 +7973,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/warble",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/warble",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--neold-wunderlich",
@@ -7995,7 +7995,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/wunderlich",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/wunderlich",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "nugen-audio--aligner",
@@ -8097,7 +8097,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.18.0@https://www.plugin-alliance.com/products/character",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/character",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--noveltech-vocal-enhancer",
@@ -8119,7 +8119,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/vocal-enhancer",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vocal-enhancer",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "spectrasonics--omnisphere",
@@ -8343,7 +8343,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.7.0@https://www.plugin-alliance.com/products/dsm-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/dsm-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundspot--propane",
@@ -8385,7 +8385,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.2@https://www.plugin-alliance.com/products/mc77",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mc77",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "avid--purple-audio-mc77",
@@ -8673,7 +8673,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/attacker-plus",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/attacker-plus",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-big",
@@ -8695,7 +8695,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/spl-big",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/spl-big",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-de-esser-dual-band",
@@ -8757,7 +8757,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/de-verb-plus",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/de-verb-plus",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-drumxchanger",
@@ -8779,7 +8779,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/drumxchanger",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/drumxchanger",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-eq-ranger-plus",
@@ -8801,7 +8801,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.3@https://www.plugin-alliance.com/products/eq-ranger-plus",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq-ranger-plus",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-free-ranger",
@@ -8843,7 +8843,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/hawkeye",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hawkeye",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-iron",
@@ -8865,7 +8865,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.plugin-alliance.com/products/iron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/iron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "spl--spl-machine-head",
@@ -8907,7 +8907,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/mo-verb-plus",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mo-verb-plus",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-pq",
@@ -8951,7 +8951,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/passeq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/passeq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-passeq",
@@ -8973,7 +8973,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/passeq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/passeq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-transient-designer-plus",
@@ -8995,7 +8995,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.3@https://www.plugin-alliance.com/products/transient-designer-plus",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/transient-designer-plus",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-transient-designer",
@@ -9039,7 +9039,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.19.2@https://www.plugin-alliance.com/products/twintube",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/twintube",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spl-vitalizer-mk2-t",
@@ -9081,7 +9081,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/vitalizer-mk3-t",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vitalizer-mk3-t",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "ssl--ssl-360-link-bus-compressor",
@@ -9103,7 +9103,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://solidstatelogic.com/support/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://solidstatelogic.com/support/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "ssl--ssl-360-link-channel-strip",
@@ -9125,7 +9125,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://solidstatelogic.com/support/downloads",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://solidstatelogic.com/support/downloads",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "ssl--ssl-4k-b",
@@ -10029,7 +10029,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--shadow-hills-optomax",
@@ -10051,7 +10051,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/optomax",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/optomax",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "cableguys--shaperbox-2",
@@ -10653,7 +10653,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.13.7@https://www.sonarworks.com/soundid-reference/download",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.sonarworks.com/soundid-reference/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--crystallizer",
@@ -10675,7 +10675,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--decapitator",
@@ -10697,7 +10697,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--devilloc",
@@ -10719,7 +10719,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--devillocdeluxe",
@@ -10741,7 +10741,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--echoboy",
@@ -10763,7 +10763,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--echoboyjr",
@@ -10785,7 +10785,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--effectrack",
@@ -10807,7 +10807,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--filterfreak1",
@@ -10829,7 +10829,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--filterfreak2",
@@ -10851,7 +10851,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--littlealterboy",
@@ -10873,7 +10873,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--littlemicroshift",
@@ -10895,7 +10895,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--littleplate",
@@ -10917,7 +10917,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--littleprimaltap",
@@ -10939,7 +10939,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--littleradiator",
@@ -10961,7 +10961,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--microshift",
@@ -10983,7 +10983,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--panman",
@@ -11005,7 +11005,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--phasemistress",
@@ -11027,7 +11027,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--primaltap",
@@ -11049,7 +11049,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--radiator",
@@ -11071,7 +11071,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--sieq",
@@ -11093,7 +11093,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--spaceblender",
@@ -11115,7 +11115,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--superplate",
@@ -11137,7 +11137,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "soundtoys--tremolator",
@@ -11159,7 +11159,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "spectralayers-bridge--spectralayers-bridge",
@@ -11325,7 +11325,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/pt100",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/pt100",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--suhr-se100",
@@ -11347,7 +11347,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/se100",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/se100",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bde-pa",
@@ -11389,7 +11389,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.1@https://www.plugin-alliance.com/products/click-boom",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/click-boom",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--hitstrip-pa",
@@ -11411,7 +11411,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.1@https://www.plugin-alliance.com/products/hitstrip",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hitstrip",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--knocktonal-pa",
@@ -11433,7 +11433,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.1@https://www.plugin-alliance.com/products/knocktonal",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/knocktonal",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--spread-pa",
@@ -11455,7 +11455,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/spread",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/spread",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--swivel-audio-the-sauce",
@@ -11497,7 +11497,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--tbtech-kirchhoff-eq",
@@ -11519,7 +11519,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.4@https://www.plugin-alliance.com/products/kirchhoff-eq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/kirchhoff-eq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--tbtech-trinity-shaper",
@@ -11541,7 +11541,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.2@https://www.plugin-alliance.com/products/trinity-shaper",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/trinity-shaper",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "tokyo-dawn-labs--tdr-kotelnikov",
@@ -11703,7 +11703,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/the-oven",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/the-oven",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "thx--thx-spatial-creator",
@@ -11745,7 +11745,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/lisa",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/lisa",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "avid--tape-echo",
@@ -12411,7 +12411,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.5@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "valhalla-dsp--valhallafreqecho",
@@ -12433,7 +12433,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.8@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "valhalla-dsp--valhallafutureverb",
@@ -12455,7 +12455,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.2@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "valhalla-dsp--valhallaplate",
@@ -12477,7 +12477,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.8@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "valhalla-dsp--valhallaroom",
@@ -12499,7 +12499,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.0.5@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "valhalla-dsp--valhallashimmer",
@@ -12521,7 +12521,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "valhalla-dsp--valhallasupermassive",
@@ -12543,7 +12543,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "valhalla-dsp--valhallavintageverb",
@@ -12565,7 +12565,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:4.0.5@https://valhalladsp.com/my-account/downloads/",
       "versionEvidence": "public-page",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "avid--varifi",
@@ -12627,7 +12627,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/vsc-2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vsc-2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--vertigo-vsm-3",
@@ -12649,7 +12649,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/vsm-3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vsm-3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--vertigo-vss-2",
@@ -12671,7 +12671,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/vss-2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vss-2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "avid--vibe-phaser",
@@ -12979,7 +12979,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.9.0@https://www.plugin-alliance.com/products/bx_2098-eq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_2098-eq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-xl-v2",
@@ -13021,7 +13021,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.1.0@https://www.plugin-alliance.com/products/bx_xl-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_xl-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-aura",
@@ -13043,7 +13043,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_aura",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_aura",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-bassdude",
@@ -13065,7 +13065,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/bx_bassdude",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_bassdude",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-blackdist2",
@@ -13127,7 +13127,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_boom-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_boom-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-boom",
@@ -13149,7 +13149,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_boom-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_boom-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-cleansweep-pro",
@@ -13171,7 +13171,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.1@https://www.plugin-alliance.com/products/bx_cleansweep-pro",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_cleansweep-pro",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-cleansweep-v2",
@@ -13213,7 +13213,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_clipper",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_clipper",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-console-amek-200",
@@ -13235,7 +13235,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.3@https://www.plugin-alliance.com/products/bx_console-amek-200",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-amek-200",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-console-amek-9099",
@@ -13257,7 +13257,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/bx_console-amek-9099",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-amek-9099",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-console-focusrite-sc",
@@ -13279,7 +13279,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/bx_console-focusrite-sc",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-focusrite-sc",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-console-n",
@@ -13301,7 +13301,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/bx_console-n",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-n",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-console-ssl-4000-e",
@@ -13323,7 +13323,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_console-ssl-4000-e",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-e",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-console-ssl-4000-g",
@@ -13345,7 +13345,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_console-ssl-4000-g",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-g",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-console-ssl-9000-j",
@@ -13367,7 +13367,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/bx_console-ssl-9000-j",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-9000-j",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-control-v2",
@@ -13389,7 +13389,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.16.1@https://www.plugin-alliance.com/products/bx_control-v2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_control-v2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-crispyscale",
@@ -13431,7 +13431,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_crispytuner",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_crispytuner",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-delay2500",
@@ -13453,7 +13453,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.9.0@https://www.plugin-alliance.com/products/bx_delay-2500",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_delay-2500",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-digital-v3-mix",
@@ -13475,7 +13475,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.11.0@https://www.plugin-alliance.com/products/bx_digital-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_digital-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-digital-v3",
@@ -13497,7 +13497,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.11.0@https://www.plugin-alliance.com/products/bx_digital-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_digital-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-distorange",
@@ -13539,7 +13539,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.17.1@https://www.plugin-alliance.com/products/bx_dyneq-v2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_dyneq-v2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-dyneq-v2",
@@ -13561,7 +13561,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.17.1@https://www.plugin-alliance.com/products/bx_dyneq-v2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_dyneq-v2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-enhancer",
@@ -13583,7 +13583,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/bx_enhancer",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_enhancer",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-glue",
@@ -13605,7 +13605,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_glue",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_glue",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-greenscreamer",
@@ -13647,7 +13647,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.14.0@https://www.plugin-alliance.com/products/bx_hybrid-v2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_hybrid-v2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-hybrid-v2",
@@ -13669,7 +13669,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.14.0@https://www.plugin-alliance.com/products/bx_hybrid-v2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_hybrid-v2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-limiter-true-peak",
@@ -13691,7 +13691,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.1@https://www.plugin-alliance.com/products/bx_limiter",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_limiter",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-limiter",
@@ -13713,7 +13713,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.1@https://www.plugin-alliance.com/products/bx_limiter",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_limiter",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-masterdesk-classic",
@@ -13735,7 +13735,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_masterdesk",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-masterdesk-pro",
@@ -13757,7 +13757,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_masterdesk",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-masterdesk-true-peak",
@@ -13779,7 +13779,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_masterdesk",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-masterdesk",
@@ -13801,7 +13801,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_masterdesk",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-megadual",
@@ -13823,7 +13823,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.13.0@https://www.plugin-alliance.com/products/bx_megadual",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_megadual",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-megasingle",
@@ -13905,7 +13905,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.plugin-alliance.com/products/bx_oberhausen",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_oberhausen",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-opto-pedal",
@@ -13927,7 +13927,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/bx_opto",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_opto",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-opto",
@@ -13949,7 +13949,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/bx_opto",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_opto",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-paneq",
@@ -13971,7 +13971,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.0@https://www.plugin-alliance.com/products/bx_paneq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_paneq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-pulsar",
@@ -13993,7 +13993,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/brainworx-bx_pulsar",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/brainworx-bx_pulsar",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-refinement-v3",
@@ -14015,7 +14015,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_refinement-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_refinement-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-refinement",
@@ -14037,7 +14037,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_refinement-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_refinement-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-rockergain100",
@@ -14059,7 +14059,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/bx_rockergain100",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rockergain100",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-rockrack-v3-player",
@@ -14081,7 +14081,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.10.0@https://www.plugin-alliance.com/products/bx_rockrack-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rockrack-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-rockrack-v3",
@@ -14103,7 +14103,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.10.0@https://www.plugin-alliance.com/products/bx_rockrack-v3",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rockrack-v3",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-rooms",
@@ -14125,7 +14125,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.0@https://www.plugin-alliance.com/products/bx_rooms",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rooms",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-saturator-v2",
@@ -14147,7 +14147,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.13.1@https://www.plugin-alliance.com/products/bx_saturator-v2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_saturator-v2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-shredspread",
@@ -14169,7 +14169,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/spread",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/spread",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-solo",
@@ -14211,7 +14211,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.15.0@https://www.plugin-alliance.com/products/bx_stereomaker",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_stereomaker",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-subfilter",
@@ -14253,7 +14253,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.0@https://www.plugin-alliance.com/products/bx_subsynth",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_subsynth",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-tonebox",
@@ -14275,7 +14275,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/bx_tonebox",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_tonebox",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-townhouse-buss-compressor",
@@ -14297,7 +14297,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--bx-tuner",
@@ -14359,7 +14359,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--elysia-alpha-master",
@@ -14421,7 +14421,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/karacter",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/karacter",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--elysia-karacter-mix",
@@ -14443,7 +14443,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/karacter",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/karacter",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--elysia-mpressor",
@@ -14465,7 +14465,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--elysia-museq-master",
@@ -14487,7 +14487,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.15.0@https://www.plugin-alliance.com/products/museq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/museq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--elysia-museq-mix",
@@ -14509,7 +14509,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.15.0@https://www.plugin-alliance.com/products/museq",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/museq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--elysia-niveau-filter",
@@ -14551,7 +14551,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/nvelope",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/nvelope",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "plugin-alliance--elysia-phils-cascade",
@@ -14573,7 +14573,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/phils-cascade",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/phils-cascade",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "fiedler-audio--fiedler-audio-splat",
@@ -14679,7 +14679,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-clipper",
@@ -14701,7 +14701,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-compressor",
@@ -14723,7 +14723,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-density",
@@ -14745,7 +14745,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-equalizer",
@@ -14767,7 +14767,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-exciter",
@@ -14789,7 +14789,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-gate",
@@ -14811,7 +14811,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-phase",
@@ -14833,7 +14833,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-sculptor",
@@ -14855,7 +14855,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-transient-shaper",
@@ -14877,7 +14877,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-unmask",
@@ -14899,7 +14899,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--neutron-5-visual-mixer",
@@ -14921,7 +14921,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11",
@@ -14943,7 +14943,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-clarity",
@@ -14965,7 +14965,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-dynamic-eq",
@@ -14987,7 +14987,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-dynamics",
@@ -15009,7 +15009,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-equalizer",
@@ -15031,7 +15031,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-exciter",
@@ -15053,7 +15053,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-imager",
@@ -15075,7 +15075,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-impact",
@@ -15097,7 +15097,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-low-end-focus",
@@ -15119,7 +15119,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-master-rebalance",
@@ -15141,7 +15141,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-match-eq",
@@ -15163,7 +15163,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-maximizer",
@@ -15185,7 +15185,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-spectral-shaper",
@@ -15207,7 +15207,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-stabilizer",
@@ -15229,7 +15229,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-vintage-compressor",
@@ -15251,7 +15251,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-vintage-eq",
@@ -15273,7 +15273,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-vintage-limiter",
@@ -15295,7 +15295,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-11-vintage-tape",
@@ -15317,7 +15317,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--ozone-9",
@@ -16857,7 +16857,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.izotope.com/pages/release-notes/relay",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/relay",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--tonal-balance-control-2",
@@ -16879,7 +16879,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.1.0@https://www.izotope.com/pages/release-notes/tonal-balance-control",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/tonal-balance-control",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--izotope-trash-2",
@@ -16901,7 +16901,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.izotope.com/pages/release-notes/trash",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/trash",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--trash",
@@ -16923,7 +16923,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.izotope.com/pages/release-notes/trash",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/trash",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "izotope--vinyl",
@@ -17117,7 +17117,7 @@
       "releaseDate": "2026-06-30",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "apple--asaf",
@@ -17727,7 +17727,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--faradaylimiter",
@@ -17753,7 +17753,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--gooddither",
@@ -17779,7 +17779,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--lohi",
@@ -17804,7 +17804,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--lossy",
@@ -17829,7 +17829,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--midside",
@@ -17854,7 +17854,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--midsidematrix",
@@ -17880,7 +17880,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--panpot",
@@ -17905,7 +17905,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--tiltshift",
@@ -17930,7 +17930,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--tonecontrol",
@@ -17956,7 +17956,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--tremcontrol",
@@ -17982,7 +17982,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--vulfcompressor",
@@ -18008,7 +18008,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     },
     {
       "id": "goodhertz--wowcontrol",
@@ -18034,7 +18034,7 @@
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-03"
     }
   ]
 }
