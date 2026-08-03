@@ -2,6 +2,21 @@
 
 Seed + cloud-refreshable source of truth for latest versions, download portals, and DAW compatibility notes.
 
+### Spark scrub inventory (no versions)
+
+`spark-inventory.json` is an **identity-only** export for Gemini Spark (manufacturers, products, portal/check URLs). It intentionally omits all version numbers so external scrubs cannot be contaminated by catalog `latestVersion` data.
+
+Regenerate after catalog identity changes:
+
+```bash
+npm run catalog:spark-inventory
+```
+
+Public URLs (after merge to `main`):
+
+- `https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/spark-inventory.json`
+- `https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/spark-inventory.json`
+
 ### Recommended free hosting (suggestion)
 
 | Piece | Choice | Why |

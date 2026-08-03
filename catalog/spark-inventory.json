@@ -1,0 +1,5762 @@
+{
+  "schemaVersion": 1,
+  "kind": "spark-scrub-inventory",
+  "purpose": "Identity-only seed for Gemini Spark weekly version scrub. Intentionally contains NO version numbers.",
+  "generatedAt": "2026-08-01T15:31:45.064Z",
+  "sourceCatalogUpdatedAt": "2026-07-29T21:51:03.913Z",
+  "rules": [
+    "Use this file only for manufacturer/product inventory and portal URLs to visit.",
+    "Do not invent or import version numbers from catalog.json or any other file.",
+    "candidateLatestVersion is valid only when found on a live public page during a Spark scrub."
+  ],
+  "counts": {
+    "manufacturers": 100,
+    "plugins": 816,
+    "checkUrls": 326,
+    "stickySources": 16
+  },
+  "manufacturers": [
+    {
+      "id": "adptr",
+      "name": "ADPTR Audio",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
+      "websiteUrl": "https://www.adptraudio.com",
+      "aliases": [
+        "ADPTR"
+      ]
+    },
+    {
+      "id": "air",
+      "name": "AIR Music Technology",
+      "updatePortalUrl": "https://www.airmusictech.com/",
+      "websiteUrl": "https://www.airmusictech.com",
+      "aliases": [
+        "AIR",
+        "wizoo"
+      ]
+    },
+    {
+      "id": "aberrant-dsp",
+      "name": "Aberrant DSP",
+      "updatePortalUrl": "https://aberrantdsp.com/",
+      "websiteUrl": "https://aberrantdsp.com",
+      "aliases": [
+        "AberrantDSP"
+      ]
+    },
+    {
+      "id": "accentize",
+      "name": "Accentize",
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "websiteUrl": "https://www.accentize.com",
+      "aliases": [
+        "accentize",
+        "dxRevive"
+      ]
+    },
+    {
+      "id": "antares",
+      "name": "Antares",
+      "updatePortalUrl": "https://www.antarestech.com/downloads/",
+      "websiteUrl": "https://www.antarestech.com",
+      "aliases": [
+        "Auto-Tune",
+        "AVOX"
+      ]
+    },
+    {
+      "id": "audiomodern",
+      "name": "Audio Modern",
+      "updatePortalUrl": "https://audiomodern.com/account/",
+      "websiteUrl": "https://audiomodern.com",
+      "aliases": [
+        "audiomodern"
+      ]
+    },
+    {
+      "id": "audiopunks",
+      "name": "AudioPunks",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html",
+      "websiteUrl": "https://www.plugin-alliance.com"
+    },
+    {
+      "id": "audiothing",
+      "name": "AudioThing",
+      "updatePortalUrl": "https://www.audiothing.net/account/",
+      "websiteUrl": "https://www.audiothing.net"
+    },
+    {
+      "id": "audiomovers",
+      "name": "Audiomovers",
+      "updatePortalUrl": "https://audiomovers.com/wp/downloads/",
+      "websiteUrl": "https://audiomovers.com",
+      "aliases": [
+        "Listento"
+      ]
+    },
+    {
+      "id": "avid",
+      "name": "Avid",
+      "updatePortalUrl": "https://www.avid.com/account",
+      "websiteUrl": "https://www.avid.com",
+      "aliases": [
+        "Pro Tools",
+        "AIR"
+      ]
+    },
+    {
+      "id": "bbe-sound",
+      "name": "BBE Sound",
+      "updatePortalUrl": "https://bbesound.com/",
+      "websiteUrl": "https://bbesound.com",
+      "aliases": [
+        "bbe",
+        "bbesound"
+      ]
+    },
+    {
+      "id": "bertom",
+      "name": "Bertom Audio",
+      "updatePortalUrl": "https://bertomaudio.com/",
+      "websiteUrl": "https://bertomaudio.com",
+      "aliases": [
+        "Bertom"
+      ]
+    },
+    {
+      "id": "bettermaker",
+      "name": "Bettermaker",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
+      "websiteUrl": "https://www.bettermaker.com",
+      "aliases": [
+        "eu"
+      ]
+    },
+    {
+      "id": "black-salt-audio",
+      "name": "Black Salt Audio",
+      "updatePortalUrl": "https://blacksaltaudio.com/account/",
+      "websiteUrl": "https://blacksaltaudio.com",
+      "aliases": [
+        "BlackSaltAudio"
+      ]
+    },
+    {
+      "id": "cableguys",
+      "name": "Cableguys",
+      "updatePortalUrl": "https://www.cableguys.com/account.html",
+      "websiteUrl": "https://www.cableguys.com",
+      "aliases": [
+        "ShaperBox",
+        "de"
+      ]
+    },
+    {
+      "id": "celemony",
+      "name": "Celemony",
+      "updatePortalUrl": "https://www.celemony.com/en/melodyne/download",
+      "websiteUrl": "https://www.celemony.com",
+      "aliases": [
+        "Melodyne"
+      ]
+    },
+    {
+      "id": "d16-group",
+      "name": "D16 Group",
+      "updatePortalUrl": "https://d16.pl/user",
+      "websiteUrl": "https://d16.pl"
+    },
+    {
+      "id": "eastwest",
+      "name": "EastWest",
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "websiteUrl": "https://www.soundsonline.com",
+      "aliases": [
+        "eastwest"
+      ]
+    },
+    {
+      "id": "eiosis",
+      "name": "Eiosis",
+      "updatePortalUrl": "https://www.eiosis.com/",
+      "websiteUrl": "https://www.eiosis.com"
+    },
+    {
+      "id": "eventide",
+      "name": "Eventide",
+      "updatePortalUrl": "https://www.eventideaudio.com/downloads/",
+      "websiteUrl": "https://www.eventideaudio.com"
+    },
+    {
+      "id": "fabfilter",
+      "name": "FabFilter",
+      "updatePortalUrl": "https://www.fabfilter.com/download",
+      "websiteUrl": "https://www.fabfilter.com"
+    },
+    {
+      "id": "fiedler-audio",
+      "name": "Fiedler Audio",
+      "updatePortalUrl": "https://www.fiedler-audio.com/",
+      "websiteUrl": "https://www.fiedler-audio.com"
+    },
+    {
+      "id": "focusrite",
+      "name": "Focusrite",
+      "updatePortalUrl": "https://customer.focusrite.com/",
+      "websiteUrl": "https://focusrite.com",
+      "aliases": [
+        "fb",
+        "FB360"
+      ]
+    },
+    {
+      "id": "harrison",
+      "name": "Harrison",
+      "updatePortalUrl": "https://harrisonconsoles.com/support/",
+      "websiteUrl": "https://harrisonconsoles.com"
+    },
+    {
+      "id": "hornet",
+      "name": "HoRNet",
+      "updatePortalUrl": "https://www.hornetplugins.com/account/",
+      "websiteUrl": "https://www.hornetplugins.com"
+    },
+    {
+      "id": "ik-multimedia",
+      "name": "IK Multimedia",
+      "updatePortalUrl": "https://www.ikmultimedia.com/userarea/download/",
+      "websiteUrl": "https://www.ikmultimedia.com",
+      "aliases": [
+        "AmpliTube",
+        "ikmultimedia"
+      ]
+    },
+    {
+      "id": "impulse-record",
+      "name": "Impulse Record",
+      "updatePortalUrl": "https://impulserecord.com/",
+      "websiteUrl": "https://impulserecord.com",
+      "aliases": [
+        "impulserecord"
+      ]
+    },
+    {
+      "id": "karanyi",
+      "name": "Karanyi Sounds",
+      "updatePortalUrl": "https://karanyisounds.com/",
+      "websiteUrl": "https://karanyisounds.com",
+      "aliases": [
+        "karanyisounds"
+      ]
+    },
+    {
+      "id": "kazrog",
+      "name": "Kazrog",
+      "updatePortalUrl": "https://kazrog.com/account/",
+      "websiteUrl": "https://kazrog.com"
+    },
+    {
+      "id": "kiive",
+      "name": "Kiive Audio",
+      "updatePortalUrl": "https://www.kiiveaudio.com/account",
+      "websiteUrl": "https://www.kiiveaudio.com",
+      "aliases": [
+        "myCompany",
+        "Kiive"
+      ]
+    },
+    {
+      "id": "kilohearts",
+      "name": "Kilohearts",
+      "updatePortalUrl": "https://kilohearts.com/download",
+      "websiteUrl": "https://kilohearts.com",
+      "aliases": [
+        "kHs"
+      ]
+    },
+    {
+      "id": "klanghelm",
+      "name": "Klanghelm",
+      "updatePortalUrl": "https://klanghelm.com/contents/products.php",
+      "websiteUrl": "https://klanghelm.com"
+    },
+    {
+      "id": "klevgrand",
+      "name": "Klevgrand",
+      "updatePortalUrl": "https://klevgrand.com/account",
+      "websiteUrl": "https://klevgrand.com"
+    },
+    {
+      "id": "lindell-audio",
+      "name": "Lindell Audio",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
+      "websiteUrl": "https://www.lindellplugins.com",
+      "aliases": [
+        "Lindell",
+        "LindellAudio"
+      ]
+    },
+    {
+      "id": "liquidsonics",
+      "name": "LiquidSonics",
+      "updatePortalUrl": "https://www.liquidsonics.com/account/",
+      "websiteUrl": "https://www.liquidsonics.com",
+      "aliases": [
+        "liquidsonics"
+      ]
+    },
+    {
+      "id": "louder-than-liftoff",
+      "name": "Louder Than Liftoff",
+      "updatePortalUrl": "https://www.louderthanliftoff.com/",
+      "websiteUrl": "https://www.louderthanliftoff.com",
+      "aliases": [
+        "louderthanliftoff"
+      ]
+    },
+    {
+      "id": "mcdsp",
+      "name": "McDSP",
+      "updatePortalUrl": "https://mcdsp.com/account/",
+      "websiteUrl": "https://mcdsp.com"
+    },
+    {
+      "id": "meldaproduction",
+      "name": "MeldaProduction",
+      "updatePortalUrl": "https://www.meldaproduction.com/download",
+      "websiteUrl": "https://www.meldaproduction.com",
+      "aliases": [
+        "Melda"
+      ]
+    },
+    {
+      "id": "metric-halo",
+      "name": "Metric Halo",
+      "updatePortalUrl": "https://mhsecure.com/mhlabs/downloads",
+      "websiteUrl": "https://mhsecure.com",
+      "aliases": [
+        "MH Labs",
+        "mhlabs"
+      ]
+    },
+    {
+      "id": "mixland",
+      "name": "Mixland",
+      "updatePortalUrl": "https://mixland.io/",
+      "websiteUrl": "https://mixland.io"
+    },
+    {
+      "id": "modalics",
+      "name": "Modalics",
+      "updatePortalUrl": "https://www.modalics.com/account",
+      "websiteUrl": "https://www.modalics.com"
+    },
+    {
+      "id": "native-instruments",
+      "name": "Native Instruments",
+      "updatePortalUrl": "https://www.native-instruments.com/en/specials/native-access-2/",
+      "websiteUrl": "https://www.native-instruments.com",
+      "aliases": [
+        "Kontakt",
+        "Guitar Rig",
+        "Reaktor",
+        "native-instruments"
+      ]
+    },
+    {
+      "id": "newfangled-audio",
+      "name": "Newfangled Audio",
+      "updatePortalUrl": "https://www.eventideaudio.com/account/",
+      "websiteUrl": "https://www.newfangledaudio.com"
+    },
+    {
+      "id": "nugen-audio",
+      "name": "Nugen Audio",
+      "updatePortalUrl": "https://nugenaudio.com/account/",
+      "websiteUrl": "https://nugenaudio.com",
+      "aliases": [
+        "nugenaudio"
+      ]
+    },
+    {
+      "id": "overloud",
+      "name": "Overloud",
+      "updatePortalUrl": "https://www.overloud.com/user",
+      "websiteUrl": "https://www.overloud.com"
+    },
+    {
+      "id": "pitch-innovations",
+      "name": "Pitch Innovations",
+      "updatePortalUrl": "https://www.pitchinnovations.com/",
+      "websiteUrl": "https://www.pitchinnovations.com"
+    },
+    {
+      "id": "plugin-alliance",
+      "name": "Plugin Alliance",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
+      "websiteUrl": "https://www.plugin-alliance.com",
+      "aliases": [
+        "Brainworx",
+        "bx_",
+        "PluginAlliance"
+      ]
+    },
+    {
+      "id": "sir-audio-tools",
+      "name": "SIR Audio Tools",
+      "updatePortalUrl": "https://www.siraudiotools.com/account.php",
+      "websiteUrl": "https://www.siraudiotools.com"
+    },
+    {
+      "id": "spl",
+      "name": "SPL",
+      "updatePortalUrl": "https://spl.audio/en/software-downloads/",
+      "websiteUrl": "https://spl.audio"
+    },
+    {
+      "id": "safari-pedals",
+      "name": "Safari Pedals",
+      "updatePortalUrl": "https://www.safaripedals.com/",
+      "websiteUrl": "https://www.safaripedals.com",
+      "aliases": [
+        "safaripedals"
+      ]
+    },
+    {
+      "id": "slate-digital",
+      "name": "Slate Digital",
+      "updatePortalUrl": "https://slatedigital.com/activate/",
+      "websiteUrl": "https://slatedigital.com",
+      "aliases": [
+        "SlateAudio",
+        "VSX"
+      ]
+    },
+    {
+      "id": "softube",
+      "name": "Softube",
+      "updatePortalUrl": "https://www.softube.com/installers",
+      "websiteUrl": "https://www.softube.com"
+    },
+    {
+      "id": "ssl",
+      "name": "Solid State Logic",
+      "updatePortalUrl": "https://solidstatelogic.com/support/downloads",
+      "websiteUrl": "https://solidstatelogic.com",
+      "aliases": [
+        "SSL"
+      ]
+    },
+    {
+      "id": "sonarworks",
+      "name": "Sonarworks",
+      "updatePortalUrl": "https://www.sonarworks.com/download",
+      "websiteUrl": "https://www.sonarworks.com",
+      "aliases": [
+        "SoundID"
+      ]
+    },
+    {
+      "id": "sonic-academy",
+      "name": "Sonic Academy",
+      "updatePortalUrl": "https://www.sonicacademy.com/account",
+      "websiteUrl": "https://www.sonicacademy.com"
+    },
+    {
+      "id": "sonnox",
+      "name": "Sonnox",
+      "updatePortalUrl": "https://www.sonnox.com/downloads",
+      "websiteUrl": "https://www.sonnox.com",
+      "aliases": [
+        "Oxford"
+      ]
+    },
+    {
+      "id": "soundspot",
+      "name": "Soundspot",
+      "updatePortalUrl": "https://www.soundspot.co/",
+      "websiteUrl": "https://www.soundspot.co"
+    },
+    {
+      "id": "soundtoys",
+      "name": "Soundtoys",
+      "updatePortalUrl": "https://www.soundtoys.com/downloads/",
+      "websiteUrl": "https://www.soundtoys.com"
+    },
+    {
+      "id": "spectrasonics",
+      "name": "Spectrasonics",
+      "updatePortalUrl": "https://www.spectrasonics.net/support/updates.php",
+      "websiteUrl": "https://www.spectrasonics.net",
+      "aliases": [
+        "Omnisphere",
+        "Keyscape"
+      ]
+    },
+    {
+      "id": "spitfire-audio",
+      "name": "Spitfire Audio",
+      "updatePortalUrl": "https://www.spitfireaudio.com/account",
+      "websiteUrl": "https://www.spitfireaudio.com",
+      "aliases": [
+        "LABS",
+        "spitfireaudio"
+      ]
+    },
+    {
+      "id": "splice",
+      "name": "Splice",
+      "updatePortalUrl": "https://splice.com/",
+      "websiteUrl": "https://splice.com"
+    },
+    {
+      "id": "steinberg",
+      "name": "Steinberg",
+      "updatePortalUrl": "https://www.steinberg.net/downloads/",
+      "websiteUrl": "https://www.steinberg.net",
+      "aliases": [
+        "WaveLab",
+        "SpectraLayers"
+      ]
+    },
+    {
+      "id": "steven-slate",
+      "name": "Steven Slate Audio",
+      "updatePortalUrl": "https://stevenslatedrums.com/account/",
+      "websiteUrl": "https://stevenslatedrums.com",
+      "aliases": [
+        "stevenslate",
+        "Trigger"
+      ]
+    },
+    {
+      "id": "supertone",
+      "name": "Supertone",
+      "updatePortalUrl": "https://supertone.ai/",
+      "websiteUrl": "https://supertone.ai"
+    },
+    {
+      "id": "synthogy",
+      "name": "Synthogy",
+      "updatePortalUrl": "https://www.synthogy.com/",
+      "websiteUrl": "https://www.synthogy.com",
+      "aliases": [
+        "Ivory"
+      ]
+    },
+    {
+      "id": "tbproaudio",
+      "name": "TBProAudio",
+      "updatePortalUrl": "https://www.tb-software.com/TBProAudio/download.html",
+      "websiteUrl": "https://www.tb-software.com"
+    },
+    {
+      "id": "thx",
+      "name": "THX",
+      "updatePortalUrl": "https://www.thx.com/",
+      "websiteUrl": "https://www.thx.com",
+      "aliases": [
+        "thxltd"
+      ]
+    },
+    {
+      "id": "tokyo-dawn-labs",
+      "name": "Tokyo Dawn Labs",
+      "updatePortalUrl": "https://www.tokyodawn.net/tokyo-dawn-labs/",
+      "websiteUrl": "https://www.tokyodawn.net",
+      "aliases": [
+        "TDR"
+      ]
+    },
+    {
+      "id": "uvi",
+      "name": "UVI",
+      "updatePortalUrl": "https://www.uvi.net/account",
+      "websiteUrl": "https://www.uvi.net",
+      "aliases": [
+        "uvisoundsource",
+        "UVIWorkstation"
+      ]
+    },
+    {
+      "id": "unfiltered-audio",
+      "name": "Unfiltered Audio",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
+      "websiteUrl": "https://www.unfilteredaudio.com"
+    },
+    {
+      "id": "united-plugins",
+      "name": "United Plugins",
+      "updatePortalUrl": "https://unitedplugins.com/Download/",
+      "websiteUrl": "https://unitedplugins.com"
+    },
+    {
+      "id": "universal-audio",
+      "name": "Universal Audio",
+      "updatePortalUrl": "https://www.uaudio.com/downloads.html",
+      "websiteUrl": "https://www.uaudio.com",
+      "aliases": [
+        "UAD",
+        "uaudio"
+      ]
+    },
+    {
+      "id": "valhalla-dsp",
+      "name": "Valhalla DSP",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/",
+      "websiteUrl": "https://valhalladsp.com",
+      "aliases": [
+        "Valhalla"
+      ]
+    },
+    {
+      "id": "wa-production",
+      "name": "WA Production",
+      "updatePortalUrl": "https://www.waproduction.com/account",
+      "websiteUrl": "https://www.waproduction.com",
+      "aliases": [
+        "WAProduction"
+      ]
+    },
+    {
+      "id": "waves",
+      "name": "Waves",
+      "updatePortalUrl": "https://www.waves.com/downloads/central",
+      "websiteUrl": "https://www.waves.com",
+      "aliases": [
+        "WaveShell",
+        "WavesAudio"
+      ]
+    },
+    {
+      "id": "wavesfactory",
+      "name": "Wavesfactory",
+      "updatePortalUrl": "https://www.wavesfactory.com/my-account/",
+      "websiteUrl": "https://www.wavesfactory.com"
+    },
+    {
+      "id": "wedgeforce",
+      "name": "Wedgeforce",
+      "updatePortalUrl": "https://www.wedgeforce.com/",
+      "websiteUrl": "https://www.wedgeforce.com"
+    },
+    {
+      "id": "xln-audio",
+      "name": "XLN Audio",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "websiteUrl": "https://www.xlnaudio.com"
+    },
+    {
+      "id": "izotope",
+      "name": "iZotope",
+      "updatePortalUrl": "https://www.izotope.com/en/account/downloads.html",
+      "websiteUrl": "https://www.izotope.com",
+      "aliases": [
+        "Ozone",
+        "Neutron",
+        "Nectar",
+        "RX",
+        "VocalSynth"
+      ]
+    },
+    {
+      "id": "leotokarev",
+      "name": "leotokarev",
+      "updatePortalUrl": "https://www.leotokarev.com/",
+      "websiteUrl": "https://www.leotokarev.com",
+      "aliases": [
+        "letimix",
+        "GainMatch"
+      ]
+    },
+    {
+      "id": "oeksound",
+      "name": "oeksound",
+      "updatePortalUrl": "https://oeksound.com/downloads/",
+      "websiteUrl": "https://oeksound.com",
+      "aliases": [
+        "soothe"
+      ]
+    },
+    {
+      "id": "guitar-rig-5",
+      "name": "Guitar Rig 5",
+      "updatePortalUrl": "https://www.google.com/search?q=Guitar+Rig+5+plugin+download"
+    },
+    {
+      "id": "pitchinnovations",
+      "name": "PitchInnovations",
+      "updatePortalUrl": "https://www.google.com/search?q=PitchInnovations+plugin+download"
+    },
+    {
+      "id": "reaktor-6",
+      "name": "Reaktor 6",
+      "updatePortalUrl": "https://www.google.com/search?q=Reaktor+6+plugin+download"
+    },
+    {
+      "id": "spectralayers-bridge",
+      "name": "SpectraLayers-Bridge",
+      "updatePortalUrl": "https://www.google.com/search?q=SpectraLayers-Bridge+plugin+download"
+    },
+    {
+      "id": "con",
+      "name": "con",
+      "updatePortalUrl": "https://www.google.com/search?q=con+plugin+download"
+    },
+    {
+      "id": "digidesign",
+      "name": "digidesign",
+      "updatePortalUrl": "https://www.google.com/search?q=digidesign+plugin+download"
+    },
+    {
+      "id": "mpegh",
+      "name": "mpegh",
+      "updatePortalUrl": "https://www.google.com/search?q=mpegh+plugin+download"
+    },
+    {
+      "id": "unfilteredaudio",
+      "name": "unfilteredaudio",
+      "updatePortalUrl": "https://www.google.com/search?q=unfilteredaudio+plugin+download"
+    },
+    {
+      "id": "acon-digital",
+      "name": "Acon Digital",
+      "updatePortalUrl": "https://acondigital.com/downloads/",
+      "websiteUrl": "https://acondigital.com",
+      "aliases": [
+        "Acon",
+        "acondigital"
+      ]
+    },
+    {
+      "id": "accusonus",
+      "name": "Accusonus",
+      "updatePortalUrl": "https://accusonus.com/account",
+      "websiteUrl": "https://accusonus.com",
+      "aliases": [
+        "ERA"
+      ]
+    },
+    {
+      "id": "goodhertz",
+      "name": "Goodhertz",
+      "updatePortalUrl": "https://goodhertz.com/downloads/",
+      "websiteUrl": "https://goodhertz.com",
+      "aliases": [
+        "audiounit",
+        "ghz"
+      ]
+    },
+    {
+      "id": "applied-acoustics",
+      "name": "Applied Acoustics Systems",
+      "updatePortalUrl": "https://www.applied-acoustics.com/account/",
+      "websiteUrl": "https://www.applied-acoustics.com",
+      "aliases": [
+        "applied-acoustics",
+        "AAS"
+      ]
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "updatePortalUrl": "https://support.apple.com/",
+      "websiteUrl": "https://www.apple.com",
+      "aliases": [
+        "ASAF"
+      ]
+    },
+    {
+      "id": "tal-software",
+      "name": "TAL Software",
+      "updatePortalUrl": "https://tal-software.com/downloads",
+      "websiteUrl": "https://tal-software.com",
+      "aliases": [
+        "Celera",
+        "TAL"
+      ]
+    },
+    {
+      "id": "credland",
+      "name": "Credland Audio",
+      "updatePortalUrl": "https://www.credland.net/",
+      "websiteUrl": "https://www.credland.net",
+      "aliases": [
+        "credland"
+      ]
+    },
+    {
+      "id": "cymatics",
+      "name": "Cymatics",
+      "updatePortalUrl": "https://cymatics.fm/pages/downloads",
+      "websiteUrl": "https://cymatics.fm"
+    },
+    {
+      "id": "linplug",
+      "name": "LinPlug",
+      "updatePortalUrl": "https://www.linplug.com/download.html",
+      "websiteUrl": "https://www.linplug.com"
+    },
+    {
+      "id": "scuffham-amps",
+      "name": "Scuffham Amps",
+      "updatePortalUrl": "https://www.scuffhamamps.com/downloads",
+      "websiteUrl": "https://www.scuffhamamps.com",
+      "aliases": [
+        "scuffhamamps",
+        "scuffham"
+      ]
+    },
+    {
+      "id": "tekit-audio",
+      "name": "Tek'it Audio",
+      "updatePortalUrl": "https://tekit-audio.com/downloads/",
+      "websiteUrl": "https://tekit-audio.com",
+      "aliases": [
+        "tekitaudio"
+      ]
+    }
+  ],
+  "plugins": [
+    {
+      "id": "plugin-alliance--ada-flanger",
+      "manufacturerId": "plugin-alliance",
+      "name": "ADA Flanger",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/flanger"
+    },
+    {
+      "id": "plugin-alliance--ada-std-1-stereo-tapped-delay",
+      "manufacturerId": "plugin-alliance",
+      "name": "ADA STD-1 Stereo Tapped Delay",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/std-1-stereo-tapped-delay"
+    },
+    {
+      "id": "adptr--adptr-hype",
+      "manufacturerId": "adptr",
+      "name": "ADPTR Hype"
+    },
+    {
+      "id": "adptr--adptr-metricab",
+      "manufacturerId": "adptr",
+      "name": "ADPTR MetricAB"
+    },
+    {
+      "id": "adptr--adptr-sculpt",
+      "manufacturerId": "adptr",
+      "name": "ADPTR Sculpt"
+    },
+    {
+      "id": "adptr--adptr-streamliner",
+      "manufacturerId": "adptr",
+      "name": "ADPTR StreamLiner"
+    },
+    {
+      "id": "adptr--adptr-utopia",
+      "manufacturerId": "adptr",
+      "name": "ADPTR Utopia"
+    },
+    {
+      "id": "air--airchorus",
+      "manufacturerId": "air",
+      "name": "AIRChorus"
+    },
+    {
+      "id": "air--airdistortion",
+      "manufacturerId": "air",
+      "name": "AIRDistortion"
+    },
+    {
+      "id": "air--airdynamicdelay",
+      "manufacturerId": "air",
+      "name": "AIRDynamicDelay"
+    },
+    {
+      "id": "air--airenhancer",
+      "manufacturerId": "air",
+      "name": "AIREnhancer"
+    },
+    {
+      "id": "air--airensemble",
+      "manufacturerId": "air",
+      "name": "AIREnsemble"
+    },
+    {
+      "id": "air--airfiltergate",
+      "manufacturerId": "air",
+      "name": "AIRFilterGate"
+    },
+    {
+      "id": "air--airflanger",
+      "manufacturerId": "air",
+      "name": "AIRFlanger"
+    },
+    {
+      "id": "air--airfrequencyshifter",
+      "manufacturerId": "air",
+      "name": "AIRFrequencyShifter"
+    },
+    {
+      "id": "air--airfuzz-wah",
+      "manufacturerId": "air",
+      "name": "AIRFuzz-Wah"
+    },
+    {
+      "id": "air--airkilleq",
+      "manufacturerId": "air",
+      "name": "AIRKillEQ"
+    },
+    {
+      "id": "air--airlo-fi",
+      "manufacturerId": "air",
+      "name": "AIRLo-Fi"
+    },
+    {
+      "id": "air--airmulti-chorus",
+      "manufacturerId": "air",
+      "name": "AIRMulti-Chorus"
+    },
+    {
+      "id": "air--airmulti-delay",
+      "manufacturerId": "air",
+      "name": "AIRMulti-Delay"
+    },
+    {
+      "id": "air--airnon-linearreverb",
+      "manufacturerId": "air",
+      "name": "AIRNon-LinearReverb"
+    },
+    {
+      "id": "air--airphaser",
+      "manufacturerId": "air",
+      "name": "AIRPhaser"
+    },
+    {
+      "id": "air--airreverb",
+      "manufacturerId": "air",
+      "name": "AIRReverb"
+    },
+    {
+      "id": "air--airspringreverb",
+      "manufacturerId": "air",
+      "name": "AIRSpringReverb"
+    },
+    {
+      "id": "air--airstereowidth",
+      "manufacturerId": "air",
+      "name": "AIRStereoWidth"
+    },
+    {
+      "id": "air--airtalkbox",
+      "manufacturerId": "air",
+      "name": "AIRTalkbox"
+    },
+    {
+      "id": "air--airvintagefilter",
+      "manufacturerId": "air",
+      "name": "AIRVintageFilter"
+    },
+    {
+      "id": "plugin-alliance--amek-eq-200",
+      "manufacturerId": "plugin-alliance",
+      "name": "AMEK EQ 200",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/eq2"
+    },
+    {
+      "id": "plugin-alliance--amek-eq-250",
+      "manufacturerId": "plugin-alliance",
+      "name": "AMEK EQ 250",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/eq2"
+    },
+    {
+      "id": "plugin-alliance--amek-mastering-compressor",
+      "manufacturerId": "plugin-alliance",
+      "name": "AMEK Mastering Compressor",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/mastering-compressor-class-a"
+    },
+    {
+      "id": "sonic-academy--ana-2",
+      "manufacturerId": "sonic-academy",
+      "name": "ANA 2"
+    },
+    {
+      "id": "audiopunks--ap-sansamp-rack",
+      "manufacturerId": "audiopunks",
+      "name": "AP SansAmp Rack"
+    },
+    {
+      "id": "antares--avox-articulator",
+      "manufacturerId": "antares",
+      "name": "AVOX ARTICULATOR"
+    },
+    {
+      "id": "antares--avox-aspire",
+      "manufacturerId": "antares",
+      "name": "AVOX ASPIRE"
+    },
+    {
+      "id": "antares--avox-choir",
+      "manufacturerId": "antares",
+      "name": "AVOX CHOIR"
+    },
+    {
+      "id": "antares--avox-duo",
+      "manufacturerId": "antares",
+      "name": "AVOX DUO"
+    },
+    {
+      "id": "antares--avox-mutator",
+      "manufacturerId": "antares",
+      "name": "AVOX MUTATOR"
+    },
+    {
+      "id": "antares--avox-punch",
+      "manufacturerId": "antares",
+      "name": "AVOX PUNCH"
+    },
+    {
+      "id": "antares--avox-sybil",
+      "manufacturerId": "antares",
+      "name": "AVOX SYBIL"
+    },
+    {
+      "id": "antares--avox-throat",
+      "manufacturerId": "antares",
+      "name": "AVOX THROAT"
+    },
+    {
+      "id": "antares--avox-warm",
+      "manufacturerId": "antares",
+      "name": "AVOX WARM"
+    },
+    {
+      "id": "accentize--dxrevivepro",
+      "manufacturerId": "accentize",
+      "name": "dxRevivePro"
+    },
+    {
+      "id": "plugin-alliance--acme-opticom-xla-3",
+      "manufacturerId": "plugin-alliance",
+      "name": "Acme Opticom XLA-3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/opticom-xla-3"
+    },
+    {
+      "id": "plugin-alliance--ampeg-b15n",
+      "manufacturerId": "plugin-alliance",
+      "name": "Ampeg B15N",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/b-15n"
+    },
+    {
+      "id": "plugin-alliance--ampeg-svt3pro",
+      "manufacturerId": "plugin-alliance",
+      "name": "Ampeg SVT3Pro",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/svt-3pro"
+    },
+    {
+      "id": "plugin-alliance--ampeg-svtvr-classic",
+      "manufacturerId": "plugin-alliance",
+      "name": "Ampeg SVTVR Classic",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/svt-vr"
+    },
+    {
+      "id": "plugin-alliance--ampeg-svtvr",
+      "manufacturerId": "plugin-alliance",
+      "name": "Ampeg SVTVR",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/svt-vr"
+    },
+    {
+      "id": "plugin-alliance--ampeg-v4b",
+      "manufacturerId": "plugin-alliance",
+      "name": "Ampeg V4B"
+    },
+    {
+      "id": "ik-multimedia--amplitube-5",
+      "manufacturerId": "ik-multimedia",
+      "name": "AmpliTube 5"
+    },
+    {
+      "id": "antares--auto-key",
+      "manufacturerId": "antares",
+      "name": "Auto-Key"
+    },
+    {
+      "id": "antares--auto-tune-access",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Access"
+    },
+    {
+      "id": "antares--auto-tune-artist",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Artist"
+    },
+    {
+      "id": "antares--auto-tune-efx",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune EFX+"
+    },
+    {
+      "id": "antares--auto-tune-hybrid",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Hybrid"
+    },
+    {
+      "id": "antares--auto-tune-pro",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Pro"
+    },
+    {
+      "id": "antares--auto-tune-slice",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Slice"
+    },
+    {
+      "id": "antares--auto-tune-soundsoap",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune SoundSoap"
+    },
+    {
+      "id": "antares--auto-tune-vocal-compressor",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Vocal Compressor"
+    },
+    {
+      "id": "antares--auto-tune-vocal-eq",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Vocal EQ"
+    },
+    {
+      "id": "antares--auto-tune-vocodist",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Vocodist"
+    },
+    {
+      "id": "avid--autopan",
+      "manufacturerId": "avid",
+      "name": "AutoPan"
+    },
+    {
+      "id": "antares--autotune",
+      "manufacturerId": "antares",
+      "name": "AutoTune"
+    },
+    {
+      "id": "avid--bbd-delay",
+      "manufacturerId": "avid",
+      "name": "BBD Delay"
+    },
+    {
+      "id": "bbe-sound--harmonic-maximizer",
+      "manufacturerId": "bbe-sound",
+      "name": "Harmonic Maximizer"
+    },
+    {
+      "id": "bbe-sound--loudness-maximizer",
+      "manufacturerId": "bbe-sound",
+      "name": "Loudness Maximizer"
+    },
+    {
+      "id": "bbe-sound--mach-3-bass",
+      "manufacturerId": "bbe-sound",
+      "name": "Mach 3 Bass"
+    },
+    {
+      "id": "bbe-sound--sonic-maximizer",
+      "manufacturerId": "bbe-sound",
+      "name": "Sonic Maximizer"
+    },
+    {
+      "id": "avid--bf-2a",
+      "manufacturerId": "avid",
+      "name": "BF-2A"
+    },
+    {
+      "id": "avid--bf-3a",
+      "manufacturerId": "avid",
+      "name": "BF-3A"
+    },
+    {
+      "id": "avid--bf-76",
+      "manufacturerId": "avid",
+      "name": "BF-76"
+    },
+    {
+      "id": "united-plugins--bassmentcore",
+      "manufacturerId": "united-plugins",
+      "name": "BassmentCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "bertom--eq-curve-analyzer-2",
+      "manufacturerId": "bertom",
+      "name": "EQ Curve Analyzer 2"
+    },
+    {
+      "id": "plugin-alliance--bettermaker-bm60",
+      "manufacturerId": "plugin-alliance",
+      "name": "Bettermaker BM60",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bm60"
+    },
+    {
+      "id": "bettermaker--bettermaker-c502v-dsp",
+      "manufacturerId": "bettermaker",
+      "name": "Bettermaker C502V DSP"
+    },
+    {
+      "id": "bettermaker--bettermaker-eq232d",
+      "manufacturerId": "bettermaker",
+      "name": "Bettermaker EQ232D"
+    },
+    {
+      "id": "bettermaker--bettermaker-passive-equalizer",
+      "manufacturerId": "bettermaker",
+      "name": "Bettermaker Passive Equalizer"
+    },
+    {
+      "id": "plugin-alliance--black-box-analog-design-hg-2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Black Box Analog Design HG-2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/hg-2"
+    },
+    {
+      "id": "plugin-alliance--black-box-analog-design-hg-2ms",
+      "manufacturerId": "plugin-alliance",
+      "name": "Black Box Analog Design HG-2MS",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/hg-2ms"
+    },
+    {
+      "id": "plugin-alliance--black-box-analog-design-hg-q",
+      "manufacturerId": "plugin-alliance",
+      "name": "Black Box Analog Design HG-Q",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/hg-q"
+    },
+    {
+      "id": "avid--black-op-distortion",
+      "manufacturerId": "avid",
+      "name": "Black Op Distortion"
+    },
+    {
+      "id": "avid--black-shiny-wah",
+      "manufacturerId": "avid",
+      "name": "Black Shiny Wah"
+    },
+    {
+      "id": "avid--black-spring",
+      "manufacturerId": "avid",
+      "name": "Black Spring"
+    },
+    {
+      "id": "air--boom",
+      "manufacturerId": "air",
+      "name": "Boom"
+    },
+    {
+      "id": "avid--c1-chorus",
+      "manufacturerId": "avid",
+      "name": "C1 Chorus"
+    },
+    {
+      "id": "metric-halo--cgii",
+      "manufacturerId": "metric-halo",
+      "name": "CGII"
+    },
+    {
+      "id": "wavesfactory--cassette-transport",
+      "manufacturerId": "wavesfactory",
+      "name": "Cassette Transport"
+    },
+    {
+      "id": "wavesfactory--cassette",
+      "manufacturerId": "wavesfactory",
+      "name": "Cassette"
+    },
+    {
+      "id": "plugin-alliance--chandler-gav19t",
+      "manufacturerId": "plugin-alliance",
+      "name": "Chandler GAV19T",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/gav19t"
+    },
+    {
+      "id": "avid--channelstrip",
+      "manufacturerId": "avid",
+      "name": "ChannelStrip"
+    },
+    {
+      "id": "supertone--clear",
+      "manufacturerId": "supertone",
+      "name": "Clear"
+    },
+    {
+      "id": "avid--clickii",
+      "manufacturerId": "avid",
+      "name": "ClickII"
+    },
+    {
+      "id": "impulse-record--convologyxt",
+      "manufacturerId": "impulse-record",
+      "name": "ConvologyXT"
+    },
+    {
+      "id": "hornet--corrosion",
+      "manufacturerId": "hornet",
+      "name": "Corrosion"
+    },
+    {
+      "id": "plugin-alliance--cut-classic-high-flyer",
+      "manufacturerId": "plugin-alliance",
+      "name": "Cut Classic High Flyer",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/high-flyer"
+    },
+    {
+      "id": "united-plugins--cyberdrivecore",
+      "manufacturerId": "united-plugins",
+      "name": "CyberdriveCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "d16-group--repeater",
+      "manufacturerId": "d16-group",
+      "name": "Repeater"
+    },
+    {
+      "id": "klevgrand--dawcassette",
+      "manufacturerId": "klevgrand",
+      "name": "DAWCassette"
+    },
+    {
+      "id": "air--db-33",
+      "manufacturerId": "air",
+      "name": "DB-33"
+    },
+    {
+      "id": "avid--dc-distortion",
+      "manufacturerId": "avid",
+      "name": "DC Distortion"
+    },
+    {
+      "id": "klanghelm--dc1a3",
+      "manufacturerId": "klanghelm",
+      "name": "DC1A3"
+    },
+    {
+      "id": "plugin-alliance--ds-tantra-2",
+      "manufacturerId": "plugin-alliance",
+      "name": "DS Tantra 2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/tantra-2"
+    },
+    {
+      "id": "plugin-alliance--ds-thorn",
+      "manufacturerId": "plugin-alliance",
+      "name": "DS Thorn",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/thorn"
+    },
+    {
+      "id": "xln-audio--ds-10-drum-shaper",
+      "manufacturerId": "xln-audio",
+      "name": "DS-10 Drum Shaper"
+    },
+    {
+      "id": "avid--dverb",
+      "manufacturerId": "avid",
+      "name": "DVerb"
+    },
+    {
+      "id": "plugin-alliance--dangerous-bax-eq-master",
+      "manufacturerId": "plugin-alliance",
+      "name": "Dangerous BAX EQ Master",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bax-eq"
+    },
+    {
+      "id": "plugin-alliance--dangerous-bax-eq-mix",
+      "manufacturerId": "plugin-alliance",
+      "name": "Dangerous BAX EQ Mix",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bax-eq"
+    },
+    {
+      "id": "plugin-alliance--diezel-herbert",
+      "manufacturerId": "plugin-alliance",
+      "name": "Diezel Herbert",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/herbert"
+    },
+    {
+      "id": "plugin-alliance--diezel-vh4",
+      "manufacturerId": "plugin-alliance",
+      "name": "Diezel VH4"
+    },
+    {
+      "id": "avid--dither",
+      "manufacturerId": "avid",
+      "name": "Dither"
+    },
+    {
+      "id": "avid--downmixer",
+      "manufacturerId": "avid",
+      "name": "DownMixer"
+    },
+    {
+      "id": "waves--drifter",
+      "manufacturerId": "waves",
+      "name": "Drifter"
+    },
+    {
+      "id": "avid--dynamicsiii",
+      "manufacturerId": "avid",
+      "name": "DynamicsIII"
+    },
+    {
+      "id": "plugin-alliance--engl-e646-vs",
+      "manufacturerId": "plugin-alliance",
+      "name": "ENGL E646 VS",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/e646-vs"
+    },
+    {
+      "id": "plugin-alliance--engl-e765-rt",
+      "manufacturerId": "plugin-alliance",
+      "name": "ENGL E765 RT",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/e765-rt"
+    },
+    {
+      "id": "plugin-alliance--engl-savage-120",
+      "manufacturerId": "plugin-alliance",
+      "name": "ENGL Savage 120",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/savage-120"
+    },
+    {
+      "id": "modalics--eon-arp-midi",
+      "manufacturerId": "modalics",
+      "name": "EON-Arp MIDI"
+    },
+    {
+      "id": "avid--eqiii",
+      "manufacturerId": "avid",
+      "name": "EQIII"
+    },
+    {
+      "id": "eastwest--spaces",
+      "manufacturerId": "eastwest",
+      "name": "Spaces"
+    },
+    {
+      "id": "eiosis--eiosis-aireq-5-1",
+      "manufacturerId": "eiosis",
+      "name": "Eiosis AirEQ 5.1"
+    },
+    {
+      "id": "eiosis--eiosis-aireq",
+      "manufacturerId": "eiosis",
+      "name": "Eiosis AirEQ"
+    },
+    {
+      "id": "eiosis--eiosis-e2deesser",
+      "manufacturerId": "eiosis",
+      "name": "Eiosis E2Deesser"
+    },
+    {
+      "id": "united-plugins--electrumcore",
+      "manufacturerId": "united-plugins",
+      "name": "ElectrumCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "avid--eleven-lite",
+      "manufacturerId": "avid",
+      "name": "Eleven Lite"
+    },
+    {
+      "id": "eventide--quadravox",
+      "manufacturerId": "eventide",
+      "name": "Quadravox"
+    },
+    {
+      "id": "eventide--spliteq",
+      "manufacturerId": "eventide",
+      "name": "SplitEQ"
+    },
+    {
+      "id": "eventide--ultrachannel",
+      "manufacturerId": "eventide",
+      "name": "UltraChannel"
+    },
+    {
+      "id": "focusrite--fb360-control",
+      "manufacturerId": "focusrite",
+      "name": "FB360 Control"
+    },
+    {
+      "id": "focusrite--fb360-converter",
+      "manufacturerId": "focusrite",
+      "name": "FB360 Converter"
+    },
+    {
+      "id": "focusrite--fb360-mix-loudness",
+      "manufacturerId": "focusrite",
+      "name": "FB360 Mix Loudness"
+    },
+    {
+      "id": "focusrite--fb360-spatialiser",
+      "manufacturerId": "focusrite",
+      "name": "FB360 Spatialiser"
+    },
+    {
+      "id": "focusrite--fb360-stereo-loudness",
+      "manufacturerId": "focusrite",
+      "name": "FB360 Stereo Loudness"
+    },
+    {
+      "id": "spectrasonics--fx-omnisphere",
+      "manufacturerId": "spectrasonics",
+      "name": "FX-Omnisphere"
+    },
+    {
+      "id": "fabfilter--fabfilter-micro",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Micro",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-one",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter One",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-c-2",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-C 2"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-c-3",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-C 3",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-ds",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-DS",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-g",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-G",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-l-2",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-L 2",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-mb",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-MB",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-q-3",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-Q 3",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-q-4",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-Q 4",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-r-2",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-R 2",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-saturn-2",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Saturn 2",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-simplon",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Simplon",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-timeless-3",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Timeless 3",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-twin-3",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Twin 3",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "fabfilter--fabfilter-volcano-3",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Volcano 3",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "avid--fairchild660",
+      "manufacturerId": "avid",
+      "name": "Fairchild660"
+    },
+    {
+      "id": "avid--fairchild670",
+      "manufacturerId": "avid",
+      "name": "Fairchild670"
+    },
+    {
+      "id": "united-plugins--firecharger",
+      "manufacturerId": "united-plugins",
+      "name": "FireCharger",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "united-plugins--firepresser",
+      "manufacturerId": "united-plugins",
+      "name": "FirePresser",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "avid--flanger",
+      "manufacturerId": "avid",
+      "name": "Flanger"
+    },
+    {
+      "id": "wavesfactory--flash",
+      "manufacturerId": "wavesfactory",
+      "name": "Flash"
+    },
+    {
+      "id": "klevgrand--freeamp",
+      "manufacturerId": "klevgrand",
+      "name": "FreeAMP"
+    },
+    {
+      "id": "plugin-alliance--friedman-be100",
+      "manufacturerId": "plugin-alliance",
+      "name": "Friedman BE100",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/be-100"
+    },
+    {
+      "id": "plugin-alliance--friedman-buxom-betty",
+      "manufacturerId": "plugin-alliance",
+      "name": "Friedman Buxom Betty",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/buxom-betty"
+    },
+    {
+      "id": "plugin-alliance--friedman-ds40",
+      "manufacturerId": "plugin-alliance",
+      "name": "Friedman DS40",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/ds-40"
+    },
+    {
+      "id": "plugin-alliance--fuchs-overdrive-supreme-50",
+      "manufacturerId": "plugin-alliance",
+      "name": "Fuchs Overdrive Supreme 50",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/overdrive-supreme-50"
+    },
+    {
+      "id": "plugin-alliance--fuchs-train-ii",
+      "manufacturerId": "plugin-alliance",
+      "name": "Fuchs Train II",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/train-ii"
+    },
+    {
+      "id": "tbproaudio--gsatplus",
+      "manufacturerId": "tbproaudio",
+      "name": "GSatPlus"
+    },
+    {
+      "id": "leotokarev--gainmatch-aax",
+      "manufacturerId": "leotokarev",
+      "name": "GainMatch AAX"
+    },
+    {
+      "id": "plugin-alliance--gallien-krueger-800rb",
+      "manufacturerId": "plugin-alliance",
+      "name": "Gallien Krueger 800RB",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/800rb"
+    },
+    {
+      "id": "safari-pedals--gorilla-drive",
+      "manufacturerId": "safari-pedals",
+      "name": "Gorilla Drive"
+    },
+    {
+      "id": "avid--graphic-eq",
+      "manufacturerId": "avid",
+      "name": "Graphic EQ"
+    },
+    {
+      "id": "avid--gray-compressor",
+      "manufacturerId": "avid",
+      "name": "Gray Compressor"
+    },
+    {
+      "id": "avid--green-jrc-overdrive",
+      "manufacturerId": "avid",
+      "name": "Green JRC Overdrive"
+    },
+    {
+      "id": "pitchinnovations--groove-shaper-lite",
+      "manufacturerId": "pitchinnovations",
+      "name": "Groove Shaper LITE"
+    },
+    {
+      "id": "guitar-rig-5--guitar-rig-5",
+      "manufacturerId": "guitar-rig-5",
+      "name": "Guitar Rig 5"
+    },
+    {
+      "id": "plugin-alliance--hears-perfection",
+      "manufacturerId": "plugin-alliance",
+      "name": "HEARS Perfection",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/perfection"
+    },
+    {
+      "id": "plugin-alliance--hum-audio-devices-laal",
+      "manufacturerId": "plugin-alliance",
+      "name": "HUM Audio Devices LAAL",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/laal"
+    },
+    {
+      "id": "antares--harmony-engine-4x",
+      "manufacturerId": "antares",
+      "name": "Harmony Engine 4x"
+    },
+    {
+      "id": "plugin-alliance--harris-doyle-natalus-dsceq",
+      "manufacturerId": "plugin-alliance",
+      "name": "Harris Doyle Natalus DSCEQ",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/natalus-dsceq"
+    },
+    {
+      "id": "harrison--harrison-32bus",
+      "manufacturerId": "harrison",
+      "name": "Harrison_32Bus"
+    },
+    {
+      "id": "harrison--harrison-32classicchannelstrip",
+      "manufacturerId": "harrison",
+      "name": "Harrison_32ClassicChannelStrip"
+    },
+    {
+      "id": "harrison--harrison-bassflow",
+      "manufacturerId": "harrison",
+      "name": "Harrison_BassFlow"
+    },
+    {
+      "id": "harrison--harrison-de-esser",
+      "manufacturerId": "harrison",
+      "name": "Harrison_De-Esser"
+    },
+    {
+      "id": "harrison--harrison-drumflow",
+      "manufacturerId": "harrison",
+      "name": "Harrison_DrumFlow"
+    },
+    {
+      "id": "harrison--harrison-fastrack",
+      "manufacturerId": "harrison",
+      "name": "Harrison_FasTrack"
+    },
+    {
+      "id": "harrison--harrison-legacyeq",
+      "manufacturerId": "harrison",
+      "name": "Harrison_LegacyEQ"
+    },
+    {
+      "id": "harrison--harrison-lookaheadcompressor",
+      "manufacturerId": "harrison",
+      "name": "Harrison_LookaheadCompressor"
+    },
+    {
+      "id": "harrison--harrison-mpcchannelstrip",
+      "manufacturerId": "harrison",
+      "name": "Harrison_MPCChannelStrip"
+    },
+    {
+      "id": "harrison--harrison-mpccompressor",
+      "manufacturerId": "harrison",
+      "name": "Harrison_MPCCompressor"
+    },
+    {
+      "id": "harrison--harrison-mpcspectralcompressor",
+      "manufacturerId": "harrison",
+      "name": "Harrison_MPCSpectralCompressor"
+    },
+    {
+      "id": "harrison--harrison-masteringeq",
+      "manufacturerId": "harrison",
+      "name": "Harrison_MasteringEQ"
+    },
+    {
+      "id": "harrison--harrison-microglide",
+      "manufacturerId": "harrison",
+      "name": "Harrison_MicroGlide"
+    },
+    {
+      "id": "harrison--harrison-multibandcompressor",
+      "manufacturerId": "harrison",
+      "name": "Harrison_MultiBandCompressor"
+    },
+    {
+      "id": "harrison--harrison-tremolopanner",
+      "manufacturerId": "harrison",
+      "name": "Harrison_TremoloPanner"
+    },
+    {
+      "id": "harrison--harrison-vocalflow",
+      "manufacturerId": "harrison",
+      "name": "Harrison_VocalFlow"
+    },
+    {
+      "id": "harrison--harrison-vocalintensityprocessor",
+      "manufacturerId": "harrison",
+      "name": "Harrison_VocalIntensityProcessor"
+    },
+    {
+      "id": "wa-production--heat2",
+      "manufacturerId": "wa-production",
+      "name": "Heat2"
+    },
+    {
+      "id": "united-plugins--hyperspacecore",
+      "manufacturerId": "united-plugins",
+      "name": "HyperspaceCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "klanghelm--ivgi2",
+      "manufacturerId": "klanghelm",
+      "name": "IVGI2"
+    },
+    {
+      "id": "waves--ignition",
+      "manufacturerId": "waves",
+      "name": "Ignition"
+    },
+    {
+      "id": "avid--intune",
+      "manufacturerId": "avid",
+      "name": "InTune"
+    },
+    {
+      "id": "digidesign--invert-duplicate",
+      "manufacturerId": "digidesign",
+      "name": "Invert-Duplicate"
+    },
+    {
+      "id": "synthogy--ivory",
+      "manufacturerId": "synthogy",
+      "name": "Ivory"
+    },
+    {
+      "id": "karanyi--karanyi-sounds-wavesurfer",
+      "manufacturerId": "karanyi",
+      "name": "Karanyi Sounds Wavesurfer"
+    },
+    {
+      "id": "spectrasonics--keyscape",
+      "manufacturerId": "spectrasonics",
+      "name": "Keyscape"
+    },
+    {
+      "id": "kiive--kiive-xtcomp",
+      "manufacturerId": "kiive",
+      "name": "Kiive XTComp"
+    },
+    {
+      "id": "kilohearts--disperser",
+      "manufacturerId": "kilohearts",
+      "name": "Disperser",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--faturator",
+      "manufacturerId": "kilohearts",
+      "name": "Faturator",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--multipass",
+      "manufacturerId": "kilohearts",
+      "name": "Multipass",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--snap-heap",
+      "manufacturerId": "kilohearts",
+      "name": "Snap Heap",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-3-band-eq",
+      "manufacturerId": "kilohearts",
+      "name": "kHs 3-Band EQ",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-bitcrush",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Bitcrush",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-channel-mixer",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Channel Mixer",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-chorus",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Chorus",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-clipper",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Clipper",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-comb-filter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Comb Filter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-compactor",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Compactor",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-compressor",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Compressor",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-delay",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Delay",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-distortion",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Distortion",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-dual-delay",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Dual Delay",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-dynamics",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Dynamics",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-ensemble",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Ensemble",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-filter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Filter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-flanger",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Flanger",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-formant-filter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Formant Filter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-frequency-shifter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Frequency Shifter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-gain",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Gain",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-gate",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Gate",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-haas",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Haas",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-ladder-filter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Ladder Filter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-limiter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Limiter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-nonlinear-filter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Nonlinear Filter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-phase-distortion",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Phase Distortion",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-phaser",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Phaser",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-pitch-shifter",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Pitch Shifter",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-resonator",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Resonator",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-reverb",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Reverb",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-reverser",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Reverser",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-ring-mod",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Ring Mod",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-shaper",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Shaper",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-stereo",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Stereo",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-tape-stop",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Tape Stop",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-trance-gate",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Trance Gate",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "kilohearts--khs-transient-shaper",
+      "manufacturerId": "kilohearts",
+      "name": "kHs Transient Shaper",
+      "updatePortalUrl": "https://kilohearts.com/download"
+    },
+    {
+      "id": "plugin-alliance--knif-audio-knifonium",
+      "manufacturerId": "plugin-alliance",
+      "name": "Knif Audio Knifonium",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/knifonium"
+    },
+    {
+      "id": "plugin-alliance--knif-audio-soma",
+      "manufacturerId": "plugin-alliance",
+      "name": "Knif Audio Soma",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/soma"
+    },
+    {
+      "id": "native-instruments--kontakt",
+      "manufacturerId": "native-instruments",
+      "name": "Kontakt",
+      "updatePortalUrl": "https://www.native-instruments.com/en/specials/native-access-2/"
+    },
+    {
+      "id": "spitfire-audio--labs",
+      "manufacturerId": "spitfire-audio",
+      "name": "LABS"
+    },
+    {
+      "id": "louder-than-liftoff--ltl-chop-shop-eq",
+      "manufacturerId": "louder-than-liftoff",
+      "name": "LTL Chop Shop EQ"
+    },
+    {
+      "id": "unfilteredaudio--ltl-silver-bullet-mk2",
+      "manufacturerId": "unfilteredaudio",
+      "name": "LTL SILVER BULLET mk2"
+    },
+    {
+      "id": "steinberg--lindell-254e",
+      "manufacturerId": "steinberg",
+      "name": "Lindell 254E"
+    },
+    {
+      "id": "steinberg--lindell-354e",
+      "manufacturerId": "steinberg",
+      "name": "Lindell 354E"
+    },
+    {
+      "id": "lindell-audio--lindell-50-buss",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell 50 Buss"
+    },
+    {
+      "id": "lindell-audio--lindell-50-channel",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell 50 Channel"
+    },
+    {
+      "id": "lindell-audio--lindell-69-buss",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell 69 Buss"
+    },
+    {
+      "id": "lindell-audio--lindell-69-channel",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell 69 Channel"
+    },
+    {
+      "id": "steinberg--6x-500",
+      "manufacturerId": "steinberg",
+      "name": "6X-500"
+    },
+    {
+      "id": "steinberg--7x-500",
+      "manufacturerId": "steinberg",
+      "name": "7X-500"
+    },
+    {
+      "id": "lindell-audio--lindell-80-bus",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell 80 Bus"
+    },
+    {
+      "id": "lindell-audio--lindell-80-channel",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell 80 Channel"
+    },
+    {
+      "id": "lindell-audio--lindell-902-de-esser",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell 902 De-esser"
+    },
+    {
+      "id": "steinberg--channelx",
+      "manufacturerId": "steinberg",
+      "name": "ChannelX"
+    },
+    {
+      "id": "lindell-audio--lindell-eq825",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell EQ825"
+    },
+    {
+      "id": "lindell-audio--lindell-mbc",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell MBC"
+    },
+    {
+      "id": "lindell-audio--lindell-mu-66",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell MU-66"
+    },
+    {
+      "id": "steinberg--pex-500",
+      "manufacturerId": "steinberg",
+      "name": "PEX-500"
+    },
+    {
+      "id": "lindell-audio--lindell-sbc",
+      "manufacturerId": "lindell-audio",
+      "name": "Lindell SBC"
+    },
+    {
+      "id": "steinberg--lindell-te-100",
+      "manufacturerId": "steinberg",
+      "name": "Lindell TE-100"
+    },
+    {
+      "id": "audiomovers--listento-midi",
+      "manufacturerId": "audiomovers",
+      "name": "Listento-MIDI"
+    },
+    {
+      "id": "audiomovers--listento-receiver",
+      "manufacturerId": "audiomovers",
+      "name": "Listento-Receiver"
+    },
+    {
+      "id": "audiomovers--listento",
+      "manufacturerId": "audiomovers",
+      "name": "Listento"
+    },
+    {
+      "id": "avid--lofi",
+      "manufacturerId": "avid",
+      "name": "LoFi"
+    },
+    {
+      "id": "plugin-alliance--looptrotter-sa2rate2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Looptrotter SA2RATE2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/sa2rate-2"
+    },
+    {
+      "id": "con--lurssen-mastering-console",
+      "manufacturerId": "con",
+      "name": "Lurssen Mastering Console"
+    },
+    {
+      "id": "liquidsonics--lustrous-plates",
+      "manufacturerId": "liquidsonics",
+      "name": "Lustrous Plates"
+    },
+    {
+      "id": "plugin-alliance--mega-sampler",
+      "manufacturerId": "plugin-alliance",
+      "name": "MEGA Sampler"
+    },
+    {
+      "id": "metric-halo--mhchannelstrip",
+      "manufacturerId": "metric-halo",
+      "name": "MHChannelStrip"
+    },
+    {
+      "id": "klanghelm--mjuc",
+      "manufacturerId": "klanghelm",
+      "name": "MJUC"
+    },
+    {
+      "id": "mpegh--mpeg-h-renderer",
+      "manufacturerId": "mpegh",
+      "name": "MPEG-H Renderer"
+    },
+    {
+      "id": "plugin-alliance--maag-eq2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Maag EQ2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/eq2"
+    },
+    {
+      "id": "plugin-alliance--maag-eq4-ms",
+      "manufacturerId": "plugin-alliance",
+      "name": "Maag EQ4 MS",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/eq4"
+    },
+    {
+      "id": "plugin-alliance--maag-eq4",
+      "manufacturerId": "plugin-alliance",
+      "name": "Maag EQ4",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/eq4"
+    },
+    {
+      "id": "plugin-alliance--maag-magnum-k",
+      "manufacturerId": "plugin-alliance",
+      "name": "Maag MAGNUM-K",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/magnum-k"
+    },
+    {
+      "id": "avid--mastermeter",
+      "manufacturerId": "avid",
+      "name": "MasterMeter"
+    },
+    {
+      "id": "avid--maxim",
+      "manufacturerId": "avid",
+      "name": "Maxim"
+    },
+    {
+      "id": "meldaproduction--mdelay",
+      "manufacturerId": "meldaproduction",
+      "name": "MDelay",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mturbodelay",
+      "manufacturerId": "meldaproduction",
+      "name": "MTurboDelay",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mturbodelaymb",
+      "manufacturerId": "meldaproduction",
+      "name": "MTurboDelayMB",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mbitfun",
+      "manufacturerId": "meldaproduction",
+      "name": "MBitFun",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--msaturator",
+      "manufacturerId": "meldaproduction",
+      "name": "MSaturator",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mwavefolder",
+      "manufacturerId": "meldaproduction",
+      "name": "MWaveFolder",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mwaveshaper",
+      "manufacturerId": "meldaproduction",
+      "name": "MWaveShaper",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--magc",
+      "manufacturerId": "meldaproduction",
+      "name": "MAGC",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mcompressor",
+      "manufacturerId": "meldaproduction",
+      "name": "MCompressor",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mtransient",
+      "manufacturerId": "meldaproduction",
+      "name": "MTransient",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mequalizer",
+      "manufacturerId": "meldaproduction",
+      "name": "MEqualizer",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mbandpass",
+      "manufacturerId": "meldaproduction",
+      "name": "MBandPass",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mcomb",
+      "manufacturerId": "meldaproduction",
+      "name": "MComb",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mautopan",
+      "manufacturerId": "meldaproduction",
+      "name": "MAutopan",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mflanger",
+      "manufacturerId": "meldaproduction",
+      "name": "MFlanger",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mfreqshifter",
+      "manufacturerId": "meldaproduction",
+      "name": "MFreqShifter",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mphaser",
+      "manufacturerId": "meldaproduction",
+      "name": "MPhaser",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mringmodulator",
+      "manufacturerId": "meldaproduction",
+      "name": "MRingModulator",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mtremolo",
+      "manufacturerId": "meldaproduction",
+      "name": "MTremolo",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mvibrato",
+      "manufacturerId": "meldaproduction",
+      "name": "MVibrato",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mautopitch",
+      "manufacturerId": "meldaproduction",
+      "name": "MAutoPitch",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mcharmverb",
+      "manufacturerId": "meldaproduction",
+      "name": "MCharmVerb",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mconvolutionez",
+      "manufacturerId": "meldaproduction",
+      "name": "MConvolutionEZ",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mspectralpan",
+      "manufacturerId": "meldaproduction",
+      "name": "MSpectralPan",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mstereoexpander",
+      "manufacturerId": "meldaproduction",
+      "name": "MStereoExpander",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mstereoscope",
+      "manufacturerId": "meldaproduction",
+      "name": "MStereoScope",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--manalyzer",
+      "manufacturerId": "meldaproduction",
+      "name": "MAnalyzer",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mautoalign",
+      "manufacturerId": "meldaproduction",
+      "name": "MAutoAlign",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mccgenerator",
+      "manufacturerId": "meldaproduction",
+      "name": "MCCGenerator",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mchannelmatrix",
+      "manufacturerId": "meldaproduction",
+      "name": "MChannelMatrix",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mfreeformphase",
+      "manufacturerId": "meldaproduction",
+      "name": "MFreeformPhase",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mloudnessanalyzer",
+      "manufacturerId": "meldaproduction",
+      "name": "MLoudnessAnalyzer",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mmetronome",
+      "manufacturerId": "meldaproduction",
+      "name": "MMetronome",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mnoisegenerator",
+      "manufacturerId": "meldaproduction",
+      "name": "MNoiseGenerator",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mnotepad",
+      "manufacturerId": "meldaproduction",
+      "name": "MNotepad",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--moscillator",
+      "manufacturerId": "meldaproduction",
+      "name": "MOscillator",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--moscilloscope",
+      "manufacturerId": "meldaproduction",
+      "name": "MOscilloscope",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mratio",
+      "manufacturerId": "meldaproduction",
+      "name": "MRatio",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mratiomb",
+      "manufacturerId": "meldaproduction",
+      "name": "MRatioMB",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mrecorder",
+      "manufacturerId": "meldaproduction",
+      "name": "MRecorder",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mtuner",
+      "manufacturerId": "meldaproduction",
+      "name": "MTuner",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "meldaproduction--mutility",
+      "manufacturerId": "meldaproduction",
+      "name": "MUtility",
+      "updatePortalUrl": "https://www.meldaproduction.com/downloads"
+    },
+    {
+      "id": "celemony--melodyne",
+      "manufacturerId": "celemony",
+      "name": "Melodyne"
+    },
+    {
+      "id": "antares--metamorph",
+      "manufacturerId": "antares",
+      "name": "Metamorph"
+    },
+    {
+      "id": "antares--mic-mod",
+      "manufacturerId": "antares",
+      "name": "Mic Mod"
+    },
+    {
+      "id": "plugin-alliance--millennia-nseq-2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Millennia NSEQ-2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/eq2"
+    },
+    {
+      "id": "plugin-alliance--millennia-tcl-2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Millennia TCL-2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/tcl-2"
+    },
+    {
+      "id": "air--minigrand",
+      "manufacturerId": "air",
+      "name": "MiniGrand"
+    },
+    {
+      "id": "mixland--mixland-vac-attack",
+      "manufacturerId": "mixland",
+      "name": "Mixland Vac Attack"
+    },
+    {
+      "id": "avid--moddelay-iii",
+      "manufacturerId": "avid",
+      "name": "ModDelay_III"
+    },
+    {
+      "id": "plugin-alliance--neold-big-al",
+      "manufacturerId": "plugin-alliance",
+      "name": "NEOLD BIG AL",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/spl-big"
+    },
+    {
+      "id": "plugin-alliance--neold-oldtimer",
+      "manufacturerId": "plugin-alliance",
+      "name": "NEOLD OLDTIMER",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/oldtimer"
+    },
+    {
+      "id": "plugin-alliance--neold-u17",
+      "manufacturerId": "plugin-alliance",
+      "name": "NEOLD U17"
+    },
+    {
+      "id": "plugin-alliance--neold-u2a",
+      "manufacturerId": "plugin-alliance",
+      "name": "NEOLD U2A"
+    },
+    {
+      "id": "plugin-alliance--neold-v76u73",
+      "manufacturerId": "plugin-alliance",
+      "name": "NEOLD V76U73",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/v76u73"
+    },
+    {
+      "id": "plugin-alliance--neold-warble",
+      "manufacturerId": "plugin-alliance",
+      "name": "NEOLD WARBLE",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/warble"
+    },
+    {
+      "id": "plugin-alliance--neold-wunderlich",
+      "manufacturerId": "plugin-alliance",
+      "name": "NEOLD WUNDERLICH",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/wunderlich"
+    },
+    {
+      "id": "nugen-audio--aligner",
+      "manufacturerId": "nugen-audio",
+      "name": "Aligner"
+    },
+    {
+      "id": "newfangled-audio--newfangled-equivocate",
+      "manufacturerId": "newfangled-audio",
+      "name": "Newfangled EQuivocate"
+    },
+    {
+      "id": "avid--normalize-gain",
+      "manufacturerId": "avid",
+      "name": "Normalize-Gain"
+    },
+    {
+      "id": "avid--notestack",
+      "manufacturerId": "avid",
+      "name": "NoteStack"
+    },
+    {
+      "id": "plugin-alliance--noveltech-character",
+      "manufacturerId": "plugin-alliance",
+      "name": "Noveltech Character",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/character"
+    },
+    {
+      "id": "plugin-alliance--noveltech-vocal-enhancer",
+      "manufacturerId": "plugin-alliance",
+      "name": "Noveltech Vocal Enhancer",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/vocal-enhancer"
+    },
+    {
+      "id": "spectrasonics--omnisphere",
+      "manufacturerId": "spectrasonics",
+      "name": "Omnisphere"
+    },
+    {
+      "id": "avid--orange-phaser",
+      "manufacturerId": "avid",
+      "name": "Orange Phaser"
+    },
+    {
+      "id": "united-plugins--orbitroncore",
+      "manufacturerId": "united-plugins",
+      "name": "OrbitronCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "sonnox--oxford-drum-gate-2",
+      "manufacturerId": "sonnox",
+      "name": "Oxford Drum Gate 2"
+    },
+    {
+      "id": "sonnox--oxford-drum-gate",
+      "manufacturerId": "sonnox",
+      "name": "Oxford Drum Gate"
+    },
+    {
+      "id": "sonnox--oxford-inflator",
+      "manufacturerId": "sonnox",
+      "name": "Oxford Inflator"
+    },
+    {
+      "id": "sonnox--oxford-transmod",
+      "manufacturerId": "sonnox",
+      "name": "Oxford TransMod"
+    },
+    {
+      "id": "avid--pitch-shift-legacy",
+      "manufacturerId": "avid",
+      "name": "Pitch Shift Legacy"
+    },
+    {
+      "id": "avid--pitchcontrol",
+      "manufacturerId": "avid",
+      "name": "PitchControl"
+    },
+    {
+      "id": "avid--pitchii",
+      "manufacturerId": "avid",
+      "name": "PitchII"
+    },
+    {
+      "id": "plugin-alliance--pro-audio-dsp-dsm-v3",
+      "manufacturerId": "plugin-alliance",
+      "name": "Pro Audio DSP DSM V3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/dsm-v3"
+    },
+    {
+      "id": "soundspot--propane",
+      "manufacturerId": "soundspot",
+      "name": "Propane"
+    },
+    {
+      "id": "plugin-alliance--purple-audio-mc-77",
+      "manufacturerId": "plugin-alliance",
+      "name": "Purple Audio MC 77",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/mc77"
+    },
+    {
+      "id": "avid--purple-audio-mc77",
+      "manufacturerId": "avid",
+      "name": "Purple Audio MC77"
+    },
+    {
+      "id": "united-plugins--quickvoxcore",
+      "manufacturerId": "united-plugins",
+      "name": "QuickVoxCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "xln-audio--rc-20-retro-color",
+      "manufacturerId": "xln-audio",
+      "name": "RC-20 Retro Color"
+    },
+    {
+      "id": "reaktor-6--reaktor-6",
+      "manufacturerId": "reaktor-6",
+      "name": "Reaktor 6"
+    },
+    {
+      "id": "steinberg--reason-rack-plugin",
+      "manufacturerId": "steinberg",
+      "name": "Reason Rack Plugin"
+    },
+    {
+      "id": "avid--rectifi",
+      "manufacturerId": "avid",
+      "name": "RectiFi"
+    },
+    {
+      "id": "united-plugins--retronautcore",
+      "manufacturerId": "united-plugins",
+      "name": "RetronautCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "avid--reverse-dc-removal",
+      "manufacturerId": "avid",
+      "name": "Reverse-DC Removal"
+    },
+    {
+      "id": "audiomodern--riffer",
+      "manufacturerId": "audiomodern",
+      "name": "Riffer"
+    },
+    {
+      "id": "avid--roto-speaker",
+      "manufacturerId": "avid",
+      "name": "Roto Speaker"
+    },
+    {
+      "id": "united-plugins--royalcompressor",
+      "manufacturerId": "united-plugins",
+      "name": "RoyalCompressor",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "sir-audio-tools--standardclip",
+      "manufacturerId": "sir-audio-tools",
+      "name": "StandardCLIP"
+    },
+    {
+      "id": "wavesfactory--sk10",
+      "manufacturerId": "wavesfactory",
+      "name": "SK10"
+    },
+    {
+      "id": "plugin-alliance--spl-attacker-plus",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Attacker Plus",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/attacker-plus"
+    },
+    {
+      "id": "plugin-alliance--spl-big",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL BiG",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/spl-big"
+    },
+    {
+      "id": "plugin-alliance--spl-de-esser-dual-band",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL De-Esser Dual-Band"
+    },
+    {
+      "id": "plugin-alliance--spl-de-esser",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL De-Esser"
+    },
+    {
+      "id": "plugin-alliance--spl-de-verb-plus",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL De-Verb Plus",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/de-verb-plus"
+    },
+    {
+      "id": "plugin-alliance--spl-drumxchanger",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL DrumXchanger",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/drumxchanger"
+    },
+    {
+      "id": "plugin-alliance--spl-eq-ranger-plus",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL EQ Ranger Plus",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/eq-ranger-plus"
+    },
+    {
+      "id": "plugin-alliance--spl-free-ranger",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Free Ranger"
+    },
+    {
+      "id": "plugin-alliance--spl-hawkeye",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL HawkEye",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/hawkeye"
+    },
+    {
+      "id": "plugin-alliance--spl-iron",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL IRON",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/iron"
+    },
+    {
+      "id": "spl--spl-machine-head",
+      "manufacturerId": "spl",
+      "name": "SPL Machine Head"
+    },
+    {
+      "id": "plugin-alliance--spl-mo-verb-plus",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Mo-Verb Plus",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/mo-verb-plus"
+    },
+    {
+      "id": "plugin-alliance--spl-pq",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL PQ",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/pq"
+    },
+    {
+      "id": "plugin-alliance--spl-passeq-single",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Passeq Single",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/passeq"
+    },
+    {
+      "id": "plugin-alliance--spl-passeq",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Passeq",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/passeq"
+    },
+    {
+      "id": "plugin-alliance--spl-transient-designer-plus",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Transient Designer Plus",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/transient-designer-plus"
+    },
+    {
+      "id": "plugin-alliance--spl-transient-designer",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Transient Designer",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/transient-designer-plus"
+    },
+    {
+      "id": "plugin-alliance--spl-twintube",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL TwinTube",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/twintube"
+    },
+    {
+      "id": "plugin-alliance--spl-vitalizer-mk2-t",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Vitalizer MK2-T"
+    },
+    {
+      "id": "plugin-alliance--spl-vitalizer-mk3-t",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Vitalizer MK3-T",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/vitalizer-mk3-t"
+    },
+    {
+      "id": "ssl--ssl-360-link-bus-compressor",
+      "manufacturerId": "ssl",
+      "name": "SSL 360 Link Bus Compressor",
+      "updatePortalUrl": "https://solidstatelogic.com/support/downloads"
+    },
+    {
+      "id": "ssl--ssl-360-link-channel-strip",
+      "manufacturerId": "ssl",
+      "name": "SSL 360 Link Channel Strip",
+      "updatePortalUrl": "https://solidstatelogic.com/support/downloads"
+    },
+    {
+      "id": "ssl--ssl-4k-b",
+      "manufacturerId": "ssl",
+      "name": "SSL 4K B"
+    },
+    {
+      "id": "ssl--ssl-4k-e",
+      "manufacturerId": "ssl",
+      "name": "SSL 4K E"
+    },
+    {
+      "id": "ssl--ssl-acoustifier",
+      "manufacturerId": "ssl",
+      "name": "SSL Acoustifier"
+    },
+    {
+      "id": "ssl--blitzer",
+      "manufacturerId": "ssl",
+      "name": "Blitzer"
+    },
+    {
+      "id": "ssl--ssl-deessentials-deess",
+      "manufacturerId": "ssl",
+      "name": "SSL DeEssentials DeEss"
+    },
+    {
+      "id": "ssl--ssl-digicrush",
+      "manufacturerId": "ssl",
+      "name": "SSL Digicrush"
+    },
+    {
+      "id": "ssl--ssl-fusion-hf-compressor",
+      "manufacturerId": "ssl",
+      "name": "SSL Fusion HF Compressor"
+    },
+    {
+      "id": "ssl--ssl-fusion-stereo-image",
+      "manufacturerId": "ssl",
+      "name": "SSL Fusion Stereo Image"
+    },
+    {
+      "id": "ssl--ssl-fusion-transformer",
+      "manufacturerId": "ssl",
+      "name": "SSL Fusion Transformer"
+    },
+    {
+      "id": "ssl--ssl-fusion-vintage-drive",
+      "manufacturerId": "ssl",
+      "name": "SSL Fusion Vintage Drive"
+    },
+    {
+      "id": "ssl--ssl-fusion-violet-eq",
+      "manufacturerId": "ssl",
+      "name": "SSL Fusion Violet EQ"
+    },
+    {
+      "id": "ssl--ssl-g3-multibuscomp",
+      "manufacturerId": "ssl",
+      "name": "SSL G3 MultiBusComp"
+    },
+    {
+      "id": "ssl--ssl-gateverb",
+      "manufacturerId": "ssl",
+      "name": "SSL GateVerb"
+    },
+    {
+      "id": "ssl--ssl-guitarstrip",
+      "manufacturerId": "ssl",
+      "name": "SSL GuitarStrip"
+    },
+    {
+      "id": "ssl--ssl-lmc",
+      "manufacturerId": "ssl",
+      "name": "SSL LMC+"
+    },
+    {
+      "id": "ssl--ssl-meter-pro",
+      "manufacturerId": "ssl",
+      "name": "SSL Meter Pro"
+    },
+    {
+      "id": "ssl--ssl-meter",
+      "manufacturerId": "ssl",
+      "name": "SSL Meter"
+    },
+    {
+      "id": "ssl--ssl-module8",
+      "manufacturerId": "ssl",
+      "name": "SSL Module8"
+    },
+    {
+      "id": "ssl--ssl-native-bus-compressor-2",
+      "manufacturerId": "ssl",
+      "name": "SSL Native Bus Compressor 2"
+    },
+    {
+      "id": "ssl--ssl-native-channel-strip-2",
+      "manufacturerId": "ssl",
+      "name": "SSL Native Channel Strip 2"
+    },
+    {
+      "id": "ssl--ssl-native-drumstrip",
+      "manufacturerId": "ssl",
+      "name": "SSL Native Drumstrip"
+    },
+    {
+      "id": "ssl--ssl-native-flexverb",
+      "manufacturerId": "ssl",
+      "name": "SSL Native FlexVerb"
+    },
+    {
+      "id": "ssl--ssl-native-vocalstrip-2",
+      "manufacturerId": "ssl",
+      "name": "SSL Native Vocalstrip 2"
+    },
+    {
+      "id": "ssl--ssl-native-x-comp",
+      "manufacturerId": "ssl",
+      "name": "SSL Native X-Comp"
+    },
+    {
+      "id": "ssl--ssl-native-x-eq-2",
+      "manufacturerId": "ssl",
+      "name": "SSL Native X-EQ 2"
+    },
+    {
+      "id": "ssl--ssl-native-x-echo",
+      "manufacturerId": "ssl",
+      "name": "SSL Native X-Echo"
+    },
+    {
+      "id": "ssl--ssl-native-x-phase",
+      "manufacturerId": "ssl",
+      "name": "SSL Native X-Phase"
+    },
+    {
+      "id": "ssl--ssl-native-x-saturator",
+      "manufacturerId": "ssl",
+      "name": "SSL Native X-Saturator"
+    },
+    {
+      "id": "ssl--ssl-native-x-valvecomp",
+      "manufacturerId": "ssl",
+      "name": "SSL Native X-ValveComp"
+    },
+    {
+      "id": "ssl--ssl-plateverb",
+      "manufacturerId": "ssl",
+      "name": "SSL PlateVerb"
+    },
+    {
+      "id": "ssl--ssl-sourcerer",
+      "manufacturerId": "ssl",
+      "name": "SSL Sourcerer"
+    },
+    {
+      "id": "ssl--ssl-springverb",
+      "manufacturerId": "ssl",
+      "name": "SSL SpringVerb"
+    },
+    {
+      "id": "ssl--ssl-subgen",
+      "manufacturerId": "ssl",
+      "name": "SSL SubGen"
+    },
+    {
+      "id": "ssl--ssl-x-delay",
+      "manufacturerId": "ssl",
+      "name": "SSL X-Delay"
+    },
+    {
+      "id": "ssl--ssl-x-dyneq",
+      "manufacturerId": "ssl",
+      "name": "SSL X-DynEQ"
+    },
+    {
+      "id": "ssl--ssl-x-gate",
+      "manufacturerId": "ssl",
+      "name": "SSL X-Gate"
+    },
+    {
+      "id": "ssl--ssl-x-limit",
+      "manufacturerId": "ssl",
+      "name": "SSL X-Limit"
+    },
+    {
+      "id": "avid--sansamp-psa-1",
+      "manufacturerId": "avid",
+      "name": "SansAmp PSA-1"
+    },
+    {
+      "id": "softube--saturation-knob",
+      "manufacturerId": "softube",
+      "name": "Saturation Knob"
+    },
+    {
+      "id": "plugin-alliance--schoeps-double-ms",
+      "manufacturerId": "plugin-alliance",
+      "name": "Schoeps Double MS"
+    },
+    {
+      "id": "plugin-alliance--schoeps-mono-upmix-1to2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Schoeps Mono Upmix 1to2"
+    },
+    {
+      "id": "plugin-alliance--schoeps-mono-upmix-1to3",
+      "manufacturerId": "plugin-alliance",
+      "name": "Schoeps Mono Upmix 1to3"
+    },
+    {
+      "id": "avid--scifi",
+      "manufacturerId": "avid",
+      "name": "SciFi"
+    },
+    {
+      "id": "plugin-alliance--shadow-hills-class-a-mastering-comp",
+      "manufacturerId": "plugin-alliance",
+      "name": "Shadow Hills Class A Mastering Comp",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/mastering-compressor-class-a"
+    },
+    {
+      "id": "plugin-alliance--shadow-hills-mastering-compressor",
+      "manufacturerId": "plugin-alliance",
+      "name": "Shadow Hills Mastering Compressor",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/mastering-compressor-class-a"
+    },
+    {
+      "id": "plugin-alliance--shadow-hills-optomax",
+      "manufacturerId": "plugin-alliance",
+      "name": "Shadow Hills OptoMax",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/optomax"
+    },
+    {
+      "id": "cableguys--shaperbox-2",
+      "manufacturerId": "cableguys",
+      "name": "ShaperBox 2"
+    },
+    {
+      "id": "avid--signalgenerator",
+      "manufacturerId": "avid",
+      "name": "SignalGenerator"
+    },
+    {
+      "id": "black-salt-audio--silencer",
+      "manufacturerId": "black-salt-audio",
+      "name": "Silencer"
+    },
+    {
+      "id": "aberrant-dsp--sketchcassette-ii",
+      "manufacturerId": "aberrant-dsp",
+      "name": "SketchCassette II"
+    },
+    {
+      "id": "slate-digital--bus-clipper",
+      "manufacturerId": "slate-digital",
+      "name": "Bus Clipper"
+    },
+    {
+      "id": "slate-digital--fg-x-2",
+      "manufacturerId": "slate-digital",
+      "name": "FG-X 2"
+    },
+    {
+      "id": "slate-digital--fresh-air",
+      "manufacturerId": "slate-digital",
+      "name": "Fresh Air"
+    },
+    {
+      "id": "slate-digital--heatwave",
+      "manufacturerId": "slate-digital",
+      "name": "Heatwave"
+    },
+    {
+      "id": "slate-digital--inf-bass",
+      "manufacturerId": "slate-digital",
+      "name": "Inf Bass"
+    },
+    {
+      "id": "slate-digital--inf-eq",
+      "manufacturerId": "slate-digital",
+      "name": "Inf EQ"
+    },
+    {
+      "id": "slate-digital--inf-horizon",
+      "manufacturerId": "slate-digital",
+      "name": "Inf Horizon"
+    },
+    {
+      "id": "slate-digital--mo-tt",
+      "manufacturerId": "slate-digital",
+      "name": "MO-TT"
+    },
+    {
+      "id": "slate-digital--metapitch",
+      "manufacturerId": "slate-digital",
+      "name": "MetaPitch"
+    },
+    {
+      "id": "slate-digital--metatune",
+      "manufacturerId": "slate-digital",
+      "name": "MetaTune"
+    },
+    {
+      "id": "slate-digital--murda-melodies",
+      "manufacturerId": "slate-digital",
+      "name": "Murda Melodies"
+    },
+    {
+      "id": "slate-digital--rotary-sd-147",
+      "manufacturerId": "slate-digital",
+      "name": "Rotary SD-147"
+    },
+    {
+      "id": "slate-digital--slate-digital-fg-x",
+      "manufacturerId": "slate-digital",
+      "name": "Slate Digital FG-X"
+    },
+    {
+      "id": "slate-digital--stellar-echo-sd-201",
+      "manufacturerId": "slate-digital",
+      "name": "Stellar Echo SD-201"
+    },
+    {
+      "id": "slate-digital--storch-filter",
+      "manufacturerId": "slate-digital",
+      "name": "Storch Filter"
+    },
+    {
+      "id": "slate-digital--submerge",
+      "manufacturerId": "slate-digital",
+      "name": "Submerge"
+    },
+    {
+      "id": "slate-digital--vbc-fg-grey",
+      "manufacturerId": "slate-digital",
+      "name": "VBC FG-Grey"
+    },
+    {
+      "id": "slate-digital--vbc-fg-mu",
+      "manufacturerId": "slate-digital",
+      "name": "VBC FG-MU"
+    },
+    {
+      "id": "slate-digital--vbc-fg-red",
+      "manufacturerId": "slate-digital",
+      "name": "VBC FG-Red"
+    },
+    {
+      "id": "slate-digital--vbc-rack",
+      "manufacturerId": "slate-digital",
+      "name": "VBC Rack"
+    },
+    {
+      "id": "slate-digital--verbsuite-classics",
+      "manufacturerId": "slate-digital",
+      "name": "VerbSuite Classics"
+    },
+    {
+      "id": "slate-digital--virtual-mix-rack",
+      "manufacturerId": "slate-digital",
+      "name": "Virtual Mix Rack"
+    },
+    {
+      "id": "slate-digital--virtual-tape-machines",
+      "manufacturerId": "slate-digital",
+      "name": "Virtual Tape Machines"
+    },
+    {
+      "id": "avid--smack",
+      "manufacturerId": "avid",
+      "name": "Smack"
+    },
+    {
+      "id": "wavesfactory--snarebuzz",
+      "manufacturerId": "wavesfactory",
+      "name": "SnareBuzz"
+    },
+    {
+      "id": "sonarworks--soundid-reference-plugin",
+      "manufacturerId": "sonarworks",
+      "name": "SoundID Reference Plugin",
+      "updatePortalUrl": "https://www.sonarworks.com/soundid-reference/download"
+    },
+    {
+      "id": "soundtoys--crystallizer",
+      "manufacturerId": "soundtoys",
+      "name": "Crystallizer",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--decapitator",
+      "manufacturerId": "soundtoys",
+      "name": "Decapitator",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--devilloc",
+      "manufacturerId": "soundtoys",
+      "name": "DevilLoc",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--devillocdeluxe",
+      "manufacturerId": "soundtoys",
+      "name": "DevilLocDeluxe",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--echoboy",
+      "manufacturerId": "soundtoys",
+      "name": "EchoBoy",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--echoboyjr",
+      "manufacturerId": "soundtoys",
+      "name": "EchoBoyJr",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--effectrack",
+      "manufacturerId": "soundtoys",
+      "name": "EffectRack",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--filterfreak1",
+      "manufacturerId": "soundtoys",
+      "name": "FilterFreak1",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--filterfreak2",
+      "manufacturerId": "soundtoys",
+      "name": "FilterFreak2",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--littlealterboy",
+      "manufacturerId": "soundtoys",
+      "name": "LittleAlterBoy",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--littlemicroshift",
+      "manufacturerId": "soundtoys",
+      "name": "LittleMicroShift",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--littleplate",
+      "manufacturerId": "soundtoys",
+      "name": "LittlePlate",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--littleprimaltap",
+      "manufacturerId": "soundtoys",
+      "name": "LittlePrimalTap",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--littleradiator",
+      "manufacturerId": "soundtoys",
+      "name": "LittleRadiator",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--microshift",
+      "manufacturerId": "soundtoys",
+      "name": "MicroShift",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--panman",
+      "manufacturerId": "soundtoys",
+      "name": "PanMan",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--phasemistress",
+      "manufacturerId": "soundtoys",
+      "name": "PhaseMistress",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--primaltap",
+      "manufacturerId": "soundtoys",
+      "name": "PrimalTap",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--radiator",
+      "manufacturerId": "soundtoys",
+      "name": "Radiator",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--sieq",
+      "manufacturerId": "soundtoys",
+      "name": "SieQ",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--spaceblender",
+      "manufacturerId": "soundtoys",
+      "name": "SpaceBlender",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--superplate",
+      "manufacturerId": "soundtoys",
+      "name": "SuperPlate",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "soundtoys--tremolator",
+      "manufacturerId": "soundtoys",
+      "name": "Tremolator",
+      "updatePortalUrl": "https://www.soundtoys.com/release-log/"
+    },
+    {
+      "id": "spectralayers-bridge--spectralayers-bridge",
+      "manufacturerId": "steinberg",
+      "name": "SpectraLayers-Bridge",
+      "updatePortalUrl": "https://www.steinberg.net/downloads/"
+    },
+    {
+      "id": "steinberg--spectralayers",
+      "manufacturerId": "steinberg",
+      "name": "SpectraLayers",
+      "updatePortalUrl": "https://www.steinberg.net/downloads/"
+    },
+    {
+      "id": "wavesfactory--spectre",
+      "manufacturerId": "wavesfactory",
+      "name": "Spectre"
+    },
+    {
+      "id": "splice--splice",
+      "manufacturerId": "splice",
+      "name": "Splice"
+    },
+    {
+      "id": "air--structure",
+      "manufacturerId": "air",
+      "name": "Structure"
+    },
+    {
+      "id": "avid--studio-reverb",
+      "manufacturerId": "avid",
+      "name": "Studio Reverb"
+    },
+    {
+      "id": "spectrasonics--stylusrmx",
+      "manufacturerId": "spectrasonics",
+      "name": "StylusRMX"
+    },
+    {
+      "id": "plugin-alliance--suhr-pt100",
+      "manufacturerId": "plugin-alliance",
+      "name": "Suhr PT100",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/pt100"
+    },
+    {
+      "id": "plugin-alliance--suhr-se100",
+      "manufacturerId": "plugin-alliance",
+      "name": "Suhr SE100",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/se100"
+    },
+    {
+      "id": "plugin-alliance--bde-pa",
+      "manufacturerId": "plugin-alliance",
+      "name": "BDE PA"
+    },
+    {
+      "id": "plugin-alliance--click-boom-pa",
+      "manufacturerId": "plugin-alliance",
+      "name": "Click Boom PA",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/click-boom"
+    },
+    {
+      "id": "plugin-alliance--hitstrip-pa",
+      "manufacturerId": "plugin-alliance",
+      "name": "HitStrip PA",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/hitstrip"
+    },
+    {
+      "id": "plugin-alliance--knocktonal-pa",
+      "manufacturerId": "plugin-alliance",
+      "name": "Knocktonal PA",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/knocktonal"
+    },
+    {
+      "id": "plugin-alliance--spread-pa",
+      "manufacturerId": "plugin-alliance",
+      "name": "Spread PA",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/spread"
+    },
+    {
+      "id": "plugin-alliance--swivel-audio-the-sauce",
+      "manufacturerId": "plugin-alliance",
+      "name": "Swivel Audio The Sauce"
+    },
+    {
+      "id": "plugin-alliance--tbtech-cenozoix-compressor",
+      "manufacturerId": "plugin-alliance",
+      "name": "TBTECH Cenozoix Compressor",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/cenozoix-compressor"
+    },
+    {
+      "id": "plugin-alliance--tbtech-kirchhoff-eq",
+      "manufacturerId": "plugin-alliance",
+      "name": "TBTECH Kirchhoff-EQ",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/kirchhoff-eq"
+    },
+    {
+      "id": "plugin-alliance--tbtech-trinity-shaper",
+      "manufacturerId": "plugin-alliance",
+      "name": "TBTECH Trinity Shaper",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/trinity-shaper"
+    },
+    {
+      "id": "tokyo-dawn-labs--tdr-kotelnikov",
+      "manufacturerId": "tokyo-dawn-labs",
+      "name": "TDR Kotelnikov"
+    },
+    {
+      "id": "tokyo-dawn-labs--tdr-molotok",
+      "manufacturerId": "tokyo-dawn-labs",
+      "name": "TDR Molotok"
+    },
+    {
+      "id": "tokyo-dawn-labs--tdr-nova",
+      "manufacturerId": "tokyo-dawn-labs",
+      "name": "TDR Nova"
+    },
+    {
+      "id": "tokyo-dawn-labs--tdr-prism",
+      "manufacturerId": "tokyo-dawn-labs",
+      "name": "TDR Prism"
+    },
+    {
+      "id": "tokyo-dawn-labs--tdr-vos-slickeq",
+      "manufacturerId": "tokyo-dawn-labs",
+      "name": "TDR VOS SlickEQ"
+    },
+    {
+      "id": "klanghelm--tensjr",
+      "manufacturerId": "klanghelm",
+      "name": "TENSjr"
+    },
+    {
+      "id": "overloud--th-u-slate",
+      "manufacturerId": "overloud",
+      "name": "TH-U Slate"
+    },
+    {
+      "id": "plugin-alliance--the-oven",
+      "manufacturerId": "plugin-alliance",
+      "name": "THE OVEN",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/the-oven"
+    },
+    {
+      "id": "thx--thx-spatial-creator",
+      "manufacturerId": "thx",
+      "name": "THX Spatial Creator"
+    },
+    {
+      "id": "plugin-alliance--tomo-audiolabs-lisa",
+      "manufacturerId": "plugin-alliance",
+      "name": "TOMO Audiolabs LISA",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/lisa"
+    },
+    {
+      "id": "avid--tape-echo",
+      "manufacturerId": "avid",
+      "name": "Tape Echo"
+    },
+    {
+      "id": "audiothing--things-texture",
+      "manufacturerId": "audiothing",
+      "name": "Things Texture"
+    },
+    {
+      "id": "avid--time-shift",
+      "manufacturerId": "avid",
+      "name": "Time Shift"
+    },
+    {
+      "id": "avid--timeadjuster",
+      "manufacturerId": "avid",
+      "name": "TimeAdjuster"
+    },
+    {
+      "id": "metric-halo--transientcontrol",
+      "manufacturerId": "metric-halo",
+      "name": "TransientControl"
+    },
+    {
+      "id": "united-plugins--traptunecore",
+      "manufacturerId": "united-plugins",
+      "name": "TrapTuneCore",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "avid--tri-knob-fuzz",
+      "manufacturerId": "avid",
+      "name": "Tri-Knob Fuzz"
+    },
+    {
+      "id": "steven-slate--trigger-2",
+      "manufacturerId": "steven-slate",
+      "name": "Trigger_2"
+    },
+    {
+      "id": "avid--trim",
+      "manufacturerId": "avid",
+      "name": "Trim"
+    },
+    {
+      "id": "kazrog--true-iron",
+      "manufacturerId": "kazrog",
+      "name": "True Iron"
+    },
+    {
+      "id": "uvi--uviworkstationaax",
+      "manufacturerId": "uvi",
+      "name": "UVIWorkstationAAX"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-byome",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Byome"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-bass-mint",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Bass Mint"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-battalion",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Battalion"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-dent-2",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Dent 2"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-fault",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Fault"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-g8",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio G8"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-indent-2",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Indent 2"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-instant-delay",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Instant Delay"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-lion",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio LION"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-needlepoint",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Needlepoint"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-sandman-pro",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Sandman Pro"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-sandman",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Sandman"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-silo",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Silo"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-specops",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio SpecOps"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-tails",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Tails"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-triad",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Triad"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-zip",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Zip"
+    },
+    {
+      "id": "unfiltered-audio--unfiltered-audio-lo-fi-af",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio lo-fi-af"
+    },
+    {
+      "id": "united-plugins--urbanpuncher",
+      "manufacturerId": "united-plugins",
+      "name": "UrbanPuncher",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "slate-digital--vsx",
+      "manufacturerId": "slate-digital",
+      "name": "VSX"
+    },
+    {
+      "id": "air--vacuum",
+      "manufacturerId": "air",
+      "name": "Vacuum"
+    },
+    {
+      "id": "valhalla-dsp--valhalladelay",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaDelay",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "valhalla-dsp--valhallafreqecho",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaFreqEcho",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "valhalla-dsp--valhallafutureverb",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaFutureVerb",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "valhalla-dsp--valhallaplate",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaPlate",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "valhalla-dsp--valhallaroom",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaRoom",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "valhalla-dsp--valhallashimmer",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaShimmer",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "valhalla-dsp--valhallasupermassive",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaSupermassive",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "valhalla-dsp--valhallavintageverb",
+      "manufacturerId": "valhalla-dsp",
+      "name": "ValhallaVintageVerb",
+      "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/"
+    },
+    {
+      "id": "avid--varifi",
+      "manufacturerId": "avid",
+      "name": "VariFi"
+    },
+    {
+      "id": "avid--velocitycontrol",
+      "manufacturerId": "avid",
+      "name": "VelocityControl"
+    },
+    {
+      "id": "plugin-alliance--vertigo-vsc-2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Vertigo VSC-2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/vsc-2"
+    },
+    {
+      "id": "plugin-alliance--vertigo-vsm-3",
+      "manufacturerId": "plugin-alliance",
+      "name": "Vertigo VSM-3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/vsm-3"
+    },
+    {
+      "id": "plugin-alliance--vertigo-vss-2",
+      "manufacturerId": "plugin-alliance",
+      "name": "Vertigo VSS-2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/vss-2"
+    },
+    {
+      "id": "avid--vibe-phaser",
+      "manufacturerId": "avid",
+      "name": "Vibe Phaser"
+    },
+    {
+      "id": "antares--vocal-de-esser",
+      "manufacturerId": "antares",
+      "name": "Vocal De-Esser"
+    },
+    {
+      "id": "antares--vocal-reverb",
+      "manufacturerId": "antares",
+      "name": "Vocal Reverb"
+    },
+    {
+      "id": "united-plugins--voxducker",
+      "manufacturerId": "united-plugins",
+      "name": "VoxDucker",
+      "updatePortalUrl": "https://unitedplugins.com/download"
+    },
+    {
+      "id": "wedgeforce--wedge-force-hydro",
+      "manufacturerId": "wedgeforce",
+      "name": "WEDGE FORCE Hydro"
+    },
+    {
+      "id": "wedgeforce--wedge-force-keemun",
+      "manufacturerId": "wedgeforce",
+      "name": "WEDGE FORCE Keemun"
+    },
+    {
+      "id": "wedgeforce--wedge-force-matcha",
+      "manufacturerId": "wedgeforce",
+      "name": "WEDGE FORCE Matcha"
+    },
+    {
+      "id": "wedgeforce--wedge-force-oolong",
+      "manufacturerId": "wedgeforce",
+      "name": "WEDGE FORCE Oolong"
+    },
+    {
+      "id": "klevgrand--walls",
+      "manufacturerId": "klevgrand",
+      "name": "Walls"
+    },
+    {
+      "id": "steinberg--wavelab",
+      "manufacturerId": "steinberg",
+      "name": "WaveLab"
+    },
+    {
+      "id": "waves--waveshell",
+      "manufacturerId": "waves",
+      "name": "WaveShell"
+    },
+    {
+      "id": "avid--white-boost",
+      "manufacturerId": "avid",
+      "name": "White Boost"
+    },
+    {
+      "id": "avid--x-form",
+      "manufacturerId": "avid",
+      "name": "X-Form"
+    },
+    {
+      "id": "air--xpand-2",
+      "manufacturerId": "air",
+      "name": "Xpand!2"
+    },
+    {
+      "id": "plugin-alliance--bx-2098-eq",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_2098 EQ",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_2098-eq"
+    },
+    {
+      "id": "plugin-alliance--bx-xl-v2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_XL V2"
+    },
+    {
+      "id": "plugin-alliance--bx-xl-v3",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_XL V3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_xl-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-aura",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_aura",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_aura"
+    },
+    {
+      "id": "plugin-alliance--bx-bassdude",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_bassdude",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_bassdude"
+    },
+    {
+      "id": "plugin-alliance--bx-blackdist2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_blackdist2"
+    },
+    {
+      "id": "plugin-alliance--bx-bluechorus2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_bluechorus2"
+    },
+    {
+      "id": "plugin-alliance--bx-boom-v3",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_boom V3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_boom-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-boom",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_boom",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_boom-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-cleansweep-pro",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_cleansweep Pro",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_cleansweep-pro"
+    },
+    {
+      "id": "plugin-alliance--bx-cleansweep-v2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_cleansweep V2"
+    },
+    {
+      "id": "plugin-alliance--bx-clipper",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_clipper",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_clipper"
+    },
+    {
+      "id": "plugin-alliance--bx-console-amek-200",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_console AMEK 200",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_console-amek-9099"
+    },
+    {
+      "id": "plugin-alliance--bx-console-amek-9099",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_console AMEK 9099",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_console-amek-9099"
+    },
+    {
+      "id": "plugin-alliance--bx-console-focusrite-sc",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_console Focusrite SC",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_console-focusrite-sc"
+    },
+    {
+      "id": "plugin-alliance--bx-console-n",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_console N",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_console-n"
+    },
+    {
+      "id": "plugin-alliance--bx-console-ssl-4000-e",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_console SSL 4000 E",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-e"
+    },
+    {
+      "id": "plugin-alliance--bx-console-ssl-4000-g",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_console SSL 4000 G",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-e"
+    },
+    {
+      "id": "plugin-alliance--bx-console-ssl-9000-j",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_console SSL 9000 J",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-e"
+    },
+    {
+      "id": "plugin-alliance--bx-control-v2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_control V2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_control-v2"
+    },
+    {
+      "id": "plugin-alliance--bx-crispyscale",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_crispyscale"
+    },
+    {
+      "id": "plugin-alliance--bx-crispytuner",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_crispytuner",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_crispytuner"
+    },
+    {
+      "id": "plugin-alliance--bx-delay2500",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_delay2500",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_delay-2500"
+    },
+    {
+      "id": "plugin-alliance--bx-digital-v3-mix",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_digital V3 mix",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_digital-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-digital-v3",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_digital V3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_digital-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-distorange",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_distorange"
+    },
+    {
+      "id": "plugin-alliance--bx-dyneq-v2-mono",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_dynEQ V2 Mono",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_dyneq-v2"
+    },
+    {
+      "id": "plugin-alliance--bx-dyneq-v2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_dynEQ V2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_dyneq-v2"
+    },
+    {
+      "id": "plugin-alliance--bx-enhancer",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_enhancer",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_enhancer"
+    },
+    {
+      "id": "plugin-alliance--bx-glue",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_glue",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_glue"
+    },
+    {
+      "id": "plugin-alliance--bx-greenscreamer",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_greenscreamer"
+    },
+    {
+      "id": "plugin-alliance--bx-hybrid-v2-mix",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_hybrid V2 mix",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_hybrid-v2"
+    },
+    {
+      "id": "plugin-alliance--bx-hybrid-v2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_hybrid V2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_hybrid-v2"
+    },
+    {
+      "id": "plugin-alliance--bx-limiter-true-peak",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_limiter True Peak",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_limiter-true-peak"
+    },
+    {
+      "id": "plugin-alliance--bx-limiter",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_limiter",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_limiter-true-peak"
+    },
+    {
+      "id": "plugin-alliance--bx-masterdesk-classic",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_masterdesk Classic",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro"
+    },
+    {
+      "id": "plugin-alliance--bx-masterdesk-pro",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_masterdesk Pro",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro"
+    },
+    {
+      "id": "plugin-alliance--bx-masterdesk-true-peak",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_masterdesk True Peak",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro"
+    },
+    {
+      "id": "plugin-alliance--bx-masterdesk",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_masterdesk",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro"
+    },
+    {
+      "id": "plugin-alliance--bx-megadual",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_megadual",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_megadual"
+    },
+    {
+      "id": "plugin-alliance--bx-megasingle",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_megasingle"
+    },
+    {
+      "id": "plugin-alliance--bx-metal2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_metal2"
+    },
+    {
+      "id": "plugin-alliance--bx-meter",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_meter"
+    },
+    {
+      "id": "plugin-alliance--bx-oberhausen",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_oberhausen",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_oberhausen"
+    },
+    {
+      "id": "plugin-alliance--bx-opto-pedal",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_opto Pedal",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_opto"
+    },
+    {
+      "id": "plugin-alliance--bx-opto",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_opto",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_opto"
+    },
+    {
+      "id": "plugin-alliance--bx-paneq",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_panEQ",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_paneq"
+    },
+    {
+      "id": "plugin-alliance--bx-pulsar",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_pulsar",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_pulsar"
+    },
+    {
+      "id": "plugin-alliance--bx-refinement-v3",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_refinement V3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_refinement-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-refinement",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_refinement",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_refinement-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-rockergain100",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_rockergain100",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_rockergain100"
+    },
+    {
+      "id": "plugin-alliance--bx-rockrack-v3-player",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_rockrack V3 Player",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_rockrack-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-rockrack-v3",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_rockrack V3",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_rockrack-v3"
+    },
+    {
+      "id": "plugin-alliance--bx-rooms",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_rooMS",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_rooms"
+    },
+    {
+      "id": "plugin-alliance--bx-saturator-v2",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_saturator V2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_saturator-v2"
+    },
+    {
+      "id": "plugin-alliance--bx-shredspread",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_shredspread",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/spread"
+    },
+    {
+      "id": "plugin-alliance--bx-solo",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_solo"
+    },
+    {
+      "id": "plugin-alliance--bx-stereomaker",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_stereomaker",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_stereomaker"
+    },
+    {
+      "id": "plugin-alliance--bx-subfilter",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_subfilter"
+    },
+    {
+      "id": "plugin-alliance--bx-subsynth",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_subsynth",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_subsynth"
+    },
+    {
+      "id": "plugin-alliance--bx-tonebox",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_tonebox",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_tonebox"
+    },
+    {
+      "id": "plugin-alliance--bx-townhouse-buss-compressor",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_townhouse Buss Compressor",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor"
+    },
+    {
+      "id": "plugin-alliance--bx-tuner",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_tuner"
+    },
+    {
+      "id": "plugin-alliance--bx-yellowdrive",
+      "manufacturerId": "plugin-alliance",
+      "name": "bx_yellowdrive"
+    },
+    {
+      "id": "plugin-alliance--elysia-alpha-compressor-v2",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia alpha compressor V2",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2"
+    },
+    {
+      "id": "plugin-alliance--elysia-alpha-master",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia alpha master"
+    },
+    {
+      "id": "plugin-alliance--elysia-alpha-mix",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia alpha mix"
+    },
+    {
+      "id": "plugin-alliance--elysia-karacter-master",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia karacter master",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/karacter"
+    },
+    {
+      "id": "plugin-alliance--elysia-karacter-mix",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia karacter mix",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/karacter"
+    },
+    {
+      "id": "plugin-alliance--elysia-mpressor",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia mpressor",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/mpressor"
+    },
+    {
+      "id": "plugin-alliance--elysia-museq-master",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia museq Master",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/museq"
+    },
+    {
+      "id": "plugin-alliance--elysia-museq-mix",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia museq Mix",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/museq"
+    },
+    {
+      "id": "plugin-alliance--elysia-niveau-filter",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia niveau filter"
+    },
+    {
+      "id": "plugin-alliance--elysia-nvelope",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia nvelope",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/nvelope"
+    },
+    {
+      "id": "plugin-alliance--elysia-phils-cascade",
+      "manufacturerId": "plugin-alliance",
+      "name": "elysia phils cascade",
+      "updatePortalUrl": "https://www.plugin-alliance.com/products/phils-cascade"
+    },
+    {
+      "id": "fiedler-audio--fiedler-audio-splat",
+      "manufacturerId": "fiedler-audio",
+      "name": "fiedler audio splat"
+    },
+    {
+      "id": "fiedler-audio--fiedler-audio-stage",
+      "manufacturerId": "fiedler-audio",
+      "name": "fiedler audio stage"
+    },
+    {
+      "id": "izotope--nectar-3-elements",
+      "manufacturerId": "izotope",
+      "name": "Nectar 3 Elements",
+      "updatePortalUrl": "https://www.izotope.com/en/products/nectar.html"
+    },
+    {
+      "id": "izotope--neutron-3-elements",
+      "manufacturerId": "izotope",
+      "name": "Neutron 3 Elements",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-clipper",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Clipper",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-compressor",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Compressor",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-density",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Density",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-equalizer",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Equalizer",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-exciter",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Exciter",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-gate",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Gate",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-phase",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Phase",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-sculptor",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Sculptor",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-transient-shaper",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Transient Shaper",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-unmask",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Unmask",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--neutron-5-visual-mixer",
+      "manufacturerId": "izotope",
+      "name": "Neutron 5 Visual Mixer",
+      "updatePortalUrl": "https://www.izotope.com/en/products/neutron.html"
+    },
+    {
+      "id": "izotope--ozone-11",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-clarity",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Clarity",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-dynamic-eq",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Dynamic EQ",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-dynamics",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Dynamics",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-equalizer",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Equalizer",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-exciter",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Exciter",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-imager",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Imager",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-impact",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Impact",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-low-end-focus",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Low End Focus",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-master-rebalance",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Master Rebalance",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-match-eq",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Match EQ",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-maximizer",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Maximizer",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-spectral-shaper",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Spectral Shaper",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-stabilizer",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Stabilizer",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-vintage-compressor",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Vintage Compressor",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-vintage-eq",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Vintage EQ",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-vintage-limiter",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Vintage Limiter",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-11-vintage-tape",
+      "manufacturerId": "izotope",
+      "name": "Ozone 11 Vintage Tape",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-dynamic-eq",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Dynamic EQ",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-dynamics",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Dynamics",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-elements",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Elements",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-equalizer",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Equalizer",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-exciter",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Exciter",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-imager",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Imager",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-low-end-focus",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Low End Focus",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-master-rebalance",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Master Rebalance",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-match-eq",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Match EQ",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-maximizer",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Maximizer",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-spectral-shaper",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Spectral Shaper",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-vintage-compressor",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Vintage Compressor",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-vintage-eq",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Vintage EQ",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-vintage-limiter",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Vintage Limiter",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--ozone-9-vintage-tape",
+      "manufacturerId": "izotope",
+      "name": "Ozone 9 Vintage Tape",
+      "updatePortalUrl": "https://www.izotope.com/en/products/ozone.html"
+    },
+    {
+      "id": "izotope--rx-11-ambience-match",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Ambience Match",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-breath-control",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Breath Control",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-connect",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Connect",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-click",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-click",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-clip",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-clip",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-crackle",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-crackle",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-ess",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-ess",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-hum",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-hum",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-plosive",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-plosive",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-reverb",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-reverb",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-de-rustle",
+      "manufacturerId": "izotope",
+      "name": "RX 11 De-rustle",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-dialogue-isolate",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Dialogue Isolate",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-guitar-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Guitar De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-monitor",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Monitor",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-mouth-de-click",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Mouth De-click",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-music-rebalance",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Music Rebalance",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-repair-assistant",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Repair Assistant",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-spectral-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Spectral De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-spectral-editor",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Spectral Editor",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-11-voice-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 11 Voice De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-breath-control",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Breath Control",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-connect",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Connect",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-de-click",
+      "manufacturerId": "izotope",
+      "name": "RX 8 De-click",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-de-clip",
+      "manufacturerId": "izotope",
+      "name": "RX 8 De-clip",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-de-crackle",
+      "manufacturerId": "izotope",
+      "name": "RX 8 De-crackle",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-de-ess",
+      "manufacturerId": "izotope",
+      "name": "RX 8 De-ess",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-de-hum",
+      "manufacturerId": "izotope",
+      "name": "RX 8 De-hum",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-de-plosive",
+      "manufacturerId": "izotope",
+      "name": "RX 8 De-plosive",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-de-reverb",
+      "manufacturerId": "izotope",
+      "name": "RX 8 De-reverb",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-guitar-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Guitar De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-monitor",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Monitor",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-mouth-de-click",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Mouth De-click",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-music-rebalance",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Music Rebalance",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-spectral-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Spectral De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-8-voice-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 8 Voice De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-ambience-match",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Ambience Match",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-breath-control",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Breath Control",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-connect",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Connect",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-click",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-click",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-clip",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-clip",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-crackle",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-crackle",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-ess",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-ess",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-hum",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-hum",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-plosive",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-plosive",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-reverb",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-reverb",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-de-rustle",
+      "manufacturerId": "izotope",
+      "name": "RX 9 De-rustle",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-dialogue-isolate",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Dialogue Isolate",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-guitar-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Guitar De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-monitor",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Monitor",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-mouth-de-click",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Mouth De-click",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-music-rebalance",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Music Rebalance",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-spectral-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Spectral De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--rx-9-voice-de-noise",
+      "manufacturerId": "izotope",
+      "name": "RX 9 Voice De-noise",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--relay",
+      "manufacturerId": "izotope",
+      "name": "Relay",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/relay"
+    },
+    {
+      "id": "izotope--tonal-balance-control-2",
+      "manufacturerId": "izotope",
+      "name": "Tonal Balance Control 2",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/tonal-balance-control"
+    },
+    {
+      "id": "izotope--izotope-trash-2",
+      "manufacturerId": "izotope",
+      "name": "iZotope Trash 2",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--trash",
+      "manufacturerId": "izotope",
+      "name": "Trash",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/trash"
+    },
+    {
+      "id": "izotope--vinyl",
+      "manufacturerId": "izotope",
+      "name": "Vinyl",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "izotope--vocal-doubler",
+      "manufacturerId": "izotope",
+      "name": "Vocal Doubler",
+      "updatePortalUrl": "https://www.izotope.com/pages/release-notes/ozone-standard"
+    },
+    {
+      "id": "oeksound--soothe2",
+      "manufacturerId": "oeksound",
+      "name": "soothe2"
+    },
+    {
+      "id": "universal-audio--uad-software",
+      "manufacturerId": "universal-audio",
+      "name": "UAD Software"
+    },
+    {
+      "id": "softube--central",
+      "manufacturerId": "softube",
+      "name": "Softube Central"
+    },
+    {
+      "id": "native-instruments--native-access",
+      "manufacturerId": "native-instruments",
+      "name": "Native Access products"
+    },
+    {
+      "id": "acon-digital--restoration",
+      "manufacturerId": "acon-digital",
+      "name": "Acon Digital Restoration"
+    },
+    {
+      "id": "accusonus--era",
+      "manufacturerId": "accusonus",
+      "name": "ERA / Accusonus"
+    },
+    {
+      "id": "goodhertz--suite",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "apple--asaf",
+      "manufacturerId": "apple",
+      "name": "Apple Spatial Audio"
+    },
+    {
+      "id": "applied-acoustics--lounge-lizard-session",
+      "manufacturerId": "applied-acoustics",
+      "name": "Lounge Lizard Session"
+    },
+    {
+      "id": "applied-acoustics--strum-acoustic-session",
+      "manufacturerId": "applied-acoustics",
+      "name": "Strum Acoustic Session"
+    },
+    {
+      "id": "applied-acoustics--ultra-analog-session",
+      "manufacturerId": "applied-acoustics",
+      "name": "Ultra Analog Session"
+    },
+    {
+      "id": "metric-halo--channelstrip",
+      "manufacturerId": "metric-halo",
+      "name": "MH ChannelStrip"
+    },
+    {
+      "id": "sonarworks--reference-4",
+      "manufacturerId": "sonarworks",
+      "name": "Sonarworks Reference 4"
+    },
+    {
+      "id": "tal--chorus-lx",
+      "manufacturerId": "tal-software",
+      "name": "TAL-Chorus-LX"
+    },
+    {
+      "id": "tal--reverb-2",
+      "manufacturerId": "tal-software",
+      "name": "TAL-Reverb-2"
+    },
+    {
+      "id": "tal--reverb-3",
+      "manufacturerId": "tal-software",
+      "name": "TAL-Reverb-3"
+    },
+    {
+      "id": "tal--reverb-4",
+      "manufacturerId": "tal-software",
+      "name": "TAL-Reverb-4"
+    },
+    {
+      "id": "native-instruments--b4",
+      "manufacturerId": "native-instruments",
+      "name": "B4 II"
+    },
+    {
+      "id": "oeksound--soothe",
+      "manufacturerId": "oeksound",
+      "name": "soothe"
+    },
+    {
+      "id": "celemony--melodyne-bridge",
+      "manufacturerId": "celemony",
+      "name": "MelodyneBridge"
+    },
+    {
+      "id": "credland--pink",
+      "manufacturerId": "credland",
+      "name": "Pink"
+    },
+    {
+      "id": "cymatics--origin",
+      "manufacturerId": "cymatics",
+      "name": "Cymatics Origin"
+    },
+    {
+      "id": "bettermaker--bus-comp-dsp",
+      "manufacturerId": "bettermaker",
+      "name": "Bettermaker Bus Compressor DSP"
+    },
+    {
+      "id": "bettermaker--mastering-comp-dsp",
+      "manufacturerId": "bettermaker",
+      "name": "Bettermaker Mastering Compressor DSP"
+    },
+    {
+      "id": "izotope--iris-2",
+      "manufacturerId": "izotope",
+      "name": "Iris 2",
+      "updatePortalUrl": "https://www.izotope.com/en/account/downloads.html"
+    },
+    {
+      "id": "izotope--rx",
+      "manufacturerId": "izotope",
+      "name": "RX",
+      "updatePortalUrl": "https://www.izotope.com/en/account/downloads.html"
+    },
+    {
+      "id": "linplug--organ-3",
+      "manufacturerId": "linplug",
+      "name": "Organ 3"
+    },
+    {
+      "id": "metric-halo--character",
+      "manufacturerId": "metric-halo",
+      "name": "Character"
+    },
+    {
+      "id": "metric-halo--haloverb",
+      "manufacturerId": "metric-halo",
+      "name": "HaloVerb"
+    },
+    {
+      "id": "kiive--tape-face",
+      "manufacturerId": "kiive",
+      "name": "Kiive Tape Face"
+    },
+    {
+      "id": "kiive--xtressor",
+      "manufacturerId": "kiive",
+      "name": "Kiive Xtressor"
+    },
+    {
+      "id": "spl--bass-ranger",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Bass Ranger",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads"
+    },
+    {
+      "id": "spl--full-ranger",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Full Ranger",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads"
+    },
+    {
+      "id": "spl--vox-ranger",
+      "manufacturerId": "plugin-alliance",
+      "name": "SPL Vox Ranger",
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads"
+    },
+    {
+      "id": "scuffham--sgear",
+      "manufacturerId": "scuffham-amps",
+      "name": "S-Gear",
+      "updatePortalUrl": "https://www.scuffhamamps.com/downloads"
+    },
+    {
+      "id": "slate--virtual-channel",
+      "manufacturerId": "slate-digital",
+      "name": "Virtual Channel",
+      "updatePortalUrl": "https://slatedigital.com/activate/"
+    },
+    {
+      "id": "slate--virtual-mixbuss",
+      "manufacturerId": "slate-digital",
+      "name": "Virtual MixBuss",
+      "updatePortalUrl": "https://slatedigital.com/activate/"
+    },
+    {
+      "id": "sonnox--oxford-limiter",
+      "manufacturerId": "sonnox",
+      "name": "Oxford Limiter",
+      "updatePortalUrl": "https://www.sonnox.com/downloads"
+    },
+    {
+      "id": "tekit--mscontrol",
+      "manufacturerId": "tekit-audio",
+      "name": "MScontrol"
+    },
+    {
+      "id": "unfiltered--indent",
+      "manufacturerId": "unfiltered-audio",
+      "name": "Unfiltered Audio Indent"
+    },
+    {
+      "id": "waves--studiorack-obs",
+      "manufacturerId": "waves",
+      "name": "Waves StudioRack for OBS",
+      "updatePortalUrl": "https://www.waves.com/downloads/central"
+    },
+    {
+      "id": "fabfilter--pro-q-3",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro-Q 3",
+      "updatePortalUrl": "https://www.fabfilter.com/download"
+    },
+    {
+      "id": "goodhertz--canopenerstudio",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz CanOpener Studio",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--faradaylimiter",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Faraday Limiter",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--gooddither",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Good Dither",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--lohi",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Lohi",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--lossy",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Lossy",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--midside",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Midside",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--midsidematrix",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Midside Matrix",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--panpot",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Panpot",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--tiltshift",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Tiltshift",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--tonecontrol",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Tone Control",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--tremcontrol",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Trem Control",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--vulfcompressor",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Vulf Compressor",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    },
+    {
+      "id": "goodhertz--wowcontrol",
+      "manufacturerId": "goodhertz",
+      "name": "Goodhertz Wow Control",
+      "updatePortalUrl": "https://goodhertz.com/downloads/"
+    }
+  ],
+  "stickySources": [
+    {
+      "url": "https://www.soundtoys.com/release-log/",
+      "manufacturerId": "soundtoys",
+      "label": "Soundtoys release log",
+      "kind": "release-notes"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/ozone-standard",
+      "manufacturerId": "izotope",
+      "label": "Ozone release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Ozone 1"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/ozone-advanced",
+      "manufacturerId": "izotope",
+      "label": "Ozone Advanced release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Ozone 1"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/ozone-elements",
+      "manufacturerId": "izotope",
+      "label": "Ozone Elements release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Ozone 1"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/neutron",
+      "manufacturerId": "izotope",
+      "label": "Neutron release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Neutron 5"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/neutron-elements",
+      "manufacturerId": "izotope",
+      "label": "Neutron Elements release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Neutron 5"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/nectar",
+      "manufacturerId": "izotope",
+      "label": "Nectar release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Nectar 4"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/rx-standard",
+      "manufacturerId": "izotope",
+      "label": "RX Standard release notes",
+      "kind": "release-notes",
+      "nameIncludes": "RX 1"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/rx-advanced",
+      "manufacturerId": "izotope",
+      "label": "RX Advanced release notes",
+      "kind": "release-notes",
+      "nameIncludes": "RX 1"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/rx-elements",
+      "manufacturerId": "izotope",
+      "label": "RX Elements release notes",
+      "kind": "release-notes",
+      "nameIncludes": "RX 1"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/vocalsynth",
+      "manufacturerId": "izotope",
+      "label": "VocalSynth release notes",
+      "kind": "release-notes",
+      "nameIncludes": "VocalSynth"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/neoverb",
+      "manufacturerId": "izotope",
+      "label": "Neoverb release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Neoverb"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/insight",
+      "manufacturerId": "izotope",
+      "label": "Insight release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Insight"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/trash",
+      "manufacturerId": "izotope",
+      "label": "Trash release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Trash"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/relay",
+      "manufacturerId": "izotope",
+      "label": "Relay release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Relay"
+    },
+    {
+      "url": "https://www.izotope.com/pages/release-notes/tonal-balance-control",
+      "manufacturerId": "izotope",
+      "label": "Tonal Balance Control release notes",
+      "kind": "release-notes",
+      "nameIncludes": "Tonal Balance"
+    }
+  ],
+  "checkUrls": [
+    "https://aberrantdsp.com",
+    "https://aberrantdsp.com/",
+    "https://accusonus.com",
+    "https://accusonus.com/account",
+    "https://acondigital.com",
+    "https://acondigital.com/downloads/",
+    "https://audiomodern.com",
+    "https://audiomodern.com/account/",
+    "https://audiomovers.com",
+    "https://audiomovers.com/wp/downloads/",
+    "https://bbesound.com",
+    "https://bbesound.com/",
+    "https://bertomaudio.com",
+    "https://bertomaudio.com/",
+    "https://blacksaltaudio.com",
+    "https://blacksaltaudio.com/account/",
+    "https://customer.focusrite.com/",
+    "https://cymatics.fm",
+    "https://cymatics.fm/pages/downloads",
+    "https://d16.pl",
+    "https://d16.pl/user",
+    "https://focusrite.com",
+    "https://goodhertz.com",
+    "https://goodhertz.com/downloads/",
+    "https://harrisonconsoles.com",
+    "https://harrisonconsoles.com/support/",
+    "https://impulserecord.com",
+    "https://impulserecord.com/",
+    "https://karanyisounds.com",
+    "https://karanyisounds.com/",
+    "https://kazrog.com",
+    "https://kazrog.com/account/",
+    "https://kilohearts.com",
+    "https://kilohearts.com/download",
+    "https://klanghelm.com",
+    "https://klanghelm.com/contents/products.php",
+    "https://klevgrand.com",
+    "https://klevgrand.com/account",
+    "https://mcdsp.com",
+    "https://mcdsp.com/account/",
+    "https://mhsecure.com",
+    "https://mhsecure.com/mhlabs/downloads",
+    "https://mixland.io",
+    "https://mixland.io/",
+    "https://nugenaudio.com",
+    "https://nugenaudio.com/account/",
+    "https://oeksound.com",
+    "https://oeksound.com/downloads/",
+    "https://slatedigital.com",
+    "https://slatedigital.com/activate/",
+    "https://solidstatelogic.com",
+    "https://solidstatelogic.com/support/downloads",
+    "https://spl.audio",
+    "https://spl.audio/en/software-downloads/",
+    "https://splice.com",
+    "https://splice.com/",
+    "https://stevenslatedrums.com",
+    "https://stevenslatedrums.com/account/",
+    "https://supertone.ai",
+    "https://supertone.ai/",
+    "https://support.apple.com/",
+    "https://tal-software.com",
+    "https://tal-software.com/downloads",
+    "https://tekit-audio.com",
+    "https://tekit-audio.com/downloads/",
+    "https://unitedplugins.com",
+    "https://unitedplugins.com/Download/",
+    "https://unitedplugins.com/download",
+    "https://valhalladsp.com",
+    "https://valhalladsp.com/my-account/downloads/",
+    "https://www.accentize.com",
+    "https://www.accentize.com/account/",
+    "https://www.adptraudio.com",
+    "https://www.airmusictech.com",
+    "https://www.airmusictech.com/",
+    "https://www.antarestech.com",
+    "https://www.antarestech.com/downloads/",
+    "https://www.apple.com",
+    "https://www.applied-acoustics.com",
+    "https://www.applied-acoustics.com/account/",
+    "https://www.audiothing.net",
+    "https://www.audiothing.net/account/",
+    "https://www.avid.com",
+    "https://www.avid.com/account",
+    "https://www.bettermaker.com",
+    "https://www.cableguys.com",
+    "https://www.cableguys.com/account.html",
+    "https://www.celemony.com",
+    "https://www.celemony.com/en/melodyne/download",
+    "https://www.credland.net",
+    "https://www.credland.net/",
+    "https://www.eiosis.com",
+    "https://www.eiosis.com/",
+    "https://www.eventideaudio.com",
+    "https://www.eventideaudio.com/account/",
+    "https://www.eventideaudio.com/downloads/",
+    "https://www.fabfilter.com",
+    "https://www.fabfilter.com/download",
+    "https://www.fiedler-audio.com",
+    "https://www.fiedler-audio.com/",
+    "https://www.hornetplugins.com",
+    "https://www.hornetplugins.com/account/",
+    "https://www.ikmultimedia.com",
+    "https://www.ikmultimedia.com/userarea/download/",
+    "https://www.izotope.com",
+    "https://www.izotope.com/en/account/downloads.html",
+    "https://www.izotope.com/en/products/nectar.html",
+    "https://www.izotope.com/en/products/neutron.html",
+    "https://www.izotope.com/en/products/ozone.html",
+    "https://www.izotope.com/pages/release-notes/insight",
+    "https://www.izotope.com/pages/release-notes/nectar",
+    "https://www.izotope.com/pages/release-notes/neoverb",
+    "https://www.izotope.com/pages/release-notes/neutron",
+    "https://www.izotope.com/pages/release-notes/neutron-elements",
+    "https://www.izotope.com/pages/release-notes/ozone-advanced",
+    "https://www.izotope.com/pages/release-notes/ozone-elements",
+    "https://www.izotope.com/pages/release-notes/ozone-standard",
+    "https://www.izotope.com/pages/release-notes/relay",
+    "https://www.izotope.com/pages/release-notes/rx-advanced",
+    "https://www.izotope.com/pages/release-notes/rx-elements",
+    "https://www.izotope.com/pages/release-notes/rx-standard",
+    "https://www.izotope.com/pages/release-notes/tonal-balance-control",
+    "https://www.izotope.com/pages/release-notes/trash",
+    "https://www.izotope.com/pages/release-notes/vocalsynth",
+    "https://www.kiiveaudio.com",
+    "https://www.kiiveaudio.com/account",
+    "https://www.leotokarev.com",
+    "https://www.leotokarev.com/",
+    "https://www.lindellplugins.com",
+    "https://www.linplug.com",
+    "https://www.linplug.com/download.html",
+    "https://www.liquidsonics.com",
+    "https://www.liquidsonics.com/account/",
+    "https://www.louderthanliftoff.com",
+    "https://www.louderthanliftoff.com/",
+    "https://www.meldaproduction.com",
+    "https://www.meldaproduction.com/download",
+    "https://www.meldaproduction.com/downloads",
+    "https://www.modalics.com",
+    "https://www.modalics.com/account",
+    "https://www.native-instruments.com",
+    "https://www.native-instruments.com/en/specials/native-access-2/",
+    "https://www.newfangledaudio.com",
+    "https://www.overloud.com",
+    "https://www.overloud.com/user",
+    "https://www.pitchinnovations.com",
+    "https://www.pitchinnovations.com/",
+    "https://www.plugin-alliance.com",
+    "https://www.plugin-alliance.com/en/accounts.html",
+    "https://www.plugin-alliance.com/en/accounts.html#downloads",
+    "https://www.plugin-alliance.com/products/800rb",
+    "https://www.plugin-alliance.com/products/attacker-plus",
+    "https://www.plugin-alliance.com/products/b-15n",
+    "https://www.plugin-alliance.com/products/bax-eq",
+    "https://www.plugin-alliance.com/products/be-100",
+    "https://www.plugin-alliance.com/products/big-al",
+    "https://www.plugin-alliance.com/products/bm60",
+    "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro",
+    "https://www.plugin-alliance.com/products/brainworx-bx_pulsar",
+    "https://www.plugin-alliance.com/products/buxom-betty",
+    "https://www.plugin-alliance.com/products/bx_2098-eq",
+    "https://www.plugin-alliance.com/products/bx_aura",
+    "https://www.plugin-alliance.com/products/bx_bassdude",
+    "https://www.plugin-alliance.com/products/bx_boom-v3",
+    "https://www.plugin-alliance.com/products/bx_cleansweep-pro",
+    "https://www.plugin-alliance.com/products/bx_clipper",
+    "https://www.plugin-alliance.com/products/bx_console-amek-200",
+    "https://www.plugin-alliance.com/products/bx_console-amek-9099",
+    "https://www.plugin-alliance.com/products/bx_console-focusrite-sc",
+    "https://www.plugin-alliance.com/products/bx_console-n",
+    "https://www.plugin-alliance.com/products/bx_console-ssl-4000-e",
+    "https://www.plugin-alliance.com/products/bx_console-ssl-4000-g",
+    "https://www.plugin-alliance.com/products/bx_console-ssl-9000-j",
+    "https://www.plugin-alliance.com/products/bx_control-v2",
+    "https://www.plugin-alliance.com/products/bx_crispytuner",
+    "https://www.plugin-alliance.com/products/bx_delay-2500",
+    "https://www.plugin-alliance.com/products/bx_digital-v3",
+    "https://www.plugin-alliance.com/products/bx_dyneq-v2",
+    "https://www.plugin-alliance.com/products/bx_enhancer",
+    "https://www.plugin-alliance.com/products/bx_glue",
+    "https://www.plugin-alliance.com/products/bx_hybrid-v2",
+    "https://www.plugin-alliance.com/products/bx_limiter",
+    "https://www.plugin-alliance.com/products/bx_limiter-true-peak",
+    "https://www.plugin-alliance.com/products/bx_masterdesk",
+    "https://www.plugin-alliance.com/products/bx_megadual",
+    "https://www.plugin-alliance.com/products/bx_oberhausen",
+    "https://www.plugin-alliance.com/products/bx_opto",
+    "https://www.plugin-alliance.com/products/bx_paneq",
+    "https://www.plugin-alliance.com/products/bx_refinement-v3",
+    "https://www.plugin-alliance.com/products/bx_rockergain100",
+    "https://www.plugin-alliance.com/products/bx_rockrack-v3",
+    "https://www.plugin-alliance.com/products/bx_rooms",
+    "https://www.plugin-alliance.com/products/bx_saturator-v2",
+    "https://www.plugin-alliance.com/products/bx_stereomaker",
+    "https://www.plugin-alliance.com/products/bx_subsynth",
+    "https://www.plugin-alliance.com/products/bx_tonebox",
+    "https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor",
+    "https://www.plugin-alliance.com/products/bx_xl-v3",
+    "https://www.plugin-alliance.com/products/cenozoix-compressor",
+    "https://www.plugin-alliance.com/products/character",
+    "https://www.plugin-alliance.com/products/click-boom",
+    "https://www.plugin-alliance.com/products/de-verb-plus",
+    "https://www.plugin-alliance.com/products/drumxchanger",
+    "https://www.plugin-alliance.com/products/ds-40",
+    "https://www.plugin-alliance.com/products/dsm-v3",
+    "https://www.plugin-alliance.com/products/e646-vs",
+    "https://www.plugin-alliance.com/products/e765-rt",
+    "https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2",
+    "https://www.plugin-alliance.com/products/eq-200",
+    "https://www.plugin-alliance.com/products/eq-250",
+    "https://www.plugin-alliance.com/products/eq-ranger-plus",
+    "https://www.plugin-alliance.com/products/eq2",
+    "https://www.plugin-alliance.com/products/eq4",
+    "https://www.plugin-alliance.com/products/eq4-ms",
+    "https://www.plugin-alliance.com/products/flanger",
+    "https://www.plugin-alliance.com/products/gav19t",
+    "https://www.plugin-alliance.com/products/hawkeye",
+    "https://www.plugin-alliance.com/products/herbert",
+    "https://www.plugin-alliance.com/products/hg-2",
+    "https://www.plugin-alliance.com/products/hg-2ms",
+    "https://www.plugin-alliance.com/products/hg-q",
+    "https://www.plugin-alliance.com/products/high-flyer",
+    "https://www.plugin-alliance.com/products/hitstrip",
+    "https://www.plugin-alliance.com/products/iron",
+    "https://www.plugin-alliance.com/products/karacter",
+    "https://www.plugin-alliance.com/products/kirchhoff-eq",
+    "https://www.plugin-alliance.com/products/knifonium",
+    "https://www.plugin-alliance.com/products/knocktonal",
+    "https://www.plugin-alliance.com/products/laal",
+    "https://www.plugin-alliance.com/products/lisa",
+    "https://www.plugin-alliance.com/products/magnum-k",
+    "https://www.plugin-alliance.com/products/mastering-compressor-amek",
+    "https://www.plugin-alliance.com/products/mastering-compressor-class-a",
+    "https://www.plugin-alliance.com/products/mc77",
+    "https://www.plugin-alliance.com/products/mo-verb-plus",
+    "https://www.plugin-alliance.com/products/mpressor",
+    "https://www.plugin-alliance.com/products/museq",
+    "https://www.plugin-alliance.com/products/natalus-dsceq",
+    "https://www.plugin-alliance.com/products/nseq-2",
+    "https://www.plugin-alliance.com/products/nvelope",
+    "https://www.plugin-alliance.com/products/oldtimer",
+    "https://www.plugin-alliance.com/products/opticom-xla-3",
+    "https://www.plugin-alliance.com/products/optomax",
+    "https://www.plugin-alliance.com/products/overdrive-supreme-50",
+    "https://www.plugin-alliance.com/products/passeq",
+    "https://www.plugin-alliance.com/products/perfection",
+    "https://www.plugin-alliance.com/products/phils-cascade",
+    "https://www.plugin-alliance.com/products/pq",
+    "https://www.plugin-alliance.com/products/pt100",
+    "https://www.plugin-alliance.com/products/sa2rate-2",
+    "https://www.plugin-alliance.com/products/savage-120",
+    "https://www.plugin-alliance.com/products/se100",
+    "https://www.plugin-alliance.com/products/soma",
+    "https://www.plugin-alliance.com/products/spl-big",
+    "https://www.plugin-alliance.com/products/spread",
+    "https://www.plugin-alliance.com/products/std-1-stereo-tapped-delay",
+    "https://www.plugin-alliance.com/products/svt-3pro",
+    "https://www.plugin-alliance.com/products/svt-vr",
+    "https://www.plugin-alliance.com/products/svt-vr-classic",
+    "https://www.plugin-alliance.com/products/tantra-2",
+    "https://www.plugin-alliance.com/products/tcl-2",
+    "https://www.plugin-alliance.com/products/the-oven",
+    "https://www.plugin-alliance.com/products/thorn",
+    "https://www.plugin-alliance.com/products/train-ii",
+    "https://www.plugin-alliance.com/products/transient-designer-plus",
+    "https://www.plugin-alliance.com/products/trinity-shaper",
+    "https://www.plugin-alliance.com/products/twintube",
+    "https://www.plugin-alliance.com/products/v76u73",
+    "https://www.plugin-alliance.com/products/vitalizer-mk3-t",
+    "https://www.plugin-alliance.com/products/vocal-enhancer",
+    "https://www.plugin-alliance.com/products/vsc-2",
+    "https://www.plugin-alliance.com/products/vsm-3",
+    "https://www.plugin-alliance.com/products/vss-2",
+    "https://www.plugin-alliance.com/products/warble",
+    "https://www.plugin-alliance.com/products/wunderlich",
+    "https://www.safaripedals.com",
+    "https://www.safaripedals.com/",
+    "https://www.scuffhamamps.com",
+    "https://www.scuffhamamps.com/downloads",
+    "https://www.siraudiotools.com",
+    "https://www.siraudiotools.com/account.php",
+    "https://www.softube.com",
+    "https://www.softube.com/installers",
+    "https://www.sonarworks.com",
+    "https://www.sonarworks.com/download",
+    "https://www.sonarworks.com/soundid-reference/download",
+    "https://www.sonicacademy.com",
+    "https://www.sonicacademy.com/account",
+    "https://www.sonnox.com",
+    "https://www.sonnox.com/downloads",
+    "https://www.soundsonline.com",
+    "https://www.soundsonline.com/account",
+    "https://www.soundspot.co",
+    "https://www.soundspot.co/",
+    "https://www.soundtoys.com",
+    "https://www.soundtoys.com/downloads/",
+    "https://www.soundtoys.com/release-log/",
+    "https://www.spectrasonics.net",
+    "https://www.spectrasonics.net/support/updates.php",
+    "https://www.spitfireaudio.com",
+    "https://www.spitfireaudio.com/account",
+    "https://www.steinberg.net",
+    "https://www.steinberg.net/downloads/",
+    "https://www.synthogy.com",
+    "https://www.synthogy.com/",
+    "https://www.tb-software.com",
+    "https://www.tb-software.com/TBProAudio/download.html",
+    "https://www.thx.com",
+    "https://www.thx.com/",
+    "https://www.tokyodawn.net",
+    "https://www.tokyodawn.net/tokyo-dawn-labs/",
+    "https://www.uaudio.com",
+    "https://www.uaudio.com/downloads.html",
+    "https://www.unfilteredaudio.com",
+    "https://www.uvi.net",
+    "https://www.uvi.net/account",
+    "https://www.waproduction.com",
+    "https://www.waproduction.com/account",
+    "https://www.waves.com",
+    "https://www.waves.com/downloads/central",
+    "https://www.wavesfactory.com",
+    "https://www.wavesfactory.com/my-account/",
+    "https://www.wedgeforce.com",
+    "https://www.wedgeforce.com/",
+    "https://www.xlnaudio.com",
+    "https://www.xlnaudio.com/account"
+  ]
+}
