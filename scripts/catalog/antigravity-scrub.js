@@ -33,14 +33,23 @@ const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('
 
 const DRY_RUN = process.env.ANTIGRAVITY_DRY_RUN === '1'
 const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
-const DEFAULT_BATCH = 8
-const MIN_BATCH = 3
-const MAX_BATCH = 15
+// Free-tier Antigravity TPM is ~100K. Our 10-plugin POC used ~218K tokens in one call.
+// Keep cold batches tiny so a single remote agent run stays under the TPM ceiling.
+const DEFAULT_BATCH = 2
+const MIN_BATCH = 1
+const MAX_BATCH = 3
+/** Soft target: stay under free-tier Antigravity TPM (~100K). */
+const COMFORTABLE_TOKENS = 85000
+const TOO_MANY_TOKENS = 95000
 
 function loadUsage() {
   return loadJson(USAGE_PATH, {
     schemaVersion: 1,
     nextBatchSize: DEFAULT_BATCH,
+    freeTier: {
+      antigravityTpmLimit: 100000,
+      note: 'Gemini Project May 25th free tier observed limits'
+    },
     runs: []
   })
 }
@@ -56,11 +65,11 @@ function chooseBatchSize(usage) {
 function adaptNextBatchSize(usage, { quotaError, tokens, batchSize, successes }) {
   let next = batchSize
   if (quotaError) {
-    next = Math.max(MIN_BATCH, Math.floor(batchSize * 0.5))
-  } else if (successes > 0 && tokens != null && tokens < 180000) {
-    next = Math.min(MAX_BATCH, batchSize + 1)
-  } else if (tokens != null && tokens > 350000) {
+    next = Math.max(MIN_BATCH, Math.floor(batchSize * 0.5) || MIN_BATCH)
+  } else if (tokens != null && tokens > TOO_MANY_TOKENS) {
     next = Math.max(MIN_BATCH, batchSize - 1)
+  } else if (successes > 0 && tokens != null && tokens < COMFORTABLE_TOKENS) {
+    next = Math.min(MAX_BATCH, batchSize + 1)
   }
   usage.nextBatchSize = next
   return next

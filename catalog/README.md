@@ -24,7 +24,7 @@ Daily:   smart-catalog-scrub.yml
 | Daily workflow | `.github/workflows/smart-catalog-scrub.yml` (16:00 UTC + manual) |
 | Monday scrapers | `.github/workflows/catalog-refresh.yml` (15:00 UTC) |
 | Secret | Repo Actions secret `GEMINI_API_KEY` |
-| Usage / adaptive batch | `catalog/antigravity-usage.json` (starts ~8, adapts 3–15) |
+| Usage / adaptive batch | `catalog/antigravity-usage.json` (free-tier safe: **1–3** plugins/call; TPM target &lt;100K) |
 
 Accuracy rules:
 - Catalog versions require a real public `sourceUrl` (no binaries, no `example.com`, no Google search URLs).
