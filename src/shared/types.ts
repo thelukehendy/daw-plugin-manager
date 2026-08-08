@@ -93,8 +93,9 @@ export interface CatalogPlugin {
   dawIssues?: DawCompatibilityIssue[]
   /**
    * How the latestVersion was obtained.
-   * live-scrape = dedicated manufacturer scraper hit a public page;
-   * public-page = curated / known public download table;
+   * agent-verified = Gemini Antigravity (or equivalent) found + page-confirmed the version — highest trust;
+   * live-scrape = dedicated manufacturer scraper hit a public page (provisional until agent-verified);
+   * public-page = sticky/known public download page re-verify;
    * search-verified = weekly discovery found a manufacturer-domain page via free search, then fetched + parsed it;
    * manufacturer-feed = official API/feed; curated-seed = hand-verified once; unverified-seed = unknown provenance.
    */
@@ -106,6 +107,7 @@ export interface CatalogPlugin {
 }
 
 export type VersionEvidence =
+  | 'agent-verified'
   | 'live-scrape'
   | 'public-page'
   | 'search-verified'

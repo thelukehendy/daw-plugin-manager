@@ -27,6 +27,7 @@ export function applyUpdates(catalog: PluginCatalog, updates: VersionUpdate[]): 
   let changed = 0
 
   const evidenceRank: Record<VersionEvidence, number> = {
+    'agent-verified': 6,
     'live-scrape': 5,
     'public-page': 4,
     'search-verified': 3,
@@ -103,7 +104,12 @@ function migrateLegacyEvidence(catalog: PluginCatalog): number {
 }
 
 function isVerifiedEvidence(e: VersionEvidence | undefined): boolean {
-  return e === 'live-scrape' || e === 'public-page' || e === 'search-verified'
+  return (
+    e === 'agent-verified' ||
+    e === 'live-scrape' ||
+    e === 'public-page' ||
+    e === 'search-verified'
+  )
 }
 
 async function main() {

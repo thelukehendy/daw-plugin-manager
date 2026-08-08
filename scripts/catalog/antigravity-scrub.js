@@ -208,7 +208,7 @@ function extractJsonArray(text) {
 
 function markVerified(plugin, version, sourceUrl) {
   plugin.latestVersion = normalizeVersion(version)
-  plugin.versionEvidence = 'public-page'
+  plugin.versionEvidence = 'agent-verified'
   plugin.versionSourceUrl = sourceUrl
   plugin.versionVerifiedAt = new Date().toISOString().slice(0, 10)
   plugin.updatePortalUrl = plugin.updatePortalUrl || sourceUrl

@@ -5,7 +5,8 @@
 const { readFileSync, writeFileSync, existsSync } = require('node:fs')
 const { CATALOG_PATH, KNOWN_SOURCES_PATH, GAP_QUEUE_PATH, COVERAGE_REPORT_PATH } = require('./paths')
 
-const STRONG_EVIDENCE = new Set(['live-scrape', 'public-page', 'manufacturer-feed'])
+const STRONG_EVIDENCE = new Set(['agent-verified'])
+const SCRAPER_EVIDENCE = new Set(['live-scrape', 'public-page', 'manufacturer-feed'])
 const WEAK_EVIDENCE = new Set(['search-verified', 'curated-seed', 'unverified-seed'])
 
 function loadJson(path, fallback) {
@@ -64,6 +65,10 @@ function buildGapQueue(catalog, knownSources, { freshDays = 7 } = {}) {
     if (!p.versionSourceUrl || evidence === 'unverified-seed' || !evidence) {
       priority = 1
       reason = 'unverified_or_missing_source'
+    } else if (evidence !== 'agent-verified' && SCRAPER_EVIDENCE.has(evidence)) {
+      // Deterministic scrape / sticky exists, but Antigravity has not confirmed yet
+      priority = 2
+      reason = 'awaiting_agent_confirmation'
     } else if (ageDays == null || ageDays > freshDays) {
       priority = 2
       reason = 'stale_gt_7d'
@@ -165,6 +170,12 @@ function summarizeCoverage(items, catalog, freshDays) {
       verifiedStrong++
     }
     if (
+      SCRAPER_EVIDENCE.has(it.versionEvidence) &&
+      it.versionSourceUrl
+    ) {
+      // counted separately below via by_evidence
+    }
+    if (
       STRONG_EVIDENCE.has(it.versionEvidence) &&
       it.versionSourceUrl &&
       it.ageDays != null &&
@@ -244,6 +255,7 @@ function buildAndWrite(options = {}) {
 
 module.exports = {
   STRONG_EVIDENCE,
+  SCRAPER_EVIDENCE,
   WEAK_EVIDENCE,
   loadJson,
   daysSince,

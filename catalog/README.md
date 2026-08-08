@@ -58,13 +58,15 @@ App fetch order (see `catalogService.ts`):
 
 ### Version confidence
 
-Each status badge shows **`Current 87% confidence`** (word “confidence” after the number).
+Each status badge shows **`Current 70% confidence`** (word “confidence” after the number).
 
-Confidence measures how sure we are about the **status on this machine**:
-- Successful install scan + catalog compare starts high (~90)
-- **100%** requires a public page verification (`live-scrape` / `public-page` / `search-verified` / manufacturer feed) with a source URL, plus a readable installed version and a solid catalog match
-- Seed-only catalog entries land around **87%** until a public page confirms the latest
+Confidence measures how sure we are about the **status on this machine**, with **Antigravity as the accuracy authority**:
+- **100% / high (≥85%)** — only `agent-verified` (Antigravity found the version and it was page-confirmed), plus readable installed version and a solid catalog match
+- **~70% / medium-low** — deterministic `live-scrape` (useful provisional signal, awaiting Antigravity confirmation; capped below high)
+- **~76%** — sticky `public-page` re-verify (not yet agent-confirmed)
+- **~62%** — unverified seed / weak provenance
 
+Scrapers still update versions for coverage; the UI stays cautious until Antigravity confirms.
 ### Weekly refresh (free, no click required)
 
 Two hands-off paths (use both when possible):
