@@ -20,8 +20,16 @@ function normalizeVersion(version) {
 }
 
 function isSuspiciousVersion(version) {
-  const major = Number(normalizeVersion(version).split('.')[0])
-  return Number.isFinite(major) && major >= 50
+  const v = normalizeVersion(version)
+  if (!v) return true
+  const parts = v.split('.')
+  const major = Number(parts[0])
+  // Marketing prices and dollars often look like versions on product pages.
+  if (/^\d+\.(99|95|00)$/.test(v)) return true
+  if (Number.isFinite(major) && major >= 50) return true
+  // Bare huge integers (SKU-ish) — allow small majors like "9" / "12" only with care elsewhere
+  if (parts.length === 1 && Number.isFinite(major) && major >= 100) return true
+  return false
 }
 
 /** True if page text contains the version (exact or common dotted variants). */

@@ -44,9 +44,10 @@ export function applyUpdates(catalog: PluginCatalog, updates: VersionUpdate[]): 
   for (const u of updates) {
     assertPortalUrl(u.sourceUrl)
     const evidence: VersionEvidence = u.evidence || 'live-scrape'
-    // Guardrail: marketing pages sometimes expose prices (199.0) as "versions".
-    const major = Number(String(u.latestVersion).split('.')[0])
-    if (Number.isFinite(major) && major >= 50) {
+    // Guardrail: marketing pages sometimes expose prices (199.0 / 49.99) as "versions".
+    const ver = String(u.latestVersion)
+    const major = Number(ver.split('.')[0])
+    if (/\.(99|95|00)$/.test(ver) || (Number.isFinite(major) && major >= 50)) {
       console.warn(
         `Skipping suspicious version ${u.latestVersion} for ${u.label || u.nameIncludes || u.pluginId} (${u.manufacturerId})`
       )

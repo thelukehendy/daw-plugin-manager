@@ -106,7 +106,8 @@ jobs:
         run: |
           git config user.name "catalog-bot"
           git config user.email "catalog-bot@users.noreply.github.com"
-          git add -A \
+          # Only add files that exist (export artifacts are optional).
+          for f in \
             catalog/catalog.json \
             catalog/known-sources.json \
             catalog/gap-queue.json \
@@ -115,6 +116,9 @@ jobs:
             catalog/antigravity-export.json \
             catalog/antigravity-cursor.json \
             catalog/antigravity-usage.json
+          do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
           if git diff --staged --quiet; then
             echo "No catalog changes to commit."
           else
