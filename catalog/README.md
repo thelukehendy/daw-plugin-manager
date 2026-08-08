@@ -2,6 +2,24 @@
 
 Seed + cloud-refreshable source of truth for latest versions, download portals, and DAW compatibility notes.
 
+### Antigravity weekly scrub (Gemini managed agent)
+
+Complements the deterministic scraper refresh with a small weekly Gemini **Antigravity** batch (`antigravity-preview-05-2026`) that verifies public manufacturer pages and writes high-confidence versions back into `catalog.json`.
+
+| Piece | Path / setting |
+| --- | --- |
+| Script | `npm run catalog:antigravity-scrub` (`scripts/catalog/antigravity-scrub.js`) |
+| Workflow | `.github/workflows/antigravity-catalog-scrub.yml` (Mondays 18:00 UTC + manual) |
+| Secret | Repo Actions secret `GEMINI_API_KEY` (Google AI Studio key) |
+| Export ledger | `catalog/antigravity-export.json` |
+| Rotation cursor | `catalog/antigravity-cursor.json` |
+
+Notes:
+- Identity seed is built from `catalog.json` **without** sending existing `latestVersion` values to the agent.
+- Default batch size is **10** products (free-tier friendly). Raise via workflow_dispatch input if your quota allows.
+- Only `high` / `medium` confidence findings with real `https` portal URLs update `catalog.json`.
+- Binary installer URLs and `example.com` placeholders are rejected.
+
 ### Recommended free hosting (suggestion)
 
 | Piece | Choice | Why |
