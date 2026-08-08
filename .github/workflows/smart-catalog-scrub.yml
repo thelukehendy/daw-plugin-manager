@@ -1,7 +1,7 @@
 name: Smart catalog scrub
 
 # Daily accuracy-first gap scrub (runs on GitHub runners — Mac not required):
-#   sticky URL reverify (free) → parallel Flash cheap tier → smart escalation
+#   sticky URL reverify (free) → parallel Flash cheap Lite → optional smart escalation
 #   Antigravity only when explicitly enabled (last resort)
 # Complements Monday deterministic scrapers in catalog-refresh.yml.
 
@@ -32,9 +32,9 @@ on:
         required: false
         default: 'false'
       skip_smart:
-        description: 'If true, cheap Lite only (no 3.5/3.6 Flash escalations)'
+        description: 'If true, cheap Lite only (recommended daily default)'
         required: false
-        default: 'false'
+        default: 'true'
       enable_antigravity:
         description: 'If true, run Antigravity cold path after Flash (expensive TPM)'
         required: false
@@ -86,15 +86,32 @@ jobs:
           FLASH_SMART_RPM: ${{ github.event.inputs.smart_rpm || '4' }}
           FLASH_CHEAP_MODELS: gemini-3.5-flash-lite,gemini-3.1-flash-lite
           FLASH_SMART_MODELS: gemini-3.6-flash,gemini-3.5-flash,gemini-2.5-flash
-          FLASH_SKIP_SMART: ${{ github.event.inputs.skip_smart == 'true' && '1' || '0' }}
+          # Scheduled runs default to Lite-only; manual can set skip_smart=false.
+          FLASH_SKIP_SMART: ${{ github.event_name == 'schedule' && '1' || (github.event.inputs.skip_smart != 'false' && '1' || '0') }}
           SMART_SCRUB_SKIP_FLASH: ${{ github.event.inputs.skip_flash == 'true' && '1' || '0' }}
           SMART_SCRUB_ENABLE_ANTIGRAVITY: ${{ github.event.inputs.enable_antigravity == 'true' && '1' || '0' }}
           ANTIGRAVITY_BATCH_SIZE: ${{ github.event.inputs.antigravity_batch }}
           ANTIGRAVITY_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
           STICKY_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
           FLASH_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+          FLASH_MFR_FAIL_STREAK: '10'
         run: node scripts/catalog/smart-scrub.js
         timeout-minutes: 110
+
+      - name: Upload scrub artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-scrub-${{ github.run_id }}
+          path: |
+            catalog/catalog.json
+            catalog/known-sources.json
+            catalog/gap-queue.json
+            catalog/coverage-report.json
+            catalog/flash-escalation.json
+            catalog/antigravity-usage.json
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Install deps + validate catalog
         if: ${{ github.event.inputs.dry_run != 'true' }}
@@ -103,10 +120,10 @@ jobs:
           npm run catalog:validate
 
       - name: Commit results if changed
+        if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           git config user.name "catalog-bot"
           git config user.email "catalog-bot@users.noreply.github.com"
-          # Only add files that exist (export artifacts are optional).
           for f in \
             catalog/catalog.json \
             catalog/known-sources.json \

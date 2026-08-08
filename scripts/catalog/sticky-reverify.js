@@ -14,6 +14,7 @@ const {
   fetchPageText,
   extractVersionsFromHtml,
   versionAppearsOnPage,
+  versionNearProductName,
   normalizeVersion,
   isSuspiciousVersion,
   assertPortalUrl
@@ -67,25 +68,31 @@ async function reverifyOne(gap, knownSources) {
       }
       for (const ver of ordered.slice(0, 6)) {
         if (!ver || isSuspiciousVersion(ver)) continue
-        if (versionAppearsOnPage(page.text, ver)) {
-          // Require product name on page when renewing from shared URLs
-          if (!page.text.toLowerCase().includes(String(gap.product).toLowerCase())) {
-            const short = String(gap.product).toLowerCase().replace(/^(izotope|fabfilter|goodhertz)\s+/i, '')
-            if (short.length < 4 || !page.text.toLowerCase().includes(short)) {
-              lastReason = 'product_name_not_on_page'
-              continue
-            }
-          }
-          return {
-            ok: true,
-            version: normalizeVersion(ver),
-            sourceUrl: page.url || url,
-            pluginId: gap.pluginId,
-            manufacturerId: gap.manufacturerId,
-            product: gap.product
+        if (!versionAppearsOnPage(page.text, ver)) {
+          lastReason = `version ${ver} not found on page`
+          continue
+        }
+        if (!page.text.toLowerCase().includes(String(gap.product).toLowerCase())) {
+          const short = String(gap.product)
+            .toLowerCase()
+            .replace(/^(izotope|fabfilter|goodhertz)\s+/i, '')
+          if (short.length < 4 || !page.text.toLowerCase().includes(short)) {
+            lastReason = 'product_name_not_on_page'
+            continue
           }
         }
-        lastReason = `version ${ver} not found on page`
+        if (!versionNearProductName(page.text, ver, gap.product)) {
+          lastReason = `version_not_near_product:${ver}`
+          continue
+        }
+        return {
+          ok: true,
+          version: normalizeVersion(ver),
+          sourceUrl: page.url || url,
+          pluginId: gap.pluginId,
+          manufacturerId: gap.manufacturerId,
+          product: gap.product
+        }
       }
       lastReason = `no_confirmable_version_on ${url}`
     } catch (err) {

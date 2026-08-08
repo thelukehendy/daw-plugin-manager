@@ -130,9 +130,10 @@ function extractVersionsFromHtml(html, { nameHint } = {}) {
 }
 
 function rankNear(versions, hintIdx) {
+  // Tight window: shared download portals otherwise match unrelated prices/builds.
   const ranked = versions
     .map((r) => ({ ...r, dist: Math.abs(r.index - hintIdx) }))
-    .filter((r) => r.dist < 2500)
+    .filter((r) => r.dist < 500)
     .sort((a, b) => a.dist - b.dist || b.version.length - a.version.length)
   const seen = new Set()
   const out = []
@@ -145,12 +146,42 @@ function rankNear(versions, hintIdx) {
   return out
 }
 
+/** True when version appears close to the product name on the page. */
+function versionNearProductName(html, version, product, maxDist = 500) {
+  const text = String(html || '')
+  const lower = text.toLowerCase()
+  const v = normalizeVersion(version)
+  if (!v || !product) return false
+  const names = [String(product).toLowerCase()]
+  const short = names[0].replace(/^(izotope|fabfilter|goodhertz|waves|plugin alliance)\s+/i, '')
+  if (short.length >= 4 && short !== names[0]) names.push(short)
+
+  let nameIdx = -1
+  for (const n of names) {
+    const i = lower.indexOf(n)
+    if (i >= 0) {
+      nameIdx = i
+      break
+    }
+  }
+  if (nameIdx < 0) return false
+
+  const verRe = new RegExp(`(?:^|[^0-9])v?${v.replace(/\./g, '\\.')}(?:[^0-9]|$)`, 'ig')
+  let m
+  let best = Infinity
+  while ((m = verRe.exec(text))) {
+    best = Math.min(best, Math.abs(m.index - nameIdx))
+  }
+  return best <= maxDist
+}
+
 module.exports = {
   BINARY_RE,
   assertPortalUrl,
   normalizeVersion,
   isSuspiciousVersion,
   versionAppearsOnPage,
+  versionNearProductName,
   fetchPageText,
   confirmVersionOnPage,
   extractVersionsFromHtml

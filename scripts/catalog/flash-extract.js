@@ -32,6 +32,7 @@ const {
   isSuspiciousVersion,
   fetchPageText,
   versionAppearsOnPage,
+  versionNearProductName,
   extractVersionsFromHtml
 } = require('./lib/accuracyGate')
 const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('./lib/knownSourcesJs')
@@ -43,7 +44,7 @@ const LIMIT = Math.max(1, Number(process.env.FLASH_LIMIT || 480))
 const CHEAP_RPM = Math.max(1, Number(process.env.FLASH_CHEAP_RPM || 12))
 const SMART_RPM = Math.max(1, Number(process.env.FLASH_SMART_RPM || 4))
 const CHEAP_BUDGET = Math.max(1, Number(process.env.FLASH_CHEAP_BUDGET_EACH || 400))
-const SMART_BUDGET = Math.max(1, Number(process.env.FLASH_SMART_BUDGET_EACH || 40))
+const MFR_FAIL_STREAK = Math.max(3, Number(process.env.FLASH_MFR_FAIL_STREAK || 10))
 
 const DEFAULT_CHEAP = [
   'gemini-3.5-flash-lite',
@@ -312,15 +313,15 @@ async function verifyWithModel(opts) {
         for (const ver of heuristic.slice(0, 4)) {
           if (!ver || isSuspiciousVersion(ver)) continue
           if (!productOnPage) break
-          if (versionAppearsOnPage(pageText, ver)) {
-            stats.heuristicHits++
-            return {
-              ok: true,
-              version: normalizeVersion(ver),
-              sourceUrl: pageUrl,
-              via: 'heuristic',
-              escalate: false
-            }
+          if (!versionAppearsOnPage(pageText, ver)) continue
+          if (!versionNearProductName(pageText, ver, gap.product)) continue
+          stats.heuristicHits++
+          return {
+            ok: true,
+            version: normalizeVersion(ver),
+            sourceUrl: pageUrl,
+            via: 'heuristic',
+            escalate: false
           }
         }
       }
@@ -389,6 +390,12 @@ async function verifyWithModel(opts) {
         lastMeta.snippet = snippet
         continue
       }
+      if (!versionNearProductName(pageText, version, gap.product, tier === 'smart' ? 800 : 500)) {
+        lastReason = `version_not_near_product:${version}`
+        stats.rejects++
+        lastMeta.snippet = snippet
+        continue
+      }
       const conf = String(parsed.confidence || '').toLowerCase()
       if (!['high', 'medium'].includes(conf)) {
         lastReason = `low_confidence:${version}`
@@ -419,7 +426,7 @@ async function verifyWithModel(opts) {
 }
 
 function buildQueue(gaps) {
-  return gaps
+  const sorted = gaps
     .filter((g) => g.portalUrl || g.versionSourceUrl || (g.stickyUrls && g.stickyUrls.length))
     .map((g) => {
       const urls = [g.versionSourceUrl, ...(g.stickyUrls || []), g.portalUrl].filter(Boolean)
@@ -434,6 +441,28 @@ function buildQueue(gaps) {
     .sort((a, b) => b._score - a._score || a.priority - b.priority)
     .filter((g) => g._usable > 0)
     .slice(0, LIMIT)
+  return diversifyByManufacturer(sorted)
+}
+
+/** Round-robin manufacturers so one bad portal doesn't burn the whole daily budget. */
+function diversifyByManufacturer(queue) {
+  const buckets = new Map()
+  for (const g of queue) {
+    if (!buckets.has(g.manufacturerId)) buckets.set(g.manufacturerId, [])
+    buckets.get(g.manufacturerId).push(g)
+  }
+  const lists = [...buckets.values()]
+  const out = []
+  while (out.length < queue.length) {
+    let progressed = false
+    for (const list of lists) {
+      if (!list.length) continue
+      out.push(list.shift())
+      progressed = true
+    }
+    if (!progressed) break
+  }
+  return out
 }
 
 async function main() {
@@ -478,6 +507,7 @@ async function main() {
     smartResolved: 0,
     quotaErrors: 0,
     skippedLoginWall: 0,
+    skippedMfrStreak: 0,
     tokens: 0,
     byModel: {},
     disabledModels: []
@@ -531,6 +561,8 @@ async function main() {
 
   const activeCheap = new Set(cheapModels)
   const activeSmart = new Set(smartModels)
+  const mfrFailStreak = new Map()
+  const skippedMfrs = new Set()
   const unresolved = []
   function unresolvedPush(item) {
     unresolved.push({
@@ -553,6 +585,11 @@ async function main() {
       }
       const gap = nextGap()
       if (!gap) break
+
+      if (skippedMfrs.has(gap.manufacturerId)) {
+        stats.skippedMfrStreak++
+        continue
+      }
 
       const result = await verifyWithModel({
         tier: 'cheap',
@@ -584,9 +621,25 @@ async function main() {
 
       calls++
       if (result.ok) {
+        mfrFailStreak.set(gap.manufacturerId, 0)
         await recordHit(gap, result)
         continue
       }
+
+      const streak = (mfrFailStreak.get(gap.manufacturerId) || 0) + 1
+      mfrFailStreak.set(gap.manufacturerId, streak)
+      if (
+        streak >= MFR_FAIL_STREAK &&
+        /product_name_not_on_page|flash_null|login_wall|no_usable|version_not_near/i.test(
+          result.reason || ''
+        )
+      ) {
+        skippedMfrs.add(gap.manufacturerId)
+        console.warn(
+          `  skipping manufacturer ${gap.manufacturer} after ${streak} hard fails (save quota)`
+        )
+      }
+
       console.log(`  ✗ [cheap:${model}] ${gap.manufacturer} / ${gap.product}: ${result.reason}`)
       if (result.escalate && !SKIP_SMART) {
         stats.escalations++
