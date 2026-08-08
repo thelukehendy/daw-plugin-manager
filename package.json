@@ -13,6 +13,11 @@
     "catalog:validate": "tsx scripts/validate-catalog.ts",
     "electron:fetch": "node scripts/fetch-electron.js",
     "catalog:refresh": "tsx scripts/catalog/refresh.ts",
+    "catalog:gaps": "node scripts/catalog/build-gap-queue.js",
+    "catalog:sticky-reverify": "node scripts/catalog/sticky-reverify.js",
+    "catalog:flash-extract": "node scripts/catalog/flash-extract.js",
+    "catalog:antigravity-scrub": "node scripts/catalog/antigravity-scrub.js",
+    "catalog:smart-scrub": "node scripts/catalog/smart-scrub.js",
     "catalog:install-weekly": "bash scripts/catalog/install-weekly-launchd.sh",
     "catalog:sync-remote-urls": "bash scripts/sync-remote-urls.sh",
     "dist:mac": "npm run build && env -u ELECTRON_RUN_AS_NODE electron-builder --mac"

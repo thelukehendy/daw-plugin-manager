@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-08-03T17:08:31.848Z",
+  "updatedAt": "2026-08-08T15:39:52.761Z",
   "catalogSource": "verified-refresh",
   "manufacturers": [
     {
@@ -973,9 +973,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/flanger",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/flanger",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--ada-std-1-stereo-tapped-delay",
@@ -995,9 +995,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/std-1-stereo-tapped-delay",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/std-1-stereo-tapped-delay",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "adptr--adptr-hype",
@@ -1517,9 +1517,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/eq-200",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq-200",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--amek-eq-250",
@@ -1539,9 +1539,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/eq-250",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq-250",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--amek-mastering-compressor",
@@ -1823,9 +1823,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.1@https://www.plugin-alliance.com/products/opticom-xla-3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/opticom-xla-3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--ampeg-b15n",
@@ -1845,9 +1845,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/b-15n",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/b-15n",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--ampeg-svt3pro",
@@ -2393,9 +2393,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "bertom--eq-curve-analyzer-2",
@@ -2435,9 +2435,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/bm60",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bm60",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "bettermaker--bettermaker-c502v-dsp",
@@ -2517,9 +2517,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.0@https://www.plugin-alliance.com/products/hg-2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hg-2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--black-box-analog-design-hg-2ms",
@@ -2539,9 +2539,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/hg-2ms",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hg-2ms",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--black-box-analog-design-hg-q",
@@ -2561,9 +2561,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/hg-q",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hg-q",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--black-op-distortion",
@@ -2743,9 +2743,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/gav19t",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/gav19t",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--channelstrip",
@@ -2865,9 +2865,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/high-flyer",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/high-flyer",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "united-plugins--cyberdrivecore",
@@ -2887,9 +2887,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "d16-group--repeater",
@@ -3009,9 +3009,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.0.2@https://www.plugin-alliance.com/products/tantra-2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/tantra-2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--ds-thorn",
@@ -3031,9 +3031,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.3@https://www.plugin-alliance.com/products/thorn",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/thorn",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "xln-audio--ds-10-drum-shaper",
@@ -3137,9 +3137,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/herbert",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/herbert",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--diezel-vh4",
@@ -3259,9 +3259,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.13.0@https://www.plugin-alliance.com/products/e646-vs",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/e646-vs",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--engl-e765-rt",
@@ -3281,9 +3281,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/e765-rt",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/e765-rt",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--engl-savage-120",
@@ -3303,9 +3303,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/savage-120",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/savage-120",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "modalics--eon-arp-midi",
@@ -3445,9 +3445,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--eleven-lite",
@@ -3667,9 +3667,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.32@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-one",
@@ -3689,9 +3689,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.52@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-pro-c-2",
@@ -3731,9 +3731,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.02@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-pro-ds",
@@ -3753,9 +3753,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.32@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-pro-g",
@@ -3775,9 +3775,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.42@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-pro-l-2",
@@ -3797,9 +3797,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.26@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-pro-mb",
@@ -3819,9 +3819,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.33@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-pro-q-3",
@@ -3861,9 +3861,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:4.13@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-pro-r-2",
@@ -3883,9 +3883,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.06@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-saturn-2",
@@ -3905,9 +3905,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.13@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-simplon",
@@ -3927,9 +3927,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.42@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-timeless-3",
@@ -3949,9 +3949,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.10@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-twin-3",
@@ -3971,9 +3971,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.07@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "fabfilter--fabfilter-volcano-3",
@@ -3993,9 +3993,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.09@https://www.fabfilter.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.fabfilter.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--fairchild660",
@@ -4055,9 +4055,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "united-plugins--firepresser",
@@ -4077,9 +4077,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--flanger",
@@ -4181,9 +4181,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/buxom-betty",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/buxom-betty",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--friedman-ds40",
@@ -4203,9 +4203,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/ds-40",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/ds-40",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--fuchs-overdrive-supreme-50",
@@ -4225,9 +4225,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/overdrive-supreme-50",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/overdrive-supreme-50",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--fuchs-train-ii",
@@ -4247,9 +4247,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/train-ii",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/train-ii",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "tbproaudio--gsatplus",
@@ -4309,9 +4309,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/800rb",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/800rb",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "safari-pedals--gorilla-drive",
@@ -4451,9 +4451,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/perfection",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/perfection",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--hum-audio-devices-laal",
@@ -4473,9 +4473,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/laal",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/laal",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "antares--harmony-engine-4x",
@@ -4515,9 +4515,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/natalus-dsceq",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/natalus-dsceq",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "harrison--harrison-32bus",
@@ -4897,9 +4897,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "klanghelm--ivgi2",
@@ -5079,9 +5079,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "kilohearts--faturator",
@@ -5101,9 +5101,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "kilohearts--multipass",
@@ -5123,9 +5123,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "kilohearts--snap-heap",
@@ -5145,9 +5145,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "kilohearts--khs-3-band-eq",
@@ -5937,9 +5937,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.1@https://www.plugin-alliance.com/products/knifonium",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/knifonium",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--knif-audio-soma",
@@ -5959,9 +5959,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/soma",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/soma",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "native-instruments--kontakt",
@@ -6505,9 +6505,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/sa2rate-2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/sa2rate-2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "con--lurssen-mastering-console",
@@ -6647,9 +6647,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/eq2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq2",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--maag-eq4-ms",
@@ -6669,9 +6669,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/eq4-ms",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq4-ms",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--maag-eq4",
@@ -6691,9 +6691,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.1@https://www.plugin-alliance.com/products/eq4",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq4",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--maag-magnum-k",
@@ -6713,9 +6713,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.plugin-alliance.com/products/magnum-k",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/magnum-k",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--mastermeter",
@@ -6797,9 +6797,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "meldaproduction--mturbodelaymb",
@@ -7061,9 +7061,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "meldaproduction--mflanger",
@@ -7369,9 +7369,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "meldaproduction--mccgenerator",
@@ -7761,9 +7761,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/nseq-2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/nseq-2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--millennia-tcl-2",
@@ -7783,9 +7783,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.1@https://www.plugin-alliance.com/products/tcl-2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/tcl-2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "air--minigrand",
@@ -7865,9 +7865,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/big-al",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/big-al",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--neold-oldtimer",
@@ -7887,9 +7887,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/oldtimer",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/oldtimer",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--neold-u17",
@@ -7949,9 +7949,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/v76u73",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/v76u73",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--neold-warble",
@@ -7971,9 +7971,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/warble",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/warble",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--neold-wunderlich",
@@ -7993,9 +7993,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/wunderlich",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/wunderlich",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "nugen-audio--aligner",
@@ -8095,9 +8095,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.18.0@https://www.plugin-alliance.com/products/character",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/character",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--noveltech-vocal-enhancer",
@@ -8117,9 +8117,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/vocal-enhancer",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vocal-enhancer",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "spectrasonics--omnisphere",
@@ -8179,9 +8179,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "sonnox--oxford-drum-gate-2",
@@ -8341,9 +8341,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.7.0@https://www.plugin-alliance.com/products/dsm-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/dsm-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundspot--propane",
@@ -8383,9 +8383,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.2@https://www.plugin-alliance.com/products/mc77",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mc77",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--purple-audio-mc77",
@@ -8425,9 +8425,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "xln-audio--rc-20-retro-color",
@@ -8527,9 +8527,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--reverse-dc-removal",
@@ -8609,9 +8609,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "sir-audio-tools--standardclip",
@@ -8671,9 +8671,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/attacker-plus",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/attacker-plus",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-big",
@@ -8693,9 +8693,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/spl-big",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/spl-big",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-de-esser-dual-band",
@@ -8755,9 +8755,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/de-verb-plus",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/de-verb-plus",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-drumxchanger",
@@ -8777,9 +8777,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/drumxchanger",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/drumxchanger",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-eq-ranger-plus",
@@ -8799,9 +8799,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.3@https://www.plugin-alliance.com/products/eq-ranger-plus",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq-ranger-plus",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-free-ranger",
@@ -8841,9 +8841,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/hawkeye",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hawkeye",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-iron",
@@ -8863,9 +8863,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.plugin-alliance.com/products/iron",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/iron",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "spl--spl-machine-head",
@@ -8905,9 +8905,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/mo-verb-plus",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mo-verb-plus",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-pq",
@@ -8927,9 +8927,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/pq",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/pq",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-passeq-single",
@@ -8971,9 +8971,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/passeq",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/passeq",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-transient-designer-plus",
@@ -8993,9 +8993,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.3@https://www.plugin-alliance.com/products/transient-designer-plus",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/transient-designer-plus",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-transient-designer",
@@ -9015,9 +9015,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.3@https://www.plugin-alliance.com/products/transient-designer-plus",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/transient-designer-plus",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-twintube",
@@ -9037,9 +9037,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.19.2@https://www.plugin-alliance.com/products/twintube",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/twintube",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--spl-vitalizer-mk2-t",
@@ -9079,9 +9079,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/vitalizer-mk3-t",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vitalizer-mk3-t",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "ssl--ssl-360-link-bus-compressor",
@@ -10049,9 +10049,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/optomax",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/optomax",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "cableguys--shaperbox-2",
@@ -10673,9 +10673,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--decapitator",
@@ -10695,9 +10695,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--devilloc",
@@ -10761,9 +10761,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--echoboyjr",
@@ -10805,9 +10805,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--filterfreak1",
@@ -10981,9 +10981,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--panman",
@@ -11003,9 +11003,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--phasemistress",
@@ -11025,9 +11025,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--primaltap",
@@ -11047,9 +11047,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--radiator",
@@ -11069,9 +11069,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--sieq",
@@ -11113,9 +11113,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--superplate",
@@ -11135,9 +11135,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "soundtoys--tremolator",
@@ -11157,9 +11157,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "spectralayers-bridge--spectralayers-bridge",
@@ -11323,9 +11323,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/pt100",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/pt100",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--suhr-se100",
@@ -11345,9 +11345,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/se100",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/se100",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bde-pa",
@@ -11701,9 +11701,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/the-oven",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/the-oven",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "thx--thx-spatial-creator",
@@ -11743,9 +11743,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/lisa",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/lisa",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--tape-echo",
@@ -11865,9 +11865,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--tri-knob-fuzz",
@@ -12347,9 +12347,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "slate-digital--vsx",
@@ -12625,9 +12625,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.0@https://www.plugin-alliance.com/products/vsc-2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vsc-2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--vertigo-vsm-3",
@@ -12647,9 +12647,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/vsm-3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vsm-3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--vertigo-vss-2",
@@ -12669,9 +12669,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/vss-2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vss-2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "avid--vibe-phaser",
@@ -12751,9 +12751,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
-      "versionEvidence": "search-verified",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://unitedplugins.com/download",
-      "versionVerifiedAt": "2026-07-29"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "wedgeforce--wedge-force-hydro",
@@ -12977,9 +12977,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.9.0@https://www.plugin-alliance.com/products/bx_2098-eq",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_2098-eq",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-xl-v2",
@@ -13019,9 +13019,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.1.0@https://www.plugin-alliance.com/products/bx_xl-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_xl-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-aura",
@@ -13041,9 +13041,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_aura",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_aura",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-bassdude",
@@ -13063,9 +13063,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/bx_bassdude",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_bassdude",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-blackdist2",
@@ -13125,9 +13125,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_boom-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_boom-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-boom",
@@ -13147,9 +13147,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_boom-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_boom-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-cleansweep-pro",
@@ -13169,9 +13169,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.1@https://www.plugin-alliance.com/products/bx_cleansweep-pro",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_cleansweep-pro",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-cleansweep-v2",
@@ -13211,9 +13211,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_clipper",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_clipper",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-console-amek-200",
@@ -13233,9 +13233,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.3@https://www.plugin-alliance.com/products/bx_console-amek-200",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-amek-200",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-console-amek-9099",
@@ -13255,9 +13255,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/bx_console-amek-9099",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-amek-9099",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-console-focusrite-sc",
@@ -13277,9 +13277,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.0@https://www.plugin-alliance.com/products/bx_console-focusrite-sc",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-focusrite-sc",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-console-n",
@@ -13299,9 +13299,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.1@https://www.plugin-alliance.com/products/bx_console-n",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-n",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-console-ssl-4000-e",
@@ -13321,9 +13321,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_console-ssl-4000-e",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-e",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-console-ssl-4000-g",
@@ -13343,9 +13343,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_console-ssl-4000-g",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-4000-g",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-console-ssl-9000-j",
@@ -13365,9 +13365,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/bx_console-ssl-9000-j",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-9000-j",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-control-v2",
@@ -13387,9 +13387,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.16.1@https://www.plugin-alliance.com/products/bx_control-v2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_control-v2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-crispyscale",
@@ -13429,9 +13429,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_crispytuner",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_crispytuner",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-delay2500",
@@ -13451,9 +13451,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.9.0@https://www.plugin-alliance.com/products/bx_delay-2500",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_delay-2500",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-digital-v3-mix",
@@ -13473,9 +13473,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.11.0@https://www.plugin-alliance.com/products/bx_digital-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_digital-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-digital-v3",
@@ -13495,9 +13495,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.11.0@https://www.plugin-alliance.com/products/bx_digital-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_digital-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-distorange",
@@ -13559,9 +13559,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.17.1@https://www.plugin-alliance.com/products/bx_dyneq-v2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_dyneq-v2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-enhancer",
@@ -13581,9 +13581,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.0@https://www.plugin-alliance.com/products/bx_enhancer",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_enhancer",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-glue",
@@ -13603,9 +13603,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.0@https://www.plugin-alliance.com/products/bx_glue",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_glue",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-greenscreamer",
@@ -13645,9 +13645,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.14.0@https://www.plugin-alliance.com/products/bx_hybrid-v2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_hybrid-v2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-hybrid-v2",
@@ -13667,9 +13667,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.14.0@https://www.plugin-alliance.com/products/bx_hybrid-v2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_hybrid-v2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-limiter-true-peak",
@@ -13711,9 +13711,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.1@https://www.plugin-alliance.com/products/bx_limiter",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_limiter",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-masterdesk-classic",
@@ -13799,9 +13799,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-megadual",
@@ -13821,9 +13821,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.13.0@https://www.plugin-alliance.com/products/bx_megadual",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_megadual",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-megasingle",
@@ -13903,9 +13903,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.plugin-alliance.com/products/bx_oberhausen",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_oberhausen",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-opto-pedal",
@@ -13947,9 +13947,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.11.0@https://www.plugin-alliance.com/products/bx_opto",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_opto",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-paneq",
@@ -13969,9 +13969,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.0@https://www.plugin-alliance.com/products/bx_paneq",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_paneq",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-pulsar",
@@ -13991,9 +13991,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.1@https://www.plugin-alliance.com/products/brainworx-bx_pulsar",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/brainworx-bx_pulsar",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-refinement-v3",
@@ -14013,9 +14013,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_refinement-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_refinement-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-refinement",
@@ -14035,9 +14035,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://www.plugin-alliance.com/products/bx_refinement-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_refinement-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-rockergain100",
@@ -14057,9 +14057,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.4.0@https://www.plugin-alliance.com/products/bx_rockergain100",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rockergain100",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-rockrack-v3-player",
@@ -14101,9 +14101,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.10.0@https://www.plugin-alliance.com/products/bx_rockrack-v3",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rockrack-v3",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-rooms",
@@ -14123,9 +14123,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.0@https://www.plugin-alliance.com/products/bx_rooms",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rooms",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-saturator-v2",
@@ -14145,9 +14145,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.13.1@https://www.plugin-alliance.com/products/bx_saturator-v2",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_saturator-v2",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-shredspread",
@@ -14209,9 +14209,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.15.0@https://www.plugin-alliance.com/products/bx_stereomaker",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_stereomaker",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-subfilter",
@@ -14251,9 +14251,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.10.0@https://www.plugin-alliance.com/products/bx_subsynth",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_subsynth",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-tonebox",
@@ -14273,9 +14273,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.0@https://www.plugin-alliance.com/products/bx_tonebox",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_tonebox",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--bx-townhouse-buss-compressor",
@@ -14463,9 +14463,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--elysia-museq-master",
@@ -14549,9 +14549,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.12.0@https://www.plugin-alliance.com/products/nvelope",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/nvelope",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "plugin-alliance--elysia-phils-cascade",
@@ -14677,9 +14677,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.2.0@https://www.izotope.com/pages/release-notes/neutron",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/neutron",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "izotope--neutron-5-clipper",
@@ -14941,9 +14941,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "izotope--ozone-11-clarity",
@@ -15007,9 +15007,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "izotope--ozone-11-equalizer",
@@ -16018,10 +16018,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionEvidence": "search-verified",
-      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/ozone-standard",
-      "versionVerifiedAt": "2026-07-29"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:12.1.0@https://www.izotope.com/pages/release-notes/rx-standard",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.izotope.com/pages/release-notes/rx-standard",
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "izotope--rx-11-repair-assistant",
@@ -16855,9 +16855,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7.0@https://www.izotope.com/pages/release-notes/relay",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/relay",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "izotope--tonal-balance-control-2",
@@ -16877,9 +16877,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.1.0@https://www.izotope.com/pages/release-notes/tonal-balance-control",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/tonal-balance-control",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "izotope--izotope-trash-2",
@@ -16921,9 +16921,9 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.izotope.com/pages/release-notes/trash",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/trash",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "izotope--vinyl",
@@ -17115,9 +17115,9 @@
       "updatePortalUrl": "https://goodhertz.com/downloads/",
       "notes": "Suite catch-all. Individual ghz* installs match per-product entries when present. verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
       "releaseDate": "2026-06-30",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "apple--asaf",
@@ -17436,9 +17436,9 @@
         "VST3"
       ],
       "dawCompatibility": "Module hosts follow the newest RX install",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.izotope.com/pages/release-notes/rx-standard",
-      "versionVerifiedAt": "2026-07-29",
+      "versionVerifiedAt": "2026-08-08",
       "notes": "verifiedPublic:12.0.0@https://www.izotope.com/pages/release-notes/rx-standard"
     },
     {
@@ -17725,9 +17725,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--faradaylimiter",
@@ -17751,9 +17751,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--gooddither",
@@ -17777,9 +17777,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--lohi",
@@ -17802,9 +17802,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--lossy",
@@ -17827,9 +17827,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--midside",
@@ -17852,9 +17852,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--midsidematrix",
@@ -17878,9 +17878,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--panpot",
@@ -17903,9 +17903,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--tiltshift",
@@ -17928,9 +17928,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--tonecontrol",
@@ -17954,9 +17954,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--tremcontrol",
@@ -17980,9 +17980,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--vulfcompressor",
@@ -18006,9 +18006,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     },
     {
       "id": "goodhertz--wowcontrol",
@@ -18032,9 +18032,9 @@
       ],
       "minMacOS": "10.13",
       "notes": "verifiedPublic:3.14.1@https://goodhertz.com/downloads/",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://goodhertz.com/downloads/",
-      "versionVerifiedAt": "2026-08-03"
+      "versionVerifiedAt": "2026-08-08"
     }
   ]
 }

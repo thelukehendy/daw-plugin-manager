@@ -11,7 +11,11 @@ export interface ConfidenceResult {
   confidenceReason: string
 }
 
-/** Green OK / Current when ≥ this. Yellow only for genuinely weaker determinations. */
+/**
+ * Green OK / Current when ≥ HIGH.
+ * High confidence requires hard page-confirm (Flash Lite / sticky / Antigravity).
+ * Deterministic scrapers stay medium/low until page-confirmed.
+ */
 const HIGH = 85
 const MEDIUM = 72
 
@@ -60,13 +64,17 @@ export function resolveEvidence(plugin: CatalogPlugin | null | undefined): {
   return { evidence: 'unverified-seed' }
 }
 
+function isPageConfirmed(evidence: VersionEvidence): boolean {
+  return evidence === 'page-confirmed' || evidence === 'agent-verified'
+}
+
 /**
  * Confidence that the **status on this machine** is correct.
  *
- * Primary signal = successful install scan + catalog compare (most results should be green
- * when plugins are current and versions were read cleanly).
- * Catalog provenance is a smaller bonus/penalty — unverified seed must NOT dump everything to ~62%.
- * Low confidence should be rare: unknown / unmatched / missing installed version / weak match.
+ * Authority model:
+ * - page-confirmed / agent-verified → can reach high / 100
+ * - live-scrape (deterministic scrapers) → provisional, capped below HIGH until page-confirm
+ * - public-page / search / seed → medium or low
  */
 export function computeVersionConfidence(opts: {
   status: UpdateStatus
@@ -103,41 +111,45 @@ export function computeVersionConfidence(opts: {
     }
   }
 
-  // Successful current/outdated determination starts high.
-  let score = 90
+  const { evidence, sourceUrl, verifiedAt } = resolveEvidence(plugin)
+
+  // Base: successful compare, but provenance decides the ceiling.
+  let score = 78
   reasons.push('Installed version compared to catalog latest')
 
   if (!hasInstalledVersion) {
-    score -= 22
+    score -= 18
     reasons.push('Could not read installed version from plugin bundle')
   }
 
-  const { evidence, sourceUrl, verifiedAt } = resolveEvidence(plugin)
-
-  // Provenance is a modest adjustment — not the whole score.
-  if (evidence === 'live-scrape') {
-    score += 7
-    reasons.push('Catalog latest from live public download scrape')
-  } else if (evidence === 'public-page' || evidence === 'search-verified') {
-    score += 5
-    reasons.push(
-      evidence === 'search-verified'
-        ? 'Catalog latest found via free search, verified on manufacturer page'
-        : 'Catalog latest verified on public download page'
-    )
+  if (evidence === 'page-confirmed') {
+    score = 92
+    reasons.push('Catalog latest page-confirmed on a live public page (Flash/sticky)')
+  } else if (evidence === 'agent-verified') {
+    score = 92
+    reasons.push('Catalog latest confirmed by Antigravity on a live public page')
+  } else if (evidence === 'live-scrape') {
+    score = 70
+    reasons.push('Catalog latest from deterministic scrape — awaiting page confirmation')
+  } else if (evidence === 'public-page') {
+    score = 76
+    reasons.push('Catalog latest from sticky public page re-verify — awaiting hard page-confirm')
+  } else if (evidence === 'search-verified') {
+    score = 68
+    reasons.push('Catalog latest from search discovery — awaiting page confirmation')
   } else if (evidence === 'manufacturer-feed') {
-    score += 4
-    reasons.push('Catalog latest from manufacturer feed')
+    score = 74
+    reasons.push('Catalog latest from manufacturer feed — awaiting page confirmation')
   } else if (evidence === 'curated-seed') {
-    score += 0
+    score = 66
     reasons.push('Catalog latest from curated seed')
   } else {
-    score -= 3
-    reasons.push('Catalog latest from seed (weekly scrape will strengthen this)')
+    score = 62
+    reasons.push('Catalog latest from unverified seed')
   }
 
   const age = daysSince(verifiedAt, catalog.updatedAt)
-  if (age != null && (evidence === 'live-scrape' || evidence === 'public-page' || evidence === 'search-verified')) {
+  if (age != null && evidence !== 'unverified-seed' && evidence !== 'curated-seed') {
     if (age > 90) {
       score -= 6
       reasons.push(`Public verification ${Math.round(age)}d old`)
@@ -146,11 +158,9 @@ export function computeVersionConfidence(opts: {
     }
   }
 
-  if (
-    (evidence === 'live-scrape' || evidence === 'public-page' || evidence === 'search-verified') &&
-    !sourceUrl
-  ) {
+  if (evidence !== 'unverified-seed' && evidence !== 'curated-seed' && !sourceUrl) {
     score -= 4
+    reasons.push('Missing public source URL')
   }
 
   if (typeof matchScore === 'number') {
@@ -164,33 +174,32 @@ export function computeVersionConfidence(opts: {
   }
 
   if (status === 'outdated') {
-    if (
-      evidence === 'live-scrape' ||
-      evidence === 'public-page' ||
-      evidence === 'search-verified'
-    ) {
-      score = Math.max(score, 94)
-      reasons.push('Public latest is newer than what is installed')
-    } else {
-      reasons.push('Installed build is behind catalog latest')
-    }
+    reasons.push(
+      isPageConfirmed(evidence)
+        ? 'Page-confirmed latest is newer than installed'
+        : 'Installed build is behind catalog latest'
+    )
   } else if (status === 'current') {
     reasons.push('Installed meets or exceeds catalog latest')
   }
 
-  // 100% when this machine's status is backed by a public download-page verification.
-  const publiclyVerified =
-    (evidence === 'live-scrape' ||
-      evidence === 'public-page' ||
-      evidence === 'search-verified' ||
-      evidence === 'manufacturer-feed') &&
+  // Hard page-confirm (Flash/sticky/Antigravity) may reach full confidence.
+  const pageConfirmed =
+    isPageConfirmed(evidence) &&
     !!sourceUrl &&
     hasInstalledVersion &&
     (typeof matchScore !== 'number' || matchScore >= 70)
 
-  if (publiclyVerified) {
+  if (pageConfirmed) {
     score = 100
-    reasons.push('Public source confirmed — full confidence')
+    reasons.push('Public-page confirmation — full confidence')
+  } else if (
+    evidence === 'live-scrape' ||
+    evidence === 'search-verified' ||
+    evidence === 'public-page'
+  ) {
+    // Hard cap: scrapers / legacy sticky cannot show green-high until page-confirmed.
+    score = Math.min(score, HIGH - 1)
   }
 
   const confidence = clamp(score)
@@ -207,7 +216,6 @@ export function aggregateManufacturerConfidence(
   if (!products.length) {
     return { confidence: 0, confidenceBand: 'low', confidenceReason: 'No products' }
   }
-  // Prefer median-ish floor: ignore a single weak outlier if most are strong
   const sorted = [...products.map((p) => p.confidence)].sort((a, b) => a - b)
   const p10 = sorted[Math.floor((sorted.length - 1) * 0.1)]
   const confidence = clamp(p10)
