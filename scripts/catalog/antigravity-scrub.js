@@ -1,99 +1,122 @@
 #!/usr/bin/env node
 /**
- * Weekly Antigravity (Gemini managed agent) version scrub.
+ * Antigravity cold-gap discovery (accuracy-first).
  *
- * - Seeds identity from catalog.json WITHOUT sending existing latestVersion values
- * - Asks antigravity-preview-05-2026 to verify a small batch from live public pages
- * - Merges high-confidence results into catalog.json + catalog/antigravity-export.json
+ * - Only processes cold gap-queue items (no sticky URL / sticky failed)
+ * - Does NOT send existing latestVersion values to the agent
+ * - Page-confirms every version before catalog write
+ * - Promotes successful URLs into known-sources.json
+ * - Tracks Gemini usage and adapts next batch size for free tier
  *
  * Env:
- *   GEMINI_API_KEY          required
- *   ANTIGRAVITY_BATCH_SIZE  default 10 (keep small on free tier)
- *   ANTIGRAVITY_DRY_RUN     if "1", call API but do not write catalog.json
- *   ANTIGRAVITY_MODEL_HINT  optional model override inside agent config (unused for now)
+ *   GEMINI_API_KEY              required (unless SMART_SCRUB_SKIP_ANTIGRAVITY=1)
+ *   ANTIGRAVITY_BATCH_SIZE      optional override
+ *   ANTIGRAVITY_DRY_RUN         "1" = no catalog.json writes (export/usage still written)
+ *   ANTIGRAVITY_COLD_IDS        comma pluginIds to force (testing)
  */
-const { readFileSync, writeFileSync, existsSync } = require('node:fs')
-const { resolve } = require('node:path')
+const { writeFileSync } = require('node:fs')
+const {
+  CATALOG_PATH,
+  EXPORT_PATH,
+  CURSOR_PATH,
+  USAGE_PATH,
+  GAP_QUEUE_PATH
+} = require('./lib/paths')
+const { buildAndWrite, loadJson } = require('./lib/gapQueue')
+const {
+  assertPortalUrl,
+  normalizeVersion,
+  isSuspiciousVersion,
+  confirmVersionOnPage
+} = require('./lib/accuracyGate')
+const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('./lib/knownSourcesJs')
 
-const ROOT = resolve(__dirname, '../..')
-const CATALOG_PATH = resolve(ROOT, 'catalog/catalog.json')
-const EXPORT_PATH = resolve(ROOT, 'catalog/antigravity-export.json')
-const CURSOR_PATH = resolve(ROOT, 'catalog/antigravity-cursor.json')
-
-const BINARY_RE = /\.(dmg|pkg|exe|zip|msi|rar|7z|iso)(\?|$)/i
-const BATCH_SIZE = Math.max(1, Number(process.env.ANTIGRAVITY_BATCH_SIZE || 10))
 const DRY_RUN = process.env.ANTIGRAVITY_DRY_RUN === '1'
 const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
+const DEFAULT_BATCH = 8
+const MIN_BATCH = 3
+const MAX_BATCH = 15
 
-if (!API_KEY) {
-  console.error('Missing GEMINI_API_KEY (GitHub Actions secret or local env).')
-  process.exit(1)
-}
-
-function loadJson(path, fallback) {
-  if (!existsSync(path)) return fallback
-  return JSON.parse(readFileSync(path, 'utf8'))
-}
-
-function norm(s) {
-  return String(s || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '')
-}
-
-function assertPortalUrl(url) {
-  if (!/^https?:\/\//i.test(url)) throw new Error(`Non-http portal: ${url}`)
-  if (BINARY_RE.test(url)) throw new Error(`Binary URL rejected: ${url}`)
-  if (/example\.com/i.test(url)) throw new Error(`Placeholder URL rejected: ${url}`)
-}
-
-function buildIdentitySeed(catalog) {
-  const mfr = Object.fromEntries(catalog.manufacturers.map((m) => [m.id, m]))
-  return catalog.plugins.map((p) => {
-    const m = mfr[p.manufacturerId] || {}
-    return {
-      pluginId: p.id,
-      manufacturerId: p.manufacturerId,
-      manufacturer: m.name || p.manufacturerId,
-      product: p.name,
-      portalUrl: p.updatePortalUrl || m.updatePortalUrl || m.websiteUrl || null,
-      // Intentionally omit latestVersion / versionEvidence / versionSourceUrl
-      needsVerification: !p.versionEvidence || p.versionEvidence === 'unverified-seed' || !p.versionSourceUrl
-    }
+function loadUsage() {
+  return loadJson(USAGE_PATH, {
+    schemaVersion: 1,
+    nextBatchSize: DEFAULT_BATCH,
+    runs: []
   })
 }
 
-function pickBatch(seed, cursor, batchSize) {
-  if (!seed.length) return { batch: [], nextIndex: 0 }
-
-  // Prefer unverified first, then rotate through the full list from cursor.
-  const unverified = seed.filter((p) => p.needsVerification)
-  const pool = unverified.length ? unverified : seed
-  const start = Number(cursor.lastIndex || 0) % pool.length
-  const batch = []
-  for (let i = 0; i < Math.min(batchSize, pool.length); i++) {
-    batch.push(pool[(start + i) % pool.length])
+function chooseBatchSize(usage) {
+  if (process.env.ANTIGRAVITY_BATCH_SIZE) {
+    return Math.max(1, Number(process.env.ANTIGRAVITY_BATCH_SIZE))
   }
-  return { batch, nextIndex: (start + batch.length) % pool.length, poolSize: pool.length }
+  const n = Number(usage.nextBatchSize || DEFAULT_BATCH)
+  return Math.min(MAX_BATCH, Math.max(MIN_BATCH, n))
+}
+
+function adaptNextBatchSize(usage, { quotaError, tokens, batchSize, successes }) {
+  let next = batchSize
+  if (quotaError) {
+    next = Math.max(MIN_BATCH, Math.floor(batchSize * 0.5))
+  } else if (successes > 0 && tokens != null && tokens < 180000) {
+    next = Math.min(MAX_BATCH, batchSize + 1)
+  } else if (tokens != null && tokens > 350000) {
+    next = Math.max(MIN_BATCH, batchSize - 1)
+  }
+  usage.nextBatchSize = next
+  return next
+}
+
+function pickColdBatch(gaps, batchSize, cursor) {
+  const forced = (process.env.ANTIGRAVITY_COLD_IDS || '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean)
+  let cold = gaps.filter((g) => g.path === 'cold')
+  if (forced.length) {
+    const set = new Set(forced)
+    cold = gaps.filter((g) => set.has(g.pluginId))
+  }
+
+  // Manufacturer-batch: take contiguous manufacturer groups from prioritized gap list
+  if (!cold.length) return { batch: [], nextIndex: 0, poolSize: 0 }
+
+  const start = Number(cursor.lastIndex || 0) % cold.length
+  const rotated = cold.slice(start).concat(cold.slice(0, start))
+  const batch = []
+  const seenMfr = new Set()
+  for (const item of rotated) {
+    if (batch.length >= batchSize) break
+    // Prefer filling current manufacturer before hopping too much
+    if (seenMfr.size && !seenMfr.has(item.manufacturerId) && batch.length >= Math.ceil(batchSize * 0.6)) {
+      // allow new mfr only after 60% filled
+    }
+    batch.push(item)
+    seenMfr.add(item.manufacturerId)
+  }
+  const nextIndex = (start + batch.length) % cold.length
+  return { batch, nextIndex, poolSize: cold.length }
 }
 
 function buildPrompt(batch) {
-  const seed = batch.map(({ manufacturer, product, portalUrl, pluginId, manufacturerId }) => ({
-    pluginId,
-    manufacturerId,
-    manufacturer,
-    product,
-    portalUrl
-  }))
+  // Group by manufacturer for fewer navigations
+  const byMfr = {}
+  for (const b of batch) {
+    if (!byMfr[b.manufacturer]) byMfr[b.manufacturer] = []
+    byMfr[b.manufacturer].push({
+      pluginId: b.pluginId,
+      manufacturerId: b.manufacturerId,
+      product: b.product,
+      portalUrl: b.portalUrl
+    })
+  }
 
-  return `You are verifying public audio-plugin / DAW software version numbers.
+  return `You are verifying public audio-plugin / DAW software version numbers with ZERO guessing.
 
 TASK
-For EACH product in the seed JSON below:
-1) Visit the manufacturer portal / release-notes / downloads / changelog page.
-   Start from portalUrl when present; follow to a better public page if needed.
-2) Extract the latest public version from that live page only.
-3) Return ONLY a JSON array (no markdown fences, no commentary) of objects:
+For EACH product below, find the latest public version on an official manufacturer page.
+Prefer one shared release-notes/downloads/changelog page per manufacturer when versions are published there.
+
+Return ONLY a JSON array (no markdown fences) of:
 {
   "pluginId": string,
   "manufacturerId": string,
@@ -107,15 +130,14 @@ For EACH product in the seed JSON below:
 }
 
 RULES
-- Do NOT invent versions.
-- If unverified, latestVerifiedVersion=null and confidence=low.
+- Do NOT invent versions. If unsure, null + confidence low.
+- Keep pluginId and manufacturerId unchanged.
+- Never use example.com, google.com/search, or installer binary URLs (.dmg/.pkg/.exe/.zip).
 - Prefer exact dotted versions (e.g. 5.5.5).
-- Never use example.com, placeholder names, or installer binary URLs (.dmg/.pkg/.exe/.zip).
-- No downloads of installers. Public pages only.
-- Keep pluginId and manufacturerId unchanged from the seed.
+- Do not download installers.
 
-SEED
-${JSON.stringify(seed, null, 2)}
+MANUFACTURER GROUPS
+${JSON.stringify(byMfr, null, 2)}
 `
 }
 
@@ -125,7 +147,6 @@ async function callAntigravity(prompt) {
     input: prompt,
     environment: 'remote'
   }
-
   const res = await fetch('https://generativelanguage.googleapis.com/v1beta/interactions', {
     method: 'POST',
     headers: {
@@ -135,12 +156,13 @@ async function callAntigravity(prompt) {
     },
     body: JSON.stringify(body)
   })
-
   const text = await res.text()
   if (!res.ok) {
-    throw new Error(`Antigravity HTTP ${res.status}: ${text.slice(0, 1000)}`)
+    const err = new Error(`Antigravity HTTP ${res.status}: ${text.slice(0, 1000)}`)
+    err.status = res.status
+    err.body = text
+    throw err
   }
-
   const data = JSON.parse(text)
   let output = data.output_text || ''
   if (!output) {
@@ -152,7 +174,6 @@ async function callAntigravity(prompt) {
     }
     output = chunks.join('\n')
   }
-
   return {
     interactionId: data.id,
     environmentId: data.environment_id,
@@ -169,7 +190,7 @@ function extractJsonArray(text) {
     const parsed = JSON.parse(trimmed)
     if (Array.isArray(parsed)) return parsed
   } catch {
-    // fall through — model sometimes wraps in fences/prose
+    /* continue */
   }
   const fence = trimmed.match(/```(?:json)?\s*([\s\S]*?)```/i)
   if (fence) {
@@ -185,104 +206,23 @@ function extractJsonArray(text) {
   throw new Error('Could not parse JSON array from Antigravity output')
 }
 
-function sanitizeFindings(raw, batch) {
-  const byId = Object.fromEntries(batch.map((b) => [b.pluginId, b]))
-  const out = []
-  for (const row of raw) {
-    if (!row || typeof row !== 'object') continue
-    const pluginId = row.pluginId
-    const seed = byId[pluginId]
-    if (!seed) {
-      console.warn('Skipping unknown pluginId from agent:', pluginId)
-      continue
-    }
-    const version = row.latestVerifiedVersion == null ? null : String(row.latestVerifiedVersion).trim()
-    const sourceUrl = row.sourceUrl == null ? null : String(row.sourceUrl).trim()
-    const confidence = String(row.confidence || 'low').toLowerCase()
-    if (!version || !sourceUrl) {
-      out.push({
-        pluginId: seed.pluginId,
-        manufacturerId: seed.manufacturerId,
-        manufacturer: seed.manufacturer,
-        product: seed.product,
-        latestVerifiedVersion: null,
-        sourceUrl: null,
-        evidenceType: row.evidenceType || null,
-        confidence: 'low',
-        notes: String(row.notes || 'unverified'),
-        status: 'pending'
-      })
-      continue
-    }
-    try {
-      assertPortalUrl(sourceUrl)
-    } catch (err) {
-      console.warn(`Rejecting ${pluginId}: ${err.message}`)
-      continue
-    }
-    // Guardrail: marketing prices mistaken for versions
-    const major = Number(String(version).replace(/^v/i, '').split('.')[0])
-    if (Number.isFinite(major) && major >= 50) {
-      console.warn(`Rejecting suspicious version ${version} for ${pluginId}`)
-      continue
-    }
-    if (!['high', 'medium', 'low'].includes(confidence)) continue
-
-    out.push({
-      pluginId: seed.pluginId,
-      manufacturerId: seed.manufacturerId,
-      manufacturer: seed.manufacturer,
-      product: seed.product,
-      latestVerifiedVersion: version.replace(/^v/i, ''),
-      sourceUrl,
-      evidenceType: row.evidenceType || 'download-portal',
-      confidence,
-      notes: String(row.notes || ''),
-      status: confidence === 'high' ? 'active' : confidence === 'medium' ? 'active' : 'pending',
-      verifiedAt: new Date().toISOString().slice(0, 10)
-    })
-  }
-  return out
-}
-
-function applyToCatalog(catalog, findings) {
-  let changed = 0
-  const byId = Object.fromEntries(catalog.plugins.map((p) => [p.id, p]))
-  for (const f of findings) {
-    if (f.confidence !== 'high' && f.confidence !== 'medium') continue
-    if (!f.latestVerifiedVersion || !f.sourceUrl) continue
-    const plugin = byId[f.pluginId]
-    if (!plugin) continue
-    const before = `${plugin.latestVersion}|${plugin.versionSourceUrl}|${plugin.versionEvidence}`
-    plugin.latestVersion = f.latestVerifiedVersion
-    plugin.versionEvidence = 'public-page'
-    plugin.versionSourceUrl = f.sourceUrl
-    plugin.versionVerifiedAt = f.verifiedAt
-    plugin.updatePortalUrl = plugin.updatePortalUrl || f.sourceUrl
-    const stamp = `verifiedPublic:${f.latestVerifiedVersion}@${f.sourceUrl}`
-    const notes = (plugin.notes || '').replace(/\s*verifiedPublic:\S+/g, '').trim()
-    plugin.notes = notes ? `${notes} ${stamp}` : stamp
-    const after = `${plugin.latestVersion}|${plugin.versionSourceUrl}|${plugin.versionEvidence}`
-    if (before !== after) changed++
-  }
-  if (changed) {
-    catalog.updatedAt = new Date().toISOString()
-    catalog.catalogSource = 'antigravity-scrub'
-  }
-  return changed
+function markVerified(plugin, version, sourceUrl) {
+  plugin.latestVersion = normalizeVersion(version)
+  plugin.versionEvidence = 'public-page'
+  plugin.versionSourceUrl = sourceUrl
+  plugin.versionVerifiedAt = new Date().toISOString().slice(0, 10)
+  plugin.updatePortalUrl = plugin.updatePortalUrl || sourceUrl
+  const stamp = `verifiedPublic:${plugin.latestVersion}@${sourceUrl}`
+  const notes = (plugin.notes || '').replace(/\s*verifiedPublic:\S+/g, '').trim()
+  plugin.notes = notes ? `${notes} ${stamp}` : stamp
 }
 
 function mergeExport(existing, findings, meta) {
   const byId = Object.fromEntries((existing.findings || []).map((f) => [f.pluginId, f]))
   for (const f of findings) {
     const prev = byId[f.pluginId]
-    if (!prev) {
-      byId[f.pluginId] = f
-      continue
-    }
-    // Prefer higher confidence / newer verification
     const rank = { high: 3, medium: 2, low: 1 }
-    if ((rank[f.confidence] || 0) >= (rank[prev.confidence] || 0)) {
+    if (!prev || (rank[f.confidence] || 0) >= (rank[prev.confidence] || 0)) {
       byId[f.pluginId] = { ...prev, ...f }
     }
   }
@@ -301,28 +241,198 @@ function mergeExport(existing, findings, meta) {
 }
 
 async function main() {
-  const catalog = loadJson(CATALOG_PATH)
-  const seed = buildIdentitySeed(catalog)
-  const cursor = loadJson(CURSOR_PATH, { lastIndex: 0 })
-  const { batch, nextIndex, poolSize } = pickBatch(seed, cursor, BATCH_SIZE)
-
-  console.log(
-    `Antigravity scrub: batch=${batch.length} pool=${poolSize} dryRun=${DRY_RUN ? 'yes' : 'no'}`
-  )
-  for (const b of batch) {
-    console.log(` - ${b.manufacturer} / ${b.product} (${b.pluginId})`)
+  if (!API_KEY) {
+    console.error('Missing GEMINI_API_KEY')
+    process.exit(1)
   }
 
-  const prompt = buildPrompt(batch)
-  const result = await callAntigravity(prompt)
+  const { gaps } = buildAndWrite({ writeCoverage: false })
+  const usageDoc = loadUsage()
+  const batchSize = chooseBatchSize(usageDoc)
+  const cursor = loadJson(CURSOR_PATH, { lastIndex: 0 })
+  const { batch, nextIndex, poolSize } = pickColdBatch(gaps, batchSize, cursor)
+
+  console.log(
+    `antigravity-cold: batch=${batch.length}/${batchSize} coldPool=${poolSize} dryRun=${DRY_RUN}`
+  )
+  if (!batch.length) {
+    console.log(JSON.stringify({ ok: true, skipped: true, reason: 'no_cold_gaps' }, null, 2))
+    return { ok: true, skipped: true, antigravity_hits: 0, page_confirm_rejects: 0, tokens_used: 0, next_batch_size: batchSize }
+  }
+  for (const b of batch) {
+    console.log(` - ${b.manufacturer} / ${b.product}`)
+  }
+
+  let quotaError = false
+  let result
+  try {
+    result = await callAntigravity(buildPrompt(batch))
+  } catch (err) {
+    quotaError = /429|resource.exhausted|quota|rate.?limit/i.test(String(err.message) + (err.body || ''))
+    const next = adaptNextBatchSize(usageDoc, {
+      quotaError: true,
+      tokens: null,
+      batchSize,
+      successes: 0
+    })
+    usageDoc.runs = (usageDoc.runs || []).slice(-40)
+    usageDoc.runs.push({
+      at: new Date().toISOString(),
+      batchSize,
+      tokens: null,
+      successes: 0,
+      rejects: batch.length,
+      quotaError: true,
+      error: String(err.message).slice(0, 500)
+    })
+    usageDoc.updatedAt = new Date().toISOString()
+    writeFileSync(USAGE_PATH, `${JSON.stringify(usageDoc, null, 2)}\n`)
+    writeFileSync(
+      CURSOR_PATH,
+      `${JSON.stringify({ lastIndex: nextIndex, updatedAt: new Date().toISOString() }, null, 2)}\n`
+    )
+    console.error(err)
+    const summary = {
+      ok: false,
+      quotaError,
+      antigravity_hits: 0,
+      page_confirm_rejects: batch.length,
+      tokens_used: 0,
+      next_batch_size: next,
+      error: String(err.message).slice(0, 500)
+    }
+    console.log(JSON.stringify(summary, null, 2))
+    if (require.main === module && !quotaError) process.exit(1)
+    return summary
+  }
+
   console.log(`interaction=${result.interactionId} status=${result.status}`)
+  const tokens = result.usage?.total_tokens ?? null
   if (result.usage) console.log('usage', JSON.stringify(result.usage))
 
   const raw = extractJsonArray(result.outputText)
-  const findings = sanitizeFindings(raw, batch)
-  console.log(`parsed_findings=${findings.length}`)
+  const bySeed = Object.fromEntries(batch.map((b) => [b.pluginId, b]))
+  const catalog = loadJson(CATALOG_PATH)
+  const byId = Object.fromEntries(catalog.plugins.map((p) => [p.id, p]))
+  const known = loadKnownSources()
 
-  const exportDoc = mergeExport(loadJson(EXPORT_PATH, { findings: [] }), findings, {
+  let hits = 0
+  let rejects = 0
+  const exportRows = []
+  const promotions = []
+
+  for (const row of raw) {
+    const seed = bySeed[row.pluginId]
+    if (!seed) {
+      rejects++
+      continue
+    }
+    const version = row.latestVerifiedVersion == null ? null : normalizeVersion(row.latestVerifiedVersion)
+    const sourceUrl = row.sourceUrl == null ? null : String(row.sourceUrl).trim()
+    const confidence = String(row.confidence || 'low').toLowerCase()
+
+    if (!version || !sourceUrl || !['high', 'medium'].includes(confidence)) {
+      rejects++
+      exportRows.push({
+        pluginId: seed.pluginId,
+        manufacturerId: seed.manufacturerId,
+        manufacturer: seed.manufacturer,
+        product: seed.product,
+        latestVerifiedVersion: null,
+        sourceUrl: null,
+        confidence: 'low',
+        status: 'pending',
+        notes: String(row.notes || 'unverified')
+      })
+      continue
+    }
+    if (isSuspiciousVersion(version)) {
+      rejects++
+      continue
+    }
+
+    let portalOk = true
+    try {
+      assertPortalUrl(sourceUrl)
+    } catch {
+      portalOk = false
+    }
+    if (!portalOk) {
+      rejects++
+      continue
+    }
+
+    const confirm = await confirmVersionOnPage(sourceUrl, version)
+    if (!confirm.ok) {
+      rejects++
+      console.log(`  ✗ page-confirm ${seed.product}: ${confirm.reason}`)
+      exportRows.push({
+        pluginId: seed.pluginId,
+        manufacturerId: seed.manufacturerId,
+        manufacturer: seed.manufacturer,
+        product: seed.product,
+        latestVerifiedVersion: version,
+        sourceUrl,
+        confidence: 'low',
+        status: 'needs_review',
+        notes: `page_confirm_failed: ${confirm.reason}`
+      })
+      continue
+    }
+
+    const finalUrl = confirm.finalUrl || sourceUrl
+    hits++
+    console.log(`  ✓ ${seed.manufacturer} / ${seed.product}: ${version} @ ${finalUrl}`)
+    exportRows.push({
+      pluginId: seed.pluginId,
+      manufacturerId: seed.manufacturerId,
+      manufacturer: seed.manufacturer,
+      product: seed.product,
+      latestVerifiedVersion: version,
+      sourceUrl: finalUrl,
+      evidenceType: row.evidenceType || 'download-portal',
+      confidence,
+      status: 'active',
+      verifiedAt: new Date().toISOString().slice(0, 10),
+      notes: String(row.notes || '')
+    })
+
+    if (!DRY_RUN) {
+      const plugin = byId[seed.pluginId]
+      if (plugin) markVerified(plugin, version, finalUrl)
+      promotions.push({
+        manufacturerId: seed.manufacturerId,
+        url: finalUrl,
+        kind: 'release-notes',
+        label: `${seed.manufacturer} antigravity`,
+        nameIncludes: seed.product,
+        lastVersion: version,
+        lastVerifiedAt: new Date().toISOString().slice(0, 10),
+        addedBy: 'discovery'
+      })
+    }
+  }
+
+  const nextBatch = adaptNextBatchSize(usageDoc, {
+    quotaError,
+    tokens,
+    batchSize,
+    successes: hits
+  })
+  usageDoc.runs = (usageDoc.runs || []).slice(-40)
+  usageDoc.runs.push({
+    at: new Date().toISOString(),
+    interactionId: result.interactionId,
+    batchSize,
+    tokens,
+    successes: hits,
+    rejects,
+    quotaError: false
+  })
+  usageDoc.updatedAt = new Date().toISOString()
+  writeFileSync(USAGE_PATH, `${JSON.stringify(usageDoc, null, 2)}\n`)
+
+  const exportDoc = mergeExport(loadJson(EXPORT_PATH, { findings: [] }), exportRows, {
     interactionId: result.interactionId,
     environmentId: result.environmentId,
     batchSize: batch.length,
@@ -334,29 +444,37 @@ async function main() {
     `${JSON.stringify({ lastIndex: nextIndex, updatedAt: new Date().toISOString() }, null, 2)}\n`
   )
 
-  let changed = 0
-  if (!DRY_RUN) {
-    changed = applyToCatalog(catalog, findings)
+  if (!DRY_RUN && hits) {
+    catalog.updatedAt = new Date().toISOString()
+    catalog.catalogSource = 'antigravity-scrub'
     writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
+    if (promotions.length) {
+      mergeDiscoveredSources(known, promotions)
+      saveKnownSources(known)
+    }
   }
 
-  console.log(
-    JSON.stringify(
-      {
-        ok: true,
-        batchSize: batch.length,
-        findings: findings.length,
-        catalogPluginsUpdated: changed,
-        exportPath: 'catalog/antigravity-export.json',
-        nextIndex
-      },
-      null,
-      2
-    )
-  )
+  // Refresh gap queue after writes
+  buildAndWrite({ writeCoverage: false })
+
+  const summary = {
+    ok: true,
+    antigravity_hits: hits,
+    page_confirm_rejects: rejects,
+    tokens_used: tokens,
+    next_batch_size: nextBatch,
+    dryRun: DRY_RUN,
+    gap_queue: GAP_QUEUE_PATH
+  }
+  console.log(JSON.stringify(summary, null, 2))
+  return summary
 }
 
-main().catch((err) => {
-  console.error(err)
-  process.exit(1)
-})
+module.exports = { main, chooseBatchSize, adaptNextBatchSize }
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
+}

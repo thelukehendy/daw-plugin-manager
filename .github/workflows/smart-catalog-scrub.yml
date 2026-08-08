@@ -1,0 +1,94 @@
+name: Smart catalog scrub
+
+# Daily accuracy-first gap scrub:
+#   sticky URL reverify (free) → Antigravity cold discovery (GEMINI_API_KEY)
+# Complements Monday deterministic scrapers in catalog-refresh.yml.
+# Self-refines via known-sources promotion + adaptive Antigravity batch sizing.
+
+on:
+  schedule:
+    # Daily 16:00 UTC
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+    inputs:
+      sticky_limit:
+        description: 'Max sticky-URL reverifies this run'
+        required: false
+        default: '40'
+      antigravity_batch:
+        description: 'Optional Antigravity batch override (empty = adaptive)'
+        required: false
+        default: ''
+      skip_antigravity:
+        description: 'If true, only sticky/gap stages (no Gemini)'
+        required: false
+        default: 'false'
+      dry_run:
+        description: 'If true, do not modify catalog.json'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: smart-catalog-scrub
+  cancel-in-progress: false
+
+jobs:
+  scrub:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Require GEMINI_API_KEY (unless skip_antigravity)
+        if: ${{ github.event.inputs.skip_antigravity != 'true' }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "Missing repository secret GEMINI_API_KEY."
+            echo "Add it under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+
+      - name: Run smart scrub
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          STICKY_LIMIT: ${{ github.event.inputs.sticky_limit || '40' }}
+          ANTIGRAVITY_BATCH_SIZE: ${{ github.event.inputs.antigravity_batch }}
+          SMART_SCRUB_SKIP_ANTIGRAVITY: ${{ github.event.inputs.skip_antigravity == 'true' && '1' || '0' }}
+          ANTIGRAVITY_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+          STICKY_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+        run: node scripts/catalog/smart-scrub.js
+        timeout-minutes: 50
+
+      - name: Install deps + validate catalog
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          npm ci
+          npm run catalog:validate
+
+      - name: Commit results if changed
+        run: |
+          git config user.name "catalog-bot"
+          git config user.email "catalog-bot@users.noreply.github.com"
+          git add -A \
+            catalog/catalog.json \
+            catalog/known-sources.json \
+            catalog/gap-queue.json \
+            catalog/coverage-report.json \
+            catalog/antigravity-export.json \
+            catalog/antigravity-cursor.json \
+            catalog/antigravity-usage.json
+          if git diff --staged --quiet; then
+            echo "No catalog changes to commit."
+          else
+            git commit -m "chore(catalog): smart scrub $(date -u +%Y-%m-%d)"
+            git push
+          fi
