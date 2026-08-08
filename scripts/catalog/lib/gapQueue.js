@@ -5,7 +5,7 @@
 const { readFileSync, writeFileSync, existsSync } = require('node:fs')
 const { CATALOG_PATH, KNOWN_SOURCES_PATH, GAP_QUEUE_PATH, COVERAGE_REPORT_PATH } = require('./paths')
 
-const STRONG_EVIDENCE = new Set(['agent-verified'])
+const STRONG_EVIDENCE = new Set(['page-confirmed', 'agent-verified'])
 const SCRAPER_EVIDENCE = new Set(['live-scrape', 'public-page', 'manufacturer-feed'])
 const WEAK_EVIDENCE = new Set(['search-verified', 'curated-seed', 'unverified-seed'])
 
@@ -65,10 +65,10 @@ function buildGapQueue(catalog, knownSources, { freshDays = 7 } = {}) {
     if (!p.versionSourceUrl || evidence === 'unverified-seed' || !evidence) {
       priority = 1
       reason = 'unverified_or_missing_source'
-    } else if (evidence !== 'agent-verified' && SCRAPER_EVIDENCE.has(evidence)) {
-      // Deterministic scrape / sticky exists, but Antigravity has not confirmed yet
+    } else if (!STRONG_EVIDENCE.has(evidence) && SCRAPER_EVIDENCE.has(evidence)) {
+      // Deterministic scrape / legacy sticky exists, but hard page-confirm has not run yet
       priority = 2
-      reason = 'awaiting_agent_confirmation'
+      reason = 'awaiting_page_confirmation'
     } else if (ageDays == null || ageDays > freshDays) {
       priority = 2
       reason = 'stale_gt_7d'

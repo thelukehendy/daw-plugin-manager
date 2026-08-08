@@ -20,12 +20,12 @@ const {
 } = require('./lib/accuracyGate')
 const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('./lib/knownSourcesJs')
 
-const LIMIT = Math.max(1, Number(process.env.STICKY_LIMIT || 40))
+const LIMIT = Math.max(1, Number(process.env.STICKY_LIMIT || 200))
 const DRY_RUN = process.env.STICKY_DRY_RUN === '1'
 
 function markVerified(plugin, version, sourceUrl) {
   plugin.latestVersion = normalizeVersion(version)
-  plugin.versionEvidence = 'public-page'
+  plugin.versionEvidence = 'page-confirmed'
   plugin.versionSourceUrl = sourceUrl
   plugin.versionVerifiedAt = new Date().toISOString().slice(0, 10)
   plugin.updatePortalUrl = plugin.updatePortalUrl || sourceUrl

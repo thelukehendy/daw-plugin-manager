@@ -3,25 +3,34 @@
  * Accuracy-first smart scrub orchestrator.
  *
  * 1) Build gap queue + coverage
- * 2) Sticky-URL reverify (cheap, no Gemini)
- * 3) Antigravity cold discovery (adaptive free-tier batch)
- * 4) Write coverage-report.json with run metrics
+ * 2) Sticky-URL reverify (cheap, no Gemini) → page-confirmed
+ * 3) Flash Lite extract + page-confirm (primary Gemini path, ~500 RPD free)
+ * 4) Antigravity cold discovery (last resort; skip by default unless enabled)
+ * 5) Write coverage-report.json with run metrics
  *
  * Env:
  *   STICKY_LIMIT
+ *   FLASH_LIMIT / FLASH_RPM / FLASH_MODEL
+ *   SMART_SCRUB_SKIP_FLASH=1
+ *   SMART_SCRUB_ENABLE_ANTIGRAVITY=1  — opt-in rare cold path
+ *   SMART_SCRUB_SKIP_ANTIGRAVITY=1    — force skip (default when not enabled)
  *   ANTIGRAVITY_BATCH_SIZE / adaptive via antigravity-usage.json
- *   SMART_SCRUB_SKIP_ANTIGRAVITY=1  — sticky/gaps only
- *   ANTIGRAVITY_DRY_RUN / STICKY_DRY_RUN
- *   GEMINI_API_KEY — required unless skip antigravity
+ *   ANTIGRAVITY_DRY_RUN / STICKY_DRY_RUN / FLASH_DRY_RUN
+ *   GEMINI_API_KEY — required unless skip flash (+ antigravity)
  */
 const { writeFileSync } = require('node:fs')
 const { COVERAGE_REPORT_PATH, USAGE_PATH } = require('./lib/paths')
 const { buildAndWrite, loadJson } = require('./lib/gapQueue')
 const sticky = require('./sticky-reverify')
+const flash = require('./flash-extract')
 const antigravity = require('./antigravity-scrub')
 
 async function main() {
-  const skipAgent = process.env.SMART_SCRUB_SKIP_ANTIGRAVITY === '1'
+  const skipFlash = process.env.SMART_SCRUB_SKIP_FLASH === '1'
+  const enableAgent = process.env.SMART_SCRUB_ENABLE_ANTIGRAVITY === '1'
+  const skipAgent =
+    process.env.SMART_SCRUB_SKIP_ANTIGRAVITY === '1' || !enableAgent
+
   console.log('=== smart-scrub: gap queue ===')
   const before = buildAndWrite({ writeCoverage: false })
   console.log(
@@ -40,6 +49,22 @@ async function main() {
   console.log('=== smart-scrub: sticky reverify ===')
   const stickySummary = await sticky.main()
 
+  let flashSummary = {
+    hits: 0,
+    flashCalls: 0,
+    heuristicHits: 0,
+    rejects: 0,
+    tokens: 0,
+    skipped: skipFlash
+  }
+
+  if (skipFlash) {
+    console.log('=== smart-scrub: flash skipped (SMART_SCRUB_SKIP_FLASH=1) ===')
+  } else {
+    console.log('=== smart-scrub: flash extract ===')
+    flashSummary = (await flash.main()) || flashSummary
+  }
+
   let agentSummary = {
     antigravity_hits: 0,
     page_confirm_rejects: 0,
@@ -49,9 +74,13 @@ async function main() {
   }
 
   if (skipAgent) {
-    console.log('=== smart-scrub: antigravity skipped (SMART_SCRUB_SKIP_ANTIGRAVITY=1) ===')
+    console.log(
+      enableAgent
+        ? '=== smart-scrub: antigravity skipped (SMART_SCRUB_SKIP_ANTIGRAVITY=1) ==='
+        : '=== smart-scrub: antigravity skipped (opt-in via SMART_SCRUB_ENABLE_ANTIGRAVITY=1) ==='
+    )
   } else {
-    console.log('=== smart-scrub: antigravity cold ===')
+    console.log('=== smart-scrub: antigravity cold (last resort) ===')
     agentSummary = (await antigravity.main()) || agentSummary
   }
 
@@ -64,6 +93,12 @@ async function main() {
       at: new Date().toISOString(),
       sticky_hits: stickySummary?.sticky_hits || 0,
       sticky_rejects: stickySummary?.sticky_rejects || 0,
+      flash_hits: flashSummary.hits || 0,
+      flash_calls: flashSummary.flashCalls || 0,
+      flash_heuristic_hits: flashSummary.heuristicHits || 0,
+      flash_rejects: flashSummary.rejects || 0,
+      flash_tokens: flashSummary.tokens || 0,
+      flash_skipped: Boolean(flashSummary.skipped),
       antigravity_hits: agentSummary.antigravity_hits || 0,
       page_confirm_rejects: agentSummary.page_confirm_rejects || 0,
       tokens_used: agentSummary.tokens_used || 0,
@@ -82,10 +117,12 @@ async function main() {
         verified_within_7d: report.verified_within_7d,
         pending_unverified: report.pending_unverified,
         sticky_hits: report.run.sticky_hits,
+        flash_hits: report.run.flash_hits,
+        flash_calls: report.run.flash_calls,
         antigravity_hits: report.run.antigravity_hits,
         page_confirm_rejects: report.run.page_confirm_rejects,
         tokens_used: report.run.tokens_used,
-        next_batch_size: report.run.next_batch_size
+        flash_tokens: report.run.flash_tokens
       },
       null,
       2
@@ -93,7 +130,11 @@ async function main() {
   )
 }
 
-main().catch((err) => {
-  console.error(err)
-  process.exit(1)
-})
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
+}
+
+module.exports = { main }

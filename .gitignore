@@ -9,3 +9,6 @@ dist-electron
 .cursor
 coverage
 scan-report.json
+.env
+.env.*
+!.env.example

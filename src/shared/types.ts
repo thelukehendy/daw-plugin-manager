@@ -93,10 +93,11 @@ export interface CatalogPlugin {
   dawIssues?: DawCompatibilityIssue[]
   /**
    * How the latestVersion was obtained.
-   * agent-verified = Gemini Antigravity (or equivalent) found + page-confirmed the version — highest trust;
-   * live-scrape = dedicated manufacturer scraper hit a public page (provisional until agent-verified);
-   * public-page = sticky/known public download page re-verify;
-   * search-verified = weekly discovery found a manufacturer-domain page via free search, then fetched + parsed it;
+   * page-confirmed = version + product found on a fetched public page (Flash Lite extract and/or sticky heuristic) — high trust;
+   * agent-verified = Antigravity found + page-confirmed (rare cold path) — also high trust;
+   * live-scrape = dedicated manufacturer scraper (provisional until page-confirmed);
+   * public-page = legacy sticky stamp without hard page-confirm (treat as medium);
+   * search-verified = weekly discovery via free search then fetch;
    * manufacturer-feed = official API/feed; curated-seed = hand-verified once; unverified-seed = unknown provenance.
    */
   versionEvidence?: VersionEvidence
@@ -107,6 +108,7 @@ export interface CatalogPlugin {
 }
 
 export type VersionEvidence =
+  | 'page-confirmed'
   | 'agent-verified'
   | 'live-scrape'
   | 'public-page'

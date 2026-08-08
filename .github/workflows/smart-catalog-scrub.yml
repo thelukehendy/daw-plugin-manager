@@ -1,9 +1,9 @@
 name: Smart catalog scrub
 
-# Daily accuracy-first gap scrub:
-#   sticky URL reverify (free) → Antigravity cold discovery (GEMINI_API_KEY)
+# Daily accuracy-first gap scrub (runs on GitHub runners — Mac not required):
+#   sticky URL reverify (free) → parallel Flash cheap tier → smart escalation
+#   Antigravity only when explicitly enabled (last resort)
 # Complements Monday deterministic scrapers in catalog-refresh.yml.
-# Self-refines via known-sources promotion + adaptive Antigravity batch sizing.
 
 on:
   schedule:
@@ -14,15 +14,35 @@ on:
       sticky_limit:
         description: 'Max sticky-URL reverifies this run'
         required: false
-        default: '40'
+        default: '200'
+      flash_limit:
+        description: 'Max plugins into Flash cheap tier (Lite ~500 RPD each)'
+        required: false
+        default: '480'
+      cheap_rpm:
+        description: 'Cheap Flash Lite RPM (free ~15)'
+        required: false
+        default: '11'
+      smart_rpm:
+        description: 'Smart Flash RPM (free 3.5/3.6 Flash ~5)'
+        required: false
+        default: '4'
+      skip_flash:
+        description: 'If true, skip Flash stage'
+        required: false
+        default: 'false'
+      skip_smart:
+        description: 'If true, cheap Lite only (no 3.5/3.6 Flash escalations)'
+        required: false
+        default: 'false'
+      enable_antigravity:
+        description: 'If true, run Antigravity cold path after Flash (expensive TPM)'
+        required: false
+        default: 'false'
       antigravity_batch:
         description: 'Optional Antigravity batch override (empty = adaptive)'
         required: false
         default: ''
-      skip_antigravity:
-        description: 'If true, only sticky/gap stages (no Gemini)'
-        required: false
-        default: 'false'
       dry_run:
         description: 'If true, do not modify catalog.json'
         required: false
@@ -38,7 +58,7 @@ concurrency:
 jobs:
   scrub:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -46,8 +66,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Require GEMINI_API_KEY (unless skip_antigravity)
-        if: ${{ github.event.inputs.skip_antigravity != 'true' }}
+      - name: Require GEMINI_API_KEY (unless skip_flash and no antigravity)
+        if: ${{ github.event.inputs.skip_flash != 'true' || github.event.inputs.enable_antigravity == 'true' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
@@ -60,13 +80,21 @@ jobs:
       - name: Run smart scrub
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          STICKY_LIMIT: ${{ github.event.inputs.sticky_limit || '40' }}
+          STICKY_LIMIT: ${{ github.event.inputs.sticky_limit || '200' }}
+          FLASH_LIMIT: ${{ github.event.inputs.flash_limit || '480' }}
+          FLASH_CHEAP_RPM: ${{ github.event.inputs.cheap_rpm || '11' }}
+          FLASH_SMART_RPM: ${{ github.event.inputs.smart_rpm || '4' }}
+          FLASH_CHEAP_MODELS: gemini-3.5-flash-lite,gemini-3.1-flash-lite
+          FLASH_SMART_MODELS: gemini-3.6-flash,gemini-3.5-flash,gemini-2.5-flash
+          FLASH_SKIP_SMART: ${{ github.event.inputs.skip_smart == 'true' && '1' || '0' }}
+          SMART_SCRUB_SKIP_FLASH: ${{ github.event.inputs.skip_flash == 'true' && '1' || '0' }}
+          SMART_SCRUB_ENABLE_ANTIGRAVITY: ${{ github.event.inputs.enable_antigravity == 'true' && '1' || '0' }}
           ANTIGRAVITY_BATCH_SIZE: ${{ github.event.inputs.antigravity_batch }}
-          SMART_SCRUB_SKIP_ANTIGRAVITY: ${{ github.event.inputs.skip_antigravity == 'true' && '1' || '0' }}
           ANTIGRAVITY_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
           STICKY_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+          FLASH_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
         run: node scripts/catalog/smart-scrub.js
-        timeout-minutes: 50
+        timeout-minutes: 110
 
       - name: Install deps + validate catalog
         if: ${{ github.event.inputs.dry_run != 'true' }}
@@ -83,6 +111,7 @@ jobs:
             catalog/known-sources.json \
             catalog/gap-queue.json \
             catalog/coverage-report.json \
+            catalog/flash-escalation.json \
             catalog/antigravity-export.json \
             catalog/antigravity-cursor.json \
             catalog/antigravity-usage.json

@@ -4,15 +4,16 @@ Seed + cloud-refreshable source of truth for latest versions, download portals, 
 
 ### Accuracy-first smart scrub (self-refining)
 
-Pipeline goals: **no guessing**, then efficiency. Deterministic Monday scrapers do bulk work; a daily smart scrub closes gaps and gets cheaper over time as sticky URLs accumulate.
+Pipeline goals: **no guessing**, then throughput within free-tier limits. Deterministic Monday scrapers find URLs/candidates only; high confidence requires **page-confirm** (version string must appear on a fetched public page).
 
 ```text
-Monday:  catalog-refresh.yml  (dedicated scrapers + discovery)
+Monday:  catalog-refresh.yml  (dedicated scrapers + discovery → provisional live-scrape)
 Daily:   smart-catalog-scrub.yml
            1) gap queue
-           2) sticky URL reverify (no Gemini)
-           3) Antigravity cold discovery only (page-confirmed)
-           4) promote winners → known-sources.json
+           2) sticky URL reverify (no Gemini) → page-confirmed
+           3) Flash parallel cheap tier → escalate hard cases → smart Flash tier
+           4) Antigravity cold (opt-in last resort; expensive TPM)
+           5) promote winners → known-sources.json
 ```
 
 | Piece | Path / setting |
@@ -20,16 +21,24 @@ Daily:   smart-catalog-scrub.yml
 | Orchestrator | `npm run catalog:smart-scrub` |
 | Gap report | `npm run catalog:gaps` → `catalog/gap-queue.json`, `catalog/coverage-report.json` |
 | Sticky fast path | `npm run catalog:sticky-reverify` |
-| Cold agent | `npm run catalog:antigravity-scrub` (`antigravity-preview-05-2026`) |
+| Flash Lite extract | `npm run catalog:flash-extract` (`gemini-3.1-flash-lite`, paced ~12 RPM) |
+| Cold agent (opt-in) | `npm run catalog:antigravity-scrub` (`antigravity-preview-05-2026`) |
 | Daily workflow | `.github/workflows/smart-catalog-scrub.yml` (16:00 UTC + manual) |
 | Monday scrapers | `.github/workflows/catalog-refresh.yml` (15:00 UTC) |
 | Secret | Repo Actions secret `GEMINI_API_KEY` |
-| Usage / adaptive batch | `catalog/antigravity-usage.json` (free-tier safe: **1–3** plugins/call; TPM target &lt;100K) |
+| Usage log | `catalog/antigravity-usage.json` (Flash + Antigravity run stats) |
+
+Free-tier pacing (Project May 25th observed):
+- **Cheap tier (parallel)** — `gemini-3.5-flash-lite`, `gemini-3.1-flash-lite`, plus lighter 2.x Flash/Lite workers (~500 RPD on current Lite buckets)
+- **Smart tier (parallel, escalations only)** — `gemini-3.6-flash`, `gemini-3.5-flash`, `gemini-2.5-flash` with small daily budgets
+- Low-confidence / unclear extracts are logged to `catalog/flash-escalation.json` then retried by smart workers
+- **Antigravity / Pro** — excluded from bulk (TPM / paid); optional separate cold path only
+- Expect most of an ~800-plugin catalog in **1–2 days** when Lite buckets are healthy
 
 Accuracy rules:
-- Catalog versions require a real public `sourceUrl` (no binaries, no `example.com`, no Google search URLs).
-- Antigravity findings are **page-confirmed** (version string must appear on the fetched page) before write.
-- Existing `latestVersion` values are never sent to Antigravity as truth.
+- Catalog high-trust versions require a real public `sourceUrl` (no binaries, no `example.com`, no Google search URLs).
+- Flash / sticky / Antigravity findings are **page-confirmed** (version + product on page) before write as `page-confirmed` / `agent-verified`.
+- Existing `latestVersion` values are never treated as truth for Gemini prompts.
 - Successful URLs are merged into `catalog/known-sources.json` so future runs use the cheap sticky path.
 
 ### Recommended free hosting (suggestion)
@@ -60,13 +69,13 @@ App fetch order (see `catalogService.ts`):
 
 Each status badge shows **`Current 70% confidence`** (word “confidence” after the number).
 
-Confidence measures how sure we are about the **status on this machine**, with **Antigravity as the accuracy authority**:
-- **100% / high (≥85%)** — only `agent-verified` (Antigravity found the version and it was page-confirmed), plus readable installed version and a solid catalog match
-- **~70% / medium-low** — deterministic `live-scrape` (useful provisional signal, awaiting Antigravity confirmation; capped below high)
-- **~76%** — sticky `public-page` re-verify (not yet agent-confirmed)
+Confidence measures how sure we are about the **status on this machine**, with **page-confirm as the accuracy authority**:
+- **100% / high (≥85%)** — `page-confirmed` (Flash Lite or sticky heuristic with hard gates) or `agent-verified` (Antigravity), plus readable installed version and a solid catalog match
+- **~70% / medium-low** — deterministic `live-scrape` (useful provisional signal, awaiting page confirmation; capped below high)
+- **~76%** — legacy `public-page` stamp (capped below high until hard page-confirm)
 - **~62%** — unverified seed / weak provenance
 
-Scrapers still update versions for coverage; the UI stays cautious until Antigravity confirms.
+Scrapers still update versions for coverage; the UI stays cautious until page-confirm.
 ### Weekly refresh (free, no click required)
 
 Two hands-off paths (use both when possible):

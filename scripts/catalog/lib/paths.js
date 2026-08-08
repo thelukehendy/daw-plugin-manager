@@ -12,5 +12,6 @@ module.exports = {
   COVERAGE_REPORT_PATH: resolve(ROOT, 'catalog/coverage-report.json'),
   EXPORT_PATH: resolve(ROOT, 'catalog/antigravity-export.json'),
   CURSOR_PATH: resolve(ROOT, 'catalog/antigravity-cursor.json'),
-  USAGE_PATH: resolve(ROOT, 'catalog/antigravity-usage.json')
+  USAGE_PATH: resolve(ROOT, 'catalog/antigravity-usage.json'),
+  ESCALATION_PATH: resolve(ROOT, 'catalog/flash-escalation.json')
 }

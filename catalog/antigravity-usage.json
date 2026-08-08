@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "runs": [
+    {
+      "at": "2026-08-08T15:47:13.093Z",
+      "kind": "flash-extract",
+      "model": "gemini-3.1-flash-lite",
+      "tokens": 0,
+      "flashCalls": 0,
+      "heuristicHits": 0,
+      "successes": 0,
+      "rejects": 0,
+      "quotaErrors": 0
+    }
+  ],
+  "flash": {
+    "updatedAt": "2026-08-08T15:47:13.093Z",
+    "lastModel": "gemini-3.1-flash-lite",
+    "lastTokens": 0,
+    "lastCalls": 0,
+    "lastHits": 0
+  }
+}

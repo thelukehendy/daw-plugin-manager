@@ -13,8 +13,8 @@ export interface ConfidenceResult {
 
 /**
  * Green OK / Current when ≥ HIGH.
- * Antigravity (agent-verified) is the authority for high confidence.
- * Deterministic scrapers stay medium/low until agent confirmation.
+ * High confidence requires hard page-confirm (Flash Lite / sticky / Antigravity).
+ * Deterministic scrapers stay medium/low until page-confirmed.
  */
 const HIGH = 85
 const MEDIUM = 72
@@ -64,12 +64,16 @@ export function resolveEvidence(plugin: CatalogPlugin | null | undefined): {
   return { evidence: 'unverified-seed' }
 }
 
+function isPageConfirmed(evidence: VersionEvidence): boolean {
+  return evidence === 'page-confirmed' || evidence === 'agent-verified'
+}
+
 /**
  * Confidence that the **status on this machine** is correct.
  *
  * Authority model:
- * - agent-verified (Antigravity page-confirmed) → can reach high / 100
- * - live-scrape (deterministic scrapers) → provisional, capped below HIGH until agent confirms
+ * - page-confirmed / agent-verified → can reach high / 100
+ * - live-scrape (deterministic scrapers) → provisional, capped below HIGH until page-confirm
  * - public-page / search / seed → medium or low
  */
 export function computeVersionConfidence(opts: {
@@ -118,21 +122,24 @@ export function computeVersionConfidence(opts: {
     reasons.push('Could not read installed version from plugin bundle')
   }
 
-  if (evidence === 'agent-verified') {
+  if (evidence === 'page-confirmed') {
+    score = 92
+    reasons.push('Catalog latest page-confirmed on a live public page (Flash/sticky)')
+  } else if (evidence === 'agent-verified') {
     score = 92
     reasons.push('Catalog latest confirmed by Antigravity on a live public page')
   } else if (evidence === 'live-scrape') {
     score = 70
-    reasons.push('Catalog latest from deterministic scrape — awaiting Antigravity confirmation')
+    reasons.push('Catalog latest from deterministic scrape — awaiting page confirmation')
   } else if (evidence === 'public-page') {
     score = 76
-    reasons.push('Catalog latest from sticky public page re-verify — not yet Antigravity-confirmed')
+    reasons.push('Catalog latest from sticky public page re-verify — awaiting hard page-confirm')
   } else if (evidence === 'search-verified') {
     score = 68
-    reasons.push('Catalog latest from search discovery — awaiting Antigravity confirmation')
+    reasons.push('Catalog latest from search discovery — awaiting page confirmation')
   } else if (evidence === 'manufacturer-feed') {
     score = 74
-    reasons.push('Catalog latest from manufacturer feed — awaiting Antigravity confirmation')
+    reasons.push('Catalog latest from manufacturer feed — awaiting page confirmation')
   } else if (evidence === 'curated-seed') {
     score = 66
     reasons.push('Catalog latest from curated seed')
@@ -168,26 +175,30 @@ export function computeVersionConfidence(opts: {
 
   if (status === 'outdated') {
     reasons.push(
-      evidence === 'agent-verified'
-        ? 'Antigravity-confirmed latest is newer than installed'
+      isPageConfirmed(evidence)
+        ? 'Page-confirmed latest is newer than installed'
         : 'Installed build is behind catalog latest'
     )
   } else if (status === 'current') {
     reasons.push('Installed meets or exceeds catalog latest')
   }
 
-  // Only Antigravity page-confirmed evidence may reach full confidence.
-  const agentConfirmed =
-    evidence === 'agent-verified' &&
+  // Hard page-confirm (Flash/sticky/Antigravity) may reach full confidence.
+  const pageConfirmed =
+    isPageConfirmed(evidence) &&
     !!sourceUrl &&
     hasInstalledVersion &&
     (typeof matchScore !== 'number' || matchScore >= 70)
 
-  if (agentConfirmed) {
+  if (pageConfirmed) {
     score = 100
-    reasons.push('Antigravity public-page confirmation — full confidence')
-  } else if (evidence === 'live-scrape' || evidence === 'search-verified') {
-    // Hard cap: scrapers cannot show green-high until agent verifies.
+    reasons.push('Public-page confirmation — full confidence')
+  } else if (
+    evidence === 'live-scrape' ||
+    evidence === 'search-verified' ||
+    evidence === 'public-page'
+  ) {
+    // Hard cap: scrapers / legacy sticky cannot show green-high until page-confirmed.
     score = Math.min(score, HIGH - 1)
   }
 
