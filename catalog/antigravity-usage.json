@@ -11,13 +11,37 @@
       "successes": 0,
       "rejects": 0,
       "quotaErrors": 0
+    },
+    {
+      "at": "2026-08-09T16:44:47.929Z",
+      "kind": "flash-extract-parallel",
+      "tokens": 337692,
+      "flashCalls": 150,
+      "heuristicHits": 7,
+      "successes": 7,
+      "cheapHits": 7,
+      "smartHits": 0,
+      "escalations": 0,
+      "smartResolved": 0,
+      "rejects": 67,
+      "quotaErrors": 0,
+      "byModel": {
+        "gemini-3.1-flash-lite": 75,
+        "gemini-3.5-flash-lite": 75
+      },
+      "disabledModels": []
     }
   ],
   "flash": {
-    "updatedAt": "2026-08-08T15:47:13.093Z",
-    "lastModel": "gemini-3.1-flash-lite",
-    "lastTokens": 0,
-    "lastCalls": 0,
-    "lastHits": 0
+    "updatedAt": "2026-08-09T16:44:47.929Z",
+    "lastTokens": 337692,
+    "lastCalls": 150,
+    "lastHits": 7,
+    "byModel": {
+      "gemini-3.1-flash-lite": 75,
+      "gemini-3.5-flash-lite": 75
+    },
+    "escalations": 0,
+    "smartResolved": 0
   }
 }

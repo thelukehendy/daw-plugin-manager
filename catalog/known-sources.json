@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-08T15:39:52.766Z",
+  "updatedAt": "2026-08-09T16:44:47.928Z",
   "sources": [
     {
       "manufacturerId": "soundtoys",
@@ -1352,8 +1352,8 @@
       "nameIncludes": "FabFilter Micro",
       "addedBy": "discovery",
       "addedAt": "2026-08-08",
-      "lastVerifiedAt": "2026-08-08",
-      "lastVersion": "3.09"
+      "lastVerifiedAt": "2026-08-09",
+      "lastVersion": "3.43"
     },
     {
       "manufacturerId": "goodhertz",
@@ -1376,6 +1376,28 @@
       "addedAt": "2026-08-08",
       "lastVerifiedAt": "2026-08-08",
       "lastVersion": "02.19"
+    },
+    {
+      "manufacturerId": "ssl",
+      "url": "https://www.solidstatelogic.com/support-page/downloads",
+      "kind": "release-notes",
+      "label": "Solid State Logic flash",
+      "nameIncludes": "Blitzer",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-09",
+      "lastVerifiedAt": "2026-08-09",
+      "lastVersion": "1.7"
+    },
+    {
+      "manufacturerId": "tal-software",
+      "url": "https://tal-software.com/downloads/",
+      "kind": "release-notes",
+      "label": "TAL Software flash",
+      "nameIncludes": "TAL-Reverb-4",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-09",
+      "lastVerifiedAt": "2026-08-09",
+      "lastVersion": "2.11.5"
     }
   ]
 }

@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
   "kind": "catalog-coverage-report",
-  "generatedAt": "2026-08-08T15:40:01.949Z",
+  "generatedAt": "2026-08-09T16:44:47.967Z",
   "freshDays": 7,
   "plugins_total": 816,
   "manufacturers_total": 100,
-  "verified_strong": 177,
-  "verified_within_7d": 177,
-  "pending_unverified": 639,
+  "verified_strong": 184,
+  "verified_within_7d": 184,
+  "pending_unverified": 632,
   "sticky_eligible": 229,
-  "cold_eligible": 410,
+  "cold_eligible": 403,
   "by_evidence": {
-    "page-confirmed": 177,
-    "unverified-seed": 408,
+    "page-confirmed": 184,
+    "unverified-seed": 401,
     "live-scrape": 148,
     "public-page": 8,
     "search-verified": 73,
     "manufacturer-feed": 2
   },
   "by_reason": {
-    "fresh_strong": 177,
-    "unverified_or_missing_source": 410,
+    "fresh_strong": 184,
+    "unverified_or_missing_source": 403,
     "awaiting_page_confirmation": 156,
     "stale_gt_7d": 73
   },
@@ -60,10 +60,10 @@
     {
       "manufacturer": "Solid State Logic",
       "total": 39,
-      "pending": 39,
-      "freshStrong": 0,
+      "pending": 36,
+      "freshStrong": 3,
       "sticky": 2,
-      "cold": 37
+      "cold": 34
     },
     {
       "manufacturer": "Kilohearts",
@@ -242,14 +242,6 @@
       "cold": 4
     },
     {
-      "manufacturer": "TAL Software",
-      "total": 4,
-      "pending": 4,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 4
-    },
-    {
       "manufacturer": "Klevgrand",
       "total": 3,
       "pending": 3,
@@ -270,14 +262,6 @@
       "total": 3,
       "pending": 3,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3
-    },
-    {
-      "manufacturer": "FabFilter",
-      "total": 17,
-      "pending": 3,
-      "freshStrong": 14,
       "sticky": 0,
       "cold": 3
     },
@@ -310,6 +294,14 @@
       "total": 3,
       "pending": 3,
       "freshStrong": 0,
+      "sticky": 0,
+      "cold": 3
+    },
+    {
+      "manufacturer": "TAL Software",
+      "total": 4,
+      "pending": 3,
+      "freshStrong": 1,
       "sticky": 0,
       "cold": 3
     },
@@ -787,10 +779,19 @@
     }
   ],
   "run": {
+    "at": "2026-08-09T16:44:47.968Z",
     "sticky_hits": 0,
+    "sticky_rejects": 200,
+    "flash_hits": 7,
+    "flash_calls": 150,
+    "flash_heuristic_hits": 7,
+    "flash_rejects": 67,
+    "flash_tokens": 337692,
+    "flash_skipped": false,
     "antigravity_hits": 0,
     "page_confirm_rejects": 0,
     "tokens_used": 0,
-    "next_batch_size": null
+    "next_batch_size": 8,
+    "antigravity_skipped": true
   }
 }

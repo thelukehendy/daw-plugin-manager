@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-08-08T15:39:52.761Z",
-  "catalogSource": "verified-refresh",
+  "updatedAt": "2026-08-09T16:44:47.922Z",
+  "catalogSource": "flash-extract-parallel",
   "manufacturers": [
     {
       "id": "adptr",
@@ -3700,9 +3700,9 @@
       "matchPatterns": [
         "FabFilter Pro-C 2"
       ],
-      "latestVersion": "2.20",
+      "latestVersion": "7.18",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.fabfilter.com/download",
       "formats": [
         "AAX",
         "AU",
@@ -3710,8 +3710,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:7.18@https://www.fabfilter.com/download flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.fabfilter.com/download",
+      "versionVerifiedAt": "2026-08-09"
     },
     {
       "id": "fabfilter--fabfilter-pro-c-3",
@@ -3830,7 +3832,7 @@
       "matchPatterns": [
         "FabFilter Pro-Q 3"
       ],
-      "latestVersion": "3.29",
+      "latestVersion": "3.43",
       "releaseDate": "2026-01-15",
       "updatePortalUrl": "https://www.fabfilter.com/download",
       "formats": [
@@ -3840,8 +3842,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.29",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.43@https://www.fabfilter.com/download flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.fabfilter.com/download",
+      "versionVerifiedAt": "2026-08-09"
     },
     {
       "id": "fabfilter--fabfilter-pro-q-4",
@@ -9134,9 +9138,9 @@
       "matchPatterns": [
         "SSL 4K B"
       ],
-      "latestVersion": "1.8.9",
+      "latestVersion": "1.7",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.solidstatelogic.com/support-page/downloads",
       "formats": [
         "AAX",
         "AU",
@@ -9144,8 +9148,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.solidstatelogic.com/support-page/downloads flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.solidstatelogic.com/support-page/downloads",
+      "versionVerifiedAt": "2026-08-09"
     },
     {
       "id": "ssl--ssl-4k-e",
@@ -9154,9 +9160,9 @@
       "matchPatterns": [
         "SSL 4K E"
       ],
-      "latestVersion": "1.5.7",
+      "latestVersion": "1.7",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.solidstatelogic.com/support-page/downloads",
       "formats": [
         "AAX",
         "AU",
@@ -9164,8 +9170,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.solidstatelogic.com/support-page/downloads flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.solidstatelogic.com/support-page/downloads",
+      "versionVerifiedAt": "2026-08-09"
     },
     {
       "id": "ssl--ssl-acoustifier",
@@ -9194,9 +9202,9 @@
       "matchPatterns": [
         "Blitzer"
       ],
-      "latestVersion": "1.2.5",
+      "latestVersion": "1.7",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.solidstatelogic.com/support-page/downloads",
       "formats": [
         "AAX",
         "AU",
@@ -9204,8 +9212,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.solidstatelogic.com/support-page/downloads flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.solidstatelogic.com/support-page/downloads",
+      "versionVerifiedAt": "2026-08-09"
     },
     {
       "id": "ssl--ssl-deessentials-deess",
@@ -17276,13 +17286,17 @@
       "matchPatterns": [
         "TAL-Reverb-4"
       ],
-      "latestVersion": "4.0.4",
+      "latestVersion": "2.11.5",
       "formats": [
         "AU",
         "VST",
         "VST3"
       ],
-      "versionEvidence": "unverified-seed"
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://tal-software.com/downloads/",
+      "versionVerifiedAt": "2026-08-09",
+      "updatePortalUrl": "https://tal-software.com/downloads/",
+      "notes": "verifiedPublic:2.11.5@https://tal-software.com/downloads/ flash:heuristic"
     },
     {
       "id": "native-instruments--b4",
@@ -17692,7 +17706,7 @@
         "FabFilter Pro-Q 3",
         "Pro-Q 3"
       ],
-      "latestVersion": "3.29",
+      "latestVersion": "3.43",
       "updatePortalUrl": "https://www.fabfilter.com/download",
       "formats": [
         "AAX",
@@ -17700,8 +17714,10 @@
         "VST",
         "VST3"
       ],
-      "notes": "verifiedPublic:3.29",
-      "versionEvidence": "unverified-seed"
+      "notes": "verifiedPublic:3.43@https://www.fabfilter.com/download flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.fabfilter.com/download",
+      "versionVerifiedAt": "2026-08-09"
     },
     {
       "id": "goodhertz--canopenerstudio",
