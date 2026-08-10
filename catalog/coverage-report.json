@@ -1,64 +1,46 @@
 {
   "schemaVersion": 1,
   "kind": "catalog-coverage-report",
-  "generatedAt": "2026-08-10T14:52:04.812Z",
+  "generatedAt": "2026-08-10T17:09:37.796Z",
   "freshDays": 60,
   "plugins_total": 816,
   "manufacturers_total": 100,
-  "verified_strong": 184,
-  "verified_within_7d": 184,
-  "pending_unverified": 477,
-  "sticky_eligible": 176,
-  "cold_eligible": 301,
+  "verified_strong": 287,
+  "verified_within_7d": 287,
+  "pending_unverified": 340,
+  "sticky_eligible": 90,
+  "cold_eligible": 250,
   "manual_curation": 155,
   "by_evidence": {
-    "page-confirmed": 184,
-    "unverified-seed": 401,
-    "live-scrape": 148,
-    "public-page": 8,
-    "search-verified": 73,
+    "page-confirmed": 287,
+    "unverified-seed": 351,
+    "live-scrape": 69,
+    "search-verified": 107,
     "manufacturer-feed": 2
   },
   "by_reason": {
-    "fresh_strong": 184,
-    "unverified_or_missing_source": 349,
-    "awaiting_page_confirmation": 128,
+    "fresh_strong": 287,
+    "unverified_or_missing_source": 299,
+    "awaiting_page_confirmation": 41,
+    "other": 34,
     "manual_curation_http_unreachable": 155
   },
   "pending_manufacturers": [
     {
-      "manufacturer": "Plugin Alliance",
-      "total": 175,
-      "pending": 66,
-      "freshStrong": 109,
-      "sticky": 66,
-      "cold": 0,
-      "manual": 0
-    },
-    {
-      "manufacturer": "MeldaProduction",
-      "total": 42,
-      "pending": 39,
-      "freshStrong": 3,
-      "sticky": 39,
-      "cold": 0,
-      "manual": 0
-    },
-    {
       "manufacturer": "Solid State Logic",
       "total": 39,
-      "pending": 36,
-      "freshStrong": 3,
-      "sticky": 2,
-      "cold": 34,
+      "pending": 33,
+      "freshStrong": 6,
+      "sticky": 33,
+      "cold": 0,
       "manual": 0
     },
     {
-      "manufacturer": "Kilohearts",
-      "total": 39,
-      "pending": 35,
-      "freshStrong": 4,
-      "sticky": 35,
+      "manufacturer": "Plugin Alliance",
+      "total": 175,
+      "pending": 27,
+      "freshStrong": 114,
+      "sticky": 27,
       "cold": 0,
       "manual": 0
     },
@@ -135,15 +117,6 @@
       "manual": 0
     },
     {
-      "manufacturer": "Valhalla DSP",
-      "total": 8,
-      "pending": 8,
-      "freshStrong": 0,
-      "sticky": 8,
-      "cold": 0,
-      "manual": 0
-    },
-    {
       "manufacturer": "Metric Halo",
       "total": 6,
       "pending": 6,
@@ -202,8 +175,8 @@
       "total": 5,
       "pending": 5,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 5,
+      "sticky": 5,
+      "cold": 0,
       "manual": 0
     },
     {
@@ -222,15 +195,6 @@
       "freshStrong": 0,
       "sticky": 0,
       "cold": 4,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Waves",
-      "total": 4,
-      "pending": 4,
-      "freshStrong": 0,
-      "sticky": 4,
-      "cold": 0,
       "manual": 0
     },
     {
@@ -258,6 +222,15 @@
       "freshStrong": 0,
       "sticky": 0,
       "cold": 3,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Waves",
+      "total": 4,
+      "pending": 3,
+      "freshStrong": 1,
+      "sticky": 3,
+      "cold": 0,
       "manual": 0
     },
     {
@@ -324,15 +297,6 @@
       "manual": 0
     },
     {
-      "manufacturer": "XLN Audio",
-      "total": 2,
-      "pending": 2,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 2,
-      "manual": 0
-    },
-    {
       "manufacturer": "Celemony",
       "total": 2,
       "pending": 2,
@@ -351,25 +315,7 @@
       "manual": 0
     },
     {
-      "manufacturer": "Sonarworks",
-      "total": 2,
-      "pending": 2,
-      "freshStrong": 0,
-      "sticky": 1,
-      "cold": 1,
-      "manual": 0
-    },
-    {
       "manufacturer": "Fiedler Audio",
-      "total": 2,
-      "pending": 2,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 2,
-      "manual": 0
-    },
-    {
-      "manufacturer": "oeksound",
       "total": 2,
       "pending": 2,
       "freshStrong": 0,
@@ -423,15 +369,6 @@
       "manual": 0
     },
     {
-      "manufacturer": "Supertone",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
       "manufacturer": "Impulse Record",
       "total": 1,
       "pending": 1,
@@ -468,15 +405,6 @@
       "manual": 0
     },
     {
-      "manufacturer": "EastWest",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
       "manufacturer": "TBProAudio",
       "total": 1,
       "pending": 1,
@@ -487,15 +415,6 @@
     },
     {
       "manufacturer": "leotokarev",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Safari Pedals",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
@@ -540,25 +459,7 @@
       "manual": 0
     },
     {
-      "manufacturer": "Synthogy",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
       "manufacturer": "Karanyi Sounds",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Spitfire Audio",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
@@ -711,12 +612,12 @@
       "manual": 0
     },
     {
-      "manufacturer": "Splice",
-      "total": 1,
+      "manufacturer": "Sonarworks",
+      "total": 2,
       "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
+      "freshStrong": 1,
+      "sticky": 1,
+      "cold": 0,
       "manual": 0
     },
     {
@@ -810,15 +711,6 @@
       "manual": 0
     },
     {
-      "manufacturer": "Credland Audio",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
       "manufacturer": "Cymatics",
       "total": 1,
       "pending": 1,
@@ -856,10 +748,19 @@
     }
   ],
   "run": {
-    "sticky_hits": 0,
+    "at": "2026-08-10T17:09:37.798Z",
+    "sticky_hits": 86,
+    "sticky_rejects": 95,
+    "flash_hits": 17,
+    "flash_calls": 179,
+    "flash_heuristic_hits": 16,
+    "flash_rejects": 49,
+    "flash_tokens": 407252,
+    "flash_skipped": false,
     "antigravity_hits": 0,
     "page_confirm_rejects": 0,
     "tokens_used": 0,
-    "next_batch_size": null
+    "next_batch_size": 8,
+    "antigravity_skipped": true
   }
 }

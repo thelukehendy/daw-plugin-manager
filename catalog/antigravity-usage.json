@@ -30,16 +30,35 @@
         "gemini-3.5-flash-lite": 75
       },
       "disabledModels": []
+    },
+    {
+      "at": "2026-08-10T17:09:37.766Z",
+      "kind": "flash-extract-parallel",
+      "tokens": 407252,
+      "flashCalls": 179,
+      "heuristicHits": 16,
+      "successes": 17,
+      "cheapHits": 17,
+      "smartHits": 0,
+      "escalations": 0,
+      "smartResolved": 0,
+      "rejects": 49,
+      "quotaErrors": 0,
+      "byModel": {
+        "gemini-3.5-flash-lite": 68,
+        "gemini-3.1-flash-lite": 111
+      },
+      "disabledModels": []
     }
   ],
   "flash": {
-    "updatedAt": "2026-08-09T16:44:47.929Z",
-    "lastTokens": 337692,
-    "lastCalls": 150,
-    "lastHits": 7,
+    "updatedAt": "2026-08-10T17:09:37.766Z",
+    "lastTokens": 407252,
+    "lastCalls": 179,
+    "lastHits": 17,
     "byModel": {
-      "gemini-3.1-flash-lite": 75,
-      "gemini-3.5-flash-lite": 75
+      "gemini-3.5-flash-lite": 68,
+      "gemini-3.1-flash-lite": 111
     },
     "escalations": 0,
     "smartResolved": 0

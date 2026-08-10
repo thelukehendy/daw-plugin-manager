@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-08-10T15:55:29.111Z",
-  "catalogSource": "verified-refresh",
+  "updatedAt": "2026-08-10T17:09:37.762Z",
+  "catalogSource": "flash-extract-parallel",
   "manufacturers": [
     {
       "id": "adptr",
@@ -2776,9 +2776,9 @@
       "matchPatterns": [
         "Clear"
       ],
-      "latestVersion": "1.1.1",
+      "latestVersion": "1.3.9",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.supertone.ai/en",
       "formats": [
         "AAX",
         "AU",
@@ -2786,8 +2786,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.9@https://www.supertone.ai/en flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.supertone.ai/en",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "avid--clickii",
@@ -3044,9 +3046,9 @@
       "matchPatterns": [
         "DS-10 Drum Shaper"
       ],
-      "latestVersion": "1.3.6",
+      "latestVersion": "1.5",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/login",
       "formats": [
         "AAX",
         "AU",
@@ -3054,8 +3056,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5@https://www.xlnaudio.com/login flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.xlnaudio.com/login",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "avid--dverb",
@@ -3358,9 +3362,9 @@
       "matchPatterns": [
         "Spaces"
       ],
-      "latestVersion": "2.5.0",
+      "latestVersion": "2",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account/",
       "formats": [
         "AAX",
         "AU",
@@ -3368,8 +3372,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2@https://www.soundsonline.com/account/ flash:cheap:gemini-3.1-flash-lite",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.soundsonline.com/account/",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "eiosis--eiosis-aireq-5-1",
@@ -4328,9 +4334,9 @@
       "matchPatterns": [
         "Gorilla Drive"
       ],
-      "latestVersion": "2.0.01",
+      "latestVersion": "1.1",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://safariaudio.com/",
       "formats": [
         "AAX",
         "AU",
@@ -4338,8 +4344,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1@https://safariaudio.com/ flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://safariaudio.com/",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "avid--graphic-eq",
@@ -4996,9 +5004,9 @@
       "matchPatterns": [
         "Ivory"
       ],
-      "latestVersion": "2.6.1",
+      "latestVersion": "1.7",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.synthogy.com/",
       "formats": [
         "AAX",
         "AU",
@@ -5006,8 +5014,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.synthogy.com/ flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.synthogy.com/",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "karanyi--karanyi-sounds-wavesurfer",
@@ -5175,7 +5185,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5197,7 +5207,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5219,7 +5229,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5241,7 +5251,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5263,7 +5273,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5285,7 +5295,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5307,7 +5317,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5329,7 +5339,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5351,7 +5361,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5373,7 +5383,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5395,7 +5405,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5417,7 +5427,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5439,7 +5449,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5461,7 +5471,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5483,7 +5493,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5505,7 +5515,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5527,7 +5537,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5549,7 +5559,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5571,7 +5581,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5593,7 +5603,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5615,7 +5625,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5637,7 +5647,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5659,7 +5669,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5681,7 +5691,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5703,7 +5713,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5725,7 +5735,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5747,7 +5757,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5769,7 +5779,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5791,7 +5801,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5813,7 +5823,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5835,7 +5845,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5857,7 +5867,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5879,7 +5889,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5901,7 +5911,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -5923,7 +5933,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://kilohearts.com/download",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6002,9 +6012,9 @@
       "matchPatterns": [
         "LABS"
       ],
-      "latestVersion": "3.7.29",
+      "latestVersion": "13.0006",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.spitfireaudio.com/en-us/account/login?return_url=%2Faccount",
       "formats": [
         "AAX",
         "AU",
@@ -6012,8 +6022,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:13.0006@https://www.spitfireaudio.com/en-us/account/login?return_url=%2Faccount flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.spitfireaudio.com/en-us/account/login?return_url=%2Faccount",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "louder-than-liftoff--ltl-chop-shop-eq",
@@ -6785,7 +6797,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6829,7 +6841,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6851,7 +6863,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6873,7 +6885,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6895,7 +6907,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6917,7 +6929,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6939,7 +6951,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6961,7 +6973,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -6983,7 +6995,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7005,7 +7017,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7027,7 +7039,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7049,7 +7061,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7093,7 +7105,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7115,7 +7127,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7137,7 +7149,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7159,7 +7171,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7181,7 +7193,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7203,7 +7215,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7225,7 +7237,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7247,7 +7259,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7269,7 +7281,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7291,7 +7303,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7313,7 +7325,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7335,7 +7347,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7357,7 +7369,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7401,7 +7413,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7423,7 +7435,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7445,7 +7457,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7467,7 +7479,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7489,7 +7501,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7511,7 +7523,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7533,7 +7545,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7555,7 +7567,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7577,7 +7589,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7599,7 +7611,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7621,7 +7633,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7643,7 +7655,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7665,7 +7677,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -7687,7 +7699,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
-      "versionEvidence": "live-scrape",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://www.meldaproduction.com/downloads",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -8450,9 +8462,9 @@
       "matchPatterns": [
         "RC-20 Retro Color"
       ],
-      "latestVersion": "1.5.1",
+      "latestVersion": "1.5",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/login",
       "formats": [
         "AAX",
         "AU",
@@ -8460,8 +8472,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5@https://www.xlnaudio.com/login flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.xlnaudio.com/login",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "reaktor-6--reaktor-6",
@@ -9662,9 +9676,9 @@
       "matchPatterns": [
         "SSL Native X-Echo"
       ],
-      "latestVersion": "6.8.4",
+      "latestVersion": "1.7",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.solidstatelogic.com/support-page/downloads",
       "formats": [
         "AAX",
         "AU",
@@ -9672,8 +9686,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.solidstatelogic.com/support-page/downloads",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.solidstatelogic.com/support-page/downloads",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "ssl--ssl-native-x-phase",
@@ -9742,9 +9758,9 @@
       "matchPatterns": [
         "SSL PlateVerb"
       ],
-      "latestVersion": "1.2.2",
+      "latestVersion": "1.7",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.solidstatelogic.com/support-page/downloads",
       "formats": [
         "AAX",
         "AU",
@@ -9752,8 +9768,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.solidstatelogic.com/support-page/downloads",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.solidstatelogic.com/support-page/downloads",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "ssl--ssl-sourcerer",
@@ -9822,9 +9840,9 @@
       "matchPatterns": [
         "SSL X-Delay"
       ],
-      "latestVersion": "1.4.4",
+      "latestVersion": "1.7",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.solidstatelogic.com/support-page/downloads",
       "formats": [
         "AAX",
         "AU",
@@ -9832,8 +9850,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.solidstatelogic.com/support-page/downloads",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.solidstatelogic.com/support-page/downloads",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "ssl--ssl-x-dyneq",
@@ -10050,7 +10070,7 @@
       "matchPatterns": [
         "Shadow Hills Mastering Compressor"
       ],
-      "latestVersion": "1.17.0",
+      "latestVersion": "1.5.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.plugin-alliance.com/products/mastering-compressor-class-a",
       "formats": [
@@ -10060,9 +10080,9 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5.0@https://www.plugin-alliance.com/products/mastering-compressor-class-a flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.plugin-alliance.com/products/mastering-compressor-class-a",
       "versionVerifiedAt": "2026-08-10"
     },
     {
@@ -11266,9 +11286,9 @@
       "matchPatterns": [
         "Splice"
       ],
-      "latestVersion": "1.0.0",
+      "latestVersion": "1.1",
       "releaseDate": null,
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://splice.com/",
       "formats": [
         "AAX",
         "AU",
@@ -11276,8 +11296,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1@https://splice.com/ flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://splice.com/",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "air--structure",
@@ -12436,7 +12458,7 @@
       "matchPatterns": [
         "ValhallaDelay"
       ],
-      "latestVersion": "3.0.5",
+      "latestVersion": "28.0",
       "releaseDate": "2025-01-01",
       "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/",
       "formats": [
@@ -12446,8 +12468,8 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.5@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:28.0@https://valhalladsp.com/my-account/downloads/",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12458,7 +12480,7 @@
       "matchPatterns": [
         "ValhallaFreqEcho"
       ],
-      "latestVersion": "1.2.8",
+      "latestVersion": "28.0",
       "releaseDate": null,
       "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/",
       "formats": [
@@ -12468,8 +12490,8 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.2.8@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:28.0@https://valhalladsp.com/my-account/downloads/",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12480,7 +12502,7 @@
       "matchPatterns": [
         "ValhallaFutureVerb"
       ],
-      "latestVersion": "1.0.2",
+      "latestVersion": "28.0",
       "releaseDate": null,
       "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/",
       "formats": [
@@ -12490,8 +12512,8 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.0.2@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:28.0@https://valhalladsp.com/my-account/downloads/",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12502,7 +12524,7 @@
       "matchPatterns": [
         "ValhallaPlate"
       ],
-      "latestVersion": "1.6.8",
+      "latestVersion": "28.0",
       "releaseDate": "2024-06-01",
       "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/",
       "formats": [
@@ -12512,8 +12534,8 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.6.8@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:28.0@https://valhalladsp.com/my-account/downloads/",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12524,7 +12546,7 @@
       "matchPatterns": [
         "ValhallaRoom"
       ],
-      "latestVersion": "2.0.5",
+      "latestVersion": "28.0",
       "releaseDate": "2025-01-01",
       "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/",
       "formats": [
@@ -12534,8 +12556,8 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.0.5@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:28.0@https://valhalladsp.com/my-account/downloads/",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12557,7 +12579,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12579,7 +12601,7 @@
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:3.0.0@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12590,7 +12612,7 @@
       "matchPatterns": [
         "ValhallaVintageVerb"
       ],
-      "latestVersion": "4.0.5",
+      "latestVersion": "28.0",
       "releaseDate": "2025-01-01",
       "updatePortalUrl": "https://valhalladsp.com/my-account/downloads/",
       "formats": [
@@ -12600,8 +12622,8 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:4.0.5@https://valhalladsp.com/my-account/downloads/",
-      "versionEvidence": "public-page",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:28.0@https://valhalladsp.com/my-account/downloads/",
+      "versionEvidence": "page-confirmed",
       "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
       "versionVerifiedAt": "2026-08-10"
     },
@@ -12924,9 +12946,9 @@
         "WaveShell3",
         "WaveShell-VST3"
       ],
-      "latestVersion": "17.2.78",
+      "latestVersion": "14.0",
       "releaseDate": "2026-06-01",
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://www.waves.com/downloads/release-notes",
       "formats": [
         "AAX",
         "AU",
@@ -12934,8 +12956,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:14.0@https://www.waves.com/downloads/release-notes",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.waves.com/downloads/release-notes",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "avid--white-boost",
@@ -13730,7 +13754,7 @@
       "matchPatterns": [
         "bx_limiter True Peak"
       ],
-      "latestVersion": "1.16.1",
+      "latestVersion": "5.5",
       "releaseDate": null,
       "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_limiter-true-peak",
       "formats": [
@@ -13740,9 +13764,9 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.16.1@https://www.plugin-alliance.com/products/bx_limiter",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_limiter",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5@https://www.plugin-alliance.com/products/bx_limiter-true-peak flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_limiter-true-peak",
       "versionVerifiedAt": "2026-08-10"
     },
     {
@@ -13796,7 +13820,7 @@
       "matchPatterns": [
         "bx_masterdesk Pro"
       ],
-      "latestVersion": "1.8.0",
+      "latestVersion": "1.3.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro",
       "formats": [
@@ -13806,9 +13830,9 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.8.0@https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.3.0@https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro",
       "versionVerifiedAt": "2026-08-10"
     },
     {
@@ -14346,7 +14370,7 @@
       "matchPatterns": [
         "bx_townhouse Buss Compressor"
       ],
-      "latestVersion": "1.17.0",
+      "latestVersion": "1.9.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor",
       "formats": [
@@ -14356,9 +14380,9 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.9.0@https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor",
       "versionVerifiedAt": "2026-08-10"
     },
     {
@@ -14412,7 +14436,7 @@
       "matchPatterns": [
         "elysia alpha compressor V2"
       ],
-      "latestVersion": "1.17.0",
+      "latestVersion": "2.2.0",
       "releaseDate": null,
       "updatePortalUrl": "https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2",
       "formats": [
@@ -14422,9 +14446,9 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.2.0@https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2 flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2",
       "versionVerifiedAt": "2026-08-10"
     },
     {
@@ -17048,9 +17072,9 @@
       "matchPatterns": [
         "soothe2"
       ],
-      "latestVersion": "1.3.3",
+      "latestVersion": "0.15",
       "releaseDate": "2025-01-01",
-      "updatePortalUrl": null,
+      "updatePortalUrl": "https://oeksound.com/downloads/",
       "formats": [
         "AAX",
         "AU",
@@ -17058,8 +17082,10 @@
       ],
       "minMacOS": "12.0",
       "dawCompatibility": "Check manufacturer docs for your DAW version",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "versionEvidence": "unverified-seed"
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:0.15@https://oeksound.com/downloads/ flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://oeksound.com/downloads/",
+      "versionVerifiedAt": "2026-08-10"
     },
     {
       "id": "universal-audio--uad-software",
@@ -17287,14 +17313,18 @@
         "Sonarworks Reference",
         "Reference 4"
       ],
-      "latestVersion": "4.4.8",
+      "latestVersion": "3.4.1.6",
       "formats": [
         "AAX",
         "AU",
         "VST",
         "VST3"
       ],
-      "versionEvidence": "unverified-seed"
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.sonarworks.com/download-center",
+      "versionVerifiedAt": "2026-08-10",
+      "updatePortalUrl": "https://www.sonarworks.com/download-center",
+      "notes": "verifiedPublic:3.4.1.6@https://www.sonarworks.com/download-center flash:heuristic"
     },
     {
       "id": "tal--chorus-lx",
@@ -17383,14 +17413,17 @@
       "matchPatterns": [
         "soothe"
       ],
-      "latestVersion": "1.4.0",
+      "latestVersion": "1.0.5",
       "formats": [
         "AAX",
         "AU",
         "VST3"
       ],
-      "notes": "Legacy soothe 1; soothe2 is separate",
-      "versionEvidence": "unverified-seed"
+      "notes": "Legacy soothe 1; soothe2 is separate verifiedPublic:1.0.5@https://oeksound.com/downloads/ flash:heuristic",
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://oeksound.com/downloads/",
+      "versionVerifiedAt": "2026-08-10",
+      "updatePortalUrl": "https://oeksound.com/downloads/"
     },
     {
       "id": "celemony--melodyne-bridge",
@@ -17417,13 +17450,17 @@
       "matchPatterns": [
         "Pink"
       ],
-      "latestVersion": "1.1.1",
+      "latestVersion": "3.6.0",
       "formats": [
         "AU",
         "VST",
         "VST3"
       ],
-      "versionEvidence": "unverified-seed"
+      "versionEvidence": "page-confirmed",
+      "versionSourceUrl": "https://www.credland.net/",
+      "versionVerifiedAt": "2026-08-10",
+      "updatePortalUrl": "https://www.credland.net/",
+      "notes": "verifiedPublic:3.6.0@https://www.credland.net/ flash:heuristic"
     },
     {
       "id": "cymatics--origin",

@@ -1,71 +1,53 @@
 {
   "schemaVersion": 1,
   "kind": "catalog-gap-queue",
-  "generatedAt": "2026-08-10T14:52:04.812Z",
+  "generatedAt": "2026-08-10T17:09:37.796Z",
   "counts": {
-    "gaps": 477,
-    "sticky": 176,
-    "cold": 301
+    "gaps": 340,
+    "sticky": 90,
+    "cold": 250
   },
   "coverage": {
-    "generatedAt": "2026-08-10T14:52:04.812Z",
+    "generatedAt": "2026-08-10T17:09:37.796Z",
     "freshDays": 60,
     "plugins_total": 816,
     "manufacturers_total": 100,
-    "verified_strong": 184,
-    "verified_within_7d": 184,
-    "pending_unverified": 477,
-    "sticky_eligible": 176,
-    "cold_eligible": 301,
+    "verified_strong": 287,
+    "verified_within_7d": 287,
+    "pending_unverified": 340,
+    "sticky_eligible": 90,
+    "cold_eligible": 250,
     "manual_curation": 155,
     "by_evidence": {
-      "page-confirmed": 184,
-      "unverified-seed": 401,
-      "live-scrape": 148,
-      "public-page": 8,
-      "search-verified": 73,
+      "page-confirmed": 287,
+      "unverified-seed": 351,
+      "live-scrape": 69,
+      "search-verified": 107,
       "manufacturer-feed": 2
     },
     "by_reason": {
-      "fresh_strong": 184,
-      "unverified_or_missing_source": 349,
-      "awaiting_page_confirmation": 128,
+      "fresh_strong": 287,
+      "unverified_or_missing_source": 299,
+      "awaiting_page_confirmation": 41,
+      "other": 34,
       "manual_curation_http_unreachable": 155
     },
     "pending_manufacturers": [
       {
-        "manufacturer": "Plugin Alliance",
-        "total": 175,
-        "pending": 66,
-        "freshStrong": 109,
-        "sticky": 66,
-        "cold": 0,
-        "manual": 0
-      },
-      {
-        "manufacturer": "MeldaProduction",
-        "total": 42,
-        "pending": 39,
-        "freshStrong": 3,
-        "sticky": 39,
-        "cold": 0,
-        "manual": 0
-      },
-      {
         "manufacturer": "Solid State Logic",
         "total": 39,
-        "pending": 36,
-        "freshStrong": 3,
-        "sticky": 2,
-        "cold": 34,
+        "pending": 33,
+        "freshStrong": 6,
+        "sticky": 33,
+        "cold": 0,
         "manual": 0
       },
       {
-        "manufacturer": "Kilohearts",
-        "total": 39,
-        "pending": 35,
-        "freshStrong": 4,
-        "sticky": 35,
+        "manufacturer": "Plugin Alliance",
+        "total": 175,
+        "pending": 27,
+        "freshStrong": 114,
+        "sticky": 27,
         "cold": 0,
         "manual": 0
       },
@@ -142,15 +124,6 @@
         "manual": 0
       },
       {
-        "manufacturer": "Valhalla DSP",
-        "total": 8,
-        "pending": 8,
-        "freshStrong": 0,
-        "sticky": 8,
-        "cold": 0,
-        "manual": 0
-      },
-      {
         "manufacturer": "Metric Halo",
         "total": 6,
         "pending": 6,
@@ -209,8 +182,8 @@
         "total": 5,
         "pending": 5,
         "freshStrong": 0,
-        "sticky": 0,
-        "cold": 5,
+        "sticky": 5,
+        "cold": 0,
         "manual": 0
       },
       {
@@ -229,15 +202,6 @@
         "freshStrong": 0,
         "sticky": 0,
         "cold": 4,
-        "manual": 0
-      },
-      {
-        "manufacturer": "Waves",
-        "total": 4,
-        "pending": 4,
-        "freshStrong": 0,
-        "sticky": 4,
-        "cold": 0,
         "manual": 0
       },
       {
@@ -265,6 +229,15 @@
         "freshStrong": 0,
         "sticky": 0,
         "cold": 3,
+        "manual": 0
+      },
+      {
+        "manufacturer": "Waves",
+        "total": 4,
+        "pending": 3,
+        "freshStrong": 1,
+        "sticky": 3,
+        "cold": 0,
         "manual": 0
       },
       {
@@ -331,15 +304,6 @@
         "manual": 0
       },
       {
-        "manufacturer": "XLN Audio",
-        "total": 2,
-        "pending": 2,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 2,
-        "manual": 0
-      },
-      {
         "manufacturer": "Celemony",
         "total": 2,
         "pending": 2,
@@ -358,25 +322,7 @@
         "manual": 0
       },
       {
-        "manufacturer": "Sonarworks",
-        "total": 2,
-        "pending": 2,
-        "freshStrong": 0,
-        "sticky": 1,
-        "cold": 1,
-        "manual": 0
-      },
-      {
         "manufacturer": "Fiedler Audio",
-        "total": 2,
-        "pending": 2,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 2,
-        "manual": 0
-      },
-      {
-        "manufacturer": "oeksound",
         "total": 2,
         "pending": 2,
         "freshStrong": 0,
@@ -430,15 +376,6 @@
         "manual": 0
       },
       {
-        "manufacturer": "Supertone",
-        "total": 1,
-        "pending": 1,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 1,
-        "manual": 0
-      },
-      {
         "manufacturer": "Impulse Record",
         "total": 1,
         "pending": 1,
@@ -475,15 +412,6 @@
         "manual": 0
       },
       {
-        "manufacturer": "EastWest",
-        "total": 1,
-        "pending": 1,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 1,
-        "manual": 0
-      },
-      {
         "manufacturer": "TBProAudio",
         "total": 1,
         "pending": 1,
@@ -494,15 +422,6 @@
       },
       {
         "manufacturer": "leotokarev",
-        "total": 1,
-        "pending": 1,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 1,
-        "manual": 0
-      },
-      {
-        "manufacturer": "Safari Pedals",
         "total": 1,
         "pending": 1,
         "freshStrong": 0,
@@ -547,25 +466,7 @@
         "manual": 0
       },
       {
-        "manufacturer": "Synthogy",
-        "total": 1,
-        "pending": 1,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 1,
-        "manual": 0
-      },
-      {
         "manufacturer": "Karanyi Sounds",
-        "total": 1,
-        "pending": 1,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 1,
-        "manual": 0
-      },
-      {
-        "manufacturer": "Spitfire Audio",
         "total": 1,
         "pending": 1,
         "freshStrong": 0,
@@ -718,12 +619,12 @@
         "manual": 0
       },
       {
-        "manufacturer": "Splice",
-        "total": 1,
+        "manufacturer": "Sonarworks",
+        "total": 2,
         "pending": 1,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 1,
+        "freshStrong": 1,
+        "sticky": 1,
+        "cold": 0,
         "manual": 0
       },
       {
@@ -817,15 +718,6 @@
         "manual": 0
       },
       {
-        "manufacturer": "Credland Audio",
-        "total": 1,
-        "pending": 1,
-        "freshStrong": 0,
-        "sticky": 0,
-        "cold": 1,
-        "manual": 0
-      },
-      {
         "manufacturer": "Cymatics",
         "total": 1,
         "pending": 1,
@@ -865,618 +757,6 @@
   },
   "gaps": [
     {
-      "pluginId": "plugin-alliance--ampeg-v4b",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "Ampeg V4B",
-      "latestVersion": "1.6.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bde-pa",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "BDE PA",
-      "latestVersion": "1.2.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-blackdist2",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_blackdist2",
-      "latestVersion": "1.10.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-bluechorus2",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_bluechorus2",
-      "latestVersion": "1.12.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-cleansweep-v2",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_cleansweep V2",
-      "latestVersion": "2.17.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-crispyscale",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_crispyscale",
-      "latestVersion": "1.1.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-distorange",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_distorange",
-      "latestVersion": "1.12.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-greenscreamer",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_greenscreamer",
-      "latestVersion": "1.12.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-megasingle",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_megasingle",
-      "latestVersion": "1.13.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-metal2",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_metal2",
-      "latestVersion": "1.10.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-meter",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_meter",
-      "latestVersion": "1.18.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-solo",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_solo",
-      "latestVersion": "1.16.2",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-subfilter",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_subfilter",
-      "latestVersion": "1.10.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-tuner",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_tuner",
-      "latestVersion": "1.12.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-xl-v2",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_XL V2",
-      "latestVersion": "2.16.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-yellowdrive",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_yellowdrive",
-      "latestVersion": "1.12.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--diezel-vh4",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "Diezel VH4",
-      "latestVersion": "1.6.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--elysia-alpha-master",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "elysia alpha master",
-      "latestVersion": "1.17.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--elysia-alpha-mix",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "elysia alpha mix",
-      "latestVersion": "1.17.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--elysia-niveau-filter",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "elysia niveau filter",
-      "latestVersion": "1.18.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--mega-sampler",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "MEGA Sampler",
-      "latestVersion": "1.2.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--neold-u17",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "NEOLD U17",
-      "latestVersion": "1.3.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--neold-u2a",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "NEOLD U2A",
-      "latestVersion": "1.2.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--schoeps-double-ms",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "Schoeps Double MS",
-      "latestVersion": "1.2.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--schoeps-mono-upmix-1to2",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "Schoeps Mono Upmix 1to2",
-      "latestVersion": "1.2.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--schoeps-mono-upmix-1to3",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "Schoeps Mono Upmix 1to3",
-      "latestVersion": "1.2.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "spl--bass-ranger",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "SPL Bass Ranger",
-      "latestVersion": "1.9.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--spl-de-esser",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "SPL De-Esser",
-      "latestVersion": "1.17.2",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--spl-de-esser-dual-band",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "SPL De-Esser Dual-Band",
-      "latestVersion": "1.17.2",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--spl-free-ranger",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "SPL Free Ranger",
-      "latestVersion": "1.19.3",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "spl--full-ranger",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "SPL Full Ranger",
-      "latestVersion": "1.9.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--spl-vitalizer-mk2-t",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "SPL Vitalizer MK2-T",
-      "latestVersion": "1.18.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "spl--vox-ranger",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "SPL Vox Ranger",
-      "latestVersion": "1.9.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "plugin-alliance--swivel-audio-the-sauce",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "Swivel Audio The Sauce",
-      "latestVersion": "1.4.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.plugin-alliance.com/en/accounts.html#downloads",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
       "pluginId": "ssl--ssl-acoustifier",
       "manufacturerId": "ssl",
       "manufacturer": "Solid State Logic",
@@ -1487,8 +767,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1503,8 +785,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1519,8 +803,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1535,8 +821,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1551,8 +839,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1567,8 +857,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1583,8 +875,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1599,8 +893,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1615,8 +911,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1631,8 +929,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1647,8 +947,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1663,8 +965,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1679,8 +983,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1695,8 +1001,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1711,8 +1019,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1727,8 +1037,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1743,8 +1055,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1759,8 +1073,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1775,8 +1091,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1791,8 +1109,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1807,24 +1127,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "ssl--ssl-native-x-echo",
-      "manufacturerId": "ssl",
-      "manufacturer": "Solid State Logic",
-      "product": "SSL Native X-Echo",
-      "latestVersion": "6.8.4",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1839,8 +1145,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1855,8 +1163,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1871,8 +1181,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1887,24 +1199,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "ssl--ssl-plateverb",
-      "manufacturerId": "ssl",
-      "manufacturer": "Solid State Logic",
-      "product": "SSL PlateVerb",
-      "latestVersion": "1.2.2",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1919,8 +1217,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1935,8 +1235,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1951,24 +1253,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "ssl--ssl-x-delay",
-      "manufacturerId": "ssl",
-      "manufacturer": "Solid State Logic",
-      "product": "SSL X-Delay",
-      "latestVersion": "1.4.4",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1983,8 +1271,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -1999,8 +1289,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -2015,8 +1307,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -4719,8 +4013,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://www.tokyodawn.net/tokyo-dawn-labs/",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://www.tokyodawn.net/tokyo-dawn-labs-releases/"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -4735,8 +4031,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://www.tokyodawn.net/tokyo-dawn-labs/",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://www.tokyodawn.net/tokyo-dawn-labs-releases/"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -4751,8 +4049,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://www.tokyodawn.net/tokyo-dawn-labs/",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://www.tokyodawn.net/tokyo-dawn-labs-releases/"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -4767,8 +4067,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://www.tokyodawn.net/tokyo-dawn-labs/",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://www.tokyodawn.net/tokyo-dawn-labs-releases/"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -4783,8 +4085,10 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://www.tokyodawn.net/tokyo-dawn-labs/",
-      "stickyUrls": [],
-      "path": "cold",
+      "stickyUrls": [
+        "https://www.tokyodawn.net/tokyo-dawn-labs-releases/"
+      ],
+      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -4977,78 +4281,6 @@
       "portalUrl": "https://www.spectrasonics.net/support/updates.php",
       "stickyUrls": [],
       "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "waves--drifter",
-      "manufacturerId": "waves",
-      "manufacturer": "Waves",
-      "product": "Drifter",
-      "latestVersion": "1.0.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.waves.com/downloads/central",
-      "stickyUrls": [
-        "https://www.waves.com/downloads/release-notes"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "waves--ignition",
-      "manufacturerId": "waves",
-      "manufacturer": "Waves",
-      "product": "Ignition",
-      "latestVersion": "1.0.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.waves.com/downloads/central",
-      "stickyUrls": [
-        "https://www.waves.com/downloads/release-notes"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "waves--studiorack-obs",
-      "manufacturerId": "waves",
-      "manufacturer": "Waves",
-      "product": "Waves StudioRack for OBS",
-      "latestVersion": "14.21.96",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.waves.com/downloads/central",
-      "stickyUrls": [
-        "https://www.waves.com/downloads/release-notes"
-      ],
-      "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "waves--waveshell",
-      "manufacturerId": "waves",
-      "manufacturer": "Waves",
-      "product": "WaveShell",
-      "latestVersion": "17.2.78",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.waves.com/downloads/central",
-      "stickyUrls": [
-        "https://www.waves.com/downloads/release-notes"
-      ],
-      "path": "sticky",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -5513,6 +4745,60 @@
       "reason": "unverified_or_missing_source"
     },
     {
+      "pluginId": "waves--drifter",
+      "manufacturerId": "waves",
+      "manufacturer": "Waves",
+      "product": "Drifter",
+      "latestVersion": "1.0.0",
+      "versionEvidence": "unverified-seed",
+      "versionSourceUrl": null,
+      "versionVerifiedAt": null,
+      "ageDays": null,
+      "portalUrl": "https://www.waves.com/downloads/central",
+      "stickyUrls": [
+        "https://www.waves.com/downloads/release-notes"
+      ],
+      "path": "sticky",
+      "priority": 1,
+      "reason": "unverified_or_missing_source"
+    },
+    {
+      "pluginId": "waves--ignition",
+      "manufacturerId": "waves",
+      "manufacturer": "Waves",
+      "product": "Ignition",
+      "latestVersion": "1.0.0",
+      "versionEvidence": "unverified-seed",
+      "versionSourceUrl": null,
+      "versionVerifiedAt": null,
+      "ageDays": null,
+      "portalUrl": "https://www.waves.com/downloads/central",
+      "stickyUrls": [
+        "https://www.waves.com/downloads/release-notes"
+      ],
+      "path": "sticky",
+      "priority": 1,
+      "reason": "unverified_or_missing_source"
+    },
+    {
+      "pluginId": "waves--studiorack-obs",
+      "manufacturerId": "waves",
+      "manufacturer": "Waves",
+      "product": "Waves StudioRack for OBS",
+      "latestVersion": "14.21.96",
+      "versionEvidence": "unverified-seed",
+      "versionSourceUrl": null,
+      "versionVerifiedAt": null,
+      "ageDays": null,
+      "portalUrl": "https://www.waves.com/downloads/central",
+      "stickyUrls": [
+        "https://www.waves.com/downloads/release-notes"
+      ],
+      "path": "sticky",
+      "priority": 1,
+      "reason": "unverified_or_missing_source"
+    },
+    {
       "pluginId": "celemony--melodyne",
       "manufacturerId": "celemony",
       "manufacturer": "Celemony",
@@ -5581,38 +4867,6 @@
       "reason": "unverified_or_missing_source"
     },
     {
-      "pluginId": "oeksound--soothe",
-      "manufacturerId": "oeksound",
-      "manufacturer": "oeksound",
-      "product": "soothe",
-      "latestVersion": "1.4.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://oeksound.com/downloads/",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "oeksound--soothe2",
-      "manufacturerId": "oeksound",
-      "manufacturer": "oeksound",
-      "product": "soothe2",
-      "latestVersion": "1.3.3",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://oeksound.com/downloads/",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
       "pluginId": "softube--saturation-knob",
       "manufacturerId": "softube",
       "manufacturer": "Softube",
@@ -5645,54 +4899,6 @@
         "https://www.softube.com/installers"
       ],
       "path": "sticky",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "sonarworks--reference-4",
-      "manufacturerId": "sonarworks",
-      "manufacturer": "Sonarworks",
-      "product": "Sonarworks Reference 4",
-      "latestVersion": "4.4.8",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.sonarworks.com/download",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "xln-audio--ds-10-drum-shaper",
-      "manufacturerId": "xln-audio",
-      "manufacturer": "XLN Audio",
-      "product": "DS-10 Drum Shaper",
-      "latestVersion": "1.3.6",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.xlnaudio.com/account",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "xln-audio--rc-20-retro-color",
-      "manufacturerId": "xln-audio",
-      "manufacturer": "XLN Audio",
-      "product": "RC-20 Retro Color",
-      "latestVersion": "1.5.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.xlnaudio.com/account",
-      "stickyUrls": [],
-      "path": "cold",
       "priority": 1,
       "reason": "unverified_or_missing_source"
     },
@@ -5889,22 +5095,6 @@
       "reason": "unverified_or_missing_source"
     },
     {
-      "pluginId": "credland--pink",
-      "manufacturerId": "credland",
-      "manufacturer": "Credland Audio",
-      "product": "Pink",
-      "latestVersion": "1.1.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.credland.net/",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
       "pluginId": "cymatics--origin",
       "manufacturerId": "cymatics",
       "manufacturer": "Cymatics",
@@ -5947,22 +5137,6 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://www.google.com/search?q=digidesign+plugin+download",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "eastwest--spaces",
-      "manufacturerId": "eastwest",
-      "manufacturer": "EastWest",
-      "product": "Spaces",
-      "latestVersion": "2.5.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.soundsonline.com/account",
       "stickyUrls": [],
       "path": "cold",
       "priority": 1,
@@ -6257,22 +5431,6 @@
       "reason": "unverified_or_missing_source"
     },
     {
-      "pluginId": "safari-pedals--gorilla-drive",
-      "manufacturerId": "safari-pedals",
-      "manufacturer": "Safari Pedals",
-      "product": "Gorilla Drive",
-      "latestVersion": "2.0.01",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.safaripedals.com/",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
       "pluginId": "scuffham--sgear",
       "manufacturerId": "scuffham-amps",
       "manufacturer": "Scuffham Amps",
@@ -6337,22 +5495,6 @@
       "reason": "unverified_or_missing_source"
     },
     {
-      "pluginId": "spitfire-audio--labs",
-      "manufacturerId": "spitfire-audio",
-      "manufacturer": "Spitfire Audio",
-      "product": "LABS",
-      "latestVersion": "3.7.29",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.spitfireaudio.com/account",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
       "pluginId": "spl--spl-machine-head",
       "manufacturerId": "spl",
       "manufacturer": "SPL",
@@ -6369,22 +5511,6 @@
       "reason": "unverified_or_missing_source"
     },
     {
-      "pluginId": "splice--splice",
-      "manufacturerId": "splice",
-      "manufacturer": "Splice",
-      "product": "Splice",
-      "latestVersion": "1.0.0",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://splice.com/",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
       "pluginId": "steven-slate--trigger-2",
       "manufacturerId": "steven-slate",
       "manufacturer": "Steven Slate Audio",
@@ -6395,38 +5521,6 @@
       "versionVerifiedAt": null,
       "ageDays": null,
       "portalUrl": "https://stevenslatedrums.com/account/",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "supertone--clear",
-      "manufacturerId": "supertone",
-      "manufacturer": "Supertone",
-      "product": "Clear",
-      "latestVersion": "1.1.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://supertone.ai/",
-      "stickyUrls": [],
-      "path": "cold",
-      "priority": 1,
-      "reason": "unverified_or_missing_source"
-    },
-    {
-      "pluginId": "synthogy--ivory",
-      "manufacturerId": "synthogy",
-      "manufacturer": "Synthogy",
-      "product": "Ivory",
-      "latestVersion": "2.6.1",
-      "versionEvidence": "unverified-seed",
-      "versionSourceUrl": null,
-      "versionVerifiedAt": null,
-      "ageDays": null,
-      "portalUrl": "https://www.synthogy.com/",
       "stickyUrls": [],
       "path": "cold",
       "priority": 1,
@@ -6545,6 +5639,42 @@
       "reason": "unverified_or_missing_source"
     },
     {
+      "pluginId": "ssl--ssl-360-link-bus-compressor",
+      "manufacturerId": "ssl",
+      "manufacturer": "Solid State Logic",
+      "product": "SSL 360 Link Bus Compressor",
+      "latestVersion": "1.7",
+      "versionEvidence": "live-scrape",
+      "versionSourceUrl": "https://solidstatelogic.com/support/downloads",
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
+      "portalUrl": "https://solidstatelogic.com/support/downloads",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
+      "priority": 2,
+      "reason": "awaiting_page_confirmation"
+    },
+    {
+      "pluginId": "ssl--ssl-360-link-channel-strip",
+      "manufacturerId": "ssl",
+      "manufacturer": "Solid State Logic",
+      "product": "SSL 360 Link Channel Strip",
+      "latestVersion": "1.7",
+      "versionEvidence": "live-scrape",
+      "versionSourceUrl": "https://solidstatelogic.com/support/downloads",
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
+      "portalUrl": "https://solidstatelogic.com/support/downloads",
+      "stickyUrls": [
+        "https://solidstatelogic.com/support/downloads"
+      ],
+      "path": "sticky",
+      "priority": 2,
+      "reason": "awaiting_page_confirmation"
+    },
+    {
       "pluginId": "plugin-alliance--amek-mastering-compressor",
       "manufacturerId": "plugin-alliance",
       "manufacturer": "Plugin Alliance",
@@ -6552,8 +5682,8 @@
       "latestVersion": "1.17.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/mastering-compressor-class-a",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/mpressor",
@@ -6571,8 +5701,8 @@
       "latestVersion": "1.6.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/svt-3pro",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/svt-3pro",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/svt-3pro",
@@ -6590,8 +5720,8 @@
       "latestVersion": "1.6.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/svt-vr",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/svt-vr",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/svt-vr",
@@ -6609,8 +5739,8 @@
       "latestVersion": "1.6.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/svt-vr-classic",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/svt-vr",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/svt-vr-classic",
@@ -6628,30 +5758,11 @@
       "latestVersion": "2.17.1",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_dyneq-v2",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/bx_dyneq-v2",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/bx_dyneq-v2",
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-limiter-true-peak",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_limiter True Peak",
-      "latestVersion": "1.16.1",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_limiter",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.plugin-alliance.com/products/bx_limiter-true-peak",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/products/bx_limiter",
         "https://www.plugin-alliance.com/en/products.html"
       ],
       "path": "sticky",
@@ -6666,27 +5777,8 @@
       "latestVersion": "1.8.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/products/bx_masterdesk",
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-masterdesk-pro",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_masterdesk Pro",
-      "latestVersion": "1.8.0",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/bx_masterdesk",
@@ -6704,8 +5796,8 @@
       "latestVersion": "1.8.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_masterdesk",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/bx_masterdesk",
@@ -6723,8 +5815,8 @@
       "latestVersion": "1.11.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_opto",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/bx_opto",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/bx_opto",
@@ -6742,8 +5834,8 @@
       "latestVersion": "3.10.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rockrack-v3",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/bx_rockrack-v3",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/bx_rockrack-v3",
@@ -6761,30 +5853,11 @@
       "latestVersion": "1.3.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/spread",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/spread",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/spread",
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "plugin-alliance--bx-townhouse-buss-compressor",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "bx_townhouse Buss Compressor",
-      "latestVersion": "1.17.0",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/products/mpressor",
         "https://www.plugin-alliance.com/en/products.html"
       ],
       "path": "sticky",
@@ -6799,8 +5872,8 @@
       "latestVersion": "1.1.1",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/click-boom",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/click-boom",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/click-boom",
@@ -6818,8 +5891,8 @@
       "latestVersion": "1.11.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bax-eq",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/bax-eq",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/bax-eq",
@@ -6837,30 +5910,11 @@
       "latestVersion": "1.11.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bax-eq",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/bax-eq",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/bax-eq",
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "plugin-alliance--elysia-alpha-compressor-v2",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "elysia alpha compressor V2",
-      "latestVersion": "1.17.0",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/products/mpressor",
         "https://www.plugin-alliance.com/en/products.html"
       ],
       "path": "sticky",
@@ -6875,8 +5929,8 @@
       "latestVersion": "1.11.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/karacter",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/karacter",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/karacter",
@@ -6894,8 +5948,8 @@
       "latestVersion": "1.11.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/karacter",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/karacter",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/karacter",
@@ -6913,8 +5967,8 @@
       "latestVersion": "1.15.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/museq",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/museq",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/museq",
@@ -6932,8 +5986,8 @@
       "latestVersion": "1.15.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/museq",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/museq",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/museq",
@@ -6951,8 +6005,8 @@
       "latestVersion": "1.3.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/phils-cascade",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/phils-cascade",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/phils-cascade",
@@ -6970,8 +6024,8 @@
       "latestVersion": "1.5.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/be-100",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/be-100",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/be-100",
@@ -6989,8 +6043,8 @@
       "latestVersion": "1.3.1",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hitstrip",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/hitstrip",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/hitstrip",
@@ -7008,8 +6062,8 @@
       "latestVersion": "1.2.1",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/knocktonal",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/knocktonal",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/knocktonal",
@@ -7039,25 +6093,6 @@
       "reason": "awaiting_page_confirmation"
     },
     {
-      "pluginId": "plugin-alliance--shadow-hills-mastering-compressor",
-      "manufacturerId": "plugin-alliance",
-      "manufacturer": "Plugin Alliance",
-      "product": "Shadow Hills Mastering Compressor",
-      "latestVersion": "1.17.0",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.plugin-alliance.com/products/mastering-compressor-class-a",
-      "stickyUrls": [
-        "https://www.plugin-alliance.com/products/mpressor",
-        "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
       "pluginId": "plugin-alliance--spl-passeq-single",
       "manufacturerId": "plugin-alliance",
       "manufacturer": "Plugin Alliance",
@@ -7065,8 +6100,8 @@
       "latestVersion": "1.16.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/passeq",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/passeq",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/passeq",
@@ -7084,8 +6119,8 @@
       "latestVersion": "1.3.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/spread",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/spread",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/spread",
@@ -7103,8 +6138,8 @@
       "latestVersion": "1.17.0",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/cenozoix-compressor",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/mpressor",
@@ -7122,8 +6157,8 @@
       "latestVersion": "1.7.4",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/kirchhoff-eq",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/kirchhoff-eq",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/kirchhoff-eq",
@@ -7141,1419 +6176,12 @@
       "latestVersion": "1.1.2",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/trinity-shaper",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.plugin-alliance.com/products/trinity-shaper",
       "stickyUrls": [
         "https://www.plugin-alliance.com/products/trinity-shaper",
         "https://www.plugin-alliance.com/en/products.html"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--magc",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MAGC",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--manalyzer",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MAnalyzer",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mautopitch",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MAutoPitch",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mbandpass",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MBandPass",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mbitfun",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MBitFun",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mccgenerator",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MCCGenerator",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mchannelmatrix",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MChannelMatrix",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mcharmverb",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MCharmVerb",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mcomb",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MComb",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mcompressor",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MCompressor",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mconvolutionez",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MConvolutionEZ",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mdelay",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MDelay",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mequalizer",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MEqualizer",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mflanger",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MFlanger",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mfreeformphase",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MFreeformPhase",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mfreqshifter",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MFreqShifter",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mloudnessanalyzer",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MLoudnessAnalyzer",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mmetronome",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MMetronome",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mnoisegenerator",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MNoiseGenerator",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mnotepad",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MNotepad",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--moscillator",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MOscillator",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--moscilloscope",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MOscilloscope",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mphaser",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MPhaser",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mratio",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MRatio",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mratiomb",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MRatioMB",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mrecorder",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MRecorder",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mringmodulator",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MRingModulator",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--msaturator",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MSaturator",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mspectralpan",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MSpectralPan",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mstereoexpander",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MStereoExpander",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mstereoscope",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MStereoScope",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mtransient",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MTransient",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mtremolo",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MTremolo",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mtuner",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MTuner",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mturbodelaymb",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MTurboDelayMB",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mutility",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MUtility",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mvibrato",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MVibrato",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mwavefolder",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MWaveFolder",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "meldaproduction--mwaveshaper",
-      "manufacturerId": "meldaproduction",
-      "manufacturer": "MeldaProduction",
-      "product": "MWaveShaper",
-      "latestVersion": "17.09",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://www.meldaproduction.com/downloads",
-      "stickyUrls": [
-        "https://www.meldaproduction.com/downloads",
-        "https://www.meldaproduction.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "ssl--ssl-360-link-bus-compressor",
-      "manufacturerId": "ssl",
-      "manufacturer": "Solid State Logic",
-      "product": "SSL 360 Link Bus Compressor",
-      "latestVersion": "1.7",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://solidstatelogic.com/support/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [
-        "https://solidstatelogic.com/support/downloads"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "ssl--ssl-360-link-channel-strip",
-      "manufacturerId": "ssl",
-      "manufacturer": "Solid State Logic",
-      "product": "SSL 360 Link Channel Strip",
-      "latestVersion": "1.7",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://solidstatelogic.com/support/downloads",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://solidstatelogic.com/support/downloads",
-      "stickyUrls": [
-        "https://solidstatelogic.com/support/downloads"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-3-band-eq",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs 3-Band EQ",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-bitcrush",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Bitcrush",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-channel-mixer",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Channel Mixer",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-chorus",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Chorus",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-clipper",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Clipper",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-comb-filter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Comb Filter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-compactor",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Compactor",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-compressor",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Compressor",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-delay",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Delay",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-distortion",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Distortion",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-dual-delay",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Dual Delay",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-dynamics",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Dynamics",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-ensemble",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Ensemble",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-filter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Filter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-flanger",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Flanger",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-formant-filter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Formant Filter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-frequency-shifter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Frequency Shifter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-gain",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Gain",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-gate",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Gate",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-haas",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Haas",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-ladder-filter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Ladder Filter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-limiter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Limiter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-nonlinear-filter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Nonlinear Filter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-phase-distortion",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Phase Distortion",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-phaser",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Phaser",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-pitch-shifter",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Pitch Shifter",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-resonator",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Resonator",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-reverb",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Reverb",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-reverser",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Reverser",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-ring-mod",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Ring Mod",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-shaper",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Shaper",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-stereo",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Stereo",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-tape-stop",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Tape Stop",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-trance-gate",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Trance Gate",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "kilohearts--khs-transient-shaper",
-      "manufacturerId": "kilohearts",
-      "manufacturer": "Kilohearts",
-      "product": "kHs Transient Shaper",
-      "latestVersion": "2.4.6",
-      "versionEvidence": "live-scrape",
-      "versionSourceUrl": "https://kilohearts.com/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://kilohearts.com/download",
-      "stickyUrls": [
-        "https://kilohearts.com/download"
       ],
       "path": "sticky",
       "priority": 2,
@@ -8567,8 +6195,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8586,8 +6214,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8605,8 +6233,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8624,8 +6252,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8643,8 +6271,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8662,8 +6290,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8681,8 +6309,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8700,8 +6328,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8719,8 +6347,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8738,8 +6366,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8757,8 +6385,8 @@
       "latestVersion": "5.5.5",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.soundtoys.com/release-log/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.soundtoys.com/release-log/",
       "stickyUrls": [
         "https://www.soundtoys.com/release-log/",
@@ -8769,167 +6397,15 @@
       "reason": "awaiting_page_confirmation"
     },
     {
-      "pluginId": "valhalla-dsp--valhalladelay",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaDelay",
-      "latestVersion": "3.0.5",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "valhalla-dsp--valhallafreqecho",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaFreqEcho",
-      "latestVersion": "1.2.8",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "valhalla-dsp--valhallafutureverb",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaFutureVerb",
-      "latestVersion": "1.0.2",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "valhalla-dsp--valhallaplate",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaPlate",
-      "latestVersion": "1.6.8",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "valhalla-dsp--valhallaroom",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaRoom",
-      "latestVersion": "2.0.5",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "valhalla-dsp--valhallashimmer",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaShimmer",
-      "latestVersion": "1.3.0",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "valhalla-dsp--valhallasupermassive",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaSupermassive",
-      "latestVersion": "3.0.0",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
-      "pluginId": "valhalla-dsp--valhallavintageverb",
-      "manufacturerId": "valhalla-dsp",
-      "manufacturer": "Valhalla DSP",
-      "product": "ValhallaVintageVerb",
-      "latestVersion": "4.0.5",
-      "versionEvidence": "public-page",
-      "versionSourceUrl": "https://valhalladsp.com/my-account/downloads/",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
-      "portalUrl": "https://valhalladsp.com/my-account/downloads/",
-      "stickyUrls": [
-        "https://valhalladsp.com/my-account/downloads/",
-        "https://valhalladsp.com/downloads/"
-      ],
-      "path": "sticky",
-      "priority": 2,
-      "reason": "awaiting_page_confirmation"
-    },
-    {
       "pluginId": "sonarworks--soundid-reference-plugin",
       "manufacturerId": "sonarworks",
       "manufacturer": "Sonarworks",
       "product": "SoundID Reference Plugin",
-      "latestVersion": "5.13.7",
+      "latestVersion": "5.13.8",
       "versionEvidence": "live-scrape",
       "versionSourceUrl": "https://www.sonarworks.com/soundid-reference/download",
-      "versionVerifiedAt": "2026-08-03",
-      "ageDays": 7,
+      "versionVerifiedAt": "2026-08-10",
+      "ageDays": 0,
       "portalUrl": "https://www.sonarworks.com/soundid-reference/download",
       "stickyUrls": [
         "https://www.sonarworks.com/soundid-reference/download"

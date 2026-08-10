@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-10T15:53:47.868Z",
+  "updatedAt": "2026-08-10T17:09:37.765Z",
   "sources": [
     {
       "manufacturerId": "soundtoys",
@@ -1331,7 +1331,7 @@
       "addedBy": "discovery",
       "addedAt": "2026-08-08",
       "lastVerifiedAt": "2026-08-10",
-      "lastVersion": "17.09.02"
+      "lastVersion": "17.09"
     },
     {
       "manufacturerId": "kilohearts",
@@ -1341,7 +1341,7 @@
       "nameIncludes": "Disperser",
       "addedBy": "discovery",
       "addedAt": "2026-08-08",
-      "lastVerifiedAt": "2026-08-08",
+      "lastVerifiedAt": "2026-08-10",
       "lastVersion": "2.4.6"
     },
     {
@@ -1385,7 +1385,7 @@
       "nameIncludes": "Blitzer",
       "addedBy": "discovery",
       "addedAt": "2026-08-09",
-      "lastVerifiedAt": "2026-08-09",
+      "lastVerifiedAt": "2026-08-10",
       "lastVersion": "1.7"
     },
     {
@@ -1398,6 +1398,204 @@
       "addedAt": "2026-08-09",
       "lastVerifiedAt": "2026-08-09",
       "lastVersion": "2.11.5"
+    },
+    {
+      "manufacturerId": "valhalla-dsp",
+      "url": "https://valhalladsp.com/my-account/downloads/",
+      "kind": "release-notes",
+      "label": "Valhalla DSP sticky",
+      "nameIncludes": "ValhallaDelay",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "28.0"
+    },
+    {
+      "manufacturerId": "waves",
+      "url": "https://www.waves.com/downloads/release-notes",
+      "kind": "release-notes",
+      "label": "Waves sticky",
+      "nameIncludes": "WaveShell",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "14.0"
+    },
+    {
+      "manufacturerId": "oeksound",
+      "url": "https://oeksound.com/downloads/",
+      "kind": "release-notes",
+      "label": "oeksound flash",
+      "nameIncludes": "soothe",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "0.15"
+    },
+    {
+      "manufacturerId": "xln-audio",
+      "url": "https://www.xlnaudio.com/login",
+      "kind": "release-notes",
+      "label": "XLN Audio flash",
+      "nameIncludes": "DS-10 Drum Shaper",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.5"
+    },
+    {
+      "manufacturerId": "credland",
+      "url": "https://www.credland.net/",
+      "kind": "release-notes",
+      "label": "Credland Audio flash",
+      "nameIncludes": "Pink",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "3.6.0"
+    },
+    {
+      "manufacturerId": "eastwest",
+      "url": "https://www.soundsonline.com/account/",
+      "kind": "release-notes",
+      "label": "EastWest flash",
+      "nameIncludes": "Spaces",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "2"
+    },
+    {
+      "manufacturerId": "safari-pedals",
+      "url": "https://safariaudio.com/",
+      "kind": "release-notes",
+      "label": "Safari Pedals flash",
+      "nameIncludes": "Gorilla Drive",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.1"
+    },
+    {
+      "manufacturerId": "spitfire-audio",
+      "url": "https://www.spitfireaudio.com/en-us/account/login",
+      "kind": "release-notes",
+      "label": "Spitfire Audio flash",
+      "nameIncludes": "LABS",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "13.0006"
+    },
+    {
+      "manufacturerId": "splice",
+      "url": "https://splice.com/",
+      "kind": "release-notes",
+      "label": "Splice flash",
+      "nameIncludes": "Splice",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.1"
+    },
+    {
+      "manufacturerId": "supertone",
+      "url": "https://www.supertone.ai/en",
+      "kind": "release-notes",
+      "label": "Supertone flash",
+      "nameIncludes": "Clear",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.3.9"
+    },
+    {
+      "manufacturerId": "synthogy",
+      "url": "https://www.synthogy.com/",
+      "kind": "release-notes",
+      "label": "Synthogy flash",
+      "nameIncludes": "Ivory",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.7"
+    },
+    {
+      "manufacturerId": "sonarworks",
+      "url": "https://www.sonarworks.com/download-center",
+      "kind": "release-notes",
+      "label": "Sonarworks flash",
+      "nameIncludes": "Sonarworks Reference 4",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "3.4.1.6"
+    },
+    {
+      "manufacturerId": "plugin-alliance",
+      "url": "https://www.plugin-alliance.com/products/bx_limiter-true-peak",
+      "kind": "release-notes",
+      "label": "Plugin Alliance flash",
+      "nameIncludes": "bx_limiter True Peak",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "5.5"
+    },
+    {
+      "manufacturerId": "plugin-alliance",
+      "url": "https://www.plugin-alliance.com/products/brainworx-bx_masterdesk-pro",
+      "kind": "release-notes",
+      "label": "Plugin Alliance flash",
+      "nameIncludes": "bx_masterdesk Pro",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.3.0"
+    },
+    {
+      "manufacturerId": "plugin-alliance",
+      "url": "https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor",
+      "kind": "release-notes",
+      "label": "Plugin Alliance flash",
+      "nameIncludes": "bx_townhouse Buss Compressor",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.9.0"
+    },
+    {
+      "manufacturerId": "plugin-alliance",
+      "url": "https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2",
+      "kind": "release-notes",
+      "label": "Plugin Alliance flash",
+      "nameIncludes": "elysia alpha compressor V2",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "2.2.0"
+    },
+    {
+      "manufacturerId": "plugin-alliance",
+      "url": "https://www.plugin-alliance.com/products/mastering-compressor-class-a",
+      "kind": "release-notes",
+      "label": "Plugin Alliance flash",
+      "nameIncludes": "Shadow Hills Mastering Compressor",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "1.5.0"
+    },
+    {
+      "manufacturerId": "spitfire-audio",
+      "url": "https://www.spitfireaudio.com/en-us/account/login",
+      "kind": "release-notes",
+      "label": "Spitfire Audio flash",
+      "nameIncludes": "LABS",
+      "addedBy": "discovery",
+      "addedAt": "2026-08-10",
+      "lastVerifiedAt": "2026-08-10",
+      "lastVersion": "13.0006"
     }
   ]
 }
