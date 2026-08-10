@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-10",
+  "notes": "Hand-curated manufacturer portals for suite-style vendors and known-good download pages. suiteVersion=true means one public version applies across that manufacturer's products when confirmed on-page.",
+  "sources": [
+    {
+      "manufacturerId": "kilohearts",
+      "url": "https://kilohearts.com/download",
+      "suiteVersion": true,
+      "label": "Kilohearts download"
+    },
+    {
+      "manufacturerId": "meldaproduction",
+      "url": "https://www.meldaproduction.com/download",
+      "suiteVersion": true,
+      "label": "Melda download"
+    },
+    {
+      "manufacturerId": "soundtoys",
+      "url": "https://www.soundtoys.com/support/release-notes/",
+      "suiteVersion": false,
+      "label": "Soundtoys release notes"
+    },
+    {
+      "manufacturerId": "valhalla-dsp",
+      "url": "https://valhalladsp.com/downloads/",
+      "suiteVersion": true,
+      "label": "Valhalla downloads"
+    },
+    {
+      "manufacturerId": "fabfilter",
+      "url": "https://www.fabfilter.com/download",
+      "suiteVersion": false,
+      "label": "FabFilter download"
+    },
+    {
+      "manufacturerId": "goodhertz",
+      "url": "https://goodhertz.com/downloads/",
+      "suiteVersion": true,
+      "label": "Goodhertz downloads"
+    },
+    {
+      "manufacturerId": "united-plugins",
+      "url": "https://unitedplugins.com/download",
+      "suiteVersion": true,
+      "label": "United Plugins download"
+    },
+    {
+      "manufacturerId": "ssl",
+      "url": "https://solidstatelogic.com/support/downloads",
+      "suiteVersion": false,
+      "label": "SSL downloads"
+    },
+    {
+      "manufacturerId": "plugin-alliance",
+      "url": "https://www.plugin-alliance.com/en/products.html",
+      "suiteVersion": false,
+      "label": "Plugin Alliance products index"
+    },
+    {
+      "manufacturerId": "eventide",
+      "url": "https://www.eventideaudio.com/downloads/",
+      "suiteVersion": false,
+      "label": "Eventide downloads"
+    },
+    {
+      "manufacturerId": "tokyo-dawn-labs",
+      "url": "https://www.tokyodawn.net/tokyo-dawn-labs-releases/",
+      "suiteVersion": false,
+      "label": "Tokyo Dawn releases"
+    },
+    {
+      "manufacturerId": "softube",
+      "url": "https://www.softube.com/installers",
+      "suiteVersion": false,
+      "label": "Softube installers"
+    },
+    {
+      "manufacturerId": "native-instruments",
+      "url": "https://www.native-instruments.com/en/support/downloads/",
+      "suiteVersion": false,
+      "label": "NI downloads"
+    },
+    {
+      "manufacturerId": "waves",
+      "url": "https://www.waves.com/downloads/release-notes",
+      "suiteVersion": false,
+      "label": "Waves release notes"
+    },
+    {
+      "manufacturerId": "celemony",
+      "url": "https://www.celemony.com/en/melodyne/download",
+      "suiteVersion": false,
+      "label": "Melodyne download"
+    }
+  ],
+  "manualOnly": [
+    {
+      "manufacturerId": "izotope",
+      "reason": "Shopify JS-rendered release notes; product text often absent from raw HTML"
+    },
+    {
+      "manufacturerId": "avid",
+      "reason": "Account login wall; no public per-plugin version page"
+    }
+  ]
+}

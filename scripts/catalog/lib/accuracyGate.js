@@ -5,6 +5,8 @@
  */
 const BINARY_RE = /\.(dmg|pkg|exe|zip|msi|rar|7z|iso)(\?|$)/i
 
+const DEFAULT_NEAR_DIST = 2000
+
 function assertPortalUrl(url) {
   if (!url || typeof url !== 'string') throw new Error('Missing portal URL')
   if (!/^https?:\/\//i.test(url)) throw new Error(`Non-http portal: ${url}`)
@@ -93,48 +95,42 @@ async function confirmVersionOnPage(sourceUrl, version) {
   }
 }
 
-/** Extract dotted versions from HTML near a product name hint when possible. */
-function extractVersionsFromHtml(html, { nameHint } = {}) {
-  const text = String(html || '')
-  const versions = []
-  const re = /\bv?(\d+\.\d+(?:\.\d+){0,3})\b/g
-  let m
-  while ((m = re.exec(text))) {
-    const v = m[1]
-    if (isSuspiciousVersion(v)) continue
-    versions.push({ version: v, index: m.index })
-  }
-  if (!nameHint) {
-    // Prefer denser / longer versions; unique preserve order
-    const seen = new Set()
-    const out = []
-    for (const row of versions) {
-      if (seen.has(row.version)) continue
-      seen.add(row.version)
-      out.push(row.version)
-    }
-    return out.slice(0, 20)
-  }
-  const hint = String(nameHint).toLowerCase()
-  const lower = text.toLowerCase()
-  // Require product hint on page — otherwise shared manufacturer portals cause false matches
-  const hintIdx = lower.indexOf(hint)
-  if (hintIdx < 0) {
-    // try simplified hint (strip manufacturer prefix words)
-    const simplified = hint.replace(/^(izotope|fabfilter|goodhertz|waves)\s+/i, '').trim()
-    const idx2 = simplified.length >= 4 ? lower.indexOf(simplified) : -1
-    if (idx2 < 0) return []
-    return rankNear(versions, idx2)
-  }
-  return rankNear(versions, hintIdx)
+function productNameVariants(nameHint) {
+  const hint = String(nameHint || '').toLowerCase().trim()
+  if (!hint) return []
+  const names = [hint]
+  const simplified = hint
+    .replace(/^(izotope|fabfilter|goodhertz|waves|plugin alliance|solid state logic|ssl)\s+/i, '')
+    .trim()
+  if (simplified.length >= 4 && simplified !== hint) names.push(simplified)
+  return names
 }
 
-function rankNear(versions, hintIdx) {
-  // Tight window: shared download portals otherwise match unrelated prices/builds.
-  const ranked = versions
-    .map((r) => ({ ...r, dist: Math.abs(r.index - hintIdx) }))
-    .filter((r) => r.dist < 500)
-    .sort((a, b) => a.dist - b.dist || b.version.length - a.version.length)
+/** All indexes of each name variant (nav + body), not just the first hit. */
+function findAllNameIndexes(lower, names) {
+  const idxs = []
+  for (const n of names) {
+    let start = 0
+    while (start < lower.length) {
+      const i = lower.indexOf(n, start)
+      if (i < 0) break
+      idxs.push(i)
+      start = i + Math.max(1, n.length)
+      if (idxs.length >= 40) return idxs
+    }
+  }
+  return idxs
+}
+
+function rankNearMulti(versions, hintIndexes, maxDist = DEFAULT_NEAR_DIST) {
+  if (!hintIndexes.length) return []
+  const ranked = []
+  for (const r of versions) {
+    let best = Infinity
+    for (const h of hintIndexes) best = Math.min(best, Math.abs(r.index - h))
+    if (best < maxDist) ranked.push({ ...r, dist: best })
+  }
+  ranked.sort((a, b) => a.dist - b.dist || b.version.length - a.version.length)
   const seen = new Set()
   const out = []
   for (const r of ranked) {
@@ -146,37 +142,58 @@ function rankNear(versions, hintIdx) {
   return out
 }
 
-/** True when version appears close to the product name on the page. */
-function versionNearProductName(html, version, product, maxDist = 500) {
+/** Extract dotted versions from HTML near a product name hint when possible. */
+function extractVersionsFromHtml(html, { nameHint, maxDist = DEFAULT_NEAR_DIST } = {}) {
+  const text = String(html || '')
+  const versions = []
+  const re = /\bv?(\d+\.\d+(?:\.\d+){0,3})\b/g
+  let m
+  while ((m = re.exec(text))) {
+    const v = m[1]
+    if (isSuspiciousVersion(v)) continue
+    versions.push({ version: v, index: m.index })
+  }
+  if (!nameHint) {
+    const seen = new Set()
+    const out = []
+    for (const row of versions) {
+      if (seen.has(row.version)) continue
+      seen.add(row.version)
+      out.push(row.version)
+    }
+    return out.slice(0, 20)
+  }
+  const lower = text.toLowerCase()
+  const names = productNameVariants(nameHint)
+  const hintIndexes = findAllNameIndexes(lower, names)
+  if (!hintIndexes.length) return []
+  return rankNearMulti(versions, hintIndexes, maxDist)
+}
+
+/** True when version appears close to any product-name occurrence on the page. */
+function versionNearProductName(html, version, product, maxDist = DEFAULT_NEAR_DIST) {
   const text = String(html || '')
   const lower = text.toLowerCase()
   const v = normalizeVersion(version)
   if (!v || !product) return false
-  const names = [String(product).toLowerCase()]
-  const short = names[0].replace(/^(izotope|fabfilter|goodhertz|waves|plugin alliance)\s+/i, '')
-  if (short.length >= 4 && short !== names[0]) names.push(short)
-
-  let nameIdx = -1
-  for (const n of names) {
-    const i = lower.indexOf(n)
-    if (i >= 0) {
-      nameIdx = i
-      break
-    }
-  }
-  if (nameIdx < 0) return false
+  const names = productNameVariants(product)
+  const nameIndexes = findAllNameIndexes(lower, names)
+  if (!nameIndexes.length) return false
 
   const verRe = new RegExp(`(?:^|[^0-9])v?${v.replace(/\./g, '\\.')}(?:[^0-9]|$)`, 'ig')
   let m
   let best = Infinity
   while ((m = verRe.exec(text))) {
-    best = Math.min(best, Math.abs(m.index - nameIdx))
+    for (const nameIdx of nameIndexes) {
+      best = Math.min(best, Math.abs(m.index - nameIdx))
+    }
   }
   return best <= maxDist
 }
 
 module.exports = {
   BINARY_RE,
+  DEFAULT_NEAR_DIST,
   assertPortalUrl,
   normalizeVersion,
   isSuspiciousVersion,
@@ -184,5 +201,7 @@ module.exports = {
   versionNearProductName,
   fetchPageText,
   confirmVersionOnPage,
-  extractVersionsFromHtml
+  extractVersionsFromHtml,
+  productNameVariants,
+  findAllNameIndexes
 }

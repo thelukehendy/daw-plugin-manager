@@ -25,7 +25,7 @@
  */
 const { writeFileSync } = require('node:fs')
 const { CATALOG_PATH, USAGE_PATH, ESCALATION_PATH } = require('./lib/paths')
-const { buildAndWrite, loadJson } = require('./lib/gapQueue')
+const { buildAndWrite, loadJson, diversifyByManufacturer } = require('./lib/gapQueue')
 const {
   assertPortalUrl,
   normalizeVersion,
@@ -33,7 +33,8 @@ const {
   fetchPageText,
   versionAppearsOnPage,
   versionNearProductName,
-  extractVersionsFromHtml
+  extractVersionsFromHtml,
+  DEFAULT_NEAR_DIST
 } = require('./lib/accuracyGate')
 const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('./lib/knownSourcesJs')
 
@@ -44,7 +45,9 @@ const LIMIT = Math.max(1, Number(process.env.FLASH_LIMIT || 480))
 const CHEAP_RPM = Math.max(1, Number(process.env.FLASH_CHEAP_RPM || 12))
 const SMART_RPM = Math.max(1, Number(process.env.FLASH_SMART_RPM || 4))
 const CHEAP_BUDGET = Math.max(1, Number(process.env.FLASH_CHEAP_BUDGET_EACH || 400))
+const SMART_BUDGET = Math.max(1, Number(process.env.FLASH_SMART_BUDGET_EACH || 40))
 const MFR_FAIL_STREAK = Math.max(3, Number(process.env.FLASH_MFR_FAIL_STREAK || 10))
+const FRESH_DAYS = Math.max(1, Number(process.env.CATALOG_FRESH_DAYS || 60))
 
 const DEFAULT_CHEAP = [
   'gemini-3.5-flash-lite',
@@ -314,7 +317,7 @@ async function verifyWithModel(opts) {
           if (!ver || isSuspiciousVersion(ver)) continue
           if (!productOnPage) break
           if (!versionAppearsOnPage(pageText, ver)) continue
-          if (!versionNearProductName(pageText, ver, gap.product)) continue
+          if (!versionNearProductName(pageText, ver, gap.product, DEFAULT_NEAR_DIST)) continue
           stats.heuristicHits++
           return {
             ok: true,
@@ -390,7 +393,7 @@ async function verifyWithModel(opts) {
         lastMeta.snippet = snippet
         continue
       }
-      if (!versionNearProductName(pageText, version, gap.product, tier === 'smart' ? 800 : 500)) {
+      if (!versionNearProductName(pageText, version, gap.product, DEFAULT_NEAR_DIST)) {
         lastReason = `version_not_near_product:${version}`
         stats.rejects++
         lastMeta.snippet = snippet
@@ -427,6 +430,7 @@ async function verifyWithModel(opts) {
 
 function buildQueue(gaps) {
   const sorted = gaps
+    .filter((g) => g.path !== 'manual')
     .filter((g) => g.portalUrl || g.versionSourceUrl || (g.stickyUrls && g.stickyUrls.length))
     .map((g) => {
       const urls = [g.versionSourceUrl, ...(g.stickyUrls || []), g.portalUrl].filter(Boolean)
@@ -444,27 +448,6 @@ function buildQueue(gaps) {
   return diversifyByManufacturer(sorted)
 }
 
-/** Round-robin manufacturers so one bad portal doesn't burn the whole daily budget. */
-function diversifyByManufacturer(queue) {
-  const buckets = new Map()
-  for (const g of queue) {
-    if (!buckets.has(g.manufacturerId)) buckets.set(g.manufacturerId, [])
-    buckets.get(g.manufacturerId).push(g)
-  }
-  const lists = [...buckets.values()]
-  const out = []
-  while (out.length < queue.length) {
-    let progressed = false
-    for (const list of lists) {
-      if (!list.length) continue
-      out.push(list.shift())
-      progressed = true
-    }
-    if (!progressed) break
-  }
-  return out
-}
-
 async function main() {
   if (!API_KEY) {
     console.error('Missing GEMINI_API_KEY')
@@ -474,7 +457,7 @@ async function main() {
   const cheapModels = parseModelList(process.env.FLASH_CHEAP_MODELS, DEFAULT_CHEAP)
   const smartModels = parseModelList(process.env.FLASH_SMART_MODELS, DEFAULT_SMART)
 
-  const { gaps } = buildAndWrite({ writeCoverage: false })
+  const { gaps } = buildAndWrite({ writeCoverage: false, freshDays: FRESH_DAYS })
   const queue = buildQueue(gaps)
 
   console.log(
@@ -715,10 +698,24 @@ async function main() {
 
   const smartPromise =
     !SKIP_SMART && smartModels.length
-      ? Promise.all(smartModels.map((m) => smartWorker(m)))
+      ? Promise.all(smartModels.map((m) => smartWorker(m))).catch((err) => {
+          console.error('smart tier failed (cheap results already safe):', err.message || err)
+        })
       : Promise.resolve()
 
   await Promise.all(cheapModels.map((m) => cheapWorker(m)))
+
+  // Persist cheap-tier progress before smart finishes / crashes.
+  if (!DRY_RUN && (stats.hits || promotions.length)) {
+    catalog.updatedAt = new Date().toISOString()
+    catalog.catalogSource = 'flash-extract-parallel'
+    writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
+    if (promotions.length) {
+      mergeDiscoveredSources(known, promotions)
+      saveKnownSources(known)
+    }
+  }
+
   escalateQ.close()
   await smartPromise
 

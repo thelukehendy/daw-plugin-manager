@@ -5,7 +5,7 @@
  */
 const { buildAndWrite } = require('./lib/gapQueue')
 
-const result = buildAndWrite({ freshDays: Number(process.env.CATALOG_FRESH_DAYS || 7) })
+const result = buildAndWrite({ freshDays: Number(process.env.CATALOG_FRESH_DAYS || 60) })
 const c = result.coverage
 console.log(
   JSON.stringify(

@@ -26,14 +26,15 @@ Daily:   smart-catalog-scrub.yml
 | Daily workflow | `.github/workflows/smart-catalog-scrub.yml` (16:00 UTC + manual) |
 | Monday scrapers | `.github/workflows/catalog-refresh.yml` (15:00 UTC) |
 | Secret | Repo Actions secret `GEMINI_API_KEY` |
-| Usage log | `catalog/antigravity-usage.json` (Flash + Antigravity run stats) |
+| Manufacturer source map | `catalog/manufacturer-source-map.json` (suite portals + manual-only vendors) |
+| Freshness window | `CATALOG_FRESH_DAYS` default **60** (aligned with confidence aging) |
 
 Free-tier pacing (Project May 25th observed):
 - **Cheap tier (parallel)** — `gemini-3.5-flash-lite`, `gemini-3.1-flash-lite`, plus lighter 2.x Flash/Lite workers (~500 RPD on current Lite buckets)
 - **Smart tier (parallel, escalations only)** — `gemini-3.6-flash`, `gemini-3.5-flash`, `gemini-2.5-flash` with small daily budgets
 - Low-confidence / unclear extracts are logged to `catalog/flash-escalation.json` then retried by smart workers
 - **Antigravity / Pro** — excluded from bulk (TPM / paid); optional separate cold path only
-- Expect most of an ~800-plugin catalog in **1–2 days** when Lite buckets are healthy
+- Expect **~50% page-confirmed in days** after URL/free-path fixes; **~65–70% in ~1–2 weeks** with manufacturer source map work; **~75–80% ceiling** via HTTP fetch. iZotope/Avid-style JS/login walls need manual curation or a browser — not more Gemini models.
 
 Accuracy rules:
 - Catalog high-trust versions require a real public `sourceUrl` (no binaries, no `example.com`, no Google search URLs).

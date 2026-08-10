@@ -9,7 +9,8 @@
  */
 const { readFileSync, writeFileSync } = require('node:fs')
 const { CATALOG_PATH } = require('./lib/paths')
-const { buildAndWrite, loadJson } = require('./lib/gapQueue')
+const { MANUFACTURER_SOURCE_MAP_PATH } = require('./lib/paths')
+const { buildAndWrite, loadJson, diversifyByManufacturer } = require('./lib/gapQueue')
 const {
   fetchPageText,
   extractVersionsFromHtml,
@@ -17,12 +18,18 @@ const {
   versionNearProductName,
   normalizeVersion,
   isSuspiciousVersion,
-  assertPortalUrl
+  assertPortalUrl,
+  DEFAULT_NEAR_DIST
 } = require('./lib/accuracyGate')
 const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('./lib/knownSourcesJs')
 
 const LIMIT = Math.max(1, Number(process.env.STICKY_LIMIT || 200))
 const DRY_RUN = process.env.STICKY_DRY_RUN === '1'
+const FRESH_DAYS = Math.max(1, Number(process.env.CATALOG_FRESH_DAYS || 60))
+
+function loadManufacturerMap() {
+  return loadJson(MANUFACTURER_SOURCE_MAP_PATH, { sources: [] })
+}
 
 function markVerified(plugin, version, sourceUrl) {
   plugin.latestVersion = normalizeVersion(version)
@@ -35,30 +42,51 @@ function markVerified(plugin, version, sourceUrl) {
   plugin.notes = notes ? `${notes} ${stamp}` : stamp
 }
 
-async function reverifyOne(gap, knownSources) {
+async function reverifyOne(gap, knownSources, manufacturerMap) {
   const urls = []
-  if (gap.versionSourceUrl) urls.push(gap.versionSourceUrl)
-  // Only use known-sources URLs that are product-scoped (nameIncludes) or exact product match
+  const add = (u) => {
+    if (!u || urls.includes(u)) return
+    try {
+      assertPortalUrl(u)
+      urls.push(u)
+    } catch {
+      /* skip */
+    }
+  }
+  add(gap.versionSourceUrl)
+  // Product-scoped known sources
   for (const s of knownSources.sources || []) {
     if (s.manufacturerId !== gap.manufacturerId || !s.url) continue
     if (s.nameIncludes) {
       const a = String(s.nameIncludes).toLowerCase()
       const b = String(gap.product).toLowerCase()
       if (!(b.includes(a) || a.includes(b))) continue
-    } else {
-      // manufacturer-wide sticky without nameIncludes: skip for sticky fast path
-      continue
+      add(s.url)
     }
-    if (!urls.includes(s.url)) urls.push(s.url)
+  }
+  // Hand-curated manufacturer map (suite portals allowed without nameIncludes)
+  for (const s of manufacturerMap.sources || []) {
+    if (s.manufacturerId !== gap.manufacturerId || !s.url) continue
+    add(s.url)
   }
   if (!urls.length) return { ok: false, reason: 'no_product_scoped_sticky_url', cold: true }
+
+  const suiteIds = new Set(
+    (manufacturerMap.sources || [])
+      .filter((s) => s.suiteVersion && s.manufacturerId === gap.manufacturerId)
+      .map((s) => s.manufacturerId)
+  )
+  const suiteMode = suiteIds.has(gap.manufacturerId)
 
   let lastReason = 'extract_failed'
   for (const url of urls.slice(0, 4)) {
     try {
       assertPortalUrl(url)
       const page = await fetchPageText(url)
-      const candidates = extractVersionsFromHtml(page.text, { nameHint: gap.product })
+      const candidates = extractVersionsFromHtml(page.text, {
+        nameHint: suiteMode ? null : gap.product,
+        maxDist: DEFAULT_NEAR_DIST
+      })
       // Prefer keeping existing version if still on page (freshness renew)
       const ordered = []
       if (gap.latestVersion) ordered.push(normalizeVersion(gap.latestVersion))
@@ -72,18 +100,20 @@ async function reverifyOne(gap, knownSources) {
           lastReason = `version ${ver} not found on page`
           continue
         }
-        if (!page.text.toLowerCase().includes(String(gap.product).toLowerCase())) {
-          const short = String(gap.product)
-            .toLowerCase()
-            .replace(/^(izotope|fabfilter|goodhertz)\s+/i, '')
-          if (short.length < 4 || !page.text.toLowerCase().includes(short)) {
-            lastReason = 'product_name_not_on_page'
+        if (!suiteMode) {
+          if (!page.text.toLowerCase().includes(String(gap.product).toLowerCase())) {
+            const short = String(gap.product)
+              .toLowerCase()
+              .replace(/^(izotope|fabfilter|goodhertz)\s+/i, '')
+            if (short.length < 4 || !page.text.toLowerCase().includes(short)) {
+              lastReason = 'product_name_not_on_page'
+              continue
+            }
+          }
+          if (!versionNearProductName(page.text, ver, gap.product, DEFAULT_NEAR_DIST)) {
+            lastReason = `version_not_near_product:${ver}`
             continue
           }
-        }
-        if (!versionNearProductName(page.text, ver, gap.product)) {
-          lastReason = `version_not_near_product:${ver}`
-          continue
         }
         return {
           ok: true,
@@ -91,7 +121,8 @@ async function reverifyOne(gap, knownSources) {
           sourceUrl: page.url || url,
           pluginId: gap.pluginId,
           manufacturerId: gap.manufacturerId,
-          product: gap.product
+          product: gap.product,
+          suite: suiteMode
         }
       }
       lastReason = `no_confirmable_version_on ${url}`
@@ -103,13 +134,19 @@ async function reverifyOne(gap, knownSources) {
 }
 
 async function main() {
-  const { gaps } = buildAndWrite({ writeCoverage: false })
-  const stickyGaps = gaps.filter((g) => g.path === 'sticky').slice(0, LIMIT)
-  console.log(`sticky-reverify: candidates=${stickyGaps.length} limit=${LIMIT} dryRun=${DRY_RUN}`)
+  const { gaps } = buildAndWrite({ writeCoverage: false, freshDays: FRESH_DAYS })
+  const stickyGaps = diversifyByManufacturer(gaps.filter((g) => g.path === 'sticky')).slice(
+    0,
+    LIMIT
+  )
+  console.log(
+    `sticky-reverify: candidates=${stickyGaps.length} limit=${LIMIT} freshDays=${FRESH_DAYS} dryRun=${DRY_RUN}`
+  )
 
   const catalog = loadJson(CATALOG_PATH)
   const byId = Object.fromEntries(catalog.plugins.map((p) => [p.id, p]))
   const known = loadKnownSources()
+  const manufacturerMap = loadManufacturerMap()
 
   let hits = 0
   let rejects = 0
@@ -117,7 +154,7 @@ async function main() {
   const promotions = []
 
   for (const gap of stickyGaps) {
-    const result = await reverifyOne(gap, known)
+    const result = await reverifyOne(gap, known, manufacturerMap)
     if (!result.ok) {
       rejects++
       cold.push(gap.pluginId)

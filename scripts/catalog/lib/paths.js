@@ -8,6 +8,7 @@ module.exports = {
   ROOT,
   CATALOG_PATH: resolve(ROOT, 'catalog/catalog.json'),
   KNOWN_SOURCES_PATH: resolve(ROOT, 'catalog/known-sources.json'),
+  MANUFACTURER_SOURCE_MAP_PATH: resolve(ROOT, 'catalog/manufacturer-source-map.json'),
   GAP_QUEUE_PATH: resolve(ROOT, 'catalog/gap-queue.json'),
   COVERAGE_REPORT_PATH: resolve(ROOT, 'catalog/coverage-report.json'),
   EXPORT_PATH: resolve(ROOT, 'catalog/antigravity-export.json'),

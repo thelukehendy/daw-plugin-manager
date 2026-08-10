@@ -3,11 +3,37 @@
  * Build prioritized gap queue + coverage metrics from catalog.json.
  */
 const { readFileSync, writeFileSync, existsSync } = require('node:fs')
-const { CATALOG_PATH, KNOWN_SOURCES_PATH, GAP_QUEUE_PATH, COVERAGE_REPORT_PATH } = require('./paths')
+const { CATALOG_PATH, KNOWN_SOURCES_PATH, GAP_QUEUE_PATH, COVERAGE_REPORT_PATH, MANUFACTURER_SOURCE_MAP_PATH } = require('./paths')
 
 const STRONG_EVIDENCE = new Set(['page-confirmed', 'agent-verified'])
 const SCRAPER_EVIDENCE = new Set(['live-scrape', 'public-page', 'manufacturer-feed'])
 const WEAK_EVIDENCE = new Set(['search-verified', 'curated-seed', 'unverified-seed'])
+
+/**
+ * Manufacturers whose public pages are structurally unreachable via plain HTTP fetch
+ * (JS-rendered storefronts / account login walls). Park them out of daily scrub queues.
+ */
+const MANUAL_CURATION_MFR = new Set(['izotope', 'avid'])
+
+function diversifyByManufacturer(queue) {
+  const buckets = new Map()
+  for (const g of queue) {
+    if (!buckets.has(g.manufacturerId)) buckets.set(g.manufacturerId, [])
+    buckets.get(g.manufacturerId).push(g)
+  }
+  const lists = [...buckets.values()]
+  const out = []
+  while (out.length < queue.length) {
+    let progressed = false
+    for (const list of lists) {
+      if (!list.length) continue
+      out.push(list.shift())
+      progressed = true
+    }
+    if (!progressed) break
+  }
+  return out
+}
 
 function loadJson(path, fallback) {
   if (!existsSync(path)) return fallback
@@ -28,12 +54,19 @@ function daysSince(dateStr) {
   }
 }
 
-function buildGapQueue(catalog, knownSources, { freshDays = 7 } = {}) {
+function buildGapQueue(catalog, knownSources, { freshDays = 60 } = {}) {
   const mfr = Object.fromEntries((catalog.manufacturers || []).map((m) => [m.id, m]))
   const stickyByMfr = new Map()
   for (const s of knownSources.sources || []) {
     if (!stickyByMfr.has(s.manufacturerId)) stickyByMfr.set(s.manufacturerId, [])
     stickyByMfr.get(s.manufacturerId).push(s)
+  }
+  const manufacturerMap = loadJson(MANUFACTURER_SOURCE_MAP_PATH, { sources: [] })
+  const mapByMfr = new Map()
+  for (const s of manufacturerMap.sources || []) {
+    if (!s.manufacturerId || !s.url) continue
+    if (!mapByMfr.has(s.manufacturerId)) mapByMfr.set(s.manufacturerId, [])
+    mapByMfr.get(s.manufacturerId).push(s)
   }
 
   const items = []
@@ -54,15 +87,25 @@ function buildGapQueue(catalog, knownSources, { freshDays = 7 } = {}) {
         }
       }
     }
+    // Hand-curated manufacturer portals (suite downloads allowed without nameIncludes)
+    for (const s of mapByMfr.get(p.manufacturerId) || []) {
+      if (s.url && !stickyUrls.includes(s.url)) stickyUrls.push(s.url)
+    }
     const portalUrl =
       p.updatePortalUrl || manufacturer.updatePortalUrl || manufacturer.websiteUrl || null
 
     let priority = 99
     let reason = 'ok'
+    let path = stickyUrls.length ? 'sticky' : 'cold'
     const strongFresh =
       STRONG_EVIDENCE.has(evidence) && p.versionSourceUrl && ageDays != null && ageDays <= freshDays
 
-    if (!p.versionSourceUrl || evidence === 'unverified-seed' || !evidence) {
+    if (MANUAL_CURATION_MFR.has(p.manufacturerId) && !STRONG_EVIDENCE.has(evidence)) {
+      // Do not burn daily sticky/Flash quota proving HTTP cannot reach these portals.
+      priority = 90
+      reason = 'manual_curation_http_unreachable'
+      path = 'manual'
+    } else if (!p.versionSourceUrl || evidence === 'unverified-seed' || !evidence) {
       priority = 1
       reason = 'unverified_or_missing_source'
     } else if (!STRONG_EVIDENCE.has(evidence) && SCRAPER_EVIDENCE.has(evidence)) {
@@ -71,7 +114,7 @@ function buildGapQueue(catalog, knownSources, { freshDays = 7 } = {}) {
       reason = 'awaiting_page_confirmation'
     } else if (ageDays == null || ageDays > freshDays) {
       priority = 2
-      reason = 'stale_gt_7d'
+      reason = 'stale_gt_fresh_days'
     } else if (WEAK_EVIDENCE.has(evidence) && stickyUrls.length === 0) {
       priority = 3
       reason = 'weak_evidence_no_sticky'
@@ -83,8 +126,6 @@ function buildGapQueue(catalog, knownSources, { freshDays = 7 } = {}) {
       reason = 'other'
     }
 
-    // Sticky path only when we have a product-associated URL to re-fetch
-    const path = stickyUrls.length ? 'sticky' : 'cold'
     items.push({
       pluginId: p.id,
       manufacturerId: p.manufacturerId,
@@ -137,6 +178,7 @@ function summarizeCoverage(items, catalog, freshDays) {
   let pendingUnverified = 0
   let stickyEligible = 0
   let coldEligible = 0
+  let manualCuration = 0
 
   for (const it of items) {
     byEvidence[it.versionEvidence] = (byEvidence[it.versionEvidence] || 0) + 1
@@ -147,18 +189,23 @@ function summarizeCoverage(items, catalog, freshDays) {
         pending: 0,
         freshStrong: 0,
         sticky: 0,
-        cold: 0
+        cold: 0,
+        manual: 0
       }
     }
     const row = byManufacturer[it.manufacturer]
     row.total++
+    if (it.path === 'manual') {
+      manualCuration++
+      row.manual++
+    }
     if (it.priority <= 3) {
       row.pending++
       pendingUnverified++
       if (it.path === 'sticky') {
         stickyEligible++
         row.sticky++
-      } else {
+      } else if (it.path === 'cold') {
         coldEligible++
         row.cold++
       }
@@ -201,6 +248,7 @@ function summarizeCoverage(items, catalog, freshDays) {
     pending_unverified: pendingUnverified,
     sticky_eligible: stickyEligible,
     cold_eligible: coldEligible,
+    manual_curation: manualCuration,
     by_evidence: byEvidence,
     by_reason: byReason,
     pending_manufacturers: pendingMfrs
@@ -257,6 +305,8 @@ module.exports = {
   STRONG_EVIDENCE,
   SCRAPER_EVIDENCE,
   WEAK_EVIDENCE,
+  MANUAL_CURATION_MFR,
+  diversifyByManufacturer,
   loadJson,
   daysSince,
   buildGapQueue,

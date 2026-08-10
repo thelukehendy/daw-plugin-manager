@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
   "kind": "catalog-coverage-report",
-  "generatedAt": "2026-08-09T16:44:47.967Z",
-  "freshDays": 7,
+  "generatedAt": "2026-08-10T14:52:04.812Z",
+  "freshDays": 60,
   "plugins_total": 816,
   "manufacturers_total": 100,
   "verified_strong": 184,
   "verified_within_7d": 184,
-  "pending_unverified": 632,
-  "sticky_eligible": 229,
-  "cold_eligible": 403,
+  "pending_unverified": 477,
+  "sticky_eligible": 176,
+  "cold_eligible": 301,
+  "manual_curation": 155,
   "by_evidence": {
     "page-confirmed": 184,
     "unverified-seed": 401,
@@ -20,34 +21,19 @@
   },
   "by_reason": {
     "fresh_strong": 184,
-    "unverified_or_missing_source": 403,
-    "awaiting_page_confirmation": 156,
-    "stale_gt_7d": 73
+    "unverified_or_missing_source": 349,
+    "awaiting_page_confirmation": 128,
+    "manual_curation_http_unreachable": 155
   },
   "pending_manufacturers": [
-    {
-      "manufacturer": "iZotope",
-      "total": 109,
-      "pending": 101,
-      "freshStrong": 8,
-      "sticky": 101,
-      "cold": 0
-    },
     {
       "manufacturer": "Plugin Alliance",
       "total": 175,
       "pending": 66,
       "freshStrong": 109,
-      "sticky": 32,
-      "cold": 34
-    },
-    {
-      "manufacturer": "Avid",
-      "total": 54,
-      "pending": 54,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 54
+      "sticky": 66,
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "MeldaProduction",
@@ -55,7 +41,8 @@
       "pending": 39,
       "freshStrong": 3,
       "sticky": 39,
-      "cold": 0
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Solid State Logic",
@@ -63,7 +50,8 @@
       "pending": 36,
       "freshStrong": 3,
       "sticky": 2,
-      "cold": 34
+      "cold": 34,
+      "manual": 0
     },
     {
       "manufacturer": "Kilohearts",
@@ -71,7 +59,8 @@
       "pending": 35,
       "freshStrong": 4,
       "sticky": 35,
-      "cold": 0
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "AIR Music Technology",
@@ -79,7 +68,8 @@
       "pending": 26,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 26
+      "cold": 26,
+      "manual": 0
     },
     {
       "manufacturer": "Antares",
@@ -87,7 +77,8 @@
       "pending": 26,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 26
+      "cold": 26,
+      "manual": 0
     },
     {
       "manufacturer": "Slate Digital",
@@ -95,7 +86,8 @@
       "pending": 26,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 26
+      "cold": 26,
+      "manual": 0
     },
     {
       "manufacturer": "Unfiltered Audio",
@@ -103,7 +95,8 @@
       "pending": 19,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 19
+      "cold": 19,
+      "manual": 0
     },
     {
       "manufacturer": "Harrison",
@@ -111,7 +104,8 @@
       "pending": 17,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 17
+      "cold": 17,
+      "manual": 0
     },
     {
       "manufacturer": "Steinberg",
@@ -119,7 +113,8 @@
       "pending": 11,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 11
+      "cold": 11,
+      "manual": 0
     },
     {
       "manufacturer": "Lindell Audio",
@@ -127,7 +122,8 @@
       "pending": 11,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 11
+      "cold": 11,
+      "manual": 0
     },
     {
       "manufacturer": "Soundtoys",
@@ -135,7 +131,8 @@
       "pending": 11,
       "freshStrong": 12,
       "sticky": 11,
-      "cold": 0
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Valhalla DSP",
@@ -143,7 +140,8 @@
       "pending": 8,
       "freshStrong": 0,
       "sticky": 8,
-      "cold": 0
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Metric Halo",
@@ -151,7 +149,8 @@
       "pending": 6,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 6
+      "cold": 6,
+      "manual": 0
     },
     {
       "manufacturer": "Wavesfactory",
@@ -159,7 +158,8 @@
       "pending": 6,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 6
+      "cold": 6,
+      "manual": 0
     },
     {
       "manufacturer": "ADPTR Audio",
@@ -167,7 +167,8 @@
       "pending": 5,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 5
+      "cold": 5,
+      "manual": 0
     },
     {
       "manufacturer": "Bettermaker",
@@ -175,7 +176,8 @@
       "pending": 5,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 5
+      "cold": 5,
+      "manual": 0
     },
     {
       "manufacturer": "Focusrite",
@@ -183,7 +185,8 @@
       "pending": 5,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 5
+      "cold": 5,
+      "manual": 0
     },
     {
       "manufacturer": "Sonnox",
@@ -191,7 +194,8 @@
       "pending": 5,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 5
+      "cold": 5,
+      "manual": 0
     },
     {
       "manufacturer": "Tokyo Dawn Labs",
@@ -199,7 +203,8 @@
       "pending": 5,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 5
+      "cold": 5,
+      "manual": 0
     },
     {
       "manufacturer": "BBE Sound",
@@ -207,7 +212,8 @@
       "pending": 4,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 4
+      "cold": 4,
+      "manual": 0
     },
     {
       "manufacturer": "Klanghelm",
@@ -215,15 +221,17 @@
       "pending": 4,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 4
+      "cold": 4,
+      "manual": 0
     },
     {
       "manufacturer": "Waves",
       "total": 4,
       "pending": 4,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 4
+      "sticky": 4,
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Spectrasonics",
@@ -231,7 +239,8 @@
       "pending": 4,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 4
+      "cold": 4,
+      "manual": 0
     },
     {
       "manufacturer": "Wedgeforce",
@@ -239,7 +248,8 @@
       "pending": 4,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 4
+      "cold": 4,
+      "manual": 0
     },
     {
       "manufacturer": "Klevgrand",
@@ -247,7 +257,8 @@
       "pending": 3,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 3
+      "cold": 3,
+      "manual": 0
     },
     {
       "manufacturer": "Eiosis",
@@ -255,15 +266,17 @@
       "pending": 3,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 3
+      "cold": 3,
+      "manual": 0
     },
     {
       "manufacturer": "Eventide",
       "total": 3,
       "pending": 3,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Kiive Audio",
@@ -271,15 +284,17 @@
       "pending": 3,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 3
+      "cold": 3,
+      "manual": 0
     },
     {
       "manufacturer": "Native Instruments",
       "total": 3,
       "pending": 3,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Audiomovers",
@@ -287,7 +302,8 @@
       "pending": 3,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 3
+      "cold": 3,
+      "manual": 0
     },
     {
       "manufacturer": "Applied Acoustics Systems",
@@ -295,7 +311,8 @@
       "pending": 3,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 3
+      "cold": 3,
+      "manual": 0
     },
     {
       "manufacturer": "TAL Software",
@@ -303,7 +320,8 @@
       "pending": 3,
       "freshStrong": 1,
       "sticky": 0,
-      "cold": 3
+      "cold": 3,
+      "manual": 0
     },
     {
       "manufacturer": "XLN Audio",
@@ -311,23 +329,26 @@
       "pending": 2,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 2
+      "cold": 2,
+      "manual": 0
     },
     {
       "manufacturer": "Celemony",
       "total": 2,
       "pending": 2,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 2
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Softube",
       "total": 2,
       "pending": 2,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 2
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
     },
     {
       "manufacturer": "Sonarworks",
@@ -335,7 +356,8 @@
       "pending": 2,
       "freshStrong": 0,
       "sticky": 1,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Fiedler Audio",
@@ -343,7 +365,8 @@
       "pending": 2,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 2
+      "cold": 2,
+      "manual": 0
     },
     {
       "manufacturer": "oeksound",
@@ -351,7 +374,8 @@
       "pending": 2,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 2
+      "cold": 2,
+      "manual": 0
     },
     {
       "manufacturer": "Sonic Academy",
@@ -359,7 +383,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "AudioPunks",
@@ -367,7 +392,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Accentize",
@@ -375,7 +401,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "IK Multimedia",
@@ -383,7 +410,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Bertom Audio",
@@ -391,7 +419,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Supertone",
@@ -399,7 +428,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Impulse Record",
@@ -407,7 +437,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "HoRNet",
@@ -415,7 +446,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "D16 Group",
@@ -423,7 +455,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Modalics",
@@ -431,7 +464,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "EastWest",
@@ -439,7 +473,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "TBProAudio",
@@ -447,7 +482,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "leotokarev",
@@ -455,7 +491,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Safari Pedals",
@@ -463,7 +500,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "PitchInnovations",
@@ -471,7 +509,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Guitar Rig 5",
@@ -479,7 +518,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "WA Production",
@@ -487,7 +527,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "digidesign",
@@ -495,7 +536,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Synthogy",
@@ -503,7 +545,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Karanyi Sounds",
@@ -511,7 +554,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Spitfire Audio",
@@ -519,7 +563,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Louder Than Liftoff",
@@ -527,7 +572,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "unfilteredaudio",
@@ -535,7 +581,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "con",
@@ -543,7 +590,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "LiquidSonics",
@@ -551,7 +599,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "mpegh",
@@ -559,7 +608,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Mixland",
@@ -567,7 +617,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Nugen Audio",
@@ -575,7 +626,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Newfangled Audio",
@@ -583,7 +635,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Soundspot",
@@ -591,7 +644,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Reaktor 6",
@@ -599,7 +653,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Audio Modern",
@@ -607,7 +662,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "SIR Audio Tools",
@@ -615,7 +671,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "SPL",
@@ -623,7 +680,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Cableguys",
@@ -631,7 +689,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Black Salt Audio",
@@ -639,7 +698,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Aberrant DSP",
@@ -647,7 +707,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Splice",
@@ -655,7 +716,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Overloud",
@@ -663,7 +725,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "THX",
@@ -671,7 +734,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "AudioThing",
@@ -679,7 +743,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Steven Slate Audio",
@@ -687,7 +752,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Kazrog",
@@ -695,7 +761,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "UVI",
@@ -703,7 +770,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Universal Audio",
@@ -711,7 +779,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Acon Digital",
@@ -719,7 +788,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Accusonus",
@@ -727,7 +797,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Apple",
@@ -735,7 +806,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Credland Audio",
@@ -743,7 +815,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Cymatics",
@@ -751,7 +824,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "LinPlug",
@@ -759,7 +833,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Scuffham Amps",
@@ -767,7 +842,8 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     },
     {
       "manufacturer": "Tek'it Audio",
@@ -775,23 +851,15 @@
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 1
+      "cold": 1,
+      "manual": 0
     }
   ],
   "run": {
-    "at": "2026-08-09T16:44:47.968Z",
     "sticky_hits": 0,
-    "sticky_rejects": 200,
-    "flash_hits": 7,
-    "flash_calls": 150,
-    "flash_heuristic_hits": 7,
-    "flash_rejects": 67,
-    "flash_tokens": 337692,
-    "flash_skipped": false,
     "antigravity_hits": 0,
     "page_confirm_rejects": 0,
     "tokens_used": 0,
-    "next_batch_size": 8,
-    "antigravity_skipped": true
+    "next_batch_size": null
   }
 }
