@@ -58,9 +58,35 @@ Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
 
 - No sign-ins, no account creation, no password resets.
 - No purchases, no payment methods, no checkout flows.
-- No outreach of any kind (manufacturers, forums, social).
+- No public outreach of any kind (manufacturers, forums, social, Discord) —
+  reading them aggressively is encouraged; posting is not.
 - No `--force` pushes, no history rewrites.
-- Hub-walled evidence stays blocked until Luke provides a logged-in session.
+
+## Boundary assault protocol (Luke's directive: never give up)
+
+A blocked manufacturer is a research problem, not a stop sign. Each weekly
+run must spend part of its budget attacking at least one blocked
+manufacturer from `dashboard_blocked.json` via alternate evidence paths:
+
+- Wayback Machine snapshots of version badges, changelogs, download pages
+- Forum archaeology: KVR threads, manufacturer forums, Reddit r/audioplugins,
+  Gearspace — version numbers surface in user posts constantly
+- Reseller / bundle listings (Plugin Boutique, Sweetwater, Thomann) that
+  print current versions on product pages
+- Installer filename leaks: version strings in CDN URLs, S3 buckets,
+  support-KB download links
+- Release-note archives, RSS feeds, email-newsletter mirrors, YouTube
+  release videos with version in title/description
+- Cross-corroboration: a version seen in two independent public places
+  counts as a raise per CONFIDENCE.md, even without the vendor page
+- `browser.deep_research` for the stubborn ones — a full sourced deep dive
+
+Record every attempt (paths tried, what failed, what worked) in the weekly
+NOTES file under "Boundary assault". When a boundary is truly unbreakable
+without a login, convert it into a *specific narrow ask* for Luke
+(e.g. "log into Output Hub once and read the version under Downloads for
+these 11 plugins") instead of a vague block. Never silently carry a
+"blocked" label forward week after week without a new attempt logged.
 
 ## File contract (for Cursor)
 

@@ -69,6 +69,7 @@ def main():
 
     history = json.loads(HISTORY.read_text()) if HISTORY.exists() else []
     blocked = json.loads(BLOCKED.read_text()) if BLOCKED.exists() else []
+    blocked_n = len(blocked)
     backups = sorted((p.name for p in BACKUPS.iterdir() if p.is_dir()),
                      reverse=True) if BACKUPS.exists() else []
 
@@ -151,8 +152,8 @@ document.querySelectorAll('#mt tr').forEach(function(r,i){{if(i>0)r.style.displa
 <details><summary>Recent raises (latest 40)</summary><div class="dbody">
 <table><tr><th>Manufacturer</th><th>Plugin</th><th class=num>Version</th><th class=num>Conf</th><th>Verified</th></tr>
 {recent_rows}</table></div></details>
-<details><summary>Blocked manufacturers (needs Luke's login — can't automate)</summary><div class="dbody">
-<p class="note">These hold versions behind account portals. The weekly automation can't reach them without a logged-in session.</p>
+<details><summary>Boundaries under assault ({blocked_n} — alternate evidence paths in progress)</summary><div class="dbody">
+<p class="note">These manufacturers wall versions behind account portals. The weekly job attacks them via alternate paths — Wayback snapshots, forum archaeology, reseller listings, installer-filename leaks, release-note archives — and logs every attempt. A specific narrow ask goes to Luke only when a boundary is truly unbreakable without a login.</p>
 <table><tr><th>Manufacturer</th><th>Yellows</th><th>Blocker</th><th>Path forward</th></tr>
 {blocked_rows}</table></div></details>
 <details><summary>Weekly backups</summary><div class="dbody">
