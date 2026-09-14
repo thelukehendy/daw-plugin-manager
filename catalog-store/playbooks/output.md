@@ -49,3 +49,6 @@ Catalog complete on KVR receipts; Output hub/account may ship newer builds. Trea
 - Public versions stamped where evidence exists; sound libraries intentionally unversioned.
 - `verified_by=coding-assistant`
 - Arcade Lines confirmed **soundset** (unversioned). Arcade plugin already had current prior.
+
+## Confidence raise 26 (2026-09-13)
+- **0** raises (11 stay KVR@60). Thermal owner's manual fetched in full: zero version strings; everything ships via Output Hub or account-gated Downloads tab; product pages are SPA shells.

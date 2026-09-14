@@ -27,3 +27,6 @@
 
 ## Confidence raise 18 (2026-09-10 ~3:50 AM PT)
 - Non-raise: Studio* / DeEss:Dialogue still no matching public `/software/` installers.
+
+## Confidence raise 26 (2026-09-13)
+- **0** raises (13 stay KVR@60). Walked the entire public `/software/` listing (1,648 lines): zero DeEss/Studio* installer rows; current Studio builds are account-only.

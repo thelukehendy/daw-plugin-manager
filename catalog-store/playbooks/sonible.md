@@ -16,3 +16,6 @@
 
 ## Confidence raise 17
 - Non-raise denser pass: learn/* → learnbundle Soft404; smartcomp2/smarteq2-3/smartreverb → successor gens; freiraum → homepage; FAST Focusrite-branded; smart:EQ live 404. Do not stamp successors.
+
+## Confidence raise 26 (2026-09-13)
+- **0** raises (14 stay KVR@60). help.sonible.com confirms latest versions live only under hub-walled My Account Downloads; legacy pages redirect to successor gens (smart:EQ 4, smart:comp 3, smart:reverb 2, learn:bundle) or Soft404 — none stampable onto legacy ids.

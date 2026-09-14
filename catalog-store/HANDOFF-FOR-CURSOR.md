@@ -1,4 +1,4 @@
-> **PAUSED 2026-09-10 ~5:40 AM PT** — catalog work and scrub routines stopped per Luke. See `PAUSE-SNAPSHOT.md` + `STATUS.md` for frozen totals (**583** mfrs / **8439** plugins / **4986** accepted).
+> **RESUMED 2026-09-13 ~9:44 PM PT** — Luke resumed catalog work in the Coding Assist side chat (routines still paused; ad-hoc chips). See `NOTES-confidence-raise-26.md` + `STATUS.md`. Headline: **583** mfrs / **8439** plugins / **4986** accepted; green **3368** / amber **55** / yellow **1563**. Prior pause state: `PAUSE-SNAPSHOT.md` (2026-09-10 ~5:40 AM PT).
 
 # HANDOFF — DAW Plugin Catalog Store (for Cursor / Electron)
 
@@ -17,6 +17,10 @@ Do **not** git-clone `daw-plugin-manager`. Consume the export JSON only.
 | Live one-pager | `STATUS.md` · refresh via `python3 src/status_report.py` |
 
 ---
+
+## Latest chip
+
+**confidence raise 26 2026-09-13 ~9:44→9:50 PM PT** — first chip since pause (resumed per Luke, Coding Assist side chat). Yellow→green **+14** of 222 researched: plogue **11** @92 (`plogue.com/downloads.html` version labels; chipsounds/chipspeech/sforzando 1.981→**1.982**), FL Studio Mobile 4.8.5→**4.10.19** @90 (IL forum release history), DC Snares 1.0.0→**1.2** @91 + Scaler EQ **1.1.3** @91 (Scaler Music forum). 208 principled skips (hornet 36, landr/nugen/sonible/acon/audiority/output/cableguys/cymatics/image-line-longtail: hub-walled or marketing-only). Bands: green **3368** / amber **55** / yellow **1563**. Universe lead: ~20 new cymatics.fm products for expand-12. Notes: `NOTES-confidence-raise-26.md`.
 
 ## Latest overnight chip
 

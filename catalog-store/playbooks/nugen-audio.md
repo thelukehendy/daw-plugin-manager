@@ -39,3 +39,6 @@ Account **My Products / Downloads** is hub-walled for installer binaries. Public
 | UX | “Sign in to NUGEN My Products for installers”. |
 | `hub_walled` | **1** (binaries); KVR versions public |
 
+
+## Confidence raise 26 (2026-09-13)
+- **0** raises (27 stay KVR@60). Halo Upmix product page fetched live: pure marketing copy, zero version strings; installers behind login-walled My Products / Build Archive. No public corroboration path.

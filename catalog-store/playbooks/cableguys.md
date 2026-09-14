@@ -45,3 +45,6 @@
 
 ## Confidence raise 23
 - Non-raise: CM + module Manual PDF sweep still **404**; Curve support = HTML guide without Manual vX.Y.Z. Do not stamp ShaperBox **3.6.3**.
+
+## Confidence raise 26 (2026-09-13)
+- **0** raises (15 stay KVR@60). ShaperBox 3 manual v3.6.3 names module *major gens* in chapter headings only; stamping ShaperBox 3.6.3 onto module lines is a banned anti-pattern. No per-module Manual PDFs exist.

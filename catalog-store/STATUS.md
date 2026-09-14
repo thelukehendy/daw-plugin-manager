@@ -1,8 +1,8 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **PAUSED 2026-09-10 ~5:40 AM PT** — Luke asked to pause new development and cancel planned scrubs. Routines `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` are **paused**. Snapshot: `PAUSE-SNAPSHOT.md`. Export refreshed at pause.
+> **RESUMED 2026-09-13 ~9:44 PM PT** — Luke resumed catalog work. Routines `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` remain **paused** pending his call; ad-hoc raise chips run in the Coding Assist side chat. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-10 ~5:40 AM PT (pause)  
+**Snapshot:** 2026-09-13 ~9:50 PM PT (confidence raise 26)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`
@@ -14,11 +14,23 @@
 | Manufacturers | **583** |
 | Plugins (universe) | **8439** |
 | Accepted current versions | **4986** |
-| Green (≥85) | **3354** |
+| Green (≥85) | **3368** |
 | Amber (70–84) | **55** |
-| Yellow (<70) | **1577** |
+| Yellow (<70) | **1563** |
 | True plugin gaps (non-Airwindows) | **74** |
 | Airwindows intentional unversioned | **512** |
+
+---
+
+## This pass (confidence raise 26 — first chip since pause)
+
+| Action | Result |
+|---|---|
+| Targets researched | **222** yellows across 12 manufacturers (3 parallel batches) |
+| Raised yellow→green | **+14** — plogue **11** @92 (downloads.html version labels; chipsounds/chipspeech/sforzando 1.981→1.982), FL Studio Mobile **4.10.19** @90 (IL forum), DC Snares **1.2** @91 + Scaler EQ **1.1.3** @91 (Scaler Music forum) |
+| Skips | **208** principled (hub-walled portals, marketing-only pages, gen-redirect contamination) |
+| Notes | `NOTES-confidence-raise-26.md` |
+| Universe lead | cymatics.fm now lists ~20 products not in the store (candidate universe-expand-12) |
 
 ---
 

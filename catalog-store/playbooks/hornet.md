@@ -49,3 +49,6 @@
 
 ## Confidence raise 23
 - Non-raise: remaining **36** still marketing-only / Soft404 / redirects / CleanTalk-403. No new matching banners.
+
+## Confidence raise 26 (2026-09-13)
+- **0** raises (36 stay KVR@60). Re-fetched 19 product pages: 15 marketing-only (no semver banner); 3 gen-1←successor redirects (AnalogStage→MK2 1.0.5, ELM128→MK2 2.2.2, HDS1→MK2 — not stampable). 17 not re-fetched (browser tool failures mid-pass); raise 8/9 skips stand.
