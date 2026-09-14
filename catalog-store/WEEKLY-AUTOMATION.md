@@ -1,8 +1,9 @@
-# WEEKLY AUTOMATION — contract (effective 2026-09-13; 10x mode from 2026-09-14)
+# CATALOG AUTOMATION — contract (effective 2026-09-13; 10x mode + daily pushes from 2026-09-14)
 
 Authorized by Luke 2026-09-13: push the plugin version library's breadth and
 depth to the extreme, fully autonomously. 2026-09-14: Luke ordered 10x
-timeline compression — research runs continuously, pushes ship the results.
+timeline compression (continuous research) and daily pushes (smaller,
+Cursor-reviewable diffs).
 
 ## What runs
 
@@ -23,8 +24,11 @@ force-pushes); on 429s back off that provider, log, continue.
 Bookkeeping: append to `NOTES-10x-<YYYY-MM-DD>.md`; refresh dashboard;
 log to `~/memory/YYYY-MM-DD.md`. No export/commit/push — the push job owns that.
 
-**Push job** — cron `daw-catalog-weekly-chip`, every Monday ~02:00
-America/Los_Angeles, timeout 8h. Ships what the engine found:
+**Push job** — cron `daw-catalog-daily-push`, daily ~06:00
+America/Los_Angeles, timeout 2h. Ships what the engine found. 06:00 was
+chosen so both 12h research chips (10:18 / 22:18) land inside each push
+window. Backup retention stays 12 weeks (~84 daily dirs; git is the
+permanent archive).
 
 **Each run, in order:**
 
@@ -34,8 +38,8 @@ America/Los_Angeles, timeout 8h. Ships what the engine found:
    (`{date, bands, manufacturers, plugins, accepted, commit_sha}`).
    Prune backup dirs older than 12 weeks (git history is the permanent archive).
    Backup file contents are gitignored; the manifest is committed.
-3. **Reconcile research notes.** Roll the week's `NOTES-10x-*.md` chips into
-   `NOTES-weekly-<YYYY-MM-DD>.md` (per-chip files stay as the raw log).
+3. **Reconcile research notes.** Append a push summary to the day's
+   `NOTES-10x-<YYYY-MM-DD>.md` (per-chip entries stay as the raw log).
 4. **Export + app sync.**
    - `python3 src/export_catalog.py` → `out/catalog.json`
    - Copy `out/catalog.json` → `../../catalog/catalog.json` (the file the app
@@ -56,7 +60,7 @@ America/Los_Angeles, timeout 8h. Ships what the engine found:
    `out/band_history.json`; update `dashboard_blocked.json` if blockers change;
    run `src/build_dashboard.py` and copy `dashboard.html` to
    `~/workspace/your_files/daw-plugin-catalog-dashboard.html`.
-9. **Commit + push.** Focused message (`catalog: weekly chip <date> (+N ...)`).
+9. **Commit + push.** Focused message (`catalog: daily push <date> (+N ...)`).
    Push via the `github` skill (`~/workspace/skills/github/bin/ghapi.py` +
    Git Data API) — plain `git push` over HTTPS does not carry the stored
    credential. Verify remote ref afterwards. If the remote advanced
@@ -110,7 +114,8 @@ these 11 plugins") instead of a vague block. Never silently carry a
 | `catalog-store/dashboard.html` | Live dashboard (tracked) | Regenerated weekly |
 | `~/workspace/your_files/daw-plugin-catalog-dashboard.html` | Luke's one-tap dashboard copy | Regenerated weekly |
 | `catalog-store/DATA-DICTIONARY.md` | App-facing field semantics for Cursor | Updated when fields change |
-| `catalog-store/NOTES-weekly-<date>.md` | Run notes | New file weekly |
+| `catalog-store/NOTES-10x-<date>.md` | Per-chip research log (2 chips/day) | Appended daily |
+| `catalog-store/NOTES-weekly-<date>.md` | Run notes (legacy weekly format) | Superseded by NOTES-10x |
 | `catalog-store/HANDOFF-FOR-CURSOR.md` | Cursor handoff | Chip entry weekly |
 | `catalog-store/STATUS.md` | Live one-pager | Headline weekly |
 
