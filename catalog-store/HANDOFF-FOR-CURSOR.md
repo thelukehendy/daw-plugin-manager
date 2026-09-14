@@ -351,3 +351,11 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - +2 accepted → **4270**; true plugin gaps **535** (512 Airwindows intentional + **23** actionable)
 - Reclass 13: WA soundset×11, OMNYSS expansion, BIAS Amp 2 discontinued
 - Airwindows policy locked in STATUS + this handoff for Electron
+
+## Weekly automation live (2026-09-13 ~10:10 PM PT)
+- Luke authorized a fully autonomous weekly program: `daw-catalog-weekly-chip` runs every Monday ~02:00 America/Los_Angeles (4h timeout), no human involvement.
+- Full contract: `catalog-store/WEEKLY-AUTOMATION.md`. Each run: backup → research chip (~40 yellows + ambers) → bounded universe expansion → green freshness spot-check → re-export → sync `catalog/catalog.json` → docs → commit → push via Git Data API.
+- **IMPORTANT for Electron:** `catalog/catalog.json` (the file `src/main/catalog/catalogService.ts` loads, via jsdelivr CDN) is a straight structural copy of `catalog-store/out/catalog.json`. It had been stale since the 2026-09-10 pause snapshot; this turn re-synced it (raise-26 versions now live). The weekly job keeps them in sync. If they ever diverge structurally, the job stops and flags it.
+- Backups: `catalog-store/backups/<YYYY-MM-DD>/catalog.json` + `manifest.json` (gitignored contents, tracked `MANIFEST.md` log), 12-week retention; git history is the permanent archive.
+- Live dashboard: `catalog-store/dashboard.html` (tracked, regenerated weekly) + one-tap copy at `~/workspace/your_files/daw-plugin-catalog-dashboard.html`. Big-picture cards up top, expandable per-manufacturer table, recent raises, blocked (hub-walled) manufacturers, backup log.
+- Notes: repo `npm run catalog:validate` is stale (rejects the 3453 legitimately versionless plugins) and node_modules isn't installed here — the python structural check in the runbook is the gate. No sign-ins / purchases / outreach / force-pushes, ever, autonomously.

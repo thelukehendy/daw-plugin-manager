@@ -12,3 +12,7 @@ scan-report.json
 .env
 .env.*
 !.env.example
+
+# weekly export snapshots (tracked via MANIFEST.md)
+/catalog-store/backups/*/
+!/catalog-store/backups/MANIFEST.md

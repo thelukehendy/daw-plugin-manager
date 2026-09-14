@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-10T12:39:53Z",
+  "updatedAt": "2026-09-14T04:47:19Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -11850,12 +11850,13 @@
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/alter-ego-by-plogue",
       "latestVersion": "1.981",
-      "versionSourceUrl": "https://www.kvraudio.com/product/alter-ego-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:34Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 1.981"
       ]
     },
     {
@@ -22223,12 +22224,13 @@
       "notesForUser": "Plogue Bidule modular host environment.",
       "identityKind": "hub_app",
       "latestVersion": "0.9792",
-      "versionSourceUrl": "https://www.kvraudio.com/product/bidule-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:34Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 0.9792"
       ]
     },
     {
@@ -38998,13 +39000,14 @@
       ],
       "updatePortalUrl": "https://www.pluginboutique.com/login",
       "notes": "KVR product https://www.kvraudio.com/product/dc-snares-by-scaler-music",
-      "latestVersion": "1.0.0",
-      "versionSourceUrl": "https://www.kvraudio.com/product/dc-snares-by-scaler-music",
-      "versionVerifiedAt": "2026-09-10T10:49:23Z",
+      "latestVersion": "1.2",
+      "versionSourceUrl": "https://forum.scalermusic.com/t/dc-snares-1-2-update/19286",
+      "versionVerifiedAt": "2026-09-14T04:47:16Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 91,
       "versionConfidenceReasons": [
-        "KVR product page Product Version id=\"verwin\"=1.0.0 (Win=Mac); manufacturer silent/walled or no public patch semver"
+        "Official manufacturer release announcement (Scaler Music community forum)",
+        "Manufacturer version 1.2 is newer than KVR accepted 1.0.0 - accepting manufacturer version per corroboration procedure"
       ]
     },
     {
@@ -52759,13 +52762,14 @@
       "notes": "KVR product https://www.kvraudio.com/product/fl-studio-mobile-by-image-line",
       "notesForUser": "FL Studio edition (FL Studio Mobile) — DAW hub, not a discrete FX installer.",
       "identityKind": "hub_app",
-      "latestVersion": "4.8.5",
-      "versionSourceUrl": "https://www.kvraudio.com/product/fl-studio-mobile-by-image-line",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "latestVersion": "4.10.19",
+      "versionSourceUrl": "https://forum.image-line.com/viewtopic.php?t=260871",
+      "versionVerifiedAt": "2026-09-14T04:47:16Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 90,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official Image-Line forum release history thread lists 4.10.19 as latest (August 5, 2026)",
+        "Manufacturer version 4.10.19 is newer than KVR accepted 4.8.5 - accepting manufacturer version per corroboration procedure"
       ]
     },
     {
@@ -128251,12 +128255,13 @@
       "updatePortalUrl": "https://www.pluginboutique.com/login",
       "notes": "KVR product https://www.kvraudio.com/product/scaler-eq-by-scaler-music",
       "latestVersion": "1.1.3",
-      "versionSourceUrl": "https://www.kvraudio.com/product/scaler-eq-by-scaler-music",
-      "versionVerifiedAt": "2026-09-10T10:49:23Z",
+      "versionSourceUrl": "https://forum.scalermusic.com/t/scaler-eq-latest-version-updates/17686",
+      "versionVerifiedAt": "2026-09-14T04:47:16Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 91,
       "versionConfidenceReasons": [
-        "KVR product page Product Version id=\"verwin\"=1.1.3 (Win=Mac); manufacturer silent/walled or no public patch semver"
+        "Official manufacturer 'Scaler EQ Latest Version / Updates' thread (Scaler Music forum)",
+        "Exact semver match: KVR 1.1.3 = manufacturer-stated current version 1.1.3"
       ]
     },
     {
@@ -176755,13 +176760,14 @@
       ],
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipcrusher-by-plogue",
-      "latestVersion": "2.123 (CLAP 2.1.2.4)",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipcrusher-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "latestVersion": "2.123",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:34Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 2.123 (KVR CLAP qualifier is format-specific; Win/Mac build is 2.123)"
       ]
     },
     {
@@ -176779,13 +176785,14 @@
       ],
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipsounds-by-plogue",
-      "latestVersion": "1.981",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipsounds-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "latestVersion": "1.982",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:34Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Manufacturer version 1.982 is newer than KVR accepted 1.981 - accepting manufacturer version per corroboration procedure"
       ]
     },
     {
@@ -176803,13 +176810,14 @@
       ],
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipspeech-by-plogue",
-      "latestVersion": "1.981",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipspeech-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "latestVersion": "1.982",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:34Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Manufacturer version 1.982 is newer than KVR accepted 1.981 - accepting manufacturer version per corroboration procedure"
       ]
     },
     {
@@ -176828,12 +176836,13 @@
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipsynth-c64-by-plogue",
       "latestVersion": "1.123",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipsynth-c64-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:34Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 1.123"
       ]
     },
     {
@@ -176852,12 +176861,13 @@
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipsynth-md-by-plogue",
       "latestVersion": "1.123",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipsynth-md-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:35Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 1.123"
       ]
     },
     {
@@ -176876,12 +176886,13 @@
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipsynth-ops7-by-plogue",
       "latestVersion": "1.123",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipsynth-ops7-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:35Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 1.123"
       ]
     },
     {
@@ -176900,12 +176911,13 @@
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipsynth-portafm-by-plogue",
       "latestVersion": "1.123",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipsynth-portafm-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:35Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 1.123"
       ]
     },
     {
@@ -176924,12 +176936,13 @@
       "updatePortalUrl": "https://www.plogue.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/chipsynth-sfc-by-plogue",
       "latestVersion": "1.123",
-      "versionSourceUrl": "https://www.kvraudio.com/product/chipsynth-sfc-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:35Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Exact match with KVR accepted version 1.123"
       ]
     },
     {
@@ -180944,13 +180957,14 @@
       "notes": "KVR product https://www.kvraudio.com/product/sforzando-by-plogue",
       "notesForUser": "Plogue sampler/engine host (sforzando).",
       "identityKind": "hub_app",
-      "latestVersion": "1.981",
-      "versionSourceUrl": "https://www.kvraudio.com/product/sforzando-by-plogue",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "latestVersion": "1.982",
+      "versionSourceUrl": "https://www.plogue.com/downloads.html",
+      "versionVerifiedAt": "2026-09-14T04:46:35Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Official plogue.com/downloads.html version label per product (Win+Mac)",
+        "Manufacturer version 1.982 is newer than KVR accepted 1.981 - accepting manufacturer version per corroboration procedure"
       ]
     },
     {
