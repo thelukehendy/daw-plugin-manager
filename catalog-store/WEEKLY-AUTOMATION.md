@@ -23,12 +23,28 @@ throughput — Raise 26: 222 yellows/evening; compat seed: 20 mfrs/15 min):
 - ~7 new manufacturers (solid product-identity evidence; enumerate line)
 - ~70 green freshness re-checks
 - ~35 manufacturers compat sweep (v5 fields; own pages only; never infer)
-Target selection: STATUS.md + latest NOTES-*.md; prefer never-researched,
+Target selection: STATUS.md + latest NOTES-*.md; **order by popularity
+tier first** (tier 1 → 2 → 3 → unranked NULL last), then never-researched,
 then oldest-researched; no re-work within 7 days without new evidence.
 Zero trust always; hard boundaries (no sign-ins/purchases/outreach/
 force-pushes); on 429s back off that provider, log, continue.
 Bookkeeping: append to `NOTES-10x-<YYYY-MM-DD>.md`; refresh dashboard;
 log to `~/memory/YYYY-MM-DD.md`. No export/commit/push — the push job owns that.
+
+**Popularity tiers** (Luke's directive 2026-09-14: most popular plugins
+first, so the most users benefit).
+- `manufacturers.popularity_tier` / `plugins.popularity_tier`: 1 = household
+  names (55 mfrs, ~51% of plugins), 2 = established mid-size (99),
+  3 = remaining commercial (75), NULL = unranked long tail (360 oas--
+  individual devs, researched last).
+- Queue ordering: `ORDER BY COALESCE(p.popularity_tier,
+  m.popularity_tier, 99)`, then never-researched, then oldest-researched.
+  Plugin-level overrides beat the manufacturer default (for flagship
+  products under smaller manufacturers).
+- Seeded 2026-09-14 from market knowledge; refinement is ongoing — when
+  public popularity signals surface during research (KVR rankings,
+  bestseller badges), record them in the notes; a periodic recalibration
+  pass promotes/demotes tiers. Internal signal; not exported to the app.
 
 **Push job** — cron `daw-catalog-daily-push`, daily ~06:00
 America/Los_Angeles, timeout 2h. Ships what the engine found. 06:00 was

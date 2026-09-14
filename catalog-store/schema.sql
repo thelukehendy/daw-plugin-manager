@@ -1,10 +1,15 @@
--- DAW Plugin Catalog Store — schema version 4
+-- DAW Plugin Catalog Store — schema version 6
 -- Zero-trust: product universe separate from verified versions
 -- v2: micro vs macro update model + manufacturer scrub playbooks
 -- v3: version confidence scoring + helpful app-facing plugin fields
 -- v4: identity_kind for Electron UX (soundset/hardware/hub_app/…)
 -- v5: app-facing hardware/compat data — apple_silicon, version_scheme,
 --      changelog_url (documented in DATA-DICTIONARY.md for Cursor)
+-- v6: popularity tiers for research prioritization (internal; not exported).
+--      1 = household names, 2 = established mid-size, 3 = remaining
+--      commercial, NULL = unranked long tail (researched last).
+--      Plugins inherit the manufacturer tier unless individually overridden:
+--      COALESCE(plugins.popularity_tier, manufacturers.popularity_tier, 99).
 
 PRAGMA foreign_keys = ON;
 
@@ -27,6 +32,8 @@ CREATE TABLE IF NOT EXISTS manufacturers (
   version_scheme TEXT,      -- semver|semver4|date|build|marketing
   version_example TEXT,     -- e.g. '4.10.19'
   changelog_url TEXT,
+  -- v6 popularity tier for research prioritization (internal; not exported)
+  popularity_tier INTEGER,  -- 1|2|3 ; NULL = unranked long tail, researched last
   created_at TEXT,
   updated_at TEXT
 );
@@ -67,6 +74,9 @@ CREATE TABLE IF NOT EXISTS plugins (
     -- discontinued | unknown_other
   -- v5 per-plugin Apple Silicon override (NULL = inherit manufacturer default)
   apple_silicon TEXT,       -- native|universal|rosetta|intel-only ; NULL inherits
+  -- v6 popularity tier for research prioritization (internal; not exported).
+  -- NULL = inherit manufacturer tier in queue ordering.
+  popularity_tier INTEGER,  -- 1|2|3 ; NULL inherits
   created_at TEXT,
   updated_at TEXT
 );
