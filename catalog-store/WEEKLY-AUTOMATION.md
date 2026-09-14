@@ -41,6 +41,15 @@ Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
      `npm run catalog:validate` is stale — it rejects the 3453 legitimately
      versionless plugins — and node_modules isn't installed here; the python
      structural check is the gate.)
+7. **Compat-data sweep (v5 fields, bounded: ~10 manufacturers/week).**
+   For each target: verify Apple Silicon status from the manufacturer's own
+   pages (quote + URL), set `manufacturers.apple_silicon`; record
+   `version_scheme` + `version_example` for Cursor's normalizer;
+   `changelog_url` when a fixed page exists. Per-plugin `apple_silicon`
+   overrides only with manufacturer-page evidence of an exception.
+   Allowed values: `native|universal|rosetta|intel-only|mixed|unknown`.
+   Never infer — `unknown` beats a guess. Field semantics for Cursor live in
+   `DATA-DICTIONARY.md`; keep it updated if values change.
 7. **Docs.** Write `NOTES-weekly-<YYYY-MM-DD>.md`; append a chip entry to
    `HANDOFF-FOR-CURSOR.md`; refresh `STATUS.md` headline; append to
    `out/band_history.json`; update `dashboard_blocked.json` if blockers change;
@@ -99,6 +108,7 @@ these 11 plugins") instead of a vague block. Never silently carry a
 | `catalog-store/backups/MANIFEST.md` | Backup log | Appended weekly (tracked) |
 | `catalog-store/dashboard.html` | Live dashboard (tracked) | Regenerated weekly |
 | `~/workspace/your_files/daw-plugin-catalog-dashboard.html` | Luke's one-tap dashboard copy | Regenerated weekly |
+| `catalog-store/DATA-DICTIONARY.md` | App-facing field semantics for Cursor | Updated when fields change |
 | `catalog-store/NOTES-weekly-<date>.md` | Run notes | New file weekly |
 | `catalog-store/HANDOFF-FOR-CURSOR.md` | Cursor handoff | Chip entry weekly |
 | `catalog-store/STATUS.md` | Live one-pager | Headline weekly |

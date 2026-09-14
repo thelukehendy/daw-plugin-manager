@@ -3,6 +3,8 @@
 -- v2: micro vs macro update model + manufacturer scrub playbooks
 -- v3: version confidence scoring + helpful app-facing plugin fields
 -- v4: identity_kind for Electron UX (soundset/hardware/hub_app/…)
+-- v5: app-facing hardware/compat data — apple_silicon, version_scheme,
+--      changelog_url (documented in DATA-DICTIONARY.md for Cursor)
 
 PRAGMA foreign_keys = ON;
 
@@ -20,6 +22,11 @@ CREATE TABLE IF NOT EXISTS manufacturers (
   portal_app TEXT,
   update_channel TEXT,
   notes TEXT,
+  -- v5 app-facing compat data (see DATA-DICTIONARY.md)
+  apple_silicon TEXT,       -- manufacturer default: native|universal|rosetta|intel-only|mixed|unknown
+  version_scheme TEXT,      -- semver|semver4|date|build|marketing
+  version_example TEXT,     -- e.g. '4.10.19'
+  changelog_url TEXT,
   created_at TEXT,
   updated_at TEXT
 );
@@ -58,6 +65,8 @@ CREATE TABLE IF NOT EXISTS plugins (
     -- plugin | soundset | expansion | hardware | eurorack | bundle |
     -- suite_component | daw_stock_effect | hub_app | gen_ambiguous |
     -- discontinued | unknown_other
+  -- v5 per-plugin Apple Silicon override (NULL = inherit manufacturer default)
+  apple_silicon TEXT,       -- native|universal|rosetta|intel-only ; NULL inherits
   created_at TEXT,
   updated_at TEXT
 );

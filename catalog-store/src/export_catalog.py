@@ -87,6 +87,7 @@ def main() -> int:
         has_confidence = "confidence" in ocols
 
         manufacturers_out = []
+        mcols = {r[1] for r in conn.execute("PRAGMA table_info(manufacturers)")}
         for m in conn.execute("SELECT * FROM manufacturers ORDER BY name"):
             portal = m["update_portal_url"]
             if not portal or not (
@@ -111,6 +112,15 @@ def main() -> int:
                 entry["portalApp"] = m["portal_app"]
             if m["update_channel"]:
                 entry["updateChannel"] = m["update_channel"]
+            # v5 app-facing compat data (see DATA-DICTIONARY.md)
+            if "apple_silicon" in mcols and m["apple_silicon"] not in (None, "", "unknown"):
+                entry["appleSilicon"] = m["apple_silicon"]
+            if "version_scheme" in mcols and m["version_scheme"]:
+                entry["versionScheme"] = m["version_scheme"]
+            if "version_example" in mcols and m["version_example"]:
+                entry["versionExample"] = m["version_example"]
+            if "changelog_url" in mcols and m["changelog_url"]:
+                entry["changelogUrl"] = m["changelog_url"]
             if m["notes"]:
                 entry["notes"] = m["notes"]
             manufacturers_out.append(entry)
@@ -120,6 +130,15 @@ def main() -> int:
         with_successor = 0
         with_confidence = 0
         with_identity_kind = 0
+        with_apple_silicon = 0
+        # v5: manufacturer Apple Silicon defaults for per-plugin resolution
+        mfr_as = {}
+        try:
+            for row in conn.execute("SELECT id, apple_silicon FROM manufacturers"):
+                if row["apple_silicon"] not in (None, "", "unknown"):
+                    mfr_as[row["id"]] = row["apple_silicon"]
+        except sqlite3.OperationalError:
+            pass
         for p in conn.execute("SELECT * FROM plugins ORDER BY name"):
             patterns = loads_json(p["match_patterns"], [])
             if not patterns:
@@ -191,6 +210,14 @@ def main() -> int:
                 if ik and ik != IDENTITY_KIND_DEFAULT:
                     entry[IDENTITY_KIND_KEY] = ik
                     with_identity_kind += 1
+
+            # v5: Apple Silicon status — per-plugin override wins, else manufacturer
+            # default; omitted when unknown/unresearched (see DATA-DICTIONARY.md)
+            if "apple_silicon" in pcols:
+                resolved = p["apple_silicon"] or mfr_as.get(p["manufacturer_id"])
+                if resolved:
+                    entry["appleSilicon"] = resolved
+                    with_apple_silicon += 1
 
             # Policy A: only attach version fields when current points at accepted obs
             conf_select = ", o.confidence, o.confidence_reasons" if has_confidence else ""
