@@ -1,12 +1,30 @@
-# WEEKLY AUTOMATION — contract (effective 2026-09-13)
+# WEEKLY AUTOMATION — contract (effective 2026-09-13; 10x mode from 2026-09-14)
 
 Authorized by Luke 2026-09-13: push the plugin version library's breadth and
-depth to the extreme, fully autonomously, with a Git push every week.
+depth to the extreme, fully autonomously. 2026-09-14: Luke ordered 10x
+timeline compression — research runs continuously, pushes ship the results.
 
 ## What runs
 
-**Schedule:** every Monday ~02:00 America/Los_Angeles, timeout 8h.
-Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
+**Research engine** — cron `daw-catalog-research-10x`, every 12h, timeout 6h.
+Quotas per chip (~10x the old weekly bounds, grounded in demonstrated
+throughput — Raise 26: 222 yellows/evening; compat seed: 20 mfrs/15 min):
+- ~110 yellows, first-pass (4–8 parallel workers; coordinator re-verifies
+  every raise on the manufacturer page; `verified_by=research-engine-10x`)
+- ~35 boundary-assault queue items (blocked/hub-walled via alternate public
+  evidence; log every attempt)
+- ~7 new manufacturers (solid product-identity evidence; enumerate line)
+- ~70 green freshness re-checks
+- ~35 manufacturers compat sweep (v5 fields; own pages only; never infer)
+Target selection: STATUS.md + latest NOTES-*.md; prefer never-researched,
+then oldest-researched; no re-work within 7 days without new evidence.
+Zero trust always; hard boundaries (no sign-ins/purchases/outreach/
+force-pushes); on 429s back off that provider, log, continue.
+Bookkeeping: append to `NOTES-10x-<YYYY-MM-DD>.md`; refresh dashboard;
+log to `~/memory/YYYY-MM-DD.md`. No export/commit/push — the push job owns that.
+
+**Push job** — cron `daw-catalog-weekly-chip`, every Monday ~02:00
+America/Los_Angeles, timeout 8h. Ships what the engine found:
 
 **Each run, in order:**
 
@@ -16,31 +34,9 @@ Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
    (`{date, bands, manufacturers, plugins, accepted, commit_sha}`).
    Prune backup dirs older than 12 weeks (git history is the permanent archive).
    Backup file contents are gitignored; the manifest is committed.
-3. **Research chip (bounded: ~150 yellows/week first-pass, plus the
-   boundary-assault queue at ~50/week).**
-   - Spawn read-only research subagents over yellow targets, prioritizing
-     manufacturers whose playbooks show public evidence paths. Demonstrated
-     throughput: 222 yellows in one evening session (Raise 26) — the old
-     ~40/week bound was far too conservative.
-   - Boundary assault (Luke's directive: never give up): every run attacks
-     at least one blocked/hub-walled manufacturer through alternate public
-     evidence — Wayback Machine, forum archaeology (KVR, Reddit, Gearspace),
-     reseller listings, installer/CDN filename leaks, release-note archives,
-     RSS/newsletter mirrors, cross-corroboration. Log every attempt in the
-     weekly notes. A persistent block becomes a narrow, actionable request
-     for Luke, not a vague permanent label.
-   - Coordinator re-verifies every proposed raise against the manufacturer
-     page before any write. Zero trust: no invented versions, no successor /
-     suite / hub contamination, exact product-identity matching.
-   - Insert via `src/accept_observation.py --set-current`,
-     `verified_by=weekly-automation`, confidence per `CONFIDENCE.md`.
-4. **Universe expansion (bounded: ~10 new manufacturers/week).**
-   Only with solid product-identity evidence; enumerate their plugin line
-   and seed initial version research; record leads in the weekly notes.
-5. **Freshness spot-check (~100 greens).** Re-check known source URLs for
-   newer versions than the accepted current; if a manufacturer page shows a
-   newer version, raise it; note stale-but-unverifiable.
-6. **Export + app sync.**
+3. **Reconcile research notes.** Roll the week's `NOTES-10x-*.md` chips into
+   `NOTES-weekly-<YYYY-MM-DD>.md` (per-chip files stay as the raw log).
+4. **Export + app sync.**
    - `python3 src/export_catalog.py` → `out/catalog.json`
    - Copy `out/catalog.json` → `../../catalog/catalog.json` (the file the app
      loads: CDN `cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json`
@@ -52,18 +48,10 @@ Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
      `npm run catalog:validate` is stale — it rejects the 3453 legitimately
      versionless plugins — and node_modules isn't installed here; the python
      structural check is the gate.)
-7. **Compat-data sweep (v5 fields, bounded: ~50 manufacturers/week).**
-   Demonstrated: 20 manufacturers verified in ~15 minutes via parallel
-   workers (seed batch 1) — the old ~10/week bound was far too conservative.
-   For each target: verify Apple Silicon status from the manufacturer's own
-   pages (quote + URL), set `manufacturers.apple_silicon`; record
-   `version_scheme` + `version_example` for Cursor's normalizer;
-   `changelog_url` when a fixed page exists. Per-plugin `apple_silicon`
-   overrides only with manufacturer-page evidence of an exception.
-   Allowed values: `native|universal|rosetta|intel-only|mixed|unknown`.
-   Never infer — `unknown` beats a guess. Field semantics for Cursor live in
-   `DATA-DICTIONARY.md`; keep it updated if values change.
-8. **Docs.** Write `NOTES-weekly-<YYYY-MM-DD>.md`; append a chip entry to
+7. **Compat-data sweep** — owned by the research engine (~35 mfrs/chip,
+   ~500/week). Field semantics for Cursor live in `DATA-DICTIONARY.md`;
+   keep it updated if values change.
+8. **Docs.** Append a rollup entry to `HANDOFF-FOR-CURSOR.md`; append a chip entry to
    `HANDOFF-FOR-CURSOR.md`; refresh `STATUS.md` headline; append to
    `out/band_history.json`; update `dashboard_blocked.json` if blockers change;
    run `src/build_dashboard.py` and copy `dashboard.html` to
