@@ -5,7 +5,7 @@ depth to the extreme, fully autonomously, with a Git push every week.
 
 ## What runs
 
-**Schedule:** every Monday ~02:00 America/Los_Angeles, timeout 4h.
+**Schedule:** every Monday ~02:00 America/Los_Angeles, timeout 8h.
 Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
 
 **Each run, in order:**
@@ -16,19 +16,30 @@ Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
    (`{date, bands, manufacturers, plugins, accepted, commit_sha}`).
    Prune backup dirs older than 12 weeks (git history is the permanent archive).
    Backup file contents are gitignored; the manifest is committed.
-3. **Research chip (bounded: ~40 yellow + all viable amber targets).**
+3. **Research chip (bounded: ~150 yellows/week first-pass, plus the
+   boundary-assault queue at ~50/week).**
    - Spawn read-only research subagents over yellow targets, prioritizing
-     manufacturers whose playbooks show public evidence paths. Hub-walled
-     manufacturers (see `dashboard_blocked.json`) are skipped, not forced.
+     manufacturers whose playbooks show public evidence paths. Demonstrated
+     throughput: 222 yellows in one evening session (Raise 26) — the old
+     ~40/week bound was far too conservative.
+   - Boundary assault (Luke's directive: never give up): every run attacks
+     at least one blocked/hub-walled manufacturer through alternate public
+     evidence — Wayback Machine, forum archaeology (KVR, Reddit, Gearspace),
+     reseller listings, installer/CDN filename leaks, release-note archives,
+     RSS/newsletter mirrors, cross-corroboration. Log every attempt in the
+     weekly notes. A persistent block becomes a narrow, actionable request
+     for Luke, not a vague permanent label.
    - Coordinator re-verifies every proposed raise against the manufacturer
      page before any write. Zero trust: no invented versions, no successor /
      suite / hub contamination, exact product-identity matching.
    - Insert via `src/accept_observation.py --set-current`,
      `verified_by=weekly-automation`, confidence per `CONFIDENCE.md`.
-4. **Universe expansion (bounded: 1–2 manufacturers or ≤15 plugins).**
-   Only with solid product-identity evidence; record leads in the weekly notes.
-5. **Freshness spot-check (~20 greens).** If a manufacturer page shows a newer
-   version than the accepted current, raise it; note stale-but-unverifiable.
+4. **Universe expansion (bounded: ~10 new manufacturers/week).**
+   Only with solid product-identity evidence; enumerate their plugin line
+   and seed initial version research; record leads in the weekly notes.
+5. **Freshness spot-check (~100 greens).** Re-check known source URLs for
+   newer versions than the accepted current; if a manufacturer page shows a
+   newer version, raise it; note stale-but-unverifiable.
 6. **Export + app sync.**
    - `python3 src/export_catalog.py` → `out/catalog.json`
    - Copy `out/catalog.json` → `../../catalog/catalog.json` (the file the app
@@ -41,7 +52,9 @@ Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
      `npm run catalog:validate` is stale — it rejects the 3453 legitimately
      versionless plugins — and node_modules isn't installed here; the python
      structural check is the gate.)
-7. **Compat-data sweep (v5 fields, bounded: ~10 manufacturers/week).**
+7. **Compat-data sweep (v5 fields, bounded: ~50 manufacturers/week).**
+   Demonstrated: 20 manufacturers verified in ~15 minutes via parallel
+   workers (seed batch 1) — the old ~10/week bound was far too conservative.
    For each target: verify Apple Silicon status from the manufacturer's own
    pages (quote + URL), set `manufacturers.apple_silicon`; record
    `version_scheme` + `version_example` for Cursor's normalizer;
@@ -50,12 +63,12 @@ Cron id: `daw-catalog-weekly-chip`. Runs in the Coding Assist side chat.
    Allowed values: `native|universal|rosetta|intel-only|mixed|unknown`.
    Never infer — `unknown` beats a guess. Field semantics for Cursor live in
    `DATA-DICTIONARY.md`; keep it updated if values change.
-7. **Docs.** Write `NOTES-weekly-<YYYY-MM-DD>.md`; append a chip entry to
+8. **Docs.** Write `NOTES-weekly-<YYYY-MM-DD>.md`; append a chip entry to
    `HANDOFF-FOR-CURSOR.md`; refresh `STATUS.md` headline; append to
    `out/band_history.json`; update `dashboard_blocked.json` if blockers change;
    run `src/build_dashboard.py` and copy `dashboard.html` to
    `~/workspace/your_files/daw-plugin-catalog-dashboard.html`.
-8. **Commit + push.** Focused message (`catalog: weekly chip <date> (+N ...)`).
+9. **Commit + push.** Focused message (`catalog: weekly chip <date> (+N ...)`).
    Push via the `github` skill (`~/workspace/skills/github/bin/ghapi.py` +
    Git Data API) — plain `git push` over HTTPS does not carry the stored
    credential. Verify remote ref afterwards. If the remote advanced
