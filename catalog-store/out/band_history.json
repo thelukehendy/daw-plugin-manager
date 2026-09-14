@@ -1,1 +1,23 @@
-[{"amber":55,"date":"2026-09-10","green":3354,"note":"Pause snapshot","yellow":1577},{"amber":55,"date":"2026-09-13","green":3368,"note":"Confidence raise 26 (+14)","yellow":1563}]
+[
+ {
+  "amber": 55,
+  "date": "2026-09-10",
+  "green": 3354,
+  "note": "Pause snapshot",
+  "yellow": 1577
+ },
+ {
+  "amber": 55,
+  "date": "2026-09-13",
+  "green": 3368,
+  "note": "Confidence raise 26 (+14)",
+  "yellow": 1563
+ },
+ {
+  "date": "2026-09-14",
+  "green": 3399,
+  "amber": 84,
+  "yellow": 1510,
+  "note": "Daily push 06:00 (+31 green, +29 amber, -53 yellow; 6 new mfrs)"
+ }
+]

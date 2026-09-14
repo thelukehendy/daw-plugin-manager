@@ -1,8 +1,9 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **RESUMED 2026-09-13 ~9:44 PM PT** — Luke resumed catalog work. Routines `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` remain **paused** pending his call; ad-hoc raise chips run in the Coding Assist side chat. Pause snapshot: `PAUSE-SNAPSHOT.md`.
+> **DAILY PUSH 2026-09-14 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push`.
+> Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-13 ~9:50 PM PT (confidence raise 26)  
+**Snapshot:** 2026-09-14 ~06:00 PT (daily push, ships 2026-09-14 research chips)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`
@@ -11,12 +12,12 @@
 
 | Metric | Value |
 |---|---|
-| Manufacturers | **583** |
-| Plugins (universe) | **8439** |
-| Accepted current versions | **4986** |
-| Green (≥85) | **3368** |
-| Amber (70–84) | **55** |
-| Yellow (<70) | **1563** |
+| Manufacturers | **589** |
+| Plugins (universe) | **8494** |
+| Accepted current versions | **4993** |
+| Green (≥85) | **3399** |
+| Amber (70–84) | **84** |
+| Yellow (<70) | **1510** |
 | True plugin gaps (non-Airwindows) | **74** |
 | Airwindows intentional unversioned | **512** |
 
@@ -46,9 +47,9 @@
 
 | Band | Score | Count |
 |---|---|---|
-| Green | ≥ 85 | **3354** |
-| Amber | 70–84 | **55** |
-| Yellow | < 70 | **1577** (KVR @ 60) |
+| Green | ≥ 85 | **3399** |
+| Amber | 70–84 | **84** |
+| Yellow | < 70 | **1510** (KVR @ 60) |
 
 ## This pass (universe expand 11)
 
@@ -58,7 +59,7 @@
 | Plugins | **+361** (Spitfire +107, ISW +72, Fracture +56, NI Leap +42, Keepforest +40, ProjectSAM +19, AT/CG/BA/GH/EW/Modartt + FOSS) |
 | Version chips | **+8** FOSS (wolf/ninjas2/fabla/v1 suite) |
 | Skipped | emotive-sounds (no public SKU matrix); Fracture site captcha → KVR |
-| Export | `out/catalog.json` matches DB (**583 / 8439 / 4986**) |
+| Export | `out/catalog.json` matches DB (**589 / 8494 / 4993**) |
 
 **Prior — version-chip expand-10:** see `NOTES-version-chip-expand-10.md` (571 / 8078 / 4978)  
 **Prior — universe expand 10:** see `NOTES-universe-expand-10.md` (571 / 8078 / 4899)

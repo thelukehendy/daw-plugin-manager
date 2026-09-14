@@ -359,3 +359,13 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - Backups: `catalog-store/backups/<YYYY-MM-DD>/catalog.json` + `manifest.json` (gitignored contents, tracked `MANIFEST.md` log), 12-week retention; git history is the permanent archive.
 - Live dashboard: `catalog-store/dashboard.html` (tracked, regenerated weekly) + one-tap copy at `~/workspace/your_files/daw-plugin-catalog-dashboard.html`. Big-picture cards up top, expandable per-manufacturer table, recent raises, blocked (hub-walled) manufacturers, backup log.
 - Notes: repo `npm run catalog:validate` is stale (rejects the 3453 legitimately versionless plugins) and node_modules isn't installed here — the python structural check in the runbook is the gate. No sign-ins / purchases / outreach / force-pushes, ever, autonomously.
+
+
+## Daily push 2026-09-14 (06:00 PT — first daily push; weekly job retired)
+- Shipped: mfrs **589** (+6), plugins **8494** (+55), accepted **4993** (+7); green **3399** (+31), amber **84** (+29), yellow **1510** (−53).
+- +31 green: 27 yellow→green promotions + 4 new AudioThing greens + 2 version bumps (LUNA 2.0→2.0.5, Philicorda 1.2→1.2.1).
+- +29 amber: 26 boundary-assault raises (Plugin Boutique/Image-Line/Cableguys/Acon Digital, all third-party-evidenced, manufacturer pages walled) + 3 new-mfr seeds @80.
+- Universe: +6 mfrs (Caelum, Denise, Kiive, Lunacy, Minimal, Venomode); `audio-thing` collision merged into existing `audiothing`.
+- `catalog/catalog.json` re-synced from `out/catalog.json` — structural check passed (schemaVersion 3; only version fields may differ).
+- FLAGS for next chips: duplicate FabFilter Pro-Q 3 rows need dedup; compat batch-H verdicts need coordinator review.
+- Push mechanics: backup `backups/2026-09-14/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.

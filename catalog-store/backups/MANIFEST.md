@@ -10,3 +10,4 @@ Pre-update snapshots of `out/catalog.json`, one dir per weekly run (`<YYYY-MM-DD
 
 | Date | Bands (G/A/Y) | Commit |
 |---|---|---|
+| 2026-09-14 | 3399 / 84 / 1510 | `catalog: daily push 2026-09-14` |
