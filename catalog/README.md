@@ -1,6 +1,33 @@
 ## Plugin Version Catalog
 
-Seed + cloud-refreshable source of truth for latest versions, download portals, and DAW compatibility notes.
+> **Successor agents: start at [`AGENT-HANDOFF.md`](./AGENT-HANDOFF.md).**  
+> **App teaching:** [`TEACHING-CURSOR.md`](./TEACHING-CURSOR.md).  
+> **Live export:** [`catalog.json`](./catalog.json) — PluginCatalog `schemaVersion` 3, `catalogSource: store-export:v4`.  
+> **Full library (SQLite, scripts, playbooks, NOTES):** [`../catalog-store/`](../catalog-store/).
+
+### Source of truth (current)
+
+Accuracy-first **SQLite store** → export → this `catalog.json`. Absolute zero trust outside accepted store observations. Do **not** treat older Gemini / “page-confirmed” / smart-scrub stamps as authoritative.
+
+| Artifact | Path |
+|---|---|
+| Agent handoff (methods, roadblocks, efficiencies) | `catalog/AGENT-HANDOFF.md` |
+| Teaching for Electron/Cursor UX | `catalog/TEACHING-CURSOR.md` |
+| Published JSON | `catalog/catalog.json` |
+| SQLite + tooling + playbooks + NOTES | `catalog-store/` |
+
+**Raw URL:** `https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json`
+
+App fetch order (see `catalogService.ts`): jsDelivr → GitHub raw → bundled seed → local overrides.
+
+**Never** publish direct `.dmg` / `.pkg` as the primary action — open manufacturer download / hub / account pages.
+
+---
+
+### Historical note (abandoned as authority)
+
+The sections below describe an earlier in-repo Gemini Flash / sticky-reverify / Actions scrub design. That pipeline is **not** the accuracy SoT anymore. Kept only so existing workflow files remain understandable. Prefer `catalog-store/` + AGENT-HANDOFF.
+
 
 ### Accuracy-first smart scrub (self-refining)
 

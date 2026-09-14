@@ -1,0 +1,52 @@
+{
+  "identity_source": "universe-expansion-expand7-mop",
+  "methodology": "expand7 mop: Mercurial Manta (distinct from Florian Mrugalla Manta); Surge XT first-class twin.",
+  "sources": [
+    "https://shop.mercurialtones.com/products.json",
+    "https://surge-synthesizer.github.io/"
+  ],
+  "manufacturers": [],
+  "plugins": [
+    {
+      "id": "mercurial-tones--manta",
+      "manufacturerId": "mercurial-tones",
+      "name": "Manta",
+      "matchPatterns": [
+        "Manta",
+        "Mercurial Tones Manta",
+        "Mercurial Manta"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7-mop",
+      "notes": "Mercurial Tones delay workstation; distinct from oas--mrugalla-manta; expand7 mop.",
+      "identity_kind": "plugin",
+      "notes_for_user": "Mercurial Tones Manta \u2014 not Florian Mrugalla Manta."
+    },
+    {
+      "id": "surge-synthesizer--surge-xt",
+      "manufacturerId": "surge-synthesizer",
+      "name": "Surge XT",
+      "matchPatterns": [
+        "Surge XT",
+        "SurgeXT"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "CLAP",
+        "LV2"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://surge-synthesizer.github.io/",
+      "identity_source": "universe-expansion-expand7-mop",
+      "notes": "First-class Surge XT twin of OAS row; expand7 mop.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    }
+  ]
+}

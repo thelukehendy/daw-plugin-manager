@@ -1,0 +1,285 @@
+{
+  "identity_source": "universe-expansion-expand8-2026-09-10",
+  "methodology": "Dense fill Wavesfactory from KVR developer + wavesfactory.com product pages (plugins vs Kontakt soundsets). Fix equalizer/trackspacer names from bad KVR review-link parse. Audiority Harmonic Maximizer + Polaris already inserted prior. Versions stamped separately from manufacturer changelogs / plugin-versions table.",
+  "sources": [
+    "https://www.kvraudio.com/developer/wavesfactory",
+    "https://www.wavesfactory.com/audio-plugins/",
+    "https://www.wavesfactory.com/instruments/",
+    "https://www.audiority.com/plugin-versions/"
+  ],
+  "manufacturers": [],
+  "plugins": [
+    {
+      "id": "wavesfactory--equalizer",
+      "manufacturerId": "wavesfactory",
+      "name": "Equalizer",
+      "matchPatterns": [
+        "Equalizer",
+        "Wavesfactory Equalizer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "plugin",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--trackspacer",
+      "manufacturerId": "wavesfactory",
+      "name": "Trackspacer",
+      "matchPatterns": [
+        "Trackspacer",
+        "Track Spacer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "plugin",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--quantum",
+      "manufacturerId": "wavesfactory",
+      "name": "Quantum",
+      "matchPatterns": [
+        "Quantum",
+        "Wavesfactory Quantum"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "plugin",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--echo-cat",
+      "manufacturerId": "wavesfactory",
+      "name": "Echo Cat",
+      "matchPatterns": [
+        "Echo Cat"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "plugin",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--re-esser",
+      "manufacturerId": "wavesfactory",
+      "name": "Re-Esser",
+      "matchPatterns": [
+        "Re-Esser",
+        "Re Esser",
+        "ReEsser"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "plugin",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--body-percussion",
+      "manufacturerId": "wavesfactory",
+      "name": "Body Percussion",
+      "matchPatterns": [
+        "Body Percussion"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--legacy-drums",
+      "manufacturerId": "wavesfactory",
+      "name": "Legacy Drums",
+      "matchPatterns": [
+        "Legacy Drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--marxophone",
+      "manufacturerId": "wavesfactory",
+      "name": "Marxophone",
+      "matchPatterns": [
+        "Marxophone"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--mercury-piano",
+      "manufacturerId": "wavesfactory",
+      "name": "Mercury Piano",
+      "matchPatterns": [
+        "Mercury Piano",
+        "Mercury",
+        "Fazioli"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--mercury-piano-lite",
+      "manufacturerId": "wavesfactory",
+      "name": "Mercury Piano Lite",
+      "matchPatterns": [
+        "Mercury Piano Lite"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--samba-drums",
+      "manufacturerId": "wavesfactory",
+      "name": "Samba Drums",
+      "matchPatterns": [
+        "Samba Drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--strum-guitar",
+      "manufacturerId": "wavesfactory",
+      "name": "Strum Guitar",
+      "matchPatterns": [
+        "Strum Guitar"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--strumgtr-electric",
+      "manufacturerId": "wavesfactory",
+      "name": "StrumGtr Electric",
+      "matchPatterns": [
+        "StrumGtr Electric",
+        "Strum Guitar Electric"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--clocks",
+      "manufacturerId": "wavesfactory",
+      "name": "Clocks",
+      "matchPatterns": [
+        "Clocks"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--freelodica",
+      "manufacturerId": "wavesfactory",
+      "name": "Freelodica",
+      "matchPatterns": [
+        "Freelodica"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--music-box",
+      "manufacturerId": "wavesfactory",
+      "name": "Music Box",
+      "matchPatterns": [
+        "Music Box"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--old-tape-drums",
+      "manufacturerId": "wavesfactory",
+      "name": "Old Tape Drums",
+      "matchPatterns": [
+        "Old Tape Drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    },
+    {
+      "id": "wavesfactory--sharine",
+      "manufacturerId": "wavesfactory",
+      "name": "Sharine",
+      "matchPatterns": [
+        "Sharine"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand8",
+      "notes": "Wavesfactory public site / KVR; expand8 identity-only.",
+      "identity_kind": "plugin",
+      "updatePortalUrl": "https://www.wavesfactory.com/"
+    }
+  ]
+}

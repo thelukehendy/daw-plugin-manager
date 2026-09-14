@@ -1,0 +1,6044 @@
+{
+  "identity_source": "universe-expansion-expand4",
+  "methodology": "Identity-only universe expand batch 4. New manufacturers: boz-digital, black-rooster-audio, kit-plugins, crave-dsp, zplane, plogue, decomposer, image-line, presonus, mastering-the-mix, waldorf, gforce-software, krotos. Fills: accentize full KVR line; steinberg DAW hub_app + discrete plugs/libraries; plugin-alliance BEATSURFING from products.json; curated UVI FX/host gaps. Skipped dense: fabfilter, softube, soundtoys, eventide (Newfangled already), melda, voxengo, auburn, baby-audio, cableguys, chowdsp, kilohearts already, puremix empty, produce-like-a-pro, ableton stock. No invented Studio One / Ableton / Bitwig stock-device rows. Cross-mfr normalized-name dedup. No invented versions.",
+  "sources": [
+    "https://www.kvraudio.com/developer/Boz-Digital-Labs",
+    "https://www.kvraudio.com/developer/Black-Rooster-Audio",
+    "https://www.kvraudio.com/developer/KIT-Plugins",
+    "https://www.kvraudio.com/developer/Crave-DSP",
+    "https://www.kvraudio.com/developer/zplane",
+    "https://www.kvraudio.com/developer/Plogue",
+    "https://www.kvraudio.com/developer/Decomposer",
+    "https://www.kvraudio.com/developer/Image-Line",
+    "https://www.kvraudio.com/developer/PreSonus",
+    "https://www.kvraudio.com/developer/Accentize",
+    "https://www.kvraudio.com/developer/Steinberg",
+    "https://www.kvraudio.com/developer/UVI",
+    "Plugin Alliance Shopify products.json (cached pa-products-p1/p2)"
+  ],
+  "manufacturers": [
+    {
+      "id": "boz-digital",
+      "name": "Boz Digital Labs",
+      "aliases": [
+        "Boz Digital",
+        "BOZ"
+      ],
+      "websiteUrl": "https://www.bozdigitallabs.com",
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "notes": "Identity from KVR developer Boz-Digital-Labs; expand4."
+    },
+    {
+      "id": "black-rooster-audio",
+      "name": "Black Rooster Audio",
+      "aliases": [
+        "BlackRoosterAudio",
+        "Black Rooster"
+      ],
+      "websiteUrl": "https://blackroosteraudio.com",
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "notes": "Identity from KVR developer Black-Rooster-Audio; expand4."
+    },
+    {
+      "id": "kit-plugins",
+      "name": "KIT Plugins",
+      "aliases": [
+        "KITPlugins",
+        "KIT"
+      ],
+      "websiteUrl": "https://kitplugins.com",
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "notes": "Blackbird Studio modeled plugins; identity from KVR; expand4."
+    },
+    {
+      "id": "crave-dsp",
+      "name": "Crave DSP",
+      "aliases": [
+        "CraveDSP"
+      ],
+      "websiteUrl": "https://cravedsp.com",
+      "updatePortalUrl": "https://cravedsp.com/",
+      "notes": "Crave EQ / Transient EQ / Stereo Enhancer; expand4."
+    },
+    {
+      "id": "zplane",
+      "name": "zplane",
+      "aliases": [
+        "zplane.development"
+      ],
+      "websiteUrl": "https://www.zplane.de",
+      "updatePortalUrl": "https://www.zplane.de/",
+      "notes": "élastique / reTune / PEEL / deCoda; identity from KVR; expand4."
+    },
+    {
+      "id": "plogue",
+      "name": "Plogue",
+      "aliases": [
+        "Plogue Art et Technologie"
+      ],
+      "websiteUrl": "https://www.plogue.com",
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "notes": "chipsounds / Bidule / sforzando; identity from KVR; expand4."
+    },
+    {
+      "id": "decomposer",
+      "name": "Decomposer",
+      "aliases": [
+        "Okko Bekker",
+        "Decomposer.nl"
+      ],
+      "websiteUrl": "https://decomposer.nl",
+      "updatePortalUrl": "https://decomposer.nl/",
+      "notes": "Sitala drum sampler + Dert; freeware-leaning; expand4."
+    },
+    {
+      "id": "image-line",
+      "name": "Image-Line",
+      "aliases": [
+        "Image Line",
+        "FL Studio"
+      ],
+      "websiteUrl": "https://www.image-line.com",
+      "updatePortalUrl": "https://support.image-line.com/",
+      "notes": "FL Studio hub_app + discrete IL plugins from KVR; no invented stock-device inventory; expand4."
+    },
+    {
+      "id": "presonus",
+      "name": "PreSonus",
+      "aliases": [
+        "PreSonus Audio Electronics",
+        "Studio One"
+      ],
+      "websiteUrl": "https://www.presonus.com",
+      "updatePortalUrl": "https://my.presonus.com/",
+      "notes": "Studio One / Notion / Sphere hub_app + discrete plugs; no invented Studio One stock devices; expand4."
+    },
+    {
+      "id": "mastering-the-mix",
+      "name": "Mastering The Mix",
+      "aliases": [
+        "MTM"
+      ],
+      "websiteUrl": "https://www.masteringthemix.com",
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "notes": "From Plugin Alliance products.json + public catalog; expand4."
+    },
+    {
+      "id": "waldorf",
+      "name": "Waldorf",
+      "aliases": [
+        "Waldorf Music"
+      ],
+      "websiteUrl": "https://waldorfmusic.com",
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "notes": "Software synths from PA products.json / public catalog; expand4."
+    },
+    {
+      "id": "gforce-software",
+      "name": "GForce Software",
+      "aliases": [
+        "GForce",
+        "Gforce Software"
+      ],
+      "websiteUrl": "https://www.gforcesoftware.com",
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "notes": "From PA products.json / public catalog; expand4."
+    },
+    {
+      "id": "krotos",
+      "name": "Krotos",
+      "aliases": [
+        "Krotos Audio"
+      ],
+      "websiteUrl": "https://www.krotosaudio.com",
+      "updatePortalUrl": "https://www.krotosaudio.com/my-account/",
+      "notes": "Dehumaniser / Weaponiser / Igniter; from PA products.json; expand4."
+    }
+  ],
+  "plugins": [
+    {
+      "id": "boz-digital--10db-channel-strip-bundle",
+      "manufacturerId": "boz-digital",
+      "name": "+10dB Channel Strip Bundle",
+      "matchPatterns": [
+        "+10dB Channel Strip Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/and-10db-channel-strip-bundle-by-boz-digital-labs",
+      "identity_kind": "bundle",
+      "notes_for_user": "Boz Digital Labs bundle (+10dB Channel Strip Bundle)."
+    },
+    {
+      "id": "boz-digital--10db-compressor",
+      "manufacturerId": "boz-digital",
+      "name": "+10dB Compressor",
+      "matchPatterns": [
+        "+10dB Compressor"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/and-10db-compressor-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--10db-equaliser",
+      "manufacturerId": "boz-digital",
+      "name": "+10dB Equaliser",
+      "matchPatterns": [
+        "+10dB Equaliser"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/and-10db-equaliser-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--all-pianos-bundle",
+      "manufacturerId": "boz-digital",
+      "name": "All Pianos Bundle",
+      "matchPatterns": [
+        "All Pianos Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/all-pianos-bundle-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (All Pianos Bundle)."
+    },
+    {
+      "id": "boz-digital--automator",
+      "manufacturerId": "boz-digital",
+      "name": "Automator",
+      "matchPatterns": [
+        "Automator"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/automator-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--bark-of-dog",
+      "manufacturerId": "boz-digital",
+      "name": "Bark of Dog",
+      "matchPatterns": [
+        "Bark of Dog"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/bark-of-dog-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--big-beautiful-door-2",
+      "manufacturerId": "boz-digital",
+      "name": "Big Beautiful Door 2",
+      "matchPatterns": [
+        "Big Beautiful Door 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/big-beautiful-door-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--big-clipper-2",
+      "manufacturerId": "boz-digital",
+      "name": "Big Clipper 2",
+      "matchPatterns": [
+        "Big Clipper 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/big-clipper-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--chicago-upright-1927-lite",
+      "manufacturerId": "boz-digital",
+      "name": "Chicago Upright 1927 Lite",
+      "matchPatterns": [
+        "Chicago Upright 1927 Lite"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chicago-upright-1927-lite-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Chicago Upright 1927 Lite)."
+    },
+    {
+      "id": "boz-digital--chicago-upright-1927-pro",
+      "manufacturerId": "boz-digital",
+      "name": "Chicago Upright 1927 Pro",
+      "matchPatterns": [
+        "Chicago Upright 1927 Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chicago-upright-1927-pro-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Chicago Upright 1927 Pro)."
+    },
+    {
+      "id": "boz-digital--claps-stomps-and-snaps-bundle",
+      "manufacturerId": "boz-digital",
+      "name": "Claps, Stomps And Snaps Bundle",
+      "matchPatterns": [
+        "Claps, Stomps And Snaps Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/claps-stomps-and-snaps-bundle-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Claps, Stomps And Snaps Bundle)."
+    },
+    {
+      "id": "boz-digital--das-boot",
+      "manufacturerId": "boz-digital",
+      "name": "Das Boot",
+      "matchPatterns": [
+        "Das Boot"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/das-boot-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--dynamics-collection",
+      "manufacturerId": "boz-digital",
+      "name": "Dynamics Collection",
+      "matchPatterns": [
+        "Dynamics Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dynamics-collection-by-boz-digital-labs",
+      "identity_kind": "bundle",
+      "notes_for_user": "Boz Digital Labs bundle (Dynamics Collection)."
+    },
+    {
+      "id": "boz-digital--el-clapo-handclap-generator",
+      "manufacturerId": "boz-digital",
+      "name": "El Clapo Handclap Generator",
+      "matchPatterns": [
+        "El Clapo Handclap Generator"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/el-clapo-handclap-generator-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--eq-collection",
+      "manufacturerId": "boz-digital",
+      "name": "EQ Collection",
+      "matchPatterns": [
+        "EQ Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/eq-collection-by-boz-digital-labs",
+      "identity_kind": "bundle",
+      "notes_for_user": "Boz Digital Labs bundle (EQ Collection)."
+    },
+    {
+      "id": "boz-digital--gatey-watey",
+      "manufacturerId": "boz-digital",
+      "name": "Gatey Watey",
+      "matchPatterns": [
+        "Gatey Watey"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/gatey-watey-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--imperial-delay",
+      "manufacturerId": "boz-digital",
+      "name": "Imperial Delay",
+      "matchPatterns": [
+        "Imperial Delay"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/imperial-delay-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--le-snappet",
+      "manufacturerId": "boz-digital",
+      "name": "Le Snappet",
+      "matchPatterns": [
+        "Le Snappet"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/le-snappet-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--little-clipper-2",
+      "manufacturerId": "boz-digital",
+      "name": "Little Clipper 2",
+      "matchPatterns": [
+        "Little Clipper 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/little-clipper-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--little-foot-2",
+      "manufacturerId": "boz-digital",
+      "name": "Little Foot 2",
+      "matchPatterns": [
+        "Little Foot 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/little-foot-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--manic-compressor",
+      "manufacturerId": "boz-digital",
+      "name": "Manic Compressor",
+      "matchPatterns": [
+        "Manic Compressor"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/manic-compressor-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--master-keys",
+      "manufacturerId": "boz-digital",
+      "name": "Master Keys",
+      "matchPatterns": [
+        "Master Keys"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/master-keys-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Master Keys)."
+    },
+    {
+      "id": "boz-digital--mongoose-2",
+      "manufacturerId": "boz-digital",
+      "name": "Mongoose 2",
+      "matchPatterns": [
+        "Mongoose 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/mongoose-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--new-york-l-1926",
+      "manufacturerId": "boz-digital",
+      "name": "New York L 1926",
+      "matchPatterns": [
+        "New York L 1926"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/new-york-l-1926-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (New York L 1926)."
+    },
+    {
+      "id": "boz-digital--new-york-l-1926-lite",
+      "manufacturerId": "boz-digital",
+      "name": "New York L 1926 Lite",
+      "matchPatterns": [
+        "New York L 1926 Lite"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/new-york-l-1926-lite-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (New York L 1926 Lite)."
+    },
+    {
+      "id": "boz-digital--new-york-l-1991",
+      "manufacturerId": "boz-digital",
+      "name": "New York L 1991",
+      "matchPatterns": [
+        "New York L 1991"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/new-york-l-1991-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (New York L 1991)."
+    },
+    {
+      "id": "boz-digital--new-york-l-1991-lite",
+      "manufacturerId": "boz-digital",
+      "name": "New York L 1991 Lite",
+      "matchPatterns": [
+        "New York L 1991 Lite"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/new-york-l-1991-lite-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (New York L 1991 Lite)."
+    },
+    {
+      "id": "boz-digital--new-york-l-piano-bundle",
+      "manufacturerId": "boz-digital",
+      "name": "New York L Piano Bundle",
+      "matchPatterns": [
+        "New York L Piano Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/new-york-l-piano-bundle-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (New York L Piano Bundle)."
+    },
+    {
+      "id": "boz-digital--ningbo-felt-2021-lite",
+      "manufacturerId": "boz-digital",
+      "name": "Ningbo Felt 2021 Lite",
+      "matchPatterns": [
+        "Ningbo Felt 2021 Lite"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ningbo-felt-2021-lite-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Ningbo Felt 2021 Lite)."
+    },
+    {
+      "id": "boz-digital--ningbo-felt-2021-pro",
+      "manufacturerId": "boz-digital",
+      "name": "Ningbo Felt 2021 Pro",
+      "matchPatterns": [
+        "Ningbo Felt 2021 Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ningbo-felt-2021-pro-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Ningbo Felt 2021 Pro)."
+    },
+    {
+      "id": "boz-digital--ningbo-upright-2021-lite",
+      "manufacturerId": "boz-digital",
+      "name": "Ningbo Upright 2021 Lite",
+      "matchPatterns": [
+        "Ningbo Upright 2021 Lite"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ningbo-upright-2021-lite-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Ningbo Upright 2021 Lite)."
+    },
+    {
+      "id": "boz-digital--ningbo-upright-2021-pro",
+      "manufacturerId": "boz-digital",
+      "name": "Ningbo Upright 2021 Pro",
+      "matchPatterns": [
+        "Ningbo Upright 2021 Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ningbo-upright-2021-pro-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Ningbo Upright 2021 Pro)."
+    },
+    {
+      "id": "boz-digital--pan-knob-2",
+      "manufacturerId": "boz-digital",
+      "name": "Pan Knob 2",
+      "matchPatterns": [
+        "Pan Knob 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/pan-knob-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--panipulator",
+      "manufacturerId": "boz-digital",
+      "name": "Panipulator",
+      "matchPatterns": [
+        "Panipulator"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/panipulator-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--panther-stereo-manipulation",
+      "manufacturerId": "boz-digital",
+      "name": "Panther Stereo Manipulation",
+      "matchPatterns": [
+        "Panther Stereo Manipulation"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/panther-stereo-manipulation-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--provocative",
+      "manufacturerId": "boz-digital",
+      "name": "ProVocative",
+      "matchPatterns": [
+        "ProVocative"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/provocative-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--recoil",
+      "manufacturerId": "boz-digital",
+      "name": "ReCoil",
+      "matchPatterns": [
+        "ReCoil"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/recoil-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--sasquatch-kick-machine-2",
+      "manufacturerId": "boz-digital",
+      "name": "Sasquatch Kick Machine 2",
+      "matchPatterns": [
+        "Sasquatch Kick Machine 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sasquatch-kick-machine-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--t-bone-2",
+      "manufacturerId": "boz-digital",
+      "name": "T-Bone 2",
+      "matchPatterns": [
+        "T-Bone 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/t-bone-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--the-hoser-2",
+      "manufacturerId": "boz-digital",
+      "name": "The Hoser 2",
+      "matchPatterns": [
+        "The Hoser 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/the-hoser-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--the-hoser-xt-2",
+      "manufacturerId": "boz-digital",
+      "name": "The Hoser XT 2",
+      "matchPatterns": [
+        "The Hoser XT 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/the-hoser-xt-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--the-hoser-xt-and-10db-bundle",
+      "manufacturerId": "boz-digital",
+      "name": "The Hoser XT and +10dB Bundle",
+      "matchPatterns": [
+        "The Hoser XT and +10dB Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/the-hoser-xt-and-and-10db-bundle-by-boz-digital-labs",
+      "identity_kind": "bundle",
+      "notes_for_user": "Boz Digital Labs bundle (The Hoser XT and +10dB Bundle)."
+    },
+    {
+      "id": "boz-digital--the-wall-2",
+      "manufacturerId": "boz-digital",
+      "name": "The Wall 2",
+      "matchPatterns": [
+        "The Wall 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/the-wall-2-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--transgressor-3",
+      "manufacturerId": "boz-digital",
+      "name": "Transgressor 3",
+      "matchPatterns": [
+        "Transgressor 3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/transgressor-3-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--upright-bundle",
+      "manufacturerId": "boz-digital",
+      "name": "Upright Bundle",
+      "matchPatterns": [
+        "Upright Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/upright-bundle-by-boz-digital-labs",
+      "identity_kind": "soundset",
+      "notes_for_user": "Boz Digital Labs instrument/library (Upright Bundle)."
+    },
+    {
+      "id": "boz-digital--width-knob",
+      "manufacturerId": "boz-digital",
+      "name": "Width Knob",
+      "matchPatterns": [
+        "Width Knob"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/width-knob-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--big-clipper",
+      "manufacturerId": "boz-digital",
+      "name": "Big Clipper",
+      "matchPatterns": [
+        "Big Clipper"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/big-clipper-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--drums-bundle",
+      "manufacturerId": "boz-digital",
+      "name": "Drums Bundle",
+      "matchPatterns": [
+        "Drums Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/drums-bundle-by-boz-digital-labs",
+      "identity_kind": "bundle",
+      "notes_for_user": "Boz Digital Labs bundle (Drums Bundle)."
+    },
+    {
+      "id": "boz-digital--little-clipper",
+      "manufacturerId": "boz-digital",
+      "name": "Little Clipper",
+      "matchPatterns": [
+        "Little Clipper"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/little-clipper-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--mono-bass",
+      "manufacturerId": "boz-digital",
+      "name": "Mono Bass",
+      "matchPatterns": [
+        "Mono Bass"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/mono-bass-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "boz-digital--sasquatch-kick-machine",
+      "manufacturerId": "boz-digital",
+      "name": "Sasquatch Kick Machine",
+      "matchPatterns": [
+        "Sasquatch Kick Machine"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.bozdigitallabs.com/my-account/",
+      "identity_source": "kvr-developer-boz-digital-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sasquatch-kick-machine-by-boz-digital-labs",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--blackash-sc-5",
+      "manufacturerId": "black-rooster-audio",
+      "name": "BlackAsh SC-5",
+      "matchPatterns": [
+        "BlackAsh SC-5"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackash-sc-5-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--blueash-sc-5",
+      "manufacturerId": "black-rooster-audio",
+      "name": "BlueAsh SC-5",
+      "matchPatterns": [
+        "BlueAsh SC-5"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blueash-sc-5-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--cypress-tt-15",
+      "manufacturerId": "black-rooster-audio",
+      "name": "Cypress TT-15",
+      "matchPatterns": [
+        "Cypress TT-15"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/cypress-tt-15-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--edelweiss72",
+      "manufacturerId": "black-rooster-audio",
+      "name": "Edelweiss'72",
+      "matchPatterns": [
+        "Edelweiss'72"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/edelweiss72-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--ga-gt2",
+      "manufacturerId": "black-rooster-audio",
+      "name": "GA-GT2",
+      "matchPatterns": [
+        "GA-GT2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ga-gt2-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--kh-comp1",
+      "manufacturerId": "black-rooster-audio",
+      "name": "KH-COMP1",
+      "matchPatterns": [
+        "KH-COMP1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/kh-comp1-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--kh-eq1",
+      "manufacturerId": "black-rooster-audio",
+      "name": "KH-EQ1",
+      "matchPatterns": [
+        "KH-EQ1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/kh-eq1-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--magnetite",
+      "manufacturerId": "black-rooster-audio",
+      "name": "Magnetite",
+      "matchPatterns": [
+        "Magnetite"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/magnetite-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--omnitec-436c",
+      "manufacturerId": "black-rooster-audio",
+      "name": "OmniTec-436C",
+      "matchPatterns": [
+        "OmniTec-436C"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/omnitec-436c-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--omnitec-67a",
+      "manufacturerId": "black-rooster-audio",
+      "name": "OmniTec-67A",
+      "matchPatterns": [
+        "OmniTec-67A"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/omnitec-67a-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--ps-vc1",
+      "manufacturerId": "black-rooster-audio",
+      "name": "PS-VC1",
+      "matchPatterns": [
+        "PS-VC1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ps-vc1-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--ro-140",
+      "manufacturerId": "black-rooster-audio",
+      "name": "RO-140",
+      "matchPatterns": [
+        "RO-140"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ro-140-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--ro-gold",
+      "manufacturerId": "black-rooster-audio",
+      "name": "RO-GOLD",
+      "matchPatterns": [
+        "RO-GOLD"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ro-gold-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--ro-spr",
+      "manufacturerId": "black-rooster-audio",
+      "name": "RO-SPR",
+      "matchPatterns": [
+        "RO-SPR"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ro-spr-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--td-201",
+      "manufacturerId": "black-rooster-audio",
+      "name": "TD-201",
+      "matchPatterns": [
+        "TD-201"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/td-201-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--the-canary",
+      "manufacturerId": "black-rooster-audio",
+      "name": "The Canary",
+      "matchPatterns": [
+        "The Canary"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/the-canary-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--veq-1p",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VEQ-1P",
+      "matchPatterns": [
+        "VEQ-1P"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/veq-1p-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--veq-5",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VEQ-5",
+      "matchPatterns": [
+        "VEQ-5"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/veq-5-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vhl-3c",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VHL-3C",
+      "matchPatterns": [
+        "VHL-3C"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vhl-3c-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vla-2a",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VLA-2A",
+      "matchPatterns": [
+        "VLA-2A"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vla-2a-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vla-2a-mark-ii",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VLA-2A Mark II",
+      "matchPatterns": [
+        "VLA-2A Mark II"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vla-2a-mark-ii-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vla-3a",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VLA-3A",
+      "matchPatterns": [
+        "VLA-3A"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vla-3a-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vla-fet",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VLA-FET",
+      "matchPatterns": [
+        "VLA-FET"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vla-fet-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vpre-73",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VPRE-73",
+      "matchPatterns": [
+        "VPRE-73"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vpre-73-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vtc-2",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VTC-2",
+      "matchPatterns": [
+        "VTC-2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vtc-2-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "black-rooster-audio--vwb-1x-vintage-workbench",
+      "manufacturerId": "black-rooster-audio",
+      "name": "VWB-1X Vintage Workbench",
+      "matchPatterns": [
+        "VWB-1X Vintage Workbench"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://blackroosteraudio.com/en/account",
+      "identity_source": "kvr-developer-black-rooster-audio-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vwb-1x-vintage-workbench-by-black-rooster-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--bb-55a",
+      "manufacturerId": "kit-plugins",
+      "name": "BB 55A",
+      "matchPatterns": [
+        "BB 55A"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/bb-55a-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--bb-55l",
+      "manufacturerId": "kit-plugins",
+      "name": "BB 55L",
+      "matchPatterns": [
+        "BB 55L"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/bb-55l-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--bb-56l",
+      "manufacturerId": "kit-plugins",
+      "name": "BB 56L",
+      "matchPatterns": [
+        "BB 56L"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/bb-56l-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-a5",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird A5",
+      "matchPatterns": [
+        "Blackbird A5"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-a5-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-chamber-a",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird Chamber A",
+      "matchPatterns": [
+        "Blackbird Chamber A"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-chamber-a-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-chamber-d",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird Chamber D",
+      "matchPatterns": [
+        "Blackbird Chamber D"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-chamber-d-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-f66-67",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird F66/67",
+      "matchPatterns": [
+        "Blackbird F66/67"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-f66-67-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-mo-q",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird Mo-Q",
+      "matchPatterns": [
+        "Blackbird Mo-Q"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-mo-q-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-n105-channel-strip",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird N105 Channel Strip",
+      "matchPatterns": [
+        "Blackbird N105 Channel Strip"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-n105-channel-strip-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-n54",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird N54",
+      "matchPatterns": [
+        "Blackbird N54"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-n54-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--blackbird-n73-channel-strip",
+      "manufacturerId": "kit-plugins",
+      "name": "Blackbird N73 Channel Strip",
+      "matchPatterns": [
+        "Blackbird N73 Channel Strip"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/blackbird-n73-channel-strip-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--burier",
+      "manufacturerId": "kit-plugins",
+      "name": "Burier",
+      "matchPatterns": [
+        "Burier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/burier-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--core-compressor",
+      "manufacturerId": "kit-plugins",
+      "name": "CORE Compressor",
+      "matchPatterns": [
+        "CORE Compressor"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/core-compressor-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--core-eq",
+      "manufacturerId": "kit-plugins",
+      "name": "CORE EQ",
+      "matchPatterns": [
+        "CORE EQ"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/core-eq-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--kit-drums-connor-denis",
+      "manufacturerId": "kit-plugins",
+      "name": "KIT Drums - Connor Denis",
+      "matchPatterns": [
+        "KIT Drums - Connor Denis"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/kit-drums---connor-denis-by-kit-plugins",
+      "identity_kind": "soundset",
+      "notes_for_user": "KIT Plugins content/library (KIT Drums - Connor Denis)."
+    },
+    {
+      "id": "kit-plugins--noiz-80s-lush",
+      "manufacturerId": "kit-plugins",
+      "name": "NOIZ 80s Lush",
+      "matchPatterns": [
+        "NOIZ 80s Lush"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/noiz-80s-lush-by-kit-plugins",
+      "identity_kind": "soundset",
+      "notes_for_user": "KIT Plugins content/library (NOIZ 80s Lush)."
+    },
+    {
+      "id": "kit-plugins--noiz-one-vox",
+      "manufacturerId": "kit-plugins",
+      "name": "NOIZ One Vox",
+      "matchPatterns": [
+        "NOIZ One Vox"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/noiz-one-vox-by-kit-plugins",
+      "identity_kind": "soundset",
+      "notes_for_user": "KIT Plugins content/library (NOIZ One Vox)."
+    },
+    {
+      "id": "kit-plugins--np-a67",
+      "manufacturerId": "kit-plugins",
+      "name": "NP A67",
+      "matchPatterns": [
+        "NP A67"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/np-a67-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--prime-delay",
+      "manufacturerId": "kit-plugins",
+      "name": "Prime Delay",
+      "matchPatterns": [
+        "Prime Delay"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/prime-delay-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--prime-filter",
+      "manufacturerId": "kit-plugins",
+      "name": "Prime Filter",
+      "matchPatterns": [
+        "Prime Filter"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/prime-filter-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "kit-plugins--smash",
+      "manufacturerId": "kit-plugins",
+      "name": "SMASH",
+      "matchPatterns": [
+        "SMASH"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://kitplugins.com/account",
+      "identity_source": "kvr-developer-kit-plugins-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/smash-by-kit-plugins",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "crave-dsp--crave-stereo-enhancer",
+      "manufacturerId": "crave-dsp",
+      "name": "Crave Stereo Enhancer",
+      "matchPatterns": [
+        "Crave Stereo Enhancer",
+        "Stereo Enhancer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://cravedsp.com/",
+      "identity_source": "kvr-developer-crave-dsp-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/crave-stereo-enhancer-by-crave-dsp",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "crave-dsp--crave-transient-eq",
+      "manufacturerId": "crave-dsp",
+      "name": "Crave Transient EQ",
+      "matchPatterns": [
+        "Crave Transient EQ",
+        "Transient EQ"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://cravedsp.com/",
+      "identity_source": "kvr-developer-crave-dsp-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/crave-transient-eq-by-crave-dsp",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--decoda",
+      "manufacturerId": "zplane",
+      "name": "deCoda",
+      "matchPatterns": [
+        "deCoda"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/decoda-by-zplane",
+      "identity_kind": "hub_app",
+      "notes_for_user": "zplane analysis/utility app (deCoda) — not a typical DAW FX semver chip."
+    },
+    {
+      "id": "zplane--elastique-pitch",
+      "manufacturerId": "zplane",
+      "name": "Elastique Pitch",
+      "matchPatterns": [
+        "Elastique Pitch"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/elastique-pitch-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--elastiqueaax",
+      "manufacturerId": "zplane",
+      "name": "élastiqueAAX",
+      "matchPatterns": [
+        "élastiqueAAX"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/elastiqueaax-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--elastiqueaaxtce",
+      "manufacturerId": "zplane",
+      "name": "élastiqueAAXtce",
+      "matchPatterns": [
+        "élastiqueAAXtce"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/elastiqueaaxtce-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--peel",
+      "manufacturerId": "zplane",
+      "name": "PEEL",
+      "matchPatterns": [
+        "PEEL"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/peel-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--peel-stems-2",
+      "manufacturerId": "zplane",
+      "name": "PEEL STEMS 2",
+      "matchPatterns": [
+        "PEEL STEMS 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/peel-stems-2-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--retune",
+      "manufacturerId": "zplane",
+      "name": "reTune",
+      "matchPatterns": [
+        "reTune"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/retune-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--tonic",
+      "manufacturerId": "zplane",
+      "name": "TONIC",
+      "matchPatterns": [
+        "TONIC"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/tonic-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "zplane--fennek",
+      "manufacturerId": "zplane",
+      "name": "FENNEK",
+      "matchPatterns": [
+        "FENNEK"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/fennek-by-zplane",
+      "identity_kind": "hub_app",
+      "notes_for_user": "zplane analysis/utility app (FENNEK) — not a typical DAW FX semver chip."
+    },
+    {
+      "id": "zplane--ppmbatch",
+      "manufacturerId": "zplane",
+      "name": "ppmBatch",
+      "matchPatterns": [
+        "ppmBatch"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ppmbatch-by-zplane",
+      "identity_kind": "hub_app",
+      "notes_for_user": "zplane analysis/utility app (ppmBatch) — not a typical DAW FX semver chip."
+    },
+    {
+      "id": "zplane--ppmulator-xl",
+      "manufacturerId": "zplane",
+      "name": "PPMulator+ (XL)",
+      "matchPatterns": [
+        "PPMulator+ (XL)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ppmulator-and-xl-by-zplane",
+      "identity_kind": "hub_app",
+      "notes_for_user": "zplane analysis/utility app (PPMulator+ (XL)) — not a typical DAW FX semver chip."
+    },
+    {
+      "id": "zplane--vielklang-instant-harmony",
+      "manufacturerId": "zplane",
+      "name": "vielklang Instant Harmony",
+      "matchPatterns": [
+        "vielklang Instant Harmony"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.zplane.de/",
+      "identity_source": "kvr-developer-zplane-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vielklang-instant-harmony-by-zplane",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--alter-ego",
+      "manufacturerId": "plogue",
+      "name": "Alter/Ego",
+      "matchPatterns": [
+        "Alter/Ego"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/alter-ego-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--aria-engine-player",
+      "manufacturerId": "plogue",
+      "name": "ARIA Engine / Player",
+      "matchPatterns": [
+        "ARIA Engine / Player"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/aria-engine-player-by-plogue",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Plogue sampler/engine host (ARIA Engine / Player)."
+    },
+    {
+      "id": "plogue--bidule",
+      "manufacturerId": "plogue",
+      "name": "Bidule",
+      "matchPatterns": [
+        "Bidule"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/bidule-by-plogue",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Plogue Bidule modular host environment."
+    },
+    {
+      "id": "plogue--chipcrusher",
+      "manufacturerId": "plogue",
+      "name": "chipcrusher",
+      "matchPatterns": [
+        "chipcrusher"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipcrusher-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--chipsounds",
+      "manufacturerId": "plogue",
+      "name": "chipsounds",
+      "matchPatterns": [
+        "chipsounds"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipsounds-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--chipspeech",
+      "manufacturerId": "plogue",
+      "name": "chipspeech",
+      "matchPatterns": [
+        "chipspeech"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipspeech-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--chipsynth-c64",
+      "manufacturerId": "plogue",
+      "name": "chipsynth C64",
+      "matchPatterns": [
+        "chipsynth C64"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipsynth-c64-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--chipsynth-md",
+      "manufacturerId": "plogue",
+      "name": "chipsynth MD",
+      "matchPatterns": [
+        "chipsynth MD"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipsynth-md-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--chipsynth-ops7",
+      "manufacturerId": "plogue",
+      "name": "chipsynth OPS7",
+      "matchPatterns": [
+        "chipsynth OPS7"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipsynth-ops7-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--chipsynth-portafm",
+      "manufacturerId": "plogue",
+      "name": "chipsynth PortaFM",
+      "matchPatterns": [
+        "chipsynth PortaFM"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipsynth-portafm-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--chipsynth-sfc",
+      "manufacturerId": "plogue",
+      "name": "chipsynth SFC",
+      "matchPatterns": [
+        "chipsynth SFC"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chipsynth-sfc-by-plogue",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plogue--sforzando",
+      "manufacturerId": "plogue",
+      "name": "sforzando",
+      "matchPatterns": [
+        "sforzando"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plogue.com/account/",
+      "identity_source": "kvr-developer-plogue-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sforzando-by-plogue",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Plogue sampler/engine host (sforzando)."
+    },
+    {
+      "id": "decomposer--dert",
+      "manufacturerId": "decomposer",
+      "name": "Dert",
+      "matchPatterns": [
+        "Dert"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://decomposer.nl/",
+      "identity_source": "kvr-developer-decomposer-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dert-by-decomposer",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "decomposer--sitala",
+      "manufacturerId": "decomposer",
+      "name": "Sitala",
+      "matchPatterns": [
+        "Sitala"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://decomposer.nl/",
+      "identity_source": "kvr-developer-decomposer-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sitala-by-decomposer",
+      "identity_kind": "plugin",
+      "notes_for_user": "Sitala drum sampler (freeware).",
+      "isFreeware": true
+    },
+    {
+      "id": "image-line--autogun",
+      "manufacturerId": "image-line",
+      "name": "Autogun",
+      "matchPatterns": [
+        "Autogun"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/autogun-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--directwave",
+      "manufacturerId": "image-line",
+      "name": "DirectWave",
+      "matchPatterns": [
+        "DirectWave"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/directwave-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--drumaxx",
+      "manufacturerId": "image-line",
+      "name": "Drumaxx",
+      "matchPatterns": [
+        "Drumaxx"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/drumaxx-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--drumsynth-live",
+      "manufacturerId": "image-line",
+      "name": "DrumSynth Live",
+      "matchPatterns": [
+        "DrumSynth Live"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/drumsynth-live-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--dx10",
+      "manufacturerId": "image-line",
+      "name": "DX10",
+      "matchPatterns": [
+        "DX10"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dx10_by_image_line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--edison",
+      "manufacturerId": "image-line",
+      "name": "Edison",
+      "matchPatterns": [
+        "Edison"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/edison-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--fl-studio-all-plugins-edition",
+      "manufacturerId": "image-line",
+      "name": "FL Studio All Plugins Edition",
+      "matchPatterns": [
+        "FL Studio All Plugins Edition"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/fl-studio-all-plugins-edition-by-image-line",
+      "identity_kind": "hub_app",
+      "notes_for_user": "FL Studio edition (FL Studio All Plugins Edition) — DAW hub, not a discrete FX installer."
+    },
+    {
+      "id": "image-line--fl-studio-fruity-edition",
+      "manufacturerId": "image-line",
+      "name": "FL Studio Fruity Edition",
+      "matchPatterns": [
+        "FL Studio Fruity Edition"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/fl-studio-fruity-edition-by-image-line",
+      "identity_kind": "hub_app",
+      "notes_for_user": "FL Studio edition (FL Studio Fruity Edition) — DAW hub, not a discrete FX installer."
+    },
+    {
+      "id": "image-line--fl-studio-mobile",
+      "manufacturerId": "image-line",
+      "name": "FL Studio Mobile",
+      "matchPatterns": [
+        "FL Studio Mobile"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/fl-studio-mobile-by-image-line",
+      "identity_kind": "hub_app",
+      "notes_for_user": "FL Studio edition (FL Studio Mobile) — DAW hub, not a discrete FX installer."
+    },
+    {
+      "id": "image-line--fl-studio-producer-edition",
+      "manufacturerId": "image-line",
+      "name": "FL Studio Producer Edition",
+      "matchPatterns": [
+        "FL Studio Producer Edition"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/fl-studio-producer-edition-by-image-line",
+      "identity_kind": "hub_app",
+      "notes_for_user": "FL Studio edition (FL Studio Producer Edition) — DAW hub, not a discrete FX installer."
+    },
+    {
+      "id": "image-line--fl-studio-signature-bundle",
+      "manufacturerId": "image-line",
+      "name": "FL Studio Signature Bundle",
+      "matchPatterns": [
+        "FL Studio Signature Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/fl-studio-signature-bundle-by-image-line",
+      "identity_kind": "hub_app",
+      "notes_for_user": "FL Studio edition (FL Studio Signature Bundle) — DAW hub, not a discrete FX installer."
+    },
+    {
+      "id": "image-line--gross-beat",
+      "manufacturerId": "image-line",
+      "name": "Gross Beat",
+      "matchPatterns": [
+        "Gross Beat"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/gross-beat-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--harmless",
+      "manufacturerId": "image-line",
+      "name": "Harmless",
+      "matchPatterns": [
+        "Harmless"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/harmless-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--harmor",
+      "manufacturerId": "image-line",
+      "name": "Harmor",
+      "matchPatterns": [
+        "Harmor"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/harmor-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-delay-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Delay (Juice Pack)",
+      "matchPatterns": [
+        "IL Delay (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-delay-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-delay-bank-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Delay Bank (Juice Pack)",
+      "matchPatterns": [
+        "IL Delay Bank (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-delay-bank-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-equo-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL EQUO (Juice Pack)",
+      "matchPatterns": [
+        "IL EQUO (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-equo-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-flangus-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Flangus (Juice Pack)",
+      "matchPatterns": [
+        "IL Flangus (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-flangus-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-multiband-compressor-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Multiband Compressor (Juice Pack)",
+      "matchPatterns": [
+        "IL Multiband Compressor (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-multiband-compressor-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-parametric-eq-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Parametric EQ (Juice Pack)",
+      "matchPatterns": [
+        "IL Parametric EQ (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-parametric-eq-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-spectroman-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Spectroman (Juice Pack)",
+      "matchPatterns": [
+        "IL Spectroman (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-spectroman-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-stereo-enhancer-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Stereo Enhancer (Juice Pack)",
+      "matchPatterns": [
+        "IL Stereo Enhancer (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-stereo-enhancer-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-vocoder-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL Vocoder (Juice Pack)",
+      "matchPatterns": [
+        "IL Vocoder (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-vocoder-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--il-waveshaper-juice-pack",
+      "manufacturerId": "image-line",
+      "name": "IL WaveShaper (Juice Pack)",
+      "matchPatterns": [
+        "IL WaveShaper (Juice Pack)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/il-waveshaper-juice-pack-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--maximus",
+      "manufacturerId": "image-line",
+      "name": "Maximus",
+      "matchPatterns": [
+        "Maximus"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/maximus-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--morphine",
+      "manufacturerId": "image-line",
+      "name": "Morphine",
+      "matchPatterns": [
+        "Morphine"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/morphine-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--ogun",
+      "manufacturerId": "image-line",
+      "name": "Ogun",
+      "matchPatterns": [
+        "Ogun"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ogun-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--poizone",
+      "manufacturerId": "image-line",
+      "name": "PoiZone",
+      "matchPatterns": [
+        "PoiZone"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/poizone-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--sakura",
+      "manufacturerId": "image-line",
+      "name": "Sakura",
+      "matchPatterns": [
+        "Sakura"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sakura-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--sawer",
+      "manufacturerId": "image-line",
+      "name": "Sawer",
+      "matchPatterns": [
+        "Sawer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sawer-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--simsynth-live",
+      "manufacturerId": "image-line",
+      "name": "SimSynth Live",
+      "matchPatterns": [
+        "SimSynth Live"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/simsynth_live_by_image_line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--slicex",
+      "manufacturerId": "image-line",
+      "name": "Slicex",
+      "matchPatterns": [
+        "Slicex"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/slicex-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--sytrus",
+      "manufacturerId": "image-line",
+      "name": "Sytrus",
+      "matchPatterns": [
+        "Sytrus"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sytrus-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--toxic-biohazard",
+      "manufacturerId": "image-line",
+      "name": "Toxic Biohazard",
+      "matchPatterns": [
+        "Toxic Biohazard"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/toxic-biohazard-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--vocodex",
+      "manufacturerId": "image-line",
+      "name": "Vocodex",
+      "matchPatterns": [
+        "Vocodex"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vocodex-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--wasp",
+      "manufacturerId": "image-line",
+      "name": "Wasp",
+      "matchPatterns": [
+        "Wasp"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/wasp-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--groove-machine",
+      "manufacturerId": "image-line",
+      "name": "Groove Machine",
+      "matchPatterns": [
+        "Groove Machine"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/groove-machine-by-image-line",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Groove Machine standalone/host environment."
+    },
+    {
+      "id": "image-line--juice-pack",
+      "manufacturerId": "image-line",
+      "name": "Juice Pack",
+      "matchPatterns": [
+        "Juice Pack"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/juice-pack-by-image-line",
+      "identity_kind": "bundle",
+      "notes_for_user": "Image-Line Juice Pack marketing bundle."
+    },
+    {
+      "id": "image-line--toxic-iii",
+      "manufacturerId": "image-line",
+      "name": "Toxic III",
+      "matchPatterns": [
+        "Toxic III"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/toxic-iii-by-image-line",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "presonus--acoustic-drum-loops-complete",
+      "manufacturerId": "presonus",
+      "name": "Acoustic Drum Loops Complete",
+      "matchPatterns": [
+        "Acoustic Drum Loops Complete"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/acoustic-drum-loops-complete-by-presonus",
+      "identity_kind": "soundset",
+      "notes_for_user": "PreSonus content pack (Acoustic Drum Loops Complete)."
+    },
+    {
+      "id": "presonus--acoustic-drum-loops-pro-multitrack",
+      "manufacturerId": "presonus",
+      "name": "Acoustic Drum Loops Pro - Multitrack",
+      "matchPatterns": [
+        "Acoustic Drum Loops Pro - Multitrack"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/acoustic-drum-loops-pro---multitrack-by-presonus",
+      "identity_kind": "soundset",
+      "notes_for_user": "PreSonus content pack (Acoustic Drum Loops Pro - Multitrack)."
+    },
+    {
+      "id": "presonus--acoustic-drum-loops-vol-2-stereo",
+      "manufacturerId": "presonus",
+      "name": "Acoustic Drum Loops Vol. 2 - Stereo",
+      "matchPatterns": [
+        "Acoustic Drum Loops Vol. 2 - Stereo"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/acoustic-drum-loops-vol-2---stereo-by-presonus",
+      "identity_kind": "soundset",
+      "notes_for_user": "PreSonus content pack (Acoustic Drum Loops Vol. 2 - Stereo)."
+    },
+    {
+      "id": "presonus--artist-booster-pack",
+      "manufacturerId": "presonus",
+      "name": "Artist Booster Pack",
+      "matchPatterns": [
+        "Artist Booster Pack"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/artist-booster-pack-by-presonus",
+      "identity_kind": "bundle",
+      "notes_for_user": "PreSonus marketing bundle (Artist Booster Pack)."
+    },
+    {
+      "id": "presonus--channel-strip-collection",
+      "manufacturerId": "presonus",
+      "name": "Channel Strip Collection",
+      "matchPatterns": [
+        "Channel Strip Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/channel-strip-collection-by-presonus",
+      "identity_kind": "bundle",
+      "notes_for_user": "PreSonus marketing bundle (Channel Strip Collection)."
+    },
+    {
+      "id": "presonus--ctc-1-pro-console-shaper",
+      "manufacturerId": "presonus",
+      "name": "CTC-1 Pro Console Shaper",
+      "matchPatterns": [
+        "CTC-1 Pro Console Shaper"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ctc-1-pro-console-shaper-by-presonus",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "presonus--goldbaby-essentials",
+      "manufacturerId": "presonus",
+      "name": "Goldbaby Essentials",
+      "matchPatterns": [
+        "Goldbaby Essentials"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/goldbaby-essentials-by-presonus",
+      "identity_kind": "soundset",
+      "notes_for_user": "PreSonus content pack (Goldbaby Essentials)."
+    },
+    {
+      "id": "presonus--notion",
+      "manufacturerId": "presonus",
+      "name": "Notion",
+      "matchPatterns": [
+        "Notion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/notion-by-presonus",
+      "identity_kind": "hub_app",
+      "notes_for_user": "PreSonus DAW/notation/subscription hub (Notion)."
+    },
+    {
+      "id": "presonus--presonus-sphere",
+      "manufacturerId": "presonus",
+      "name": "Presonus Sphere",
+      "matchPatterns": [
+        "Presonus Sphere"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/presonus-sphere-by-presonus",
+      "identity_kind": "hub_app",
+      "notes_for_user": "PreSonus DAW/notation/subscription hub (Presonus Sphere)."
+    },
+    {
+      "id": "presonus--symphonic-orchestra",
+      "manufacturerId": "presonus",
+      "name": "Symphonic Orchestra",
+      "matchPatterns": [
+        "Symphonic Orchestra"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/symphonic-orchestra-by-presonus",
+      "identity_kind": "soundset",
+      "notes_for_user": "PreSonus content pack (Symphonic Orchestra)."
+    },
+    {
+      "id": "presonus--ampire-xt-metal-pack",
+      "manufacturerId": "presonus",
+      "name": "Ampire XT Metal Pack",
+      "matchPatterns": [
+        "Ampire XT Metal Pack"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/ampire-xt-metal-pack-by-presonus",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "presonus--artist-bundle-studio-one-artist-and-notion",
+      "manufacturerId": "presonus",
+      "name": "Artist Bundle - Studio One Artist and Notion",
+      "matchPatterns": [
+        "Artist Bundle - Studio One Artist and Notion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/artist-bundle---studio-one-artist-and-notion-by-presonus",
+      "identity_kind": "hub_app",
+      "notes_for_user": "PreSonus DAW/notation/subscription hub (Artist Bundle - Studio One Artist and Notion)."
+    },
+    {
+      "id": "presonus--eyeq",
+      "manufacturerId": "presonus",
+      "name": "EyeQ",
+      "matchPatterns": [
+        "EyeQ"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/eyeq-by-presonus",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "presonus--pro-bundle-studio-one-pro-and-notion",
+      "manufacturerId": "presonus",
+      "name": "Pro Bundle - Studio One Pro and Notion",
+      "matchPatterns": [
+        "Pro Bundle - Studio One Pro and Notion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/pro-bundle---studio-one-pro-and-notion-by-presonus",
+      "identity_kind": "hub_app",
+      "notes_for_user": "PreSonus DAW/notation/subscription hub (Pro Bundle - Studio One Pro and Notion)."
+    },
+    {
+      "id": "presonus--progression",
+      "manufacturerId": "presonus",
+      "name": "Progression",
+      "matchPatterns": [
+        "Progression"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/progression-by-presonus",
+      "identity_kind": "hub_app",
+      "notes_for_user": "PreSonus DAW/notation/subscription hub (Progression)."
+    },
+    {
+      "id": "presonus--studio-one-artist",
+      "manufacturerId": "presonus",
+      "name": "Studio One Artist",
+      "matchPatterns": [
+        "Studio One Artist"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/studio-one-artist-by-presonus",
+      "identity_kind": "hub_app",
+      "notes_for_user": "PreSonus DAW/notation/subscription hub (Studio One Artist)."
+    },
+    {
+      "id": "presonus--studio-one-artist-vst-and-au-and-rewire-support",
+      "manufacturerId": "presonus",
+      "name": "Studio One Artist VST and AU and Rewire Support",
+      "matchPatterns": [
+        "Studio One Artist VST and AU and Rewire Support"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://my.presonus.com/",
+      "identity_source": "kvr-developer-presonus-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/studio-one-artist-vst-and-au-and-rewire-support-by-presonus",
+      "identity_kind": "hub_app",
+      "notes_for_user": "PreSonus DAW/notation/subscription hub (Studio One Artist VST and AU and Rewire Support)."
+    },
+    {
+      "id": "accentize--chameleonsurround",
+      "manufacturerId": "accentize",
+      "name": "ChameleonSurround",
+      "matchPatterns": [
+        "ChameleonSurround"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/chameleonsurround-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--deroom",
+      "manufacturerId": "accentize",
+      "name": "DeRoom",
+      "matchPatterns": [
+        "DeRoom"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/deroom-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--deroom-pro",
+      "manufacturerId": "accentize",
+      "name": "DeRoom Pro",
+      "matchPatterns": [
+        "DeRoom Pro",
+        "DeRoomPro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/deroom-pro-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--dialogueenhance",
+      "manufacturerId": "accentize",
+      "name": "DialogueEnhance",
+      "matchPatterns": [
+        "DialogueEnhance"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dialogueenhance-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--dxlevel",
+      "manufacturerId": "accentize",
+      "name": "dxLevel",
+      "matchPatterns": [
+        "dxLevel"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dxlevel-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--dxrevive",
+      "manufacturerId": "accentize",
+      "name": "dxRevive",
+      "matchPatterns": [
+        "dxRevive"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dxrevive-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--dxsplit",
+      "manufacturerId": "accentize",
+      "name": "dxSplit",
+      "matchPatterns": [
+        "dxSplit"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dxsplit-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--pretube",
+      "manufacturerId": "accentize",
+      "name": "PreTube",
+      "matchPatterns": [
+        "PreTube"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/pretube-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--spectralbalance",
+      "manufacturerId": "accentize",
+      "name": "SpectralBalance",
+      "matchPatterns": [
+        "SpectralBalance"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/spectralbalance-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--voicegate",
+      "manufacturerId": "accentize",
+      "name": "VoiceGate",
+      "matchPatterns": [
+        "VoiceGate"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/voicegate-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--prefet",
+      "manufacturerId": "accentize",
+      "name": "PreFET",
+      "matchPatterns": [
+        "PreFET"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "kvr-developer-accentize-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/prefet-by-accentize",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--absolute-7",
+      "manufacturerId": "steinberg",
+      "name": "Absolute 7",
+      "matchPatterns": [
+        "Absolute 7"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/absolute-7-by-steinberg",
+      "identity_kind": "bundle",
+      "notes_for_user": "Steinberg Absolute bundle (Absolute 7)."
+    },
+    {
+      "id": "steinberg--backbone",
+      "manufacturerId": "steinberg",
+      "name": "Backbone",
+      "matchPatterns": [
+        "Backbone"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/backbone-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--cubase-artist-15",
+      "manufacturerId": "steinberg",
+      "name": "Cubase Artist 15",
+      "matchPatterns": [
+        "Cubase Artist 15"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/cubase-artist-15-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Cubase Artist 15)."
+    },
+    {
+      "id": "steinberg--cubase-elements-15",
+      "manufacturerId": "steinberg",
+      "name": "Cubase Elements 15",
+      "matchPatterns": [
+        "Cubase Elements 15"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/cubase-elements-15-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Cubase Elements 15)."
+    },
+    {
+      "id": "steinberg--cubase-pro-15",
+      "manufacturerId": "steinberg",
+      "name": "Cubase Pro 15",
+      "matchPatterns": [
+        "Cubase Pro 15"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/cubase-pro-15-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Cubase Pro 15)."
+    },
+    {
+      "id": "steinberg--cubasis-3",
+      "manufacturerId": "steinberg",
+      "name": "Cubasis 3",
+      "matchPatterns": [
+        "Cubasis 3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/cubasis-3-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Cubasis 3)."
+    },
+    {
+      "id": "steinberg--dark-planet",
+      "manufacturerId": "steinberg",
+      "name": "Dark Planet",
+      "matchPatterns": [
+        "Dark Planet"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dark-planet-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Dark Planet)."
+    },
+    {
+      "id": "steinberg--dorico-elements",
+      "manufacturerId": "steinberg",
+      "name": "Dorico Elements",
+      "matchPatterns": [
+        "Dorico Elements"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dorico-elements-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Dorico Elements)."
+    },
+    {
+      "id": "steinberg--dorico-pro",
+      "manufacturerId": "steinberg",
+      "name": "Dorico Pro",
+      "matchPatterns": [
+        "Dorico Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dorico-pro-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Dorico Pro)."
+    },
+    {
+      "id": "steinberg--electric-bass",
+      "manufacturerId": "steinberg",
+      "name": "Electric Bass",
+      "matchPatterns": [
+        "Electric Bass"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/electric-bass-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Electric Bass)."
+    },
+    {
+      "id": "steinberg--groove-agent-6",
+      "manufacturerId": "steinberg",
+      "name": "Groove Agent 6",
+      "matchPatterns": [
+        "Groove Agent 6"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/groove-agent-6-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--halion-7",
+      "manufacturerId": "steinberg",
+      "name": "HALion 7",
+      "matchPatterns": [
+        "HALion 7"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/halion-7-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--halion-sonic-7",
+      "manufacturerId": "steinberg",
+      "name": "HALion Sonic 7",
+      "matchPatterns": [
+        "HALion Sonic 7"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/halion-sonic-7-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--halion-sonic-7-collection",
+      "manufacturerId": "steinberg",
+      "name": "HALion Sonic 7 Collection",
+      "matchPatterns": [
+        "HALion Sonic 7 Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/halion-sonic-7-collection-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--halion-sonic-se",
+      "manufacturerId": "steinberg",
+      "name": "HALion Sonic SE",
+      "matchPatterns": [
+        "HALion Sonic SE"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/halion-sonic-se-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--halion-symphonic-orchestra",
+      "manufacturerId": "steinberg",
+      "name": "HALion Symphonic Orchestra",
+      "matchPatterns": [
+        "HALion Symphonic Orchestra"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/halion-symphonic-orchestra-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (HALion Symphonic Orchestra)."
+    },
+    {
+      "id": "steinberg--hypnotic-dance",
+      "manufacturerId": "steinberg",
+      "name": "Hypnotic Dance",
+      "matchPatterns": [
+        "Hypnotic Dance"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/hypnotic-dance-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Hypnotic Dance)."
+    },
+    {
+      "id": "steinberg--iconica-sections-and-players",
+      "manufacturerId": "steinberg",
+      "name": "Iconica Sections & Players",
+      "matchPatterns": [
+        "Iconica Sections & Players"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/iconica-sections-and-players-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Iconica Sections & Players)."
+    },
+    {
+      "id": "steinberg--karlette",
+      "manufacturerId": "steinberg",
+      "name": "Karlette",
+      "matchPatterns": [
+        "Karlette"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/karlette-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--lm-4-markii",
+      "manufacturerId": "steinberg",
+      "name": "LM-4 MarkII",
+      "matchPatterns": [
+        "LM-4 MarkII"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/lm_4_markii_by_steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (LM-4 MarkII)."
+    },
+    {
+      "id": "steinberg--lm-9",
+      "manufacturerId": "steinberg",
+      "name": "LM-9",
+      "matchPatterns": [
+        "LM-9"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/lm_9_by_steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--materials-metal-and-ice",
+      "manufacturerId": "steinberg",
+      "name": "Materials - Metal & Ice",
+      "matchPatterns": [
+        "Materials - Metal & Ice"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/materials---metal-and-ice-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Materials - Metal & Ice)."
+    },
+    {
+      "id": "steinberg--materials-wood-and-water",
+      "manufacturerId": "steinberg",
+      "name": "Materials: Wood and Water",
+      "matchPatterns": [
+        "Materials: Wood and Water"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/materials-wood-and-water-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Materials: Wood and Water)."
+    },
+    {
+      "id": "steinberg--mguitar",
+      "manufacturerId": "steinberg",
+      "name": "MGuitar",
+      "matchPatterns": [
+        "MGuitar"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/mguitar-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--model-e",
+      "manufacturerId": "steinberg",
+      "name": "Model-E",
+      "matchPatterns": [
+        "Model-E"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/model-e-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--nanologue",
+      "manufacturerId": "steinberg",
+      "name": "Nanologue",
+      "matchPatterns": [
+        "Nanologue"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/nanologue-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--nashville-drums",
+      "manufacturerId": "steinberg",
+      "name": "Nashville Drums",
+      "matchPatterns": [
+        "Nashville Drums"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/nashville-drums-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Nashville Drums)."
+    },
+    {
+      "id": "steinberg--neo-soul-keys",
+      "manufacturerId": "steinberg",
+      "name": "Neo Soul Keys",
+      "matchPatterns": [
+        "Neo Soul Keys"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/neo-soul-keys-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Neo Soul Keys)."
+    },
+    {
+      "id": "steinberg--neon",
+      "manufacturerId": "steinberg",
+      "name": "Neon",
+      "matchPatterns": [
+        "Neon"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/neon-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--nuendo",
+      "manufacturerId": "steinberg",
+      "name": "Nuendo",
+      "matchPatterns": [
+        "Nuendo"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/nuendo-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Nuendo)."
+    },
+    {
+      "id": "steinberg--omnivocal",
+      "manufacturerId": "steinberg",
+      "name": "Omnivocal",
+      "matchPatterns": [
+        "Omnivocal"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/omnivocal-by-yamaha",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--padshop-2",
+      "manufacturerId": "steinberg",
+      "name": "Padshop 2",
+      "matchPatterns": [
+        "Padshop 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/padshop-2-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--padshop-pro",
+      "manufacturerId": "steinberg",
+      "name": "Padshop Pro",
+      "matchPatterns": [
+        "Padshop Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/padshop-pro-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--polarities",
+      "manufacturerId": "steinberg",
+      "name": "Polarities",
+      "matchPatterns": [
+        "Polarities"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/polarities-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Polarities)."
+    },
+    {
+      "id": "steinberg--retrologue",
+      "manufacturerId": "steinberg",
+      "name": "Retrologue",
+      "matchPatterns": [
+        "Retrologue"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/retrologue-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--rnd-portico-5033-equalizer",
+      "manufacturerId": "steinberg",
+      "name": "RND Portico 5033 Equalizer",
+      "matchPatterns": [
+        "RND Portico 5033 Equalizer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/rnd-portico-5033-equalizer-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--rnd-portico-5043-compressor",
+      "manufacturerId": "steinberg",
+      "name": "RND Portico 5043 Compressor",
+      "matchPatterns": [
+        "RND Portico 5043 Compressor"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/rnd-portico-5043-compressor-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--scoring-percussion",
+      "manufacturerId": "steinberg",
+      "name": "Scoring Percussion",
+      "matchPatterns": [
+        "Scoring Percussion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/scoring-percussion-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Scoring Percussion)."
+    },
+    {
+      "id": "steinberg--sequel",
+      "manufacturerId": "steinberg",
+      "name": "Sequel",
+      "matchPatterns": [
+        "Sequel"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/sequel-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Sequel)."
+    },
+    {
+      "id": "steinberg--simon-phillips-studio-drums",
+      "manufacturerId": "steinberg",
+      "name": "Simon Phillips Studio Drums",
+      "matchPatterns": [
+        "Simon Phillips Studio Drums"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/simon-phillips-studio-drums-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Simon Phillips Studio Drums)."
+    },
+    {
+      "id": "steinberg--spectralayers-13-elements",
+      "manufacturerId": "steinberg",
+      "name": "SpectraLayers 13 Elements",
+      "matchPatterns": [
+        "SpectraLayers 13 Elements"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/spectralayers-13-elements-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--spectralayers-13-pro",
+      "manufacturerId": "steinberg",
+      "name": "SpectraLayers 13 Pro",
+      "matchPatterns": [
+        "SpectraLayers 13 Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/spectralayers-13-pro-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--the-grand",
+      "manufacturerId": "steinberg",
+      "name": "The Grand",
+      "matchPatterns": [
+        "The Grand"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/the-grand-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (The Grand)."
+    },
+    {
+      "id": "steinberg--triebwerk",
+      "manufacturerId": "steinberg",
+      "name": "Triebwerk",
+      "matchPatterns": [
+        "Triebwerk"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/triebwerk-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (Triebwerk)."
+    },
+    {
+      "id": "steinberg--vb-1",
+      "manufacturerId": "steinberg",
+      "name": "VB-1",
+      "matchPatterns": [
+        "VB-1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vb-1-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--vst-connect-pro",
+      "manufacturerId": "steinberg",
+      "name": "VST Connect Pro",
+      "matchPatterns": [
+        "VST Connect Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vst-connect-pro-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--vst-live-elements",
+      "manufacturerId": "steinberg",
+      "name": "VST Live Elements",
+      "matchPatterns": [
+        "VST Live Elements"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vst-live-elements-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (VST Live Elements)."
+    },
+    {
+      "id": "steinberg--vst-live-pro-3",
+      "manufacturerId": "steinberg",
+      "name": "VST Live Pro 3",
+      "matchPatterns": [
+        "VST Live Pro 3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/vst-live-pro-3-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (VST Live Pro 3)."
+    },
+    {
+      "id": "steinberg--wavelab-cast",
+      "manufacturerId": "steinberg",
+      "name": "WaveLab Cast",
+      "matchPatterns": [
+        "WaveLab Cast"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/wavelab-cast-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (WaveLab Cast)."
+    },
+    {
+      "id": "steinberg--wavelab-elements-13",
+      "manufacturerId": "steinberg",
+      "name": "WaveLab Elements 13",
+      "matchPatterns": [
+        "WaveLab Elements 13"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/wavelab-elements-13-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (WaveLab Elements 13)."
+    },
+    {
+      "id": "steinberg--wavelab-pro-13",
+      "manufacturerId": "steinberg",
+      "name": "WaveLab Pro 13",
+      "matchPatterns": [
+        "WaveLab Pro 13"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/wavelab-pro-13-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (WaveLab Pro 13)."
+    },
+    {
+      "id": "steinberg--cubasis-2",
+      "manufacturerId": "steinberg",
+      "name": "Cubasis 2",
+      "matchPatterns": [
+        "Cubasis 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/cubasis-2-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (Cubasis 2)."
+    },
+    {
+      "id": "steinberg--dcota",
+      "manufacturerId": "steinberg",
+      "name": "D'cota",
+      "matchPatterns": [
+        "D'cota"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/dcota-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (D'cota)."
+    },
+    {
+      "id": "steinberg--groove-agent-3",
+      "manufacturerId": "steinberg",
+      "name": "Groove Agent 3",
+      "matchPatterns": [
+        "Groove Agent 3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/groove-agent-3-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (Groove Agent 3)."
+    },
+    {
+      "id": "steinberg--halion-player",
+      "manufacturerId": "steinberg",
+      "name": "HALion Player",
+      "matchPatterns": [
+        "HALion Player"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/halion-player-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (HALion Player)."
+    },
+    {
+      "id": "steinberg--halion-string-edition",
+      "manufacturerId": "steinberg",
+      "name": "HALion String Edition",
+      "matchPatterns": [
+        "HALion String Edition"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/halion-string-edition-by-steinberg",
+      "identity_kind": "soundset",
+      "notes_for_user": "Steinberg library/content (HALion String Edition)."
+    },
+    {
+      "id": "steinberg--lm-4",
+      "manufacturerId": "steinberg",
+      "name": "LM-4",
+      "matchPatterns": [
+        "LM-4"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/lm-4-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (LM-4)."
+    },
+    {
+      "id": "steinberg--loopmash",
+      "manufacturerId": "steinberg",
+      "name": "LoopMash",
+      "matchPatterns": [
+        "LoopMash"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/loopmash-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (LoopMash)."
+    },
+    {
+      "id": "steinberg--spectralayers-pro-7",
+      "manufacturerId": "steinberg",
+      "name": "SpectraLayers Pro 7",
+      "matchPatterns": [
+        "SpectraLayers Pro 7"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/spectralayers-pro-7-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (SpectraLayers Pro 7)."
+    },
+    {
+      "id": "steinberg--spectralayers-pro-8",
+      "manufacturerId": "steinberg",
+      "name": "SpectraLayers Pro 8",
+      "matchPatterns": [
+        "SpectraLayers Pro 8"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/spectralayers-pro-8-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (SpectraLayers Pro 8)."
+    },
+    {
+      "id": "steinberg--universal-sound-module",
+      "manufacturerId": "steinberg",
+      "name": "Universal Sound Module",
+      "matchPatterns": [
+        "Universal Sound Module"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/universal-sound-module-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (Universal Sound Module)."
+    },
+    {
+      "id": "steinberg--v-stack",
+      "manufacturerId": "steinberg",
+      "name": "V-Stack",
+      "matchPatterns": [
+        "V-Stack"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/v-stack-by-steinberg",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Steinberg DAW/editor/hub (V-Stack)."
+    },
+    {
+      "id": "steinberg--virtual-bassist",
+      "manufacturerId": "steinberg",
+      "name": "Virtual Bassist",
+      "matchPatterns": [
+        "Virtual Bassist"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/virtual-bassist-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (Virtual Bassist)."
+    },
+    {
+      "id": "steinberg--virtual-guitarist",
+      "manufacturerId": "steinberg",
+      "name": "Virtual Guitarist",
+      "matchPatterns": [
+        "Virtual Guitarist"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/virtual-guitarist-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (Virtual Guitarist)."
+    },
+    {
+      "id": "steinberg--virtual-guitarist-electric-edition",
+      "manufacturerId": "steinberg",
+      "name": "Virtual Guitarist Electric Edition",
+      "matchPatterns": [
+        "Virtual Guitarist Electric Edition"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/virtual_guitarist_electric_edition_by_steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (Virtual Guitarist Electric Edition)."
+    },
+    {
+      "id": "steinberg--xphraze",
+      "manufacturerId": "steinberg",
+      "name": "Xphraze",
+      "matchPatterns": [
+        "Xphraze"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/xphraze-by-steinberg",
+      "identity_kind": "discontinued",
+      "notes_for_user": "Legacy Steinberg title (Xphraze)."
+    },
+    {
+      "id": "steinberg--yamaha-vintage-channel-strip",
+      "manufacturerId": "steinberg",
+      "name": "Yamaha Vintage Channel Strip",
+      "matchPatterns": [
+        "Yamaha Vintage Channel Strip"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/yamaha-vintage-channel-strip-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--yamaha-vintage-open-deck",
+      "manufacturerId": "steinberg",
+      "name": "Yamaha Vintage Open Deck",
+      "matchPatterns": [
+        "Yamaha Vintage Open Deck"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/yamaha-vintage-open-deck-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "steinberg--yamaha-vintage-stomp-pack",
+      "manufacturerId": "steinberg",
+      "name": "Yamaha Vintage Stomp Pack",
+      "matchPatterns": [
+        "Yamaha Vintage Stomp Pack"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.steinberg.net/download/",
+      "identity_source": "kvr-developer-steinberg-2026-09-expand4",
+      "notes": "KVR product https://www.kvraudio.com/product/yamaha-vintage-stomp-pack-by-steinberg",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "waldorf--nave",
+      "manufacturerId": "waldorf",
+      "name": "Nave",
+      "matchPatterns": [
+        "Nave"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=nave",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "waldorf--lector",
+      "manufacturerId": "waldorf",
+      "name": "Lector",
+      "matchPatterns": [
+        "Lector"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=lector",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "waldorf--largo-2",
+      "manufacturerId": "waldorf",
+      "name": "Largo 2",
+      "matchPatterns": [
+        "Largo 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=largo-2",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "waldorf--attack-3",
+      "manufacturerId": "waldorf",
+      "name": "Attack 3",
+      "matchPatterns": [
+        "Attack 3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=attack-3",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--stereovault",
+      "manufacturerId": "mastering-the-mix",
+      "name": "STEREOVAULT",
+      "matchPatterns": [
+        "STEREOVAULT"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=stereovault",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--reference-3",
+      "manufacturerId": "mastering-the-mix",
+      "name": "REFERENCE 3",
+      "matchPatterns": [
+        "REFERENCE 3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=reference",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--animate",
+      "manufacturerId": "mastering-the-mix",
+      "name": "ANIMATE",
+      "matchPatterns": [
+        "ANIMATE"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=animate",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--levels",
+      "manufacturerId": "mastering-the-mix",
+      "name": "LEVELS",
+      "matchPatterns": [
+        "LEVELS"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=levels",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--reso",
+      "manufacturerId": "mastering-the-mix",
+      "name": "RESO",
+      "matchPatterns": [
+        "RESO"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=reso",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--bassroom",
+      "manufacturerId": "mastering-the-mix",
+      "name": "BASSROOM",
+      "matchPatterns": [
+        "BASSROOM"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=bassroom",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--fuser",
+      "manufacturerId": "mastering-the-mix",
+      "name": "FUSER",
+      "matchPatterns": [
+        "FUSER"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=fuser",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--mixroom",
+      "manufacturerId": "mastering-the-mix",
+      "name": "MIXROOM",
+      "matchPatterns": [
+        "MIXROOM"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=mixroom",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--faster-master",
+      "manufacturerId": "mastering-the-mix",
+      "name": "FASTER MASTER",
+      "matchPatterns": [
+        "FASTER MASTER"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=faster-master",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--expose-2",
+      "manufacturerId": "mastering-the-mix",
+      "name": "EXPOSE 2",
+      "matchPatterns": [
+        "EXPOSE 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/account",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=expose-2",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--oberheim-tvs-pro",
+      "manufacturerId": "gforce-software",
+      "name": "Oberheim TVS Pro",
+      "matchPatterns": [
+        "Oberheim TVS Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=oberheim-tvs-pro",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--novation-bass-station",
+      "manufacturerId": "gforce-software",
+      "name": "Novation Bass Station",
+      "matchPatterns": [
+        "Novation Bass Station"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=novation-bass-station",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--map",
+      "manufacturerId": "gforce-software",
+      "name": "MAP",
+      "matchPatterns": [
+        "MAP"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=map",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--oddity3",
+      "manufacturerId": "gforce-software",
+      "name": "Oddity3",
+      "matchPatterns": [
+        "Oddity3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=oddity3",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "krotos--igniter",
+      "manufacturerId": "krotos",
+      "name": "Igniter",
+      "matchPatterns": [
+        "Igniter"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.krotosaudio.com/my-account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=igniter",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--oberheim-dmx",
+      "manufacturerId": "gforce-software",
+      "name": "Oberheim DMX",
+      "matchPatterns": [
+        "Oberheim DMX"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=gforce-software-oberheim-dmx",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--axxess",
+      "manufacturerId": "gforce-software",
+      "name": "AXXESS",
+      "matchPatterns": [
+        "AXXESS"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=axxess",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--imposcar3",
+      "manufacturerId": "gforce-software",
+      "name": "impOSCar3",
+      "matchPatterns": [
+        "impOSCar3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=imposcar3",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--minimonsta2",
+      "manufacturerId": "gforce-software",
+      "name": "Minimonsta2",
+      "matchPatterns": [
+        "Minimonsta2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=minimonsta2",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--vsm-iv",
+      "manufacturerId": "gforce-software",
+      "name": "VSM IV",
+      "matchPatterns": [
+        "VSM IV"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=vsm-iv",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--icondrum",
+      "manufacturerId": "gforce-software",
+      "name": "IconDrum",
+      "matchPatterns": [
+        "IconDrum"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=icondrum",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "gforce-software--oberheim-ob-x",
+      "manufacturerId": "gforce-software",
+      "name": "Oberheim OB-X",
+      "matchPatterns": [
+        "Oberheim OB-X"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.gforcesoftware.com/account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=oberheim-ob-x",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "waldorf--streichfett",
+      "manufacturerId": "waldorf",
+      "name": "Streichfett",
+      "matchPatterns": [
+        "Streichfett"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=streichfett",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "waldorf--waldorf-edition-2",
+      "manufacturerId": "waldorf",
+      "name": "Waldorf Edition 2",
+      "matchPatterns": [
+        "Waldorf Edition 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=waldorf-edition-2",
+      "identity_kind": "bundle",
+      "notes_for_user": "Waldorf Edition pack (Waldorf Edition 2)."
+    },
+    {
+      "id": "waldorf--blofeld",
+      "manufacturerId": "waldorf",
+      "name": "Blofeld",
+      "matchPatterns": [
+        "Blofeld"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=blofeld",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "waldorf--microwave-1",
+      "manufacturerId": "waldorf",
+      "name": "Microwave 1",
+      "matchPatterns": [
+        "Microwave 1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://waldorfmusic.com/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=microwave-1",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-alliance--beatsurfing-7deadlysnares",
+      "manufacturerId": "plugin-alliance",
+      "name": "BEATSURFING 7DeadlySnares",
+      "matchPatterns": [
+        "BEATSURFING 7DeadlySnares",
+        "7DeadlySnares"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=7deadlysnares",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-alliance--beatsurfing-lunchtable",
+      "manufacturerId": "plugin-alliance",
+      "name": "BEATSURFING LunchTable",
+      "matchPatterns": [
+        "BEATSURFING LunchTable",
+        "LunchTable"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=lunchtable",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-alliance--beatsurfing-beatfader",
+      "manufacturerId": "plugin-alliance",
+      "name": "BEATSURFING beatfader",
+      "matchPatterns": [
+        "BEATSURFING beatfader",
+        "beatfader"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=beatfader",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-alliance--beatsurfing-cheat-code",
+      "manufacturerId": "plugin-alliance",
+      "name": "BEATSURFING CHEat Code",
+      "matchPatterns": [
+        "BEATSURFING CHEat Code",
+        "CHEat Code"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=cheat-code",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-alliance--beatsurfing-random-metal",
+      "manufacturerId": "plugin-alliance",
+      "name": "BEATSURFING RANDOM Metal",
+      "matchPatterns": [
+        "BEATSURFING RANDOM Metal",
+        "RANDOM Metal"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=random-metal",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "krotos--reformer-pro",
+      "manufacturerId": "krotos",
+      "name": "Reformer Pro",
+      "matchPatterns": [
+        "Reformer Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.krotosaudio.com/my-account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=reformer-pro",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-alliance--beatsurfing-random",
+      "manufacturerId": "plugin-alliance",
+      "name": "BEATSURFING RANDOM",
+      "matchPatterns": [
+        "BEATSURFING RANDOM",
+        "RANDOM"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=random",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "krotos--weaponiser-basic",
+      "manufacturerId": "krotos",
+      "name": "Weaponiser Basic",
+      "matchPatterns": [
+        "Weaponiser Basic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.krotosaudio.com/my-account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=krotos-weaponiser-basic",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "krotos--dehumaniser-2",
+      "manufacturerId": "krotos",
+      "name": "Dehumaniser 2",
+      "matchPatterns": [
+        "Dehumaniser 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.krotosaudio.com/my-account/",
+      "identity_source": "pa-products-json-2026-09-expand4",
+      "notes": "Plugin Alliance Shopify product handle=dehumaniser-2",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "crave-dsp--crave-eq",
+      "manufacturerId": "crave-dsp",
+      "name": "Crave EQ",
+      "matchPatterns": [
+        "Crave EQ",
+        "EQ"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://cravedsp.com/",
+      "identity_source": "expand4-shortname-mop",
+      "notes": "Restored after over-aggressive cross-mfr norm collision on short residual token",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "accentize--chameleon",
+      "manufacturerId": "accentize",
+      "name": "Chameleon",
+      "matchPatterns": [
+        "Chameleon"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.accentize.com/account/",
+      "identity_source": "expand4-shortname-mop",
+      "notes": "Restored after over-aggressive cross-mfr norm collision on short residual token",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "image-line--hardcore",
+      "manufacturerId": "image-line",
+      "name": "Hardcore",
+      "matchPatterns": [
+        "Hardcore"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4-mop",
+      "notes": "IL Hardcore FX; restored after short-name cross-mfr mop",
+      "identity_kind": "plugin"
+    }
+  ]
+}

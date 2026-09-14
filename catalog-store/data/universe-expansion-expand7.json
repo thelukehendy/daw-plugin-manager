@@ -1,0 +1,2242 @@
+{
+  "identity_source": "universe-expansion-expand7",
+  "methodology": "Universe expand 7: United Plugins commercial fill; FabFilter/PSP/sonible bundles; Voxengo PSquasher; Melda MSoundFactory Essentials; DISTRHO DPF/Ildaeil/Cardinal variants; Jalv + Mercurial Tones new mfrs; Cableguys CM; Soundtoys Academic/5; Eventide Blackhole; PA marketplace LIMITER + Ocelot Bundle; Surge first-class twins. Dedup vs DB. Identity-only — versions chipped separately for easy FOSS tags.",
+  "sources": [
+    "https://www.kvraudio.com/developer/united-plugins",
+    "https://www.kvraudio.com/developer/fabfilter",
+    "https://www.kvraudio.com/developer/pspaudioware",
+    "https://www.kvraudio.com/developer/sonible",
+    "https://www.voxengo.com/product/psquasher/",
+    "https://www.meldaproduction.com/sitemap.xml",
+    "https://github.com/DISTRHO/DPF-Plugins",
+    "https://github.com/DISTRHO/Ildaeil",
+    "https://github.com/DISTRHO/Cardinal",
+    "https://gitlab.com/drobilla/jalv/-/releases",
+    "https://shop.mercurialtones.com/products.json",
+    "https://www.plugin-alliance.com/products.json",
+    "https://www.soundtoys.com/products/",
+    "https://www.cableguys.com/products.html"
+  ],
+  "manufacturers": [
+    {
+      "id": "jalv",
+      "name": "Jalv",
+      "aliases": [
+        "David Robillard",
+        "drobilla",
+        "Jalv LV2"
+      ],
+      "websiteUrl": "https://drobilla.net/software/jalv.html",
+      "updatePortalUrl": "https://gitlab.com/drobilla/jalv/-/releases",
+      "notes": "FOSS LV2 host (Jalv); expand7."
+    },
+    {
+      "id": "mercurial-tones",
+      "name": "Mercurial Tones",
+      "aliases": [
+        "Mercer",
+        "Mercurial"
+      ],
+      "websiteUrl": "https://shop.mercurialtones.com/",
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "notes": "Swedish plugin house (Vanguard/Manta/Yasha/…); expand7."
+    }
+  ],
+  "plugins": [
+    {
+      "id": "united-plugins--autoformer",
+      "manufacturerId": "united-plugins",
+      "name": "Autoformer",
+      "matchPatterns": [
+        "Autoformer",
+        "Autoformer by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--bassment",
+      "manufacturerId": "united-plugins",
+      "name": "Bassment",
+      "matchPatterns": [
+        "Bassment",
+        "Bassment by Muramasa"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Muramasa",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Muramasa.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--bassrift",
+      "manufacturerId": "united-plugins",
+      "name": "BassRift",
+      "matchPatterns": [
+        "BassRift",
+        "BassRift by Instant Audio"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Instant Audio",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Instant Audio.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--bitpunk",
+      "manufacturerId": "united-plugins",
+      "name": "BITPUNK",
+      "matchPatterns": [
+        "BITPUNK",
+        "BITPUNK by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--biverb",
+      "manufacturerId": "united-plugins",
+      "name": "Biverb",
+      "matchPatterns": [
+        "Biverb",
+        "Biverb by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--continuum",
+      "manufacturerId": "united-plugins",
+      "name": "Continuum",
+      "matchPatterns": [
+        "Continuum",
+        "Continuum by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--cryostasis",
+      "manufacturerId": "united-plugins",
+      "name": "Cryostasis",
+      "matchPatterns": [
+        "Cryostasis",
+        "Cryostasis by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--cyberdrive",
+      "manufacturerId": "united-plugins",
+      "name": "Cyberdrive",
+      "matchPatterns": [
+        "Cyberdrive",
+        "Cyberdrive by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--darkfire",
+      "manufacturerId": "united-plugins",
+      "name": "DarkFire",
+      "matchPatterns": [
+        "DarkFire",
+        "DarkFire by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--difix",
+      "manufacturerId": "united-plugins",
+      "name": "DIFIX",
+      "matchPatterns": [
+        "DIFIX",
+        "DIFIX by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--dropkick",
+      "manufacturerId": "united-plugins",
+      "name": "Dropkick",
+      "matchPatterns": [
+        "Dropkick",
+        "Dropkick by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--duoflux",
+      "manufacturerId": "united-plugins",
+      "name": "Duoflux",
+      "matchPatterns": [
+        "Duoflux",
+        "Duoflux by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--electrum",
+      "manufacturerId": "united-plugins",
+      "name": "Electrum",
+      "matchPatterns": [
+        "Electrum",
+        "Electrum by Muramasa"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Muramasa",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Muramasa.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--expanse3d",
+      "manufacturerId": "united-plugins",
+      "name": "Expanse3D",
+      "matchPatterns": [
+        "Expanse3D",
+        "Expanse3D by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--firecobra",
+      "manufacturerId": "united-plugins",
+      "name": "FireCobra",
+      "matchPatterns": [
+        "FireCobra",
+        "FireCobra by FireSonic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "FireSonic",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: FireSonic.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--fireeq",
+      "manufacturerId": "united-plugins",
+      "name": "FireEQ",
+      "matchPatterns": [
+        "FireEQ",
+        "FireEQ by FireSonic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "FireSonic",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: FireSonic.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--firemaster",
+      "manufacturerId": "united-plugins",
+      "name": "FireMaster",
+      "matchPatterns": [
+        "FireMaster",
+        "FireMaster by FireSonic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "FireSonic",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: FireSonic.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--firemaximizer",
+      "manufacturerId": "united-plugins",
+      "name": "FireMaximizer",
+      "matchPatterns": [
+        "FireMaximizer",
+        "FireMaximizer by FireSonic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "FireSonic",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: FireSonic.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--firepreamp",
+      "manufacturerId": "united-plugins",
+      "name": "FirePreamp",
+      "matchPatterns": [
+        "FirePreamp",
+        "FirePreamp by FireSonic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "FireSonic",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: FireSonic.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--firesnareverb",
+      "manufacturerId": "united-plugins",
+      "name": "FireSnareVerb",
+      "matchPatterns": [
+        "FireSnareVerb",
+        "FireSnareVerb by FireSonic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "FireSonic",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: FireSonic.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--firespacer",
+      "manufacturerId": "united-plugins",
+      "name": "FireSpacer",
+      "matchPatterns": [
+        "FireSpacer",
+        "FireSpacer by FireSonic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "FireSonic",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: FireSonic.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--front-daw",
+      "manufacturerId": "united-plugins",
+      "name": "Front DAW",
+      "matchPatterns": [
+        "Front DAW",
+        "Front DAW by Soundevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Soundevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Soundevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--hyperspace",
+      "manufacturerId": "united-plugins",
+      "name": "Hyperspace",
+      "matchPatterns": [
+        "Hyperspace",
+        "Hyperspace by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--lofinity",
+      "manufacturerId": "united-plugins",
+      "name": "Lofinity",
+      "matchPatterns": [
+        "Lofinity",
+        "Lofinity by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--mastermind",
+      "manufacturerId": "united-plugins",
+      "name": "MasterMind",
+      "matchPatterns": [
+        "MasterMind",
+        "MasterMind by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--mirror",
+      "manufacturerId": "united-plugins",
+      "name": "Mirror",
+      "matchPatterns": [
+        "Mirror",
+        "Mirror by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--morphverb",
+      "manufacturerId": "united-plugins",
+      "name": "MorphVerb",
+      "matchPatterns": [
+        "MorphVerb",
+        "MorphVerb by Muramasa"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Muramasa",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Muramasa.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--nanopulse",
+      "manufacturerId": "united-plugins",
+      "name": "Nanopulse",
+      "matchPatterns": [
+        "Nanopulse",
+        "Nanopulse by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--orbitron",
+      "manufacturerId": "united-plugins",
+      "name": "Orbitron",
+      "matchPatterns": [
+        "Orbitron",
+        "Orbitron by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--phantomix",
+      "manufacturerId": "united-plugins",
+      "name": "Phantomix",
+      "matchPatterns": [
+        "Phantomix",
+        "Phantomix by Muramasa"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Muramasa",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Muramasa.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--plamen",
+      "manufacturerId": "united-plugins",
+      "name": "Plamen",
+      "matchPatterns": [
+        "Plamen",
+        "Plamen by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--pluralis",
+      "manufacturerId": "united-plugins",
+      "name": "Pluralis",
+      "matchPatterns": [
+        "Pluralis",
+        "Pluralis by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--quick-ag",
+      "manufacturerId": "united-plugins",
+      "name": "Quick AG",
+      "matchPatterns": [
+        "Quick AG",
+        "Quick AG by Instant Audio"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Instant Audio",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Instant Audio.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--quickbass",
+      "manufacturerId": "united-plugins",
+      "name": "QuickBass",
+      "matchPatterns": [
+        "QuickBass",
+        "QuickBass by Instant Audio"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Instant Audio",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Instant Audio.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--quickmuse",
+      "manufacturerId": "united-plugins",
+      "name": "QuickMuse",
+      "matchPatterns": [
+        "QuickMuse",
+        "QuickMuse by InstantAudio"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "InstantAudio",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: InstantAudio.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--quickvox",
+      "manufacturerId": "united-plugins",
+      "name": "QuickVox",
+      "matchPatterns": [
+        "QuickVox",
+        "QuickVox by Instant Audio"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Instant Audio",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Instant Audio.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--randomachine",
+      "manufacturerId": "united-plugins",
+      "name": "Randomachine",
+      "matchPatterns": [
+        "Randomachine",
+        "Randomachine by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--relooper",
+      "manufacturerId": "united-plugins",
+      "name": "Relooper",
+      "matchPatterns": [
+        "Relooper",
+        "Relooper By JMG Sound",
+        "Relooper by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--retronaut",
+      "manufacturerId": "united-plugins",
+      "name": "Retronaut",
+      "matchPatterns": [
+        "Retronaut",
+        "Retronaut by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--subbass-doctor-808",
+      "manufacturerId": "united-plugins",
+      "name": "SubBass Doctor 808",
+      "matchPatterns": [
+        "SubBass Doctor 808",
+        "SubBass Doctor 808 by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--transmutator",
+      "manufacturerId": "united-plugins",
+      "name": "Transmutator",
+      "matchPatterns": [
+        "Transmutator",
+        "Transmutator by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--traptune",
+      "manufacturerId": "united-plugins",
+      "name": "TrapTune",
+      "matchPatterns": [
+        "TrapTune",
+        "TrapTune by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--unichannel",
+      "manufacturerId": "united-plugins",
+      "name": "UniChannel",
+      "matchPatterns": [
+        "UniChannel",
+        "UniChannel By SounDevice Digital",
+        "UniChannel by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--verbum-entropic-hall",
+      "manufacturerId": "united-plugins",
+      "name": "Verbum Entropic Hall",
+      "matchPatterns": [
+        "Verbum Entropic Hall",
+        "Verbum Entropic Hall by Soundevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Soundevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: Soundevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--voxessor",
+      "manufacturerId": "united-plugins",
+      "name": "Voxessor",
+      "matchPatterns": [
+        "Voxessor",
+        "Voxessor by SounDevice Digital"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "SounDevice Digital",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: SounDevice Digital.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "united-plugins--widefire",
+      "manufacturerId": "united-plugins",
+      "name": "WideFire",
+      "matchPatterns": [
+        "WideFire",
+        "WideFire by JMG Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "JMG Sound",
+      "updatePortalUrl": "https://unitedplugins.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "United Plugins commercial; KVR; expand7. Sub-brand: JMG Sound.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "fabfilter--fabfilter-creative-bundle",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Creative Bundle",
+      "matchPatterns": [
+        "FabFilter Creative Bundle",
+        "Creative Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fabfilter.com/support",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "FabFilter marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "fabfilter--fabfilter-essentials-bundle",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Essentials Bundle",
+      "matchPatterns": [
+        "FabFilter Essentials Bundle",
+        "Essentials Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fabfilter.com/support",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "FabFilter marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "fabfilter--fabfilter-fx-bundle",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter FX Bundle",
+      "matchPatterns": [
+        "FabFilter FX Bundle",
+        "FX Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fabfilter.com/support",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "FabFilter marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "fabfilter--fabfilter-mastering-bundle",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Mastering Bundle",
+      "matchPatterns": [
+        "FabFilter Mastering Bundle",
+        "Mastering Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fabfilter.com/support",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "FabFilter marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "fabfilter--fabfilter-mixing-bundle",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Mixing Bundle",
+      "matchPatterns": [
+        "FabFilter Mixing Bundle",
+        "Mixing Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fabfilter.com/support",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "FabFilter marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "fabfilter--fabfilter-pro-bundle",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Pro Bundle",
+      "matchPatterns": [
+        "FabFilter Pro Bundle",
+        "Pro Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fabfilter.com/support",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "FabFilter marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "fabfilter--fabfilter-total-bundle",
+      "manufacturerId": "fabfilter",
+      "name": "FabFilter Total Bundle",
+      "matchPatterns": [
+        "FabFilter Total Bundle",
+        "Total Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fabfilter.com/support",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "FabFilter marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-delay-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP Delay Bundle",
+      "matchPatterns": [
+        "PSP Delay Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-fx-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP FX Bundle",
+      "matchPatterns": [
+        "PSP FX Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-master-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP Master Bundle",
+      "matchPatterns": [
+        "PSP Master Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-reverb-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP Reverb Bundle",
+      "matchPatterns": [
+        "PSP Reverb Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-signature-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP Signature Bundle",
+      "matchPatterns": [
+        "PSP Signature Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-totalpack",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP TotalPack",
+      "matchPatterns": [
+        "PSP TotalPack"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-ultimate-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP Ultimate Bundle",
+      "matchPatterns": [
+        "PSP Ultimate Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-vintage-dynamic-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP Vintage Dynamic Bundle",
+      "matchPatterns": [
+        "PSP Vintage Dynamic Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-vintageeq-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP VintageEQ Bundle",
+      "matchPatterns": [
+        "PSP VintageEQ Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "psp-audioware--psp-25th-anniversary-bundle",
+      "manufacturerId": "psp-audioware",
+      "name": "PSP 25th Anniversary Bundle",
+      "matchPatterns": [
+        "PSP 25th Anniversary Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pspaudioware.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "PSP Audioware marketing bundle; KVR/manufacturer; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--dynamics-bundle",
+      "manufacturerId": "sonible",
+      "name": "Dynamics Bundle",
+      "matchPatterns": [
+        "Dynamics Bundle",
+        "sonible Dynamics Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--metering-bundle",
+      "manufacturerId": "sonible",
+      "name": "Metering Bundle",
+      "matchPatterns": [
+        "Metering Bundle",
+        "sonible Metering Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--pure-bundle",
+      "manufacturerId": "sonible",
+      "name": "pure:bundle",
+      "matchPatterns": [
+        "pure:bundle",
+        "sonible pure:bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--smart-bundle",
+      "manufacturerId": "sonible",
+      "name": "smart:bundle",
+      "matchPatterns": [
+        "smart:bundle",
+        "sonible smart:bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--smart-essentials-bundle",
+      "manufacturerId": "sonible",
+      "name": "smart:essentials bundle",
+      "matchPatterns": [
+        "smart:essentials bundle",
+        "sonible smart:essentials bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--studio-bundle",
+      "manufacturerId": "sonible",
+      "name": "Studio Bundle",
+      "matchPatterns": [
+        "Studio Bundle",
+        "sonible Studio Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--vocal-bundle",
+      "manufacturerId": "sonible",
+      "name": "vocal:bundle",
+      "matchPatterns": [
+        "vocal:bundle",
+        "sonible vocal:bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--special-eq-bundle",
+      "manufacturerId": "sonible",
+      "name": "Special EQ Bundle",
+      "matchPatterns": [
+        "Special EQ Bundle",
+        "sonible Special EQ Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "sonible--learn-bundle",
+      "manufacturerId": "sonible",
+      "name": "learn:bundle",
+      "matchPatterns": [
+        "learn:bundle",
+        "sonible learn:bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.sonible.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "sonible marketing bundle; KVR; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "voxengo--psquasher",
+      "manufacturerId": "voxengo",
+      "name": "PSquasher",
+      "matchPatterns": [
+        "PSquasher",
+        "Voxengo PSquasher",
+        "P Squasher"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.voxengo.com/product/psquasher/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Voxengo product-page gap; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "meldaproduction--msoundfactory-essentials",
+      "manufacturerId": "meldaproduction",
+      "name": "MSoundFactory Essentials",
+      "matchPatterns": [
+        "MSoundFactory Essentials",
+        "MSoundFactoryEssentials"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.meldaproduction.com/MSoundFactoryEssentials",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Melda sitemap product; expand7.",
+      "identity_kind": "soundset"
+    },
+    {
+      "id": "distrho--glbars",
+      "manufacturerId": "distrho",
+      "name": "glBars",
+      "matchPatterns": [
+        "glBars"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--kars",
+      "manufacturerId": "distrho",
+      "name": "Kars",
+      "matchPatterns": [
+        "Kars"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--mabitcrush",
+      "manufacturerId": "distrho",
+      "name": "MaBitcrush",
+      "matchPatterns": [
+        "MaBitcrush"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--mafreeverb",
+      "manufacturerId": "distrho",
+      "name": "MaFreeverb",
+      "matchPatterns": [
+        "MaFreeverb"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--magigaverb",
+      "manufacturerId": "distrho",
+      "name": "MaGigaverb",
+      "matchPatterns": [
+        "MaGigaverb"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--mapitchshift",
+      "manufacturerId": "distrho",
+      "name": "MaPitchshift",
+      "matchPatterns": [
+        "MaPitchshift"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--3bandsplitter",
+      "manufacturerId": "distrho",
+      "name": "3BandSplitter",
+      "matchPatterns": [
+        "3BandSplitter"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--pingpongpan",
+      "manufacturerId": "distrho",
+      "name": "PingPongPan",
+      "matchPatterns": [
+        "PingPongPan"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--amplitude-imposer",
+      "manufacturerId": "distrho",
+      "name": "Amplitude Imposer",
+      "matchPatterns": [
+        "Amplitude Imposer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--cycle-shifter",
+      "manufacturerId": "distrho",
+      "name": "Cycle Shifter",
+      "matchPatterns": [
+        "Cycle Shifter"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--soul-force",
+      "manufacturerId": "distrho",
+      "name": "Soul Force",
+      "matchPatterns": [
+        "Soul Force"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--nekobi",
+      "manufacturerId": "distrho",
+      "name": "Nekobi",
+      "matchPatterns": [
+        "Nekobi"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--prom",
+      "manufacturerId": "distrho",
+      "name": "ProM",
+      "matchPatterns": [
+        "ProM"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO DPF-Plugins pack; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--ildaeil",
+      "manufacturerId": "distrho",
+      "name": "Ildaeil",
+      "matchPatterns": [
+        "Ildaeil"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/Ildaeil/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "DISTRHO plugin host inside Cardinal/Carla lineage; expand7.",
+      "identity_kind": "hub_app",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--cardinal-synth",
+      "manufacturerId": "distrho",
+      "name": "Cardinal Synth",
+      "matchPatterns": [
+        "Cardinal Synth"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "LV2",
+        "CLAP"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/Cardinal/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Cardinal instrument variant; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--cardinal-fx",
+      "manufacturerId": "distrho",
+      "name": "Cardinal FX",
+      "matchPatterns": [
+        "Cardinal FX"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "LV2",
+        "CLAP"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/Cardinal/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Cardinal FX variant; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--cardinal-mini",
+      "manufacturerId": "distrho",
+      "name": "Cardinal Mini",
+      "matchPatterns": [
+        "Cardinal Mini"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "LV2",
+        "CLAP"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/Cardinal/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Optional Cardinal Mini packaging name; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "jalv--jalv",
+      "manufacturerId": "jalv",
+      "name": "Jalv",
+      "matchPatterns": [
+        "Jalv",
+        "jalv",
+        "jalv.gtk",
+        "jalv.qt"
+      ],
+      "formats": [
+        "Standalone"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://gitlab.com/drobilla/jalv/-/releases",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Jalv LV2 host; expand7.",
+      "identity_kind": "hub_app",
+      "isFreeware": true
+    },
+    {
+      "id": "mercurial-tones--vanguard",
+      "manufacturerId": "mercurial-tones",
+      "name": "Vanguard",
+      "matchPatterns": [
+        "Vanguard",
+        "Mercurial Tones Vanguard",
+        "Mercurial Vanguard"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--yasha",
+      "manufacturerId": "mercurial-tones",
+      "name": "Yasha",
+      "matchPatterns": [
+        "Yasha",
+        "Mercurial Tones Yasha",
+        "Mercurial Yasha"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--scepter",
+      "manufacturerId": "mercurial-tones",
+      "name": "Scepter",
+      "matchPatterns": [
+        "Scepter",
+        "Mercurial Tones Scepter",
+        "Mercurial Scepter"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--janggo",
+      "manufacturerId": "mercurial-tones",
+      "name": "Janggo",
+      "matchPatterns": [
+        "Janggo",
+        "Mercurial Tones Janggo",
+        "Mercurial Janggo"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--janggo-pro",
+      "manufacturerId": "mercurial-tones",
+      "name": "Janggo Pro",
+      "matchPatterns": [
+        "Janggo Pro",
+        "Mercurial Tones Janggo Pro",
+        "Mercurial Janggo Pro"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--shard",
+      "manufacturerId": "mercurial-tones",
+      "name": "Shard",
+      "matchPatterns": [
+        "Shard",
+        "Mercurial Tones Shard",
+        "Mercurial Shard"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--tether",
+      "manufacturerId": "mercurial-tones",
+      "name": "Tether",
+      "matchPatterns": [
+        "Tether",
+        "Mercurial Tones Tether",
+        "Mercurial Tether"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--dagon",
+      "manufacturerId": "mercurial-tones",
+      "name": "Dagon",
+      "matchPatterns": [
+        "Dagon",
+        "Mercurial Tones Dagon",
+        "Mercurial Dagon"
+      ],
+      "formats": [
+        "VST3",
+        "AU"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones shop product; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mercurial-tones--mirage-modern-vocals-vol-i",
+      "manufacturerId": "mercurial-tones",
+      "name": "Mirage — Modern Vocals Vol. I",
+      "matchPatterns": [
+        "Mirage — Modern Vocals Vol. I"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones sample/preset pack; expand7.",
+      "identity_kind": "soundset"
+    },
+    {
+      "id": "mercurial-tones--react",
+      "manufacturerId": "mercurial-tones",
+      "name": "REACT",
+      "matchPatterns": [
+        "REACT"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://shop.mercurialtones.com/account",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mercurial Tones sample/preset pack; expand7.",
+      "identity_kind": "soundset"
+    },
+    {
+      "id": "cableguys--curve-2-cm",
+      "manufacturerId": "cableguys",
+      "name": "Curve 2 CM",
+      "matchPatterns": [
+        "Curve 2 CM",
+        "Curve 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.cableguys.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Cableguys Computer Music giveaway; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "cableguys--waveshaper-cm",
+      "manufacturerId": "cableguys",
+      "name": "WaveShaper CM",
+      "matchPatterns": [
+        "WaveShaper CM",
+        "WaveShaper"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.cableguys.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Cableguys Computer Music giveaway; expand7.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "soundtoys--soundtoys-5",
+      "manufacturerId": "soundtoys",
+      "name": "Soundtoys 5",
+      "matchPatterns": [
+        "Soundtoys 5"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundtoys.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Soundtoys manufacturer product-list fill; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "soundtoys--academic-bundle",
+      "manufacturerId": "soundtoys",
+      "name": "Academic Bundle",
+      "matchPatterns": [
+        "Academic Bundle",
+        "Soundtoys Academic Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundtoys.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Soundtoys manufacturer product-list fill; expand7.",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "eventide--blackhole",
+      "manufacturerId": "eventide",
+      "name": "Blackhole",
+      "matchPatterns": [
+        "Blackhole",
+        "Eventide Blackhole"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.eventideaudio.com/plug-ins/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Eventide Blackhole standalone (distinct from H9 Series / Immersive); expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "mastering-the-mix--limiter",
+      "manufacturerId": "mastering-the-mix",
+      "name": "LIMITER",
+      "matchPatterns": [
+        "LIMITER",
+        "Mastering The Mix LIMITER",
+        "MTM LIMITER"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.masteringthemix.com/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Mastering The Mix; PA marketplace products.json; expand7.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "fuse-audio-labs--ocelot-bundle",
+      "manufacturerId": "fuse-audio-labs",
+      "name": "Ocelot Bundle",
+      "matchPatterns": [
+        "Ocelot Bundle",
+        "OCELOT Bundle",
+        "Fuse Ocelot Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://fuseaudiolabs.de/",
+      "identity_source": "universe-expansion-expand7",
+      "notes": "Fuse Ocelot suite bundle; PA marketplace; expand7.",
+      "identity_kind": "bundle"
+    }
+  ]
+}

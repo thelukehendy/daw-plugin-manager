@@ -1,0 +1,4508 @@
+{
+  "identity_source": "universe-expansion-expand5",
+  "methodology": "Identity-only universe expand batch 5. Prefer FOSS + XLN Audio + Modartt + Ignite/STL/ML Sound Lab/Two notes + Spitfire/EastWest soundset-or-bundle fills. New manufacturers: modartt, ignite-amps, stl-tones, ml-sound-lab, two-notes, fractal-audio, plugin-boutique, sample-magic, garritan, matt-tytel, thewavewarden, brain-control, dexed, distrho, jean-pierre-cimalando, headrush. XLN AdPaks/XOpaks → expansion; Keys instruments → soundset; hubs → hub_app. Ignite owns freeware amp sims; STL owns ToneHub/AmpHub/Tonality (cross-dedup). Two notes curated (KVR empty, site 403) — no DynIR SKU explosion. FOSS first-class twins of OAS rows (cross_mfr_dedup off for twins). Skipped: loopmasters, airwindows (dense), faold/minimal-system (empty KVR), boss tone studio (sparse), neural (dense), guitar-rig/amplitube/helix already. No invented versions.",
+  "sources": [
+    "https://www.kvraudio.com/developer/XLN-Audio",
+    "https://www.kvraudio.com/developer/Modartt",
+    "https://www.kvraudio.com/developer/Ignite-Amps",
+    "https://www.kvraudio.com/developer/STL-Tones",
+    "https://www.kvraudio.com/developer/ML-Sound-Lab",
+    "https://www.kvraudio.com/developer/Fractal-Audio-Systems",
+    "https://www.kvraudio.com/developer/Plugin-Boutique",
+    "https://www.kvraudio.com/developer/Sample-Magic",
+    "https://www.kvraudio.com/developer/Garritan",
+    "https://www.kvraudio.com/developer/Spitfire-Audio",
+    "https://www.kvraudio.com/developer/EastWest",
+    "https://www.kvraudio.com/developer/Eventide",
+    "https://www.kvraudio.com/developer/AudioThing",
+    "https://www.kvraudio.com/developer/HeadRush",
+    "https://www.two-notes.com/en/ (curated; fetch blocked)",
+    "https://www.fractalaudio.com/ (curated editors/hardware)",
+    "OAS twins for FOSS (Helm/Odin2/Tunefish/Dexed/Cardinal/ADLplug)"
+  ],
+  "manufacturers": [
+    {
+      "id": "modartt",
+      "name": "Modartt",
+      "aliases": [
+        "Pianoteq",
+        "Organteq"
+      ],
+      "websiteUrl": "https://www.modartt.com",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "notes": "Pianoteq / Organteq physical modeling; identity from KVR; expand5."
+    },
+    {
+      "id": "ignite-amps",
+      "name": "Ignite Amps",
+      "aliases": [
+        "IgniteAmps"
+      ],
+      "websiteUrl": "https://www.igniteamps.com",
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "notes": "Freeware amp sims + STL collab tooling; expand5."
+    },
+    {
+      "id": "stl-tones",
+      "name": "STL Tones",
+      "aliases": [
+        "STL Tones",
+        "STLToneHub"
+      ],
+      "websiteUrl": "https://www.stltones.com",
+      "updatePortalUrl": "https://www.stltones.com/account",
+      "notes": "ToneHub / AmpHub / Libra / Tonality; expand5."
+    },
+    {
+      "id": "ml-sound-lab",
+      "name": "ML Sound Lab",
+      "aliases": [
+        "MLSoundLab",
+        "ML SoundLab"
+      ],
+      "websiteUrl": "https://www.mlsoundlab.com",
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "notes": "Amped / MIKKO / Wavebreaker; expand5."
+    },
+    {
+      "id": "two-notes",
+      "name": "Two notes",
+      "aliases": [
+        "Two Notes Audio Engineering",
+        "Two-Notes"
+      ],
+      "websiteUrl": "https://www.two-notes.com",
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "notes": "GENOME / Torpedo Wall of Sound / DynIR; curated software+hardware; expand5."
+    },
+    {
+      "id": "fractal-audio",
+      "name": "Fractal Audio Systems",
+      "aliases": [
+        "Fractal Audio",
+        "Fractal"
+      ],
+      "websiteUrl": "https://www.fractalaudio.com",
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "notes": "Axe-Fx III / FM3 / FM9 editors + Cab-Lab; expand5."
+    },
+    {
+      "id": "plugin-boutique",
+      "name": "Plugin Boutique",
+      "aliases": [
+        "PluginBoutique",
+        "Scaler Music"
+      ],
+      "websiteUrl": "https://www.pluginboutique.com",
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "notes": "Exclusive PB brands (Scaler, Carbon Electra, BigKick, etc.); not Loopmasters; expand5."
+    },
+    {
+      "id": "sample-magic",
+      "name": "Sample Magic",
+      "aliases": [
+        "SampleMagic"
+      ],
+      "websiteUrl": "https://www.samplemagic.com",
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "notes": "Magic AB / Boost / Klip + select soundsets; expand5."
+    },
+    {
+      "id": "garritan",
+      "name": "Garritan",
+      "aliases": [
+        "MakeMusic Garritan",
+        "GPO"
+      ],
+      "websiteUrl": "https://www.garritan.com",
+      "updatePortalUrl": "https://www.garritan.com/",
+      "notes": "Personal Orchestra / ARIA / band libraries; expand5."
+    },
+    {
+      "id": "matt-tytel",
+      "name": "Matt Tytel",
+      "aliases": [
+        "TyTel",
+        "Helm"
+      ],
+      "websiteUrl": "https://tytel.org",
+      "updatePortalUrl": "https://tytel.org/helm/",
+      "notes": "FOSS Helm synthesizer; first-class twin of OAS matt-tytel; expand5."
+    },
+    {
+      "id": "thewavewarden",
+      "name": "TheWaveWarden",
+      "aliases": [
+        "The Wave Warden",
+        "Odin 2"
+      ],
+      "websiteUrl": "https://www.thewavewarden.com",
+      "updatePortalUrl": "https://www.thewavewarden.com/",
+      "notes": "FOSS Odin 2; first-class twin of OAS thewavewarden; expand5."
+    },
+    {
+      "id": "brain-control",
+      "name": "Brain Control",
+      "aliases": [
+        "BrainControl",
+        "Tunefish"
+      ],
+      "websiteUrl": "https://www.braincontrol.org",
+      "updatePortalUrl": "https://www.braincontrol.org/",
+      "notes": "FOSS Tunefish; first-class twin of OAS brain-control; expand5."
+    },
+    {
+      "id": "dexed",
+      "name": "Dexed",
+      "aliases": [
+        "Pascal Gauthier",
+        "asb2m10"
+      ],
+      "websiteUrl": "https://asb2m10.github.io/dexed/",
+      "updatePortalUrl": "https://asb2m10.github.io/dexed/",
+      "notes": "FOSS DX7-style synth; first-class twin of OAS pascal-gauthier; expand5."
+    },
+    {
+      "id": "distrho",
+      "name": "DISTRHO",
+      "aliases": [
+        "Cardinal",
+        "DISTRHO Cardinal"
+      ],
+      "websiteUrl": "https://github.com/DISTRHO/Cardinal",
+      "updatePortalUrl": "https://github.com/DISTRHO/Cardinal/releases",
+      "notes": "FOSS Cardinal modular; first-class twin of OAS distrho; expand5."
+    },
+    {
+      "id": "jean-pierre-cimalando",
+      "name": "Jean Pierre Cimalando",
+      "aliases": [
+        "jpcima",
+        "ADLplug"
+      ],
+      "websiteUrl": "https://github.com/jpcima/ADLplug",
+      "updatePortalUrl": "https://github.com/jpcima/ADLplug/releases",
+      "notes": "FOSS ADLplug / OPNplug; first-class twin of OAS; expand5."
+    },
+    {
+      "id": "headrush",
+      "name": "HeadRush",
+      "aliases": [
+        "HeadRush by inMusic",
+        "ReValver"
+      ],
+      "websiteUrl": "https://www.headrushfx.com",
+      "updatePortalUrl": "https://www.headrushfx.com/downloads/",
+      "notes": "HeadRush hardware + ReValver software; expand5."
+    }
+  ],
+  "plugins": [
+    {
+      "id": "xln-audio--addictive-drums",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums",
+      "matchPatterns": [
+        "Addictive Drums"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--addictive-drums-2-dead-and-dry-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums 2: Dead & Dry Collection",
+      "matchPatterns": [
+        "Addictive Drums 2: Dead & Dry Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-2-dead-and-dry-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Addictive Drums 2: Dead & Dry Collection)."
+    },
+    {
+      "id": "xln-audio--addictive-drums-2-modern-heavy-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums 2: Modern Heavy AdPak",
+      "matchPatterns": [
+        "Addictive Drums 2: Modern Heavy AdPak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-2-modern-heavy-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Addictive Drums 2: Modern Heavy AdPak)."
+    },
+    {
+      "id": "xln-audio--addictive-keys",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Keys",
+      "matchPatterns": [
+        "Addictive Keys"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Keys",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-keys-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--addictive-keys-duo-bundle",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Keys Duo Bundle",
+      "matchPatterns": [
+        "Addictive Keys Duo Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Keys",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-keys-duo-bundle-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Addictive Keys Duo Bundle)."
+    },
+    {
+      "id": "xln-audio--addictive-keys-electric-grand",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Keys Electric Grand",
+      "matchPatterns": [
+        "Addictive Keys Electric Grand"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Keys",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-keys-electric-grand-by-xln-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Addictive Keys instrument library (Addictive Keys Electric Grand)."
+    },
+    {
+      "id": "xln-audio--addictive-keys-mark-one",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Keys Mark One",
+      "matchPatterns": [
+        "Addictive Keys Mark One"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Keys",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-keys-mark-one-by-xln-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Addictive Keys instrument library (Addictive Keys Mark One)."
+    },
+    {
+      "id": "xln-audio--addictive-keys-modern-upright",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Keys Modern Upright",
+      "matchPatterns": [
+        "Addictive Keys Modern Upright"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Keys",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-keys-modern-upright-by-xln-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Addictive Keys instrument library (Addictive Keys Modern Upright)."
+    },
+    {
+      "id": "xln-audio--addictive-keys-studio-grand",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Keys Studio Grand",
+      "matchPatterns": [
+        "Addictive Keys Studio Grand"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Keys",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-keys-studio-grand-by-xln-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Addictive Keys instrument library (Addictive Keys Studio Grand)."
+    },
+    {
+      "id": "xln-audio--addictive-keys-trio-bundle",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Keys Trio Bundle",
+      "matchPatterns": [
+        "Addictive Keys Trio Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Keys",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-keys-trio-bundle-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Addictive Keys Trio Bundle)."
+    },
+    {
+      "id": "xln-audio--addictive-trigger",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Trigger",
+      "matchPatterns": [
+        "Addictive Trigger"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-trigger-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--addictive-trigger-drum-vault-bundle",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Trigger + Drum Vault Bundle",
+      "matchPatterns": [
+        "Addictive Trigger + Drum Vault Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-trigger-and-drum-vault-bundle-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Addictive Trigger + Drum Vault Bundle)."
+    },
+    {
+      "id": "xln-audio--black-oyster",
+      "manufacturerId": "xln-audio",
+      "name": "Black Oyster",
+      "matchPatterns": [
+        "Black Oyster"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/black-oyster-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Black Oyster)."
+    },
+    {
+      "id": "xln-audio--black-velvet",
+      "manufacturerId": "xln-audio",
+      "name": "Black Velvet",
+      "matchPatterns": [
+        "Black Velvet"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/black-velvet-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Black Velvet)."
+    },
+    {
+      "id": "xln-audio--blue-oyster",
+      "manufacturerId": "xln-audio",
+      "name": "Blue Oyster",
+      "matchPatterns": [
+        "Blue Oyster"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/blue-oyster-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Blue Oyster)."
+    },
+    {
+      "id": "xln-audio--boutique-mallets-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Boutique Mallets ADpak",
+      "matchPatterns": [
+        "Boutique Mallets ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/boutique-mallets-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Boutique Mallets ADpak)."
+    },
+    {
+      "id": "xln-audio--breaks-and-beats-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Breaks & Beats Collection",
+      "matchPatterns": [
+        "Breaks & Beats Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/breaks-and-beats-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Breaks & Beats Collection)."
+    },
+    {
+      "id": "xln-audio--classic-rock-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Classic Rock Collection",
+      "matchPatterns": [
+        "Classic Rock Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/classic-rock-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Classic Rock Collection)."
+    },
+    {
+      "id": "xln-audio--custom-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Custom Collection",
+      "matchPatterns": [
+        "Custom Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/custom-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Custom Collection)."
+    },
+    {
+      "id": "xln-audio--custom-xl-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Custom XL Collection",
+      "matchPatterns": [
+        "Custom XL Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/custom-xl-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Custom XL Collection)."
+    },
+    {
+      "id": "xln-audio--custom-xxl-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Custom XXL Collection",
+      "matchPatterns": [
+        "Custom XXL Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/custom-xxl-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Custom XXL Collection)."
+    },
+    {
+      "id": "xln-audio--db-30-drum-butter",
+      "manufacturerId": "xln-audio",
+      "name": "DB-30 Drum Butter",
+      "matchPatterns": [
+        "DB-30 Drum Butter"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/db-30-drum-butter-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--drum-vault-trig-pak",
+      "manufacturerId": "xln-audio",
+      "name": "Drum Vault Trig Pak",
+      "matchPatterns": [
+        "Drum Vault Trig Pak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/drum-vault-trig-pak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Drum Vault Trig Pak)."
+    },
+    {
+      "id": "xln-audio--fairfax-vol-1-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Fairfax Vol 1 ADpak",
+      "matchPatterns": [
+        "Fairfax Vol 1 ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/fairfax-vol-1-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Fairfax Vol 1 ADpak)."
+    },
+    {
+      "id": "xln-audio--fairfax-vol-2-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Fairfax Vol 2 ADpak",
+      "matchPatterns": [
+        "Fairfax Vol 2 ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/fairfax-vol-2-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Fairfax Vol 2 ADpak)."
+    },
+    {
+      "id": "xln-audio--funk-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Funk ADpak",
+      "matchPatterns": [
+        "Funk ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/funk-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Funk ADpak)."
+    },
+    {
+      "id": "xln-audio--heavy-rock-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Heavy Rock Collection",
+      "matchPatterns": [
+        "Heavy Rock Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/heavy-rock-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Heavy Rock Collection)."
+    },
+    {
+      "id": "xln-audio--hip-hop-and-gospel-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Hip Hop and Gospel ADpak",
+      "matchPatterns": [
+        "Hip Hop and Gospel ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hip-hop-and-gospel-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Hip Hop and Gospel ADpak)."
+    },
+    {
+      "id": "xln-audio--indie-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Indie ADpak",
+      "matchPatterns": [
+        "Indie ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/indie-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Indie ADpak)."
+    },
+    {
+      "id": "xln-audio--jazz-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Jazz Collection",
+      "matchPatterns": [
+        "Jazz Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/jazz-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Jazz Collection)."
+    },
+    {
+      "id": "xln-audio--k-pop-xo-expansion",
+      "manufacturerId": "xln-audio",
+      "name": "K-Pop - XO Expansion",
+      "matchPatterns": [
+        "K-Pop - XO Expansion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/k-pop---xo-expansion-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (K-Pop - XO Expansion)."
+    },
+    {
+      "id": "xln-audio--life",
+      "manufacturerId": "xln-audio",
+      "name": "Life",
+      "matchPatterns": [
+        "Life"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/life-by-xln-audio",
+      "identity_kind": "hub_app",
+      "notes_for_user": "XLN Life."
+    },
+    {
+      "id": "xln-audio--life-daw-recorder",
+      "manufacturerId": "xln-audio",
+      "name": "Life DAW Recorder",
+      "matchPatterns": [
+        "Life DAW Recorder"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/life-daw-recorder-by-xln-audio",
+      "identity_kind": "hub_app",
+      "notes_for_user": "XLN Life DAW recorder utility."
+    },
+    {
+      "id": "xln-audio--lo-fi-beats-xo-expansion",
+      "manufacturerId": "xln-audio",
+      "name": "Lo-Fi Beats - XO Expansion",
+      "matchPatterns": [
+        "Lo-Fi Beats - XO Expansion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/lo-fi-beats---xo-expansion-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Lo-Fi Beats - XO Expansion)."
+    },
+    {
+      "id": "xln-audio--metal-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Metal ADpak",
+      "matchPatterns": [
+        "Metal ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/metal-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Metal ADpak)."
+    },
+    {
+      "id": "xln-audio--metal-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Metal Collection",
+      "matchPatterns": [
+        "Metal Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/metal-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Metal Collection)."
+    },
+    {
+      "id": "xln-audio--modern-jazz-brushes-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Modern Jazz Brushes ADpak",
+      "matchPatterns": [
+        "Modern Jazz Brushes ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/modern-jazz-brushes-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Modern Jazz Brushes ADpak)."
+    },
+    {
+      "id": "xln-audio--modern-jazz-sticks-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Modern Jazz Sticks ADpak",
+      "matchPatterns": [
+        "Modern Jazz Sticks ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/modern-jazz-sticks-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Modern Jazz Sticks ADpak)."
+    },
+    {
+      "id": "xln-audio--modern-soul-and-r-and-b",
+      "manufacturerId": "xln-audio",
+      "name": "Modern Soul And R&B",
+      "matchPatterns": [
+        "Modern Soul And R&B"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/modern-soul-and-r-and-b-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Modern Soul And R&B)."
+    },
+    {
+      "id": "xln-audio--percussion-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Percussion Collection",
+      "matchPatterns": [
+        "Percussion Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/percussion-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Percussion Collection)."
+    },
+    {
+      "id": "xln-audio--pop-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Pop Collection",
+      "matchPatterns": [
+        "Pop Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pop-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Pop Collection)."
+    },
+    {
+      "id": "xln-audio--reel-machines-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Reel Machines ADpak",
+      "matchPatterns": [
+        "Reel Machines ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/reel-machines-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Reel Machines ADpak)."
+    },
+    {
+      "id": "xln-audio--retroplex-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Retroplex ADpak",
+      "matchPatterns": [
+        "Retroplex ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/retroplex-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Retroplex ADpak)."
+    },
+    {
+      "id": "xln-audio--rock-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Rock Collection",
+      "matchPatterns": [
+        "Rock Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/rock-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Rock Collection)."
+    },
+    {
+      "id": "xln-audio--session-percussion-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Session Percussion ADpak",
+      "matchPatterns": [
+        "Session Percussion ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/session-percussion-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Session Percussion ADpak)."
+    },
+    {
+      "id": "xln-audio--soul-and-r-and-b-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Soul and R&B Collection",
+      "matchPatterns": [
+        "Soul and R&B Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/soul-and-r-and-b-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Soul and R&B Collection)."
+    },
+    {
+      "id": "xln-audio--studio-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Studio Collection",
+      "matchPatterns": [
+        "Studio Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/studio-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Studio Collection)."
+    },
+    {
+      "id": "xln-audio--studio-pop-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Studio Pop ADpak",
+      "matchPatterns": [
+        "Studio Pop ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/studio-pop-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Studio Pop ADpak)."
+    },
+    {
+      "id": "xln-audio--studio-prog-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Studio Prog ADpak",
+      "matchPatterns": [
+        "Studio Prog ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/studio-prog-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Studio Prog ADpak)."
+    },
+    {
+      "id": "xln-audio--studio-rock-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Studio Rock ADpak",
+      "matchPatterns": [
+        "Studio Rock ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/studio-rock-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Studio Rock ADpak)."
+    },
+    {
+      "id": "xln-audio--synth-pop-xo-expansion",
+      "manufacturerId": "xln-audio",
+      "name": "Synth-Pop - XO Expansion",
+      "matchPatterns": [
+        "Synth-Pop - XO Expansion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/synth-pop---xo-expansion-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Synth-Pop - XO Expansion)."
+    },
+    {
+      "id": "xln-audio--uk-garage-xo-expansion",
+      "manufacturerId": "xln-audio",
+      "name": "UK Garage - XO Expansion",
+      "matchPatterns": [
+        "UK Garage - XO Expansion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/uk-garage---xo-expansion-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (UK Garage - XO Expansion)."
+    },
+    {
+      "id": "xln-audio--united-heavy-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "United Heavy ADpak",
+      "matchPatterns": [
+        "United Heavy ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/united-heavy-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (United Heavy ADpak)."
+    },
+    {
+      "id": "xln-audio--united-pop-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "United Pop ADpak",
+      "matchPatterns": [
+        "United Pop ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/united-pop-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (United Pop ADpak)."
+    },
+    {
+      "id": "xln-audio--vintage-dead-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Vintage Dead ADpak",
+      "matchPatterns": [
+        "Vintage Dead ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/vintage-dead-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Vintage Dead ADpak)."
+    },
+    {
+      "id": "xln-audio--vintage-dry-adpak",
+      "manufacturerId": "xln-audio",
+      "name": "Vintage Dry ADpak",
+      "matchPatterns": [
+        "Vintage Dry ADpak"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/vintage-dry-adpak-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (Vintage Dry ADpak)."
+    },
+    {
+      "id": "xln-audio--xo",
+      "manufacturerId": "xln-audio",
+      "name": "XO",
+      "matchPatterns": [
+        "XO"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/xo-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--xopak-oscillations",
+      "manufacturerId": "xln-audio",
+      "name": "XOpak Oscillations",
+      "matchPatterns": [
+        "XOpak Oscillations"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/xopak-oscillations-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (XOpak Oscillations)."
+    },
+    {
+      "id": "xln-audio--xopak-pastel-punch",
+      "manufacturerId": "xln-audio",
+      "name": "XOpak Pastel Punch",
+      "matchPatterns": [
+        "XOpak Pastel Punch"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/xopak-pastel-punch-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (XOpak Pastel Punch)."
+    },
+    {
+      "id": "xln-audio--xopak-preheated",
+      "manufacturerId": "xln-audio",
+      "name": "XOpak Preheated",
+      "matchPatterns": [
+        "XOpak Preheated"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/xopak-preheated-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (XOpak Preheated)."
+    },
+    {
+      "id": "xln-audio--xopak-ultra-bionic",
+      "manufacturerId": "xln-audio",
+      "name": "XOpak Ultra Bionic",
+      "matchPatterns": [
+        "XOpak Ultra Bionic"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/xopak-ultra-bionic-by-xln-audio",
+      "identity_kind": "expansion",
+      "notes_for_user": "XLN Audio expansion/content (XOpak Ultra Bionic)."
+    },
+    {
+      "id": "xln-audio--addictive-drums-1",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums 1",
+      "matchPatterns": [
+        "Addictive Drums 1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-1-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--addictive-drums-2-creative-collection",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums 2 Creative Collection",
+      "matchPatterns": [
+        "Addictive Drums 2 Creative Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-2-creative-collection-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Addictive Drums 2 Creative Collection)."
+    },
+    {
+      "id": "xln-audio--addictive-drums-2-custom",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums 2 Custom",
+      "matchPatterns": [
+        "Addictive Drums 2 Custom"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-2-custom-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--addictive-drums-2-custom-xl",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums 2 Custom XL",
+      "matchPatterns": [
+        "Addictive Drums 2 Custom XL"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-2-custom-xl-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "xln-audio--addictive-drums-2-rock-and-metal-edition",
+      "manufacturerId": "xln-audio",
+      "name": "Addictive Drums 2 Rock & Metal Edition",
+      "matchPatterns": [
+        "Addictive Drums 2 Rock & Metal Edition"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Addictive Drums",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/addictive-drums-2-rock-and-metal-edition-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Addictive Drums 2 Rock & Metal Edition)."
+    },
+    {
+      "id": "xln-audio--beat-producer-edition",
+      "manufacturerId": "xln-audio",
+      "name": "Beat Producer Edition",
+      "matchPatterns": [
+        "Beat Producer Edition"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/beat-producer-edition-by-xln-audio",
+      "identity_kind": "bundle",
+      "notes_for_user": "XLN Audio bundle/collection (Beat Producer Edition)."
+    },
+    {
+      "id": "xln-audio--xo-lite",
+      "manufacturerId": "xln-audio",
+      "name": "XO Lite",
+      "matchPatterns": [
+        "XO Lite"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "XO",
+      "updatePortalUrl": "https://www.xlnaudio.com/account",
+      "identity_source": "kvr-developer-xln-audio-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/xo-lite-by-xln-audio",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "modartt--ant-petrof-275",
+      "manufacturerId": "modartt",
+      "name": "ANT. PETROF 275",
+      "matchPatterns": [
+        "ANT. PETROF 275"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/ant-petrof-275-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (ANT. PETROF 275)."
+    },
+    {
+      "id": "modartt--bluthner-model-1",
+      "manufacturerId": "modartt",
+      "name": "Blüthner Model 1",
+      "matchPatterns": [
+        "Blüthner Model 1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/bluethner-model-1-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Blüthner Model 1)."
+    },
+    {
+      "id": "modartt--bosendorfer-concert-grand-280vc",
+      "manufacturerId": "modartt",
+      "name": "Bösendorfer Concert Grand 280VC",
+      "matchPatterns": [
+        "Bösendorfer Concert Grand 280VC"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/boesendorfer-concert-grand-280vc-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Bösendorfer Concert Grand 280VC)."
+    },
+    {
+      "id": "modartt--c-bechstein-digital-grand",
+      "manufacturerId": "modartt",
+      "name": "C. Bechstein Digital Grand",
+      "matchPatterns": [
+        "C. Bechstein Digital Grand"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/c-bechstein-digital-grand-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (C. Bechstein Digital Grand)."
+    },
+    {
+      "id": "modartt--celesta-glockenspiel-toy-piano-and-kalimba",
+      "manufacturerId": "modartt",
+      "name": "Celesta, Glockenspiel, Toy Piano and Kalimba",
+      "matchPatterns": [
+        "Celesta, Glockenspiel, Toy Piano and Kalimba"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/celesta-glockenspiel-toy-piano-and-kalimba-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Celesta, Glockenspiel, Toy Piano and Kalimba)."
+    },
+    {
+      "id": "modartt--classical-guitar",
+      "manufacturerId": "modartt",
+      "name": "Classical Guitar",
+      "matchPatterns": [
+        "Classical Guitar"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/classical-guitar-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Classical Guitar)."
+    },
+    {
+      "id": "modartt--concert-harp",
+      "manufacturerId": "modartt",
+      "name": "Concert Harp",
+      "matchPatterns": [
+        "Concert Harp"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/concert-harp-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Concert Harp)."
+    },
+    {
+      "id": "modartt--electric-pianos",
+      "manufacturerId": "modartt",
+      "name": "Electric Pianos",
+      "matchPatterns": [
+        "Electric Pianos"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/electric-pianos-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Electric Pianos)."
+    },
+    {
+      "id": "modartt--grand-shigeru-kawai-sk-ex",
+      "manufacturerId": "modartt",
+      "name": "Grand Shigeru Kawai SK-EX",
+      "matchPatterns": [
+        "Grand Shigeru Kawai SK-EX"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/grand-shigeru-kawai-sk-ex-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Grand Shigeru Kawai SK-EX)."
+    },
+    {
+      "id": "modartt--grotrian-concert-royal",
+      "manufacturerId": "modartt",
+      "name": "Grotrian Concert Royal",
+      "matchPatterns": [
+        "Grotrian Concert Royal"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/grotrian-concert-royal-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Grotrian Concert Royal)."
+    },
+    {
+      "id": "modartt--harpsichord",
+      "manufacturerId": "modartt",
+      "name": "Harpsichord",
+      "matchPatterns": [
+        "Harpsichord"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/harpsichord-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Harpsichord)."
+    },
+    {
+      "id": "modartt--hohner-collection",
+      "manufacturerId": "modartt",
+      "name": "Hohner Collection",
+      "matchPatterns": [
+        "Hohner Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hohner-collection-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Hohner Collection)."
+    },
+    {
+      "id": "modartt--k2-grand-piano",
+      "manufacturerId": "modartt",
+      "name": "K2 Grand Piano",
+      "matchPatterns": [
+        "K2 Grand Piano"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/k2-grand-piano-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (K2 Grand Piano)."
+    },
+    {
+      "id": "modartt--kremsegg-historical-piano-collection-1",
+      "manufacturerId": "modartt",
+      "name": "Kremsegg Historical Piano Collection 1",
+      "matchPatterns": [
+        "Kremsegg Historical Piano Collection 1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/kremsegg-historical-piano-collection-1-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Kremsegg Historical Piano Collection 1)."
+    },
+    {
+      "id": "modartt--kremsegg-historical-piano-collection-2",
+      "manufacturerId": "modartt",
+      "name": "Kremsegg Historical Piano Collection 2",
+      "matchPatterns": [
+        "Kremsegg Historical Piano Collection 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/kremsegg-historical-piano-collection-2-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Kremsegg Historical Piano Collection 2)."
+    },
+    {
+      "id": "modartt--organteq",
+      "manufacturerId": "modartt",
+      "name": "Organteq",
+      "matchPatterns": [
+        "Organteq"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Organteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/organteq-by-modartt",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "modartt--pianoteq-pro-9",
+      "manufacturerId": "modartt",
+      "name": "Pianoteq Pro 9",
+      "matchPatterns": [
+        "Pianoteq Pro 9"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pianoteq-pro-9-by-modartt",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "modartt--pianoteq-stage-9",
+      "manufacturerId": "modartt",
+      "name": "Pianoteq Stage 9",
+      "matchPatterns": [
+        "Pianoteq Stage 9"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pianoteq-stage-9-by-modartt",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "modartt--pianoteq-standard-9",
+      "manufacturerId": "modartt",
+      "name": "Pianoteq Standard 9",
+      "matchPatterns": [
+        "Pianoteq Standard 9"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pianoteq-standard-9-by-modartt",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "modartt--pianoteq-studio-bundle",
+      "manufacturerId": "modartt",
+      "name": "Pianoteq Studio Bundle",
+      "matchPatterns": [
+        "Pianoteq Studio Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pianoteq-studio-bundle-by-modartt",
+      "identity_kind": "bundle",
+      "notes_for_user": "Modartt bundle (Pianoteq Studio Bundle)."
+    },
+    {
+      "id": "modartt--steel-pans",
+      "manufacturerId": "modartt",
+      "name": "Steel Pans",
+      "matchPatterns": [
+        "Steel Pans"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/steel-pans-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Steel Pans)."
+    },
+    {
+      "id": "modartt--steingraeber-e-272-grand-piano",
+      "manufacturerId": "modartt",
+      "name": "Steingraeber E-272 Grand Piano",
+      "matchPatterns": [
+        "Steingraeber E-272 Grand Piano"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/steingraeber-e-272-grand-piano-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Steingraeber E-272 Grand Piano)."
+    },
+    {
+      "id": "modartt--steinway-model-b-grand-piano",
+      "manufacturerId": "modartt",
+      "name": "Steinway Model B Grand Piano",
+      "matchPatterns": [
+        "Steinway Model B Grand Piano"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/steinway-model-b-grand-piano-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Steinway Model B Grand Piano)."
+    },
+    {
+      "id": "modartt--steinway-model-d",
+      "manufacturerId": "modartt",
+      "name": "Steinway Model D",
+      "matchPatterns": [
+        "Steinway Model D"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/steinway-model-d-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Steinway Model D)."
+    },
+    {
+      "id": "modartt--syngular",
+      "manufacturerId": "modartt",
+      "name": "Syngular",
+      "matchPatterns": [
+        "Syngular"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/syngular-by-modartt",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "modartt--the-karsten-collection",
+      "manufacturerId": "modartt",
+      "name": "The Karsten Collection",
+      "matchPatterns": [
+        "The Karsten Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/the-karsten-collection-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (The Karsten Collection)."
+    },
+    {
+      "id": "modartt--u4-upright-piano",
+      "manufacturerId": "modartt",
+      "name": "U4 Upright Piano",
+      "matchPatterns": [
+        "U4 Upright Piano"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/u4-upright-piano-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (U4 Upright Piano)."
+    },
+    {
+      "id": "modartt--vibraphones-v-m-and-v-b",
+      "manufacturerId": "modartt",
+      "name": "Vibraphones V-M and V-B",
+      "matchPatterns": [
+        "Vibraphones V-M and V-B"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/vibraphones-v-m-and-v-b-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Vibraphones V-M and V-B)."
+    },
+    {
+      "id": "modartt--xylophone-and-bass-marimba",
+      "manufacturerId": "modartt",
+      "name": "Xylophone and Bass Marimba",
+      "matchPatterns": [
+        "Xylophone and Bass Marimba"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/xylophone-and-bass-marimba-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (Xylophone and Bass Marimba)."
+    },
+    {
+      "id": "modartt--yc5-rock-piano",
+      "manufacturerId": "modartt",
+      "name": "YC5 Rock Piano",
+      "matchPatterns": [
+        "YC5 Rock Piano"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": "Pianoteq",
+      "updatePortalUrl": "https://www.modartt.com/user",
+      "identity_source": "kvr-developer-modartt-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/yc5-rock-piano-by-modartt",
+      "identity_kind": "soundset",
+      "notes_for_user": "Pianoteq/Organteq instrument model/pack (YC5 Rock Piano)."
+    },
+    {
+      "id": "ignite-amps--emissary",
+      "manufacturerId": "ignite-amps",
+      "name": "Emissary",
+      "matchPatterns": [
+        "Emissary"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/emissary-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--libra",
+      "manufacturerId": "ignite-amps",
+      "name": "Libra",
+      "matchPatterns": [
+        "Libra"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/libra-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--nadir",
+      "manufacturerId": "ignite-amps",
+      "name": "NadIR",
+      "matchPatterns": [
+        "NadIR"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/nadir-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--nrr-1",
+      "manufacturerId": "ignite-amps",
+      "name": "NRR-1",
+      "matchPatterns": [
+        "NRR-1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/nrr-1-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--prof-e-t",
+      "manufacturerId": "ignite-amps",
+      "name": "ProF.E.T.",
+      "matchPatterns": [
+        "ProF.E.T."
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/prof-e-t-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--pteq-x",
+      "manufacturerId": "ignite-amps",
+      "name": "PTEq-X",
+      "matchPatterns": [
+        "PTEq-X"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pteq-x-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--shb-1",
+      "manufacturerId": "ignite-amps",
+      "name": "SHB-1",
+      "matchPatterns": [
+        "SHB-1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/shb-1-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--the-anvil",
+      "manufacturerId": "ignite-amps",
+      "name": "The Anvil",
+      "matchPatterns": [
+        "The Anvil"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/the-anvil-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--tpa-1",
+      "manufacturerId": "ignite-amps",
+      "name": "TPA-1",
+      "matchPatterns": [
+        "TPA-1"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/tpa-1-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--ts-999",
+      "manufacturerId": "ignite-amps",
+      "name": "TS-999",
+      "matchPatterns": [
+        "TS-999"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/ts-999-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--tsb-1-tyrant-screamer",
+      "manufacturerId": "ignite-amps",
+      "name": "TSB-1 Tyrant Screamer",
+      "matchPatterns": [
+        "TSB-1 Tyrant Screamer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/tsb-1-tyrant-screamer-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "ignite-amps--pteq-1a",
+      "manufacturerId": "ignite-amps",
+      "name": "PTEq-1a",
+      "matchPatterns": [
+        "PTEq-1a"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.igniteamps.com/",
+      "identity_source": "kvr-developer-ignite-amps-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pteq-1a-by-ignite-amps",
+      "identity_kind": "plugin",
+      "notes_for_user": "Ignite Amps freeware / amp sim.",
+      "isFreeware": true
+    },
+    {
+      "id": "stl-tones--amphub",
+      "manufacturerId": "stl-tones",
+      "name": "AmpHub",
+      "matchPatterns": [
+        "AmpHub"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.stltones.com/account",
+      "identity_source": "kvr-developer-stl-tones-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/amphub-by-stl-tones",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "stl-tones--controlhub",
+      "manufacturerId": "stl-tones",
+      "name": "ControlHub",
+      "matchPatterns": [
+        "ControlHub"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.stltones.com/account",
+      "identity_source": "kvr-developer-stl-tones-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/controlhub-by-stl-tones",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "stl-tones--tonality-andy-james",
+      "manufacturerId": "stl-tones",
+      "name": "Tonality: Andy James",
+      "matchPatterns": [
+        "Tonality: Andy James"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.stltones.com/account",
+      "identity_source": "kvr-developer-stl-tones-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/tonality-andy-james-by-stl-tones",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "stl-tones--tonality-howard-benson",
+      "manufacturerId": "stl-tones",
+      "name": "Tonality: Howard Benson",
+      "matchPatterns": [
+        "Tonality: Howard Benson"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.stltones.com/account",
+      "identity_source": "kvr-developer-stl-tones-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/tonality-howard-benson-by-stl-tones",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "stl-tones--tonality-will-putney",
+      "manufacturerId": "stl-tones",
+      "name": "Tonality: Will Putney",
+      "matchPatterns": [
+        "Tonality: Will Putney"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.stltones.com/account",
+      "identity_source": "kvr-developer-stl-tones-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/tonality-will-putney-by-stl-tones",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "stl-tones--tonehub",
+      "manufacturerId": "stl-tones",
+      "name": "ToneHub",
+      "matchPatterns": [
+        "ToneHub"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.stltones.com/account",
+      "identity_source": "kvr-developer-stl-tones-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/tonehub-by-stl-tones",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--amped-ark",
+      "manufacturerId": "ml-sound-lab",
+      "name": "Amped Ark",
+      "matchPatterns": [
+        "Amped Ark"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/amped-ark-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--amped-ml5",
+      "manufacturerId": "ml-sound-lab",
+      "name": "Amped ML5",
+      "matchPatterns": [
+        "Amped ML5"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/amped-ml5-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--amped-ml800",
+      "manufacturerId": "ml-sound-lab",
+      "name": "Amped ML800",
+      "matchPatterns": [
+        "Amped ML800"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/amped-ml800-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--amped-roots",
+      "manufacturerId": "ml-sound-lab",
+      "name": "Amped Roots",
+      "matchPatterns": [
+        "Amped Roots"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/amped-roots-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--amped-stevie-t",
+      "manufacturerId": "ml-sound-lab",
+      "name": "Amped Stevie T",
+      "matchPatterns": [
+        "Amped Stevie T"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/amped-stevie-t-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--amped-vx30",
+      "manufacturerId": "ml-sound-lab",
+      "name": "Amped VX30",
+      "matchPatterns": [
+        "Amped VX30"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/amped-vx30-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--mikko-reflex",
+      "manufacturerId": "ml-sound-lab",
+      "name": "MIKKO Reflex",
+      "matchPatterns": [
+        "MIKKO Reflex"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/mikko-reflex-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--mikko2",
+      "manufacturerId": "ml-sound-lab",
+      "name": "MIKKO2",
+      "matchPatterns": [
+        "MIKKO2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/mikko2-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "ml-sound-lab--ml-drums",
+      "manufacturerId": "ml-sound-lab",
+      "name": "ML Drums",
+      "matchPatterns": [
+        "ML Drums"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/ml-drums-by-ml-sound-lab",
+      "identity_kind": "soundset",
+      "notes_for_user": "ML Sound Lab drum library (ML Drums)."
+    },
+    {
+      "id": "ml-sound-lab--wavebreaker",
+      "manufacturerId": "ml-sound-lab",
+      "name": "Wavebreaker",
+      "matchPatterns": [
+        "Wavebreaker"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.mlsoundlab.com/account",
+      "identity_source": "kvr-developer-ml-sound-lab-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/wavebreaker-by-ml-sound-lab",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "two-notes--genome",
+      "manufacturerId": "two-notes",
+      "name": "GENOME",
+      "matchPatterns": [
+        "GENOME"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Two notes GENOME amp/cab/FX ecosystem host."
+    },
+    {
+      "id": "two-notes--torpedo-wall-of-sound",
+      "manufacturerId": "two-notes",
+      "name": "Torpedo Wall of Sound",
+      "matchPatterns": [
+        "Torpedo Wall of Sound"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "two-notes--torpedo-remote",
+      "manufacturerId": "two-notes",
+      "name": "Torpedo Remote",
+      "matchPatterns": [
+        "Torpedo Remote"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Two notes Torpedo hardware remote/utility."
+    },
+    {
+      "id": "two-notes--dynir-complete-collection",
+      "manufacturerId": "two-notes",
+      "name": "DynIR Complete Collection",
+      "matchPatterns": [
+        "DynIR Complete Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "bundle",
+      "notes_for_user": "All DynIR virtual cabinets bundle."
+    },
+    {
+      "id": "two-notes--torpedo-captor-x",
+      "manufacturerId": "two-notes",
+      "name": "Torpedo Captor X",
+      "matchPatterns": [
+        "Torpedo Captor X"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "two-notes--torpedo-captor-x-se",
+      "manufacturerId": "two-notes",
+      "name": "Torpedo Captor X SE",
+      "matchPatterns": [
+        "Torpedo Captor X SE"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "two-notes--torpedo-captor",
+      "manufacturerId": "two-notes",
+      "name": "Torpedo Captor",
+      "matchPatterns": [
+        "Torpedo Captor"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "two-notes--torpedo-reload-ii",
+      "manufacturerId": "two-notes",
+      "name": "Torpedo Reload II",
+      "matchPatterns": [
+        "Torpedo Reload II"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.two-notes.com/en/my-account/",
+      "identity_source": "two-notes-public-catalog-curated-expand5",
+      "notes": "Curated from two-notes.com public catalog (site fetch blocked; no DynIR SKU explosion).",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "fractal-audio--cab-lab-4",
+      "manufacturerId": "fractal-audio",
+      "name": "Cab Lab 4",
+      "matchPatterns": [
+        "Cab Lab 4",
+        "Cab-Lab 4",
+        "CabLab 4"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "fractal-audio--icons-fullerton-complete",
+      "manufacturerId": "fractal-audio",
+      "name": "ICONS: Fullerton Complete",
+      "matchPatterns": [
+        "ICONS: Fullerton Complete"
+      ],
+      "formats": [
+        "AU",
+        "VST3"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "expansion",
+      "notes_for_user": "Fractal Audio ICONS cab/IR content."
+    },
+    {
+      "id": "fractal-audio--axe-edit-iii",
+      "manufacturerId": "fractal-audio",
+      "name": "Axe-Edit III",
+      "matchPatterns": [
+        "Axe-Edit III"
+      ],
+      "formats": [
+        "AU",
+        "VST3"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Editor for Axe-Fx III."
+    },
+    {
+      "id": "fractal-audio--fm3-edit",
+      "manufacturerId": "fractal-audio",
+      "name": "FM3-Edit",
+      "matchPatterns": [
+        "FM3-Edit"
+      ],
+      "formats": [
+        "AU",
+        "VST3"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Editor for FM3."
+    },
+    {
+      "id": "fractal-audio--fm9-edit",
+      "manufacturerId": "fractal-audio",
+      "name": "FM9-Edit",
+      "matchPatterns": [
+        "FM9-Edit"
+      ],
+      "formats": [
+        "AU",
+        "VST3"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Editor for FM9."
+    },
+    {
+      "id": "fractal-audio--fractal-bot",
+      "manufacturerId": "fractal-audio",
+      "name": "Fractal-Bot",
+      "matchPatterns": [
+        "Fractal-Bot"
+      ],
+      "formats": [
+        "AU",
+        "VST3"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Firmware/utility tool."
+    },
+    {
+      "id": "fractal-audio--axe-fx-iii",
+      "manufacturerId": "fractal-audio",
+      "name": "Axe-Fx III",
+      "matchPatterns": [
+        "Axe-Fx III"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "hardware",
+      "notes_for_user": "Flagship amp modeler hardware."
+    },
+    {
+      "id": "fractal-audio--fm3",
+      "manufacturerId": "fractal-audio",
+      "name": "FM3",
+      "matchPatterns": [
+        "FM3"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "hardware",
+      "notes_for_user": "Fractal Audio FM3 amp modeler."
+    },
+    {
+      "id": "fractal-audio--fm9",
+      "manufacturerId": "fractal-audio",
+      "name": "FM9",
+      "matchPatterns": [
+        "FM9"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.fractalaudio.com/support/",
+      "identity_source": "kvr-fractal-plus-curated-expand5",
+      "notes": "Fractal Audio public software/hardware identity; expand5.",
+      "identity_kind": "hardware",
+      "notes_for_user": "Fractal Audio FM9 amp modeler."
+    },
+    {
+      "id": "headrush--revalver",
+      "manufacturerId": "headrush",
+      "name": "ReValver",
+      "matchPatterns": [
+        "ReValver"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.headrushfx.com/downloads/",
+      "identity_source": "kvr-headrush-plus-curated-expand5",
+      "notes": "HeadRush identity; expand5.",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "headrush--headrush-pedalboard",
+      "manufacturerId": "headrush",
+      "name": "HeadRush Pedalboard",
+      "matchPatterns": [
+        "HeadRush Pedalboard"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.headrushfx.com/downloads/",
+      "identity_source": "kvr-headrush-plus-curated-expand5",
+      "notes": "HeadRush identity; expand5.",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "headrush--headrush-gigboard",
+      "manufacturerId": "headrush",
+      "name": "HeadRush Gigboard",
+      "matchPatterns": [
+        "HeadRush Gigboard"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.headrushfx.com/downloads/",
+      "identity_source": "kvr-headrush-plus-curated-expand5",
+      "notes": "HeadRush identity; expand5.",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "headrush--headrush-mx5",
+      "manufacturerId": "headrush",
+      "name": "HeadRush MX5",
+      "matchPatterns": [
+        "HeadRush MX5"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.headrushfx.com/downloads/",
+      "identity_source": "kvr-headrush-plus-curated-expand5",
+      "notes": "HeadRush identity; expand5.",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "headrush--headrush-prime",
+      "manufacturerId": "headrush",
+      "name": "HeadRush Prime",
+      "matchPatterns": [
+        "HeadRush Prime"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.headrushfx.com/downloads/",
+      "identity_source": "kvr-headrush-plus-curated-expand5",
+      "notes": "HeadRush identity; expand5.",
+      "identity_kind": "hardware"
+    },
+    {
+      "id": "plugin-boutique--bigkick",
+      "manufacturerId": "plugin-boutique",
+      "name": "BigKick",
+      "matchPatterns": [
+        "BigKick"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/bigkick-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--carbon-electra",
+      "manufacturerId": "plugin-boutique",
+      "name": "Carbon Electra",
+      "matchPatterns": [
+        "Carbon Electra"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/carbon-electra-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--dc-snares",
+      "manufacturerId": "plugin-boutique",
+      "name": "DC Snares",
+      "matchPatterns": [
+        "DC Snares"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/dc-snares-by-scaler-music",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--drivele",
+      "manufacturerId": "plugin-boutique",
+      "name": "DriveLE",
+      "matchPatterns": [
+        "DriveLE"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/drivele-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--drivemod",
+      "manufacturerId": "plugin-boutique",
+      "name": "DriveMod",
+      "matchPatterns": [
+        "DriveMod"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/drivemod-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--dualclip",
+      "manufacturerId": "plugin-boutique",
+      "name": "DualClip",
+      "matchPatterns": [
+        "DualClip"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/dualclip-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--exceed",
+      "manufacturerId": "plugin-boutique",
+      "name": "Exceed",
+      "matchPatterns": [
+        "Exceed"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/exceed-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--filtermod",
+      "manufacturerId": "plugin-boutique",
+      "name": "FilterMod",
+      "matchPatterns": [
+        "FilterMod"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/filtermod-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--peaklimit",
+      "manufacturerId": "plugin-boutique",
+      "name": "PeakLimit",
+      "matchPatterns": [
+        "PeakLimit"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/peaklimit-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--resdelay",
+      "manufacturerId": "plugin-boutique",
+      "name": "ResDelay",
+      "matchPatterns": [
+        "ResDelay"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/resdelay-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--scaler-eq",
+      "manufacturerId": "plugin-boutique",
+      "name": "Scaler EQ",
+      "matchPatterns": [
+        "Scaler EQ"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/scaler-eq-by-scaler-music",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--shapemod",
+      "manufacturerId": "plugin-boutique",
+      "name": "ShapeMod",
+      "matchPatterns": [
+        "ShapeMod"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/shapemod-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--stereosavage-2",
+      "manufacturerId": "plugin-boutique",
+      "name": "StereoSavage 2",
+      "matchPatterns": [
+        "StereoSavage 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/stereosavage-2-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--virtualcz",
+      "manufacturerId": "plugin-boutique",
+      "name": "VirtualCZ",
+      "matchPatterns": [
+        "VirtualCZ"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/virtualcz-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--waveosc",
+      "manufacturerId": "plugin-boutique",
+      "name": "WaveOSC",
+      "matchPatterns": [
+        "WaveOSC"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/waveosc-by-plugin-boutique",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "plugin-boutique--zampler",
+      "manufacturerId": "plugin-boutique",
+      "name": "Zampler",
+      "matchPatterns": [
+        "Zampler"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/zampler-by-plugin-boutique",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "plugin-boutique--scaler-2",
+      "manufacturerId": "plugin-boutique",
+      "name": "Scaler 2",
+      "matchPatterns": [
+        "Scaler 2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.pluginboutique.com/login",
+      "identity_source": "kvr-developer-plugin-boutique-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/scaler-2-by-scaler-music",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "sample-magic--boost",
+      "manufacturerId": "sample-magic",
+      "name": "Boost",
+      "matchPatterns": [
+        "Boost"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/boost-by-sample-magic",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "sample-magic--boost-pro",
+      "manufacturerId": "sample-magic",
+      "name": "Boost Pro",
+      "matchPatterns": [
+        "Boost Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/boost-pro-by-sample-magic",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "sample-magic--cosmic-beats",
+      "manufacturerId": "sample-magic",
+      "name": "Cosmic Beats",
+      "matchPatterns": [
+        "Cosmic Beats"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/cosmic-beats-by-sample-magic",
+      "identity_kind": "soundset",
+      "notes_for_user": "Sample Magic soundset/collection (Cosmic Beats)."
+    },
+    {
+      "id": "sample-magic--florian-meindl-berlin-deep-house",
+      "manufacturerId": "sample-magic",
+      "name": "Florian Meindl Berlin Deep House",
+      "matchPatterns": [
+        "Florian Meindl Berlin Deep House"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/florian-meindl-berlin-deep-house-by-m-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Sample Magic soundset/collection (Florian Meindl Berlin Deep House)."
+    },
+    {
+      "id": "sample-magic--florian-meindl-tech-house-sounds-of-berlin",
+      "manufacturerId": "sample-magic",
+      "name": "Florian Meindl Tech-House Sounds of Berlin",
+      "matchPatterns": [
+        "Florian Meindl Tech-House Sounds of Berlin"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/florian-meindl-tech-house-sounds-of-berlin-by-m-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Sample Magic soundset/collection (Florian Meindl Tech-House Sounds of Berlin)."
+    },
+    {
+      "id": "sample-magic--klip",
+      "manufacturerId": "sample-magic",
+      "name": "Klip",
+      "matchPatterns": [
+        "Klip"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/klip-by-sample-magic",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "sample-magic--magic-ab",
+      "manufacturerId": "sample-magic",
+      "name": "Magic AB",
+      "matchPatterns": [
+        "Magic AB"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/magic-ab-by-sample-magic",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "sample-magic--radio-slave-sounds-of-berlin-techno",
+      "manufacturerId": "sample-magic",
+      "name": "Radio Slave Sounds of Berlin Techno",
+      "matchPatterns": [
+        "Radio Slave Sounds of Berlin Techno"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/radio-slave-sounds-of-berlin-techno-by-m-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Sample Magic soundset/collection (Radio Slave Sounds of Berlin Techno)."
+    },
+    {
+      "id": "sample-magic--rui-da-silva-deep-house-collection",
+      "manufacturerId": "sample-magic",
+      "name": "Rui Da Silva Deep House Collection",
+      "matchPatterns": [
+        "Rui Da Silva Deep House Collection"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/rui-da-silva-deep-house-collection-by-m-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Sample Magic soundset/collection (Rui Da Silva Deep House Collection)."
+    },
+    {
+      "id": "sample-magic--thomas-schumacher-berlin-techno",
+      "manufacturerId": "sample-magic",
+      "name": "Thomas Schumacher Berlin Techno",
+      "matchPatterns": [
+        "Thomas Schumacher Berlin Techno"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.samplemagic.com/",
+      "identity_source": "kvr-developer-sample-magic-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/thomas-schumacher-berlin-techno-by-m-audio",
+      "identity_kind": "soundset",
+      "notes_for_user": "Sample Magic soundset/collection (Thomas Schumacher Berlin Techno)."
+    },
+    {
+      "id": "garritan--authorized-steinway-virtual-concert-grand-piano",
+      "manufacturerId": "garritan",
+      "name": "Authorized Steinway Virtual Concert Grand Piano",
+      "matchPatterns": [
+        "Authorized Steinway Virtual Concert Grand Piano"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "kvr-developer-garritan-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/authorized_steinway_virtual_concert_grand_piano_by_garritan",
+      "identity_kind": "soundset",
+      "notes_for_user": "Garritan library (Authorized Steinway Virtual Concert Grand Piano)."
+    },
+    {
+      "id": "garritan--concert-and-marching-band",
+      "manufacturerId": "garritan",
+      "name": "Concert & Marching Band",
+      "matchPatterns": [
+        "Concert & Marching Band"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "kvr-developer-garritan-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/concert_and_marching_band_by_garritan",
+      "identity_kind": "soundset",
+      "notes_for_user": "Garritan library (Concert & Marching Band)."
+    },
+    {
+      "id": "garritan--gofriller-solo-cello",
+      "manufacturerId": "garritan",
+      "name": "Gofriller Solo Cello",
+      "matchPatterns": [
+        "Gofriller Solo Cello"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "kvr-developer-garritan-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/gofriller_solo_cello_by_garritan",
+      "identity_kind": "soundset",
+      "notes_for_user": "Garritan library (Gofriller Solo Cello)."
+    },
+    {
+      "id": "garritan--jazz-and-big-band-jabb",
+      "manufacturerId": "garritan",
+      "name": "Jazz and Big Band (JABB)",
+      "matchPatterns": [
+        "Jazz and Big Band (JABB)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "kvr-developer-garritan-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/jazz_and_big_band_jabb_by_garritan",
+      "identity_kind": "soundset",
+      "notes_for_user": "Garritan library (Jazz and Big Band (JABB))."
+    },
+    {
+      "id": "garritan--personal-orchestra-gpo",
+      "manufacturerId": "garritan",
+      "name": "Personal Orchestra (GPO)",
+      "matchPatterns": [
+        "Personal Orchestra (GPO)"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "kvr-developer-garritan-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/personal-orchestra-gpo-by-garritan",
+      "identity_kind": "soundset",
+      "notes_for_user": "Garritan library (Personal Orchestra (GPO))."
+    },
+    {
+      "id": "garritan--stradivari-solo-violin",
+      "manufacturerId": "garritan",
+      "name": "Stradivari Solo Violin",
+      "matchPatterns": [
+        "Stradivari Solo Violin"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "kvr-developer-garritan-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/stradivari_solo_violin_by_garritan",
+      "identity_kind": "soundset",
+      "notes_for_user": "Garritan library (Stradivari Solo Violin)."
+    },
+    {
+      "id": "garritan--world-instruments",
+      "manufacturerId": "garritan",
+      "name": "World Instruments",
+      "matchPatterns": [
+        "World Instruments"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "kvr-developer-garritan-2026-09-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/world_instruments_by_garritan",
+      "identity_kind": "soundset",
+      "notes_for_user": "Garritan library (World Instruments)."
+    },
+    {
+      "id": "spitfire-audio--british-drama-toolkit",
+      "manufacturerId": "spitfire-audio",
+      "name": "British Drama Toolkit",
+      "matchPatterns": [
+        "British Drama Toolkit"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.spitfireaudio.com/account",
+      "identity_source": "kvr-spitfire-soundset-fill-expand5",
+      "notes": "KVR Spitfire gap fill; classified soundset.",
+      "identity_kind": "soundset",
+      "notes_for_user": "Spitfire Audio library/soundset (British Drama Toolkit)."
+    },
+    {
+      "id": "spitfire-audio--originals-media-toolkit",
+      "manufacturerId": "spitfire-audio",
+      "name": "Originals - Media Toolkit",
+      "matchPatterns": [
+        "Originals - Media Toolkit"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.spitfireaudio.com/account",
+      "identity_source": "kvr-spitfire-soundset-fill-expand5",
+      "notes": "KVR Spitfire gap fill; classified soundset.",
+      "identity_kind": "soundset",
+      "notes_for_user": "Spitfire Audio library/soundset (Originals - Media Toolkit)."
+    },
+    {
+      "id": "eastwest--hollywood-fantasy-orchestra-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Hollywood Fantasy Orchestra Bundle",
+      "matchPatterns": [
+        "Hollywood Fantasy Orchestra Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hollywood-fantasy-orchestra-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hollywood Fantasy Orchestra Bundle)."
+    },
+    {
+      "id": "eastwest--hybrid-super-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Hybrid Super Bundle",
+      "matchPatterns": [
+        "Hybrid Super Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hybrid-super-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hybrid Super Bundle)."
+    },
+    {
+      "id": "eastwest--pianos-bundle-platinum",
+      "manufacturerId": "eastwest",
+      "name": "Pianos Bundle Platinum",
+      "matchPatterns": [
+        "Pianos Bundle Platinum"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pianos-bundle-platinum-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Pianos Bundle Platinum)."
+    },
+    {
+      "id": "eastwest--stormdrum-2-pro-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Stormdrum 2 Pro Bundle",
+      "matchPatterns": [
+        "Stormdrum 2 Pro Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/stormdrum-2-pro-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Stormdrum 2 Pro Bundle)."
+    },
+    {
+      "id": "eastwest--symphonic-choirs-bundle-platinum",
+      "manufacturerId": "eastwest",
+      "name": "Symphonic Choirs Bundle Platinum",
+      "matchPatterns": [
+        "Symphonic Choirs Bundle Platinum"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/symphonic-choirs-bundle-platinum-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Symphonic Choirs Bundle Platinum)."
+    },
+    {
+      "id": "eastwest--synth-super-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Synth Super Bundle",
+      "matchPatterns": [
+        "Synth Super Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/synth-super-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Synth Super Bundle)."
+    },
+    {
+      "id": "eastwest--cinematic-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Cinematic Bundle",
+      "matchPatterns": [
+        "Cinematic Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/cinematic-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Cinematic Bundle)."
+    },
+    {
+      "id": "eastwest--diamond-orchestral-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Diamond Orchestral Bundle",
+      "matchPatterns": [
+        "Diamond Orchestral Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/diamond-orchestral-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Diamond Orchestral Bundle)."
+    },
+    {
+      "id": "eastwest--gold-orchestral-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Gold Orchestral Bundle",
+      "matchPatterns": [
+        "Gold Orchestral Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/gold-orchestral-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Gold Orchestral Bundle)."
+    },
+    {
+      "id": "eastwest--hollywood-choirs-voices-of-the-empire-bundle-diamond",
+      "manufacturerId": "eastwest",
+      "name": "Hollywood Choirs + Voices of the Empire Bundle Diamond",
+      "matchPatterns": [
+        "Hollywood Choirs + Voices of the Empire Bundle Diamond"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hollywood-choirs-and-voices-of-the-empire-bundle-diamond-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hollywood Choirs + Voices of the Empire Bundle Diamond)."
+    },
+    {
+      "id": "eastwest--hollywood-choirs-voices-of-the-empire-bundle-gold",
+      "manufacturerId": "eastwest",
+      "name": "Hollywood Choirs + Voices of the Empire Bundle Gold",
+      "matchPatterns": [
+        "Hollywood Choirs + Voices of the Empire Bundle Gold"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hollywood-choirs-and-voices-of-the-empire-bundle-gold-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hollywood Choirs + Voices of the Empire Bundle Gold)."
+    },
+    {
+      "id": "eastwest--hollywood-orchestra-and-solo-instruments-bundle-diamond",
+      "manufacturerId": "eastwest",
+      "name": "Hollywood Orchestra & Solo Instruments Bundle Diamond",
+      "matchPatterns": [
+        "Hollywood Orchestra & Solo Instruments Bundle Diamond"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hollywood-orchestra-and-solo-instruments-bundle-diamond-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hollywood Orchestra & Solo Instruments Bundle Diamond)."
+    },
+    {
+      "id": "eastwest--hollywood-orchestra-and-solo-instruments-bundle-gold",
+      "manufacturerId": "eastwest",
+      "name": "Hollywood Orchestra & Solo Instruments Bundle Gold",
+      "matchPatterns": [
+        "Hollywood Orchestra & Solo Instruments Bundle Gold"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hollywood-orchestra-and-solo-instruments-bundle-gold-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hollywood Orchestra & Solo Instruments Bundle Gold)."
+    },
+    {
+      "id": "eastwest--hollywood-solo-instruments-bundle-diamond",
+      "manufacturerId": "eastwest",
+      "name": "Hollywood Solo Instruments Bundle Diamond",
+      "matchPatterns": [
+        "Hollywood Solo Instruments Bundle Diamond"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hollywood-solo-instruments-bundle-diamond-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hollywood Solo Instruments Bundle Diamond)."
+    },
+    {
+      "id": "eastwest--hollywood-solo-instruments-bundle-gold",
+      "manufacturerId": "eastwest",
+      "name": "Hollywood Solo Instruments Bundle Gold",
+      "matchPatterns": [
+        "Hollywood Solo Instruments Bundle Gold"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/hollywood-solo-instruments-bundle-gold-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Hollywood Solo Instruments Bundle Gold)."
+    },
+    {
+      "id": "eastwest--midi-guitar-series-bundle",
+      "manufacturerId": "eastwest",
+      "name": "MIDI Guitar Series Bundle",
+      "matchPatterns": [
+        "MIDI Guitar Series Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/midi-guitar-series-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (MIDI Guitar Series Bundle)."
+    },
+    {
+      "id": "eastwest--pianos-bundle-gold",
+      "manufacturerId": "eastwest",
+      "name": "Pianos Bundle Gold",
+      "matchPatterns": [
+        "Pianos Bundle Gold"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pianos-bundle-gold-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Pianos Bundle Gold)."
+    },
+    {
+      "id": "eastwest--pop-production-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Pop Production Bundle",
+      "matchPatterns": [
+        "Pop Production Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/pop-production-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Pop Production Bundle)."
+    },
+    {
+      "id": "eastwest--symphonic-choirs-bundle-gold",
+      "manufacturerId": "eastwest",
+      "name": "Symphonic Choirs Bundle Gold",
+      "matchPatterns": [
+        "Symphonic Choirs Bundle Gold"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/symphonic-choirs-bundle-gold-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Symphonic Choirs Bundle Gold)."
+    },
+    {
+      "id": "eastwest--voices-bundle",
+      "manufacturerId": "eastwest",
+      "name": "Voices Bundle",
+      "matchPatterns": [
+        "Voices Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.soundsonline.com/account",
+      "identity_source": "kvr-eastwest-bundle-fill-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/voices-bundle-by-eastwest",
+      "identity_kind": "bundle",
+      "notes_for_user": "EastWest marketing bundle (Voices Bundle)."
+    },
+    {
+      "id": "eventide--clockworks-bundle",
+      "manufacturerId": "eventide",
+      "name": "Clockworks Bundle",
+      "matchPatterns": [
+        "Clockworks Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.eventideaudio.com/downloads/",
+      "identity_source": "kvr-eventide-bundle-leftover-expand5",
+      "notes": "KVR leftover bundle; Newfangled titles already under newfangled-audio.",
+      "identity_kind": "bundle",
+      "notes_for_user": "Eventide bundle (Clockworks Bundle)."
+    },
+    {
+      "id": "eventide--elevate-mastering-bundle",
+      "manufacturerId": "eventide",
+      "name": "Elevate Mastering Bundle",
+      "matchPatterns": [
+        "Elevate Mastering Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.eventideaudio.com/downloads/",
+      "identity_source": "kvr-eventide-bundle-leftover-expand5",
+      "notes": "KVR leftover bundle; Newfangled titles already under newfangled-audio.",
+      "identity_kind": "bundle",
+      "notes_for_user": "Eventide bundle (Elevate Mastering Bundle)."
+    },
+    {
+      "id": "eventide--h9-plug-in-series-bundle",
+      "manufacturerId": "eventide",
+      "name": "H9 Plug-in Series Bundle",
+      "matchPatterns": [
+        "H9 Plug-in Series Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.eventideaudio.com/downloads/",
+      "identity_source": "kvr-eventide-bundle-leftover-expand5",
+      "notes": "KVR leftover bundle; Newfangled titles already under newfangled-audio.",
+      "identity_kind": "bundle",
+      "notes_for_user": "Eventide bundle (H9 Plug-in Series Bundle)."
+    },
+    {
+      "id": "eventide--ultra-essentials-bundle",
+      "manufacturerId": "eventide",
+      "name": "Ultra Essentials Bundle",
+      "matchPatterns": [
+        "Ultra Essentials Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.eventideaudio.com/downloads/",
+      "identity_source": "kvr-eventide-bundle-leftover-expand5",
+      "notes": "KVR leftover bundle; Newfangled titles already under newfangled-audio.",
+      "identity_kind": "bundle",
+      "notes_for_user": "Eventide bundle (Ultra Essentials Bundle)."
+    },
+    {
+      "id": "audiothing--drum-machine-bundle",
+      "manufacturerId": "audiothing",
+      "name": "Drum Machine Bundle",
+      "matchPatterns": [
+        "Drum Machine Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.audiothing.net/account/",
+      "identity_source": "kvr-audiothing-gap-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/drum-machine-bundle-by-audiothing",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "audiothing--effect-bundle",
+      "manufacturerId": "audiothing",
+      "name": "Effect Bundle",
+      "matchPatterns": [
+        "Effect Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.audiothing.net/account/",
+      "identity_source": "kvr-audiothing-gap-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/effect-bundle-by-audiothing",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "audiothing--magical-toy-keyboard",
+      "manufacturerId": "audiothing",
+      "name": "Magical Toy Keyboard",
+      "matchPatterns": [
+        "Magical Toy Keyboard"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.audiothing.net/account/",
+      "identity_source": "kvr-audiothing-gap-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/magical-toy-keyboard-by-audiothing",
+      "identity_kind": "plugin"
+    },
+    {
+      "id": "audiothing--vintage-bundle",
+      "manufacturerId": "audiothing",
+      "name": "Vintage Bundle",
+      "matchPatterns": [
+        "Vintage Bundle"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.audiothing.net/account/",
+      "identity_source": "kvr-audiothing-gap-expand5",
+      "notes": "KVR product https://www.kvraudio.com/product/vintage-bundle-by-audiothing",
+      "identity_kind": "bundle"
+    },
+    {
+      "id": "surge-synthesizer--stochas",
+      "manufacturerId": "surge-synthesizer",
+      "name": "Stochas",
+      "matchPatterns": [
+        "Stochas",
+        "Stochastic Sequencer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://surge-synthesizer.github.io/downloads/",
+      "identity_source": "surge-foss-fill-expand5",
+      "notes": "Surge Synth Team FOSS fill; expand5.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "surge-synthesizer--monique-monosynth",
+      "manufacturerId": "surge-synthesizer",
+      "name": "Monique Monosynth",
+      "matchPatterns": [
+        "Monique Monosynth",
+        "Monique"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://surge-synthesizer.github.io/downloads/",
+      "identity_source": "surge-foss-fill-expand5",
+      "notes": "Surge Synth Team FOSS fill; expand5.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "surge-synthesizer--b-step-sequencer",
+      "manufacturerId": "surge-synthesizer",
+      "name": "B-Step Sequencer",
+      "matchPatterns": [
+        "B-Step Sequencer",
+        "B-Step"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://surge-synthesizer.github.io/downloads/",
+      "identity_source": "surge-foss-fill-expand5",
+      "notes": "Surge Synth Team FOSS fill; expand5.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "thewavewarden--filter-force",
+      "manufacturerId": "thewavewarden",
+      "name": "Filter Force",
+      "matchPatterns": [
+        "Filter Force"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.thewavewarden.com/",
+      "identity_source": "foss-first-class-twin-expand5",
+      "notes": "FOSS first-class identity; OAS twin under oas--thewavewarden; expand5.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "thewavewarden--spline-wavetable-synthesizer",
+      "manufacturerId": "thewavewarden",
+      "name": "Spline Wavetable Synthesizer",
+      "matchPatterns": [
+        "Spline Wavetable Synthesizer",
+        "Spline"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.thewavewarden.com/",
+      "identity_source": "foss-first-class-twin-expand5",
+      "notes": "FOSS first-class identity; OAS twin under oas--thewavewarden; expand5.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "brain-control--tunefish-4",
+      "manufacturerId": "brain-control",
+      "name": "Tunefish 4",
+      "matchPatterns": [
+        "Tunefish 4",
+        "Tunefish",
+        "Tunefish4"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.braincontrol.org/",
+      "identity_source": "foss-first-class-twin-expand5",
+      "notes": "FOSS first-class identity; OAS twin under oas--brain-control; expand5.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    }
+  ]
+}

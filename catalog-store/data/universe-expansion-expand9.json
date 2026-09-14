@@ -1,0 +1,3727 @@
+{
+  "identity_source": "universe-expansion-expand9-2026-09-10",
+  "methodology": "Expand9 exhaustive identity growth. Prefer Melda/Voxengo/PSP/Softube/PA product-list deltas (0 net after dedup) + Native Instruments Sounds/Expansions collection as soundset. New FOSS hubs Carla + yabridge. D16 sound expansions + bundles. u-he BazilleCM/bundles/eurorack Wiretap+CEN2RION. TAL legacy KVR. AudioThing Kontakt soundsets. Kazrog Avalon EQ bundle. Polyverse bundles. Jack skipped. Dedup by manufacturer norm + id. No invented versions.",
+  "sources": [
+    "https://www.native-instruments.com/collections/sounds/products.json",
+    "https://www.native-instruments.com/en/products/komplete/expansions/",
+    "https://d16.pl/products",
+    "https://u-he.com/products/",
+    "https://www.kvraudio.com/developer/tal-software",
+    "https://www.kvraudio.com/developer/audiothing",
+    "https://www.kvraudio.com/developer/kazrog",
+    "https://www.kvraudio.com/developer/polyverse-music",
+    "https://www.plugin-alliance.com/products.json",
+    "https://www.meldaproduction.com/sitemap.xml",
+    "https://www.voxengo.com/products/",
+    "https://www.pspaudioware.com/products",
+    "https://github.com/falkTX/Carla/releases",
+    "https://github.com/robbert-vdh/yabridge/releases",
+    "https://lsp-plug.in/?page=download"
+  ],
+  "manufacturers": [
+    {
+      "id": "carla",
+      "name": "Carla",
+      "aliases": [
+        "falkTX Carla",
+        "KXStudio Carla"
+      ],
+      "websiteUrl": "https://kx.studio/Applications:Carla",
+      "updatePortalUrl": "https://github.com/falkTX/Carla/releases",
+      "notes": "FOSS audio plugin host (falkTX). expand9."
+    },
+    {
+      "id": "yabridge",
+      "name": "yabridge",
+      "aliases": [
+        "yabridgectl"
+      ],
+      "websiteUrl": "https://github.com/robbert-vdh/yabridge",
+      "updatePortalUrl": "https://github.com/robbert-vdh/yabridge/releases",
+      "notes": "Windows VST2/VST3/CLAP bridge for Linux. expand9."
+    }
+  ],
+  "plugins": [
+    {
+      "id": "carla--carla",
+      "manufacturerId": "carla",
+      "name": "Carla",
+      "matchPatterns": [
+        "Carla",
+        "Carla Host",
+        "falkTX Carla"
+      ],
+      "formats": [
+        "Standalone",
+        "VST2",
+        "VST3",
+        "LV2",
+        "CLAP"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "FOSS multi-format plugin host; expand9 hub_app.",
+      "identity_kind": "hub_app",
+      "updatePortalUrl": "https://github.com/falkTX/Carla/releases",
+      "notes_for_user": "Version from GitHub Releases (stable line).",
+      "isFreeware": true
+    },
+    {
+      "id": "yabridge--yabridge",
+      "manufacturerId": "yabridge",
+      "name": "yabridge",
+      "matchPatterns": [
+        "yabridge",
+        "yabridgectl"
+      ],
+      "formats": [
+        "Bridge"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "FOSS Windows→Linux plugin bridge hub; expand9 hub_app. Jack skipped per policy.",
+      "identity_kind": "hub_app",
+      "updatePortalUrl": "https://github.com/robbert-vdh/yabridge/releases",
+      "notes_for_user": "Stable release from GitHub Releases; master/dev builds are separate.",
+      "isFreeware": true
+    },
+    {
+      "id": "native-instruments--pure-drip",
+      "manufacturerId": "native-instruments",
+      "name": "Pure Drip",
+      "matchPatterns": [
+        "Pure Drip",
+        "pure drip"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=pure-drip. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--faded-reels",
+      "manufacturerId": "native-instruments",
+      "name": "Faded Reels",
+      "matchPatterns": [
+        "Faded Reels",
+        "faded reels"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=faded-reels. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--crate-cuts",
+      "manufacturerId": "native-instruments",
+      "name": "Crate Cuts",
+      "matchPatterns": [
+        "Crate Cuts",
+        "crate cuts"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=crate-cuts. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--certified-gold",
+      "manufacturerId": "native-instruments",
+      "name": "Certified Gold",
+      "matchPatterns": [
+        "Certified Gold",
+        "certified gold"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=certified-gold. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--aquarius-earth",
+      "manufacturerId": "native-instruments",
+      "name": "Aquarius Earth",
+      "matchPatterns": [
+        "Aquarius Earth",
+        "aquarius earth"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=aquarius-earth. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--magnetic-coast",
+      "manufacturerId": "native-instruments",
+      "name": "Magnetic Coast",
+      "matchPatterns": [
+        "Magnetic Coast",
+        "magnetic coast"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=magnetic-coast. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--lockdown-grind",
+      "manufacturerId": "native-instruments",
+      "name": "Lockdown Grind",
+      "matchPatterns": [
+        "Lockdown Grind",
+        "lockdown grind"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=lockdown-grind. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--soul-magic",
+      "manufacturerId": "native-instruments",
+      "name": "Soul Magic",
+      "matchPatterns": [
+        "Soul Magic",
+        "soul magic"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=soul-magic. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--cloud-supply",
+      "manufacturerId": "native-instruments",
+      "name": "Cloud Supply",
+      "matchPatterns": [
+        "Cloud Supply",
+        "cloud supply"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=cloud-supply. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--anima-ascent",
+      "manufacturerId": "native-instruments",
+      "name": "Anima Ascent",
+      "matchPatterns": [
+        "Anima Ascent",
+        "anima ascent"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=anima-ascent. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--infamous-flow",
+      "manufacturerId": "native-instruments",
+      "name": "Infamous Flow",
+      "matchPatterns": [
+        "Infamous Flow",
+        "infamous flow"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=infamous-flow. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--sacred-futures",
+      "manufacturerId": "native-instruments",
+      "name": "Sacred Futures",
+      "matchPatterns": [
+        "Sacred Futures",
+        "sacred futures"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=sacred-futures. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--dj-khalil",
+      "manufacturerId": "native-instruments",
+      "name": "DJ Khalil",
+      "matchPatterns": [
+        "DJ Khalil",
+        "artist expansion dj khalil"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=artist-expansion-dj-khalil. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--meteoric-rise",
+      "manufacturerId": "native-instruments",
+      "name": "Meteoric Rise",
+      "matchPatterns": [
+        "Meteoric Rise",
+        "meteoric rise"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=meteoric-rise. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--opaline-drift",
+      "manufacturerId": "native-instruments",
+      "name": "Opaline Drift",
+      "matchPatterns": [
+        "Opaline Drift",
+        "opaline drift"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=opaline-drift. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--trill-rays",
+      "manufacturerId": "native-instruments",
+      "name": "Trill Rays",
+      "matchPatterns": [
+        "Trill Rays",
+        "trill rays"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=trill-rays. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--street-swarm",
+      "manufacturerId": "native-instruments",
+      "name": "Street Swarm",
+      "matchPatterns": [
+        "Street Swarm",
+        "street swarm"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=street-swarm. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--global-shake",
+      "manufacturerId": "native-instruments",
+      "name": "Global Shake",
+      "matchPatterns": [
+        "Global Shake",
+        "global shake"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=global-shake. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--midnight-sunset",
+      "manufacturerId": "native-instruments",
+      "name": "Midnight Sunset",
+      "matchPatterns": [
+        "Midnight Sunset",
+        "midnight sunset"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=midnight-sunset. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--lo-fi-glow",
+      "manufacturerId": "native-instruments",
+      "name": "Lo-fi Glow",
+      "matchPatterns": [
+        "Lo-fi Glow",
+        "lo fi glow"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=lo-fi-glow. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--black-arc",
+      "manufacturerId": "native-instruments",
+      "name": "Black Arc",
+      "matchPatterns": [
+        "Black Arc",
+        "black arc"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=black-arc. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--burnt-hues",
+      "manufacturerId": "native-instruments",
+      "name": "Burnt Hues",
+      "matchPatterns": [
+        "Burnt Hues",
+        "burnt hues"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=burnt-hues. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--rhythm-source",
+      "manufacturerId": "native-instruments",
+      "name": "Rhythm Source",
+      "matchPatterns": [
+        "Rhythm Source",
+        "rhythm source"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=rhythm-source. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--electric-touch",
+      "manufacturerId": "native-instruments",
+      "name": "Electric Touch",
+      "matchPatterns": [
+        "Electric Touch",
+        "electric touch"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=electric-touch. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--indigo-dust",
+      "manufacturerId": "native-instruments",
+      "name": "Indigo Dust",
+      "matchPatterns": [
+        "Indigo Dust",
+        "indigo dust"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=indigo-dust. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--ignition-code",
+      "manufacturerId": "native-instruments",
+      "name": "Ignition Code",
+      "matchPatterns": [
+        "Ignition Code",
+        "ignition code"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=ignition-code. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--borough-chops",
+      "manufacturerId": "native-instruments",
+      "name": "Borough Chops",
+      "matchPatterns": [
+        "Borough Chops",
+        "borough chops"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=borough-chops. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--satin-looks",
+      "manufacturerId": "native-instruments",
+      "name": "Satin Looks",
+      "matchPatterns": [
+        "Satin Looks",
+        "satin looks"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=satin-looks. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--duets",
+      "manufacturerId": "native-instruments",
+      "name": "Duets",
+      "matchPatterns": [
+        "Duets",
+        "duets"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=duets. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--polar-flare",
+      "manufacturerId": "native-instruments",
+      "name": "Polar Flare",
+      "matchPatterns": [
+        "Polar Flare",
+        "polar flare"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=polar-flare. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--free-form",
+      "manufacturerId": "native-instruments",
+      "name": "Free Form",
+      "matchPatterns": [
+        "Free Form",
+        "free form"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=free-form. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--timeless-glow",
+      "manufacturerId": "native-instruments",
+      "name": "Timeless Glow",
+      "matchPatterns": [
+        "Timeless Glow",
+        "timeless glow"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=timeless-glow. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--neo-boogie",
+      "manufacturerId": "native-instruments",
+      "name": "Neo Boogie",
+      "matchPatterns": [
+        "Neo Boogie",
+        "neo boogie"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=neo-boogie. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--basement-era",
+      "manufacturerId": "native-instruments",
+      "name": "Basement Era",
+      "matchPatterns": [
+        "Basement Era",
+        "basement era"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=basement-era. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--infinite-escape",
+      "manufacturerId": "native-instruments",
+      "name": "Infinite Escape",
+      "matchPatterns": [
+        "Infinite Escape",
+        "infinite escape"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=infinite-escape. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--backyard-jams",
+      "manufacturerId": "native-instruments",
+      "name": "Backyard Jams",
+      "matchPatterns": [
+        "Backyard Jams",
+        "backyard jams"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=backyard-jams. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--sierra-grove",
+      "manufacturerId": "native-instruments",
+      "name": "Sierra Grove",
+      "matchPatterns": [
+        "Sierra Grove",
+        "sierra grove"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=sierra-grove. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--karriem-riggins-drums",
+      "manufacturerId": "native-instruments",
+      "name": "Karriem Riggins Drums",
+      "matchPatterns": [
+        "Karriem Riggins Drums",
+        "karriem riggins drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=karriem-riggins-drums. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--system-clash",
+      "manufacturerId": "native-instruments",
+      "name": "System Clash",
+      "matchPatterns": [
+        "System Clash",
+        "system clash"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=system-clash. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--carbon-decay",
+      "manufacturerId": "native-instruments",
+      "name": "Carbon Decay",
+      "matchPatterns": [
+        "Carbon Decay",
+        "carbon decay"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=carbon-decay. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--prospect-haze",
+      "manufacturerId": "native-instruments",
+      "name": "Prospect Haze",
+      "matchPatterns": [
+        "Prospect Haze",
+        "prospect haze"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=prospect-haze. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--analog-dreams-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Analog Dreams MPC Edition",
+      "matchPatterns": [
+        "Analog Dreams MPC Edition",
+        "analog dreams mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=analog-dreams-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--body-mechanik",
+      "manufacturerId": "native-instruments",
+      "name": "Body Mechanik",
+      "matchPatterns": [
+        "Body Mechanik",
+        "body mechanik"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=body-mechanik. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--the-stereotypes",
+      "manufacturerId": "native-instruments",
+      "name": "The Stereotypes",
+      "matchPatterns": [
+        "The Stereotypes",
+        "artist expansion the stereotypes"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=artist-expansion-the-stereotypes. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--nocturnal-state",
+      "manufacturerId": "native-instruments",
+      "name": "Nocturnal State",
+      "matchPatterns": [
+        "Nocturnal State",
+        "nocturnal state"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=nocturnal-state. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--melted-vibes",
+      "manufacturerId": "native-instruments",
+      "name": "Melted Vibes",
+      "matchPatterns": [
+        "Melted Vibes",
+        "melted vibes"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=melted-vibes. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--lone-forest",
+      "manufacturerId": "native-instruments",
+      "name": "Lone Forest",
+      "matchPatterns": [
+        "Lone Forest",
+        "lone forest"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=lone-forest. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--crystal-daggers",
+      "manufacturerId": "native-instruments",
+      "name": "Crystal Daggers",
+      "matchPatterns": [
+        "Crystal Daggers",
+        "crystal daggers"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=crystal-daggers. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--spectrum-quake",
+      "manufacturerId": "native-instruments",
+      "name": "Spectrum Quake",
+      "matchPatterns": [
+        "Spectrum Quake",
+        "spectrum quake"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=spectrum-quake. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--stadium-flex",
+      "manufacturerId": "native-instruments",
+      "name": "Stadium Flex",
+      "matchPatterns": [
+        "Stadium Flex",
+        "stadium flex"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=stadium-flex. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--young-phantom",
+      "manufacturerId": "native-instruments",
+      "name": "Young Phantom",
+      "matchPatterns": [
+        "Young Phantom",
+        "young phantom"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=young-phantom. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--cloud-supply-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Cloud Supply MPC Edition",
+      "matchPatterns": [
+        "Cloud Supply MPC Edition",
+        "cloud supply mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=cloud-supply-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--queensbridge-story",
+      "manufacturerId": "native-instruments",
+      "name": "Queensbridge Story",
+      "matchPatterns": [
+        "Queensbridge Story",
+        "queensbridge story"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=queensbridge-story. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--sasha",
+      "manufacturerId": "native-instruments",
+      "name": "Sasha",
+      "matchPatterns": [
+        "Sasha",
+        "artist expansion sasha"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=artist-expansion-sasha. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--warped-symmetry",
+      "manufacturerId": "native-instruments",
+      "name": "Warped Symmetry",
+      "matchPatterns": [
+        "Warped Symmetry",
+        "warped symmetry"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=warped-symmetry. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--rudiments",
+      "manufacturerId": "native-instruments",
+      "name": "Rudiments",
+      "matchPatterns": [
+        "Rudiments",
+        "rudiments"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=rudiments. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--prismatic-bliss",
+      "manufacturerId": "native-instruments",
+      "name": "Prismatic Bliss",
+      "matchPatterns": [
+        "Prismatic Bliss",
+        "prismatic bliss"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=prismatic-bliss. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--liquid-energy",
+      "manufacturerId": "native-instruments",
+      "name": "Liquid Energy",
+      "matchPatterns": [
+        "Liquid Energy",
+        "liquid energy"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=liquid-energy. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--rare-vibrations",
+      "manufacturerId": "native-instruments",
+      "name": "Rare Vibrations",
+      "matchPatterns": [
+        "Rare Vibrations",
+        "rare vibrations"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=rare-vibrations. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--headland-flow",
+      "manufacturerId": "native-instruments",
+      "name": "Headland Flow",
+      "matchPatterns": [
+        "Headland Flow",
+        "headland flow"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=headland-flow. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--marble-rims",
+      "manufacturerId": "native-instruments",
+      "name": "Marble Rims",
+      "matchPatterns": [
+        "Marble Rims",
+        "marble rims"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=marble-rims. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--amplified-funk",
+      "manufacturerId": "native-instruments",
+      "name": "Amplified Funk",
+      "matchPatterns": [
+        "Amplified Funk",
+        "amplified funk"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=amplified-funk. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--empire-breaks",
+      "manufacturerId": "native-instruments",
+      "name": "Empire Breaks",
+      "matchPatterns": [
+        "Empire Breaks",
+        "empire breaks"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=empire-breaks. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--byte-riot",
+      "manufacturerId": "native-instruments",
+      "name": "Byte Riot",
+      "matchPatterns": [
+        "Byte Riot",
+        "byte riot"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=byte-riot. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--bumpin-flava",
+      "manufacturerId": "native-instruments",
+      "name": "Bumpin Flava",
+      "matchPatterns": [
+        "Bumpin Flava",
+        "bumpin flava"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=bumpin-flava. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--concrete-sun",
+      "manufacturerId": "native-instruments",
+      "name": "Concrete Sun",
+      "matchPatterns": [
+        "Concrete Sun",
+        "concrete sun"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=concrete-sun. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--lunar-echoes",
+      "manufacturerId": "native-instruments",
+      "name": "Lunar Echoes",
+      "matchPatterns": [
+        "Lunar Echoes",
+        "lunar echoes"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=lunar-echoes. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--rising-crescent",
+      "manufacturerId": "native-instruments",
+      "name": "Rising Crescent",
+      "matchPatterns": [
+        "Rising Crescent",
+        "rising crescent"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=rising-crescent. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--rolling-tides",
+      "manufacturerId": "native-instruments",
+      "name": "Rolling Tides",
+      "matchPatterns": [
+        "Rolling Tides",
+        "rolling tides"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=rolling-tides. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--drift-theory",
+      "manufacturerId": "native-instruments",
+      "name": "Drift Theory",
+      "matchPatterns": [
+        "Drift Theory",
+        "drift theory"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=drift-theory. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--golden-kingdom",
+      "manufacturerId": "native-instruments",
+      "name": "Golden Kingdom",
+      "matchPatterns": [
+        "Golden Kingdom",
+        "golden kingdom"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=golden-kingdom. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--ignition-keys",
+      "manufacturerId": "native-instruments",
+      "name": "Ignition Keys",
+      "matchPatterns": [
+        "Ignition Keys",
+        "ignition keys"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=ignition-keys. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--radiant-horizon",
+      "manufacturerId": "native-instruments",
+      "name": "Radiant Horizon",
+      "matchPatterns": [
+        "Radiant Horizon",
+        "radiant horizon"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=radiant-horizon. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--neon-drive",
+      "manufacturerId": "native-instruments",
+      "name": "Neon Drive",
+      "matchPatterns": [
+        "Neon Drive",
+        "neon drive"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=neon-drive. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--higher-place",
+      "manufacturerId": "native-instruments",
+      "name": "Higher Place",
+      "matchPatterns": [
+        "Higher Place",
+        "higher place"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=higher-place. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--paradise-rinse",
+      "manufacturerId": "native-instruments",
+      "name": "Paradise Rinse",
+      "matchPatterns": [
+        "Paradise Rinse",
+        "paradise rinse"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=paradise-rinse. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--cavern-floor",
+      "manufacturerId": "native-instruments",
+      "name": "Cavern Floor",
+      "matchPatterns": [
+        "Cavern Floor",
+        "cavern floor"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=cavern-floor. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--sway-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Sway MPC Edition",
+      "matchPatterns": [
+        "Sway MPC Edition",
+        "sway mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=sway-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--hazy-days",
+      "manufacturerId": "native-instruments",
+      "name": "Hazy Days",
+      "matchPatterns": [
+        "Hazy Days",
+        "hazy days"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=hazy-days. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--electric-vice",
+      "manufacturerId": "native-instruments",
+      "name": "Electric Vice",
+      "matchPatterns": [
+        "Electric Vice",
+        "electric vice"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=electric-vice. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--motor-impact",
+      "manufacturerId": "native-instruments",
+      "name": "Motor Impact",
+      "matchPatterns": [
+        "Motor Impact",
+        "motor impact"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=motor-impact. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--district-xeo",
+      "manufacturerId": "native-instruments",
+      "name": "District Xeo",
+      "matchPatterns": [
+        "District Xeo",
+        "district xeo"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=district-xeo. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--nacht-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Nacht MPC Edition",
+      "matchPatterns": [
+        "Nacht MPC Edition",
+        "nacht mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=nacht-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--homage-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Homage MPC Edition",
+      "matchPatterns": [
+        "Homage MPC Edition",
+        "homage mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=homage-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--scene",
+      "manufacturerId": "native-instruments",
+      "name": "Scene",
+      "matchPatterns": [
+        "Scene",
+        "scene"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=scene. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--dark-pressure",
+      "manufacturerId": "native-instruments",
+      "name": "Dark Pressure",
+      "matchPatterns": [
+        "Dark Pressure",
+        "dark pressure"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=dark-pressure. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--decoded-forms",
+      "manufacturerId": "native-instruments",
+      "name": "Decoded Forms",
+      "matchPatterns": [
+        "Decoded Forms",
+        "decoded forms"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=decoded-forms. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--resonant-blaze",
+      "manufacturerId": "native-instruments",
+      "name": "Resonant Blaze",
+      "matchPatterns": [
+        "Resonant Blaze",
+        "resonant blaze"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=resonant-blaze. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--caribbean-current",
+      "manufacturerId": "native-instruments",
+      "name": "Caribbean Current",
+      "matchPatterns": [
+        "Caribbean Current",
+        "caribbean current"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=caribbean-current. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--sway",
+      "manufacturerId": "native-instruments",
+      "name": "Sway",
+      "matchPatterns": [
+        "Sway",
+        "sway"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=sway. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--grey-forge",
+      "manufacturerId": "native-instruments",
+      "name": "Grey Forge",
+      "matchPatterns": [
+        "Grey Forge",
+        "grey forge"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=grey-forge. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--lucid-mission",
+      "manufacturerId": "native-instruments",
+      "name": "Lucid Mission",
+      "matchPatterns": [
+        "Lucid Mission",
+        "lucid mission"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=lucid-mission. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--halcyon-sky",
+      "manufacturerId": "native-instruments",
+      "name": "Halcyon Sky",
+      "matchPatterns": [
+        "Halcyon Sky",
+        "halcyon sky"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=halcyon-sky. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--drive",
+      "manufacturerId": "native-instruments",
+      "name": "Drive",
+      "matchPatterns": [
+        "Drive",
+        "drive"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=drive. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--drop-squad",
+      "manufacturerId": "native-instruments",
+      "name": "Drop Squad",
+      "matchPatterns": [
+        "Drop Squad",
+        "drop squad"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=drop-squad. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--80s-new-wave",
+      "manufacturerId": "native-instruments",
+      "name": "80s New Wave",
+      "matchPatterns": [
+        "80s New Wave",
+        "80s new wave"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=80s-new-wave. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--london-grit",
+      "manufacturerId": "native-instruments",
+      "name": "London Grit",
+      "matchPatterns": [
+        "London Grit",
+        "london grit"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=london-grit. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--circuit-halo",
+      "manufacturerId": "native-instruments",
+      "name": "Circuit Halo",
+      "matchPatterns": [
+        "Circuit Halo",
+        "circuit halo"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=circuit-halo. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--haze",
+      "manufacturerId": "native-instruments",
+      "name": "Haze",
+      "matchPatterns": [
+        "Haze",
+        "haze"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=haze. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--drum-breaks",
+      "manufacturerId": "native-instruments",
+      "name": "Drum Breaks",
+      "matchPatterns": [
+        "Drum Breaks",
+        "drum breaks"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=drum-breaks. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--bazzazian",
+      "manufacturerId": "native-instruments",
+      "name": "Bazzazian",
+      "matchPatterns": [
+        "Bazzazian",
+        "artist expansion bazzazian"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=artist-expansion-bazzazian. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--platinum-bounce",
+      "manufacturerId": "native-instruments",
+      "name": "Platinum Bounce",
+      "matchPatterns": [
+        "Platinum Bounce",
+        "platinum bounce"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=platinum-bounce. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--echo-versions",
+      "manufacturerId": "native-instruments",
+      "name": "Echo Versions",
+      "matchPatterns": [
+        "Echo Versions",
+        "echo versions"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=echo-versions. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--arcane-attic",
+      "manufacturerId": "native-instruments",
+      "name": "Arcane Attic",
+      "matchPatterns": [
+        "Arcane Attic",
+        "arcane attic"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=arcane-attic. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--transistor-punch",
+      "manufacturerId": "native-instruments",
+      "name": "Transistor Punch",
+      "matchPatterns": [
+        "Transistor Punch",
+        "transistor punch"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=transistor-punch. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--solar-breeze",
+      "manufacturerId": "native-instruments",
+      "name": "Solar Breeze",
+      "matchPatterns": [
+        "Solar Breeze",
+        "solar breeze"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=solar-breeze. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--bazzazian-tapes",
+      "manufacturerId": "native-instruments",
+      "name": "Bazzazian Tapes",
+      "matchPatterns": [
+        "Bazzazian Tapes",
+        "bazzazian tapes"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=bazzazian-tapes. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--elastic-thump",
+      "manufacturerId": "native-instruments",
+      "name": "Elastic Thump",
+      "matchPatterns": [
+        "Elastic Thump",
+        "elastic thump"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=elastic-thump. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--progressive-trance",
+      "manufacturerId": "native-instruments",
+      "name": "Progressive Trance",
+      "matchPatterns": [
+        "Progressive Trance",
+        "progressive trance"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=progressive-trance. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--maschine-central",
+      "manufacturerId": "native-instruments",
+      "name": "Maschine Central",
+      "matchPatterns": [
+        "Maschine Central",
+        "maschine central"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=maschine-central. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--pulswerk",
+      "manufacturerId": "native-instruments",
+      "name": "Pulswerk",
+      "matchPatterns": [
+        "Pulswerk",
+        "pulswerk"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=pulswerk. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--vintage-heat",
+      "manufacturerId": "native-instruments",
+      "name": "Vintage Heat",
+      "matchPatterns": [
+        "Vintage Heat",
+        "vintage heat"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=vintage-heat. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--helios-ray",
+      "manufacturerId": "native-instruments",
+      "name": "Helios Ray",
+      "matchPatterns": [
+        "Helios Ray",
+        "helios ray"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=helios-ray. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--fade",
+      "manufacturerId": "native-instruments",
+      "name": "Fade",
+      "matchPatterns": [
+        "Fade",
+        "fade"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=fade. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--mother-board",
+      "manufacturerId": "native-instruments",
+      "name": "Mother Board",
+      "matchPatterns": [
+        "Mother Board",
+        "mother board"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=mother-board. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--molten-veil",
+      "manufacturerId": "native-instruments",
+      "name": "Molten Veil",
+      "matchPatterns": [
+        "Molten Veil",
+        "molten veil"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=molten-veil. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--astral-flutter",
+      "manufacturerId": "native-instruments",
+      "name": "Astral Flutter",
+      "matchPatterns": [
+        "Astral Flutter",
+        "astral flutter"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=astral-flutter. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--rush",
+      "manufacturerId": "native-instruments",
+      "name": "Rush",
+      "matchPatterns": [
+        "Rush",
+        "rush"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=rush. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--lilac-glare",
+      "manufacturerId": "native-instruments",
+      "name": "Lilac Glare",
+      "matchPatterns": [
+        "Lilac Glare",
+        "lilac glare"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=lilac-glare. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--magnate-hustle",
+      "manufacturerId": "native-instruments",
+      "name": "Magnate Hustle",
+      "matchPatterns": [
+        "Magnate Hustle",
+        "magnate hustle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=magnate-hustle. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--pulse",
+      "manufacturerId": "native-instruments",
+      "name": "Pulse",
+      "matchPatterns": [
+        "Pulse",
+        "pulse"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=pulse. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--duets-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Duets MPC Edition",
+      "matchPatterns": [
+        "Duets MPC Edition",
+        "duets mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=duets-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--soul-sessions-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Soul Sessions MPC Edition",
+      "matchPatterns": [
+        "Soul Sessions MPC Edition",
+        "soul sessions mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=soul-sessions-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--velvet-lounge",
+      "manufacturerId": "native-instruments",
+      "name": "Velvet Lounge",
+      "matchPatterns": [
+        "Velvet Lounge",
+        "velvet lounge"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=velvet-lounge. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--velvet-bloom",
+      "manufacturerId": "native-instruments",
+      "name": "Velvet Bloom",
+      "matchPatterns": [
+        "Velvet Bloom",
+        "velvet bloom"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=velvet-bloom. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--homage",
+      "manufacturerId": "native-instruments",
+      "name": "Homage",
+      "matchPatterns": [
+        "Homage",
+        "homage"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=homage. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--mechanix",
+      "manufacturerId": "native-instruments",
+      "name": "Mechanix",
+      "matchPatterns": [
+        "Mechanix",
+        "mechanix"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=mechanix. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--hot-vocals",
+      "manufacturerId": "native-instruments",
+      "name": "Hot Vocals",
+      "matchPatterns": [
+        "Hot Vocals",
+        "hot vocals"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=hot-vocals. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--kino",
+      "manufacturerId": "native-instruments",
+      "name": "Kino",
+      "matchPatterns": [
+        "Kino",
+        "kino"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=kino. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--platinum-pop",
+      "manufacturerId": "native-instruments",
+      "name": "Platinum Pop",
+      "matchPatterns": [
+        "Platinum Pop",
+        "platinum pop"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=platinum-pop. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--luxa-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Luxa MPC Edition",
+      "matchPatterns": [
+        "Luxa MPC Edition",
+        "luxa mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=luxa-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--drum-state",
+      "manufacturerId": "native-instruments",
+      "name": "Drum State",
+      "matchPatterns": [
+        "Drum State",
+        "drum state"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=drum-state. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--lazer-dice",
+      "manufacturerId": "native-instruments",
+      "name": "Lazer Dice",
+      "matchPatterns": [
+        "Lazer Dice",
+        "lazer dice"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=lazer-dice. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--jersey-ride",
+      "manufacturerId": "native-instruments",
+      "name": "Jersey Ride",
+      "matchPatterns": [
+        "Jersey Ride",
+        "jersey ride"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=jersey-ride. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--moebius",
+      "manufacturerId": "native-instruments",
+      "name": "Moebius",
+      "matchPatterns": [
+        "Moebius",
+        "moebius"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=moebius. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--disco-and-funk",
+      "manufacturerId": "native-instruments",
+      "name": "Disco and Funk",
+      "matchPatterns": [
+        "Disco and Funk",
+        "disco funk"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=disco-funk. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--feel-it",
+      "manufacturerId": "native-instruments",
+      "name": "Feel It",
+      "matchPatterns": [
+        "Feel It",
+        "feel it"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=feel-it. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--quest",
+      "manufacturerId": "native-instruments",
+      "name": "Quest",
+      "matchPatterns": [
+        "Quest",
+        "quest"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=quest. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--r-and-b-licks",
+      "manufacturerId": "native-instruments",
+      "name": "R&B Licks",
+      "matchPatterns": [
+        "R&B Licks",
+        "rb licks"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=rb-licks. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--ignition-keys-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Ignition Keys MPC Edition",
+      "matchPatterns": [
+        "Ignition Keys MPC Edition",
+        "ignition keys mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=ignition-keys-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--hexagon-highway",
+      "manufacturerId": "native-instruments",
+      "name": "Hexagon Highway",
+      "matchPatterns": [
+        "Hexagon Highway",
+        "hexagon highway"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=hexagon-highway. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--raw-voltage",
+      "manufacturerId": "native-instruments",
+      "name": "Raw Voltage",
+      "matchPatterns": [
+        "Raw Voltage",
+        "raw voltage"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=raw-voltage. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--our-house",
+      "manufacturerId": "native-instruments",
+      "name": "Our House",
+      "matchPatterns": [
+        "Our House",
+        "our house"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=our-house. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--charge",
+      "manufacturerId": "native-instruments",
+      "name": "Charge",
+      "matchPatterns": [
+        "Charge",
+        "charge"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=charge. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--brass-n-bounce",
+      "manufacturerId": "native-instruments",
+      "name": "Brass n Bounce",
+      "matchPatterns": [
+        "Brass n Bounce",
+        "brass n bounce"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=brass-n-bounce. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--lone-forest-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Lone Forest MPC Expansion",
+      "matchPatterns": [
+        "Lone Forest MPC Expansion",
+        "mpc expansion lone forest"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=mpc-expansion-lone-forest. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--void-eclipse",
+      "manufacturerId": "native-instruments",
+      "name": "Void Eclipse",
+      "matchPatterns": [
+        "Void Eclipse",
+        "void eclipse"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=void-eclipse. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--static-friction",
+      "manufacturerId": "native-instruments",
+      "name": "Static Friction",
+      "matchPatterns": [
+        "Static Friction",
+        "static friction"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=static-friction. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--bounce",
+      "manufacturerId": "native-instruments",
+      "name": "Bounce",
+      "matchPatterns": [
+        "Bounce",
+        "bounce"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=bounce. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--utopia-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Utopia MPC Edition",
+      "matchPatterns": [
+        "Utopia MPC Edition",
+        "utopia mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=utopia-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--midnight-flow",
+      "manufacturerId": "native-instruments",
+      "name": "Midnight Flow",
+      "matchPatterns": [
+        "Midnight Flow",
+        "midnight flow"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=midnight-flow. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--bouquet",
+      "manufacturerId": "native-instruments",
+      "name": "Bouquet",
+      "matchPatterns": [
+        "Bouquet",
+        "bouquet"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=bouquet. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--true-school",
+      "manufacturerId": "native-instruments",
+      "name": "True School",
+      "matchPatterns": [
+        "True School",
+        "true school"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=true-school. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--bump",
+      "manufacturerId": "native-instruments",
+      "name": "Bump",
+      "matchPatterns": [
+        "Bump",
+        "bump"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=bump. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--hot-list",
+      "manufacturerId": "native-instruments",
+      "name": "Hot List",
+      "matchPatterns": [
+        "Hot List",
+        "hot list"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=hot-list. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--wake",
+      "manufacturerId": "native-instruments",
+      "name": "Wake",
+      "matchPatterns": [
+        "Wake",
+        "wake"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=wake. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--beam",
+      "manufacturerId": "native-instruments",
+      "name": "Beam",
+      "matchPatterns": [
+        "Beam",
+        "beam"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=beam. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--faded-reels-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Faded Reels MPC Expansion",
+      "matchPatterns": [
+        "Faded Reels MPC Expansion",
+        "mpc expansion faded reels"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=mpc-expansion-faded-reels. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--jazz-hop",
+      "manufacturerId": "native-instruments",
+      "name": "Jazz Hop",
+      "matchPatterns": [
+        "Jazz Hop",
+        "jazz hop"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=jazz-hop. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--hazy-days-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Hazy Days MPC Expansion",
+      "matchPatterns": [
+        "Hazy Days MPC Expansion",
+        "mpc expansion hazy days"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=mpc-expansion-hazy-days. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--latin-trap",
+      "manufacturerId": "native-instruments",
+      "name": "Latin Trap",
+      "matchPatterns": [
+        "Latin Trap",
+        "latin trap"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=latin-trap. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--soul-gold",
+      "manufacturerId": "native-instruments",
+      "name": "Soul Gold",
+      "matchPatterns": [
+        "Soul Gold",
+        "soul gold"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=soul-gold. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--marco-polo-drums",
+      "manufacturerId": "native-instruments",
+      "name": "Marco Polo Drums",
+      "matchPatterns": [
+        "Marco Polo Drums",
+        "marco polo drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=marco-polo-drums. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--soul-choir",
+      "manufacturerId": "native-instruments",
+      "name": "Soul Choir",
+      "matchPatterns": [
+        "Soul Choir",
+        "soul choir"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=soul-choir. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--nacht",
+      "manufacturerId": "native-instruments",
+      "name": "Nacht",
+      "matchPatterns": [
+        "Nacht",
+        "nacht"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=nacht. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--raw-rhythm",
+      "manufacturerId": "native-instruments",
+      "name": "Raw Rhythm",
+      "matchPatterns": [
+        "Raw Rhythm",
+        "raw rhythm"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=raw-rhythm. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--melted-vibes-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Melted Vibes MPC Edition",
+      "matchPatterns": [
+        "Melted Vibes MPC Edition",
+        "melted vibes mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=melted-vibes-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--acoustic-drums",
+      "manufacturerId": "native-instruments",
+      "name": "Acoustic Drums",
+      "matchPatterns": [
+        "Acoustic Drums",
+        "acoustic drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=acoustic-drums. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--ambient-atmospheres",
+      "manufacturerId": "native-instruments",
+      "name": "Ambient Atmospheres",
+      "matchPatterns": [
+        "Ambient Atmospheres",
+        "ambient atmospheres"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=ambient-atmospheres. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--hypr",
+      "manufacturerId": "native-instruments",
+      "name": "Hypr",
+      "matchPatterns": [
+        "Hypr",
+        "hypr"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=hypr. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--melodic-trap",
+      "manufacturerId": "native-instruments",
+      "name": "Melodic Trap",
+      "matchPatterns": [
+        "Melodic Trap",
+        "melodic trap"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=melodic-trap. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--rare-vibrations-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Rare Vibrations MPC Expansion",
+      "matchPatterns": [
+        "Rare Vibrations MPC Expansion",
+        "mpc expansion rare vibrations"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=mpc-expansion-rare-vibrations. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--zona-ritmo",
+      "manufacturerId": "native-instruments",
+      "name": "Zona Ritmo",
+      "matchPatterns": [
+        "Zona Ritmo",
+        "zona ritmo"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=zona-ritmo. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--house-grooves",
+      "manufacturerId": "native-instruments",
+      "name": "House Grooves",
+      "matchPatterns": [
+        "House Grooves",
+        "house grooves"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=house-grooves. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--bass-music-essentials",
+      "manufacturerId": "native-instruments",
+      "name": "Bass Music Essentials",
+      "matchPatterns": [
+        "Bass Music Essentials",
+        "bass music essentials"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=bass-music-essentials. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--melodic-techno-bass",
+      "manufacturerId": "native-instruments",
+      "name": "Melodic Techno Bass",
+      "matchPatterns": [
+        "Melodic Techno Bass",
+        "melodic techno bass"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=melodic-techno-bass. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--global-shake-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Global Shake MPC Expansion",
+      "matchPatterns": [
+        "Global Shake MPC Expansion",
+        "mpc expansion global shake"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=mpc-expansion-global-shake. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--queensbridge-story-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Queensbridge Story MPC Expansion",
+      "matchPatterns": [
+        "Queensbridge Story MPC Expansion",
+        "mpc expansion queensbridge story"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=mpc-expansion-queensbridge-story. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--cinematic-soundscapes",
+      "manufacturerId": "native-instruments",
+      "name": "Cinematic Soundscapes",
+      "matchPatterns": [
+        "Cinematic Soundscapes",
+        "cinematic soundscapes"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=cinematic-soundscapes. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--luxury-hip-hop",
+      "manufacturerId": "native-instruments",
+      "name": "Luxury Hip Hop",
+      "matchPatterns": [
+        "Luxury Hip Hop",
+        "luxury hip hop"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=luxury-hip-hop. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--creative-chords",
+      "manufacturerId": "native-instruments",
+      "name": "Creative Chords",
+      "matchPatterns": [
+        "Creative Chords",
+        "creative chords"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=creative-chords. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--feel-it-mpc-edition",
+      "manufacturerId": "native-instruments",
+      "name": "Feel It MPC Edition",
+      "matchPatterns": [
+        "Feel It MPC Edition",
+        "feel it mpc edition"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=feel-it-mpc-edition. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--scoring-sequences",
+      "manufacturerId": "native-instruments",
+      "name": "Scoring Sequences",
+      "matchPatterns": [
+        "Scoring Sequences",
+        "scoring sequences"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=scoring-sequences. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--industrial-bass",
+      "manufacturerId": "native-instruments",
+      "name": "Industrial Bass",
+      "matchPatterns": [
+        "Industrial Bass",
+        "industrial bass"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=industrial-bass. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--italo-disco",
+      "manufacturerId": "native-instruments",
+      "name": "Italo Disco",
+      "matchPatterns": [
+        "Italo Disco",
+        "italo disco"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=italo-disco. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--synthwave-leads",
+      "manufacturerId": "native-instruments",
+      "name": "Synthwave Leads",
+      "matchPatterns": [
+        "Synthwave Leads",
+        "synthwave leads"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=synthwave-leads. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--millennium-hip-hop",
+      "manufacturerId": "native-instruments",
+      "name": "Millennium Hip Hop",
+      "matchPatterns": [
+        "Millennium Hip Hop",
+        "millennium hip hop"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=millennium-hip-hop. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--140-bass",
+      "manufacturerId": "native-instruments",
+      "name": "140 Bass",
+      "matchPatterns": [
+        "140 Bass",
+        "140 bass"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=140-bass. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--lo-fi-and-chill-plucks",
+      "manufacturerId": "native-instruments",
+      "name": "Lo-fi & Chill Plucks",
+      "matchPatterns": [
+        "Lo-fi & Chill Plucks",
+        "lofi chill plucks"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=lofi-chill-plucks. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--roux",
+      "manufacturerId": "native-instruments",
+      "name": "Roux",
+      "matchPatterns": [
+        "Roux",
+        "roux"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=roux. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--luxa",
+      "manufacturerId": "native-instruments",
+      "name": "Luxa",
+      "matchPatterns": [
+        "Luxa",
+        "luxa"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=luxa. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--drift-theory-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Drift Theory MPC Expansion",
+      "matchPatterns": [
+        "Drift Theory MPC Expansion",
+        "mpc expansion drift theory"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=mpc-expansion-drift-theory. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--modern-latin",
+      "manufacturerId": "native-instruments",
+      "name": "Modern Latin",
+      "matchPatterns": [
+        "Modern Latin",
+        "modern latin"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Leap Expansions); Shopify handle=modern-latin. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Leap Expansion"
+    },
+    {
+      "id": "native-instruments--rhythm-source-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Rhythm Source MPC Expansion",
+      "matchPatterns": [
+        "Rhythm Source MPC Expansion",
+        "mpc expansion rhythm source"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Akai MPC Expansions); Shopify handle=mpc-expansion-rhythm-source. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "MPC Expansion"
+    },
+    {
+      "id": "native-instruments--24k-drums",
+      "manufacturerId": "native-instruments",
+      "name": "24K Drums",
+      "matchPatterns": [
+        "24K Drums",
+        "24k drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=24k-drums. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--trap-bells",
+      "manufacturerId": "native-instruments",
+      "name": "Trap Bells",
+      "matchPatterns": [
+        "Trap Bells",
+        "trap bells"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=trap-bells. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--cinematic-risers",
+      "manufacturerId": "native-instruments",
+      "name": "Cinematic Risers",
+      "matchPatterns": [
+        "Cinematic Risers",
+        "cinematic risers"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=cinematic-risers. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--hyperpop-leads",
+      "manufacturerId": "native-instruments",
+      "name": "Hyperpop Leads",
+      "matchPatterns": [
+        "Hyperpop Leads",
+        "hyperpop leads"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=hyperpop-leads. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--community-drive-2020",
+      "manufacturerId": "native-instruments",
+      "name": "Community Drive 2020",
+      "matchPatterns": [
+        "Community Drive 2020",
+        "community drive 2020"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=community-drive-2020. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--community-drive-2021",
+      "manufacturerId": "native-instruments",
+      "name": "Community Drive 2021",
+      "matchPatterns": [
+        "Community Drive 2021",
+        "community drive 2021"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=community-drive-2021. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--infinite-escape-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Infinite Escape MPC Expansion",
+      "matchPatterns": [
+        "Infinite Escape MPC Expansion",
+        "mpc expansion infinite escape"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=mpc-expansion-infinite-escape. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--cinematic-hits",
+      "manufacturerId": "native-instruments",
+      "name": "Cinematic Hits",
+      "matchPatterns": [
+        "Cinematic Hits",
+        "cinematic hits"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (Massive X Expansions); Shopify handle=cinematic-hits. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Massive X Expansion"
+    },
+    {
+      "id": "native-instruments--timeless-glow-mpc-expansion",
+      "manufacturerId": "native-instruments",
+      "name": "Timeless Glow MPC Expansion",
+      "matchPatterns": [
+        "Timeless Glow MPC Expansion",
+        "mpc expansion timeless glow"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=mpc-expansion-timeless-glow. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--24k-keys",
+      "manufacturerId": "native-instruments",
+      "name": "24K Keys",
+      "matchPatterns": [
+        "24K Keys",
+        "24k keys"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=24k-keys. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--halo-vox",
+      "manufacturerId": "native-instruments",
+      "name": "Halo Vox",
+      "matchPatterns": [
+        "Halo Vox",
+        "halo vox"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=halo-vox. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--discoteca-drums",
+      "manufacturerId": "native-instruments",
+      "name": "Discoteca Drums",
+      "matchPatterns": [
+        "Discoteca Drums",
+        "discoteca drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=discoteca-drums. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--discoteca-keys",
+      "manufacturerId": "native-instruments",
+      "name": "Discoteca Keys",
+      "matchPatterns": [
+        "Discoteca Keys",
+        "discoteca keys"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (KOMPLETE Instrument); Shopify handle=discoteca-keys. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Expansion / Sounds"
+    },
+    {
+      "id": "native-instruments--cinematic-transitions",
+      "manufacturerId": "native-instruments",
+      "name": "Cinematic Transitions",
+      "matchPatterns": [
+        "Cinematic Transitions",
+        "cinematic transitions"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=cinematic-transitions. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--drift-theory-samples",
+      "manufacturerId": "native-instruments",
+      "name": "Drift Theory Samples",
+      "matchPatterns": [
+        "Drift Theory Samples",
+        "drift theory samples"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=drift-theory-samples. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--soul-magic-samples",
+      "manufacturerId": "native-instruments",
+      "name": "Soul Magic Samples",
+      "matchPatterns": [
+        "Soul Magic Samples",
+        "soul magic samples"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=soul-magic-samples. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--hazy-days-samples",
+      "manufacturerId": "native-instruments",
+      "name": "Hazy Days Samples",
+      "matchPatterns": [
+        "Hazy Days Samples",
+        "hazy days samples"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=hazy-days-samples. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--burnt-hues-samples",
+      "manufacturerId": "native-instruments",
+      "name": "Burnt Hues Samples",
+      "matchPatterns": [
+        "Burnt Hues Samples",
+        "burnt hues samples"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=burnt-hues-samples. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--faded-reels-samples",
+      "manufacturerId": "native-instruments",
+      "name": "Faded Reels Samples",
+      "matchPatterns": [
+        "Faded Reels Samples",
+        "faded reels samples"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=faded-reels-samples. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--songwriter-drums",
+      "manufacturerId": "native-instruments",
+      "name": "Songwriter Drums",
+      "matchPatterns": [
+        "Songwriter Drums",
+        "songwriter drums"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=songwriter-drums. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--darkwave-pads",
+      "manufacturerId": "native-instruments",
+      "name": "Darkwave Pads",
+      "matchPatterns": [
+        "Darkwave Pads",
+        "darkwave pads"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=darkwave-pads. expand9 identity_kind=soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds"
+    },
+    {
+      "id": "native-instruments--luxury-hip-hop-bundle",
+      "manufacturerId": "native-instruments",
+      "name": "Luxury Hip Hop Bundle",
+      "matchPatterns": [
+        "Luxury Hip Hop Bundle",
+        "luxury hip hop bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=luxury-hip-hop-bundle. expand9 identity_kind=bundle.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds Bundle"
+    },
+    {
+      "id": "native-instruments--italo-disco-bundle",
+      "manufacturerId": "native-instruments",
+      "name": "Italo Disco Bundle",
+      "matchPatterns": [
+        "Italo Disco Bundle",
+        "italo disco bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=italo-disco-bundle. expand9 identity_kind=bundle.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds Bundle"
+    },
+    {
+      "id": "native-instruments--lo-fi-samples-bundle",
+      "manufacturerId": "native-instruments",
+      "name": "Lo-fi Samples Bundle",
+      "matchPatterns": [
+        "Lo-fi Samples Bundle",
+        "lo fi samples bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "NI Sounds collection (untyped); Shopify handle=lo-fi-samples-bundle. expand9 identity_kind=bundle.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://www.native-instruments.com/en/products/komplete/expansions/",
+      "productLine": "Sounds Bundle"
+    },
+    {
+      "id": "d16-group--ripple",
+      "manufacturerId": "d16-group",
+      "name": "Ripple",
+      "matchPatterns": [
+        "Ripple",
+        "Ripple for Lush 2"
+      ],
+      "formats": [
+        "VST2",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "D16 manufacturer products page; expand9 soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://d16.pl/products",
+      "productLine": "Sound Expansion"
+    },
+    {
+      "id": "d16-group--pulse",
+      "manufacturerId": "d16-group",
+      "name": "Pulse",
+      "matchPatterns": [
+        "Pulse",
+        "Pulse for Lush 2"
+      ],
+      "formats": [
+        "VST2",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "D16 manufacturer products page; expand9 soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://d16.pl/products",
+      "productLine": "Sound Expansion"
+    },
+    {
+      "id": "d16-group--aurora",
+      "manufacturerId": "d16-group",
+      "name": "Aurora",
+      "matchPatterns": [
+        "Aurora",
+        "Aurora for Lush 2"
+      ],
+      "formats": [
+        "VST2",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "D16 manufacturer products page; expand9 soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://d16.pl/products",
+      "productLine": "Sound Expansion"
+    },
+    {
+      "id": "d16-group--lure",
+      "manufacturerId": "d16-group",
+      "name": "Lure",
+      "matchPatterns": [
+        "Lure",
+        "Lure for Lush 2"
+      ],
+      "formats": [
+        "VST2",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "D16 manufacturer products page; expand9 soundset.",
+      "identity_kind": "soundset",
+      "updatePortalUrl": "https://d16.pl/products",
+      "productLine": "Sound Expansion"
+    },
+    {
+      "id": "d16-group--total-bundle",
+      "manufacturerId": "d16-group",
+      "name": "Total Bundle",
+      "matchPatterns": [
+        "Total Bundle",
+        "D16 Total Bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "D16 manufacturer products page; expand9 bundle.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://d16.pl/products",
+      "productLine": "Bundle"
+    },
+    {
+      "id": "d16-group--classic-boxes-collection",
+      "manufacturerId": "d16-group",
+      "name": "Classic Boxes Collection",
+      "matchPatterns": [
+        "Classic Boxes Collection",
+        "Classic Boxes"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "D16 manufacturer products page; expand9 bundle.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://d16.pl/products",
+      "productLine": "Bundle"
+    },
+    {
+      "id": "d16-group--silverline-collection",
+      "manufacturerId": "d16-group",
+      "name": "SilverLine Collection",
+      "matchPatterns": [
+        "SilverLine Collection",
+        "SilverLine Bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "D16 manufacturer products page; expand9 bundle.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://d16.pl/products",
+      "productLine": "Bundle"
+    },
+    {
+      "id": "u-he--bazillecm",
+      "manufacturerId": "u-he",
+      "name": "BazilleCM",
+      "matchPatterns": [
+        "BazilleCM",
+        "Bazille CM"
+      ],
+      "formats": [
+        "VST2",
+        "VST3",
+        "AU",
+        "CLAP",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 plugin (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "plugin",
+      "updatePortalUrl": "https://u-he.com/products/",
+      "isFreeware": true
+    },
+    {
+      "id": "u-he--everything-bundle",
+      "manufacturerId": "u-he",
+      "name": "Everything Bundle",
+      "matchPatterns": [
+        "Everything Bundle",
+        "u-he Everything Bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 bundle (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "u-he--all-effects-bundle",
+      "manufacturerId": "u-he",
+      "name": "All Effects Bundle",
+      "matchPatterns": [
+        "All Effects Bundle",
+        "u-he All Effects Bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 bundle (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "u-he--bazille-soundset-bundle",
+      "manufacturerId": "u-he",
+      "name": "Bazille Soundset Bundle",
+      "matchPatterns": [
+        "Bazille Soundset Bundle",
+        "All Bazille soundsets"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 bundle (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "u-he--diva-soundset-bundle",
+      "manufacturerId": "u-he",
+      "name": "Diva Soundset Bundle",
+      "matchPatterns": [
+        "Diva Soundset Bundle",
+        "All Diva soundsets"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 bundle (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "u-he--hive-2-soundset-bundle",
+      "manufacturerId": "u-he",
+      "name": "Hive 2 Soundset Bundle",
+      "matchPatterns": [
+        "Hive 2 Soundset Bundle",
+        "All Hive 2 soundsets"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 bundle (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "u-he--repro-soundset-bundle",
+      "manufacturerId": "u-he",
+      "name": "Repro Soundset Bundle",
+      "matchPatterns": [
+        "Repro Soundset Bundle",
+        "All Repro soundsets"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 bundle (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "u-he--wiretap",
+      "manufacturerId": "u-he",
+      "name": "Wiretap",
+      "matchPatterns": [
+        "Wiretap",
+        "u-he Wiretap"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 eurorack (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "eurorack",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "u-he--cen2rion",
+      "manufacturerId": "u-he",
+      "name": "CEN2RION",
+      "matchPatterns": [
+        "CEN2RION",
+        "Centorion",
+        "u-he CEN2RION"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "u-he products page; expand9 eurorack (plugins/bundles/eurorack; individual soundsets already dense).",
+      "identity_kind": "eurorack",
+      "updatePortalUrl": "https://u-he.com/products/"
+    },
+    {
+      "id": "tal-software--tal-multi-filter",
+      "manufacturerId": "tal-software",
+      "name": "TAL-Multi-Filter",
+      "matchPatterns": [
+        "TAL-Multi-Filter",
+        "Multi Filter",
+        "TAL Multi Filter"
+      ],
+      "formats": [
+        "VST",
+        "AU"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "Legacy/discontinued TAL title from KVR; expand9.",
+      "identity_kind": "discontinued",
+      "updatePortalUrl": "https://tal-software.com/",
+      "isFreeware": true,
+      "discontinued": true
+    },
+    {
+      "id": "tal-software--tal-vintager",
+      "manufacturerId": "tal-software",
+      "name": "TAL-Vintager",
+      "matchPatterns": [
+        "TAL-Vintager",
+        "Vintager",
+        "TAL Vintager"
+      ],
+      "formats": [
+        "VST",
+        "AU"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "Legacy/discontinued TAL title from KVR; expand9.",
+      "identity_kind": "discontinued",
+      "updatePortalUrl": "https://tal-software.com/",
+      "isFreeware": true,
+      "discontinued": true
+    },
+    {
+      "id": "tal-software--real-synth-kunz-and-knobel",
+      "manufacturerId": "tal-software",
+      "name": "Real Synth / Kunz & Knobel",
+      "matchPatterns": [
+        "Real Synth / Kunz & Knobel",
+        "Real Synth",
+        "Kunz & Knobel"
+      ],
+      "formats": [
+        "VST",
+        "AU"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "Legacy/discontinued TAL title from KVR; expand9.",
+      "identity_kind": "discontinued",
+      "updatePortalUrl": "https://tal-software.com/",
+      "isFreeware": true,
+      "discontinued": true
+    },
+    {
+      "id": "kazrog--avalon-ad-2077-2055-eq-bundle",
+      "manufacturerId": "kazrog",
+      "name": "Avalon AD 2077/2055 EQ Bundle",
+      "matchPatterns": [
+        "Avalon AD 2077/2055 EQ Bundle",
+        "Kazrog Avalon EQ Bundle"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "Kazrog Avalon EQ marketing bundle; KVR/expand9.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://kazrog.com/"
+    },
+    {
+      "id": "polyverse--everything-bundle",
+      "manufacturerId": "polyverse",
+      "name": "Everything Bundle",
+      "matchPatterns": [
+        "Everything Bundle",
+        "Polyverse Everything Bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "Polyverse manufacturer/KVR bundle; expand9.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://polyversemusic.com/"
+    },
+    {
+      "id": "polyverse--infected-mushroom-bundle",
+      "manufacturerId": "polyverse",
+      "name": "Infected Mushroom Bundle",
+      "matchPatterns": [
+        "Infected Mushroom Bundle",
+        "Polyverse Infected Mushroom Bundle"
+      ],
+      "formats": [],
+      "identity_source": "universe-expansion-expand9",
+      "notes": "Polyverse manufacturer/KVR bundle; expand9.",
+      "identity_kind": "bundle",
+      "updatePortalUrl": "https://polyversemusic.com/"
+    }
+  ],
+  "stats_preview": {
+    "manufacturers": 2,
+    "plugins": 242,
+    "ni_soundsets_attempted": 218
+  }
+}

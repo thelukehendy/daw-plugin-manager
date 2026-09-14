@@ -1,0 +1,48 @@
+{
+  "identity_source": "universe-expansion-expand5-mop2",
+  "methodology": "ARIA hub_app + Odin1 discontinued mop.",
+  "sources": [],
+  "manufacturers": [],
+  "plugins": [
+    {
+      "id": "garritan--aria-engine-player",
+      "manufacturerId": "garritan",
+      "name": "ARIA Engine / Player",
+      "matchPatterns": [
+        "ARIA Engine / Player",
+        "ARIA Player",
+        "ARIA Engine"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.garritan.com/",
+      "identity_source": "garritan-aria-mop-expand5",
+      "notes": "Garritan ARIA player/engine; mop after cross-mfr collision.",
+      "identity_kind": "hub_app",
+      "notes_for_user": "Garritan ARIA player/engine."
+    },
+    {
+      "id": "thewavewarden--odin",
+      "manufacturerId": "thewavewarden",
+      "name": "Odin",
+      "matchPatterns": [
+        "Odin"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU"
+      ],
+      "updatePortalUrl": "https://www.thewavewarden.com/",
+      "identity_source": "foss-odin1-mop-expand5",
+      "notes": "Odin 1 predecessor; discontinued relative to Odin 2.",
+      "identity_kind": "discontinued",
+      "isFreeware": true,
+      "notes_for_user": "Superseded by Odin 2."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "identity_source": "universe-expansion-expand7-mop2",
+  "methodology": "expand7 mop2: DISTRHO 3BandEQ missed by global dedup; first-class DPF-Plugins twin.",
+  "sources": [
+    "https://github.com/DISTRHO/DPF-Plugins"
+  ],
+  "manufacturers": [],
+  "plugins": [
+    {
+      "id": "distrho--3bandeq",
+      "manufacturerId": "distrho",
+      "name": "3BandEQ",
+      "matchPatterns": [
+        "3BandEQ",
+        "3 Band EQ",
+        "DISTRHO 3BandEQ"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP",
+        "LADSPA",
+        "DSSI"
+      ],
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7-mop2",
+      "notes": "DISTRHO DPF Mini-Series EQ; expand7 mop2.",
+      "identity_kind": "plugin",
+      "isFreeware": true
+    },
+    {
+      "id": "distrho--dpf-plugins",
+      "manufacturerId": "distrho",
+      "name": "DPF-Plugins",
+      "matchPatterns": [
+        "DPF-Plugins",
+        "DPF Plugins",
+        "DISTRHO DPF-Plugins"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP"
+      ],
+      "updatePortalUrl": "https://github.com/DISTRHO/DPF-Plugins/releases",
+      "identity_source": "universe-expansion-expand7-mop2",
+      "notes": "First-class twin of oas--distrho-dpf-plugins; expand7 mop2.",
+      "identity_kind": "bundle",
+      "isFreeware": true
+    }
+  ]
+}

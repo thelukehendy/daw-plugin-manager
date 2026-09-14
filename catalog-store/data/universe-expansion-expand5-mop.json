@@ -1,0 +1,155 @@
+{
+  "identity_source": "universe-expansion-expand5-mop",
+  "methodology": "Mop: FOSS first-class twins blocked by OAS also_check in main batch; add intentional twins.",
+  "sources": [
+    "https://www.kvraudio.com/developer/XLN-Audio",
+    "https://www.kvraudio.com/developer/Modartt",
+    "https://www.kvraudio.com/developer/Ignite-Amps",
+    "https://www.kvraudio.com/developer/STL-Tones",
+    "https://www.kvraudio.com/developer/ML-Sound-Lab",
+    "https://www.kvraudio.com/developer/Fractal-Audio-Systems",
+    "https://www.kvraudio.com/developer/Plugin-Boutique",
+    "https://www.kvraudio.com/developer/Sample-Magic",
+    "https://www.kvraudio.com/developer/Garritan",
+    "https://www.kvraudio.com/developer/Spitfire-Audio",
+    "https://www.kvraudio.com/developer/EastWest",
+    "https://www.kvraudio.com/developer/Eventide",
+    "https://www.kvraudio.com/developer/AudioThing",
+    "https://www.kvraudio.com/developer/HeadRush",
+    "https://www.two-notes.com/en/ (curated; fetch blocked)",
+    "https://www.fractalaudio.com/ (curated editors/hardware)",
+    "OAS twins for FOSS (Helm/Odin2/Tunefish/Dexed/Cardinal/ADLplug)"
+  ],
+  "manufacturers": [],
+  "plugins": [
+    {
+      "id": "matt-tytel--helm",
+      "manufacturerId": "matt-tytel",
+      "name": "Helm",
+      "matchPatterns": [
+        "Helm",
+        "Helm Synthesizer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://tytel.org/helm/",
+      "identity_source": "foss-first-class-twin-expand5-mop",
+      "notes": "FOSS first-class twin of OAS identity; expand5 mop (intentional cross-mfr twin).",
+      "identity_kind": "plugin",
+      "isFreeware": true,
+      "notes_for_user": "FOSS plugin (Helm). OAS twin may also exist."
+    },
+    {
+      "id": "thewavewarden--odin-2",
+      "manufacturerId": "thewavewarden",
+      "name": "Odin 2",
+      "matchPatterns": [
+        "Odin 2",
+        "Odin2"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://www.thewavewarden.com/",
+      "identity_source": "foss-first-class-twin-expand5-mop",
+      "notes": "FOSS first-class twin of OAS identity; expand5 mop (intentional cross-mfr twin).",
+      "identity_kind": "plugin",
+      "isFreeware": true,
+      "notes_for_user": "FOSS plugin (Odin 2). OAS twin may also exist."
+    },
+    {
+      "id": "dexed--dexed",
+      "manufacturerId": "dexed",
+      "name": "Dexed",
+      "matchPatterns": [
+        "Dexed"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://asb2m10.github.io/dexed/",
+      "identity_source": "foss-first-class-twin-expand5-mop",
+      "notes": "FOSS first-class twin of OAS identity; expand5 mop (intentional cross-mfr twin).",
+      "identity_kind": "plugin",
+      "isFreeware": true,
+      "notes_for_user": "FOSS plugin (Dexed). OAS twin may also exist."
+    },
+    {
+      "id": "distrho--cardinal",
+      "manufacturerId": "distrho",
+      "name": "Cardinal",
+      "matchPatterns": [
+        "Cardinal",
+        "Cardinal Modular"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/DISTRHO/Cardinal/releases",
+      "identity_source": "foss-first-class-twin-expand5-mop",
+      "notes": "FOSS first-class twin of OAS identity; expand5 mop (intentional cross-mfr twin).",
+      "identity_kind": "plugin",
+      "isFreeware": true,
+      "notes_for_user": "FOSS plugin (Cardinal). OAS twin may also exist."
+    },
+    {
+      "id": "jean-pierre-cimalando--adlplug",
+      "manufacturerId": "jean-pierre-cimalando",
+      "name": "ADLplug",
+      "matchPatterns": [
+        "ADLplug"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/jpcima/ADLplug/releases",
+      "identity_source": "foss-first-class-twin-expand5-mop",
+      "notes": "FOSS first-class twin of OAS identity; expand5 mop (intentional cross-mfr twin).",
+      "identity_kind": "plugin",
+      "isFreeware": true,
+      "notes_for_user": "FOSS plugin (ADLplug). OAS twin may also exist."
+    },
+    {
+      "id": "jean-pierre-cimalando--opnplug",
+      "manufacturerId": "jean-pierre-cimalando",
+      "name": "OPNplug",
+      "matchPatterns": [
+        "OPNplug"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "productLine": null,
+      "updatePortalUrl": "https://github.com/jpcima/ADLplug/releases",
+      "identity_source": "foss-first-class-twin-expand5-mop",
+      "notes": "FOSS first-class twin of OAS identity; expand5 mop (intentional cross-mfr twin).",
+      "identity_kind": "plugin",
+      "isFreeware": true,
+      "notes_for_user": "FOSS plugin (OPNplug). OAS twin may also exist."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 node_modules
-out
-dist
+/out
+/dist
 dist-electron
 .DS_Store
 *.log

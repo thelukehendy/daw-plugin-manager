@@ -1,0 +1,73 @@
+{
+  "identity_source": "universe-expansion-expand6-mop",
+  "methodology": "Mop: FOSS suite umbrellas blocked by OAS also_check / global norm in main batch; add intentional first-class twins.",
+  "sources": [
+    "https://github.com/michaelwillis/dragonfly-reverb/releases",
+    "https://github.com/lsp-plugins/lsp-plugins/releases",
+    "https://github.com/zamaudio/zam-plugins/releases"
+  ],
+  "manufacturers": [],
+  "plugins": [
+    {
+      "id": "dragonfly-reverb--dragonfly-reverb",
+      "manufacturerId": "dragonfly-reverb",
+      "name": "Dragonfly Reverb",
+      "matchPatterns": [
+        "Dragonfly Reverb",
+        "Dragonfly"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP"
+      ],
+      "updatePortalUrl": "https://github.com/michaelwillis/dragonfly-reverb/releases",
+      "identity_source": "universe-expansion-expand6-mop",
+      "identity_kind": "bundle",
+      "isFreeware": true,
+      "notes": "FOSS suite umbrella twin of oas--michael-willis; expand6 mop."
+    },
+    {
+      "id": "lsp-plugins--lsp-plugins",
+      "manufacturerId": "lsp-plugins",
+      "name": "LSP Plugins",
+      "matchPatterns": [
+        "LSP Plugins",
+        "Linux Studio Plugins",
+        "LSP"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2",
+        "CLAP"
+      ],
+      "updatePortalUrl": "https://github.com/lsp-plugins/lsp-plugins/releases",
+      "identity_source": "universe-expansion-expand6-mop",
+      "identity_kind": "bundle",
+      "isFreeware": true,
+      "notes": "FOSS suite umbrella twin of oas--vladimir-sadovnikov; expand6 mop."
+    },
+    {
+      "id": "zam-audio--zam-plugins",
+      "manufacturerId": "zam-audio",
+      "name": "ZaM Plugins",
+      "matchPatterns": [
+        "ZaM Plugins",
+        "zam-plugins",
+        "Zam Plugins"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "LV2"
+      ],
+      "updatePortalUrl": "https://github.com/zamaudio/zam-plugins/releases",
+      "identity_source": "universe-expansion-expand6-mop",
+      "identity_kind": "bundle",
+      "isFreeware": true,
+      "notes": "FOSS suite umbrella twin of oas--damien-zammit; expand6 mop."
+    }
+  ]
+}

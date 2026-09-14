@@ -1,0 +1,28 @@
+{
+  "identity_source": "universe-expansion-expand4-mop",
+  "methodology": "Mop Image-Line Hardcore skipped by cross-mfr short-name collision",
+  "sources": [
+    "https://www.kvraudio.com/developer/Image-Line"
+  ],
+  "manufacturers": [],
+  "plugins": [
+    {
+      "id": "image-line--hardcore",
+      "manufacturerId": "image-line",
+      "name": "Hardcore",
+      "matchPatterns": [
+        "Hardcore"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://support.image-line.com/",
+      "identity_source": "kvr-developer-image-line-2026-09-expand4-mop",
+      "notes": "IL Hardcore FX; restored after short-name cross-mfr mop",
+      "identity_kind": "plugin"
+    }
+  ]
+}
