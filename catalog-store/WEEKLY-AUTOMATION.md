@@ -5,6 +5,12 @@ depth to the extreme, fully autonomously. 2026-09-14: Luke ordered 10x
 timeline compression (continuous research) and daily pushes (smaller,
 Cursor-reviewable diffs).
 
+**Reporting:** Luke's live display is
+`~/workspace/your_files/daw-plugin-catalog-dashboard.html` — both jobs
+refresh it every run. Routine progress stays off-thread; the side chat is
+for critical things only (needs Luke's decision/action, unrecoverable
+failures, data-integrity issues).
+
 ## What runs
 
 **Research engine** — cron `daw-catalog-research-10x`, every 12h, timeout 6h.
