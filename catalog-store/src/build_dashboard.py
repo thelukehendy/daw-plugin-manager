@@ -160,7 +160,7 @@ document.querySelectorAll('#mt tr').forEach(function(r,i){{if(i>0)r.style.displa
 <p class="note">Before each weekly update, the outgoing export is snapshotted here. Retention: 12 weeks. Git history holds every version permanently.</p>
 <table><tr><th>Date</th><th>Path</th></tr>{backup_rows}</table></div></details>
 <details><summary>How the weekly automation works</summary><div class="dbody">
-<p class="note">Every Monday ~2am PT, an autonomous run: (1) backs up the current export, (2) researches a bounded batch of yellow/amber targets from public manufacturer evidence only — no sign-ins, no purchases, no outreach, (3) coordinator-verifies every raise and inserts it with evidence + confidence, (4) bounded universe-expansion discovery, (5) green freshness spot-checks, (6) re-exports the store, syncs <code>catalog/catalog.json</code> (the file the app + CDN serve), rebuilds this dashboard, updates STATUS/HANDOFF/weekly notes, commits, and pushes to GitHub. Full contract: <code>catalog-store/WEEKLY-AUTOMATION.md</code>.</p>
+<p class="note">An autonomous research engine works the catalog continuously (every 3h in surge mode, otherwise every 12h): it researches yellow-band plugins from public manufacturer evidence only — no sign-ins, no purchases, no outreach — coordinator-verifies every raise, does bounded universe-expansion discovery, green freshness checks, and Apple Silicon/version-scheme sweeps. A daily push (~6am PT) backs up, re-exports the store, syncs <code>catalog/catalog.json</code> (the file the app + CDN serve), rebuilds this dashboard, and pushes to GitHub. Full contract: <code>catalog-store/WEEKLY-AUTOMATION.md</code>.</p>
 </div></details>
 </body></html>"""
 

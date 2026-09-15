@@ -13,7 +13,18 @@ failures, data-integrity issues).
 
 ## What runs
 
-**Research engine** — cron `daw-catalog-research-10x`, every 12h, timeout 6h.
+**Research engine** — cron `daw-catalog-research-10x`. Normal cadence: every
+12h, timeout 6h. **Surge mode** (Luke 2026-09-14, active): every 3h,
+timeout 2h, until the tier 1–3 backlog is thoroughly worked, then
+auto-revert to 12h.
+- Surge state: DB `meta` keys `surge_active=1`, `surge_start=<UTC ISO>`.
+- Stop = 0 tier 1–3 plugins with (accepted confidence <70 or none) AND no
+  `research_attempts` row since `surge_start`. Hard expiry: 7 days.
+- Claiming: coordinator INSERTs `outcome='claimed'` rows at chip start,
+  UPDATEs to `observed|promoted|skipped` at chip end; selection excludes
+  anything attempted since `surge_start`. DB runs in WAL mode.
+- On SURGE_COMPLETE the worker reports it (terminal, surfaced); the owner
+  reverts the cron schedule — workers never self-modify schedules.
 Quotas per chip (~10x the old weekly bounds, grounded in demonstrated
 throughput — Raise 26: 222 yellows/evening; compat seed: 20 mfrs/15 min):
 - ~110 yellows, first-pass (4–8 parallel workers; coordinator re-verifies
