@@ -369,3 +369,12 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - `catalog/catalog.json` re-synced from `out/catalog.json` — structural check passed (schemaVersion 3; only version fields may differ).
 - FLAGS for next chips: duplicate FabFilter Pro-Q 3 rows need dedup; compat batch-H verdicts need coordinator review.
 - Push mechanics: backup `backups/2026-09-14/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.
+
+
+## Daily push 2026-09-15 (06:00 PT — SURGE mode active)
+- Shipped: mfrs **609** (+20), plugins **8910** (+416), accepted **5149** (+156); green **3527** (+128), amber **111** (+27), yellow **1510**→**1511** (flat: universe expansion adds unworked yellows as fast as chips burn them down).
+- +20 manufacturers (largest single-day universe add): Pulsar Audio, DDMF, Soniccouture, Sinevibes, Relab Development, Devious Machines, Nomad Factory, reFX, KV331 Audio, Reveal Sound, KORG, Roland, Moog Music, Tone2, Wave Arts, Nembrini Audio, Kuassa, Mercuriall Audio, Tritik, Sixth Sample. Nembrini (63) / Soniccouture (53) / Kuassa (43) plugins seeded.
+- 259 new accepted observations since 09-14 push (180 green incl. 0418 chip's 19 promotions: Antares AutoTune 1.2.1 @92, Waves 360 Surround 17.1.42.50 @85, Slate FG-X 1.4.0.4 @82).
+- Surge mode (research every 3h, stop-condition query): **4,434** tier 1–3 plugins remaining, hard expiry 2026-09-21 ~20:30 PT, then auto-revert to 12h.
+- Push-job repair note: new mfr `soniccouture` had its portal URL in `portal_app` instead of `update_portal_url` → export validator blocked the push; fixed per DATA-DICTIONARY (portal URL → `update_portal_url`, app name → `portal_app='Native Access'`). New-mfr inserts must carry an http(s) `update_portal_url`.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt.

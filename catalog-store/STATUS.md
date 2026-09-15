@@ -1,9 +1,9 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **DAILY PUSH 2026-09-14 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push`.
+> **DAILY PUSH 2026-09-15 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push`. SURGE mode active (research every 3h; **4,434** tier 1–3 plugins remain, hard expiry 2026-09-21 ~20:30 PT).
 > Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-14 ~06:00 PT (daily push, ships 2026-09-14 research chips)  
+**Snapshot:** 2026-09-15 ~06:00 PT (daily push, ships 2026-09-14/15 research chips, incl. surge chips 0118 + 0418)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`
@@ -12,12 +12,12 @@
 
 | Metric | Value |
 |---|---|
-| Manufacturers | **589** |
-| Plugins (universe) | **8494** |
-| Accepted current versions | **4993** |
-| Green (≥85) | **3399** |
-| Amber (70–84) | **84** |
-| Yellow (<70) | **1510** |
+| Manufacturers | **609** |
+| Plugins (universe) | **8910** |
+| Accepted current versions | **5149** |
+| Green (≥85) | **3527** |
+| Amber (70–84) | **111** |
+| Yellow (<70) | **1511** |
 | True plugin gaps (non-Airwindows) | **74** |
 | Airwindows intentional unversioned | **512** |
 
@@ -47,9 +47,9 @@
 
 | Band | Score | Count |
 |---|---|---|
-| Green | ≥ 85 | **3399** |
-| Amber | 70–84 | **84** |
-| Yellow | < 70 | **1510** (KVR @ 60) |
+| Green | ≥ 85 | **3527** |
+| Amber | 70–84 | **111** |
+| Yellow | < 70 | **1511** (KVR @ 60) |
 
 ## This pass (universe expand 11)
 

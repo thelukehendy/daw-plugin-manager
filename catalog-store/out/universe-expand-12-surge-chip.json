@@ -1,0 +1,1304 @@
+{
+  "manufacturers": [
+    {
+      "id": "wave-arts",
+      "name": "Wave Arts",
+      "websiteUrl": "https://wavearts.com",
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "portalApp": null,
+      "updateChannel": null,
+      "notes": "Wave Arts, Inc., Arlington MA; pro-audio mixing/post-production plugins since the 1990s. Current line: Power Suite 7 + Master Restoration Suite 6 bundles and 16 individual plugins (v7 core line, v6 restoration, v2 Dialog/Tube Saturator 2, Convology XT, 3 free tools). Downloads page lists latest installers but no public version numbers.",
+      "popularity_tier": 2
+    },
+    {
+      "id": "nembrini-audio",
+      "name": "Nembrini Audio",
+      "websiteUrl": "https://www.nembriniaudio.com",
+      "updatePortalUrl": "https://www.nembriniaudio.com",
+      "portalApp": "Central",
+      "updateChannel": null,
+      "notes": "Nembrini Audio SRL, Pavia Italy; guitar/bass amp sims, stompbox/pedal emulations and studio FX (VST/VST3/AU/AAX + iOS line). No dedicated public downloads page; updates managed via Nembrini Audio CENTRAL app (verified on homepage: 'Manage download, version, license check, demo in a single app').",
+      "popularity_tier": 2
+    }
+  ],
+  "plugins": [
+    {
+      "id": "wave-arts--power-suite-7",
+      "manufacturerId": "wave-arts",
+      "name": "Power Suite 7",
+      "matchPatterns": [
+        "Power Suite 7"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--master-restoration-suite-6",
+      "manufacturerId": "wave-arts",
+      "name": "Master Restoration Suite 6",
+      "matchPatterns": [
+        "Master Restoration Suite 6"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--masterverb-7",
+      "manufacturerId": "wave-arts",
+      "name": "MasterVerb 7",
+      "matchPatterns": [
+        "MasterVerb 7"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--trackplug-7",
+      "manufacturerId": "wave-arts",
+      "name": "TrackPlug 7",
+      "matchPatterns": [
+        "TrackPlug 7"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--panorama-7",
+      "manufacturerId": "wave-arts",
+      "name": "Panorama 7",
+      "matchPatterns": [
+        "Panorama 7"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--multidynamics-7",
+      "manufacturerId": "wave-arts",
+      "name": "MultiDynamics 7",
+      "matchPatterns": [
+        "MultiDynamics 7"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--finalplug-7",
+      "manufacturerId": "wave-arts",
+      "name": "FinalPlug 7",
+      "matchPatterns": [
+        "FinalPlug 7"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--convology-xt",
+      "manufacturerId": "wave-arts",
+      "name": "Convology XT",
+      "matchPatterns": [
+        "Convology XT"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--tube-saturator-2",
+      "manufacturerId": "wave-arts",
+      "name": "Tube Saturator 2",
+      "matchPatterns": [
+        "Tube Saturator 2"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--tube-saturator-vintage",
+      "manufacturerId": "wave-arts",
+      "name": "Tube Saturator Vintage",
+      "matchPatterns": [
+        "Tube Saturator Vintage"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--dialog-2",
+      "manufacturerId": "wave-arts",
+      "name": "Dialog 2",
+      "matchPatterns": [
+        "Dialog 2"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--mr-noise-6",
+      "manufacturerId": "wave-arts",
+      "name": "MR Noise 6",
+      "matchPatterns": [
+        "MR Noise 6"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--mr-hum-6",
+      "manufacturerId": "wave-arts",
+      "name": "MR Hum 6",
+      "matchPatterns": [
+        "MR Hum 6"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--mr-click-6",
+      "manufacturerId": "wave-arts",
+      "name": "MR Click 6",
+      "matchPatterns": [
+        "MR Click 6"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--mr-gate-6",
+      "manufacturerId": "wave-arts",
+      "name": "MR Gate 6",
+      "matchPatterns": [
+        "MR Gate 6"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--ir-capture",
+      "manufacturerId": "wave-arts",
+      "name": "IR Capture",
+      "matchPatterns": [
+        "IR Capture"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--mlstool",
+      "manufacturerId": "wave-arts",
+      "name": "MlsTool",
+      "matchPatterns": [
+        "MlsTool"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "wave-arts--sofa2pan",
+      "manufacturerId": "wave-arts",
+      "name": "Sofa2Pan",
+      "matchPatterns": [
+        "Sofa2Pan"
+      ],
+      "formats": [
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://wavearts.com/downloads",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--bass-3500",
+      "manufacturerId": "nembrini-audio",
+      "name": "Bass 3500 Amplifier",
+      "matchPatterns": [
+        "Bass 3500 Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/bass-3500",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--blue-clipper",
+      "manufacturerId": "nembrini-audio",
+      "name": "Blue Clipper",
+      "matchPatterns": [
+        "Blue Clipper"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/blue-clipper",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--bass-resonance",
+      "manufacturerId": "nembrini-audio",
+      "name": "Bass Resonance",
+      "matchPatterns": [
+        "Bass Resonance"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/bass-resonance",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--acoustic-voice-pro-guitar-preamplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Acoustic Voice Pro Guitar Preamplifier",
+      "matchPatterns": [
+        "Acoustic Voice Pro Guitar Preamplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/acoustic-voice-pro-guitar-preamplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--tone-craft",
+      "manufacturerId": "nembrini-audio",
+      "name": "Tone Craft Modular Studio",
+      "matchPatterns": [
+        "Tone Craft Modular Studio"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/tone-craft",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--hughes-kettner-tube-rotosphere",
+      "manufacturerId": "nembrini-audio",
+      "name": "Hughes & Kettner Tube Rotosphere",
+      "matchPatterns": [
+        "Hughes & Kettner Tube Rotosphere"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/hughes-kettner-tube-rotosphere",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--range-120-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Range 120 Guitar Amplifier",
+      "matchPatterns": [
+        "Range 120 Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/range-120-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--hughes-kettner-coreblade",
+      "manufacturerId": "nembrini-audio",
+      "name": "Hughes & Kettner Coreblade Guitar Amplifier",
+      "matchPatterns": [
+        "Hughes & Kettner Coreblade Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/hughes-kettner-coreblade",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--rockdude-x1000-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Rockdude X1000 Guitar Amplifier",
+      "matchPatterns": [
+        "Rockdude X1000 Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/rockdude-x1000-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--jazz-chorus-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Jazz Chorus Solid State Guitar Amplifier",
+      "matchPatterns": [
+        "Jazz Chorus Solid State Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/jazz-chorus-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--hughes-kettner-puretone",
+      "manufacturerId": "nembrini-audio",
+      "name": "Hughes & Kettner Puretone Guitar Amplifier",
+      "matchPatterns": [
+        "Hughes & Kettner Puretone Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/hughes-kettner-puretone",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--nine-gates",
+      "manufacturerId": "nembrini-audio",
+      "name": "Nine Gates Diabolic Distortion",
+      "matchPatterns": [
+        "Nine Gates Diabolic Distortion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/nine-gates",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--double-reverb-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Double Reverb Guitar Amplifier",
+      "matchPatterns": [
+        "Double Reverb Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/double-reverb-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--divided-11-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Divided 11 Class A Boutique Guitar Amplifier",
+      "matchPatterns": [
+        "Divided 11 Class A Boutique Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/divided-11-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--bass-hammer-bass-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Bass Hammer Bass Amplifier",
+      "matchPatterns": [
+        "Bass Hammer Bass Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/bass-hammer-bass-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--nexus-subhost-standalone-plugins-host",
+      "manufacturerId": "nembrini-audio",
+      "name": "Nexus Subhost/Standalone Plugins Host",
+      "matchPatterns": [
+        "Nexus Subhost/Standalone Plugins Host"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/nexus-subhost-standalone-plugins-host",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--501-chorus-echo",
+      "manufacturerId": "nembrini-audio",
+      "name": "NA 501 Chorus Echo",
+      "matchPatterns": [
+        "NA 501 Chorus Echo"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/501-chorus-echo",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--the-voltour-2-channel-all-valve-enhancer",
+      "manufacturerId": "nembrini-audio",
+      "name": "The Voltour 2 Channel All Valve Enhancer",
+      "matchPatterns": [
+        "The Voltour 2 Channel All Valve Enhancer"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/the-voltour-2-channel-all-valve-enhancer",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--cali-axis-all-tube-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Cali Axis All Tube Guitar Amplifier",
+      "matchPatterns": [
+        "Cali Axis All Tube Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/cali-axis-all-tube-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--big-stuff-harmonic-distortion-sustain",
+      "manufacturerId": "nembrini-audio",
+      "name": "Big Stuff  Harmonic Distortion-Sustain",
+      "matchPatterns": [
+        "Big Stuff  Harmonic Distortion-Sustain"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/big-stuff-harmonic-distortion-sustain",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--en-hardball-metal-head-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "EN Hardball Metal Head Guitar Amplifier",
+      "matchPatterns": [
+        "EN Hardball Metal Head Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/en-hardball-metal-head-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--mp1-pro-programmable-tube-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "MP1 Pro Programmable Tube Guitar Amplifier",
+      "matchPatterns": [
+        "MP1 Pro Programmable Tube Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/mp1-pro-programmable-tube-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--bass-driver-multiband-overdrive-bass-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Bass Driver Multiband Overdrive Bass Amplifier",
+      "matchPatterns": [
+        "Bass Driver Multiband Overdrive Bass Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/bass-driver-multiband-overdrive-bass-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--wah-pedal",
+      "manufacturerId": "nembrini-audio",
+      "name": "Wah Pedal",
+      "matchPatterns": [
+        "Wah Pedal"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/wah-pedal",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--jmp-pro-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "JMP Pro Valve Guitar Amplifier",
+      "matchPatterns": [
+        "JMP Pro Valve Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/jmp-pro-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--overdrive-special-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Overdrive Special Guitar Amplifier",
+      "matchPatterns": [
+        "Overdrive Special Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/overdrive-special-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--doubler",
+      "manufacturerId": "nembrini-audio",
+      "name": "Doubler Real-Time Tracker",
+      "matchPatterns": [
+        "Doubler Real-Time Tracker"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/doubler",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--chromatic-tuner",
+      "manufacturerId": "nembrini-audio",
+      "name": "Chromatic Tuner",
+      "matchPatterns": [
+        "Chromatic Tuner"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/chromatic-tuner",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--faceman-2-channel-head-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Faceman 2-Channel Head Guitar Amplifier",
+      "matchPatterns": [
+        "Faceman 2-Channel Head Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/faceman-2-channel-head-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--hivolt-103-custom-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Hivolt 103 Custom Guitar Amplifier",
+      "matchPatterns": [
+        "Hivolt 103 Custom Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/hivolt-103-custom-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--ir-loader",
+      "manufacturerId": "nembrini-audio",
+      "name": "IR Loader Impulse Response Tool",
+      "matchPatterns": [
+        "IR Loader Impulse Response Tool"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/ir-loader",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--black-distortion",
+      "manufacturerId": "nembrini-audio",
+      "name": "Black Distortion",
+      "matchPatterns": [
+        "Black Distortion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/black-distortion",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--bg-extasy-boutique-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "BG Extasy Boutique Guitar Amplifier",
+      "matchPatterns": [
+        "BG Extasy Boutique Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/bg-extasy-boutique-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--mrh159-brown-sound-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "MRH159 Brown Sound Guitar Amplifier",
+      "matchPatterns": [
+        "MRH159 Brown Sound Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/mrh159-brown-sound-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--clon-minotaur-transparent-overdrive",
+      "manufacturerId": "nembrini-audio",
+      "name": "Clon Minotaur Transparent Overdrive",
+      "matchPatterns": [
+        "Clon Minotaur Transparent Overdrive"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/clon-minotaur-transparent-overdrive",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--shimmer-delay-ambient-machine",
+      "manufacturerId": "nembrini-audio",
+      "name": "Shimmer Delay Ambient Machine",
+      "matchPatterns": [
+        "Shimmer Delay Ambient Machine"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/shimmer-delay-ambient-machine",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--voice-dc30-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Voice DC30 Custom Valve Guitar Amplifier",
+      "matchPatterns": [
+        "Voice DC30 Custom Valve Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/voice-dc30-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--quinta-pitch-machine",
+      "manufacturerId": "nembrini-audio",
+      "name": "Quinta Pitch Machine",
+      "matchPatterns": [
+        "Quinta Pitch Machine"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/quinta-pitch-machine",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--blackice-beta-gamma-bass-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Blackice Beta Gamma Bass Amplifier",
+      "matchPatterns": [
+        "Blackice Beta Gamma Bass Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/blackice-beta-gamma-bass-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--808-overdrive-pro",
+      "manufacturerId": "nembrini-audio",
+      "name": "808 Overdrive Pro",
+      "matchPatterns": [
+        "808 Overdrive Pro"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/808-overdrive-pro",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--cali-dual-three-channel-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Cali Dual Three Channels Guitar Amplifier",
+      "matchPatterns": [
+        "Cali Dual Three Channels Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/cali-dual-three-channel-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--bst100-v2-super-overdrive-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "BST100 V2 Super Overdrive Guitar Amplifier",
+      "matchPatterns": [
+        "BST100 V2 Super Overdrive Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/bst100-v2-super-overdrive-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--mrh810-v2-lead-series-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "MRH810 V2 Lead Series Guitar Amplifier",
+      "matchPatterns": [
+        "MRH810 V2 Lead Series Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/mrh810-v2-lead-series-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--sound-master-custom-tube-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Sound Master Custom Tube Guitar Amplifier",
+      "matchPatterns": [
+        "Sound Master Custom Tube Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/sound-master-custom-tube-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--8180-monster-tube-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "8180 Monster Tube Guitar Amplifier",
+      "matchPatterns": [
+        "8180 Monster Tube Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/8180-monster-tube-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--cali-reverb-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Cali Reverb Modern High Gain Guitar Amplifier",
+      "matchPatterns": [
+        "Cali Reverb Modern High Gain Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/cali-reverb-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--echobandit-rack-analog-tape-echo-delay",
+      "manufacturerId": "nembrini-audio",
+      "name": "Echobandit Rack Analog Tape Echo Delay",
+      "matchPatterns": [
+        "Echobandit Rack Analog Tape Echo Delay"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/echobandit-rack-analog-tape-echo-delay",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--echobandit-analog-tape-echo-delay",
+      "manufacturerId": "nembrini-audio",
+      "name": "Echobandit Analog Tape Echo Delay",
+      "matchPatterns": [
+        "Echobandit Analog Tape Echo Delay"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/echobandit-analog-tape-echo-delay",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--phazevibe-rack-3-modes-phaser-wha-vibe",
+      "manufacturerId": "nembrini-audio",
+      "name": "Phazevibe Rack 3 Modes Phaser Wha Vibe",
+      "matchPatterns": [
+        "Phazevibe Rack 3 Modes Phaser Wha Vibe"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/phazevibe-rack-3-modes-phaser-wha-vibe",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--phazevibe-3-modes-phaser-wha-vibe",
+      "manufacturerId": "nembrini-audio",
+      "name": "Phazevibe 3 Modes Phaser Wha Vibe",
+      "matchPatterns": [
+        "Phazevibe 3 Modes Phaser Wha Vibe"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/phazevibe-3-modes-phaser-wha-vibe",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--edstortion-rack-3-mode-distortion",
+      "manufacturerId": "nembrini-audio",
+      "name": "Edstortion Rack 3 Mode Distortion",
+      "matchPatterns": [
+        "Edstortion Rack 3 Mode Distortion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/edstortion-rack-3-mode-distortion",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--edstortion-3-mode-distortion",
+      "manufacturerId": "nembrini-audio",
+      "name": "Edstortion 3 Mode Distortion",
+      "matchPatterns": [
+        "Edstortion 3 Mode Distortion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/edstortion-3-mode-distortion",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--psa1000-rack-analog-saturation-unit",
+      "manufacturerId": "nembrini-audio",
+      "name": "PSA1000 Analog Saturation Unit",
+      "matchPatterns": [
+        "PSA1000 Analog Saturation Unit"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/psa1000-rack-analog-saturation-unit",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--psa1000-jr-analog-saturation-unit",
+      "manufacturerId": "nembrini-audio",
+      "name": "PSA1000 Jr Analog Saturation Unit",
+      "matchPatterns": [
+        "PSA1000 Jr Analog Saturation Unit"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/psa1000-jr-analog-saturation-unit",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--the-boss-led-diode-distortion",
+      "manufacturerId": "nembrini-audio",
+      "name": "The Boss Led Diode Distortion",
+      "matchPatterns": [
+        "The Boss Led Diode Distortion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/the-boss-led-diode-distortion",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--the-boss-rack-led-diode-distortion",
+      "manufacturerId": "nembrini-audio",
+      "name": "The Boss Rack Led Diode Distortion",
+      "matchPatterns": [
+        "The Boss Rack Led Diode Distortion"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/the-boss-rack-led-diode-distortion",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--crunck-v2-guitar-amplifier",
+      "manufacturerId": "nembrini-audio",
+      "name": "Crunck V2 Guitar Amplifier",
+      "matchPatterns": [
+        "Crunck V2 Guitar Amplifier"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/crunck-v2-guitar-amplifier",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--analog-rack-noise-gate",
+      "manufacturerId": "nembrini-audio",
+      "name": "Analog Rack Noise Gate",
+      "matchPatterns": [
+        "Analog Rack Noise Gate"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/analog-rack-noise-gate",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--analog-rack-delay",
+      "manufacturerId": "nembrini-audio",
+      "name": "Analog Rack Delay",
+      "matchPatterns": [
+        "Analog Rack Delay"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/analog-rack-delay",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--analog-rack-cleaner",
+      "manufacturerId": "nembrini-audio",
+      "name": "Analog Rack Cleaner",
+      "matchPatterns": [
+        "Analog Rack Cleaner"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/analog-rack-cleaner",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--analog-rack-chorus",
+      "manufacturerId": "nembrini-audio",
+      "name": "Analog Rack Chorus",
+      "matchPatterns": [
+        "Analog Rack Chorus"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/analog-rack-chorus",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--delay3000-vintage-modern-repeater",
+      "manufacturerId": "nembrini-audio",
+      "name": "Delay3000 Vintage Modern Repeater",
+      "matchPatterns": [
+        "Delay3000 Vintage Modern Repeater"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/delay3000-vintage-modern-repeater",
+      "identity_source": "universe-expand-12"
+    },
+    {
+      "id": "nembrini-audio--lofi-vintage-clipper",
+      "manufacturerId": "nembrini-audio",
+      "name": "LoFi Vintage Clipper",
+      "matchPatterns": [
+        "LoFi Vintage Clipper"
+      ],
+      "formats": [
+        "VST",
+        "VST3",
+        "AU",
+        "AAX"
+      ],
+      "updatePortalUrl": "https://www.nembriniaudio.com/products/lofi-vintage-clipper",
+      "identity_source": "universe-expand-12"
+    }
+  ]
+}
