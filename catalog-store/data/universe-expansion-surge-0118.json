@@ -1,0 +1,784 @@
+{
+ "identity_source": "universe-expansion-surge-0118-2026-09-16",
+ "methodology": "Surge chip 0118 universe expansion. 6 new manufacturers with official-site product-identity evidence; zero exact-ID collisions. orchestral-tools duplicate of existing orchestra-tools rejected (13/18 dups; Ark \u00d8/Monolith matched existing rows); 2 genuine OT gap-fills (Miroire, James Newton Howard Piano) added under existing orchestra-tools. SINE Player 1.4.2 seed declined: already held @92.",
+ "sources": [
+  "https://process.audio",
+  "https://www.beatskillz.com",
+  "https://www.sonuscore.com",
+  "https://www.sonivoxmi.com",
+  "https://www.threebodytech.com",
+  "https://embertone.com"
+ ],
+ "manufacturers": [
+  {
+   "id": "process-audio",
+   "name": "Process.Audio",
+   "websiteUrl": "https://process.audio",
+   "notes": "Plugin wing of pureMix (Fab Dupont). Site live; 6 current products, all VST3/AU/AAX 64-bit per official product pages. No official version labels or explicit Apple Silicon statement found \u2014 leave versions null for version workers. 'Protility' (free tools) referenced on official YouTube but not verified as a current product; excluded. [surge-0118 C-track]",
+   "updatePortalUrl": "https://process.audio"
+  },
+  {
+   "id": "beatskillz",
+   "name": "BeatSkillz",
+   "websiteUrl": "https://www.beatskillz.com",
+   "notes": "Indian plugin developer. Shop live at beatskillz.com/shop (15 products on page 1, mixes VST plugins with sample/Kontakt libraries). Included only items with solid VST/AU/AAX plugin evidence; Kontakt/sample items (Papyrus Keys, Bolly-X, AK9X, SW3, S12X, Synthwave Drums, Sequel 2, Rekraft, Flashback, Vinylistik, DirtyDyna, LoudBody) NOT included \u2014 need per-product format verification. No official ve [surge-0118 C-track]",
+   "updatePortalUrl": "https://www.beatskillz.com"
+  },
+  {
+   "id": "sonuscore",
+   "name": "Sonuscore",
+   "websiteUrl": "https://www.sonuscore.com",
+   "notes": "German scoring-instrument developer (Dynamedion founders). Shop live at sonuscore.com/shop with full PRODUCTS listing. Instruments run in Kontakt / Kontakt Player (TOC4: 'runs in Native Instruments Kontakt or Kontakt Player 7.10.7+'). Generation numbers in product names (Complete 4, Elysion 2) are product generations, NOT versions \u2014 no version seeds proposed. No explicit Apple Silicon statement fo [surge-0118 C-track]",
+   "updatePortalUrl": "https://www.sonuscore.com"
+  },
+  {
+   "id": "sonivox",
+   "name": "SONiVOX",
+   "websiteUrl": "https://www.sonivoxmi.com",
+   "notes": "Legacy virtual-instrument brand (formerly Sonic Implants; inMusic family). Official domain sonivoxmi.com referenced by live support portal support.sonivoxmi.com ('Go to sonivoxmi.com and click on the account button'); main storefront liveness not directly verified this chip. INTEGRITY FLAG: reseller installer page notes TimewARP 2600 and Vocalizer Pro are 'Not supported with macOS 13 Ventura syste [surge-0118 C-track]",
+   "updatePortalUrl": "https://www.sonivoxmi.com"
+  },
+  {
+   "id": "three-body-tech",
+   "name": "Three-Body Technology",
+   "websiteUrl": "https://www.threebodytech.com",
+   "notes": "Chinese developer of self-developed sample engine instruments. Site live at threebodytech.com. Heavier7Strings: Apple Silicon supported ('Intel or AMD CPU with SSE 3 or higher instruction set, or Apple Silicon'), 64-bit VST2/VST3/AAX/AU, $199. Chinese Traditional Series distributed exclusively by Best Service, running on Three-Body's redesigned sample engine. INTEGRITY: 'Cinematic Strings 2' and ' [surge-0118 C-track]",
+   "updatePortalUrl": "https://www.threebodytech.com"
+  },
+  {
+   "id": "embertone",
+   "name": "Embertone",
+   "websiteUrl": "https://embertone.com",
+   "notes": "Boutique orchestral solo-instrument developer; instruments run in Kontakt / Kontakt Player. Site live at embertone.com with purchasable instruments (Joshua Bell Violin $199 full / $99 lite). No official version labels found. [surge-0118 C-track]",
+   "updatePortalUrl": "https://embertone.com"
+  }
+ ],
+ "plugins": [
+  {
+   "id": "process-audio--sugar",
+   "manufacturerId": "process-audio",
+   "name": "Sugar",
+   "matchPatterns": [
+    "Sugar",
+    "Process.Audio Sugar"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://process.audio/en/free-trials",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "process-audio--decibel",
+   "manufacturerId": "process-audio",
+   "name": "Decibel",
+   "matchPatterns": [
+    "Decibel",
+    "Process.Audio Decibel"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://process.audio/en/products/Decibel",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "process-audio--spicerack",
+   "manufacturerId": "process-audio",
+   "name": "Spicerack",
+   "matchPatterns": [
+    "Spicerack",
+    "Process.Audio Spicerack"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://process.audio/en/free-trials",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "process-audio--ripple",
+   "manufacturerId": "process-audio",
+   "name": "Ripple",
+   "matchPatterns": [
+    "Ripple",
+    "Process.Audio Ripple"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://process.audio/en/free-trials",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "process-audio--rockruepel-comptwo",
+   "manufacturerId": "process-audio",
+   "name": "Rockruepel COMP.TWO",
+   "matchPatterns": [
+    "Rockruepel COMP.TWO",
+    "Process.Audio Rockruepel COMP.TWO"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://process.audio/en/free-trials",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "process-audio--filter-factory",
+   "manufacturerId": "process-audio",
+   "name": "Filter Factory",
+   "matchPatterns": [
+    "Filter Factory",
+    "Process.Audio Filter Factory"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://process.audio/en/free-trials",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "beatskillz--slam2",
+   "manufacturerId": "beatskillz",
+   "name": "Slam2",
+   "matchPatterns": [
+    "Slam2",
+    "BeatSkillz Slam2"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.beatskillz.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "beatskillz--chorust",
+   "manufacturerId": "beatskillz",
+   "name": "Chorust",
+   "matchPatterns": [
+    "Chorust",
+    "BeatSkillz Chorust"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.beatskillz.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "beatskillz--spacewolf",
+   "manufacturerId": "beatskillz",
+   "name": "SpaceWolf",
+   "matchPatterns": [
+    "SpaceWolf",
+    "BeatSkillz SpaceWolf"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.youtube.com/watch?v=XUDtRvja4PE",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "beatskillz--reelight",
+   "manufacturerId": "beatskillz",
+   "name": "Reelight",
+   "matchPatterns": [
+    "Reelight",
+    "BeatSkillz Reelight"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.musicradar.com/news/beatskillz-aims-to-reelight-your-analogue-fire-with-its-new-tape-emulation-plugin",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "beatskillz--that-thing",
+   "manufacturerId": "beatskillz",
+   "name": "That Thing",
+   "matchPatterns": [
+    "That Thing",
+    "BeatSkillz That Thing"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.musicradar.com/news/tech/new-beatskillz-plugin-promises-that-thing-your-tracks-have-been-missing-628486",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "beatskillz--slam-dawg",
+   "manufacturerId": "beatskillz",
+   "name": "Slam Dawg",
+   "matchPatterns": [
+    "Slam Dawg",
+    "BeatSkillz Slam Dawg"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.musicradar.com/news/tech/new-beatskillz-plugin-promises-that-thing-your-tracks-have-been-missing-628486",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "beatskillz--samplex-v3",
+   "manufacturerId": "beatskillz",
+   "name": "SampleX v3",
+   "matchPatterns": [
+    "SampleX v3",
+    "BeatSkillz SampleX v3"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.beatskillz.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--the-orchestra",
+   "manufacturerId": "sonuscore",
+   "name": "The Orchestra",
+   "matchPatterns": [
+    "The Orchestra",
+    "Sonuscore The Orchestra"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--the-orchestra-complete-4",
+   "manufacturerId": "sonuscore",
+   "name": "The Orchestra Complete 4",
+   "matchPatterns": [
+    "The Orchestra Complete 4",
+    "Sonuscore The Orchestra Complete 4"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--the-orchestra-essentials",
+   "manufacturerId": "sonuscore",
+   "name": "The Orchestra Essentials",
+   "matchPatterns": [
+    "The Orchestra Essentials",
+    "Sonuscore The Orchestra Essentials"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--the-orchestra-elements",
+   "manufacturerId": "sonuscore",
+   "name": "The Orchestra Elements",
+   "matchPatterns": [
+    "The Orchestra Elements",
+    "Sonuscore The Orchestra Elements"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 1,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--the-score",
+   "manufacturerId": "sonuscore",
+   "name": "The Score",
+   "matchPatterns": [
+    "The Score",
+    "Sonuscore The Score"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--the-score-essentials",
+   "manufacturerId": "sonuscore",
+   "name": "The Score Essentials",
+   "matchPatterns": [
+    "The Score Essentials",
+    "Sonuscore The Score Essentials"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/the-score-essentials/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--the-pulse",
+   "manufacturerId": "sonuscore",
+   "name": "The Pulse",
+   "matchPatterns": [
+    "The Pulse",
+    "Sonuscore The Pulse"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--elysion-2",
+   "manufacturerId": "sonuscore",
+   "name": "Elysion 2 - The Encounter",
+   "matchPatterns": [
+    "Elysion 2 - The Encounter",
+    "Sonuscore Elysion 2 - The Encounter"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/elysion-2-the-encounter/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--elysion-elements",
+   "manufacturerId": "sonuscore",
+   "name": "Elysion Elements",
+   "matchPatterns": [
+    "Elysion Elements",
+    "Sonuscore Elysion Elements"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 1,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--lux-orchestral-strings",
+   "manufacturerId": "sonuscore",
+   "name": "LUX Orchestral Strings",
+   "matchPatterns": [
+    "LUX Orchestral Strings",
+    "Sonuscore LUX Orchestral Strings"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--dark-horizon",
+   "manufacturerId": "sonuscore",
+   "name": "Dark Horizon",
+   "matchPatterns": [
+    "Dark Horizon",
+    "Sonuscore Dark Horizon"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.sonuscore.com/shop/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--strings-of-winter",
+   "manufacturerId": "sonuscore",
+   "name": "Strings of Winter",
+   "matchPatterns": [
+    "Strings of Winter",
+    "Sonuscore Strings of Winter"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://discuss.cakewalk.com/topic/4566-sonuscore-announces-strings-of-winter-library-for-the-orchestra-plus-upgrade-to-the-orchestra-complete/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonuscore--horns-of-hell",
+   "manufacturerId": "sonuscore",
+   "name": "Horns of Hell",
+   "matchPatterns": [
+    "Horns of Hell",
+    "Sonuscore Horns of Hell"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.soundonsound.com/news/sonuscore-release-orchestra-complete-4",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--timewarp-2600",
+   "manufacturerId": "sonivox",
+   "name": "TimewARP 2600",
+   "matchPatterns": [
+    "TimewARP 2600",
+    "SONiVOX TimewARP 2600"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://help.pluginboutique.com/hc/en-us/articles/6232636104340-SONiVOX-Single-Products-Installers",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--twist",
+   "manufacturerId": "sonivox",
+   "name": "Twist",
+   "matchPatterns": [
+    "Twist",
+    "SONiVOX Twist"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://help.pluginboutique.com/hc/en-us/articles/6232636104340-SONiVOX-Single-Products-Installers",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--wobble",
+   "manufacturerId": "sonivox",
+   "name": "Wobble",
+   "matchPatterns": [
+    "Wobble",
+    "SONiVOX Wobble"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://help.pluginboutique.com/hc/en-us/articles/6232636104340-SONiVOX-Single-Products-Installers",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--solina-redux",
+   "manufacturerId": "sonivox",
+   "name": "Solina Redux",
+   "matchPatterns": [
+    "Solina Redux",
+    "SONiVOX Solina Redux"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://help.pluginboutique.com/hc/en-us/articles/6232636104340-SONiVOX-Single-Products-Installers",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--stratum",
+   "manufacturerId": "sonivox",
+   "name": "Stratum",
+   "matchPatterns": [
+    "Stratum",
+    "SONiVOX Stratum"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://help.pluginboutique.com/hc/en-us/articles/6232636104340-SONiVOX-Single-Products-Installers",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--essential-keyboard-collection",
+   "manufacturerId": "sonivox",
+   "name": "Essential Keyboard Collection",
+   "matchPatterns": [
+    "Essential Keyboard Collection",
+    "SONiVOX Essential Keyboard Collection"
+   ],
+   "identity_kind": "bundle",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://help.pluginboutique.com/hc/en-us/articles/6232636104340-SONiVOX-Single-Products-Installers",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--tony-coleman-drums",
+   "manufacturerId": "sonivox",
+   "name": "Tony Coleman Drums",
+   "matchPatterns": [
+    "Tony Coleman Drums",
+    "SONiVOX Tony Coleman Drums"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.bboytechreport.com/2015/04/06/tony-coleman-drums-percussion-instrument-now-available-from-sonivox/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--vocalizer-pro",
+   "manufacturerId": "sonivox",
+   "name": "Vocalizer Pro",
+   "matchPatterns": [
+    "Vocalizer Pro",
+    "SONiVOX Vocalizer Pro"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.musicradar.com/news/tech/namm-2013-sonivox-announces-vocalizer-pro-and-updated-vst-au-plug-ins-570476",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--eighty-eight-ensemble",
+   "manufacturerId": "sonivox",
+   "name": "Eighty Eight Ensemble",
+   "matchPatterns": [
+    "Eighty Eight Ensemble",
+    "SONiVOX Eighty Eight Ensemble"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.mactech.com/2010/03/11/sonivox-releases-grand-piano-virtual-instrument-eighty-eight/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--big-bang-universal-drums",
+   "manufacturerId": "sonivox",
+   "name": "Big Bang - Universal Drums",
+   "matchPatterns": [
+    "Big Bang - Universal Drums",
+    "SONiVOX Big Bang - Universal Drums"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.mactech.com/2011/04/20/sonivox-releases-big-bang-virtual-instrument/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--sampla",
+   "manufacturerId": "sonivox",
+   "name": "Sampla",
+   "matchPatterns": [
+    "Sampla",
+    "SONiVOX Sampla"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: http://preserve.mactech.com/content/sonivox-announces-hip-hop-production-sampler-0",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "sonivox--pitch2midi",
+   "manufacturerId": "sonivox",
+   "name": "Pitch2MIDI",
+   "matchPatterns": [
+    "Pitch2MIDI",
+    "SONiVOX Pitch2MIDI"
+   ],
+   "identity_kind": "effect",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://gearspace.com/threads/namm-2016-sonivox-pitch2midi-real-time-audio-to-midi-synth-and-converter-software.1057168/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "orchestra-tools--miroire",
+   "manufacturerId": "orchestra-tools",
+   "name": "Miroire",
+   "matchPatterns": [
+    "Miroire",
+    "Orchestral Tools Miroire"
+   ],
+   "identity_kind": "instrument",
+   "notes": "Gap-fill from surge-0118 C-track research (official OT site listing; corroborated: https://www.twice.com/the-wire/orchestral-tools-releases-berlin-harpsichords-on-sine-announces-baroque-bundle-with-miroire-collection).",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "orchestra-tools--james-newton-howard-piano",
+   "manufacturerId": "orchestra-tools",
+   "name": "James Newton Howard Piano",
+   "matchPatterns": [
+    "James Newton Howard Piano",
+    "Orchestral Tools James Newton Howard Piano"
+   ],
+   "identity_kind": "instrument",
+   "notes": "Gap-fill from surge-0118 C-track research (official OT site listing; corroborated: https://orchestraltools.helpscoutdocs.com/article/366-sine-player-changelog).",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "three-body-tech--heavier7strings",
+   "manufacturerId": "three-body-tech",
+   "name": "Heavier7Strings",
+   "matchPatterns": [
+    "Heavier7Strings",
+    "Three-Body Technology Heavier7Strings"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.threebodytech.com/en/products/heavier7strings",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "three-body-tech--whisper-of-loong",
+   "manufacturerId": "three-body-tech",
+   "name": "Whisper of Loong",
+   "matchPatterns": [
+    "Whisper of Loong",
+    "Three-Body Technology Whisper of Loong"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://sonicstate.com/news/2021/02/03/chinese-traditional-instruments-sampled/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "three-body-tech--lost-soul",
+   "manufacturerId": "three-body-tech",
+   "name": "Lost Soul",
+   "matchPatterns": [
+    "Lost Soul",
+    "Three-Body Technology Lost Soul"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://sonicstate.com/news/2021/02/03/chinese-traditional-instruments-sampled/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "three-body-tech--beyond-tear-of-land",
+   "manufacturerId": "three-body-tech",
+   "name": "Beyond Tear of Land",
+   "matchPatterns": [
+    "Beyond Tear of Land",
+    "Three-Body Technology Beyond Tear of Land"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://sonicstate.com/news/2021/02/03/chinese-traditional-instruments-sampled/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "three-body-tech--raindrop-and-blade",
+   "manufacturerId": "three-body-tech",
+   "name": "Raindrop & Blade",
+   "matchPatterns": [
+    "Raindrop & Blade",
+    "Three-Body Technology Raindrop & Blade"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://sonicstate.com/news/2021/02/03/chinese-traditional-instruments-sampled/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--joshua-bell-violin",
+   "manufacturerId": "embertone",
+   "name": "Joshua Bell Violin",
+   "matchPatterns": [
+    "Joshua Bell Violin",
+    "Embertone Joshua Bell Violin"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://embertone.com/instruments/joshua-bell-violin-series/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--friedlander-violin",
+   "manufacturerId": "embertone",
+   "name": "Friedlander Violin",
+   "matchPatterns": [
+    "Friedlander Violin",
+    "Embertone Friedlander Violin"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://embertone.com/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--intimate-strings-bundle",
+   "manufacturerId": "embertone",
+   "name": "Intimate Strings Bundle",
+   "matchPatterns": [
+    "Intimate Strings Bundle",
+    "Embertone Intimate Strings Bundle"
+   ],
+   "identity_kind": "bundle",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.totmusicstudio.net/products/embertone-intimate-strings-bundle",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--blakus-cello",
+   "manufacturerId": "embertone",
+   "name": "Blakus Cello",
+   "matchPatterns": [
+    "Blakus Cello",
+    "Embertone Blakus Cello"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.totmusicstudio.net/products/embertone-intimate-strings-bundle",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--fischer-viola",
+   "manufacturerId": "embertone",
+   "name": "Fischer Viola",
+   "matchPatterns": [
+    "Fischer Viola",
+    "Embertone Fischer Viola"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.totmusicstudio.net/products/embertone-intimate-strings-bundle",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--leonid-bass",
+   "manufacturerId": "embertone",
+   "name": "Leonid Bass",
+   "matchPatterns": [
+    "Leonid Bass",
+    "Embertone Leonid Bass"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://www.totmusicstudio.net/products/embertone-intimate-strings-bundle",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--chapman-trumpet",
+   "manufacturerId": "embertone",
+   "name": "Chapman Trumpet",
+   "matchPatterns": [
+    "Chapman Trumpet",
+    "Embertone Chapman Trumpet"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://embertone.com/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--sensual-saxophone",
+   "manufacturerId": "embertone",
+   "name": "Sensual Saxophone",
+   "matchPatterns": [
+    "Sensual Saxophone",
+    "Embertone Sensual Saxophone"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://embertone.com/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--herring-clarinet",
+   "manufacturerId": "embertone",
+   "name": "Herring Clarinet",
+   "matchPatterns": [
+    "Herring Clarinet",
+    "Embertone Herring Clarinet"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://embertone.com/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--shire-whistle",
+   "manufacturerId": "embertone",
+   "name": "Shire Whistle",
+   "matchPatterns": [
+    "Shire Whistle",
+    "Embertone Shire Whistle"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://embertone.com/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  },
+  {
+   "id": "embertone--steinway-model-d",
+   "manufacturerId": "embertone",
+   "name": "Steinway Model D",
+   "matchPatterns": [
+    "Steinway Model D",
+    "Embertone Steinway Model D"
+   ],
+   "identity_kind": "instrument",
+   "is_freeware": 0,
+   "notes": "surge-0118 C-track; evidence: https://embertone.com/",
+   "identity_source": "universe-expansion-surge-0118-2026-09-16"
+  }
+ ]
+}

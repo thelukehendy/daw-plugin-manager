@@ -378,3 +378,12 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - Surge mode (research every 3h, stop-condition query): **4,434** tier 1–3 plugins remaining, hard expiry 2026-09-21 ~20:30 PT, then auto-revert to 12h.
 - Push-job repair note: new mfr `soniccouture` had its portal URL in `portal_app` instead of `update_portal_url` → export validator blocked the push; fixed per DATA-DICTIONARY (portal URL → `update_portal_url`, app name → `portal_app='Native Access'`). New-mfr inserts must carry an http(s) `update_portal_url`.
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt.
+
+
+## Daily push 2026-09-16 (06:00 PT — SURGE mode active)
+- Shipped: mfrs **660** (+51), plugins **9491** (+581), accepted **5405** (+256); green **3713** (+186), amber **148** (+37), yellow **1544** (+33).
+- New accepted obs incl. 0118 chip's 22 promotions: 9 Cinesamples @90 (official "Product Compatibility Version Chart"), Synchro Arts VocAlign Pro 6.1.31 @85, Cherry Audio Novachord+Solovox 1.0.3 @90, IK AmpliTube 4 4.9.0 @90, Plugin Alliance MEGA Sampler 1.1.1 @95, Cableguys ShaperBox 3.6.3 @90.
+- +51 manufacturers: C-track universe adds (Process.Audio, BeatSkillz, Sonuscore, SONiVOX, Three-Body Technology, Embertone; Kuassa, Nembrini, Wave Arts, Mercuriall, Tritik, Sixth Sample) plus new `wavelet-audio` + `karanyi-sounds` from the Keepforest attribution-split cleanup (8 rows re-parented, zero observations lost).
+- Data-integrity fixes shipped: Keepforest attribution split resolved; LiquidSonics verbsuite-classics dup merged; FabFilter Pro-Q 3 + Surge XT dup pairs merged; Juice Pack suite→component destamping (10 bundle-version currents removed, bundle identity canonical).
+- Surge mode: **3,594** tier 1–3 plugins remaining (tier 1–3 universe 8,712 → 58.8% thoroughly worked); hard expiry 2026-09-21 ~20:30 PT, then auto-revert to 12h. No SURGE_COMPLETE.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. Nothing for the app to consume specially — schemaVersion unchanged, structural copy as always.

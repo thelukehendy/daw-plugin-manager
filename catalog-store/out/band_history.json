@@ -26,5 +26,12 @@
   "amber": 111,
   "yellow": 1511,
   "note": "Daily push 06:00 (+128 green, +27 amber, +1 yellow; 20 new mfrs; surge 4434 remain)"
+ },
+ {
+  "date": "2026-09-16",
+  "green": 3713,
+  "amber": 148,
+  "yellow": 1544,
+  "note": "Daily push 06:00 (+186 green, +37 amber, +33 yellow; 51 new mfrs; surge 3594 remain)"
  }
 ]
