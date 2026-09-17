@@ -387,3 +387,14 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - Data-integrity fixes shipped: Keepforest attribution split resolved; LiquidSonics verbsuite-classics dup merged; FabFilter Pro-Q 3 + Surge XT dup pairs merged; Juice Pack suite→component destamping (10 bundle-version currents removed, bundle identity canonical).
 - Surge mode: **3,594** tier 1–3 plugins remaining (tier 1–3 universe 8,712 → 58.8% thoroughly worked); hard expiry 2026-09-21 ~20:30 PT, then auto-revert to 12h. No SURGE_COMPLETE.
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. Nothing for the app to consume specially — schemaVersion unchanged, structural copy as always.
+
+
+## Daily push 2026-09-17 (06:00 PT — TIER-1 ASSAULT COMPLETE, maintenance cadence)
+- Shipped: mfrs **660** (+0), plugins **9,490** (−1), accepted **5,587** (+182); green **3,865** (+152), amber **197** (+49), yellow **1,525** (−19).
+- Band flow: 39 yellow→amber + 18 yellow→green promotions; 183 plugins versioned for the first time (136 green / 10 amber / 37 yellow); 1 green→yellow re-grade (NI Massive X 1.7.0 @92 → 1.7.1 @65 — 1.7 confirmed by press, patch number from installer mirrors, correctly capped low).
+- TIER-1 assault COMPLETE (owner-verified 2026-09-16 ~23:05 PDT): stop query = 0 — all 4,385 tier-1 plugins have accepted ≥70 (2,004) or a research_attempts row ≥ surge_start (2,381). Research cadence reverted to 12h freshness-maintenance (next chip Thu 2026-09-17 10:18 PDT); `meta.surge_active=0`. Tier 2+ still paused per standing order.
+- Final assault chip: 56 promotions incl. UVI ×34 @88 (UVISC/UVIFCX manual-PDF recipes), Steinberg ×17 (official version-history PDFs), Spitfire Ronroco 2.0, D16 phoscyon-2 (Apple Silicon → native). Freshness tracks: 0 raises — currents verified against live sources.
+- Data-integrity: Voxengo BMS twin rows merged (zero observations lost). Push-job repair: `export_catalog.py` blocked on malformed `confidence_reasons` (coordinator commentary appended after JSON) — field repaired, `loads_json` hardened to salvage the format.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, only version fields differ); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Flags for next maintenance chips: Arturia MiniFreak V 5.0 build number; Kirchhoff-EQ 1.7.5 live-verify; NI Native Access 3.26.0; iZotope R2/R4 discontinued (frozen-final ruling candidate).
+- Push mechanics: backup `backups/2026-09-17/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.

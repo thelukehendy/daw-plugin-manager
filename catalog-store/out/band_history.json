@@ -33,5 +33,12 @@
   "amber": 148,
   "yellow": 1544,
   "note": "Daily push 06:00 (+186 green, +37 amber, +33 yellow; 51 new mfrs; surge 3594 remain)"
+ },
+ {
+  "date": "2026-09-17",
+  "green": 3865,
+  "amber": 197,
+  "yellow": 1525,
+  "note": "Daily push 06:00 (+152 green, +49 amber, -19 yellow; TIER1_COMPLETE, maintenance cadence)"
  }
 ]

@@ -62,7 +62,20 @@ def now_iso() -> str:
 def loads_json(s: str | None, default=None):
     if s is None or s == "":
         return default if default is not None else None
-    return json.loads(s)
+    try:
+        return json.loads(s)
+    except json.JSONDecodeError:
+        # Salvage: a worker once appended coordinator commentary after the
+        # JSON payload ("[...] | 2026-09-16 coordinator: ..."). Preserve the
+        # payload if present, and never lose the raw text.
+        head, _, tail = s.partition(" | ")
+        try:
+            parsed = json.loads(head)
+            if isinstance(parsed, list) and tail:
+                return parsed + [tail.strip()]
+            return parsed
+        except json.JSONDecodeError:
+            return [s]
 
 
 def plugin_columns(conn: sqlite3.Connection) -> set[str]:

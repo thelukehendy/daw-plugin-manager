@@ -1,9 +1,9 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **DAILY PUSH 2026-09-16 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push`. SURGE mode active (research every 3h; **3,594** tier 1–3 plugins remain, hard expiry 2026-09-21 ~20:30 PT).
+> **DAILY PUSH 2026-09-17 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push`. **TIER-1 ASSAULT COMPLETE** (owner-verified 2026-09-16 ~23:05 PDT): stop query = 0 — all **4,385** tier-1 plugins either carry an accepted observation ≥ 70 (2,004) or a research_attempts row ≥ surge_start (2,381). Research cadence reverted to 12h freshness-maintenance (next chip Thu 2026-09-17 10:18 PDT); `meta.surge_active=0`. Tier 2+ stays paused per standing order.
 > Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-16 ~06:00 PT (daily push, ships 2026-09-15/16 research chips, incl. surge chips 0118–2218 on 09-15 + 0118 on 09-16)  
+**Snapshot:** 2026-09-17 ~06:00 PT (daily push, ships 2026-09-16 research chips incl. tier-1 assault close chip 2218)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`
