@@ -26,7 +26,7 @@ GROUP BY 1
 """
 
 MFR_SQL = """
-SELECT m.id, m.name,
+SELECT COALESCE(m.popularity_tier,99) AS tier, m.id, m.name,
        COUNT(p.id) AS plugins,
        SUM(CASE WHEN vo.confidence>=85 THEN 1 ELSE 0 END) AS green,
        SUM(CASE WHEN vo.confidence>=70 AND vo.confidence<85 THEN 1 ELSE 0 END) AS amber,
@@ -35,19 +35,55 @@ FROM manufacturers m
 LEFT JOIN plugins p ON p.manufacturer_id = m.id
 LEFT JOIN plugin_version_current pvc ON pvc.plugin_id = p.id
 LEFT JOIN version_observations vo ON vo.id = pvc.observation_id
-GROUP BY m.id, m.name
-ORDER BY yellow DESC, m.name
+GROUP BY tier, m.id, m.name
+ORDER BY tier, yellow DESC, m.name
 """
 
 RECENT_SQL = """
-SELECT vo.plugin_id, p.name, vo.observed_version, vo.confidence,
-       vo.verified_by, substr(vo.verified_at,1,16) AS vat, m.name AS mfr
+SELECT COALESCE(p.popularity_tier, m.popularity_tier, 99) AS tier,
+       vo.plugin_id, p.name, vo.observed_version, vo.confidence,
+       substr(vo.verified_at,1,16) AS vat, m.name AS mfr
 FROM version_observations vo
 JOIN plugins p ON p.id = vo.plugin_id
 JOIN manufacturers m ON m.id = p.manufacturer_id
 WHERE vo.status='accepted' AND vo.verified_at IS NOT NULL
-ORDER BY vo.verified_at DESC LIMIT 40
+ORDER BY vo.verified_at DESC LIMIT 400
 """
+
+TIER_SQL = """
+SELECT COALESCE(p.popularity_tier, m.popularity_tier, 99) AS tier,
+       COUNT(DISTINCT m.id) AS mfrs,
+       COUNT(*) AS plugins
+FROM plugins p
+JOIN manufacturers m ON m.id = p.manufacturer_id
+GROUP BY 1 ORDER BY 1
+"""
+
+# Static tier framing: category name, who lives there, and a VERY rough guess
+# of what share of the app's users have at least one plugin from the tier
+# installed. Broad guesses for prioritization only — not measured data.
+TIER_INFO = {
+    1: ("Household names",
+        "The brands nearly every producer knows — Waves, FabFilter, iZotope, "
+        "Valhalla, Xfer/Serum, Native Instruments, Antares/Auto-Tune, Soundtoys, "
+        "Universal Audio, Arturia, u-he, Slate, Softube, SSL, Eventide…",
+        "~80–95%"),
+    2: ("Established pros & beloved indies",
+        "Working-studio staples and cult favorites — Acustica, AudioThing, "
+        "Baby Audio, Blue Cat, Cherry Audio, DMG, Klanghelm, TAL, Tokyo Dawn…",
+        "~40–60%"),
+    3: ("Working commercial & niche pro",
+        "Smaller commercial devs and specialist tools — Boom Library, Caelum, "
+        "Dawesome, Eiosis, Audio Modern, Drumforge…",
+        "~15–30%"),
+    4: ("Boutique / specialist",
+        "Tiny specialist commercial catalogs.",
+        "~3–10%"),
+    99: ("Long tail (unranked)",
+        "Hundreds of mostly freeware / one-person developers. Any single plugin "
+        "reaches <1–2% of users, but collectively ~10–20% of users have at least one.",
+        "~10–20%*"),
+}
 
 
 def band_counts(con):
@@ -61,10 +97,11 @@ def main():
     plugin_count = con.execute("SELECT COUNT(*) FROM plugins").fetchone()[0]
     accepted = con.execute("SELECT COUNT(*) FROM plugin_version_current").fetchone()[0]
     bands = band_counts(con)
-    mfrs = [dict(zip(("id", "name", "plugins", "green", "amber", "yellow"), r))
+    mfrs = [dict(zip(("tier", "id", "name", "plugins", "green", "amber", "yellow"), r))
             for r in con.execute(MFR_SQL).fetchall()]
-    recent = [dict(zip(("pid", "pname", "ver", "conf", "by", "at", "mfr"), r))
-              for r in con.execute(RECENT_SQL).fetchall()]
+    recent_all = [dict(zip(("tier", "pid", "pname", "ver", "conf", "at", "mfr"), r))
+                  for r in con.execute(RECENT_SQL).fetchall()]
+    tiers = [(t, m, p) for (t, m, p) in con.execute(TIER_SQL).fetchall()]
     con.close()
 
     history = json.loads(HISTORY.read_text()) if HISTORY.exists() else []
@@ -85,21 +122,41 @@ def main():
         f"<td class=num>{h['amber']}</td><td class=num>{h['yellow']}</td>"
         f"<td>{h.get('note', '')}</td></tr>" for h in history)
 
-    mfr_rows = "\n".join(
-        f"<tr><td>{m['name']}</td><td class=num>{m['plugins']}</td>"
-        f"<td class=num g>{m['green'] or 0}</td>"
-        f"<td class=num a>{m['amber'] or 0}</td>"
-        f"<td class=num y>{m['yellow'] or 0}</td></tr>" for m in mfrs)
-
-    recent_rows = "\n".join(
-        f"<tr><td>{r['mfr']}</td><td>{r['pname']}</td>"
-        f"<td class=num><b>{r['ver']}</b></td><td class=num>{r['conf']}</td>"
-        f"<td>{r['at']}</td></tr>" for r in recent)
-
     blocked_rows = "\n".join(
         f"<tr><td>{b['manufacturer']}</td><td>{b['yellows']}</td>"
         f"<td>{b['blocker']}</td><td>{b.get('path_forward', '')}</td></tr>"
         for b in blocked)
+
+    tier_blocks = []
+    for (t, tmfrs, tplugins) in tiers:
+        mm = [m for m in mfrs if m["tier"] == t]
+        mrows = "\n".join(
+            f"<tr><td>{m['name']}</td><td class=num>{m['plugins']}</td>"
+            f"<td class=num g>{m['green'] or 0}</td>"
+            f"<td class=num a>{m['amber'] or 0}</td>"
+            f"<td class=num y>{m['yellow'] or 0}</td></tr>" for m in mm)
+        rr = [r for r in recent_all if r["tier"] == t][:15]
+        rrows = "\n".join(
+            f"<tr><td>{r['mfr']}</td><td>{r['pname']}</td>"
+            f"<td class=num><b>{r['ver']}</b></td><td class=num>{r['conf']}</td>"
+            f"<td>{r['at']}</td></tr>" for r in rr) or \
+            "<tr><td colspan=5 class=note>No recent raises in this tier yet.</td></tr>"
+        info = TIER_INFO.get(t, ("", "", ""))
+        topen = " open" if t == 1 else ""
+        mopen = " open" if t == 1 else ""
+        tier_blocks.append(
+            f"<details{topen}><summary><b>Tier {t} — {info[0]}</b> · "
+            f"{tmfrs} manufacturers · {tplugins:,} plugins · {info[2]} of users</summary>\n"
+            f"<div class=\"dbody\"><p class=\"note\">{info[1]}</p>\n"
+            f"<details{mopen}><summary>Manufacturers ({len(mm)})</summary><div class=\"dbody\">\n"
+            f"<input type=\"search\" placeholder=\"Filter manufacturers…\" oninput=\"fq(this)\">\n"
+            f"<table><tr><th>Manufacturer</th><th class=num>Plugins</th><th class=num>Green</th>"
+            f"<th class=num>Amber</th><th class=num>Yellow</th></tr>\n{mrows}</table></div></details>\n"
+            f"<details><summary>Recent raises (latest {len(rr)})</summary><div class=\"dbody\">\n"
+            f"<table><tr><th>Manufacturer</th><th>Plugin</th><th class=num>Version</th>"
+            f"<th class=num>Conf</th><th>Verified</th></tr>\n{rrows}</table></div></details>\n"
+            f"</div></details>")
+    tier_blocks_html = "\n".join(tier_blocks)
 
     backup_rows = "\n".join(
         f"<tr><td>{b}</td><td>catalog-store/backups/{b}/catalog.json</td></tr>"
@@ -139,19 +196,14 @@ input[type=search]{{width:100%;padding:8px;margin-bottom:8px;border:1px solid #d
 <div class="card"><div class="v y">{bands['yellow']:,}</div><div class="l">Yellow &lt;70 ({pct(bands['yellow'])})</div>
 <div class="bar"><span style="width:{pct(bands['yellow'])};background:#999"></span></div></div>
 </div>
+<details open><summary>Popularity tiers — who the catalog serves</summary><div class="dbody">
+<p class="note">Tiers are internal research-priority metadata (never exported to the app). The user-share figures are <b>very rough guesses</b> for prioritization — what share of the app's users likely have at least one plugin from the tier installed — not measured data. Research already works tier 1 first so the most users benefit. *Long-tail: any single plugin reaches &lt;1–2% of users.</p>
+{tier_blocks_html}
+<script>function fq(el){{var q=el.value.toLowerCase();var t=el.parentElement.querySelector('table');t.querySelectorAll('tr').forEach(function(r,i){{if(i>0)r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'}})}}</script>
+</div></details>
 <details open><summary>Confidence history</summary><div class="dbody">
 <table><tr><th>Date</th><th class=num>Green</th><th class=num>Amber</th><th class=num>Yellow</th><th>Note</th></tr>
 {hist_rows}</table></div></details>
-<details><summary>Per-manufacturer breakdown ({mfr_count})</summary><div class="dbody">
-<input type="search" id="q" placeholder="Filter manufacturers…" oninput="f()">
-<table id="mt"><tr><th>Manufacturer</th><th class=num>Plugins</th><th class=num>Green</th><th class=num>Amber</th><th class=num>Yellow</th></tr>
-{mfr_rows}</table>
-<script>function f(){{var q=document.getElementById('q').value.toLowerCase();
-document.querySelectorAll('#mt tr').forEach(function(r,i){{if(i>0)r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'}})}}</script>
-</div></details>
-<details><summary>Recent raises (latest 40)</summary><div class="dbody">
-<table><tr><th>Manufacturer</th><th>Plugin</th><th class=num>Version</th><th class=num>Conf</th><th>Verified</th></tr>
-{recent_rows}</table></div></details>
 <details><summary>Boundaries under assault ({blocked_n} — alternate evidence paths in progress)</summary><div class="dbody">
 <p class="note">These manufacturers wall versions behind account portals. The weekly job attacks them via alternate paths — Wayback snapshots, forum archaeology, reseller listings, installer-filename leaks, release-note archives — and logs every attempt. A specific narrow ask goes to Luke only when a boundary is truly unbreakable without a login.</p>
 <table><tr><th>Manufacturer</th><th>Yellows</th><th>Blocker</th><th>Path forward</th></tr>
@@ -160,7 +212,7 @@ document.querySelectorAll('#mt tr').forEach(function(r,i){{if(i>0)r.style.displa
 <p class="note">Before each weekly update, the outgoing export is snapshotted here. Retention: 12 weeks. Git history holds every version permanently.</p>
 <table><tr><th>Date</th><th>Path</th></tr>{backup_rows}</table></div></details>
 <details><summary>How the weekly automation works</summary><div class="dbody">
-<p class="note">An autonomous research engine works the catalog continuously (every 3h in surge mode, otherwise every 12h): it researches yellow-band plugins from public manufacturer evidence only — no sign-ins, no purchases, no outreach — coordinator-verifies every raise, does bounded universe-expansion discovery, green freshness checks, and Apple Silicon/version-scheme sweeps. A daily push (~6am PT) backs up, re-exports the store, syncs <code>catalog/catalog.json</code> (the file the app + CDN serve), rebuilds this dashboard, and pushes to GitHub. Full contract: <code>catalog-store/WEEKLY-AUTOMATION.md</code>.</p>
+<p class="note">An autonomous research engine works the catalog continuously (every 12h in tier-1 maintenance mode): it researches yellow-band plugins from public manufacturer evidence only — no sign-ins, no purchases, no outreach — coordinator-verifies every raise, does bounded universe-expansion discovery, green freshness checks, and Apple Silicon/version-scheme sweeps. A daily push (~6am PT) backs up, re-exports the store, syncs <code>catalog/catalog.json</code> (the file the app + CDN serve), rebuilds this dashboard, and pushes to GitHub. Full contract: <code>catalog-store/WEEKLY-AUTOMATION.md</code>.</p>
 </div></details>
 </body></html>"""
 
