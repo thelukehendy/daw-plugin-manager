@@ -1,3 +1,9 @@
+> **SUPERSEDED — 2026-09-17.** This file is a historical log from the 2026-09-10
+> research pause. Its counts, "paused" state, and schema-v4 references are stale.
+> Cursor: start at **`CURSOR-INSTRUCTIONS.md`** (current). Read **`catalog/catalog.json`**
+> as your source of truth — never the live SQLite DB (`catalog-store/data/catalog.db`
+> is written continuously by the research engine; see CURSOR-INSTRUCTIONS.md).
+
 > **PAUSED 2026-09-10 ~5:40 AM PT** — catalog work and scrub routines stopped per Luke. See `PAUSE-SNAPSHOT.md` + `STATUS.md` for frozen totals (**583** mfrs / **8439** plugins / **4986** accepted).
 
 # HANDOFF — DAW Plugin Catalog Store (for Cursor / Electron)
