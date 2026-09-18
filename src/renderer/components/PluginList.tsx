@@ -48,31 +48,35 @@ function ProductRow({
         }
       }}
     >
-      <span className="product-name" title={row.name}>
+      <span className="col-name product-name" title={row.name}>
         {row.name}
       </span>
-      {row.formats.length > 0 && (
-        <span className="fmt-inline mono" title={row.formats.join(' · ')}>
-          {row.formats.slice(0, 3).join(' ')}
-        </span>
-      )}
-      <span className="cell-versions mono" title="Installed → catalog latest">
+      <span className="col-fmt mono" title={row.formats.join(' · ') || undefined}>
+        {row.formats.length ? row.formats.slice(0, 4).join(' ') : '—'}
+      </span>
+      <span className="col-ver mono" title="Installed → catalog latest">
         <span className="ver-installed">{displayVersion(row.installedVersion)}</span>
         <span className="ver-arrow" aria-hidden>
           →
         </span>
         <span className="ver-latest">{displayVersion(row.latestVersion)}</span>
       </span>
-      {showConf && (
-        <ConfidenceBadge confidence={row.confidence} band={row.confidenceBand} compact />
-      )}
-      <span
-        className={`state-pill state-${row.status}`}
-        title={statusLabel(row.status, row.catalogOnly)}
-      >
-        {statusLabel(row.status, row.catalogOnly, true)}
+      <span className="col-conf">
+        {showConf ? (
+          <ConfidenceBadge confidence={row.confidence} band={row.confidenceBand} compact />
+        ) : (
+          <span className="action-none">—</span>
+        )}
       </span>
-      <span className="cell-action" onClick={(e) => e.stopPropagation()}>
+      <span className="col-state">
+        <span
+          className={`state-pill state-${row.status}`}
+          title={statusLabel(row.status, row.catalogOnly)}
+        >
+          {statusLabel(row.status, row.catalogOnly, true)}
+        </span>
+      </span>
+      <span className="col-action" onClick={(e) => e.stopPropagation()}>
         {portalLabel ? (
           <button
             type="button"
@@ -153,6 +157,14 @@ function VendorRow({
       </div>
       {expanded && (
         <div className="vendor-plugins">
+          <div className="plugin-cols-head" aria-hidden>
+            <span className="col-name">Plugin</span>
+            <span className="col-fmt">Formats</span>
+            <span className="col-ver">Installed → latest</span>
+            <span className="col-conf">Conf</span>
+            <span className="col-state">State</span>
+            <span className="col-action">Portal</span>
+          </div>
           {signal.focusProducts.map((row) => (
             <ProductRow
               key={row.id}

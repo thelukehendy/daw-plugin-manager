@@ -554,7 +554,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .vendor-plugins {
   border-top: 1px solid rgba(13, 23, 28, 0.08);
   background: #f7f9fa;
-  padding: 2px 0 4px;
+  padding: 0 0 4px;
 }
 
 .exp {
@@ -565,16 +565,45 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-weight: 700;
 }
 
-/* Expanded plugin lines — dense, left-packed */
+/*
+  Expanded plugin columns — shared track so fields align down the list.
+  Name grows; other slots stay consistent; action sits in the last column (no dead void).
+*/
+.plugin-cols-head,
 .product-row {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns:
+    minmax(7rem, 1.35fr)
+    minmax(5.5rem, 0.75fr)
+    minmax(8.5rem, 1.05fr)
+    3.25rem
+    5.25rem
+    minmax(4.5rem, 0.7fr);
+  column-gap: 10px;
   align-items: center;
-  gap: 8px;
+  padding: 0 12px 0 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.plugin-cols-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 18px;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+  background: #e8eef0;
+  border-bottom: 1px solid var(--line);
+}
+
+.product-row {
   height: 22px;
   min-height: 22px;
   max-height: 22px;
-  padding: 0 12px 0 28px;
   border-bottom: 1px solid rgba(13, 23, 28, 0.05);
   cursor: pointer;
   white-space: nowrap;
@@ -587,26 +616,36 @@ button, input, select, textarea { font: inherit; color: inherit; }
   outline: 1px solid rgba(11, 95, 91, 0.35);
   outline-offset: -1px;
 }
-.product-name {
-  flex: 0 1 auto;
-  max-width: 24ch;
-  font-weight: 650;
-  font-size: 12px;
-  color: var(--ink);
+
+.col-name,
+.col-fmt,
+.col-ver,
+.col-conf,
+.col-state,
+.col-action {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.fmt-inline {
-  flex: 0 0 auto;
+
+.product-name,
+.col-name.product-name {
+  font-weight: 650;
+  font-size: 12px;
+  color: var(--ink);
+  display: block;
+}
+
+.col-fmt {
   color: var(--ink-soft);
   font-size: 10px;
   font-weight: 600;
 }
-.cell-versions {
-  display: inline-flex;
+
+.col-ver {
+  display: flex;
   align-items: center;
   gap: 4px;
-  flex: 0 0 auto;
   font-weight: 600;
   color: var(--ink);
 }
@@ -616,7 +655,25 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-size: 11px;
   color: var(--ink);
 }
-.ver-arrow { color: var(--muted); font-size: 10px; }
+.ver-arrow { color: var(--muted); font-size: 10px; flex-shrink: 0; }
+
+.col-conf {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.col-state {
+  display: flex;
+  align-items: center;
+}
+
+.col-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
 
 .micro-tag {
   font-size: 9px;
