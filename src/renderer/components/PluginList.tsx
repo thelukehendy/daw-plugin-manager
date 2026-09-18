@@ -143,7 +143,6 @@ function VendorRow({
             <ConfidenceBadge
               confidence={signal.minConfidence}
               band={signal.minBand}
-              vendorAggregate
               compact
             />
           </span>

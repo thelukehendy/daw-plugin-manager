@@ -299,14 +299,8 @@ export function confidenceTooltip(opts: {
   band: ConfidenceBand
   reasons?: string[]
   versionSourceUrl?: string | null
-  /** Vendor-row aggregate: explain min across children. */
-  vendorAggregate?: boolean
 }): string {
   const lines: string[] = [meaningSentence(opts.word)]
-
-  if (opts.vendorAggregate) {
-    lines.push('Shown for this vendor: the lowest confidence among the plugins listed here.')
-  }
 
   const why = (opts.reasons || [])
     .map(humanizeConfidenceReason)

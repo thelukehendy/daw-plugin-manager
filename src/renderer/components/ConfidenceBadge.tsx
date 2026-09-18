@@ -19,7 +19,6 @@ export function ConfidenceBadge({
   status,
   reasons,
   versionSourceUrl,
-  vendorAggregate,
   /** Detail pane: keep numeric score as secondary text. */
   showScoreSecondary,
   compact,
@@ -31,7 +30,6 @@ export function ConfidenceBadge({
   status?: UpdateStatus
   reasons?: string[]
   versionSourceUrl?: string | null
-  vendorAggregate?: boolean
   showScoreSecondary?: boolean
   compact?: boolean
 }) {
@@ -50,7 +48,6 @@ export function ConfidenceBadge({
     band,
     reasons,
     versionSourceUrl,
-    vendorAggregate,
   })
 
   return (
