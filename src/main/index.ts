@@ -14,6 +14,7 @@ function createWindow(): void {
     minHeight: 640,
     title: 'DAW Plugin Manager',
     backgroundColor: '#e8eef0',
+    show: false,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       contextIsolation: true,
