@@ -1,5 +1,5 @@
 import type { PluginReportRow } from '../../shared/types'
-import { ConfidenceBadge } from './ConfidenceBadge'
+import { ConfidenceBadge, confidencePropsFromRow } from './ConfidenceBadge'
 import {
   STATUS_HINT,
   displayVersion,
@@ -46,8 +46,13 @@ export function DetailPanel({
           row.status === 'unverified' ||
           row.status === 'update_available' ||
           row.status === 'update_likely' ||
-          row.status === 'current') && (
-          <ConfidenceBadge confidence={row.confidence} band={row.confidenceBand} />
+          row.status === 'current' ||
+          row.status === 'content' ||
+          row.status === 'discontinued') && (
+          <ConfidenceBadge
+            {...confidencePropsFromRow(row)}
+            showScoreSecondary
+          />
         )}
       </div>
       <p className="detail-hint">

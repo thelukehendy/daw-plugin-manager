@@ -573,12 +573,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .product-row {
   display: grid;
   grid-template-columns:
-    minmax(7rem, 1.35fr)
-    minmax(5.5rem, 0.75fr)
-    minmax(8.5rem, 1.05fr)
-    3.25rem
+    minmax(7rem, 1.25fr)
+    minmax(5.5rem, 0.7fr)
+    minmax(8.5rem, 1fr)
+    minmax(5.5rem, 0.85fr)
     5.25rem
-    minmax(4.5rem, 0.7fr);
+    minmax(4.5rem, 0.65fr);
   column-gap: 10px;
   align-items: center;
   padding: 0 12px 0 28px;
@@ -721,19 +721,20 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .conf-badge {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  font-family: var(--mono);
-  font-size: 10px;
+  gap: 4px;
+  font-family: var(--font);
+  font-size: 11px;
   font-weight: 700;
-  padding: 0 4px;
+  padding: 0 5px;
   border-radius: 3px;
   border: 1px solid var(--line);
   background: #fff;
   line-height: 1.4;
   flex-shrink: 0;
   color: inherit;
+  max-width: 100%;
 }
-.conf-badge.compact { padding: 0 3px; font-size: 10px; gap: 2px; }
+.conf-badge.compact { padding: 0 4px; font-size: 10px; gap: 3px; }
 .conf-dot {
   width: 6px;
   height: 6px;
@@ -741,11 +742,22 @@ button, input, select, textarea { font: inherit; color: inherit; }
   background: currentColor;
   flex-shrink: 0;
 }
-.conf-score { color: inherit; font-variant-numeric: tabular-nums; }
+.conf-word {
+  font-family: var(--font);
+  font-size: inherit;
+  font-weight: 700;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.conf-score-secondary {
+  font-weight: 600;
+  opacity: 0.75;
+  color: inherit;
+}
 .conf-green { color: var(--ok); border-color: rgba(15, 107, 60, 0.4); }
 .conf-amber { color: var(--amber); border-color: rgba(138, 90, 10, 0.45); }
 .conf-yellow { color: var(--yellow); border-color: rgba(122, 100, 16, 0.45); }
-.conf-word { font-family: var(--font); font-size: 10px; color: var(--ink-soft); font-weight: 600; }
 
 .cell-action { flex: 0 0 auto; }
 .action-none { color: var(--muted); font-size: 11px; }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { ManufacturerReportGroup, PluginReportRow } from '../../shared/types'
-import { ConfidenceBadge } from './ConfidenceBadge'
+import { ConfidenceBadge, confidencePropsFromRow } from './ConfidenceBadge'
 import { displayVersion, statusLabel } from '../lib/labels'
 import {
   TRIAGE_HINT,
@@ -23,11 +23,6 @@ function ProductRow({
   onSelect: () => void
   onOpenUrl: (url: string | null) => void
 }) {
-  const showConf =
-    row.latestVersion != null ||
-    ['unknown', 'unverified', 'update_available', 'update_likely', 'current', 'discontinued'].includes(
-      row.status
-    )
   const portalLabel =
     row.portalApp && (row.status === 'use_vendor_hub' || row.confidenceBand === 'low')
       ? row.portalApp
@@ -62,11 +57,7 @@ function ProductRow({
         <span className="ver-latest">{displayVersion(row.latestVersion)}</span>
       </span>
       <span className="col-conf">
-        {showConf ? (
-          <ConfidenceBadge confidence={row.confidence} band={row.confidenceBand} compact />
-        ) : (
-          <span className="action-none">—</span>
-        )}
+        <ConfidenceBadge {...confidencePropsFromRow(row)} compact />
       </span>
       <span className="col-state">
         <span
@@ -161,7 +152,7 @@ function VendorRow({
             <span className="col-name">Plugin</span>
             <span className="col-fmt">Formats</span>
             <span className="col-ver">Installed → latest</span>
-            <span className="col-conf">Conf</span>
+            <span className="col-conf">Confidence</span>
             <span className="col-state">State</span>
             <span className="col-action">Portal</span>
           </div>

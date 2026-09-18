@@ -49,10 +49,60 @@ export function displayVersion(version: string | null | undefined): string {
   return version
 }
 
+/** Primary UI word for confidence — never lead with 0–100. */
+export type ConfidenceDisplayWord = 'Verified' | 'Likely' | 'Unknown'
+
+const NON_VERSION_KINDS = new Set<string>([
+  'soundset',
+  'expansion',
+  'bundle',
+  'suite_component',
+  'hardware',
+  'eurorack',
+  'hub_app',
+])
+
+export function confidenceDisplayWord(opts: {
+  confidence: number
+  band?: ConfidenceBand
+  latestVersion?: string | null
+  identityKind?: IdentityKind
+  status?: UpdateStatus
+}): ConfidenceDisplayWord {
+  const { confidence, band, latestVersion, identityKind, status } = opts
+  if (status === 'content' || status === 'discontinued') return 'Unknown'
+  if (identityKind && NON_VERSION_KINDS.has(identityKind)) return 'Unknown'
+  // Only gate on missing latest when the caller provided the field (plugin rows).
+  if (latestVersion !== undefined && (latestVersion == null || latestVersion === '')) {
+    return 'Unknown'
+  }
+  if (confidence >= 85 || band === 'high') return 'Verified'
+  if (confidence >= 70 || band === 'medium') return 'Likely'
+  return 'Unknown'
+}
+
+/** @deprecated Prefer confidenceDisplayWord — kept for any legacy band-only call sites. */
 export function confidenceLabel(band: ConfidenceBand): string {
   if (band === 'high') return 'Verified'
   if (band === 'medium') return 'Likely'
-  return 'Weak'
+  return 'Unknown'
+}
+
+export function confidenceTooltip(opts: {
+  word: ConfidenceDisplayWord
+  confidence: number
+  band: ConfidenceBand
+  reasons?: string[]
+  sourceUrl?: string | null
+}): string {
+  const bandLabel =
+    opts.band === 'high' ? '≥85 verified' : opts.band === 'medium' ? '70–84 likely' : '<70 weak'
+  const lines = [
+    `${opts.word} · ${opts.confidence}% · ${bandLabel}`,
+    ...(opts.reasons?.filter(Boolean) ?? []),
+  ]
+  if (opts.sourceUrl) lines.push(opts.sourceUrl)
+  return lines.join('\n')
 }
 
 export function identityLabel(kind: IdentityKind): string {

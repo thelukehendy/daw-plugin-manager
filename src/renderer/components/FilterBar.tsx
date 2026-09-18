@@ -72,9 +72,9 @@ export function FilterBar({
         aria-label="Confidence band"
       >
         <option value="all">All confidence</option>
-        <option value="high">≥85 verified</option>
-        <option value="medium">70–84 likely</option>
-        <option value="low">&lt;70 weak</option>
+        <option value="high">Verified (≥85)</option>
+        <option value="medium">Likely (70–84)</option>
+        <option value="low">Unknown (&lt;70)</option>
       </select>
       <select
         value={identity}
