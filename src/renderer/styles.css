@@ -134,6 +134,75 @@ button, input, select, textarea { font: inherit; color: inherit; }
   gap: 6px;
 }
 .catalog-meta { color: var(--muted); font-size: 10px; white-space: nowrap; }
+.snapshot-pill {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: rgba(13, 23, 28, 0.06);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+/* —— Installed DAWs (always top, readable) —— */
+.daw-strip-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+  flex-shrink: 0;
+}
+.daw-strip-panel.empty { color: var(--muted); }
+.daw-strip-label {
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.daw-strip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.daw-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #f4f7f8;
+  max-width: 100%;
+}
+.daw-chip-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.daw-chip-ver {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.daw-strip-meta {
+  font-size: 11px;
+  color: var(--muted);
+  margin-left: auto;
+  white-space: nowrap;
+}
+.daw-strip-empty { font-size: 12px; color: var(--muted); }
 
 .btn {
   border: 1px solid var(--line);
@@ -478,7 +547,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .triage-vendors { display: flex; flex-direction: column; }
 
 /* Vendor row: name + one signal + conf + CTA — full width layout */
-.vendor-block { border-bottom: 1px solid rgba(13, 23, 28, 0.08); }
+.vendor-block {
+  border-bottom: 1px solid rgba(13, 23, 28, 0.08);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 40px;
+}
 .vendor-block.is-open { background: #fafbfc; }
 .vendor-row {
   display: grid;
@@ -609,6 +682,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   white-space: nowrap;
   overflow: hidden;
   color: var(--ink);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 22px;
 }
 .product-row:hover { background: rgba(11, 95, 91, 0.08); }
 .product-row.selected {

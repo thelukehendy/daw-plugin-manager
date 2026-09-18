@@ -1,7 +1,7 @@
 import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import { join } from 'path'
 import { runFullScan } from './scanService'
-import { buildCatalogBrowseReport } from './catalog/catalogService'
+import { loadLastLibrary } from './lastLibrary'
 import type { ScanProgress } from '../shared/types'
 
 let mainWindow: BrowserWindow | null = null
@@ -36,9 +36,7 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
-  // Safety: this app is discovery-only. Never grant write FS APIs to renderer.
   createWindow()
-
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
@@ -48,6 +46,8 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
 
+ipcMain.handle('library:loadLast', async () => loadLastLibrary())
+
 ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[] }) => {
   const sendProgress = (progress: ScanProgress) => {
     if (!event.sender.isDestroyed()) {
@@ -55,13 +55,14 @@ ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[]
     }
   }
 
+  // Indexed catalog match + setImmediate yields keep the renderer painting
+  // progressive DAW/vendor updates via scan:progress.
   return runFullScan(sendProgress, {
     extraPluginRoots: options?.extraPluginRoots,
     appPath: app.getAppPath(),
   })
 })
 
-/** Open manufacturer portal / download page in the user's default browser. */
 ipcMain.handle('shell:openExternal', async (_event, url: string) => {
   if (!url || typeof url !== 'string') return { ok: false, error: 'Invalid URL' }
   try {
@@ -76,13 +77,10 @@ ipcMain.handle('shell:openExternal', async (_event, url: string) => {
   }
 })
 
-ipcMain.handle('catalog:browse', async () => {
-  return buildCatalogBrowseReport({ appPath: app.getAppPath() })
-})
-
 ipcMain.handle('app:getInfo', async () => ({
   version: app.getVersion(),
   name: app.getName(),
   discoveryOnly: true,
-  policy: 'This utility never deletes, overwrites, or installs software. Updates are opened in your browser for you to install.',
+  policy:
+    'This utility never deletes, overwrites, or installs software. Updates are opened in your browser for you to install.',
 }))

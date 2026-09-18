@@ -29,10 +29,15 @@ import {
   canonicalizeManufacturer,
   generationFromMember,
   groupInstalledPlugins,
-  productFamilyName,
   productLineName,
   uniqueSortedVersions,
 } from '../scanner/grouping'
+import {
+  buildCatalogIndex,
+  findManufacturerIndexed,
+  matchCatalogPluginIndexed,
+  type CatalogIndex,
+} from './catalogIndex'
 
 const FALLBACK_REMOTE_CATALOG_URLS = [
   'https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json',
@@ -105,92 +110,28 @@ async function saveOverrides(overrides: CatalogOverrides): Promise<void> {
   }
 }
 
-function namesMatch(installedName: string, pattern: string): boolean {
-  const a = installedName.toLowerCase().trim()
-  const b = pattern.toLowerCase().trim()
-  if (!a || !b) return false
-  if (a === b) return true
-  if (productLineName(installedName).toLowerCase() === productLineName(pattern).toLowerCase()) {
-    if (productFamilyName(pattern).toLowerCase() === productLineName(pattern).toLowerCase()) {
-      return true
-    }
-  }
-  const familyA = productFamilyName(installedName).toLowerCase()
-  const familyB = productFamilyName(pattern).toLowerCase()
-  if (familyA === familyB) return true
-  if ((b.endsWith('-') || b.endsWith('_')) && a.startsWith(b)) return true
-  if (a.startsWith(b) && b.length >= 4) {
-    const next = a.charAt(b.length)
-    if (!next || /[\s\-_/]/.test(next) || /\d/.test(next)) return true
-  }
-  const esc = b.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  return new RegExp(`(^|[^a-z0-9])${esc}([^a-z0-9]|$)`, 'i').test(a)
-}
-
 function matchCatalogPlugin(
   name: string,
   manufacturer: string,
   productLine: string,
-  catalog: PluginCatalog
+  catalog: PluginCatalog,
+  index?: CatalogIndex
 ): {
   plugin: CatalogPlugin
   manufacturer: CatalogManufacturer
   score: number
 } | null {
-  const nameLower = name.toLowerCase()
-  const lineLower = productLine.toLowerCase()
-  const mfgLower = canonicalizeManufacturer(manufacturer).toLowerCase()
-
-  let best: {
-    plugin: CatalogPlugin
-    manufacturer: CatalogManufacturer
-    score: number
-  } | null = null
-
-  for (const plugin of catalog.plugins) {
-    const mfg = catalog.manufacturers.find((m) => m.id === plugin.manufacturerId)
-    if (!mfg) continue
-
-    const mfgAliases = [
-      mfg.name.toLowerCase(),
-      mfg.id.toLowerCase(),
-      ...(mfg.aliases || []).map((a) => a.toLowerCase()),
-    ]
-    const mfgOk = mfgAliases.some(
-      (a) => mfgLower === a || mfgLower.includes(a) || a.includes(mfgLower)
-    )
-
-    const pluginLine = (plugin.productLine || productLineName(plugin.name)).toLowerCase()
-    const patterns = plugin.matchPatterns.length ? plugin.matchPatterns : [plugin.name]
-    const matchedPattern = patterns.find(
-      (pat) => namesMatch(name, pat) || productLineName(pat).toLowerCase() === lineLower
-    )
-    const lineMatch = pluginLine === lineLower
-
-    if (!matchedPattern && !lineMatch) continue
-
-    let score = matchedPattern && matchedPattern.toLowerCase() === nameLower ? 100 : 40
-    if (lineMatch) score += 50
-    if (matchedPattern) score += 20
-    if (mfgOk) score += 40
-    if (nameLower === plugin.name.toLowerCase()) score += 20
-
-    if (!best || score > best.score) best = { plugin, manufacturer: mfg, score }
-  }
-
-  if (best && best.score >= 50) return best
-  return null
+  const idx = index || buildCatalogIndex(catalog)
+  return matchCatalogPluginIndexed(name, manufacturer, productLine, idx)
 }
 
 function findManufacturer(
   manufacturer: string,
-  catalog: PluginCatalog
+  catalog: PluginCatalog,
+  index?: CatalogIndex
 ): CatalogManufacturer | undefined {
-  const mfgLower = canonicalizeManufacturer(manufacturer).toLowerCase()
-  return catalog.manufacturers.find((m) => {
-    const aliases = [m.name, m.id, ...(m.aliases || [])].map((x) => x.toLowerCase())
-    return aliases.some((a) => mfgLower === a || mfgLower.includes(a) || a.includes(mfgLower))
-  })
+  const idx = index || buildCatalogIndex(catalog)
+  return findManufacturerIndexed(manufacturer, idx)
 }
 
 function resolveIdentityKind(plugin: CatalogPlugin | null | undefined): IdentityKind {
@@ -499,18 +440,24 @@ export function buildManufacturerGroups(rows: PluginReportRow[]): ManufacturerRe
 /**
  * Build grouped report rows from installed plugins + catalog.
  * Never invents latestVersion — absent stays null (UI shows "unknown").
+ * Uses a pre-built catalog index (O(candidates) per group, not O(catalog)).
  */
 export async function buildReportRows(
   plugins: InstalledPlugin[],
   catalog: PluginCatalog,
   system: SystemInfo,
-  daws: DawInfo[] = []
+  daws: DawInfo[] = [],
+  onProgress?: (done: number, total: number) => void
 ): Promise<PluginReportRow[]> {
   const overrides = await loadOverrides()
   const floorUpdates: Record<string, string> = {}
   const groups = groupInstalledPlugins(plugins)
+  const index = buildCatalogIndex(catalog)
+  const rows: PluginReportRow[] = []
+  const chunk = 48
 
-  const rows: PluginReportRow[] = groups.map((group) => {
+  for (let i = 0; i < groups.length; i++) {
+    const group = groups[i]
     const topGen = group.newestGeneration ?? 0
     const formats = [...new Set(group.members.flatMap((m) => m.formats))]
     const paths = [...new Set(group.members.flatMap((m) => m.paths))]
@@ -533,8 +480,14 @@ export async function buildReportRows(
       }
     })
 
-    const match = matchCatalogPlugin(group.name, group.manufacturer, group.productLine, catalog)
-    const mfgFallback = findManufacturer(group.manufacturer, catalog)
+    const match = matchCatalogPlugin(
+      group.name,
+      group.manufacturer,
+      group.productLine,
+      catalog,
+      index
+    )
+    const mfgFallback = findManufacturer(group.manufacturer, catalog, index)
     const isAppleBundled = canonicalizeManufacturer(group.manufacturer) === 'Apple'
 
     if (!match) {
@@ -547,10 +500,11 @@ export async function buildReportRows(
         catalogMatched: false,
         hasInstalledVersion: !!group.newestVersion,
       })
-      return {
+      rows.push({
         id: group.key,
         name: group.name,
         manufacturer: canonicalizeManufacturer(group.manufacturer),
+        manufacturerId: mfgFallback?.id ?? null,
         productLine: group.productLine,
         installedVersion: group.newestVersion,
         installedVersions,
@@ -570,79 +524,84 @@ export async function buildReportRows(
         paths,
         catalogMatched: false,
         installCount: group.members.length,
+      })
+    } else {
+      const { plugin, manufacturer, score: matchScore } = match
+      const scheme = manufacturer.versionScheme
+      const compatibilityFlags = evaluateCompatibility(
+        plugin,
+        daws,
+        group.newestVersion,
+        scheme
+      )
+      const catalogLatest = plugin.latestVersion ?? null
+      const effectiveLatest = catalogLatest
+
+      const status = plugin.bundled
+        ? ('bundled' as UpdateStatus)
+        : decideStatus({
+            plugin,
+            manufacturer,
+            installedVersion: group.newestVersion,
+          })
+
+      const overrideKey = `${manufacturer.id}::${group.productLine.toLowerCase()}`
+      const floorFromOverride =
+        overrides.versionFloors[overrideKey] || overrides.versionFloors[plugin.id]
+      const relation = compareVersions(group.newestVersion, effectiveLatest, scheme)
+      if (relation === 'newer' && group.newestVersion) {
+        const prev = floorFromOverride
+        if (!prev || compareVersions(group.newestVersion, prev, scheme) === 'newer') {
+          floorUpdates[overrideKey] = group.newestVersion
+        }
       }
+
+      const conf = computeVersionConfidence({
+        status,
+        plugin,
+        catalog,
+        matchScore,
+        catalogMatched: true,
+        hasInstalledVersion: !!group.newestVersion,
+      })
+
+      const extra = enrichFromCatalog(plugin, manufacturer, catalog)
+
+      rows.push({
+        id: group.key,
+        name: group.name,
+        manufacturer: manufacturer.name,
+        manufacturerId: manufacturer.id,
+        productLine: group.productLine,
+        installedVersion: group.newestVersion,
+        installedVersions,
+        versionDetails,
+        latestVersion: effectiveLatest,
+        releaseDate: plugin.releaseDate ?? null,
+        status,
+        ...conf,
+        ...extra,
+        confidenceReasons:
+          conf.confidenceReasons.length > 0
+            ? conf.confidenceReasons
+            : extra.confidenceReasons,
+        formats,
+        updateUrl: plugin.updatePortalUrl || manufacturer.updatePortalUrl,
+        dawCompatibility: plugin.dawCompatibility ?? null,
+        minMacOS: plugin.minMacOS ?? null,
+        osCompatible: isOsAtLeast(system.osVersion, plugin.minMacOS),
+        compatibilityFlags,
+        paths,
+        catalogMatched: true,
+        installCount: group.members.length,
+      })
     }
 
-    const { plugin, manufacturer, score: matchScore } = match
-    const scheme = manufacturer.versionScheme
-    const compatibilityFlags = evaluateCompatibility(
-      plugin,
-      daws,
-      group.newestVersion,
-      scheme
-    )
-    const catalogLatest = plugin.latestVersion ?? null
-    // Display only catalog's public latest — never invent or inflate from installs.
-    const effectiveLatest = catalogLatest
-
-    const status = plugin.bundled
-      ? ('bundled' as UpdateStatus)
-      : decideStatus({
-          plugin,
-          manufacturer,
-          installedVersion: group.newestVersion,
-        })
-
-    const overrideKey = `${manufacturer.id}::${group.productLine.toLowerCase()}`
-    const floorFromOverride =
-      overrides.versionFloors[overrideKey] || overrides.versionFloors[plugin.id]
-    const relation = compareVersions(group.newestVersion, effectiveLatest, scheme)
-    if (relation === 'newer' && group.newestVersion) {
-      const prev = floorFromOverride
-      if (!prev || compareVersions(group.newestVersion, prev, scheme) === 'newer') {
-        floorUpdates[overrideKey] = group.newestVersion
-      }
+    if ((i + 1) % chunk === 0 || i === groups.length - 1) {
+      onProgress?.(i + 1, groups.length)
+      await new Promise<void>((r) => setImmediate(r))
     }
-
-    const conf = computeVersionConfidence({
-      status,
-      plugin,
-      catalog,
-      matchScore,
-      catalogMatched: true,
-      hasInstalledVersion: !!group.newestVersion,
-    })
-
-    const extra = enrichFromCatalog(plugin, manufacturer, catalog)
-
-    return {
-      id: group.key,
-      name: group.name,
-      manufacturer: manufacturer.name,
-      productLine: group.productLine,
-      installedVersion: group.newestVersion,
-      installedVersions,
-      versionDetails,
-      latestVersion: effectiveLatest,
-      releaseDate: plugin.releaseDate ?? null,
-      status,
-      ...conf,
-      ...extra,
-      confidenceReasons:
-        conf.confidenceReasons.length > 0
-          ? conf.confidenceReasons
-          : extra.confidenceReasons,
-      formats,
-      updateUrl: plugin.updatePortalUrl || manufacturer.updatePortalUrl,
-      dawCompatibility: plugin.dawCompatibility ?? null,
-      minMacOS: plugin.minMacOS ?? null,
-      osCompatible: isOsAtLeast(system.osVersion, plugin.minMacOS),
-      compatibilityFlags,
-      paths,
-      catalogMatched: true,
-      installCount: group.members.length,
-    }
-  })
+  }
 
   if (Object.keys(floorUpdates).length) {
     await saveOverrides({

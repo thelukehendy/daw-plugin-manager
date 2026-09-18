@@ -316,4 +316,9 @@ export interface ScanProgress {
   phase: 'daws' | 'plugins' | 'catalog' | 'compare' | 'done' | 'error'
   message: string
   percent: number
+  /** Progressive payloads so the UI can paint before the full report returns. */
+  partial?: {
+    daws?: DawInfo[]
+    manufacturers?: ManufacturerReportGroup[]
+  }
 }

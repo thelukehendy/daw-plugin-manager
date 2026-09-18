@@ -1,11 +1,11 @@
 import { contextBridge, ipcRenderer } from 'electron'
-import type { CatalogBrowseReport, ScanProgress, ScanReport } from '../shared/types'
+import type { ScanProgress, ScanReport } from '../shared/types'
 
 contextBridge.exposeInMainWorld('dawPluginManager', {
   runScan: (options?: { extraPluginRoots?: string[] }): Promise<ScanReport> =>
     ipcRenderer.invoke('scan:run', options),
 
-  browseCatalog: (): Promise<CatalogBrowseReport> => ipcRenderer.invoke('catalog:browse'),
+  loadLastLibrary: (): Promise<ScanReport | null> => ipcRenderer.invoke('library:loadLast'),
 
   onScanProgress: (callback: (progress: ScanProgress) => void): (() => void) => {
     const listener = (_event: Electron.IpcRendererEvent, progress: ScanProgress) => {

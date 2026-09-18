@@ -1,8 +1,8 @@
-import type { CatalogBrowseReport, ScanProgress, ScanReport } from './types'
+import type { ScanProgress, ScanReport } from './types'
 
 export interface DawPluginManagerApi {
   runScan: (options?: { extraPluginRoots?: string[] }) => Promise<ScanReport>
-  browseCatalog: () => Promise<CatalogBrowseReport>
+  loadLastLibrary: () => Promise<ScanReport | null>
   onScanProgress: (callback: (progress: ScanProgress) => void) => () => void
   openExternal: (url: string) => Promise<{ ok: boolean; error?: string }>
   getAppInfo: () => Promise<{
