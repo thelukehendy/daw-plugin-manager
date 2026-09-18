@@ -536,9 +536,19 @@ button, input, select, textarea { font: inherit; color: inherit; }
   padding-bottom: 24px;
 }
 
-/* —— Triage sections —— */
+/* —— Triage sections as folders; vendors/plugins step in —— */
+.triage-list {
+  --indent-folder: 10px;
+  --indent-vendor: 26px;
+  --indent-plugin: 48px;
+}
+
 .triage-section {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 0;
+  margin: 0;
+}
+.triage-section + .triage-section {
+  margin-top: 2px;
 }
 .triage-section-head {
   position: sticky;
@@ -549,31 +559,39 @@ button, input, select, textarea { font: inherit; color: inherit; }
   gap: 8px;
   width: 100%;
   margin: 0;
-  padding: 8px 12px;
+  padding: 9px 12px 9px var(--indent-folder);
   border: 0;
-  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  border-bottom: 2px solid var(--line);
+  border-left: 3px solid var(--muted);
   background: var(--section-bg);
   color: var(--ink);
   text-align: left;
   cursor: pointer;
   font: inherit;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
 }
 .triage-section.triage-needs_update > .triage-section-head {
   background: var(--section-needs);
-  border-bottom-color: rgba(240, 113, 120, 0.28);
+  border-left-color: var(--bad);
+  border-bottom-color: rgba(240, 113, 120, 0.35);
 }
 .triage-section.triage-use_hub > .triage-section-head {
   background: var(--section-hub);
-  border-bottom-color: rgba(109, 176, 232, 0.28);
+  border-left-color: var(--hub);
+  border-bottom-color: rgba(109, 176, 232, 0.35);
 }
 .triage-section.triage-paid > .triage-section-head {
   background: var(--section-paid);
+  border-left-color: var(--paid);
 }
 .triage-section.triage-uncertain > .triage-section-head {
   background: var(--section-uncertain);
+  border-left-color: var(--yellow);
 }
 .triage-section.triage-clear > .triage-section-head {
   background: var(--section-clear);
+  border-left-color: var(--ok);
   color: var(--ink-soft);
 }
 .triage-section.triage-clear.is-closed > .triage-section-head {
@@ -594,7 +612,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 .triage-title {
   font-size: 13px;
-  font-weight: 750;
+  font-weight: 800;
   letter-spacing: -0.01em;
 }
 .triage-section.triage-needs_update .triage-title { color: var(--bad); }
@@ -619,11 +637,18 @@ button, input, select, textarea { font: inherit; color: inherit; }
   white-space: normal;
 }
 
-.triage-vendors { display: flex; flex-direction: column; }
+.triage-vendors {
+  display: flex;
+  flex-direction: column;
+  /* Children sit one step under the folder primary */
+  padding-left: calc(var(--indent-vendor) - var(--indent-folder));
+  border-left: 1px solid var(--line);
+  margin-left: var(--indent-folder);
+}
 
-/* Vendor row: name + one signal + conf + CTA — full width layout */
+/* Vendor row: indented under the section folder */
 .vendor-block {
-  border-bottom: 1px solid rgba(13, 23, 28, 0.08);
+  border-bottom: 1px solid var(--line);
   content-visibility: auto;
   contain-intrinsic-size: auto 40px;
 }
@@ -633,7 +658,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
   align-items: center;
-  padding: 0 12px 0 8px;
+  padding: 0 12px 0 10px;
   min-height: 36px;
   background: var(--vendor-bg);
 }
@@ -710,6 +735,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
   border-top: 1px solid var(--line);
   background: var(--plugins-bg);
   padding: 0 0 4px;
+  /* Further indent under the vendor row */
+  margin-left: calc(var(--indent-plugin) - var(--indent-vendor));
+  border-left: 1px solid var(--line);
 }
 
 .exp {
@@ -736,7 +764,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
     minmax(4.5rem, 0.65fr);
   column-gap: 10px;
   align-items: center;
-  padding: 0 12px 0 28px;
+  padding: 0 12px 0 14px;
   width: 100%;
   box-sizing: border-box;
 }
