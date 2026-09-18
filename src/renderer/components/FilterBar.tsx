@@ -53,11 +53,13 @@ export function FilterBar({
         onChange={(e) => onQuery(e.target.value)}
         placeholder="Search vendors or plugins…"
         aria-label="Search"
+        title="Filter the list by vendor or plugin name."
       />
       <select
         value={manufacturer}
         onChange={(e) => onManufacturer(e.target.value)}
         aria-label="Manufacturer"
+        title="Show plugins from one vendor only."
       >
         <option value="">All vendors</option>
         {manufacturers.map((m) => (
@@ -70,6 +72,7 @@ export function FilterBar({
         value={confidence}
         onChange={(e) => onConfidence(e.target.value as ConfidenceFilter)}
         aria-label="Confidence band"
+        title="Filter by how sure we are about the catalog latest: Verified (≥85), Likely (70–84), or Unknown (<70)."
       >
         <option value="all">All confidence</option>
         <option value="high">Verified (≥85)</option>
@@ -80,6 +83,7 @@ export function FilterBar({
         value={identity}
         onChange={(e) => onIdentity(e.target.value)}
         aria-label="Identity kind"
+        title="Filter by kind — plugins vs hubs, soundsets, expansions, and other non-version items."
       >
         <option value="all">All kinds</option>
         {IDENTITY_OPTIONS.map((k) => (
@@ -88,7 +92,10 @@ export function FilterBar({
           </option>
         ))}
       </select>
-      <span className="filter-count mono" title="Visible / total">
+      <span
+        className="filter-count mono"
+        title="Plugins visible with current filters / total in this view."
+      >
         {visibleCount}/{totalCount}
       </span>
     </div>

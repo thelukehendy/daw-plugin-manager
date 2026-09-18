@@ -10,7 +10,7 @@ import { FilterBar, type ConfidenceFilter, type IdentityFilter } from './compone
 import { PluginList } from './components/PluginList'
 import { DetailPanel } from './components/DetailPanel'
 import { DawStrip } from './components/DawStrip'
-import { type TriageFilter, partitionByTriage } from './lib/triage'
+import { type TriageFilter, TRIAGE_CHIP_TITLE, partitionByTriage } from './lib/triage'
 import { scrubVisibleText } from './lib/labels'
 
 type Mode = 'welcome' | 'library'
@@ -317,7 +317,16 @@ export default function App() {
             catalogMeta.source !== 'pending' &&
             catalogMeta.updatedAt &&
             Number.isFinite(Date.parse(catalogMeta.updatedAt)) && (
-              <span className="catalog-meta mono">
+              <span
+                className="catalog-meta mono"
+                title={
+                  catalogMeta.source === 'online'
+                    ? 'When the version catalog you fetched was last published. Online = pulled fresh for this session.'
+                    : catalogMeta.source === 'shipped'
+                      ? 'When the version catalog bundled with this app was last published. Use Refresh catalog to pull newer.'
+                      : 'When the version catalog was last published.'
+                }
+              >
                 Catalog as of{' '}
                 {new Date(catalogMeta.updatedAt).toLocaleDateString(undefined, {
                   year: 'numeric',
@@ -332,7 +341,10 @@ export default function App() {
               </span>
             )}
           {fromSnapshot && !scanning && (
-            <span className="snapshot-pill" title="Loaded from last scan on disk">
+            <span
+              className="snapshot-pill"
+              title="Showing the last library scan saved on this Mac. Rescan to refresh installs."
+            >
               Last scan
             </span>
           )}
@@ -340,7 +352,11 @@ export default function App() {
             type="button"
             className="btn"
             onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
-            title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            title={
+              theme === 'dark'
+                ? 'Switch to light appearance'
+                : 'Switch to dark appearance (default)'
+            }
           >
             {theme === 'dark' ? 'Light' : 'Dark'}
           </button>
@@ -349,7 +365,7 @@ export default function App() {
             className="btn"
             onClick={handleRefreshCatalog}
             disabled={refreshingCatalog || scanning}
-            title="Fetch the latest version catalog"
+            title="Download the newest published version catalog. Does not rescan plugins on disk."
           >
             {refreshingCatalog ? 'Refreshing…' : 'Refresh catalog'}
           </button>
@@ -358,6 +374,7 @@ export default function App() {
             className="btn"
             onClick={() => setShowSettings((s) => !s)}
             aria-expanded={showSettings}
+            title="Add extra folders to scan beyond the usual AU / VST3 / VST locations."
           >
             Paths
           </button>
@@ -366,6 +383,11 @@ export default function App() {
             className="btn btn-primary"
             onClick={handleScan}
             disabled={scanning}
+            title={
+              report
+                ? 'Walk plugin folders again and rematch to the catalog.'
+                : 'Scan AU / VST3 / VST folders and match them to the version catalog.'
+            }
           >
             {scanning ? `${progress?.percent ?? 0}%` : report ? 'Rescan' : 'Scan'}
           </button>
@@ -412,6 +434,7 @@ export default function App() {
                 type="button"
                 className={`triage-chip ${triageFilter === 'all' ? 'active' : ''}`}
                 onClick={() => setTriageFilter('all')}
+                title={TRIAGE_CHIP_TITLE.all}
               >
                 All
               </button>
@@ -419,6 +442,7 @@ export default function App() {
                 type="button"
                 className={`triage-chip tone-bad ${triageFilter === 'needs_update' ? 'active' : ''}`}
                 onClick={() => setTriageFilter((t) => toggleTriage(t, 'needs_update'))}
+                title={TRIAGE_CHIP_TITLE.needs_update}
               >
                 <b>{triageCounts.needs_update}</b> need update
               </button>
@@ -426,6 +450,7 @@ export default function App() {
                 type="button"
                 className={`triage-chip tone-hub ${triageFilter === 'use_hub' ? 'active' : ''}`}
                 onClick={() => setTriageFilter((t) => toggleTriage(t, 'use_hub'))}
+                title={TRIAGE_CHIP_TITLE.use_hub}
               >
                 <b>{triageCounts.use_hub}</b> hub
               </button>
@@ -433,6 +458,7 @@ export default function App() {
                 type="button"
                 className={`triage-chip tone-paid ${triageFilter === 'paid' ? 'active' : ''}`}
                 onClick={() => setTriageFilter((t) => toggleTriage(t, 'paid'))}
+                title={TRIAGE_CHIP_TITLE.paid}
               >
                 <b>{triageCounts.paid}</b> paid
               </button>
@@ -440,6 +466,7 @@ export default function App() {
                 type="button"
                 className={`triage-chip tone-uncertain ${triageFilter === 'uncertain' ? 'active' : ''}`}
                 onClick={() => setTriageFilter((t) => toggleTriage(t, 'uncertain'))}
+                title={TRIAGE_CHIP_TITLE.uncertain}
               >
                 <b>{triageCounts.uncertain}</b> unknown
               </button>
@@ -447,6 +474,7 @@ export default function App() {
                 type="button"
                 className={`triage-chip tone-ok ${triageFilter === 'clear' ? 'active' : ''}`}
                 onClick={() => setTriageFilter((t) => toggleTriage(t, 'clear'))}
+                title={TRIAGE_CHIP_TITLE.clear}
               >
                 <b>{triageCounts.clear}</b> clear
               </button>

@@ -1,12 +1,17 @@
 /**
  * Keep catalog provenance (URLs, paths, store names) in the main process.
  * Renderer-facing strings must not leak GitHub/raw/jsDelivr/Muse/catalog-store origins.
+ * Manufacturer verify pages may pass through as versionSourceUrl.
  */
 
 import type { PluginReportRow, ScanReport } from '../../shared/types'
 
 const ORIGIN_LEAK =
   /https?:\/\/\S+|raw\.githubusercontent|jsdelivr\.net|github\.com\/[^\s)]+|catalog-store|muse\s*db|\/Users\/\S+|file:\/\/\S+|synced from\s+\S+|remote:\S+|bundled:\S+/gi
+
+/** Hosts never shown as “verify this version” links. */
+const BLOCKED_VERIFY_HOST =
+  /(?:^|\.)(?:githubusercontent\.com|jsdelivr\.net|github\.com|open-audio-stack\.github\.io|kvraudio\.com)$/i
 
 /** Opaque origin for ScanReport.catalog.source — Online / Shipped / catalog. Never URLs. */
 export function publicCatalogOrigin(raw: string | null | undefined): string {
@@ -52,10 +57,28 @@ export function scrubReasonText(text: string): string {
     .trim()
 }
 
+/**
+ * Allow a manufacturer (or similar) page the user can open to double-check.
+ * Drop catalog CDN / GitHub / OAS registry URLs.
+ */
+export function scrubVersionSourceUrl(url: string | null | undefined): string | null {
+  if (!url) return null
+  const trimmed = url.trim()
+  if (!/^https?:\/\//i.test(trimmed)) return null
+  try {
+    const u = new URL(trimmed)
+    if (BLOCKED_VERIFY_HOST.test(u.hostname)) return null
+    if (/catalog-store|muse/i.test(trimmed)) return null
+    return trimmed
+  } catch {
+    return null
+  }
+}
+
 function scrubRow(row: PluginReportRow): PluginReportRow {
   return {
     ...row,
-    versionSourceUrl: null,
+    versionSourceUrl: scrubVersionSourceUrl(row.versionSourceUrl),
     confidenceReason: scrubReasonText(row.confidenceReason || ''),
     confidenceReasons: (row.confidenceReasons || []).map(scrubReasonText).filter(Boolean),
     compatibilityFlags: (row.compatibilityFlags || []).map((f) => ({

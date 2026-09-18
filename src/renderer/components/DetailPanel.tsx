@@ -4,8 +4,11 @@ import {
   STATUS_HINT,
   displayVersion,
   formatCheckedAt,
+  humanizeConfidenceReason,
   identityLabel,
+  portalHover,
   statusLabel,
+  vendorVerifyUrl,
 } from '../lib/labels'
 
 export function DetailPanel({
@@ -24,6 +27,11 @@ export function DetailPanel({
       : row.confidenceReason
         ? [row.confidenceReason]
         : []
+  const whyLines = reasons
+    .map(humanizeConfidenceReason)
+    .filter(Boolean)
+    .filter((s, i, arr) => arr.indexOf(s) === i)
+  const verifyUrl = vendorVerifyUrl(row.versionSourceUrl)
 
   return (
     <aside className="detail-drawer" role="dialog" aria-label="Plugin details">
@@ -92,14 +100,27 @@ export function DetailPanel({
         )}
       </dl>
 
-      {reasons.length > 0 && (
+      {(whyLines.length > 0 || verifyUrl) && (
         <section className="detail-section">
           <h3>Why this confidence</h3>
-          <ul className="reason-list">
-            {reasons.map((r, i) => (
-              <li key={i}>{r}</li>
-            ))}
-          </ul>
+          {whyLines.length > 0 && (
+            <ul className="reason-list">
+              {whyLines.map((r, i) => (
+                <li key={i}>{r}</li>
+              ))}
+            </ul>
+          )}
+          {verifyUrl && (
+            <p className="detail-verify">
+              <button
+                type="button"
+                className="link-btn accent"
+                onClick={() => onOpenUrl(verifyUrl)}
+              >
+                Check on manufacturer site
+              </button>
+            </p>
+          )}
         </section>
       )}
 
@@ -166,6 +187,10 @@ export function DetailPanel({
           className="btn btn-primary"
           disabled={!row.updateUrl}
           onClick={() => onOpenUrl(row.updateUrl)}
+          title={portalHover({
+            portalApp: row.portalApp,
+            kind: row.portalApp ? 'hub' : 'portal',
+          })}
         >
           {row.portalApp ? `Open ${row.portalApp} portal` : 'Open update portal'}
         </button>

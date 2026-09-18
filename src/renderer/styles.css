@@ -1075,6 +1075,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   line-height: 1.4;
   font-size: 12px;
 }
+.detail-verify { margin-top: 8px; }
 .paid-callout { background: rgba(138, 75, 47, 0.06); margin-left: -6px; margin-right: -6px; padding: 8px 6px; border-radius: 6px; border-top: 0; }
 .hub-callout { background: rgba(47, 95, 138, 0.06); margin-left: -6px; margin-right: -6px; padding: 8px 6px; border-radius: 6px; border-top: 0; }
 .bundle-list {

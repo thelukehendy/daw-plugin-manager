@@ -1,10 +1,16 @@
 import { useState } from 'react'
 import type { ManufacturerReportGroup, PluginReportRow } from '../../shared/types'
 import { ConfidenceBadge, confidencePropsFromRow } from './ConfidenceBadge'
-import { displayVersion, statusLabel } from '../lib/labels'
+import {
+  displayVersion,
+  formatsHover,
+  portalHover,
+  statusHover,
+  statusLabel,
+  versionsColumnHover,
+} from '../lib/labels'
 import {
   TRIAGE_EXPLAINER,
-  TRIAGE_HINT,
   TRIAGE_LABEL,
   TRIAGE_ORDER,
   type TriageBucket,
@@ -47,10 +53,10 @@ function ProductRow({
       <span className="col-name product-name" title={row.name}>
         {row.name}
       </span>
-      <span className="col-fmt mono" title={row.formats.join(' · ') || undefined}>
+      <span className="col-fmt mono" title={formatsHover(row.formats)}>
         {row.formats.length ? row.formats.slice(0, 4).join(' ') : '—'}
       </span>
-      <span className="col-ver mono" title="Installed → catalog latest">
+      <span className="col-ver mono" title={versionsColumnHover()}>
         <span className="ver-installed">{displayVersion(row.installedVersion)}</span>
         <span className="ver-arrow" aria-hidden>
           →
@@ -63,7 +69,10 @@ function ProductRow({
       <span className="col-state">
         <span
           className={`state-pill state-${row.status}`}
-          title={statusLabel(row.status, row.catalogOnly)}
+          title={statusHover(row.status, {
+            catalogOnly: row.catalogOnly,
+            portalApp: row.portalApp,
+          })}
         >
           {statusLabel(row.status, row.catalogOnly, true)}
         </span>
@@ -75,12 +84,17 @@ function ProductRow({
             className="link-btn accent"
             disabled={!row.updateUrl}
             onClick={() => onOpenUrl(row.updateUrl)}
-            title={row.portalApp ? `Open ${row.portalApp}` : 'Open update portal'}
+            title={portalHover({
+              portalApp: row.portalApp,
+              kind: row.portalApp ? 'hub' : 'portal',
+            })}
           >
             {portalLabel}
           </button>
         ) : (
-          <span className="action-none">—</span>
+          <span className="action-none" title="No portal link on file for this plugin.">
+            —
+          </span>
         )}
       </span>
     </div>
@@ -129,6 +143,7 @@ function VendorRow({
             <ConfidenceBadge
               confidence={signal.minConfidence}
               band={signal.minBand}
+              vendorAggregate
               compact
             />
           </span>
@@ -140,12 +155,17 @@ function VendorRow({
               className="btn btn-hub"
               disabled={!group.updateUrl}
               onClick={() => onOpenUrl(group.updateUrl)}
-              title={ctaLabel}
+              title={portalHover({
+                portalApp: group.portalApp,
+                kind: group.portalApp ? 'hub' : 'portal',
+              })}
             >
               {group.portalApp ? `Open hub` : 'Open portal'}
             </button>
           ) : (
-            <span className="vendor-cta-none">—</span>
+            <span className="vendor-cta-none" title="No hub or portal link on file for this vendor.">
+              —
+            </span>
           )}
         </div>
       </div>
@@ -153,11 +173,30 @@ function VendorRow({
         <div className="vendor-plugins">
           <div className="plugin-cols-head" aria-hidden>
             <span className="col-name">Plugin</span>
-            <span className="col-fmt">Formats</span>
-            <span className="col-ver">Installed → latest</span>
-            <span className="col-conf">Confidence</span>
-            <span className="col-state">State</span>
-            <span className="col-action">Portal</span>
+            <span className="col-fmt" title={formatsHover(['AU', 'VST3', 'VST'])}>
+              Formats
+            </span>
+            <span className="col-ver" title={versionsColumnHover()}>
+              Installed → latest
+            </span>
+            <span
+              className="col-conf"
+              title="How sure we are about the catalog latest. Hover Verified / Likely / Unknown on a row for why."
+            >
+              Confidence
+            </span>
+            <span
+              className="col-state"
+              title="What to do with this install: update, use hub, paid upgrade, OK, or unknown."
+            >
+              State
+            </span>
+            <span
+              className="col-action"
+              title="Opens the manufacturer portal in your browser — never downloads for you."
+            >
+              Portal
+            </span>
           </div>
           {signal.focusProducts.map((row) => (
             <ProductRow
@@ -216,11 +255,7 @@ function TriageSection({
               {groups.length} vendor{groups.length === 1 ? '' : 's'} · {pluginCount}
             </span>
           </span>
-          {TRIAGE_EXPLAINER[bucket] ? (
-            <span className="triage-explainer">{TRIAGE_EXPLAINER[bucket]}</span>
-          ) : (
-            <span className="triage-hint">{TRIAGE_HINT[bucket]}</span>
-          )}
+          <span className="triage-explainer">{TRIAGE_EXPLAINER[bucket]}</span>
         </span>
       </button>
       {sectionOpen && (

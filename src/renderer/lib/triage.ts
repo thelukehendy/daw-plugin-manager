@@ -25,19 +25,34 @@ export const TRIAGE_LABEL: Record<TriageBucket, string> = {
 }
 
 export const TRIAGE_HINT: Record<TriageBucket, string> = {
-  needs_update: 'Installed is behind a trusted newer version.',
+  needs_update: 'Installed is behind a trusted newer version — open the portal when ready.',
   use_hub: 'Updates go through the vendor’s manager app, not a per-plugin installer.',
-  paid: 'Next-generation product — not a free in-place update.',
+  paid: 'Next-generation product for sale — not a free in-place update.',
   uncertain:
     'No trustworthy latest (or only a weak source) — not the same as “update available.”',
   clear: 'Up to date, bundled, content, or otherwise fine to ignore for now.',
 }
 
-/** Short clause under the section title (hub + unknown get explicit explainers). */
-export const TRIAGE_EXPLAINER: Partial<Record<TriageBucket, string>> = {
+/** One-line under every section title (visible, not hover-only). */
+export const TRIAGE_EXPLAINER: Record<TriageBucket, string> = {
+  needs_update: 'Installed is behind a trusted newer version — open the portal when ready.',
   use_hub: 'Updates go through the vendor’s manager app, not a per-plugin installer.',
+  paid: 'Next-generation product for sale — not a free in-place update.',
   uncertain:
     'No trustworthy latest (or only a weak source) — not the same as “update available.”',
+  clear: 'Up to date, bundled, content, or otherwise fine to ignore for now.',
+}
+
+/** Chip hover — what filtering to this bucket means. */
+export const TRIAGE_CHIP_TITLE: Record<'all' | TriageBucket, string> = {
+  all: 'Show every vendor section: needs update, hub, paid, unknown, and all clear.',
+  needs_update:
+    'Only plugins where you’re behind a trusted newer version (Update Available / Update likely).',
+  use_hub: 'Only plugins that update through a vendor hub app (Native Access, Waves Central, …).',
+  paid: 'Only plugins with a paid next generation — not free updates.',
+  uncertain:
+    'Only rows with no trustworthy latest or a weak source. Yellow here is not “update available.”',
+  clear: 'Only plugins that look fine: up to date, bundled, content, or otherwise ignore-for-now.',
 }
 
 const UPDATE_STATUSES: UpdateStatus[] = ['update_available', 'update_likely']
