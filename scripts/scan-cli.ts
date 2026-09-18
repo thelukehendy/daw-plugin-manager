@@ -23,9 +23,12 @@ async function main() {
   console.log(`Products: ${report.summary.pluginCount}`)
   console.log(`Bundles: ${report.summary.pluginBundleCount}`)
   console.log(`  current: ${report.summary.current}`)
-  console.log(`  outdated: ${report.summary.outdated}`)
+  console.log(`  update available: ${report.summary.updateAvailable ?? 0}`)
+  console.log(`  attention (incl. likely/unverified): ${report.summary.outdated}`)
   console.log(`  unknown: ${report.summary.unknown}`)
   console.log(`  bundled: ${report.summary.bundled}`)
+  console.log(`  paid upgrade signals: ${report.summary.paidUpgrade ?? 0}`)
+  console.log(`  vendor hub: ${report.summary.useVendorHub ?? 0}`)
   console.log(`  products with legacy installs: ${report.summary.legacy}`)
   console.log(`  compat warnings: ${report.summary.compatWarnings}`)
   console.log(`\nCatalog: ${report.catalog.source}`)
@@ -39,19 +42,28 @@ async function main() {
     console.log('\nKontakt line:')
     for (const row of kontakt) {
       console.log(
-        `  ${row.name}: newest=${row.installedVersion} latest=${row.latestVersion} status=${row.status} bundles=${row.installCount}`
+        `  ${row.name}: newest=${row.installedVersion ?? 'unknown'} latest=${row.latestVersion ?? 'unknown'} status=${row.status} conf=${row.confidence}% bundles=${row.installCount}`
       )
       for (const v of row.versionDetails) {
-        console.log(`    ${v.legacy ? 'legacy' : 'active'} ${v.name} ${v.version}`)
+        console.log(`    ${v.legacy ? 'legacy' : 'active'} ${v.name} ${v.version ?? 'unknown'}`)
       }
     }
   }
 
-  const outdated = report.rows.filter((r) => r.status === 'outdated').slice(0, 12)
+  const outdated = report.rows
+    .filter(
+      (r) =>
+        r.status === 'update_available' ||
+        r.status === 'update_likely' ||
+        r.status === 'unverified'
+    )
+    .slice(0, 12)
   if (outdated.length) {
-    console.log('\nSample outdated:')
+    console.log('\nSample needing attention:')
     for (const row of outdated) {
-      console.log(`  ${row.manufacturer} / ${row.name}: ${row.installedVersion} → ${row.latestVersion}`)
+      console.log(
+        `  ${row.manufacturer} / ${row.name}: ${row.installedVersion ?? 'unknown'} → ${row.latestVersion ?? 'unknown'} [${row.status} ${row.confidence}%]`
+      )
       if (row.updateUrl) console.log(`    portal: ${row.updateUrl}`)
     }
   }

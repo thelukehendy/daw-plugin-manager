@@ -1,18 +1,19 @@
 import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import { join } from 'path'
 import { runFullScan } from './scanService'
+import { buildCatalogBrowseReport } from './catalog/catalogService'
 import type { ScanProgress } from '../shared/types'
 
 let mainWindow: BrowserWindow | null = null
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
-    width: 1180,
-    height: 860,
+    width: 1280,
+    height: 880,
     minWidth: 900,
     minHeight: 640,
     title: 'DAW Plugin Manager',
-    backgroundColor: '#14181f',
+    backgroundColor: '#e8eef0',
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       contextIsolation: true,
@@ -67,6 +68,10 @@ ipcMain.handle('shell:openExternal', async (_event, url: string) => {
   } catch (err) {
     return { ok: false, error: String(err) }
   }
+})
+
+ipcMain.handle('catalog:browse', async () => {
+  return buildCatalogBrowseReport({ appPath: app.getAppPath() })
 })
 
 ipcMain.handle('app:getInfo', async () => ({

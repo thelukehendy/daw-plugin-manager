@@ -68,10 +68,22 @@ export async function runFullScan(
     pluginCount: rows.length,
     manufacturerCount: manufacturers.length,
     current: rows.filter((r) => r.status === 'current').length,
-    outdated: rows.filter((r) => r.status === 'outdated').length,
+    outdated: rows.filter(
+      (r) =>
+        r.status === 'update_available' ||
+        r.status === 'update_likely' ||
+        r.status === 'unverified'
+    ).length,
+    updateAvailable: rows.filter((r) => r.status === 'update_available').length,
     unknown: rows.filter((r) => r.status === 'unknown').length,
     bundled: rows.filter((r) => r.status === 'bundled').length,
     legacy: rows.filter((r) => r.versionDetails.some((v) => v.legacy)).length,
+    paidUpgrade: rows.filter(
+      (r) => r.status === 'paid_upgrade' || (!!r.successorPluginId && r.status === 'current')
+    ).length,
+    content: rows.filter((r) => r.status === 'content').length,
+    discontinued: rows.filter((r) => r.status === 'discontinued').length,
+    useVendorHub: rows.filter((r) => r.status === 'use_vendor_hub').length,
     compatWarnings: rows.filter((r) =>
       r.compatibilityFlags.some((f) => f.severity === 'warn' || f.severity === 'block')
     ).length,
