@@ -2,231 +2,15 @@ import { useState } from 'react'
 import type { ManufacturerReportGroup, PluginReportRow } from '../../shared/types'
 import { ConfidenceBadge } from './ConfidenceBadge'
 import { displayVersion, statusLabel } from '../lib/labels'
-
-type GroupStats = {
-  ok: number
-  upd: number
-  likely: number
-  unverified: number
-  hub: number
-  paid: number
-  unk: number
-  content: number
-  green: number
-  amber: number
-  yellow: number
-  minConf: number
-  minBand: 'high' | 'medium' | 'low'
-  attn: number
-}
-
-function computeGroupStats(products: PluginReportRow[]): GroupStats {
-  let ok = 0
-  let upd = 0
-  let likely = 0
-  let unverified = 0
-  let hub = 0
-  let paid = 0
-  let unk = 0
-  let content = 0
-  let green = 0
-  let amber = 0
-  let yellow = 0
-  let minConf = 100
-  let minBand: GroupStats['minBand'] = 'high'
-
-  for (const p of products) {
-    switch (p.status) {
-      case 'current':
-      case 'bundled':
-      case 'legacy':
-        ok++
-        break
-      case 'update_available':
-        upd++
-        break
-      case 'update_likely':
-        likely++
-        break
-      case 'unverified':
-        unverified++
-        break
-      case 'use_vendor_hub':
-        hub++
-        break
-      case 'paid_upgrade':
-        paid++
-        break
-      case 'unknown':
-        unk++
-        break
-      case 'content':
-      case 'discontinued':
-        content++
-        break
-      default:
-        break
-    }
-    if (p.confidenceBand === 'high') green++
-    else if (p.confidenceBand === 'medium') amber++
-    else yellow++
-    if (p.confidence < minConf) {
-      minConf = p.confidence
-      minBand = p.confidenceBand
-    }
-  }
-
-  if (!products.length) {
-    minConf = 0
-    minBand = 'low'
-  }
-
-  return {
-    ok,
-    upd,
-    likely,
-    unverified,
-    hub,
-    paid,
-    unk,
-    content,
-    green,
-    amber,
-    yellow,
-    minConf,
-    minBand,
-    attn: upd + likely + unverified,
-  }
-}
-
-function StatChip({
-  n,
-  label,
-  tone,
-}: {
-  n: number
-  label: string
-  tone?: 'ok' | 'bad' | 'warn' | 'yellow' | 'hub' | 'paid' | 'muted'
-}) {
-  if (n <= 0) return null
-  return (
-    <span className={`mfg-chip ${tone || 'muted'}`}>
-      <b>{n}</b> {label}
-    </span>
-  )
-}
-
-function ManufacturerHead({
-  group,
-  expanded,
-  onToggle,
-  onOpenUrl,
-}: {
-  group: ManufacturerReportGroup
-  expanded: boolean
-  onToggle: () => void
-  onOpenUrl: (url: string | null) => void
-}) {
-  const stats = computeGroupStats(group.products)
-  const primary =
-    stats.attn > 0
-      ? `${stats.attn} need update`
-      : stats.hub > 0
-        ? `${stats.hub} via hub`
-        : stats.paid > 0
-          ? `${stats.paid} paid upgrade`
-          : stats.unk > 0
-            ? `${stats.unk} unknown`
-            : 'all clear'
-
-  return (
-    <div className={`mfg-head ${expanded ? 'is-open' : 'is-closed'}`}>
-      <button
-        type="button"
-        className="mfg-toggle"
-        onClick={onToggle}
-        aria-expanded={expanded}
-        title={expanded ? 'Collapse' : 'Expand plugins'}
-      >
-        <span className="exp" aria-hidden>
-          {expanded ? '▾' : '▸'}
-        </span>
-        <strong className="mfg-name">{group.manufacturer}</strong>
-        <span className="mfg-count mono">{group.productCount}</span>
-      </button>
-
-      <div className="mfg-primary" title="Primary attention signal">
-        <span className={`mfg-primary-text ${stats.attn ? 'bad' : stats.hub || stats.paid ? 'hub' : 'ok'}`}>
-          {primary}
-        </span>
-      </div>
-
-      <div className="mfg-attn" title="Attention breakdown">
-        <StatChip n={stats.upd} label="upd" tone="bad" />
-        <StatChip n={stats.likely} label="likely" tone="warn" />
-        <StatChip n={stats.unverified} label="unv" tone="yellow" />
-        <StatChip n={stats.hub} label="hub" tone="hub" />
-        <StatChip n={stats.paid} label="paid" tone="paid" />
-        <StatChip n={stats.unk} label="unk" tone="muted" />
-        {!stats.attn && !stats.hub && !stats.paid && !stats.unk && (
-          <StatChip n={stats.ok || group.productCount} label="OK" tone="ok" />
-        )}
-      </div>
-
-      <div className="mfg-conf" title="Lowest confidence and band mix">
-        <span className="mfg-conf-min">
-          min{' '}
-          <ConfidenceBadge confidence={stats.minConf} band={stats.minBand} compact />
-        </span>
-        <span className="mfg-conf-mix mono">
-          {stats.green > 0 && <span className="ok">{stats.green}≥85</span>}
-          {stats.amber > 0 && (
-            <span className="warn">
-              {stats.green > 0 ? ' · ' : ''}
-              {stats.amber}70–84
-            </span>
-          )}
-          {stats.yellow > 0 && (
-            <span className="yellow">
-              {stats.green + stats.amber > 0 ? ' · ' : ''}
-              {stats.yellow}&lt;70
-            </span>
-          )}
-        </span>
-      </div>
-
-      <div className="mfg-hub">
-        {group.portalApp ? (
-          <button
-            type="button"
-            className="link-btn accent mfg-hub-btn"
-            disabled={!group.updateUrl}
-            onClick={(e) => {
-              e.stopPropagation()
-              onOpenUrl(group.updateUrl)
-            }}
-            title={group.updateUrl ? `Open ${group.portalApp}` : group.portalApp}
-          >
-            {group.portalApp}
-          </button>
-        ) : group.updateUrl ? (
-          <button
-            type="button"
-            className="link-btn accent mfg-hub-btn"
-            onClick={(e) => {
-              e.stopPropagation()
-              onOpenUrl(group.updateUrl)
-            }}
-          >
-            Portal
-          </button>
-        ) : (
-          <span className="mfg-hub-none">—</span>
-        )}
-      </div>
-    </div>
-  )
-}
+import {
+  TRIAGE_HINT,
+  TRIAGE_LABEL,
+  TRIAGE_ORDER,
+  type TriageBucket,
+  type TriageFilter,
+  buildVendorSignal,
+  partitionByTriage,
+} from '../lib/triage'
 
 function ProductRow({
   row,
@@ -267,16 +51,6 @@ function ProductRow({
       <span className="product-name" title={row.name}>
         {row.name}
       </span>
-      {row.successorPluginId && (
-        <span className="micro-tag paid" title="Paid next generation exists">
-          Paid
-        </span>
-      )}
-      {row.portalApp && row.status === 'use_vendor_hub' && (
-        <span className="micro-tag hub" title={row.portalApp}>
-          {row.portalApp}
-        </span>
-      )}
       {row.formats.length > 0 && (
         <span className="fmt-inline mono" title={row.formats.join(' · ')}>
           {row.formats.slice(0, 3).join(' ')}
@@ -298,11 +72,7 @@ function ProductRow({
       >
         {statusLabel(row.status, row.catalogOnly, true)}
       </span>
-      <span
-        className="cell-action"
-        onClick={(e) => e.stopPropagation()}
-        onKeyDown={(e) => e.stopPropagation()}
-      >
+      <span className="cell-action" onClick={(e) => e.stopPropagation()}>
         {portalLabel ? (
           <button
             type="button"
@@ -321,14 +91,157 @@ function ProductRow({
   )
 }
 
+function VendorRow({
+  group,
+  bucket,
+  expanded,
+  selectedId,
+  onToggle,
+  onSelect,
+  onOpenUrl,
+}: {
+  group: ManufacturerReportGroup
+  bucket: TriageBucket
+  expanded: boolean
+  selectedId: string | null
+  onToggle: () => void
+  onSelect: (row: PluginReportRow) => void
+  onOpenUrl: (url: string | null) => void
+}) {
+  const signal = buildVendorSignal(group, bucket)
+  const ctaLabel = group.portalApp
+    ? `Open ${group.portalApp}`
+    : group.updateUrl
+      ? 'Open portal'
+      : null
+
+  return (
+    <div className={`vendor-block triage-${bucket} ${expanded ? 'is-open' : ''}`}>
+      <div className="vendor-row">
+        <button
+          type="button"
+          className="vendor-main"
+          onClick={onToggle}
+          aria-expanded={expanded}
+        >
+          <span className="exp" aria-hidden>
+            {expanded ? '▾' : '▸'}
+          </span>
+          <span className="vendor-name">{group.manufacturer}</span>
+          <span className="vendor-signal">{signal.primary}</span>
+          <ConfidenceBadge
+            confidence={signal.minConfidence}
+            band={signal.minBand}
+            compact
+          />
+        </button>
+        <div className="vendor-cta">
+          {ctaLabel ? (
+            <button
+              type="button"
+              className="btn btn-hub"
+              disabled={!group.updateUrl}
+              onClick={() => onOpenUrl(group.updateUrl)}
+              title={ctaLabel}
+            >
+              {group.portalApp ? `Open hub` : 'Open portal'}
+            </button>
+          ) : (
+            <span className="vendor-cta-none">—</span>
+          )}
+        </div>
+      </div>
+      {expanded && (
+        <div className="vendor-plugins">
+          {signal.focusProducts.map((row) => (
+            <ProductRow
+              key={row.id}
+              row={row}
+              selected={selectedId === row.id}
+              onSelect={() => onSelect(row)}
+              onOpenUrl={onOpenUrl}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function TriageSection({
+  bucket,
+  groups,
+  defaultCollapsed,
+  open,
+  onToggle,
+  selectedId,
+  onSelect,
+  onOpenUrl,
+}: {
+  bucket: TriageBucket
+  groups: ManufacturerReportGroup[]
+  defaultCollapsed?: boolean
+  open: Record<string, boolean>
+  onToggle: (id: string) => void
+  selectedId: string | null
+  onSelect: (row: PluginReportRow) => void
+  onOpenUrl: (url: string | null) => void
+}) {
+  const [sectionOpen, setSectionOpen] = useState(!defaultCollapsed)
+  if (!groups.length) return null
+
+  const pluginCount = groups.reduce((n, g) => n + g.productCount, 0)
+
+  return (
+    <section className={`triage-section triage-${bucket} ${sectionOpen ? 'is-open' : 'is-closed'}`}>
+      <button
+        type="button"
+        className="triage-section-head"
+        onClick={() => setSectionOpen((s) => !s)}
+        aria-expanded={sectionOpen}
+      >
+        <span className="exp" aria-hidden>
+          {sectionOpen ? '▾' : '▸'}
+        </span>
+        <span className="triage-title">{TRIAGE_LABEL[bucket]}</span>
+        <span className="triage-meta mono">
+          {groups.length} vendor{groups.length === 1 ? '' : 's'} · {pluginCount}
+        </span>
+        <span className="triage-hint">{TRIAGE_HINT[bucket]}</span>
+      </button>
+      {sectionOpen && (
+        <div className="triage-vendors">
+          {groups.map((g) => {
+            const key = `${bucket}:${g.id}`
+            return (
+              <VendorRow
+                key={key}
+                group={g}
+                bucket={bucket}
+                expanded={open[key] === true}
+                selectedId={selectedId}
+                onToggle={() => onToggle(key)}
+                onSelect={onSelect}
+                onOpenUrl={onOpenUrl}
+              />
+            )
+          })}
+        </div>
+      )}
+    </section>
+  )
+}
+
 export function PluginList({
   groups,
+  triageFilter,
   selectedId,
   onSelect,
   onOpenUrl,
   emptyHint,
 }: {
   groups: ManufacturerReportGroup[]
+  triageFilter: TriageFilter
   selectedId: string | null
   onSelect: (row: PluginReportRow) => void
   onOpenUrl: (url: string | null) => void
@@ -344,39 +257,31 @@ export function PluginList({
     return <div className="empty-panel">{emptyHint}</div>
   }
 
+  const partitioned = partitionByTriage(groups)
+  const buckets =
+    triageFilter === 'all' ? TRIAGE_ORDER : ([triageFilter] as TriageBucket[])
+
+  const any = buckets.some((b) => partitioned[b].length > 0)
+  if (!any) {
+    return <div className="empty-panel">{emptyHint}</div>
+  }
+
   return (
-    <div className="grid-wrap">
-      <div className="list-head mfg-list-head" aria-hidden>
-        <span className="lh-mfg">Manufacturer</span>
-        <span className="lh-primary">Signal</span>
-        <span className="lh-attn">Attention</span>
-        <span className="lh-conf">Confidence</span>
-        <span className="lh-hub">Portal / hub</span>
-      </div>
-      <div className="plugin-list">
-        {groups.map((g) => {
-          const show = open[g.id] === true
-          return (
-            <div key={g.id} className={`mfg-block ${show ? 'is-open' : 'is-closed'}`}>
-              <ManufacturerHead
-                group={g}
-                expanded={show}
-                onToggle={() => toggle(g.id)}
-                onOpenUrl={onOpenUrl}
-              />
-              {show &&
-                g.products.map((row) => (
-                  <ProductRow
-                    key={row.id}
-                    row={row}
-                    selected={selectedId === row.id}
-                    onSelect={() => onSelect(row)}
-                    onOpenUrl={onOpenUrl}
-                  />
-                ))}
-            </div>
-          )
-        })}
+    <div className="grid-wrap triage-wrap">
+      <div className="plugin-list triage-list">
+        {buckets.map((bucket) => (
+          <TriageSection
+            key={bucket}
+            bucket={bucket}
+            groups={partitioned[bucket]}
+            defaultCollapsed={bucket === 'clear' && triageFilter === 'all'}
+            open={open}
+            onToggle={toggle}
+            selectedId={selectedId}
+            onSelect={onSelect}
+            onOpenUrl={onOpenUrl}
+          />
+        ))}
       </div>
     </div>
   )

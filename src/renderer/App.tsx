@@ -7,9 +7,10 @@ import type {
   ScanReport,
 } from '../shared/types'
 import { WelcomeHero } from './components/WelcomeHero'
-import { FilterBar, type ConfidenceFilter, type IdentityFilter, type StatusFilter } from './components/FilterBar'
+import { FilterBar, type ConfidenceFilter, type IdentityFilter } from './components/FilterBar'
 import { PluginList } from './components/PluginList'
 import { DetailPanel } from './components/DetailPanel'
+import { type TriageFilter, partitionByTriage } from './lib/triage'
 
 type Mode = 'welcome' | 'library' | 'catalog'
 
@@ -17,7 +18,6 @@ function filterGroups(
   groups: ManufacturerReportGroup[],
   opts: {
     query: string
-    status: StatusFilter
     confidence: ConfidenceFilter
     identity: IdentityFilter
     manufacturer: string
@@ -28,7 +28,6 @@ function filterGroups(
     .map((g) => {
       if (opts.manufacturer && g.manufacturer !== opts.manufacturer) return null
       const products = g.products.filter((row) => {
-        if (opts.status !== 'all' && row.status !== opts.status) return false
         if (opts.confidence !== 'all' && row.confidenceBand !== opts.confidence) return false
         if (opts.identity !== 'all' && row.identityKind !== opts.identity) return false
         if (!q) return true
@@ -48,6 +47,10 @@ function filterGroups(
     .filter(Boolean) as ManufacturerReportGroup[]
 }
 
+function toggleTriage(current: TriageFilter, next: TriageFilter): TriageFilter {
+  return current === next ? 'all' : next
+}
+
 export default function App() {
   const [mode, setMode] = useState<Mode>('welcome')
   const [report, setReport] = useState<ScanReport | null>(null)
@@ -57,7 +60,7 @@ export default function App() {
   const [progress, setProgress] = useState<ScanProgress | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [query, setQuery] = useState('')
-  const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
+  const [triageFilter, setTriageFilter] = useState<TriageFilter>('all')
   const [confidenceFilter, setConfidenceFilter] = useState<ConfidenceFilter>('all')
   const [identityFilter, setIdentityFilter] = useState<IdentityFilter>('all')
   const [manufacturerFilter, setManufacturerFilter] = useState('')
@@ -83,19 +86,24 @@ export default function App() {
     if (!activeGroups) return [] as ManufacturerReportGroup[]
     return filterGroups(activeGroups, {
       query,
-      status: statusFilter,
       confidence: confidenceFilter,
       identity: identityFilter,
       manufacturer: manufacturerFilter,
     })
-  }, [
-    activeGroups,
-    query,
-    statusFilter,
-    confidenceFilter,
-    identityFilter,
-    manufacturerFilter,
-  ])
+  }, [activeGroups, query, confidenceFilter, identityFilter, manufacturerFilter])
+
+  const triageCounts = useMemo(() => {
+    const p = partitionByTriage(groups)
+    return {
+      needs_update: p.needs_update.reduce((n, g) => n + g.productCount, 0),
+      use_hub: p.use_hub.reduce((n, g) => n + g.productCount, 0),
+      paid: p.paid.reduce((n, g) => n + g.productCount, 0),
+      uncertain: p.uncertain.reduce((n, g) => n + g.productCount, 0),
+      clear: p.clear.reduce((n, g) => n + g.productCount, 0),
+      vendorsNeedingUpdate: p.needs_update.length,
+      vendorsHub: p.use_hub.length,
+    }
+  }, [groups])
 
   const visibleCount = groups.reduce((n, g) => n + g.products.length, 0)
   const totalCount =
@@ -117,7 +125,7 @@ export default function App() {
       setMode('library')
       setSelected(null)
       setQuery('')
-      setStatusFilter('all')
+      setTriageFilter('all')
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err))
     } finally {
@@ -139,7 +147,7 @@ export default function App() {
       setMode('catalog')
       setSelected(null)
       setQuery('')
-      setStatusFilter('all')
+      setTriageFilter('all')
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err))
     } finally {
@@ -259,58 +267,60 @@ export default function App() {
       {(mode === 'library' || mode === 'catalog') && (
         <div className={`workspace ${selected ? 'with-detail' : ''}`}>
           <div className="workspace-main">
-            {mode === 'library' && report && (
-              <div className="summary-strip">
-                <span>
-                  <b className="ok">{report.summary.current}</b> OK
-                </span>
-                <span>
-                  <b className="bad">{report.summary.updateAvailable ?? 0}</b> upd
-                </span>
-                <span>
-                  <b className="warn">{report.summary.unknown}</b> unk
-                </span>
-                <span>
-                  <b>{report.summary.useVendorHub ?? 0}</b> hub
-                </span>
-                <span>
-                  <b>{report.summary.paidUpgrade ?? 0}</b> paid
-                </span>
-                <span className="grow" />
-                <span className="mono faint">
-                  {report.summary.pluginCount} · {report.summary.dawCount} DAWs
-                </span>
-              </div>
-            )}
-            {mode === 'catalog' && catalogReport && (
-              <div className="summary-strip">
-                <span>
-                  <b className="ok">{catalogReport.summary.green}</b> ≥85
-                </span>
-                <span>
-                  <b className="warn">{catalogReport.summary.amber}</b> 70–84
-                </span>
-                <span>
-                  <b className="yellow">{catalogReport.summary.yellow}</b> &lt;70
-                </span>
-                <span>
-                  <b>{catalogReport.summary.unknownVersion}</b> unk
-                </span>
-                <span>
-                  <b>{catalogReport.summary.content}</b> content
-                </span>
-                <span className="grow" />
-                <span className="teach-chip" title="Yellow is not an update signal">
-                  Yellow ≠ update
-                </span>
-              </div>
-            )}
+            <div className="triage-bar" role="toolbar" aria-label="Triage filters">
+              <button
+                type="button"
+                className={`triage-chip ${triageFilter === 'all' ? 'active' : ''}`}
+                onClick={() => setTriageFilter('all')}
+              >
+                All
+              </button>
+              <button
+                type="button"
+                className={`triage-chip tone-bad ${triageFilter === 'needs_update' ? 'active' : ''}`}
+                onClick={() => setTriageFilter((t) => toggleTriage(t, 'needs_update'))}
+              >
+                <b>{triageCounts.needs_update}</b> need update
+              </button>
+              <button
+                type="button"
+                className={`triage-chip tone-hub ${triageFilter === 'use_hub' ? 'active' : ''}`}
+                onClick={() => setTriageFilter((t) => toggleTriage(t, 'use_hub'))}
+              >
+                <b>{triageCounts.use_hub}</b> hub
+              </button>
+              <button
+                type="button"
+                className={`triage-chip tone-paid ${triageFilter === 'paid' ? 'active' : ''}`}
+                onClick={() => setTriageFilter((t) => toggleTriage(t, 'paid'))}
+              >
+                <b>{triageCounts.paid}</b> paid
+              </button>
+              <button
+                type="button"
+                className={`triage-chip tone-uncertain ${triageFilter === 'uncertain' ? 'active' : ''}`}
+                onClick={() => setTriageFilter((t) => toggleTriage(t, 'uncertain'))}
+              >
+                <b>{triageCounts.uncertain}</b> unknown
+              </button>
+              <button
+                type="button"
+                className={`triage-chip tone-ok ${triageFilter === 'clear' ? 'active' : ''}`}
+                onClick={() => setTriageFilter((t) => toggleTriage(t, 'clear'))}
+              >
+                <b>{triageCounts.clear}</b> clear
+              </button>
+              <span className="grow" />
+              <span className="triage-bar-meta mono">
+                {mode === 'library' && report
+                  ? `${report.summary.pluginCount} plugins · ${report.summary.dawCount} DAWs`
+                  : `${totalCount.toLocaleString()} catalog rows`}
+              </span>
+            </div>
 
             <FilterBar
               query={query}
               onQuery={setQuery}
-              status={statusFilter}
-              onStatus={setStatusFilter}
               confidence={confidenceFilter}
               onConfidence={setConfidenceFilter}
               identity={identityFilter}
@@ -324,13 +334,14 @@ export default function App() {
 
             <PluginList
               groups={groups}
+              triageFilter={triageFilter}
               selectedId={selected?.id ?? null}
               onSelect={setSelected}
               onOpenUrl={openUpdate}
               emptyHint={
                 mode === 'catalog'
-                  ? 'No catalog rows match these filters. Try clearing confidence or identity.'
-                  : 'No installed plugins match. Try Browse catalog, or clear filters.'
+                  ? 'Nothing matches. Clear triage or search.'
+                  : 'Nothing matches. Clear triage chips or search, or Browse catalog.'
               }
             />
           </div>

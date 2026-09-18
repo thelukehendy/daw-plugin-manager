@@ -1,22 +1,9 @@
 import type { ConfidenceBand, IdentityKind, UpdateStatus } from '../../shared/types'
-import { STATUS_LABEL_COMPACT, identityLabel } from '../lib/labels'
+import { identityLabel } from '../lib/labels'
 
 export type ConfidenceFilter = 'all' | ConfidenceBand
 export type IdentityFilter = 'all' | string
 export type StatusFilter = 'all' | UpdateStatus
-
-const STATUS_OPTIONS: UpdateStatus[] = [
-  'update_available',
-  'update_likely',
-  'unverified',
-  'paid_upgrade',
-  'use_vendor_hub',
-  'unknown',
-  'current',
-  'content',
-  'discontinued',
-  'bundled',
-]
 
 const IDENTITY_OPTIONS: IdentityKind[] = [
   'plugin',
@@ -30,11 +17,10 @@ const IDENTITY_OPTIONS: IdentityKind[] = [
   'hardware',
 ]
 
+/** Compact search + secondary filters. Triage lives in the clickable chips above. */
 export function FilterBar({
   query,
   onQuery,
-  status,
-  onStatus,
   confidence,
   onConfidence,
   identity,
@@ -47,8 +33,8 @@ export function FilterBar({
 }: {
   query: string
   onQuery: (v: string) => void
-  status: StatusFilter
-  onStatus: (v: StatusFilter) => void
+  status?: StatusFilter
+  onStatus?: (v: StatusFilter) => void
   confidence: ConfidenceFilter
   onConfidence: (v: ConfidenceFilter) => void
   identity: IdentityFilter
@@ -65,7 +51,7 @@ export function FilterBar({
         className="search"
         value={query}
         onChange={(e) => onQuery(e.target.value)}
-        placeholder="Search…"
+        placeholder="Search vendors or plugins…"
         aria-label="Search"
       />
       <select
@@ -73,22 +59,10 @@ export function FilterBar({
         onChange={(e) => onManufacturer(e.target.value)}
         aria-label="Manufacturer"
       >
-        <option value="">Manufacturer</option>
+        <option value="">All vendors</option>
         {manufacturers.map((m) => (
           <option key={m} value={m}>
             {m}
-          </option>
-        ))}
-      </select>
-      <select
-        value={status}
-        onChange={(e) => onStatus(e.target.value as StatusFilter)}
-        aria-label="Update state"
-      >
-        <option value="all">State</option>
-        {STATUS_OPTIONS.map((s) => (
-          <option key={s} value={s}>
-            {STATUS_LABEL_COMPACT[s]}
           </option>
         ))}
       </select>
@@ -97,17 +71,17 @@ export function FilterBar({
         onChange={(e) => onConfidence(e.target.value as ConfidenceFilter)}
         aria-label="Confidence band"
       >
-        <option value="all">Conf</option>
-        <option value="high">≥85</option>
-        <option value="medium">70–84</option>
-        <option value="low">&lt;70</option>
+        <option value="all">All confidence</option>
+        <option value="high">≥85 verified</option>
+        <option value="medium">70–84 likely</option>
+        <option value="low">&lt;70 weak</option>
       </select>
       <select
         value={identity}
         onChange={(e) => onIdentity(e.target.value)}
         aria-label="Identity kind"
       >
-        <option value="all">Kind</option>
+        <option value="all">All kinds</option>
         {IDENTITY_OPTIONS.map((k) => (
           <option key={k} value={k}>
             {identityLabel(k)}
