@@ -10,6 +10,7 @@
     "build": "electron-vite build",
     "preview": "env -u ELECTRON_RUN_AS_NODE electron-vite preview",
     "scan:cli": "tsx scripts/scan-cli.ts",
+    "test:contracts": "tsx scripts/test-catalog-contracts.ts",
     "catalog:validate": "tsx scripts/validate-catalog.ts",
     "electron:fetch": "node scripts/fetch-electron.js",
     "catalog:refresh": "tsx scripts/catalog/refresh.ts",

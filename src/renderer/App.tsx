@@ -257,7 +257,12 @@ export default function App() {
             catalogMeta.updatedAt &&
             Number.isFinite(Date.parse(catalogMeta.updatedAt)) && (
               <span className="catalog-meta mono">
-                Versions {new Date(catalogMeta.updatedAt).toLocaleDateString()}
+                Catalog as of{' '}
+                {new Date(catalogMeta.updatedAt).toLocaleDateString(undefined, {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                })}
               </span>
             )}
           {fromSnapshot && !scanning && (

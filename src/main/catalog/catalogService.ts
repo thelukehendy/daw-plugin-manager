@@ -8,7 +8,6 @@ import type {
   CatalogPlugin,
   CompatibilityFlag,
   DawInfo,
-  IdentityKind,
   InstalledPlugin,
   InstalledVersionInfo,
   ManufacturerReportGroup,
@@ -38,22 +37,21 @@ import {
   matchCatalogPluginIndexed,
   type CatalogIndex,
 } from './catalogIndex'
+import { isContentLikeKind, isVersionTrackedKind, resolveIdentityKind } from './identity'
+import {
+  bestGroupPopularityTier,
+  compareByPopularityThenName,
+  effectivePopularityTier,
+  popularitySortKey,
+} from './popularity'
+import { catalogAsOfLabel, parsePluginCatalog, preferNewerCatalog } from './catalogParse'
+
+export { catalogAsOfLabel } from './catalogParse'
 
 const FALLBACK_REMOTE_CATALOG_URLS = [
   'https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json',
   'https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json',
 ]
-
-const CONTENT_KINDS = new Set([
-  'soundset',
-  'expansion',
-  'bundle',
-  'suite_component',
-  'hardware',
-  'eurorack',
-  'daw_stock_effect',
-  'unknown_other',
-])
 
 async function resolveRemoteCatalogUrls(appPath?: string): Promise<string[]> {
   const resourcePath =
@@ -132,21 +130,6 @@ function findManufacturer(
 ): CatalogManufacturer | undefined {
   const idx = index || buildCatalogIndex(catalog)
   return findManufacturerIndexed(manufacturer, idx)
-}
-
-function resolveIdentityKind(plugin: CatalogPlugin | null | undefined): IdentityKind {
-  if (!plugin) return 'plugin'
-  if (plugin.discontinued || plugin.identityKind === 'discontinued') return 'discontinued'
-  return plugin.identityKind || 'plugin'
-}
-
-function isVersionTrackedKind(kind: IdentityKind): boolean {
-  if (kind === 'plugin' || kind === 'instrument' || kind === 'effect' || kind === 'standalone_app') {
-    return true
-  }
-  if (kind === 'hub_app') return true
-  if (kind === 'gen_ambiguous') return false
-  return !CONTENT_KINDS.has(kind) && kind !== 'discontinued'
 }
 
 function portalAppFor(
@@ -263,17 +246,16 @@ export function decideStatus(opts: {
     }
   }
 
-  if (CONTENT_KINDS.has(kind) || kind === 'gen_ambiguous') {
+  if (isContentLikeKind(kind) || kind === 'gen_ambiguous') {
     return 'content'
   }
 
   if (kind === 'hub_app') {
-    if (!latest) return 'use_vendor_hub'
-    if (catalogOnly) return portal && conf != null && conf < HIGH ? 'use_vendor_hub' : 'current'
-    if (!installedVersion) return 'use_vendor_hub'
+    // Hub apps are not version-tracked; CTA is the vendor manager.
+    return 'use_vendor_hub'
   }
 
-  if (!isVersionTrackedKind(kind) && kind !== 'hub_app') {
+  if (!isVersionTrackedKind(kind)) {
     return 'content'
   }
 
@@ -370,9 +352,11 @@ function enrichFromCatalog(
     successorName: succ.successorName,
     updateClass: succ.updateClass,
     notesForUser: plugin?.notesForUser || null,
-    appleSilicon: plugin?.appleSilicon || mfg?.appleSilicon || null,
-    requiresIlok: !!plugin?.requiresIlok,
-    isFreeware: !!plugin?.isFreeware,
+    appleSilicon: plugin?.appleSilicon ?? mfg?.appleSilicon ?? null,
+    // Booleans: only true when explicitly set — omitted ≠ false for research, but
+    // UI treats missing as "no" for requiresIlok / isFreeware flags.
+    requiresIlok: plugin?.requiresIlok === true,
+    isFreeware: plugin?.isFreeware === true,
     manufacturerId: mfg?.id || plugin?.manufacturerId || null,
   }
 }
@@ -403,7 +387,10 @@ export function buildManufacturerGroups(rows: PluginReportRow[]): ManufacturerRe
         bundled: 10,
       }
       const d = (order[a.status] ?? 50) - (order[b.status] ?? 50)
-      return d !== 0 ? d : a.name.localeCompare(b.name)
+      if (d !== 0) return d
+      const tier = compareByPopularityThenName(a, b)
+      if (tier !== 0) return tier
+      return a.name.localeCompare(b.name)
     })
     const outdatedLike = sorted.filter(
       (p) =>
@@ -425,11 +412,14 @@ export function buildManufacturerGroups(rows: PluginReportRow[]): ManufacturerRe
       bundledCount: sorted.filter((p) => p.status === 'bundled').length,
       hasCompatWarning: sorted.some((p) => p.compatibilityFlags.some((f) => f.severity !== 'info')),
       ...aggregateManufacturerConfidence(sorted),
+      popularityTier: bestGroupPopularityTier(sorted),
       products: sorted,
     })
   }
 
   return groups.sort((a, b) => {
+    const tier = popularitySortKey(a.popularityTier) - popularitySortKey(b.popularityTier)
+    if (tier !== 0) return tier
     if (b.outdatedCount !== a.outdatedCount) return b.outdatedCount - a.outdatedCount
     return a.manufacturer.localeCompare(b.manufacturer)
   })
@@ -522,6 +512,7 @@ export async function buildReportRows(
         paths,
         catalogMatched: false,
         installCount: group.members.length,
+        popularityTier: effectivePopularityTier(null, mfgFallback || null),
       })
     } else {
       const { plugin, manufacturer, score: matchScore } = match
@@ -592,6 +583,7 @@ export async function buildReportRows(
         paths,
         catalogMatched: true,
         installCount: group.members.length,
+        popularityTier: effectivePopularityTier(plugin, manufacturer),
       })
     }
 
@@ -658,6 +650,7 @@ export function buildCatalogBrowseRows(catalog: PluginCatalog): PluginReportRow[
       catalogMatched: true,
       installCount: 0,
       catalogOnly: true,
+      popularityTier: effectivePopularityTier(plugin, manufacturer),
     }
   })
 }
@@ -733,9 +726,17 @@ async function loadBundledCatalog(appPath?: string): Promise<PluginCatalog> {
   for (const path of candidates) {
     if (existsSync(path)) {
       const raw = await readFile(path, 'utf8')
-      const catalog = JSON.parse(raw) as PluginCatalog
-      catalog.catalogSource = catalog.catalogSource || `bundled:${path}`
-      return catalog
+      let parsed: unknown
+      try {
+        parsed = JSON.parse(raw)
+      } catch {
+        continue
+      }
+      try {
+        return parsePluginCatalog(parsed, `bundled:${path}`)
+      } catch {
+        continue
+      }
     }
   }
   throw new Error('Bundled plugin catalog not found')
@@ -752,10 +753,12 @@ export async function fetchRemoteCatalog(
       const res = await fetch(url, { signal: controller.signal })
       clearTimeout(timer)
       if (!res.ok) continue
-      const catalog = (await res.json()) as PluginCatalog
-      if (!catalog.manufacturers || !catalog.plugins) continue
-      catalog.catalogSource = `remote:${url}`
-      return catalog
+      const parsed = (await res.json()) as unknown
+      try {
+        return parsePluginCatalog(parsed, `remote:${url}`)
+      } catch {
+        continue
+      }
     } catch {
       /* try next */
     }
@@ -780,9 +783,8 @@ export async function loadCatalog(options?: {
       options?.remoteUrls || (await resolveRemoteCatalogUrls(options?.appPath))
     const remote = await fetchRemoteCatalog(remoteUrls)
     if (remote) {
-      const remoteTime = Date.parse(remote.updatedAt || '') || 0
-      const bundledTime = Date.parse(bundled.updatedAt || '') || 0
-      base = remoteTime >= bundledTime ? remote : bundled
+      // Prefer newer updatedAt; never invent versions from a stale snapshot.
+      base = preferNewerCatalog(bundled, remote)
     }
   }
 

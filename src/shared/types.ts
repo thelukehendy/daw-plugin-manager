@@ -112,6 +112,8 @@ export interface CatalogManufacturer {
   versionScheme?: VersionScheme
   versionExample?: string
   changelogUrl?: string
+  /** 1 = household … 4 = long tail; omitted/null = unranked (never treat as tier 0). */
+  popularityTier?: number | null
 }
 
 export interface CatalogPlugin {
@@ -148,6 +150,8 @@ export interface CatalogPlugin {
   generation?: string | number
   generationRank?: number
   portalApp?: string
+  /** 1 = household … 4 = long tail; omitted/null = unranked. */
+  popularityTier?: number | null
 }
 
 export type VersionEvidence =
@@ -215,6 +219,8 @@ export interface PluginReportRow {
   installCount: number
   /** True when this row comes from catalog browse (no local install). */
   catalogOnly?: boolean
+  /** Effective COALESCE(plugin, manufacturer) popularity; null = unranked. */
+  popularityTier?: number | null
 }
 
 export interface ManufacturerReportGroup {
@@ -232,6 +238,8 @@ export interface ManufacturerReportGroup {
   hasCompatWarning: boolean
   confidence: number
   confidenceBand: ConfidenceBand
+  /** Best (lowest) effective tier among products; null = all unranked. */
+  popularityTier?: number | null
   products: PluginReportRow[]
 }
 

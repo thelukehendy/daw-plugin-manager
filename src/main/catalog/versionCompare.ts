@@ -1,23 +1,22 @@
 import semver from 'semver'
 import type { VersionScheme } from '../../shared/types'
 
-/** Normalize versionScheme strings that vary in the export. */
+const CANONICAL_SCHEMES = new Set(['semver', 'semver4', 'date', 'build', 'marketing'])
+
+/**
+ * Only exact canonical scheme tokens drive the normalizer.
+ * Free-text notes (e.g. "major.minor (2-part), some 3-part") are ignored → default semver.
+ */
 export function resolveScheme(scheme: VersionScheme | null | undefined): VersionScheme {
-  if (!scheme) return 'semver'
-  const s = String(scheme).toLowerCase()
-  if (s.includes('semver4') || s.includes('4-part') || s.includes('major.minor.patch.build')) {
-    return 'semver4'
-  }
-  if (s.includes('date') || s.includes('calendar') || s.includes('year-based')) return 'date'
-  if (s === 'build' || s.includes('build number')) return 'build'
-  if (s.includes('marketing')) return 'marketing'
-  if (s.includes('major.minor') && !s.includes('patch') && !s.includes('3-part')) return 'semver'
+  if (scheme == null || scheme === '') return 'semver'
+  const s = String(scheme).trim().toLowerCase()
+  if (CANONICAL_SCHEMES.has(s)) return s as VersionScheme
   return 'semver'
 }
 
 /**
  * Normalize plugin versions for comparison.
- * Honors manufacturer versionScheme when provided.
+ * Honors manufacturer versionScheme when it is a canonical token.
  */
 export function normalizeVersion(
   input: string | null | undefined,
@@ -34,7 +33,6 @@ export function normalizeVersion(
   }
 
   if (kind === 'date') {
-    // Airwindows-style 2026-09-05-2a6d1c0 or ISO-ish dates
     const iso = v.match(/(\d{4}-\d{2}-\d{2})/)
     if (iso) {
       const rest = v.slice(v.indexOf(iso[1]) + iso[1].length).replace(/^[-_.\s]+/, '')
@@ -96,6 +94,10 @@ export function compareVersions(
   latest: string | null | undefined,
   scheme?: VersionScheme | null
 ): VersionRelation {
+  // Missing latest → cannot compare (caller shows literal unknown)
+  if (latest == null || latest === '') return 'unknown'
+  if (installed == null || installed === '') return 'unknown'
+
   const kind = resolveScheme(scheme)
   const a = normalizeVersion(installed, kind)
   const b = normalizeVersion(latest, kind)

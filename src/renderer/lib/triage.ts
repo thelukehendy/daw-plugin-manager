@@ -180,13 +180,24 @@ export function partitionByTriage(
         ).length,
         unknownCount: focus.filter((p) => p.status === 'unknown').length,
         currentCount: focus.filter((p) => CLEAR_STATUSES.includes(p.status)).length,
+        popularityTier: (() => {
+          let best: number | null = null
+          for (const p of focus) {
+            if (p.popularityTier == null) continue
+            if (best == null || p.popularityTier < best) best = p.popularityTier
+          }
+          return best
+        })(),
       })
     }
   }
 
-  // Sort within bucket: most focus products first, then name
+  // Sort within bucket: popularity tier 1 first, then focus count, then name
   for (const b of TRIAGE_ORDER) {
     out[b].sort((a, c) => {
+      const ta = a.popularityTier == null || a.popularityTier < 1 ? 99 : a.popularityTier
+      const tc = c.popularityTier == null || c.popularityTier < 1 ? 99 : c.popularityTier
+      if (ta !== tc) return ta - tc
       if (c.productCount !== a.productCount) return c.productCount - a.productCount
       return a.manufacturer.localeCompare(c.manufacturer)
     })

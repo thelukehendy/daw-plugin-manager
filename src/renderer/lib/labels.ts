@@ -60,6 +60,13 @@ const NON_VERSION_KINDS = new Set<string>([
   'hardware',
   'eurorack',
   'hub_app',
+  'instrument',
+  'effect',
+  'discontinued',
+  'gen_ambiguous',
+  'daw_stock_effect',
+  'standalone_app',
+  'unknown_other',
 ])
 
 export function confidenceDisplayWord(opts: {
