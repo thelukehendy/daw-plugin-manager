@@ -219,6 +219,12 @@ EastWest 11 — all worked to zero by the 1918/2218 chips.
 - **Identity flags (pending Luke ruling):** Dopamine = Drumasonic, VEA = iZotope (NI store API vendor fields —
   recommend re-tag/exclude); Crumbs = identity unconfirmable (no store listing, no KVR, no manual — flagged, not
   cataloged); Scarbee Funk Guitarist NI SKU defunct since Sep 2022; "Alchemy Soft Cell" has no verifiable NI identity.
+  2026-09-18 portal-audit flags: `leotokarev` manufacturer row likely misattributed — its only plugin "GainMatch" is a
+  LetiMix product (letimix.com/products/gainmatch), row may not deserve to exist; `spectralayers-bridge` looks like a
+  bogus manufacturer identity — "SpectraLayers Bridge" is Steinberg's Pro Tools AudioSuite bridge plug-in, not a vendor;
+  `unfilteredaudio` row holds "LTL SILVER BULLET mk2" (that's Louder Than Liftoff, not Unfiltered Audio) — misattributed,
+  do not merge into `unfiltered-audio` without review; `con`, `digidesign`, `mpegh` are single-plugin legacy rows whose
+  portal URLs were google-search placeholders — identity review needed.
 - Amplified Funk 2.0.0 @58 REMOVED from current — sole source was a warez mirror; catalog integrity correction.
 - Wayback is a hard stop for NI (429 on archive.org availability API).
 - NI community "previous versions" thread is a stale-value oracle: Amati Viola 1.2.0, Analog Dreams 2.0.3,
