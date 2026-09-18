@@ -136,6 +136,10 @@ def main() -> int:
                 entry["changelogUrl"] = m["changelog_url"]
             if m["notes"]:
                 entry["notes"] = m["notes"]
+            # v6: popularity tier for tier-1-first sorting in the app
+            # (omit when unranked — NULL means unranked, not tier 0)
+            if "popularity_tier" in mcols and m["popularity_tier"] is not None:
+                entry["popularityTier"] = m["popularity_tier"]
             manufacturers_out.append(entry)
 
         plugins_out = []
@@ -144,12 +148,21 @@ def main() -> int:
         with_confidence = 0
         with_identity_kind = 0
         with_apple_silicon = 0
+        with_tier = 0
         # v5: manufacturer Apple Silicon defaults for per-plugin resolution
         mfr_as = {}
+        # v6: manufacturer popularity tiers for per-plugin effective resolution
+        mfr_tier = {}
         try:
             for row in conn.execute("SELECT id, apple_silicon FROM manufacturers"):
                 if row["apple_silicon"] not in (None, "", "unknown"):
                     mfr_as[row["id"]] = row["apple_silicon"]
+        except sqlite3.OperationalError:
+            pass
+        try:
+            for row in conn.execute("SELECT id, popularity_tier FROM manufacturers"):
+                if row["popularity_tier"] is not None:
+                    mfr_tier[row["id"]] = row["popularity_tier"]
         except sqlite3.OperationalError:
             pass
         for p in conn.execute("SELECT * FROM plugins ORDER BY name"):
@@ -232,6 +245,16 @@ def main() -> int:
                     entry["appleSilicon"] = resolved
                     with_apple_silicon += 1
 
+            # v6: effective popularity tier — plugin tier wins, else manufacturer
+            # tier; omitted when unranked (see DATABASE-ORGANIZATION.md)
+            if "popularity_tier" in pcols:
+                tier = p["popularity_tier"]
+                if tier is None:
+                    tier = mfr_tier.get(p["manufacturer_id"])
+                if tier is not None:
+                    entry["popularityTier"] = tier
+                    with_tier += 1
+
             # Policy A: only attach version fields when current points at accepted obs
             conf_select = ", o.confidence, o.confidence_reasons" if has_confidence else ""
             cur = conn.execute(
@@ -299,7 +322,8 @@ def main() -> int:
             f"{versioned} with accepted latestVersion, "
             f"{with_confidence} with versionConfidence, "
             f"{with_successor} with successorPluginId, "
-            f"{with_identity_kind} with identityKind"
+            f"{with_identity_kind} with identityKind, "
+            f"{with_tier} with popularityTier"
         )
     finally:
         conn.close()

@@ -18,6 +18,7 @@ absence means "not researched", never "false".
 | `versionScheme` *(v5)* | `version_scheme` | How this manufacturer writes versions: `semver` (1.2.3), `semver4` (1.2.3.4), `date` (Airwindows-style `2026-09-05-…`), `build` (bare build number), `marketing` (non-numeric). Feed this to the version normalizer before comparing. |
 | `versionExample` *(v5)* | `version_example` | A real observed version string, e.g. `"4.10.19"`. Use as a normalizer test fixture. |
 | `changelogUrl` *(v5)* | `changelog_url` | Fixed changelog / release-notes page. Link "What's new" here. |
+| `popularityTier` *(v6)* | `popularity_tier` | 1 = household names … 4 = long tail. Omitted = unranked. Sort "Needs update" tier-1-first. |
 
 ## Plugin entry
 
@@ -44,6 +45,7 @@ absence means "not researched", never "false".
 | | | `intel-only` — Intel-only and known broken under Rosetta. Show a warning badge. |
 | | | Omitted = unresearched. Never assume. |
 | `notesForUser` | `notes_for_user` | Short UX hint string, safe to render verbatim. |
+| `popularityTier` *(v6)* | resolved `COALESCE(plugins.popularity_tier, manufacturers.popularity_tier)` | **Effective tier, resolved at export time** — the app never does the join itself. 1 = household names (sort these first in "Needs update"), 2–4 = long tail. Omitted = unranked. |
 
 ## Conventions the app must respect
 

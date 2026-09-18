@@ -74,6 +74,10 @@ Current split: tier 1 ≈ 4,389 plugins · tier 2 ≈ 3,325 · tier 3 ≈ 1,001 
 tier 4 ≈ 118 · unranked ≈ 661. Research and freshness work is prioritized by
 this order — tier 1 is where correctness matters most.
 
+The export resolves this once and emits it as `popularityTier` on every plugin
+entry (and the manufacturer's own tier on every manufacturer entry), so the
+app sorts tier-1-first without doing the join itself. Omitted = unranked.
+
 ## Field resolution order (plugin override → manufacturer default)
 
 Two columns exist on **both** `manufacturers` and `plugins` and resolve the
