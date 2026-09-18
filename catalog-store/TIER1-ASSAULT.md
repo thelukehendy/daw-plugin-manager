@@ -850,6 +850,48 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   superseded by newer plug-in versions, but we still keep them up-to-date" —
   re-check for exact newer builds before any raise; do NOT stamp the
   current-generation version onto legacy rows.
+- **Goodhertz (one-fetch recipe verified 2026-09-17):** the whole line is ONE
+  shared bundle — "This is the installer for all Goodhertz plugins (both
+  trials and purchased plugins, all versions). No other installer is
+  required." ONE fetch of http://goodhertz.com/downloads/ covers ALL rows:
+  read the "Latest Bundle Release / All the Goodhertz plugins" heading for
+  `Goodhertz X.Y.Z` + date (verified 3.14.1, June 30 2026). Per-product
+  release-note items (Vulf, Faraday, Loudness, VCME) all sit under the one
+  bundle heading — no product-specific version strings exist. Hard ban
+  respected in practice: rows legitimately share the bundle build per the
+  vendor's own model. NOTE: goodhertz.com/changelog is dead — never route
+  the check there.
+- **Valhalla DSP (per-product recipe; pointer only in this file — full
+  recipe lives in playbooks/valhalla-dsp.md):** fetch each product page at
+  valhalladsp.com/shop/<reverb|delay>/<slug>/ and read the "Current
+  Version: …" line. Known URLs (verified 2026-09-10):
+  shop/reverb/valhalla-room/, shop/reverb/valhalla-plate/,
+  shop/reverb/valhalla-vintage-verb/, shop/reverb/valhalla-shimmer/,
+  shop/reverb/valhalla-supermassive/, shop/reverb/valhallafutureverb/,
+  shop/delay/valhalladelay/, shop/delay/valhalla-freq-echo/ —
+  SpaceModulator and ÜberMod page URLs were never written down (record them
+  on next fetch). Dual Mac/Win: accept the Mac current, note Win in evidence
+  (Plate 1.6.8/1.6.3, Shimmer/FreqEcho/SpaceModulator/ÜberMod @88–92).
+  demos-downloads/ installer filenames corroborate. /my-account/downloads/
+  is login-walled and unnecessary. 2026-09-17: Valhalla freshness block
+  (10 rows) could not run — browser-service fetch infra failure, 0/10 pages;
+  values NOT re-confirmed; RE-QUEUE on the 12h loop.
+- **Image-Line legacy VSTs (legacy recipe verified 2026-09-17):** IL
+  publishes NO public version data for legacy VSTs — VST SKUs discontinued
+  (only sold as part of the discontinued FL Studio + ALL Plugins Bundle),
+  current shop sells "FL Studio Only" native versions, legacy installers sit
+  behind the My Account sign-in. @60 KVR ceiling HOLDS for these rows.
+  IL-direct promotion is possible ONLY through pre-discontinuation official
+  announcements — e.g. image-line.com/fl-studio-news/toxiciii-updated-to-v1-41/
+  ("ToxicIII updated to v1.41") promoted Toxic III 1.41 to @90 (identity
+  guard: Toxic III ≠ Toxic Biohazard). Corroboration oracles, in order:
+  KVR news announcement threads quoting IL → KVR product-page "Product,
+  Version" text → IL forum threads. Future leads: archive.org "Image-Line
+  Plugin Installers" collection (installer filenames may carry versions),
+  forum.image-line.com version-history posts. Open anomalies: Sawer 1.1.2
+  (catalog) vs a 2015 KVR-forum user report of "Sawer v1.2.2 64bit" — single
+  weak user report, needs an installer-level check, not a raise; Wasp 2.0.17
+  remains single-source KVR (uncorroborated anywhere).
 - **iZotope legacy freeze:** the release-notes URL is now a legacy-downloads
   page with NO version numbers; iZotope support confirms R2 / R2 Surround / R4
   discontinued (superseded by Stratus/Symphony). FREEZE discontinued
@@ -897,10 +939,26 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
 - **MeldaProduction:** kernel page ("kernel version: 17.10.01") + MPluginManager
   installer (02.30) are healthy re-fetch paths; installer version is NEVER
   mapped onto plugins.
-- **Eventide:** installer-row versions can run AHEAD of the release-notes
-  page (H910: stored 3.12.4 from installer row vs notes topping at 2.5.11).
-  Kept under unverified≠disproven — do NOT downgrade on the notes page
-  alone; verify via the installer row or Wayback before changing.
+- **Eventide (H910 conflict RESOLVED 2026-09-17 — it was misattribution, not
+  a genuine 3.12.4):** the stored 3.12.4 on `eventide--h910-harmonizer`
+  (2026-09-10, bare "Version 3.12.4" snippet, no product attribution) was a
+  grab from the 3.12.x installer-string family (H949 Harmonizer and
+  Omnipressor are GENUINELY 3.12.4 — corroborated live; Blackhole and
+  UltraReverb are genuinely 3.11.4). The H910 product's OWN downloads page
+  tops at 2.5.11 with a full 2.x trail and no 3.x anywhere — corrected to
+  2.5.11 @92. **Zero-trust rule (Eventide-specific):** bare "Version X.Y.Z"
+  installer snippets are unsafe for Eventide — the shared
+  installer-framework change text ("Added initial screen reader support to
+  the installer", iLok Licensing Components) ships under different numbers
+  per product line (3.12.x vs 3.11.x vs 2.5.x). Only accept installer rows
+  with EXPLICIT product attribution ("<Product> Installer (Mac 64-bit)
+  Version X.Y.Z"). **Wayback is NOT a fallback:** archive.org availability
+  API returns no snapshots for `eventideaudio.com/downloads/?product=*`
+  (checked 2024–2026; whole query-URL family unarchived), and
+  web.archive.org snapshot fetches fail through the browser service
+  (infra, not rate-limiting). Installer rows remain JS-hidden in direct
+  fetches; the product-scoped Release Notes section on each
+  `downloads/?product=<Name>` page is the working freshness oracle.
 - **Voxengo:** official per-product user-guide PDFs carry exact versions
   (voxengo.com/files/userguides/Voxengo<Product>_en.pdf pattern — verified
   for Elephant 5.8, GlissEQ 3.19, SPAN 3.24, TEOTE 1.16, Voxformer 2.23);
@@ -909,8 +967,18 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
 - **sonible:** blog user-guides are NOT a version source — smart:comp 3,
   smart:gate, smart:reverb 2 guides have NO changelog section; smart:limit
   guide is STALE (tops at 1.1.0 vs real 1.1.5); EN manual PDFs use x.x.x
-  placeholders. Next angle: help.sonible.com release notes (not yet located
-  — open research question).
+  placeholders. **help.sonible.com release-notes question — ANSWERED
+  NEGATIVE 2026-09-17:** the Zendesk help center has no release-notes
+  article in the search index (only "How can I update my plug-in to the
+  latest version?", which routes to the auth-walled "Downloads in My
+  Account"); `site:help.sonible.com` changelog/release-notes queries
+  return zero help-center hits. **Working oracle (verified 2026-09-17):**
+  per-product pages' specs table carries a "latest version" line —
+  `sonible.com/<slug>/` (e.g. smartlimit → "latest version 1.1.5").
+  The line lives in the raw HTML specs grid and is MISSED by browser text
+  extraction — grep the page HTML for "latest version". smart:limit KVR
+  1.1.6 vs manufacturer-page 1.1.5: manufacturer page wins, KVR
+  uncorroborated. No public Sparkle/appcast feed found.
 - **Compat re-verify failures:** Klanghelm (klanghelm.com JS-gated) and TAL
   (statement page not directly addressable) could not be re-verified this
   chip — values KEPT per unverified≠disproven (prior-day vendor quotes on
@@ -935,7 +1003,9 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   PATH HEALTH, not just versions. A dead path gets a replacement path logged
   here before the old one is dropped.
 - **Decayed paths (logged 2026-09-16 — do not run without a new angle):**
-  Eventide installer rows (now JS-hidden; H910 conflict unresolved), PSP
+  Eventide installer rows (JS-hidden; Wayback NOT viable for
+  downloads/?product=* — availability-API negative 2024–2026; H910
+  misattribution corrected 2026-09-17, use the attribution rule), PSP
   version pages, Spitfire legacy library pages, Plugin Alliance vendor fetch
   (automation-blocked).
 - **Secondary sources proven this assault (2026-09-16):** KVR "Product,

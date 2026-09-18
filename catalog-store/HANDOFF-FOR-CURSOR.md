@@ -398,3 +398,12 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, only version fields differ); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Flags for next maintenance chips: Arturia MiniFreak V 5.0 build number; Kirchhoff-EQ 1.7.5 live-verify; NI Native Access 3.26.0; iZotope R2/R4 discontinued (frozen-final ruling candidate).
 - Push mechanics: backup `backups/2026-09-17/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.
+
+
+## Daily push 2026-09-18 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+4), accepted **5,651**; green **3,959** (+94), amber **348** (+151), yellow **1,344** (−181). Most of the band movement came from the 09-17 midday push (+332 tier-1 promotions: Waves/Spitfire/EW/IK/Arturia/UVI/8Dio/Heavyocity/Steinberg/u-he/Slate assaults).
+- Since the midday push, the 2218 maintenance chip contributed exactly two plugin changes: (1) **image-line--toxic-iii** 1.41 @60→@90 (yellow→green — official IL news article, coordinator-verified); (2) **eventide--h910-harmonizer** 3.12.4→2.5.11 @92 — DATA-INTEGRITY CORRECTION (the 3.12.4 was a misattributed shared-installer-string version; H910's own downloads page tops at 2.5.11; old row auto-superseded; the app had been showing users a wrong version for a tier-1 plugin).
+- 2218 chip: 43 researched · 1 promoted · 31 observed · 11 skipped · 0 open claims. Freshness: Goodhertz ×22 observed (3.14.1 shared-build confirmed); Valhalla ×10 skipped (browser fetch infra failure — stored @88–92 NOT re-confirmed, re-queued); IL legacy ×11. Zero version churn anywhere else. sonible help-center probe resolved negative (working oracle = per-product page "latest version" HTML line); Eventide Wayback probe resolved negative (no snapshots of the downloads API path).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Flags for next maintenance chips: Valhalla 10-row re-fresh (head-of-queue); sonible/Eventide/Heavyocity resolved-negative probes logged with no-retry directives in TIER1-ASSAULT.md.
+- Push mechanics: backup `backups/2026-09-18/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.

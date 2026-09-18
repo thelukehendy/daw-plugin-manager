@@ -40,5 +40,12 @@
   "amber": 197,
   "yellow": 1525,
   "note": "Daily push 06:00 (+152 green, +49 amber, -19 yellow; TIER1_COMPLETE, maintenance cadence)"
+ },
+ {
+  "date": "2026-09-18",
+  "green": 3959,
+  "amber": 348,
+  "yellow": 1344,
+  "note": "Daily push 06:00 (+94 green, +151 amber, -181 yellow; most band movement from 09-17 midday push's +332 tier-1 promotions; since midday: toxic-iii 1.41 @60->@90, H910 3.12.4->2.5.11 integrity correction)"
  }
 ]

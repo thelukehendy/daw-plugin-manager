@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-17T21:11:12Z",
+  "updatedAt": "2026-09-18T13:01:38Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -74266,13 +74266,13 @@
       "updatePortalUrl": "https://www.eventideaudio.com/account/",
       "notes": "KVR product https://www.kvraudio.com/product/h910-harmonizer-by-eventide",
       "appleSilicon": "native",
-      "latestVersion": "3.12.4",
+      "latestVersion": "2.5.11",
       "versionSourceUrl": "https://www.eventideaudio.com/downloads/?product=H910%20Harmonizer%C2%AE",
-      "versionVerifiedAt": "2026-09-10T08:14:48Z",
+      "versionVerifiedAt": "2026-09-18T05:29:56Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "Eventide official downloads page"
+        "CORRECTION: prior 3.12.4@92 (2026-09-10) was a misattribution - bare installer string from the shared 3.12.x installer-row family (H949/Omnipressor are genuinely 3.12.4; H910 is on the 2.5.x line). First-hand re-fetch of the H910 Harmonizer product's own downloads page 2026-09-17: Release Notes top at 2.5.11 with full 2.x trail, no 3.x anywhere."
       ]
     },
     {
@@ -175187,12 +175187,12 @@
       "notes": "KVR product https://www.kvraudio.com/product/toxic-iii-by-image-line",
       "appleSilicon": "native",
       "latestVersion": "1.41",
-      "versionSourceUrl": "https://www.kvraudio.com/product/toxic-iii-by-image-line",
-      "versionVerifiedAt": "2026-09-10T10:26:24Z",
+      "versionSourceUrl": "https://www.image-line.com/fl-studio-news/toxiciii-updated-to-v1-41/",
+      "versionVerifiedAt": "2026-09-18T05:27:31Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
+      "versionConfidence": 90,
       "versionConfidenceReasons": [
-        "KVR product page Product Version (crowdsourced; yellow band)"
+        "Manufacturer-direct: official IL news article 'ToxicIII updated to v1.41' confirms exact product identity (Toxic III, not Toxic Biohazard); matches prior KVR 1.41"
       ]
     },
     {
