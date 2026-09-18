@@ -32,6 +32,8 @@ const {
 const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('./lib/knownSourcesJs')
 
 const DRY_RUN = process.env.ANTIGRAVITY_DRY_RUN === '1'
+/** Archive/dev only — never write latestVersion / portals into published catalog.json. */
+const ALLOW_CATALOG_WRITE = process.env.ALLOW_LEGACY_CATALOG_WRITE === '1'
 const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
 // Free-tier Antigravity TPM is ~100K. Our 10-plugin POC used ~218K tokens in one call.
 // Keep cold batches tiny so a single remote agent run stays under the TPM ceiling.
@@ -216,14 +218,17 @@ function extractJsonArray(text) {
 }
 
 function markVerified(plugin, version, sourceUrl) {
-  plugin.latestVersion = normalizeVersion(version)
+  // Findings / evidence only. Never stamp updatePortalUrl — a source URL is not a
+  // download portal. latestVersion must come from the research-engine export.
   plugin.versionEvidence = 'agent-verified'
   plugin.versionSourceUrl = sourceUrl
   plugin.versionVerifiedAt = new Date().toISOString().slice(0, 10)
-  plugin.updatePortalUrl = plugin.updatePortalUrl || sourceUrl
-  const stamp = `verifiedPublic:${plugin.latestVersion}@${sourceUrl}`
+  const proposed = normalizeVersion(version)
+  const stamp = `verifiedPublic:${proposed}@${sourceUrl}`
   const notes = (plugin.notes || '').replace(/\s*verifiedPublic:\S+/g, '').trim()
   plugin.notes = notes ? `${notes} ${stamp}` : stamp
+  // Keep proposed version on the in-memory object only for the separate export file.
+  plugin._proposedLatestVersion = proposed
 }
 
 function mergeExport(existing, findings, meta) {
@@ -453,11 +458,22 @@ async function main() {
     `${JSON.stringify({ lastIndex: nextIndex, updatedAt: new Date().toISOString() }, null, 2)}\n`
   )
 
-  if (!DRY_RUN && hits) {
+  if (ALLOW_CATALOG_WRITE && !DRY_RUN && hits) {
+    console.warn(
+      '[antigravity] ALLOW_LEGACY_CATALOG_WRITE=1 — writing catalog.json (archive only; never for shipping)'
+    )
     catalog.updatedAt = new Date().toISOString()
     catalog.catalogSource = 'antigravity-scrub'
     writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
     if (promotions.length) {
+      mergeDiscoveredSources(known, promotions)
+      saveKnownSources(known)
+    }
+  } else if (hits) {
+    console.log(
+      '[antigravity] Skipping catalog.json write (findings → export). Set ALLOW_LEGACY_CATALOG_WRITE=1 only for archive.'
+    )
+    if (promotions.length && !DRY_RUN) {
       mergeDiscoveredSources(known, promotions)
       saveKnownSources(known)
     }

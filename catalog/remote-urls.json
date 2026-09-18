@@ -1,7 +1,7 @@
 {
-  "comment": "Public catalog endpoints for shipped builds. Synced to GitHub owner/repo.",
+  "comment": "Public catalog endpoints for shipped builds. raw.githubusercontent tracks main within minutes; jsdelivr is CDN fallback (can lag).",
   "urls": [
-    "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json",
-    "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json"
+    "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json",
+    "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json"
   ]
 }

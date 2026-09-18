@@ -14,12 +14,29 @@ if (!Array.isArray(catalog.plugins) || catalog.plugins.length === 0) {
 }
 
 const mfgIds = new Set(catalog.manufacturers.map((m) => m.id))
+let withVersion = 0
+let withoutVersion = 0
+let badConfidence = 0
+
 for (const plugin of catalog.plugins) {
   if (!mfgIds.has(plugin.manufacturerId)) {
     throw new Error(`Plugin ${plugin.id} references missing manufacturer ${plugin.manufacturerId}`)
   }
-  if (!plugin.latestVersion) throw new Error(`Plugin ${plugin.id} missing latestVersion`)
-  if (!plugin.matchPatterns?.length) throw new Error(`Plugin ${plugin.id} missing matchPatterns`)
+  // latestVersion is optional — absence means unknown (never invent in the app).
+  if (plugin.latestVersion) {
+    withVersion++
+    if (typeof plugin.versionConfidence === 'number') {
+      if (plugin.versionConfidence < 0 || plugin.versionConfidence > 100) {
+        badConfidence++
+        throw new Error(`Plugin ${plugin.id} versionConfidence out of range`)
+      }
+    }
+  } else {
+    withoutVersion++
+  }
+  if (!plugin.matchPatterns?.length) {
+    throw new Error(`Plugin ${plugin.id} missing matchPatterns`)
+  }
 }
 
 for (const m of catalog.manufacturers) {
@@ -29,5 +46,7 @@ for (const m of catalog.manufacturers) {
 }
 
 console.log(
-  `Catalog OK: ${catalog.manufacturers.length} manufacturers, ${catalog.plugins.length} plugins (updated ${catalog.updatedAt})`
+  `Catalog OK: ${catalog.manufacturers.length} manufacturers, ${catalog.plugins.length} plugins ` +
+    `(${withVersion} with version, ${withoutVersion} unknown/absent, badConfidence=${badConfidence}) ` +
+    `updated ${catalog.updatedAt}`
 )

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Rewrite catalog/remote-urls.json from the current git remote (origin).
+# raw.githubusercontent first (tracks main quickly); jsDelivr is CDN fallback.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
@@ -19,10 +20,10 @@ fi
 
 cat > catalog/remote-urls.json <<EOF
 {
-  "comment": "Generated from git remote origin. Public catalog endpoints for shipped builds.",
+  "comment": "Generated from git remote origin. raw GitHub first (fresh); jsDelivr fallback.",
   "urls": [
-    "https://cdn.jsdelivr.net/gh/${owner_repo}@main/catalog/catalog.json",
-    "https://raw.githubusercontent.com/${owner_repo}/main/catalog/catalog.json"
+    "https://raw.githubusercontent.com/${owner_repo}/main/catalog/catalog.json",
+    "https://cdn.jsdelivr.net/gh/${owner_repo}@main/catalog/catalog.json"
   ]
 }
 EOF

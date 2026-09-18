@@ -1,5 +1,6 @@
 import type {
   CatalogPlugin,
+  ConfidenceBand,
   PluginCatalog,
   UpdateStatus,
   VersionEvidence,
@@ -7,37 +8,25 @@ import type {
 
 export interface ConfidenceResult {
   confidence: number
-  confidenceBand: 'high' | 'medium' | 'low'
+  confidenceBand: ConfidenceBand
   confidenceReason: string
+  confidenceReasons: string[]
 }
 
-/**
- * Green OK / Current when ≥ HIGH.
- * High confidence requires hard page-confirm (Flash Lite / sticky / Antigravity).
- * Deterministic scrapers stay medium/low until page-confirmed.
- */
-const HIGH = 85
-const MEDIUM = 72
+/** Green ≥85, amber 70–84, yellow &lt;70 — matches catalog handoff. */
+export const HIGH = 85
+export const MEDIUM = 70
 
 function clamp(n: number): number {
   return Math.max(0, Math.min(100, Math.round(n)))
 }
 
-function band(confidence: number): ConfidenceResult['confidenceBand'] {
+export function bandFromScore(confidence: number): ConfidenceBand {
   if (confidence >= HIGH) return 'high'
   if (confidence >= MEDIUM) return 'medium'
   return 'low'
 }
 
-function daysSince(isoDate: string | undefined, catalogUpdatedAt?: string): number | null {
-  const raw = isoDate || catalogUpdatedAt?.slice(0, 10)
-  if (!raw) return null
-  const t = Date.parse(raw.length === 10 ? `${raw}T00:00:00Z` : raw)
-  if (Number.isNaN(t)) return null
-  return Math.max(0, (Date.now() - t) / (1000 * 60 * 60 * 24))
-}
-
-/** Infer evidence from structured fields or legacy notes stamp. */
 export function resolveEvidence(plugin: CatalogPlugin | null | undefined): {
   evidence: VersionEvidence
   sourceUrl?: string
@@ -64,17 +53,9 @@ export function resolveEvidence(plugin: CatalogPlugin | null | undefined): {
   return { evidence: 'unverified-seed' }
 }
 
-function isPageConfirmed(evidence: VersionEvidence): boolean {
-  return evidence === 'page-confirmed' || evidence === 'agent-verified'
-}
-
 /**
- * Confidence that the **status on this machine** is correct.
- *
- * Authority model:
- * - page-confirmed / agent-verified → can reach high / 100
- * - live-scrape (deterministic scrapers) → provisional, capped below HIGH until page-confirm
- * - public-page / search / seed → medium or low
+ * Prefer Policy-A `versionConfidence` from the catalog export.
+ * Fall back to evidence-based scoring only when the catalog score is absent.
  */
 export function computeVersionConfidence(opts: {
   status: UpdateStatus
@@ -83,15 +64,47 @@ export function computeVersionConfidence(opts: {
   matchScore?: number
   catalogMatched: boolean
   hasInstalledVersion: boolean
+  /** When browsing catalog with a version but no install compare */
+  catalogVersionOnly?: boolean
 }): ConfidenceResult {
-  const { status, plugin, catalog, matchScore, catalogMatched, hasInstalledVersion } = opts
-  const reasons: string[] = []
+  const {
+    status,
+    plugin,
+    catalogMatched,
+    hasInstalledVersion,
+    matchScore,
+    catalogVersionOnly,
+  } = opts
 
   if (status === 'bundled') {
     return {
       confidence: 100,
       confidenceBand: 'high',
       confidenceReason: 'Bundled with macOS / DAW — version owned by the host vendor',
+      confidenceReasons: ['Bundled with macOS / DAW'],
+    }
+  }
+
+  if (status === 'content') {
+    return {
+      confidence: 100,
+      confidenceBand: 'high',
+      confidenceReason: 'Content / non-plugin identity — not version-tracked by design',
+      confidenceReasons: ['Not a version-tracked plugin (identityKind)'],
+    }
+  }
+
+  if (status === 'discontinued') {
+    const reasons = plugin?.versionConfidenceReasons?.length
+      ? [...plugin.versionConfidenceReasons]
+      : ['Discontinued product — last known version if shown']
+    const score =
+      typeof plugin?.versionConfidence === 'number' ? clamp(plugin.versionConfidence) : 80
+    return {
+      confidence: score,
+      confidenceBand: bandFromScore(score),
+      confidenceReason: reasons.join(' · '),
+      confidenceReasons: reasons,
     }
   }
 
@@ -99,114 +112,88 @@ export function computeVersionConfidence(opts: {
     return {
       confidence: 55,
       confidenceBand: 'low',
-      confidenceReason: 'No catalog match — status cannot be compared to a public latest',
+      confidenceReason: 'No catalog match — cannot compare to a published latest',
+      confidenceReasons: ['No catalog match'],
     }
   }
 
-  if (status === 'unknown') {
+  // Catalog Policy-A score is authoritative when present.
+  if (typeof plugin.versionConfidence === 'number') {
+    const reasons = [
+      ...(plugin.versionConfidenceReasons || []),
+    ]
+    if (!reasons.length) {
+      reasons.push(`Catalog confidence ${plugin.versionConfidence}`)
+    }
+    if (status === 'unknown' && !plugin.latestVersion) {
+      reasons.unshift('No accepted latestVersion in catalog')
+    } else if (status === 'unknown' && !hasInstalledVersion && !catalogVersionOnly) {
+      reasons.unshift('Installed version could not be read')
+    } else if (status === 'update_available' || status === 'update_likely') {
+      reasons.push('Installed build is behind catalog latest')
+    } else if (status === 'current') {
+      reasons.push('Installed meets or exceeds catalog latest')
+    } else if (status === 'unverified') {
+      reasons.push('Low-confidence catalog version — verify via source or vendor hub')
+    } else if (status === 'use_vendor_hub') {
+      reasons.push('Updates are managed through the vendor hub app')
+    } else if (status === 'paid_upgrade') {
+      reasons.push('A paid next-generation product exists (not a free update)')
+    }
+
+    if (typeof matchScore === 'number' && matchScore < 70) {
+      reasons.push('Weak name match to catalog')
+    }
+
+    const confidence = clamp(plugin.versionConfidence)
     return {
-      confidence: 58,
-      confidenceBand: 'low',
-      confidenceReason: 'Incomplete data (missing installed or catalog version)',
+      confidence,
+      confidenceBand: bandFromScore(confidence),
+      confidenceReason: reasons.join(' · '),
+      confidenceReasons: reasons,
     }
   }
 
-  const { evidence, sourceUrl, verifiedAt } = resolveEvidence(plugin)
-
-  // Base: successful compare, but provenance decides the ceiling.
-  let score = 78
-  reasons.push('Installed version compared to catalog latest')
-
-  if (!hasInstalledVersion) {
-    score -= 18
-    reasons.push('Could not read installed version from plugin bundle')
+  // Fallback for older seed rows without versionConfidence
+  if (status === 'unknown' && !plugin.latestVersion) {
+    return {
+      confidence: 50,
+      confidenceBand: 'low',
+      confidenceReason: 'No accepted latestVersion in catalog',
+      confidenceReasons: ['No accepted latestVersion'],
+    }
   }
 
-  if (evidence === 'page-confirmed') {
+  const { evidence, sourceUrl } = resolveEvidence(plugin)
+  const reasons: string[] = []
+  let score = 62
+
+  if (evidence === 'page-confirmed' || evidence === 'agent-verified') {
     score = 92
-    reasons.push('Catalog latest page-confirmed on a live public page (Flash/sticky)')
-  } else if (evidence === 'agent-verified') {
-    score = 92
-    reasons.push('Catalog latest confirmed by Antigravity on a live public page')
-  } else if (evidence === 'live-scrape') {
-    score = 70
-    reasons.push('Catalog latest from deterministic scrape — awaiting page confirmation')
-  } else if (evidence === 'public-page') {
-    score = 76
-    reasons.push('Catalog latest from sticky public page re-verify — awaiting hard page-confirm')
-  } else if (evidence === 'search-verified') {
-    score = 68
-    reasons.push('Catalog latest from search discovery — awaiting page confirmation')
+    reasons.push('Catalog latest page-confirmed')
   } else if (evidence === 'manufacturer-feed') {
     score = 74
-    reasons.push('Catalog latest from manufacturer feed — awaiting page confirmation')
-  } else if (evidence === 'curated-seed') {
-    score = 66
-    reasons.push('Catalog latest from curated seed')
+    reasons.push('Manufacturer feed (no Policy-A confidence field)')
+  } else if (evidence === 'live-scrape' || evidence === 'public-page') {
+    score = 70
+    reasons.push('Provisional scrape / public page')
   } else {
-    score = 62
-    reasons.push('Catalog latest from unverified seed')
+    score = 60
+    reasons.push('Unverified seed — prefer portal')
   }
 
-  const age = daysSince(verifiedAt, catalog.updatedAt)
-  if (age != null && evidence !== 'unverified-seed' && evidence !== 'curated-seed') {
-    if (age > 90) {
-      score -= 6
-      reasons.push(`Public verification ${Math.round(age)}d old`)
-    } else if (age > 30) {
-      score -= 2
-    }
+  if (!hasInstalledVersion && !catalogVersionOnly) {
+    score = Math.min(score, 58)
+    reasons.push('Could not read installed version')
   }
-
-  if (evidence !== 'unverified-seed' && evidence !== 'curated-seed' && !sourceUrl) {
-    score -= 4
-    reasons.push('Missing public source URL')
-  }
-
-  if (typeof matchScore === 'number') {
-    if (matchScore < 70) {
-      score -= 10
-      reasons.push('Weak name match to catalog')
-    } else if (matchScore < 90) {
-      score -= 3
-      reasons.push('Partial name match to catalog')
-    }
-  }
-
-  if (status === 'outdated') {
-    reasons.push(
-      isPageConfirmed(evidence)
-        ? 'Page-confirmed latest is newer than installed'
-        : 'Installed build is behind catalog latest'
-    )
-  } else if (status === 'current') {
-    reasons.push('Installed meets or exceeds catalog latest')
-  }
-
-  // Hard page-confirm (Flash/sticky/Antigravity) may reach full confidence.
-  const pageConfirmed =
-    isPageConfirmed(evidence) &&
-    !!sourceUrl &&
-    hasInstalledVersion &&
-    (typeof matchScore !== 'number' || matchScore >= 70)
-
-  if (pageConfirmed) {
-    score = 100
-    reasons.push('Public-page confirmation — full confidence')
-  } else if (
-    evidence === 'live-scrape' ||
-    evidence === 'search-verified' ||
-    evidence === 'public-page'
-  ) {
-    // Hard cap: scrapers / legacy sticky cannot show green-high until page-confirmed.
-    score = Math.min(score, HIGH - 1)
-  }
+  if (!sourceUrl) reasons.push('Missing public source URL')
 
   const confidence = clamp(score)
   return {
     confidence,
-    confidenceBand: band(confidence),
+    confidenceBand: bandFromScore(confidence),
     confidenceReason: reasons.join(' · '),
+    confidenceReasons: reasons,
   }
 }
 
@@ -214,14 +201,20 @@ export function aggregateManufacturerConfidence(
   products: Array<{ confidence: number }>
 ): ConfidenceResult {
   if (!products.length) {
-    return { confidence: 0, confidenceBand: 'low', confidenceReason: 'No products' }
+    return {
+      confidence: 0,
+      confidenceBand: 'low',
+      confidenceReason: 'No products',
+      confidenceReasons: ['No products'],
+    }
   }
   const sorted = [...products.map((p) => p.confidence)].sort((a, b) => a - b)
   const p10 = sorted[Math.floor((sorted.length - 1) * 0.1)]
   const confidence = clamp(p10)
   return {
     confidence,
-    confidenceBand: band(confidence),
+    confidenceBand: bandFromScore(confidence),
     confidenceReason: 'Lower-bound confidence across products in this manufacturer group',
+    confidenceReasons: ['Lower-bound across manufacturer group'],
   }
 }

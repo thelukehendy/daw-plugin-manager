@@ -1,18 +1,22 @@
 import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import { join } from 'path'
 import { runFullScan } from './scanService'
+import { loadLastLibrary } from './lastLibrary'
+import { refreshCatalog } from './catalog/catalogService'
+import { publicCatalogOrigin } from './catalog/publicFacing'
 import type { ScanProgress } from '../shared/types'
 
 let mainWindow: BrowserWindow | null = null
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
-    width: 1180,
-    height: 860,
+    width: 1280,
+    height: 880,
     minWidth: 900,
     minHeight: 640,
     title: 'DAW Plugin Manager',
-    backgroundColor: '#14181f',
+    backgroundColor: '#0e1418',
+    show: false,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       contextIsolation: true,
@@ -26,12 +30,15 @@ function createWindow(): void {
   } else {
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   }
+
+  mainWindow.once('ready-to-show', () => {
+    mainWindow?.show()
+    mainWindow?.focus()
+  })
 }
 
 app.whenReady().then(() => {
-  // Safety: this app is discovery-only. Never grant write FS APIs to renderer.
   createWindow()
-
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
@@ -41,6 +48,18 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
 
+ipcMain.handle('library:loadLast', async () => loadLastLibrary())
+
+ipcMain.handle('catalog:refresh', async () => {
+  const catalog = await refreshCatalog({ appPath: app.getAppPath() })
+  return {
+    updatedAt: catalog.updatedAt,
+    source: publicCatalogOrigin(catalog.catalogSource),
+    pluginCount: catalog.plugins.length,
+    manufacturerCount: catalog.manufacturers.length,
+  }
+})
+
 ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[] }) => {
   const sendProgress = (progress: ScanProgress) => {
     if (!event.sender.isDestroyed()) {
@@ -48,13 +67,14 @@ ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[]
     }
   }
 
+  // Indexed catalog match + setImmediate yields keep the renderer painting
+  // progressive DAW/vendor updates via scan:progress.
   return runFullScan(sendProgress, {
     extraPluginRoots: options?.extraPluginRoots,
     appPath: app.getAppPath(),
   })
 })
 
-/** Open manufacturer portal / download page in the user's default browser. */
 ipcMain.handle('shell:openExternal', async (_event, url: string) => {
   if (!url || typeof url !== 'string') return { ok: false, error: 'Invalid URL' }
   try {
@@ -65,7 +85,7 @@ ipcMain.handle('shell:openExternal', async (_event, url: string) => {
     await shell.openExternal(parsed.toString())
     return { ok: true }
   } catch (err) {
-    return { ok: false, error: String(err) }
+    return { ok: false, error: 'Could not open that link.' }
   }
 })
 
@@ -73,5 +93,6 @@ ipcMain.handle('app:getInfo', async () => ({
   version: app.getVersion(),
   name: app.getName(),
   discoveryOnly: true,
-  policy: 'This utility never deletes, overwrites, or installs software. Updates are opened in your browser for you to install.',
+  policy:
+    'This utility never deletes, overwrites, or installs software. Updates are opened in your browser for you to install.',
 }))
