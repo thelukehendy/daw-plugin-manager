@@ -84,6 +84,7 @@ app with a comment, not as edits to catalog files.
 |---|---|
 | `catalog/catalog.json` | **App source of truth** (synced export) |
 | `catalog-store/DATA-DICTIONARY.md` | Field contract for the app |
+| `catalog-store/DATABASE-ORGANIZATION.md` | How the SQLite DB is organized: tables, relationships, version pipeline (read-only — never write the DB) |
 | `catalog-store/CONFIDENCE.md` | Confidence rubric + bands |
 | `catalog-store/TIER1-ASSAULT.md` | Per-manufacturer research playbooks (how each vendor's versions are found) |
 | `catalog/HUB_WALLED.md` | Which vendors are account-gated and why |

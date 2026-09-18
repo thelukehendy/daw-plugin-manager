@@ -1,8 +1,8 @@
 # DATA DICTIONARY — app-facing catalog fields (for Cursor / Electron)
 
-Source of truth: `catalog-store/data/catalog.db` (schema v5).
+Source of truth: `catalog-store/data/catalog.db` (schema v6).
 App-facing file: `catalog/catalog.json` (synced copy of `catalog-store/out/catalog.json`).
-PluginCatalog schema v3 + v5 additions below. Fields are omitted when unset —
+PluginCatalog schema v3 + v5/v6 additions below. Fields are omitted when unset —
 absence means "not researched", never "false".
 
 ## Manufacturer entry
