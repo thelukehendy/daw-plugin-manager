@@ -11,6 +11,7 @@ import type {
 import { scanDaws } from './scanner/dawScanner'
 import { scanPlugins } from './scanner/pluginScanner'
 import { buildManufacturerGroups, buildReportRows, loadCatalog } from './catalog/catalogService'
+import { publicCatalogOrigin, scrubReportForRenderer } from './catalog/publicFacing'
 import { saveLastLibrary } from './lastLibrary'
 
 const execFileAsync = promisify(execFile)
@@ -141,7 +142,7 @@ export async function runFullScan(
     ).length,
   }
 
-  const report: ScanReport = {
+  const report: ScanReport = scrubReportForRenderer({
     system,
     daws,
     plugins,
@@ -149,12 +150,12 @@ export async function runFullScan(
     manufacturers,
     catalog: {
       updatedAt: catalog.updatedAt,
-      source: catalog.catalogSource || 'unknown',
+      source: publicCatalogOrigin(catalog.catalogSource),
       pluginCount: catalog.plugins.length,
       manufacturerCount: catalog.manufacturers.length,
     },
     summary,
-  }
+  })
 
   await saveLastLibrary(report)
   emit('done', 'Scan complete', 100, {

@@ -3,6 +3,7 @@ import { existsSync } from 'fs'
 import { join } from 'path'
 import { app } from 'electron'
 import type { ScanReport } from '../shared/types'
+import { scrubReportForRenderer } from './catalog/publicFacing'
 
 const SNAPSHOT_VERSION = 1
 
@@ -23,11 +24,11 @@ export async function loadLastLibrary(): Promise<ScanReport | null> {
   try {
     const raw = JSON.parse(await readFile(path, 'utf8')) as LibrarySnapshot | ScanReport
     if ('report' in raw && raw.report?.manufacturers && raw.report?.daws) {
-      return raw.report
+      return scrubReportForRenderer(raw.report)
     }
     // Legacy: bare ScanReport
     if ('manufacturers' in raw && 'daws' in raw) {
-      return raw as ScanReport
+      return scrubReportForRenderer(raw as ScanReport)
     }
     return null
   } catch {
@@ -42,7 +43,7 @@ export async function saveLastLibrary(report: ScanReport): Promise<void> {
     const snap: LibrarySnapshot = {
       version: SNAPSHOT_VERSION,
       savedAt: new Date().toISOString(),
-      report,
+      report: scrubReportForRenderer(report),
     }
     await writeFile(path, JSON.stringify(snap), 'utf8')
   } catch {

@@ -13,7 +13,7 @@ function createWindow(): void {
     minWidth: 900,
     minHeight: 640,
     title: 'DAW Plugin Manager',
-    backgroundColor: '#e8eef0',
+    backgroundColor: '#0e1418',
     show: false,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -73,7 +73,7 @@ ipcMain.handle('shell:openExternal', async (_event, url: string) => {
     await shell.openExternal(parsed.toString())
     return { ok: true }
   } catch (err) {
-    return { ok: false, error: String(err) }
+    return { ok: false, error: 'Could not open that link.' }
   }
 })
 

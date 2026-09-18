@@ -18,7 +18,6 @@ export function ConfidenceBadge({
   identityKind,
   status,
   reasons,
-  sourceUrl,
   /** Detail pane: keep numeric score as secondary text. */
   showScoreSecondary,
   compact,
@@ -29,7 +28,6 @@ export function ConfidenceBadge({
   identityKind?: IdentityKind
   status?: UpdateStatus
   reasons?: string[]
-  sourceUrl?: string | null
   showScoreSecondary?: boolean
   compact?: boolean
 }) {
@@ -47,7 +45,6 @@ export function ConfidenceBadge({
     confidence,
     band,
     reasons,
-    sourceUrl,
   })
 
   return (
@@ -77,7 +74,6 @@ export function confidencePropsFromRow(row: PluginReportRow) {
       : row.confidenceReason
         ? [row.confidenceReason]
         : [],
-    sourceUrl: row.versionSourceUrl,
   }
 }
 

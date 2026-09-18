@@ -11,8 +11,22 @@ import { PluginList } from './components/PluginList'
 import { DetailPanel } from './components/DetailPanel'
 import { DawStrip } from './components/DawStrip'
 import { type TriageFilter, partitionByTriage } from './lib/triage'
+import { scrubVisibleText } from './lib/labels'
 
 type Mode = 'welcome' | 'library'
+type Theme = 'dark' | 'light'
+
+const THEME_KEY = 'daw-pm-theme'
+
+function readStoredTheme(): Theme {
+  try {
+    const v = localStorage.getItem(THEME_KEY)
+    if (v === 'light' || v === 'dark') return v
+  } catch {
+    /* ignore */
+  }
+  return 'dark'
+}
 
 function filterGroups(
   groups: ManufacturerReportGroup[],
@@ -53,6 +67,7 @@ function toggleTriage(current: TriageFilter, next: TriageFilter): TriageFilter {
 
 export default function App() {
   const [mode, setMode] = useState<Mode>('welcome')
+  const [theme, setTheme] = useState<Theme>(() => readStoredTheme())
   const [report, setReport] = useState<ScanReport | null>(null)
   const [scanning, setScanning] = useState(false)
   const [progress, setProgress] = useState<ScanProgress | null>(null)
@@ -66,6 +81,15 @@ export default function App() {
   const [extraRoots, setExtraRoots] = useState('')
   const [showSettings, setShowSettings] = useState(false)
   const [fromSnapshot, setFromSnapshot] = useState(false)
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+    try {
+      localStorage.setItem(THEME_KEY, theme)
+    } catch {
+      /* ignore */
+    }
+  }, [theme])
 
   useEffect(() => {
     const api = window.dawPluginManager
@@ -197,7 +221,8 @@ export default function App() {
       setQuery('')
       setTriageFilter('all')
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err))
+      const raw = err instanceof Error ? err.message : String(err)
+      setError(scrubVisibleText(raw) || 'Scan failed. Try again.')
     } finally {
       setScanning(false)
     }
@@ -226,16 +251,28 @@ export default function App() {
         </button>
 
         <div className="topbar-actions">
-          {catalogMeta && catalogMeta.source !== 'scanning' && catalogMeta.source !== 'pending' && (
-            <span className="catalog-meta mono" title={catalogMeta.source}>
-              Catalog {new Date(catalogMeta.updatedAt).toLocaleDateString()} · match source
-            </span>
-          )}
+          {catalogMeta &&
+            catalogMeta.source !== 'scanning' &&
+            catalogMeta.source !== 'pending' &&
+            catalogMeta.updatedAt &&
+            Number.isFinite(Date.parse(catalogMeta.updatedAt)) && (
+              <span className="catalog-meta mono">
+                Versions {new Date(catalogMeta.updatedAt).toLocaleDateString()}
+              </span>
+            )}
           {fromSnapshot && !scanning && (
             <span className="snapshot-pill" title="Loaded from last scan on disk">
               Last scan
             </span>
           )}
+          <button
+            type="button"
+            className="btn"
+            onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
+            title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {theme === 'dark' ? 'Light' : 'Dark'}
+          </button>
           <button
             type="button"
             className="btn"

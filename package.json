@@ -30,13 +30,18 @@
     },
     "files": [
       "out/**/*",
-      "catalog/**/*",
+      "catalog/catalog.json",
+      "catalog/remote-urls.json",
       "package.json"
     ],
     "extraResources": [
       {
-        "from": "catalog",
-        "to": "catalog"
+        "from": "catalog/catalog.json",
+        "to": "catalog/catalog.json"
+      },
+      {
+        "from": "catalog/remote-urls.json",
+        "to": "catalog/remote-urls.json"
       }
     ],
     "mac": {

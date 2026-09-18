@@ -25,12 +25,19 @@ export const TRIAGE_LABEL: Record<TriageBucket, string> = {
 }
 
 export const TRIAGE_HINT: Record<TriageBucket, string> = {
-  needs_update: 'Installed is behind a catalog latest with usable confidence.',
-  use_hub: 'Check these in the vendor’s hub / account app.',
+  needs_update: 'Installed is behind a trusted newer version.',
+  use_hub: 'Updates go through the vendor’s manager app, not a per-plugin installer.',
   paid: 'Next-generation product — not a free in-place update.',
   uncertain:
-    'Catalog gap or weak confidence. Yellow/unknown is not “update available.”',
+    'No trustworthy latest (or only a weak source) — not the same as “update available.”',
   clear: 'Up to date, bundled, content, or otherwise fine to ignore for now.',
+}
+
+/** Short clause under the section title (hub + unknown get explicit explainers). */
+export const TRIAGE_EXPLAINER: Partial<Record<TriageBucket, string>> = {
+  use_hub: 'Updates go through the vendor’s manager app, not a per-plugin installer.',
+  uncertain:
+    'No trustworthy latest (or only a weak source) — not the same as “update available.”',
 }
 
 const UPDATE_STATUSES: UpdateStatus[] = ['update_available', 'update_likely']

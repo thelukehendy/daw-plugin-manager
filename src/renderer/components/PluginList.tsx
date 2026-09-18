@@ -3,6 +3,7 @@ import type { ManufacturerReportGroup, PluginReportRow } from '../../shared/type
 import { ConfidenceBadge, confidencePropsFromRow } from './ConfidenceBadge'
 import { displayVersion, statusLabel } from '../lib/labels'
 import {
+  TRIAGE_EXPLAINER,
   TRIAGE_HINT,
   TRIAGE_LABEL,
   TRIAGE_ORDER,
@@ -123,12 +124,14 @@ function VendorRow({
             {expanded ? '▾' : '▸'}
           </span>
           <span className="vendor-name">{group.manufacturer}</span>
-          <span className="vendor-signal">{signal.primary}</span>
-          <ConfidenceBadge
-            confidence={signal.minConfidence}
-            band={signal.minBand}
-            compact
-          />
+          <span className="vendor-signal-group">
+            <span className="vendor-signal">{signal.primary}</span>
+            <ConfidenceBadge
+              confidence={signal.minConfidence}
+              band={signal.minBand}
+              compact
+            />
+          </span>
         </button>
         <div className="vendor-cta">
           {ctaLabel ? (
@@ -206,11 +209,19 @@ function TriageSection({
         <span className="exp" aria-hidden>
           {sectionOpen ? '▾' : '▸'}
         </span>
-        <span className="triage-title">{TRIAGE_LABEL[bucket]}</span>
-        <span className="triage-meta mono">
-          {groups.length} vendor{groups.length === 1 ? '' : 's'} · {pluginCount}
+        <span className="triage-title-block">
+          <span className="triage-title-row">
+            <span className="triage-title">{TRIAGE_LABEL[bucket]}</span>
+            <span className="triage-meta mono">
+              {groups.length} vendor{groups.length === 1 ? '' : 's'} · {pluginCount}
+            </span>
+          </span>
+          {TRIAGE_EXPLAINER[bucket] ? (
+            <span className="triage-explainer">{TRIAGE_EXPLAINER[bucket]}</span>
+          ) : (
+            <span className="triage-hint">{TRIAGE_HINT[bucket]}</span>
+          )}
         </span>
-        <span className="triage-hint">{TRIAGE_HINT[bucket]}</span>
       </button>
       {sectionOpen && (
         <div className="triage-vendors">

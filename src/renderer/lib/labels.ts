@@ -17,8 +17,8 @@ export const STATUS_LABEL: Record<UpdateStatus, string> = {
 /** Dense list labels — still readable, not cryptic. */
 export const STATUS_LABEL_COMPACT: Record<UpdateStatus, string> = {
   current: 'OK',
-  update_available: 'Update',
-  update_likely: 'Likely',
+  update_available: 'Update Available',
+  update_likely: 'Update likely',
   unverified: 'Unverified',
   unknown: 'Unknown',
   paid_upgrade: 'Paid',
@@ -88,20 +88,28 @@ export function confidenceLabel(band: ConfidenceBand): string {
   return 'Unknown'
 }
 
+/** Drop URLs / file paths from user-visible reason text. */
+export function scrubVisibleText(text: string): string {
+  return text
+    .replace(/https?:\/\/\S+/gi, '')
+    .replace(/\b(?:source|from|synced from)\s*:\s*\S+/gi, '')
+    .replace(/\b(?:file|path)\s*:\s*\S+/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
+
 export function confidenceTooltip(opts: {
   word: ConfidenceDisplayWord
   confidence: number
   band: ConfidenceBand
   reasons?: string[]
-  sourceUrl?: string | null
 }): string {
   const bandLabel =
     opts.band === 'high' ? '≥85 verified' : opts.band === 'medium' ? '70–84 likely' : '<70 weak'
   const lines = [
     `${opts.word} · ${opts.confidence}% · ${bandLabel}`,
-    ...(opts.reasons?.filter(Boolean) ?? []),
+    ...(opts.reasons?.map(scrubVisibleText).filter(Boolean) ?? []),
   ]
-  if (opts.sourceUrl) lines.push(opts.sourceUrl)
   return lines.join('\n')
 }
 

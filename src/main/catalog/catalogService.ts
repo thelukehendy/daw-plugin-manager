@@ -214,9 +214,7 @@ function evaluateCompatibility(
       }
       if (!matches) continue
 
-      const note = issue.sourceUrl
-        ? `${issue.note} (source: ${issue.sourceUrl})`
-        : issue.note
+      const note = issue.note
 
       flags.push({
         severity: issue.severity,

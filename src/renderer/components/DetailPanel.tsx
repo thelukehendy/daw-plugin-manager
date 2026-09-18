@@ -161,11 +161,6 @@ export function DetailPanel({
         ))}
 
       <div className="detail-actions">
-        {row.versionSourceUrl && (
-          <button type="button" className="btn" onClick={() => onOpenUrl(row.versionSourceUrl)}>
-            Verify source
-          </button>
-        )}
         <button
           type="button"
           className="btn btn-primary"
