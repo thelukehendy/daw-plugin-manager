@@ -159,4 +159,33 @@ const newer = parsePluginCatalog({
 })
 assert.strictEqual(preferNewerCatalog(older, newer).updatedAt, newer.updatedAt)
 
+// —— remote-urls order + portal contract ——
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+const remoteUrls = JSON.parse(
+  readFileSync(join(process.cwd(), 'catalog/remote-urls.json'), 'utf8')
+) as { urls: string[] }
+assert.ok(remoteUrls.urls[0].includes('raw.githubusercontent.com'), 'raw GitHub must be first')
+assert.ok(remoteUrls.urls.some((u) => u.includes('jsdelivr.net')), 'jsdelivr fallback present')
+
+const KNOWN_DEAD = ['slatedigital.com/activate/']
+const shipped = JSON.parse(
+  readFileSync(join(process.cwd(), 'catalog/catalog.json'), 'utf8')
+) as {
+  manufacturers: Array<{ id: string; updatePortalUrl?: string }>
+  plugins: Array<{ id: string; updatePortalUrl?: string }>
+}
+
+function assertPortal(url: string | undefined, id: string) {
+  if (url == null || url === '') return
+  assert.ok(/^https?:\/\//i.test(url), `portal must be http(s): ${id} → ${url}`)
+  for (const dead of KNOWN_DEAD) {
+    assert.ok(!url.toLowerCase().includes(dead), `known-dead portal: ${id} → ${url}`)
+  }
+}
+
+for (const m of shipped.manufacturers) assertPortal(m.updatePortalUrl, `mfg:${m.id}`)
+for (const p of shipped.plugins) assertPortal(p.updatePortalUrl, `plugin:${p.id}`)
+
 console.log('test-catalog-contracts: ok')

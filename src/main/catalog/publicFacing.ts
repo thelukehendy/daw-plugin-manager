@@ -8,12 +8,26 @@ import type { PluginReportRow, ScanReport } from '../../shared/types'
 const ORIGIN_LEAK =
   /https?:\/\/\S+|raw\.githubusercontent|jsdelivr\.net|github\.com\/[^\s)]+|catalog-store|muse\s*db|\/Users\/\S+|file:\/\/\S+|synced from\s+\S+|remote:\S+|bundled:\S+/gi
 
-/** Opaque origin label for ScanReport.catalog.source (never a URL or path). */
+/** Opaque origin for ScanReport.catalog.source — Online / Shipped / catalog. Never URLs. */
 export function publicCatalogOrigin(raw: string | null | undefined): string {
   if (!raw) return 'catalog'
   const s = raw.toLowerCase()
   if (s === 'scanning' || s === 'pending') return raw
+  if (s === 'online' || s.startsWith('remote:')) return 'online'
+  if (s === 'shipped' || s.startsWith('bundled:')) return 'shipped'
   return 'catalog'
+}
+
+/** Main-only diagnostic log (may include paths/URLs — never send to renderer). */
+export function logCatalogLoad(catalog: {
+  catalogSource?: string
+  updatedAt?: string
+  plugins?: unknown[]
+}): void {
+  const src = catalog.catalogSource || 'unknown'
+  const at = catalog.updatedAt || 'unknown'
+  const n = Array.isArray(catalog.plugins) ? catalog.plugins.length : 0
+  console.log(`[catalog] source=${src} updatedAt=${at} plugins=${n}`)
 }
 
 export function scrubUserFacingError(message: string): string {

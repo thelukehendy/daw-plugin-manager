@@ -2,6 +2,8 @@ import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import { join } from 'path'
 import { runFullScan } from './scanService'
 import { loadLastLibrary } from './lastLibrary'
+import { refreshCatalog } from './catalog/catalogService'
+import { publicCatalogOrigin } from './catalog/publicFacing'
 import type { ScanProgress } from '../shared/types'
 
 let mainWindow: BrowserWindow | null = null
@@ -47,6 +49,16 @@ app.on('window-all-closed', () => {
 })
 
 ipcMain.handle('library:loadLast', async () => loadLastLibrary())
+
+ipcMain.handle('catalog:refresh', async () => {
+  const catalog = await refreshCatalog({ appPath: app.getAppPath() })
+  return {
+    updatedAt: catalog.updatedAt,
+    source: publicCatalogOrigin(catalog.catalogSource),
+    pluginCount: catalog.plugins.length,
+    manufacturerCount: catalog.manufacturers.length,
+  }
+})
 
 ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[] }) => {
   const sendProgress = (progress: ScanProgress) => {

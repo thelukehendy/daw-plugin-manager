@@ -81,6 +81,7 @@ export default function App() {
   const [extraRoots, setExtraRoots] = useState('')
   const [showSettings, setShowSettings] = useState(false)
   const [fromSnapshot, setFromSnapshot] = useState(false)
+  const [refreshingCatalog, setRefreshingCatalog] = useState(false)
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
@@ -202,6 +203,66 @@ export default function App() {
   const visibleCount = groups.reduce((n, g) => n + g.products.length, 0)
   const totalCount = report?.rows.length || 0
 
+  async function handleRefreshCatalog() {
+    const api = window.dawPluginManager
+    if (!api?.refreshCatalog) return
+    setRefreshingCatalog(true)
+    setError(null)
+    try {
+      const meta = await api.refreshCatalog()
+      setReport((prev) => {
+        if (!prev) {
+          return {
+            system: {
+              platform: 'darwin',
+              osVersion: null,
+              arch: 'arm64',
+              homedir: '',
+              scannedAt: new Date().toISOString(),
+            },
+            daws: [],
+            plugins: [],
+            rows: [],
+            manufacturers: [],
+            catalog: {
+              updatedAt: meta.updatedAt,
+              source: meta.source,
+              pluginCount: meta.pluginCount,
+              manufacturerCount: meta.manufacturerCount,
+            },
+            summary: {
+              dawCount: 0,
+              pluginBundleCount: 0,
+              pluginCount: 0,
+              manufacturerCount: 0,
+              current: 0,
+              outdated: 0,
+              unknown: 0,
+              bundled: 0,
+              legacy: 0,
+              compatWarnings: 0,
+            },
+          }
+        }
+        return {
+          ...prev,
+          catalog: {
+            ...prev.catalog,
+            updatedAt: meta.updatedAt,
+            source: meta.source,
+            pluginCount: meta.pluginCount,
+            manufacturerCount: meta.manufacturerCount,
+          },
+        }
+      })
+    } catch (err) {
+      const raw = err instanceof Error ? err.message : String(err)
+      setError(scrubVisibleText(raw) || 'Could not refresh catalog.')
+    } finally {
+      setRefreshingCatalog(false)
+    }
+  }
+
   async function handleScan() {
     const api = window.dawPluginManager
     if (!api) {
@@ -263,6 +324,11 @@ export default function App() {
                   month: 'short',
                   day: 'numeric',
                 })}
+                {catalogMeta.source === 'online'
+                  ? ' · Online'
+                  : catalogMeta.source === 'shipped'
+                    ? ' · Shipped'
+                    : ''}
               </span>
             )}
           {fromSnapshot && !scanning && (
@@ -277,6 +343,15 @@ export default function App() {
             title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {theme === 'dark' ? 'Light' : 'Dark'}
+          </button>
+          <button
+            type="button"
+            className="btn"
+            onClick={handleRefreshCatalog}
+            disabled={refreshingCatalog || scanning}
+            title="Fetch the latest version catalog"
+          >
+            {refreshingCatalog ? 'Refreshing…' : 'Refresh catalog'}
           </button>
           <button
             type="button"

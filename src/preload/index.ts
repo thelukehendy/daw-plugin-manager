@@ -7,6 +7,13 @@ contextBridge.exposeInMainWorld('dawPluginManager', {
 
   loadLastLibrary: (): Promise<ScanReport | null> => ipcRenderer.invoke('library:loadLast'),
 
+  refreshCatalog: (): Promise<{
+    updatedAt: string
+    source: string
+    pluginCount: number
+    manufacturerCount: number
+  }> => ipcRenderer.invoke('catalog:refresh'),
+
   onScanProgress: (callback: (progress: ScanProgress) => void): (() => void) => {
     const listener = (_event: Electron.IpcRendererEvent, progress: ScanProgress) => {
       callback(progress)

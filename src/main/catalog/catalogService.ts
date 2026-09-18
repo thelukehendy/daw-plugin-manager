@@ -45,12 +45,13 @@ import {
   popularitySortKey,
 } from './popularity'
 import { catalogAsOfLabel, parsePluginCatalog, preferNewerCatalog } from './catalogParse'
+import { logCatalogLoad } from './publicFacing'
 
 export { catalogAsOfLabel } from './catalogParse'
 
 const FALLBACK_REMOTE_CATALOG_URLS = [
-  'https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json',
   'https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json',
+  'https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json',
 ]
 
 async function resolveRemoteCatalogUrls(appPath?: string): Promise<string[]> {
@@ -750,7 +751,11 @@ export async function fetchRemoteCatalog(
     try {
       const controller = new AbortController()
       const timer = setTimeout(() => controller.abort(), 8000)
-      const res = await fetch(url, { signal: controller.signal })
+      const res = await fetch(url, {
+        signal: controller.signal,
+        cache: 'no-store',
+        headers: { 'Cache-Control': 'no-cache', Pragma: 'no-cache' },
+      })
       clearTimeout(timer)
       if (!res.ok) continue
       const parsed = (await res.json()) as unknown
@@ -783,12 +788,28 @@ export async function loadCatalog(options?: {
       options?.remoteUrls || (await resolveRemoteCatalogUrls(options?.appPath))
     const remote = await fetchRemoteCatalog(remoteUrls)
     if (remote) {
-      // Prefer newer updatedAt; never invent versions from a stale snapshot.
+      // Prefer newer updatedAt; on equal timestamps prefer remote (don't let bundled shadow).
       base = preferNewerCatalog(bundled, remote)
+    } else {
+      console.warn(
+        `[catalog] remote fetch failed; using bundled source=${bundled.catalogSource || 'bundled'} updatedAt=${bundled.updatedAt}`
+      )
     }
   }
 
-  return applyLocalFloors(base)
+  const out = await applyLocalFloors(base)
+  logCatalogLoad(out)
+  return out
+}
+
+/** Force a remote-preferring refresh (Refresh catalog action). */
+export async function refreshCatalog(options?: {
+  appPath?: string
+}): Promise<PluginCatalog> {
+  return loadCatalog({
+    preferBundled: false,
+    appPath: options?.appPath,
+  })
 }
 
 export { HIGH, MEDIUM, bandFromScore }
