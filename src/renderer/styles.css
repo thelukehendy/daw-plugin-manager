@@ -382,24 +382,27 @@ button, input, select, textarea { font: inherit; color: inherit; }
   background: rgba(255, 255, 255, 0.55);
 }
 
-.list-head {
+/* Sticky header matches collapsed manufacturer columns */
+.list-head,
+.mfg-list-head {
   position: sticky;
   top: 0;
   z-index: 4;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(9rem, 1.1fr) minmax(6.5rem, 0.85fr) minmax(11rem, 1.35fr) minmax(10rem, 1.2fr) minmax(7rem, 0.95fr);
   gap: 8px;
-  padding: 2px 8px;
+  align-items: center;
+  padding: 2px 8px 2px 8px;
   font-size: 9px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--muted);
   background: #dce6e6;
   border-bottom: 1px solid var(--line);
-  height: 16px;
-  align-items: center;
+  min-height: 16px;
 }
+.mfg-list-head .lh-mfg { padding-left: 18px; }
 
 .plugin-list {
   display: flex;
@@ -408,40 +411,147 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 .mfg-block { border-bottom: 1px solid rgba(13, 23, 28, 0.08); }
 
+/* Full-width informative collapsed row — same grid as list-head */
 .mfg-head {
   position: sticky;
   top: 16px;
   z-index: 3;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(9rem, 1.1fr) minmax(6.5rem, 0.85fr) minmax(11rem, 1.35fr) minmax(10rem, 1.2fr) minmax(7rem, 0.95fr);
+  gap: 8px;
   align-items: center;
-  gap: 6px;
   width: 100%;
   margin: 0;
   padding: 2px 8px;
-  min-height: 20px;
+  min-height: 22px;
   border: 0;
   border-bottom: 1px solid var(--line);
   background: #cfdcdd;
   color: var(--ink);
+  box-sizing: border-box;
+}
+.mfg-head:hover,
+.mfg-block:hover > .mfg-head { background: #c3d4d5; }
+.mfg-head.is-open { background: #b9cdce; }
+
+.mfg-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
   text-align: left;
   cursor: pointer;
-  font: inherit;
 }
-.mfg-head:hover { background: #c3d4d5; }
 .mfg-name {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.mfg-meta {
-  color: var(--ink-soft);
+.mfg-count {
+  flex-shrink: 0;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.mfg-primary {
+  min-width: 0;
+  overflow: hidden;
+}
+.mfg-primary-text {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.mfg-primary-text.ok { color: var(--ok); }
+.mfg-primary-text.bad { color: var(--bad); }
+.mfg-primary-text.hub { color: var(--hub); }
+
+.mfg-attn {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  overflow: hidden;
+}
+.mfg-chip {
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.mfg-chip b {
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
+}
+.mfg-chip.ok { color: var(--ok); }
+.mfg-chip.bad { color: var(--bad); }
+.mfg-chip.warn { color: var(--amber); }
+.mfg-chip.yellow { color: var(--yellow); }
+.mfg-chip.hub { color: var(--hub); }
+.mfg-chip.paid { color: var(--paid); }
+.mfg-chip.muted { color: var(--muted); }
+
+.mfg-conf {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 10px;
+  color: var(--ink-soft);
+}
+.mfg-conf-min {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+.mfg-conf-mix {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.mfg-hub {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+}
+.mfg-hub-btn {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px !important;
+}
+.mfg-hub-none {
+  color: var(--muted);
+  font-size: 11px;
+}
+
 .exp {
   color: var(--ink-soft);
   width: 0.85em;
@@ -450,7 +560,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-weight: 700;
 }
 
-/* True single-line row: pack left→right, no margin-left:auto void */
 .product-row {
   display: flex;
   flex-wrap: nowrap;
