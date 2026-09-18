@@ -1,5 +1,5 @@
 import type { ConfidenceBand, IdentityKind, UpdateStatus } from '../../shared/types'
-import { STATUS_LABEL, identityLabel } from '../lib/labels'
+import { STATUS_LABEL_COMPACT, identityLabel } from '../lib/labels'
 
 export type ConfidenceFilter = 'all' | ConfidenceBand
 export type IdentityFilter = 'all' | string
@@ -65,7 +65,7 @@ export function FilterBar({
         className="search"
         value={query}
         onChange={(e) => onQuery(e.target.value)}
-        placeholder="Search plugins, manufacturers, versions…"
+        placeholder="Search…"
         aria-label="Search"
       />
       <select
@@ -73,7 +73,7 @@ export function FilterBar({
         onChange={(e) => onManufacturer(e.target.value)}
         aria-label="Manufacturer"
       >
-        <option value="">All manufacturers</option>
+        <option value="">Manufacturer</option>
         {manufacturers.map((m) => (
           <option key={m} value={m}>
             {m}
@@ -85,10 +85,10 @@ export function FilterBar({
         onChange={(e) => onStatus(e.target.value as StatusFilter)}
         aria-label="Update state"
       >
-        <option value="all">All states</option>
+        <option value="all">State</option>
         {STATUS_OPTIONS.map((s) => (
           <option key={s} value={s}>
-            {STATUS_LABEL[s]}
+            {STATUS_LABEL_COMPACT[s]}
           </option>
         ))}
       </select>
@@ -97,24 +97,24 @@ export function FilterBar({
         onChange={(e) => onConfidence(e.target.value as ConfidenceFilter)}
         aria-label="Confidence band"
       >
-        <option value="all">All confidence</option>
-        <option value="high">Green ≥85</option>
-        <option value="medium">Amber 70–84</option>
-        <option value="low">Yellow &lt;70</option>
+        <option value="all">Conf</option>
+        <option value="high">≥85</option>
+        <option value="medium">70–84</option>
+        <option value="low">&lt;70</option>
       </select>
       <select
         value={identity}
         onChange={(e) => onIdentity(e.target.value)}
         aria-label="Identity kind"
       >
-        <option value="all">All identity kinds</option>
+        <option value="all">Kind</option>
         {IDENTITY_OPTIONS.map((k) => (
           <option key={k} value={k}>
             {identityLabel(k)}
           </option>
         ))}
       </select>
-      <span className="filter-count mono">
+      <span className="filter-count mono" title="Visible / total">
         {visibleCount}/{totalCount}
       </span>
     </div>

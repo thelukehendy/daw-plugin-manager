@@ -14,6 +14,21 @@ export const STATUS_LABEL: Record<UpdateStatus, string> = {
   legacy: 'Legacy',
 }
 
+/** Dense list labels — still readable, not cryptic. */
+export const STATUS_LABEL_COMPACT: Record<UpdateStatus, string> = {
+  current: 'OK',
+  update_available: 'Update',
+  update_likely: 'Likely',
+  unverified: 'Unverified',
+  unknown: 'Unknown',
+  paid_upgrade: 'Paid',
+  use_vendor_hub: 'Hub',
+  content: 'Content',
+  discontinued: 'Gone',
+  bundled: 'Bundled',
+  legacy: 'Legacy',
+}
+
 export const STATUS_HINT: Record<UpdateStatus, string> = {
   current: 'Installed meets or exceeds the catalog latest.',
   update_available: 'A newer verified version is published.',
@@ -61,9 +76,9 @@ export function identityLabel(kind: IdentityKind): string {
   return map[kind] || kind
 }
 
-export function statusLabel(status: UpdateStatus, catalogOnly?: boolean): string {
-  if (catalogOnly && status === 'current') return 'In catalog'
-  return STATUS_LABEL[status]
+export function statusLabel(status: UpdateStatus, catalogOnly?: boolean, compact?: boolean): string {
+  if (catalogOnly && status === 'current') return compact ? 'Catalog' : 'In catalog'
+  return compact ? STATUS_LABEL_COMPACT[status] : STATUS_LABEL[status]
 }
 
 export function formatCheckedAt(iso: string | null | undefined): string | null {

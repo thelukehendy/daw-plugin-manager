@@ -17,7 +17,7 @@ export function ConfidenceBadge({
       title={`${confidence}% — ${confidenceLabel(band)}`}
     >
       <span className="conf-dot" aria-hidden />
-      <span className="conf-score">{confidence}%</span>
+      <span className="conf-score">{compact ? confidence : `${confidence}%`}</span>
       {!compact && <span className="conf-word">{confidenceLabel(band)}</span>}
     </span>
   )

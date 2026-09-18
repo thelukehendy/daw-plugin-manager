@@ -171,7 +171,6 @@ export default function App() {
           }}
         >
           <span className="brand-mark">DAW Plugin Manager</span>
-          <span className="brand-sub">read-only discovery</span>
         </button>
 
         <nav className="mode-nav" aria-label="Mode">
@@ -263,46 +262,46 @@ export default function App() {
             {mode === 'library' && report && (
               <div className="summary-strip">
                 <span>
-                  <b className="ok">{report.summary.current}</b> up to date
+                  <b className="ok">{report.summary.current}</b> OK
                 </span>
                 <span>
-                  <b className="bad">{report.summary.updateAvailable ?? 0}</b> updates
+                  <b className="bad">{report.summary.updateAvailable ?? 0}</b> upd
                 </span>
                 <span>
-                  <b className="warn">{report.summary.unknown}</b> unknown
+                  <b className="warn">{report.summary.unknown}</b> unk
                 </span>
                 <span>
                   <b>{report.summary.useVendorHub ?? 0}</b> hub
                 </span>
                 <span>
-                  <b>{report.summary.paidUpgrade ?? 0}</b> paid upgrade
+                  <b>{report.summary.paidUpgrade ?? 0}</b> paid
                 </span>
                 <span className="grow" />
                 <span className="mono faint">
-                  {report.summary.pluginCount} products · {report.summary.dawCount} DAWs
+                  {report.summary.pluginCount} · {report.summary.dawCount} DAWs
                 </span>
               </div>
             )}
             {mode === 'catalog' && catalogReport && (
               <div className="summary-strip">
                 <span>
-                  <b className="ok">{catalogReport.summary.green}</b> green
+                  <b className="ok">{catalogReport.summary.green}</b> ≥85
                 </span>
                 <span>
-                  <b className="warn">{catalogReport.summary.amber}</b> amber
+                  <b className="warn">{catalogReport.summary.amber}</b> 70–84
                 </span>
                 <span>
-                  <b className="yellow">{catalogReport.summary.yellow}</b> yellow
+                  <b className="yellow">{catalogReport.summary.yellow}</b> &lt;70
                 </span>
                 <span>
-                  <b>{catalogReport.summary.unknownVersion}</b> unknown version
+                  <b>{catalogReport.summary.unknownVersion}</b> unk
                 </span>
                 <span>
                   <b>{catalogReport.summary.content}</b> content
                 </span>
                 <span className="grow" />
-                <span className="teach-chip">
-                  Yellow ≠ update available · missing latest shows as unknown
+                <span className="teach-chip" title="Yellow is not an update signal">
+                  Yellow ≠ update
                 </span>
               </div>
             )}

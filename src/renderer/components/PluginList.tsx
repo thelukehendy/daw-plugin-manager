@@ -3,33 +3,6 @@ import type { ManufacturerReportGroup, PluginReportRow } from '../../shared/type
 import { ConfidenceBadge } from './ConfidenceBadge'
 import { displayVersion, statusLabel } from '../lib/labels'
 
-function RowActions({
-  row,
-  onOpenUrl,
-  onSelect,
-}: {
-  row: PluginReportRow
-  onOpenUrl: (url: string | null) => void
-  onSelect: () => void
-}) {
-  const primaryHub = row.portalApp && (row.status === 'use_vendor_hub' || row.confidenceBand === 'low')
-  return (
-    <div className="row-actions">
-      <button type="button" className="link-btn" onClick={onSelect}>
-        Details
-      </button>
-      <button
-        type="button"
-        className="link-btn accent"
-        disabled={!row.updateUrl}
-        onClick={() => onOpenUrl(row.updateUrl)}
-      >
-        {primaryHub && row.portalApp ? row.portalApp : row.updateUrl ? 'Portal' : '—'}
-      </button>
-    </div>
-  )
-}
-
 function ProductRow({
   row,
   selected,
@@ -46,6 +19,12 @@ function ProductRow({
     ['unknown', 'unverified', 'update_available', 'update_likely', 'current', 'discontinued'].includes(
       row.status
     )
+  const portalLabel =
+    row.portalApp && (row.status === 'use_vendor_hub' || row.confidenceBand === 'low')
+      ? row.portalApp
+      : row.updateUrl
+        ? 'Portal'
+        : null
 
   return (
     <tr
@@ -56,28 +35,56 @@ function ProductRow({
         <span className="product-name">{row.name}</span>
         {row.successorPluginId && (
           <span className="micro-tag paid" title="Paid next generation exists">
-            Paid upgrade
+            Paid
           </span>
         )}
         {row.portalApp && row.status === 'use_vendor_hub' && (
-          <span className="micro-tag hub">{row.portalApp}</span>
+          <span className="micro-tag hub" title={row.portalApp}>
+            {row.portalApp}
+          </span>
+        )}
+        {row.formats.length > 0 && (
+          <span className="fmt-inline mono" title={row.formats.join(' · ')}>
+            {row.formats.slice(0, 3).join(' ')}
+          </span>
         )}
       </td>
-      <td className="mono cell-ver">{displayVersion(row.installedVersion)}</td>
-      <td className="mono cell-ver">
-        <span>{displayVersion(row.latestVersion)}</span>
+      <td className="cell-versions mono">
+        <span className="ver-installed" title="Installed">
+          {displayVersion(row.installedVersion)}
+        </span>
+        <span className="ver-arrow" aria-hidden>
+          →
+        </span>
+        <span className="ver-latest" title="Catalog latest">
+          {displayVersion(row.latestVersion)}
+        </span>
         {showConf && (
           <ConfidenceBadge confidence={row.confidence} band={row.confidenceBand} compact />
         )}
       </td>
-      <td>
-        <span className={`state-pill state-${row.status}`}>
-          {statusLabel(row.status, row.catalogOnly)}
+      <td className="cell-state">
+        <span
+          className={`state-pill state-${row.status}`}
+          title={statusLabel(row.status, row.catalogOnly)}
+        >
+          {statusLabel(row.status, row.catalogOnly, true)}
         </span>
       </td>
-      <td className="mono cell-fmt">{row.formats.slice(0, 4).join(' ')}</td>
-      <td onClick={(e) => e.stopPropagation()}>
-        <RowActions row={row} onOpenUrl={onOpenUrl} onSelect={onSelect} />
+      <td className="cell-action" onClick={(e) => e.stopPropagation()}>
+        {portalLabel ? (
+          <button
+            type="button"
+            className="link-btn accent"
+            disabled={!row.updateUrl}
+            onClick={() => onOpenUrl(row.updateUrl)}
+            title={row.portalApp ? `Open ${row.portalApp}` : 'Open update portal'}
+          >
+            {portalLabel}
+          </button>
+        ) : (
+          <span className="faint">—</span>
+        )}
       </td>
     </tr>
   )
@@ -99,7 +106,7 @@ export function PluginList({
   const [open, setOpen] = useState<Record<string, boolean>>({})
 
   function toggle(id: string) {
-    setOpen((s) => ({ ...s, [id]: !s[id] }))
+    setOpen((s) => ({ ...s, [id]: !(s[id] !== false) }))
   }
 
   if (!groups.length) {
@@ -108,36 +115,31 @@ export function PluginList({
 
   return (
     <div className="grid-wrap">
-      <table className="grid">
+      <table className="grid dense">
         <thead>
           <tr>
-            <th>Manufacturer / Plugin</th>
-            <th>Installed</th>
-            <th>Catalog latest</th>
+            <th>Plugin</th>
+            <th>Installed → latest</th>
             <th>State</th>
-            <th>Fmt</th>
-            <th>Actions</th>
+            <th />
           </tr>
         </thead>
         <tbody>
           {groups.map((g) => {
-            const isOpen = open[g.id] !== false // default open for small sets; toggle stores false
-            const expanded = open[g.id] === true || (open[g.id] === undefined && groups.length <= 12)
-            const show = open[g.id] === undefined ? expanded : isOpen
+            // Default expanded so hundreds of results stay scannable by manufacturer sticky heads
+            const show = open[g.id] !== false
             return (
               <Fragment key={g.id}>
                 <tr className="mfg-row" onClick={() => toggle(g.id)}>
-                  <td colSpan={6}>
+                  <td colSpan={4}>
                     <div className="mfg-head">
                       <span className="exp" aria-hidden>
                         {show ? '▾' : '▸'}
                       </span>
-                      <strong>{g.manufacturer}</strong>
+                      <strong className="mfg-name">{g.manufacturer}</strong>
                       <span className="mfg-meta">
-                        {g.productCount} ·{' '}
-                        {g.outdatedCount
-                          ? `${g.outdatedCount} need attention`
-                          : `${g.currentCount} clear`}
+                        {g.productCount}
+                        {g.outdatedCount ? ` · ${g.outdatedCount} attn` : ''}
                         {g.portalApp ? ` · ${g.portalApp}` : ''}
                       </span>
                       <ConfidenceBadge
