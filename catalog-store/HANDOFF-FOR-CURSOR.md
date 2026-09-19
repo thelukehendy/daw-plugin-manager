@@ -407,3 +407,12 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Flags for next maintenance chips: Valhalla 10-row re-fresh (head-of-queue); sonible/Eventide/Heavyocity resolved-negative probes logged with no-retry directives in TIER1-ASSAULT.md.
 - Push mechanics: backup `backups/2026-09-18/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.
+
+
+## Daily push 2026-09-19 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,959** (+0), amber **347** (−1), yellow **1,345** (+1).
+- Only plugin change since the 09-18 push: **klanghelm--mjuc** 1.8.1 @70 → @60 (amber→yellow) — DATA-INTEGRITY CORRECTION via the zero-trust weak-single-source rule (sole source was third-party allmacworld.co; the vendor publishes no version number; old row auto-superseded). Version unchanged.
+- 247 plugins researched across the 09-18 1018 + 2218 maintenance chips: zero version churn. MeldaProduction ×130 observed (kernel 17.10.01, zero churn); FabFilter ×16 observed (all current-gen held); Cytomic ×3 observed (new HTML-grep recipe — cheap, no browser egress); Soundtoys ×24 observed (5.5.5, Jul 7 2026); oeksound ×4 observed; Newfangled ×6 observed.
+- Valhalla 7 rows still unre-confirmed (browser-service fetch infra failure — third consecutive chip; stored versions NOT re-verified, re-queued for next 12h pass); Klanghelm JS-gating cleared via rendered live-browser session (DC1A3 3.5.0, IVGI2 2.5.0, TENSjr 1.0.7 held; MJUC = permanent vendor-unconfirmable class).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-19/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.

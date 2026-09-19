@@ -1,9 +1,9 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **DAILY PUSH 2026-09-18 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bulk of band movement from the 2026-09-17 midday push (+332 tier-1 promotions); since midday: toxic-iii 1.41 @60→@90, H910 3.12.4→2.5.11 integrity correction.
+> **DAILY PUSH 2026-09-19 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands flat since 09-18: green **3,959** (+0), amber **347** (−1), yellow **1,345** (+1). Only change: klanghelm--mjuc 1.8.1 @70→@60 (amber→yellow, weak-single-source correction); 247 researched across the 09-18 1018+2218 chips, zero version churn.
 > Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-18 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. H910 correction)  
+**Snapshot:** 2026-09-19 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. MJUC demote)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`

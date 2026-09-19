@@ -856,6 +856,26 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   superseded by newer plug-in versions, but we still keep them up-to-date" —
   re-check for exact newer builds before any raise; do NOT stamp the
   current-generation version onto legacy rows.
+- **Cytomic (HTML-grep recipe verified 2026-09-18):** installer filenames
+  live in the homepage HTML even though the download buttons are
+  JS-triggered — plain curl of https://cytomic.com/ + grep
+  `The[A-Za-z]*_v[0-9.]*` returns TheGlue_vX.Y.Z / TheDrop_vX.Y.Z /
+  TheScream_vX.Y.Z (verified 1.9.3 / 1.10.5 / 1.3.3, zero churn). No
+  SquidGuard captcha hit from datacenter egress on this endpoint. Diff the
+  three filenames on every 12h pass — no browser fetch needed. Search
+  snippets for Cytomic versions are stale/weak third-party only; ignore.
+- **Klanghelm (rendered-session recipe verified 2026-09-18):** klanghelm.com
+  is JS-gated for fetch-service text extraction but FULLY browsable in a
+  rendered browser session. Download labels on product pages carry exact
+  versions: klanghelm.com/contents/products/DC1A ("Download DC1A:
+  (version X.Y.Z)"), /IVGI, /TENSjr (verified DC1A3 3.5.0, IVGI2 2.5.0,
+  TENSjr 1.0.7). Diff the labels on every 12h pass. **MJUC is a permanent
+  vendor-unconfirmable class:** the vendor publishes NO MJUC version number
+  (product page shows none, demo downloads login-walled, news page last
+  numbered release 1.4.2 Feb 2020; 2021/2023 maintenance updates unnumbered).
+  On each pass check the news page (contents/common/news.html) for a
+  numbered MJUC release; without one, keep MJUC yellow — never re-raise on
+  third-party installer filenames alone (see 2026-09-18 demote @70→@60).
 - **Goodhertz (one-fetch recipe verified 2026-09-17):** the whole line is ONE
   shared bundle — "This is the installer for all Goodhertz plugins (both
   trials and purchased plugins, all versions). No other installer is
@@ -869,19 +889,37 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   the check there.
 - **Valhalla DSP (per-product recipe; pointer only in this file — full
   recipe lives in playbooks/valhalla-dsp.md):** fetch each product page at
-  valhalladsp.com/shop/<reverb|delay>/<slug>/ and read the "Current
-  Version: …" line. Known URLs (verified 2026-09-10):
+  valhalladsp.com/shop/<reverb|delay>/<slug>/ and find the "Current
+  Version: …" line — do NOT assume its position: it sits at L117 on Plate,
+  L205 on VintageVerb, L261 on Delay (below the fold there). Use
+  browser.find for "Current Version" instead of reading from a fixed
+  line_start. Known URLs (verified 2026-09-10):
   shop/reverb/valhalla-room/, shop/reverb/valhalla-plate/,
   shop/reverb/valhalla-vintage-verb/, shop/reverb/valhalla-shimmer/,
   shop/reverb/valhalla-supermassive/, shop/reverb/valhallafutureverb/,
   shop/delay/valhalladelay/, shop/delay/valhalla-freq-echo/ —
   SpaceModulator and ÜberMod page URLs were never written down (record them
-  on next fetch). Dual Mac/Win: accept the Mac current, note Win in evidence
-  (Plate 1.6.8/1.6.3, Shimmer/FreqEcho/SpaceModulator/ÜberMod @88–92).
+  on next fetch; they're not in the main shop flow — try the plugin index
+  pages or search-engine discovery). Dual Mac/Win: accept the Mac current,
+  note Win in evidence (Plate 1.6.8/1.6.3, Shimmer/FreqEcho/SpaceModulator/ÜberMod @88–92).
   demos-downloads/ installer filenames corroborate. /my-account/downloads/
   is login-walled and unnecessary. 2026-09-17: Valhalla freshness block
   (10 rows) could not run — browser-service fetch infra failure, 0/10 pages;
-  values NOT re-confirmed; RE-QUEUE on the 12h loop.
+  values NOT re-confirmed; RE-QUEUE on the 12h loop. 2026-09-18: worker
+  block failed AGAIN (0/10, same pattern); parent single-fetch recovery
+  confirmed 3 rows first-hand (Delay 3.0.5, Plate 1.6.8/1.6.3,
+  VintageVerb 4.0.5 — all stored values held). **valhalladsp.com reads as
+  fetch-service-flaky, not vendor-blocked:** parallel batches die, single
+  sequential fetches sometimes succeed. Recipe: retry individually with a
+  pause, not in parallel bursts; if a page 404s/stalls, mark skipped and
+  re-queue — do not churn the whole block. Remaining 7 (Room, Shimmer,
+  Supermassive, FutureVerb, FreqEcho, SpaceModulator, ÜberMod) re-queued
+  for the next 12h pass. 2026-09-18 2218 chip: THIRD consecutive chip with
+  valhalladsp.com fetch-service failure (first single sequential fetch died
+  before any result; block stopped per no-hammer rule) — 7 rows remain
+  unverified since 2026-09-10, the oldest unverified tier-1 values in the
+  catalog. Consider a CDN-fronted or alternate-egress fetch if a 4th chip
+  fails; do NOT route around via unauthenticated scraping tricks.
 - **Image-Line legacy VSTs (legacy recipe verified 2026-09-17):** IL
   publishes NO public version data for legacy VSTs — VST SKUs discontinued
   (only sold as part of the discontinued FL Studio + ALL Plugins Bundle),
@@ -985,12 +1023,29 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   extraction — grep the page HTML for "latest version". smart:limit KVR
   1.1.6 vs manufacturer-page 1.1.5: manufacturer page wins, KVR
   uncorroborated. No public Sparkle/appcast feed found.
+- **Newfangled Audio (snippet-fallback recipe verified 2026-09-18):**
+  per-product release-notes pages at
+  newfangledaudio.com/<slug>-release-notes; the Eventide downloads portal
+  mirrors versions for free/distributed titles
+  (eventideaudio.com/downloads/?product=<Name>) — prefer Eventide downloads
+  / RN, marketing free-download DMGs can lag. **Fallback when page fetch
+  fails:** search-engine snippets of the RN pages reliably surface the
+  newest "X.Y.Z (M/D/YYYY)" heading when the query names the exact page
+  (e.g. "newfangledaudio.com generate release notes latest version") —
+  viable and cheaper than full fetches for unchanged products. Snippet-only
+  confirms = observed (exact match to stored); never raise from a snippet
+  alone.
 - **Compat re-verify failures:** Klanghelm (klanghelm.com JS-gated) and TAL
   (statement page not directly addressable) could not be re-verified this
   chip — values KEPT per unverified≠disproven (prior-day vendor quotes on
   record), flagged for JS-rendered browser-task re-confirmation. Cableguys
   and Xfer kept on product-scoped vendor evidence with the line-wide caveat
-  documented in notes.
+  documented in notes. **2026-09-18 KVR-mirror probe (Klanghelm):** KVR
+  product pages found for MJUC and TENS jr but neither snippet surfaced an
+  explicit "Product, Version" value; no KVR product-page URL surfaced for
+  DC1A3 or IVGI2. Probe RESOLVED NEGATIVE for this cycle — the KVR mirror
+  is not a working oracle for Klanghelm. Next angle stays the JS-rendered
+  browser-task route; klanghelm.com/downloads page is the target.
 - **changelog_url zero-trust:** must be a FIXED vendor-wide changelog page —
   cleared Antares (antarestech.com/blog is a blog, not a changelog) and
   Sugar Bytes (per-product Looperator URL). Per-product release notes go in

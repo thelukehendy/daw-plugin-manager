@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-18T17:18:28Z",
+  "updatedAt": "2026-09-19T13:02:03Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -104301,15 +104301,13 @@
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.8.1",
-      "versionSourceUrl": "https://allmacworld.co/klanghelm-mjuc-macos-download/",
-      "versionVerifiedAt": "2026-09-14T17:36:56Z",
+      "versionSourceUrl": "https://klanghelm.com/contents/common/news.html",
+      "versionVerifiedAt": "2026-09-19T05:30:33Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 70,
+      "versionConfidence": 60,
       "versionConfidenceReasons": [
-        "third-party-installer-filename-consensus",
-        "multiple-independent-indexes-agree-1.8.1",
-        "no-official-page",
-        "downloads-login-gated"
+        "Vendor publishes no MJUC version number - unconfirmable via klanghelm.com (last numbered release 1.4.2, Feb 2020; later maintenance updates unnumbered)",
+        "Sole source for 1.8.1 is weak third-party single source (allmacworld.co installer filename) with no independent corroboration - per zero-trust rule enters at yellow"
       ]
     },
     {
