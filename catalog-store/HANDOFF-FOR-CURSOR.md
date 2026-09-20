@@ -416,3 +416,11 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - Valhalla 7 rows still unre-confirmed (browser-service fetch infra failure — third consecutive chip; stored versions NOT re-verified, re-queued for next 12h pass); Klanghelm JS-gating cleared via rendered live-browser session (DC1A3 3.5.0, IVGI2 2.5.0, TENSjr 1.0.7 held; MJUC = permanent vendor-unconfirmable class).
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Push mechanics: backup `backups/2026-09-19/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.
+
+
+## Daily push 2026-09-20 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0).
+- Only plugin change since the 09-19 push: **softube--central (Softube Central)** 2.2.0 → **3.0.5** @90 (green→green raise; official Known Issues page updated 10 Sep 2026 lists 3.0.5 as latest with direct Mac/Win download links — new known-issues-page version-oracle recipe recorded in TIER1-ASSAULT.md).
+- 265 plugins researched across the 09-19 1018 + 2218 maintenance chips: zero other version churn. Softube ×145 re-freshed (RN index unchanged, family holds 2.6.41); Valhalla ×10 observed via search-cache fallback (5th consecutive browser-fetch failure; first-hand re-fetch queued); SSL Acoustifier dual-mismatch watch continues (Mac 1.0.18 vs Win 1.0.19, stored 1.0.19 kept); Sonnox installers CSV URL re-discovered (all 15 match); TAL Software 28 (JS-storefront migration found); Toontrack 5 (RN hubs match); SSL Zendesk-API recipe added (45 observed).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-20/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.

@@ -920,6 +920,35 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   unverified since 2026-09-10, the oldest unverified tier-1 values in the
   catalog. Consider a CDN-fronted or alternate-egress fetch if a 4th chip
   fails; do NOT route around via unauthenticated scraping tricks.
+  2026-09-19 1018 chip: FOURTH consecutive chip — browser.open died on the
+  FIRST single sequential fetch (runtime terminated the tool; worker
+  respected the stop and did NOT re-attempt via exec — exec policy forbids
+  re-attempting a failed tool). New-angle stopgap: **search-cache
+  corroboration sanctioned** — query `"Valhalla<ProductName>" "Current
+  Version" site:valhalladsp.com`; the snippet surfaces the vendor page's
+  "Current Version" line and the "Last Crawl" timestamp gives freshness
+  context. All 7 stored values corroborated this way (zero raises).
+  This closes "unverified since 2026-09-10" to search-cache-fresh but is
+  NOT a substitute for the first-hand re-fetch — the direct-fetch re-check
+  stays queued on the 12h loop. SpaceModulator/ÜberMod canonical URLs
+  RESOLVED: shop/modulation/valhalla-space-modulator/ (modulation, not
+  reverb/delay — why they hid) and shop/delay/valhalla-uber-mod/.
+  Full details in playbooks/valhalla-dsp.md.
+- **SSL (one-fetch recipe verified 2026-09-19 — full recipe in
+  playbooks/ssl.md):** the Zendesk public API
+  (`/api/v2/help_center/en-gb/articles/4849510029085.json`, no auth)
+  returns the article body HTML with per-cell `data-link` installer
+  attributes — parse per `<tr>` for exact Mac/Win installer filenames
+  (ALWAYS read the filename, not the folder: legacy folders keep stale
+  names, e.g. `X-Comp v6.6.7` folder holds v6.8.2 installers). Article
+  `updated_at` is the freshness signal. Rules: prefer installer filename
+  over table label (labels go stale — AutoEQ/AutoDYN/AutoBUS);
+  360° table carries BOTH base (4K B 1.9.8 / 4K E 1.6.8 / 4K G 1.2.7) and
+  "(sonible add-on)" rows (4K B 1.10.2 / 4K E 1.7.1 / 4K G 1.3.1) — catalog
+  maps 4K G = add-on, 4K B/E = base; never cross-stamp. 2026-09-19 watch:
+  Acoustifier Mac installer v1.0.18 vs Win v1.0.19 + table v1.0.19 —
+  stored 1.0.19 kept per no-churn-without-positive-evidence; re-check
+  whether the Mac cell updates.
 - **Image-Line legacy VSTs (legacy recipe verified 2026-09-17):** IL
   publishes NO public version data for legacy VSTs — VST SKUs discontinued
   (only sold as part of the discontinued FL Studio + ALL Plugins Bundle),
@@ -949,13 +978,31 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   ALWAYS inspect article scope before ANY raise: 2.6.42 applied ONLY to
   "Monoment Bass, Parallels, and Statement Lead" — no "All plug-ins" scope,
   so the other targets stayed at 2.6.41. Family convention (2.6.x) is not a
-  per-product version.
+  per-product version. **2026-09-19 re-check:** RN index still tops at 2.6.42
+  (2026-08-21), no new "All plug-ins" article — family holds at 2.6.41.
+  **Softube Central version oracle (2026-09-19, RESOLVED POSITIVE):** the
+  official Known Issues page `softube.com/us/support/known-issues/softube-central-3-known-issues`
+  (updated 10 Sep 2026) lists "the latest update via direct links below" —
+  `Softube Central-3.0.5-universal.pkg` (Mac) / `Softube Central Setup 3.0.5.exe`
+  (Win) on the `sc3/` manufacturer CDN (both HEAD 200). Central raised
+  2.2.0 → **3.0.5** @90. Recipe: support known-issues pages can carry the
+  current manager-app version when the vendor publishes direct update links;
+  corroborate with CDN HEAD, never guess from the slug alone.
 - **Universal Audio:** official version-history article is DEGRADED — renders
   oldest-first, tops out at 8.7.4 (2016); v9–v12 entries absent in fetched
   text. Do NOT use it for freshness until a working render is confirmed.
   Replacement angle: official UA software-download page version stamp or
   another UA-owned current-release endpoint. Never use the unofficial GitHub
-  UAD mirror.
+  UAD mirror. **2026-09-19 recipe decay:** the archives article's
+  "UAD XX.X.X (Current)" line is GONE — the page now routes current releases
+  through UA Connect and the compat tables only say "Download" (no version
+  numbers). The "read the (Current) line" recipe no longer works; current
+  bundle version is UA Connect-walled (structural block). Softube UAD-*
+  rows held @12.0 per 2026-09-17 re-verification — no positive evidence of
+  supersession found 2026-09-19 (web search turned up no newer UAD release);
+  no-churn rule keeps stored values. Replacement angle candidates: UA Connect
+  release notes on help.uaudio.com if they ever publish the bundle semver,
+  or an official press release naming the current UAD version.
 - **u-he:** dl.u-he.com/releases/ is FRESHER than the public
   u-he.com/downloads/release-archive/ index — the archive LAGS (Zebra 3:
   3.0.1/build 22165 in archive vs 3.0.2/build 22175 on dl.u-he.com).

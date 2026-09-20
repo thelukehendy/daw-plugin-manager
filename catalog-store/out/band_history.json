@@ -1,58 +1,65 @@
 [
-  {
-    "amber": 55,
-    "date": "2026-09-10",
-    "green": 3354,
-    "note": "Pause snapshot",
-    "yellow": 1577
-  },
-  {
-    "amber": 55,
-    "date": "2026-09-13",
-    "green": 3368,
-    "note": "Confidence raise 26 (+14)",
-    "yellow": 1563
-  },
-  {
-    "date": "2026-09-14",
-    "green": 3399,
-    "amber": 84,
-    "yellow": 1510,
-    "note": "Daily push 06:00 (+31 green, +29 amber, -53 yellow; 6 new mfrs)"
-  },
-  {
-    "date": "2026-09-15",
-    "green": 3527,
-    "amber": 111,
-    "yellow": 1511,
-    "note": "Daily push 06:00 (+128 green, +27 amber, +1 yellow; 20 new mfrs; surge 4434 remain)"
-  },
-  {
-    "date": "2026-09-16",
-    "green": 3713,
-    "amber": 148,
-    "yellow": 1544,
-    "note": "Daily push 06:00 (+186 green, +37 amber, +33 yellow; 51 new mfrs; surge 3594 remain)"
-  },
-  {
-    "date": "2026-09-17",
-    "green": 3865,
-    "amber": 197,
-    "yellow": 1525,
-    "note": "Daily push 06:00 (+152 green, +49 amber, -19 yellow; TIER1_COMPLETE, maintenance cadence)"
-  },
-  {
-    "date": "2026-09-18",
-    "green": 3959,
-    "amber": 348,
-    "yellow": 1344,
-    "note": "Daily push 06:00 (+94 green, +151 amber, -181 yellow; most band movement from 09-17 midday push's +332 tier-1 promotions; since midday: toxic-iii 1.41 @60->@90, H910 3.12.4->2.5.11 integrity correction)"
-  },
-  {
-    "date": "2026-09-19",
-    "green": 3959,
-    "amber": 347,
-    "yellow": 1345,
-    "note": "Daily push 06:00 (+0 green, -1 amber, +1 yellow; only change: MJUC data-integrity demote 1.8.1 @70->@60 per weak-single-source rule; 247 researched across 1018+2218 chips, zero version churn)"
-  }
+ {
+  "amber": 55,
+  "date": "2026-09-10",
+  "green": 3354,
+  "note": "Pause snapshot",
+  "yellow": 1577
+ },
+ {
+  "amber": 55,
+  "date": "2026-09-13",
+  "green": 3368,
+  "note": "Confidence raise 26 (+14)",
+  "yellow": 1563
+ },
+ {
+  "date": "2026-09-14",
+  "green": 3399,
+  "amber": 84,
+  "yellow": 1510,
+  "note": "Daily push 06:00 (+31 green, +29 amber, -53 yellow; 6 new mfrs)"
+ },
+ {
+  "date": "2026-09-15",
+  "green": 3527,
+  "amber": 111,
+  "yellow": 1511,
+  "note": "Daily push 06:00 (+128 green, +27 amber, +1 yellow; 20 new mfrs; surge 4434 remain)"
+ },
+ {
+  "date": "2026-09-16",
+  "green": 3713,
+  "amber": 148,
+  "yellow": 1544,
+  "note": "Daily push 06:00 (+186 green, +37 amber, +33 yellow; 51 new mfrs; surge 3594 remain)"
+ },
+ {
+  "date": "2026-09-17",
+  "green": 3865,
+  "amber": 197,
+  "yellow": 1525,
+  "note": "Daily push 06:00 (+152 green, +49 amber, -19 yellow; TIER1_COMPLETE, maintenance cadence)"
+ },
+ {
+  "date": "2026-09-18",
+  "green": 3959,
+  "amber": 348,
+  "yellow": 1344,
+  "note": "Daily push 06:00 (+94 green, +151 amber, -181 yellow; most band movement from 09-17 midday push's +332 tier-1 promotions; since midday: toxic-iii 1.41 @60->@90, H910 3.12.4->2.5.11 integrity correction)"
+ },
+ {
+  "date": "2026-09-19",
+  "green": 3959,
+  "amber": 347,
+  "yellow": 1345,
+  "note": "Daily push 06:00 (+0 green, -1 amber, +1 yellow; only change: MJUC data-integrity demote 1.8.1 @70->@60 per weak-single-source rule; 247 researched across 1018+2218 chips, zero version churn)"
+ },
+ {
+  "date": "2026-09-20",
+  "green": 3959,
+  "amber": 347,
+  "yellow": 1345,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; softube--central 2.2.0\u21923.0.5 @90 green raise; 265 researched across 09-19 1018+2218 chips, zero other version churn)"
+ }
 ]

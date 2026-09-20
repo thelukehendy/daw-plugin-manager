@@ -1,9 +1,9 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **DAILY PUSH 2026-09-19 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands flat since 09-18: green **3,959** (+0), amber **347** (−1), yellow **1,345** (+1). Only change: klanghelm--mjuc 1.8.1 @70→@60 (amber→yellow, weak-single-source correction); 247 researched across the 09-18 1018+2218 chips, zero version churn.
+> **DAILY PUSH 2026-09-20 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands flat since 09-18: green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0). Only change: softube--central (Softube Central) 2.2.0 → **3.0.5** @90 (green raise, official Known Issues page); 265 researched across the 09-19 1018+2218 chips, zero other version churn.
 > Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-19 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. MJUC demote)  
+**Snapshot:** 2026-09-20 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. Softube Central 2.2.0→3.0.5 @90 raise)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`
@@ -12,12 +12,12 @@
 
 | Metric | Value |
 |---|---|
-| Manufacturers | **609** |
-| Plugins (universe) | **8910** |
-| Accepted current versions | **5149** |
-| Green (≥85) | **3527** |
-| Amber (70–84) | **111** |
-| Yellow (<70) | **1511** |
+| Manufacturers | **660** |
+| Plugins (universe) | **9494** |
+| Accepted current versions | **5651** |
+| Green (≥85) | **3959** |
+| Amber (70–84) | **347** |
+| Yellow (<70) | **1345** |
 | True plugin gaps (non-Airwindows) | **74** |
 | Airwindows intentional unversioned | **512** |
 
@@ -47,9 +47,9 @@
 
 | Band | Score | Count |
 |---|---|---|
-| Green | ≥ 85 | **3527** |
-| Amber | 70–84 | **111** |
-| Yellow | < 70 | **1511** (KVR @ 60) |
+| Green | ≥ 85 | **3959** |
+| Amber | 70–84 | **347** |
+| Yellow | < 70 | **1345** (KVR @ 60) |
 
 ## This pass (universe expand 11)
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-19T13:02:03Z",
+  "updatedAt": "2026-09-20T13:01:21Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -159425,15 +159425,14 @@
       "portalApp": "Softube Central",
       "appleSilicon": "native",
       "popularityTier": 1,
-      "latestVersion": "2.2.0",
-      "versionSourceUrl": "https://softubestorage.b-cdn.net/softubecentraldata/softubecentral/Softube%20Central-2.2.0-universal.pkg",
-      "versionVerifiedAt": "2026-09-10T07:46:43Z",
+      "latestVersion": "3.0.5",
+      "versionSourceUrl": "https://www.softube.com/us/support/known-issues/softube-central-3-known-issues",
+      "versionVerifiedAt": "2026-09-20T05:25:37Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 90,
       "versionConfidenceReasons": [
-        "manufacturer Softube CDN installer filename embeds 2.2.0",
-        "CDN HEAD 200 corroborates live package",
-        "Homebrew cask softube-central.json version 2.2.0 matches CDN"
+        "vendor official support page lists 3.0.5 as latest update with direct download links",
+        "manufacturer CDN Mac+Win 3.0.5 installers both return HTTP 200"
       ]
     },
     {

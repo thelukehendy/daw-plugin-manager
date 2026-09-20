@@ -15,3 +15,7 @@
 - Raised **1**: TAL-Elek7ro **2.7** @**92** from product page `Downloads v 2.7` (`https://tal-software.com/products/tal-elek7ro`) exact match to KVR.
 - Legacy freeware pages for BassLine / Dub I–III / U-No-62 expose archive zips **without** semver labels → leave yellow.
 - Reverb III / USEq pages not corroborable this pass (fetch 422 / no Downloads-v label found before wrap).
+
+## JS-storefront migration (2026-09-19)
+- tal-software.com has migrated to a JS-rendered storefront. Static fetches still return the `Downloads vX.Y.Z` label on *live* product pages, but **discontinued products now return an empty JS shell** (identical ~7,604-byte template, "You need to enable JavaScript", no version text) **or a hard 404** instead of the old thin pages. 2026-09-19 confirmed: TAL-Reverb-2/3, TAL-Dub-II/III, TAL-Reverb III, TAL-USEq = JS shells; `/products/tal-filter` (Filter II's stored source URL) = 404.
+- **Discontinued-page signal rule:** a `/products/{slug}` fetch returning the JS shell with no `Downloads` label = product page retired. Do NOT re-probe without a new angle (e.g., Wayback installer filename); KVR-only re-confirmation raises nothing per CONFIDENCE.md anti-patterns. This supersedes the old "thin pages → KVR" expectation.
