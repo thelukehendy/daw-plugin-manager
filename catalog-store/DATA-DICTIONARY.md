@@ -47,6 +47,23 @@ absence means "not researched", never "false".
 | `notesForUser` | `notes_for_user` | Short UX hint string, safe to render verbatim. |
 | `popularityTier` *(v6)* | resolved `COALESCE(plugins.popularity_tier, manufacturers.popularity_tier)` | **Effective tier, resolved at export time** — the app never does the join itself. 1 = household names (sort these first in "Needs update"), 2–4 = long tail. Omitted = unranked. |
 
+## Version pointer (`catalog/catalog-version.json`)
+
+Published fresh with every push (see `catalog/CATALOG-FEED.md` for the fetch
+flow). The app discovers new builds through this pointer — never by polling
+the mutable branch URL.
+
+| JSON key | Meaning for the app |
+|---|---|
+| `feedVersion` | Pointer format version (currently 1). |
+| `buildId` | The export's `updatedAt` timestamp. Compare against the installed build — upgrade only when newer. Display as "Catalog as of <buildId>". |
+| `catalogCommit` | Full 40-char SHA of the GitHub commit containing this build's `catalog.json`. |
+| `sha256` / `sizeBytes` | Integrity check for the downloaded catalog. **Reject the download on mismatch** — keep the old catalog. |
+| `schemaVersion` | Catalog schema version. Refuse builds the app can't parse. |
+| `counts` | `manufacturers` / `plugins` / `tier1Plugins` — for the "catalog as of" display. |
+| `endpoints.jsdelivrPinned` | `https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@<catalogCommit>/catalog/catalog.json` — immutable, safe to cache forever. Primary download. |
+| `endpoints.rawPinned` | `https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/<catalogCommit>/catalog/catalog.json` — fallback. |
+
 ## Conventions the app must respect
 
 - **Omitted ≠ false.** A missing `appleSilicon` means "not yet researched", not

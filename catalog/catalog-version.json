@@ -1,0 +1,19 @@
+{
+  "feedVersion": 1,
+  "buildId": "2026-09-19T13:02:03Z",
+  "catalogCommit": "76937ff005124928387ac0c6dc94fd13dcf23fd8",
+  "catalogFile": "catalog/catalog.json",
+  "sha256": "7d5883f4037adc0f141fe8dcb1f327b90237b1fc2ceee304dcadf8e7d5a076ff",
+  "sizeBytes": 7706615,
+  "schemaVersion": 3,
+  "publishedAt": "2026-09-20T04:34:57Z",
+  "counts": {
+    "manufacturers": 660,
+    "plugins": 9494,
+    "tier1Plugins": 4389
+  },
+  "endpoints": {
+    "jsdelivrPinned": "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@76937ff005124928387ac0c6dc94fd13dcf23fd8/catalog/catalog.json",
+    "rawPinned": "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/76937ff005124928387ac0c6dc94fd13dcf23fd8/catalog/catalog.json"
+  }
+}

@@ -4,6 +4,11 @@
 renders portal/download links from the current catalog, never from stale
 copies or engine scratch files.
 
+> **2026-09-19 — v2 feed is live:** `catalog/catalog-version.json` + commit-pinned
+> immutable download URLs make CDN staleness structurally impossible. See
+> `catalog/CATALOG-FEED.md` for the fetch flow the app should implement; §2
+> below describes the legacy path kept for backward compatibility during migration.
+
 ## 1. Chain of custody (the only path a link may travel)
 
 ```
