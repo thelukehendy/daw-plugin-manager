@@ -49,10 +49,15 @@ export function parsePluginCatalog(raw: unknown, sourceHint?: string): PluginCat
     plugins,
   }
 
-  if (typeof o.catalogSource === 'string') {
-    catalog.catalogSource = o.catalogSource
-  } else if (sourceHint) {
+  // App origin hint wins — never keep engine `store-export` / path strings as fetch provenance.
+  if (sourceHint) {
     catalog.catalogSource = sourceHint
+  } else if (typeof o.catalogSource === 'string') {
+    catalog.catalogSource = o.catalogSource
+  }
+
+  if (typeof o.catalogBuildId === 'string' && o.catalogBuildId.trim()) {
+    catalog.catalogBuildId = o.catalogBuildId.trim()
   }
 
   return catalog

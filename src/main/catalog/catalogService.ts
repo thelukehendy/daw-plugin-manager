@@ -44,38 +44,24 @@ import {
   effectivePopularityTier,
   popularitySortKey,
 } from './popularity'
-import { catalogAsOfLabel, parsePluginCatalog, preferNewerCatalog } from './catalogParse'
+import { catalogAsOfLabel, parsePluginCatalog } from './catalogParse'
 import { logCatalogLoad } from './publicFacing'
+import {
+  CatalogVerifyError,
+  compareBuildId,
+  fetchCatalogPointer,
+  fetchVerifiedCatalogBytes,
+  isSupportedSchemaVersion,
+  type FetchLike,
+} from './catalogFeed'
+import {
+  atomicInstallCatalog,
+  defaultUserDataPath,
+  loadInstalledCatalog,
+} from './catalogCache'
 
 export { catalogAsOfLabel } from './catalogParse'
-
-const FALLBACK_REMOTE_CATALOG_URLS = [
-  'https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json',
-  'https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json',
-]
-
-async function resolveRemoteCatalogUrls(appPath?: string): Promise<string[]> {
-  const resourcePath =
-    typeof process.resourcesPath === 'string' ? process.resourcesPath : undefined
-  const candidates = [
-    join(__dirname, '../../catalog/remote-urls.json'),
-    join(__dirname, '../../../catalog/remote-urls.json'),
-    join(process.cwd(), 'catalog/remote-urls.json'),
-    appPath ? join(appPath, 'catalog/remote-urls.json') : '',
-    resourcePath ? join(resourcePath, 'catalog/remote-urls.json') : '',
-  ].filter(Boolean)
-
-  for (const path of candidates) {
-    if (!existsSync(path)) continue
-    try {
-      const raw = JSON.parse(await readFile(path, 'utf8')) as { urls?: string[] }
-      if (Array.isArray(raw.urls) && raw.urls.length) return raw.urls
-    } catch {
-      /* try next */
-    }
-  }
-  return FALLBACK_REMOTE_CATALOG_URLS
-}
+export { CatalogVerifyError, CATALOG_VERIFY_USER_MESSAGE } from './catalogFeed'
 
 function localCatalogOverridePath(): string {
   return join(homedir(), 'Library/Application Support/DAW Plugin Manager/catalog-overrides.json')
@@ -712,11 +698,15 @@ export async function buildCatalogBrowseReport(
   }
 }
 
-async function loadBundledCatalog(appPath?: string): Promise<PluginCatalog> {
+async function loadBundledCatalog(
+  appPath?: string,
+  bundledCatalogPath?: string
+): Promise<PluginCatalog> {
   const resourcePath =
     typeof process.resourcesPath === 'string' ? process.resourcesPath : undefined
 
   const candidates = [
+    bundledCatalogPath || '',
     join(__dirname, '../../catalog/catalog.json'),
     join(__dirname, '../../../catalog/catalog.json'),
     join(process.cwd(), 'catalog/catalog.json'),
@@ -727,14 +717,11 @@ async function loadBundledCatalog(appPath?: string): Promise<PluginCatalog> {
   for (const path of candidates) {
     if (existsSync(path)) {
       const raw = await readFile(path, 'utf8')
-      let parsed: unknown
       try {
-        parsed = JSON.parse(raw)
-      } catch {
-        continue
-      }
-      try {
-        return parsePluginCatalog(parsed, `bundled:${path}`)
+        const catalog = parsePluginCatalog(JSON.parse(raw), 'bundled')
+        catalog.catalogBuildId = catalog.updatedAt
+        catalog.catalogSource = 'bundled'
+        return catalog
       } catch {
         continue
       }
@@ -743,72 +730,104 @@ async function loadBundledCatalog(appPath?: string): Promise<PluginCatalog> {
   throw new Error('Bundled plugin catalog not found')
 }
 
-export async function fetchRemoteCatalog(
-  urls?: string[]
-): Promise<PluginCatalog | null> {
-  const list = urls?.length ? urls : await resolveRemoteCatalogUrls()
-  for (const url of list) {
-    try {
-      const controller = new AbortController()
-      const timer = setTimeout(() => controller.abort(), 8000)
-      const res = await fetch(url, {
-        signal: controller.signal,
-        cache: 'no-store',
-        headers: { 'Cache-Control': 'no-cache', Pragma: 'no-cache' },
-      })
-      clearTimeout(timer)
-      if (!res.ok) continue
-      const parsed = (await res.json()) as unknown
-      try {
-        return parsePluginCatalog(parsed, `remote:${url}`)
-      } catch {
-        continue
-      }
-    } catch {
-      /* try next */
-    }
-  }
-  return null
-}
-
 export async function applyLocalFloors(catalog: PluginCatalog): Promise<PluginCatalog> {
   return catalog
 }
 
+function buildIdOf(catalog: PluginCatalog): string {
+  return catalog.catalogBuildId || catalog.updatedAt
+}
+
+/** Newer buildId wins; equal → keep `preferred` (installed/remote, never downgrade). */
+function preferNewerBuild(
+  fallback: PluginCatalog,
+  preferred: PluginCatalog | null
+): PluginCatalog {
+  if (!preferred) return fallback
+  return compareBuildId(buildIdOf(preferred), buildIdOf(fallback)) >= 0 ? preferred : fallback
+}
+
 export async function loadCatalog(options?: {
-  remoteUrls?: string[]
   preferBundled?: boolean
   appPath?: string
+  userDataPath?: string
+  bundledCatalogPath?: string
+  throwOnVerifyFailure?: boolean
+  fetch?: FetchLike
+  now?: number
 }): Promise<PluginCatalog> {
-  const bundled = await loadBundledCatalog(options?.appPath)
+  const bundled = await loadBundledCatalog(options?.appPath, options?.bundledCatalogPath)
+  const userDataPath = options?.userDataPath || defaultUserDataPath()
 
-  let base = bundled
+  let current = bundled
   if (!options?.preferBundled) {
-    const remoteUrls =
-      options?.remoteUrls || (await resolveRemoteCatalogUrls(options?.appPath))
-    const remote = await fetchRemoteCatalog(remoteUrls)
-    if (remote) {
-      // Prefer newer updatedAt; on equal timestamps prefer remote (don't let bundled shadow).
-      base = preferNewerCatalog(bundled, remote)
-    } else {
-      console.warn(
-        `[catalog] remote fetch failed; using bundled source=${bundled.catalogSource || 'bundled'} updatedAt=${bundled.updatedAt}`
-      )
+    const installed = await loadInstalledCatalog(userDataPath)
+    current = preferNewerBuild(bundled, installed?.catalog ?? null)
+  }
+
+  if (!options?.preferBundled) {
+    try {
+      const pointer = await fetchCatalogPointer({
+        fetch: options?.fetch,
+        now: options?.now,
+      })
+      if (compareBuildId(pointer.buildId, buildIdOf(current)) <= 0) {
+        // Already current — v2 never downgrades.
+      } else if (!isSupportedSchemaVersion(pointer.schemaVersion)) {
+        console.warn('[catalog] v2 pointer schema refused; keeping installed catalog')
+        throw new CatalogVerifyError()
+      } else {
+        const bytes = await fetchVerifiedCatalogBytes(pointer, { fetch: options?.fetch })
+        let parsed
+        try {
+          parsed = parsePluginCatalog(
+            JSON.parse(Buffer.from(bytes).toString('utf8')),
+            'remote:v2'
+          )
+        } catch {
+          throw new CatalogVerifyError()
+        }
+        parsed.catalogSource = 'remote:v2'
+        parsed.catalogBuildId = pointer.buildId
+        await atomicInstallCatalog(userDataPath, bytes, {
+          buildId: pointer.buildId,
+          sha256: pointer.sha256,
+          schemaVersion: pointer.schemaVersion,
+        })
+        current = parsed
+      }
+    } catch (err) {
+      if (err instanceof CatalogVerifyError && options?.throwOnVerifyFailure) {
+        logCatalogLoad(current)
+        throw err
+      }
+      if (!(err instanceof CatalogVerifyError)) {
+        console.warn('[catalog] v2 feed unavailable; keeping installed catalog')
+      }
     }
   }
 
-  const out = await applyLocalFloors(base)
+  const out = await applyLocalFloors(current)
   logCatalogLoad(out)
   return out
 }
 
-/** Force a remote-preferring refresh (Refresh catalog action). */
+/** Force a pointer re-check (Refresh catalog). Surfaces verify failures to the UI. */
 export async function refreshCatalog(options?: {
   appPath?: string
+  userDataPath?: string
+  bundledCatalogPath?: string
+  fetch?: FetchLike
+  now?: number
 }): Promise<PluginCatalog> {
   return loadCatalog({
     preferBundled: false,
+    throwOnVerifyFailure: true,
     appPath: options?.appPath,
+    userDataPath: options?.userDataPath,
+    bundledCatalogPath: options?.bundledCatalogPath,
+    fetch: options?.fetch,
+    now: options?.now,
   })
 }
 

@@ -257,7 +257,7 @@ export default function App() {
       })
     } catch (err) {
       const raw = err instanceof Error ? err.message : String(err)
-      setError(scrubVisibleText(raw) || 'Could not refresh catalog.')
+      setError(scrubVisibleText(raw) || "Couldn't verify the catalog")
     } finally {
       setRefreshingCatalog(false)
     }

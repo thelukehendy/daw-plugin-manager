@@ -2,8 +2,12 @@ import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import { join } from 'path'
 import { runFullScan } from './scanService'
 import { loadLastLibrary } from './lastLibrary'
-import { refreshCatalog } from './catalog/catalogService'
-import { publicCatalogOrigin } from './catalog/publicFacing'
+import { CatalogVerifyError, refreshCatalog } from './catalog/catalogService'
+import {
+  CATALOG_VERIFY_USER_MESSAGE,
+  rendererCatalogMeta,
+  scrubUserFacingError,
+} from './catalog/publicFacing'
 import type { ScanProgress } from '../shared/types'
 
 let mainWindow: BrowserWindow | null = null
@@ -51,12 +55,17 @@ app.on('window-all-closed', () => {
 ipcMain.handle('library:loadLast', async () => loadLastLibrary())
 
 ipcMain.handle('catalog:refresh', async () => {
-  const catalog = await refreshCatalog({ appPath: app.getAppPath() })
-  return {
-    updatedAt: catalog.updatedAt,
-    source: publicCatalogOrigin(catalog.catalogSource),
-    pluginCount: catalog.plugins.length,
-    manufacturerCount: catalog.manufacturers.length,
+  try {
+    const catalog = await refreshCatalog({
+      appPath: app.getAppPath(),
+      userDataPath: app.getPath('userData'),
+    })
+    return rendererCatalogMeta(catalog)
+  } catch (err) {
+    if (err instanceof CatalogVerifyError) {
+      throw new Error(CATALOG_VERIFY_USER_MESSAGE)
+    }
+    throw new Error(scrubUserFacingError(err instanceof Error ? err.message : String(err)))
   }
 })
 
@@ -72,6 +81,7 @@ ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[]
   return runFullScan(sendProgress, {
     extraPluginRoots: options?.extraPluginRoots,
     appPath: app.getAppPath(),
+    userDataPath: app.getPath('userData'),
   })
 })
 

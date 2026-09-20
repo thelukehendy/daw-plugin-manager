@@ -4,7 +4,8 @@
  * Manufacturer verify pages may pass through as versionSourceUrl.
  */
 
-import type { PluginReportRow, ScanReport } from '../../shared/types'
+import type { PluginCatalog, PluginReportRow, ScanReport } from '../../shared/types'
+import { CATALOG_VERIFY_USER_MESSAGE } from './catalogFeed'
 
 const ORIGIN_LEAK =
   /https?:\/\/\S+|raw\.githubusercontent|jsdelivr\.net|github\.com\/[^\s)]+|catalog-store|muse\s*db|\/Users\/\S+|file:\/\/\S+|synced from\s+\S+|remote:\S+|bundled:\S+/gi
@@ -18,21 +19,39 @@ export function publicCatalogOrigin(raw: string | null | undefined): string {
   if (!raw) return 'catalog'
   const s = raw.toLowerCase()
   if (s === 'scanning' || s === 'pending') return raw
-  if (s === 'online' || s.startsWith('remote:')) return 'online'
-  if (s === 'shipped' || s.startsWith('bundled:')) return 'shipped'
+  if (s === 'online' || s === 'remote' || s.startsWith('remote:')) return 'online'
+  if (s === 'shipped' || s === 'bundled' || s.startsWith('bundled:')) return 'shipped'
   return 'catalog'
 }
+
+/** IPC / ScanReport catalog chrome — date + Online|Shipped only. Never URLs, hashes, commits. */
+export function rendererCatalogMeta(catalog: PluginCatalog): {
+  updatedAt: string
+  source: string
+  pluginCount: number
+  manufacturerCount: number
+} {
+  return {
+    updatedAt: catalog.catalogBuildId || catalog.updatedAt,
+    source: publicCatalogOrigin(catalog.catalogSource),
+    pluginCount: catalog.plugins.length,
+    manufacturerCount: catalog.manufacturers.length,
+  }
+}
+
+export { CATALOG_VERIFY_USER_MESSAGE }
 
 /** Main-only diagnostic log (may include paths/URLs — never send to renderer). */
 export function logCatalogLoad(catalog: {
   catalogSource?: string
+  catalogBuildId?: string
   updatedAt?: string
   plugins?: unknown[]
 }): void {
   const src = catalog.catalogSource || 'unknown'
-  const at = catalog.updatedAt || 'unknown'
+  const at = catalog.catalogBuildId || catalog.updatedAt || 'unknown'
   const n = Array.isArray(catalog.plugins) ? catalog.plugins.length : 0
-  console.log(`[catalog] source=${src} updatedAt=${at} plugins=${n}`)
+  console.log(`[catalog] source=${src} buildId=${at} plugins=${n}`)
 }
 
 export function scrubUserFacingError(message: string): string {
@@ -42,6 +61,13 @@ export function scrubUserFacingError(message: string): string {
     .replace(/\s+([.,;:])/g, '$1')
     .trim()
   if (!cleaned || cleaned.length < 8) {
+    return 'Something went wrong while scanning. Try Rescan.'
+  }
+  if (
+    /https?:\/\/|raw\.githubusercontent|jsdelivr|github\.com|sha256|catalog-store|muse/i.test(
+      cleaned
+    )
+  ) {
     return 'Something went wrong while scanning. Try Rescan.'
   }
   return cleaned

@@ -169,6 +169,8 @@ export interface PluginCatalog {
   schemaVersion: number
   updatedAt: string
   catalogSource?: string
+  /** Installed v2 pointer buildId (ISO). Main-only; chrome uses it as freshness date. */
+  catalogBuildId?: string
   manufacturers: CatalogManufacturer[]
   plugins: CatalogPlugin[]
 }

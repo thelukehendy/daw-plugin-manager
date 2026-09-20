@@ -11,7 +11,7 @@ import type {
 import { scanDaws } from './scanner/dawScanner'
 import { scanPlugins } from './scanner/pluginScanner'
 import { buildManufacturerGroups, buildReportRows, loadCatalog } from './catalog/catalogService'
-import { publicCatalogOrigin, scrubReportForRenderer } from './catalog/publicFacing'
+import { rendererCatalogMeta, scrubReportForRenderer } from './catalog/publicFacing'
 import { saveLastLibrary } from './lastLibrary'
 
 const execFileAsync = promisify(execFile)
@@ -62,7 +62,12 @@ function emptySummary(dawCount: number): ScanReport['summary'] {
  */
 export async function runFullScan(
   onProgress?: (p: ScanProgress) => void,
-  options?: { extraPluginRoots?: string[]; preferBundledCatalog?: boolean; appPath?: string }
+  options?: {
+    extraPluginRoots?: string[]
+    preferBundledCatalog?: boolean
+    appPath?: string
+    userDataPath?: string
+  }
 ): Promise<ScanReport> {
   const emit = (
     phase: ScanProgress['phase'],
@@ -86,6 +91,7 @@ export async function runFullScan(
   const catalogPromise = loadCatalog({
     preferBundled: options?.preferBundledCatalog,
     appPath: options?.appPath,
+    userDataPath: options?.userDataPath,
   })
 
   emit('plugins', 'Scanning plugin folders…', 12)
@@ -148,12 +154,7 @@ export async function runFullScan(
     plugins,
     rows,
     manufacturers,
-    catalog: {
-      updatedAt: catalog.updatedAt,
-      source: publicCatalogOrigin(catalog.catalogSource),
-      pluginCount: catalog.plugins.length,
-      manufacturerCount: catalog.manufacturers.length,
-    },
+    catalog: rendererCatalogMeta(catalog),
     summary,
   })
 
