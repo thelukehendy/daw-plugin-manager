@@ -20,3 +20,4 @@ Pre-update snapshots of `out/catalog.json`, one dir per weekly run (`<YYYY-MM-DD
 
 - 2026-09-19: pre-push snapshot of out/catalog.json (bands 3959/347/1345, 660 mfrs, 9494 plugins, 5651 accepted) → backups/2026-09-19/; manifest committed
 - 2026-09-20: pre-push snapshot of out/catalog.json (bands 3959/347/1345, 660 mfrs, 9494 plugins, 5651 accepted) → backups/2026-09-20/; manifest committed
+- 2026-09-21: pre-push snapshot of out/catalog.json (bands 3959/347/1345, 660 mfrs, 9494 plugins, 5651 accepted) → backups/2026-09-21/; manifest committed

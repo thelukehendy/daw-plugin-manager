@@ -184,6 +184,25 @@ EastWest 11 — all worked to zero by the 1918/2218 chips.
   pile by product type (real instrument vs content pack).
 - Identity guard: Players ≠ full products; original B4 ≠ B4 II (coordinator
   rejected a predecessor-version stamp 2026-09-16).
+- **Native Access installer-binary oracle (verified 2026-09-20 2218 chip):**
+  support.native-instruments.com publishes NO versioned Native Access
+  article — the support-article-with-direct-links oracle resolved NEGATIVE
+  for NI. The stronger NI-specific oracle is the installer binary itself:
+  `native-instruments.com/pages/native-access` Download-Windows CTA →
+  `https://storage.googleapis.com/ni-assets/downloads/Native-Access_2.exe`
+  (NI's own asset bucket, read-only GET/HEAD). Parse the PE version resource
+  with wide-char strings (`strings -e l` — plain ASCII finds nothing):
+  ProductName `Native Access` + ProductVersion is the exact version
+  (3.26.0 verified 2026-09-20, superseding 3.25.2 @92; installer
+  Last-Modified 2026-09-10). Change detector: `curl -sI` the installer URL —
+  on Last-Modified/size change, re-download + parse. Mac Intel/M1 .dmgs not
+  parsed yet (expected to match; verify on first change). Standing rule for
+  ALL manager-app rows: a vendor support article with direct update links is
+  a legitimate version oracle (Softube Central proven 2026-09-19); where the
+  article has no version line, the vendor's own installer binary metadata is
+  the fallback oracle (NI proven 2026-09-20). Never use the community thread
+  title alone — it's corroboration only (its body changelog lagged behind
+  3.26.0).
 
 #### NI chip 2026-09-17 (tier1-ni-releasenotes-2026-09-17) — 340 rows, 5 promotions, assault closed
 - Bands: 386 yellow / 7 amber / 41 green → 383 yellow / 10 amber / 41 green (434 effective tier-1 NI rows).
@@ -855,7 +874,11 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   (Pro-C 2 etc.) lives at /support/downloads: "Legacy plug-ins are
   superseded by newer plug-in versions, but we still keep them up-to-date" —
   re-check for exact newer builds before any raise; do NOT stamp the
-  current-generation version onto legacy rows.
+  current-generation version onto legacy rows. 2026-09-20: /support/downloads
+  confirmed to carry no per-product legacy version numbers — only frozen
+  bundle snapshots (max Pro-Q 3.21 / Pro-C 2.15, both older than stored
+  3.29/2.22), so legacy-row freshness checks are inherently weak; keep
+  "check for exact newer build before any raise" with no expected movement.
 - **Cytomic (HTML-grep recipe verified 2026-09-18):** installer filenames
   live in the homepage HTML even though the download buttons are
   JS-triggered — plain curl of https://cytomic.com/ + grep
@@ -933,7 +956,15 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   stays queued on the 12h loop. SpaceModulator/ÜberMod canonical URLs
   RESOLVED: shop/modulation/valhalla-space-modulator/ (modulation, not
   reverb/delay — why they hid) and shop/delay/valhalla-uber-mod/.
-  Full details in playbooks/valhalla-dsp.md.
+  Full details in playbooks/valhalla-dsp.md. 2026-09-20 1018 chip: SIXTH
+  consecutive chip — browser.open died on the FIRST single sequential
+  fetch; search-cache fallback corroborated ALL 10 stored values
+  (crawls <1h–54d, zero raises). Query refinement: the unspaced
+  `"ValhallaFreqEcho" "Current Version"` query surfaces only tag-archive
+  pages; the SPACED variant `"Valhalla Freq Echo" site:valhalladsp.com
+  "Current Version"` surfaces the product page immediately (fresh crawl).
+  Use the spaced variant for FreqEcho. First-hand direct fetch STILL
+  queued on the 12h loop.
 - **SSL (one-fetch recipe verified 2026-09-19 — full recipe in
   playbooks/ssl.md):** the Zendesk public API
   (`/api/v2/help_center/en-gb/articles/4849510029085.json`, no auth)
@@ -1145,3 +1176,14 @@ No invented versions. Exact product identity. Banned: successor-generation,
 suite→component, hub-version stamping, DAW-bundle→plugin, guessed values.
 Coordinator re-verifies every raise. No sign-ins, no purchases, no outreach.
 On 429/block: stop that provider for the chip, log, continue elsewhere.
+
+## Parked idea (2026-09-20): demand-driven research via anonymized telemetry — DROPPED for now
+
+Luke considered and declined: value doesn't justify a permission prompt at this stage.
+
+Design if ever revisited (trigger: hundreds+ of active app users):
+- Opt-in only, never silent. First-run card + Settings toggle.
+- Send ONLY unknown plugins (manufacturer + name + format) + total installed count (one number). Never full plugin lists (fingerprintable, scarier prompt, bigger breach liability).
+- No user/machine identifiers; server aggregates to counts immediately, raw reports deleted.
+- Loop: app POSTs unknowns weekly → engine aggregates into demand queue → researched top-down with zero-trust gates → daily push publishes → immutable feed (catalog-version.json) delivers to apps with no app update.
+- Rationale for parking: signal only meaningful at scale; permission friction costs trust and Cursor time today; tier-1 freshness (the core value prop) doesn't need it.

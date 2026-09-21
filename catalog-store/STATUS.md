@@ -1,9 +1,9 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **DAILY PUSH 2026-09-20 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands flat since 09-18: green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0). Only change: softube--central (Softube Central) 2.2.0 → **3.0.5** @90 (green raise, official Known Issues page); 265 researched across the 09-19 1018+2218 chips, zero other version churn.
+> **DAILY PUSH 2026-09-21 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands flat since 09-18: green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0). Only change: native-instruments--native-access (Native Access products) 3.25.2 → **3.26.0** @92 (green raise, installer-binary-metadata oracle — PE version resource from NI's own installer bucket, parent-verified); 170 researched across the 09-20 1018+2218 chips, zero other version churn. Flag: 5 orphaned accepted rows (2026-09-10 era, export unaffected) need engine repair.
 > Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-20 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. Softube Central 2.2.0→3.0.5 @90 raise)  
+**Snapshot:** 2026-09-21 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. Native Access 3.25.2→3.26.0 @92 raise)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-20T13:01:21Z",
+  "updatedAt": "2026-09-21T13:03:10Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -118355,14 +118355,13 @@
       "identityKind": "hub_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
-      "latestVersion": "3.25.2",
-      "versionSourceUrl": "https://community.native-instruments.com/discussion/4823/official-update-status-native-access-current-version-3-25-2",
-      "versionVerifiedAt": "2026-09-10T11:42:45Z",
+      "latestVersion": "3.26.0",
+      "versionSourceUrl": "https://www.native-instruments.com/pages/native-access",
+      "versionVerifiedAt": "2026-09-21T05:33:04Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "NI community Official update status corroborates Homebrew cask 3.25.2",
-        "amber@80 → green@92"
+        "version stamped in PE version resource of NI's own official installer binary (exact ProductName 'Native Access'); corroborated by NI community pinned-thread title and independent third-party KNOWN_GOOD list"
       ]
     },
     {
