@@ -433,3 +433,13 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - Data-integrity flag (pre-existing, export/app unaffected — needs engine repair): 5 orphaned accepted rows not pointed to by plugin_version_current (2026-09-10 era; in HEAD): Native Access 3.25.2 @80, Surge XT 1.3.4 @95, Battery 4.3.1 @60, Massive 1.7.0 @60, Voxengo BMS 2.7 @90.
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Push mechanics: backup `backups/2026-09-21/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-22 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0).
+- 2 plugin changes since the 09-21 push (both green→green, from the 09-21 2218 maintenance chip):
+  - **celemony--tonalic** 1.0.3.003 → **1.0.4.011** @92 — held raise candidate first-hand verified: official tonalic.com release-notes page (Sep 14 2026, deep ARA integration in UA LUNA).
+  - **eventide--precision-time-align** 3.11.4 → **3.7.13** @92 — data-integrity correction: product's own downloads page tops at 3.7.13 (full 3.7.x trail); prior 3.11.4 was an unattributed H910-class framework stamp misattribution (second catch by this rule).
+- 120 researched across the 09-21 1018 + 2218 chips (2 promoted, 69 observed, 51 skipped), zero other version churn. Eventide ×43 observed (product-scoped RN oracle); Antares ×26 (SoundSoap 6.6.0 first-hand RN article; RN article-ID discoverability remains the blocker); 5 orphaned accepted rows repaired (flipped to superseded — 0 orphans remain).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-22/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-21T13:03:10Z",
+  "updatedAt": "2026-09-22T13:02:10Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -137481,13 +137481,13 @@
       "notes": "KVR product https://www.kvraudio.com/product/precision-time-align-by-eventide",
       "appleSilicon": "native",
       "popularityTier": 1,
-      "latestVersion": "3.11.4",
+      "latestVersion": "3.7.13",
       "versionSourceUrl": "https://www.eventideaudio.com/downloads/?product=Precision%20Time%20Align",
-      "versionVerifiedAt": "2026-09-10T08:14:23Z",
+      "versionVerifiedAt": "2026-09-22T05:36:17Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "Eventide official downloads page per-product version"
+        "Product's own downloads page Release Notes section tops at 3.7.13 with full 3.7.x trail (3.2.1-3.7.13); 3.11.4 appears nowhere on this product's page — H910-class framework misattribution corrected 2026-09-21"
       ]
     },
     {
@@ -181664,14 +181664,13 @@
       "notes": "KVR product https://www.kvraudio.com/product/tonalic-by-celemony",
       "appleSilicon": "universal",
       "popularityTier": 1,
-      "latestVersion": "1.0.3.003",
+      "latestVersion": "1.0.4.011",
       "versionSourceUrl": "https://www.tonalic.com/release-notes.html",
-      "versionVerifiedAt": "2026-09-10T08:52:39Z",
+      "versionVerifiedAt": "2026-09-22T05:25:48Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "Manufacturer tonalic.com release-notes.html publishes Tonalic 1.0.3.003 (July 21, 2026)",
-        "Supersedes prior KVR 1.0.3 @60 with full build from vendor RN"
+        "Official vendor release-notes page top heading 'Tonalic 1.0.4.011', dated September 14, 2026 (deep ARA integration in UA LUNA); verified first-hand 2026-09-21"
       ]
     },
     {

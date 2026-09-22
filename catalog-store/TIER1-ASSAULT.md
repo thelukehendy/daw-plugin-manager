@@ -546,6 +546,14 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   rows are distinct from their UADx native plugin counterparts.
 - **UAD Software row** = hub/installer app; UA publishes no public UA
   Connect app version (only legacy "1.6.2" documented). Principled skip.
+  **2026-09-21 manager-app oracle probe — NEGATIVE:** the standing rule's
+  first source (support article with direct update links) was aimed at UA
+  Connect — the "Getting Started with UA Connect" article
+  (help.uaudio.com/hc/en-us/articles/13178401374612) has NO versioned direct
+  links (just "Download the UA Connect app from:
+  www.uaudio.com/downloads/ua-connect/" + "updates itself automatically"),
+  and the downloads page itself carries no version number (bare CTA +
+  system-requirements link). Probe closed; principled skip stands.
 - LUNA is a separate version family — LUNA bundles (LUNA Pro Bundle 2)
   track LUNA (3.0 / renamed LUNA Studio 2026-09-14), never the DSP bundle.
 - Resolved 2026-09-17: the archives article's "UAD Version History &
@@ -1081,6 +1089,24 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   (infra, not rate-limiting). Installer rows remain JS-hidden in direct
   fetches; the product-scoped Release Notes section on each
   `downloads/?product=<Name>` page is the working freshness oracle.
+  **2026-09-21 second H910-class catch — Precision Time Align:** stored
+  3.11.4 corrected to **3.7.13 @92** — its own page's single RN section tops
+  at 3.7.13 with a full 3.7.x trail (3.2.1–3.7.13) and no 3.11.x anywhere
+  (verified first-hand; the 2026-09-10 "Version 3.11.4 (Mac/Win match)"
+  evidence was an unattributed framework stamp). Same rule as H910: the
+  product's own version trail wins over the framework family number.
+  **2026-09-21 method notes:** the `?product=` value must be the EXACT
+  product key — `?product=Blackhole` renders "No downloads found for selected
+  product" (the site uses `Blackhole%C2%AE`); valid keys are enumerable from
+  the /downloads/ index page's product links. Per-download permalinks
+  (`/downloads/<slug>/`) serve the raw installer binary — dead end for
+  scraping. H9 series individual versioning CONFIRMED per plugin via their
+  own pages (1.3.4 / 1.3.5 / 1.4.4 / 1.5.4 / 2.10.4); the "H9 Plug-In Series"
+  bundle RN (tops 1.3.5) was never stamped onto rows. **Known skips:**
+  Knife Drop — `?product=Knife+Drop` renders H90 Control's changelog (top
+  1.9.15) = product-identity mismatch, needs an alternate discovery path;
+  Music Mouse — docs-only page (User Guide 1.0.1, Keyboard Map 1.0.1), no
+  Downloads/RN section, no oracle coverage.
 - **Voxengo:** official per-product user-guide PDFs carry exact versions
   (voxengo.com/files/userguides/Voxengo<Product>_en.pdf pattern — verified
   for Elephant 5.8, GlissEQ 3.19, SPAN 3.24, TEOTE 1.16, Voxformer 2.23);
@@ -1113,6 +1139,41 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   viable and cheaper than full fetches for unchanged products. Snippet-only
   confirms = observed (exact match to stored); never raise from a snippet
   alone.
+- **oeksound (per-product changelog recipe verified 2026-09-21):**
+  oeksound.com/downloads/ renders ONLY the soothe tab server-side — zero
+  mentions of soothe2/soothe3/spiff/bloom, so it is not a per-product oracle
+  (keep it only as the soothe current-version check). The working oracle is
+  the per-product changelog pages https://oeksound.com/changelog/<slug>/ —
+  soothe2, soothe3, spiff, bloom all render full dated history first-fetch,
+  no blocks. Diff the newest dated entry on every 12h pass.
+- **Antares (per-product Zendesk RN articles; fetch-service failure
+  2026-09-21):** per-product release-notes articles at
+  help.antarestech.com/hc/en-us/articles/<id>-<Product>-Release-Notes carry
+  the newest version in the top heading — diff against stored on every 12h
+  pass. 2026-09-21: 26-article block failed fleet-wide on browser-service
+  tool_failure (infra, not vendor — no 429/automation-block observed);
+  search-cache snippets too noisy for the generic product names; re-queue
+  first-hand fetches next chip. Search-cache fallback corroborated
+  AutoTune Pro 11.6.0 (first-party support recall-issue article, 8d crawl).
+  **2026-09-21 re-fetch (25 rows + AutoTune Pro held):** fetch infra healthy
+  again (zero 429s/tool_failures) — the REAL blocker is article-ID
+  discoverability: only the SoundSoap RN article is search-indexed
+  (help.antarestech.com/hc/en-us/articles/41115437724436 — top heading
+  `## **SoundSoap (6.6.0)**`, held); ~14 exact-title/boilerplate/slug/version
+  searches surfaced none of the other 24 article IDs (pirate/SEO-spam excluded
+  per zero-trust). 2 held (SoundSoap 6.6.0 first-hand; Metamorph stored 1.1.1
+  >= V1.1 Feb 2026 press + official YouTube tutorial), 0 raises. **Access +
+  Artist are DISCONTINUED** (replaced by AutoTune 2026, ~Oct 2025, doubly
+  corroborated press — musicradar + mixing.co.kr): stored 9.6.0 / 10.6.0 are
+  TERMINAL for those products; future chips check only for unexpected new
+  RN-article versions, never expect change. SoundSoap article confirms a
+  portfolio-wide .6.x generation (macOS 26 Tahoe support, licensing-stability
+  fixes) — stored versions across the block are consistent with it, but
+  per-product confirmation still requires each product's own article (no
+  inference as verification). **New angle queued:** a JS-rendered browser
+  task using help.antarestech.com's OWN search box to enumerate the 24
+  missing article IDs — unblocks the now-proven-healthy first-hand fetch
+  recipe.
 - **Compat re-verify failures:** Klanghelm (klanghelm.com JS-gated) and TAL
   (statement page not directly addressable) could not be re-verified this
   chip — values KEPT per unverified≠disproven (prior-day vendor quotes on

@@ -60,13 +60,20 @@
   "green": 3959,
   "amber": 347,
   "yellow": 1345,
-  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; softube--central 2.2.0\u21923.0.5 @90 green raise; 265 researched across 09-19 1018+2218 chips, zero other version churn)"
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; softube--central 2.2.0→3.0.5 @90 green raise; 265 researched across 09-19 1018+2218 chips, zero other version churn)"
  },
  {
   "date": "2026-09-21",
   "green": 3959,
   "amber": 347,
   "yellow": 1345,
-  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; native-instruments--native-access 3.25.2\u21923.26.0 @92 green raise via installer-binary-metadata oracle; 170 researched across 09-20 1018+2218 chips, zero other version churn)"
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; native-instruments--native-access 3.25.2→3.26.0 @92 green raise via installer-binary-metadata oracle; 170 researched across 09-20 1018+2218 chips, zero other version churn)"
+ },
+ {
+  "date": "2026-09-22",
+  "green": 3959,
+  "amber": 347,
+  "yellow": 1345,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; celemony--tonalic 1.0.3.003→1.0.4.011 @92 green raise; eventide--precision-time-align 3.11.4→3.7.13 @92 green data-integrity correction; 120 researched across 09-21 1018+2218 chips, zero other version churn)"
  }
 ]
