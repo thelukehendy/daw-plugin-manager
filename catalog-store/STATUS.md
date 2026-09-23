@@ -1,9 +1,9 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **DAILY PUSH 2026-09-22 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands flat: green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0). Two version changes: celemony--tonalic 1.0.3.003 → **1.0.4.011** @92 (green raise, first-hand verified from tonalic.com release notes) and eventide--precision-time-align 3.11.4 → **3.7.13** @92 (data-integrity correction — prior 3.11.4 was H910-class framework misattribution); 120 researched across the 09-21 1018+2218 chips, zero other version churn. Integrity ok (5 orphaned rows repaired 09-21, 0 orphans remain).
+> **DAILY PUSH 2026-09-23 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands: green **3,958** (−1), amber **347** (+0), yellow **1,346** (+1). Two plugin changes, both data-integrity corrections from the 09-22 1018+2218 chips (245 researched, zero other version churn): ssl--ssl-acoustifier 1.0.19 → **1.0.18** @92 (green→green; vendor page now explicitly labels "Acoustifier v1.0.18 (v1.0.19 Windows only)", Mac-current convention) and eventide--knife-drop @92 → **@60** (green→yellow; Knife Drop is a Third Man Hardware dot9-series analog pedal — hardware, not a plugin; prior @92 vendor observation was unattributed; identity_kind corrected plugin→hardware, KVR-only evidence demoted). Band movement is honest, not regression.
 > Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-22 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. celemony--tonalic 1.0.3.003→1.0.4.011 @92 raise + eventide--precision-time-align 3.11.4→3.7.13 @92 correction)  
+**Snapshot:** 2026-09-23 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. ssl--ssl-acoustifier 1.0.19→1.0.18 @92 correction + eventide--knife-drop @92→@60 hardware-integrity correction)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`
@@ -15,9 +15,9 @@
 | Manufacturers | **660** |
 | Plugins (universe) | **9494** |
 | Accepted current versions | **5651** |
-| Green (≥85) | **3959** |
+| Green (≥85) | **3958** |
 | Amber (70–84) | **347** |
-| Yellow (<70) | **1345** |
+| Yellow (<70) | **1346** |
 | True plugin gaps (non-Airwindows) | **74** |
 | Airwindows intentional unversioned | **512** |
 

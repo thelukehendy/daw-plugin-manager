@@ -907,6 +907,13 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   On each pass check the news page (contents/common/news.html) for a
   numbered MJUC release; without one, keep MJUC yellow — never re-raise on
   third-party installer filenames alone (see 2026-09-18 demote @70→@60).
+  **2026-09-22 first-hand re-verification (rendered browser task, 4 pages,
+  first attempt, no blocks):** DC1A3 3.5.0, IVGI2 2.5.0, TENSjr 1.0.7 all
+  match stored exactly; full news-history scan confirms NO numbered MJUC
+  release newer than stored 1.8.1 (latest announced numbered release is
+  1.4.2, Feb 2020; 2021/2023 maintenance updates unnumbered — stored 1.8.1
+  is NEWER than the latest announced). Rendered-session route is healthy
+  and cheap (4 pages); prefer it over search-cache on every 12h pass.
 - **Goodhertz (one-fetch recipe verified 2026-09-17):** the whole line is ONE
   shared bundle — "This is the installer for all Goodhertz plugins (both
   trials and purchased plugins, all versions). No other installer is
@@ -984,10 +991,11 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   over table label (labels go stale — AutoEQ/AutoDYN/AutoBUS);
   360° table carries BOTH base (4K B 1.9.8 / 4K E 1.6.8 / 4K G 1.2.7) and
   "(sonible add-on)" rows (4K B 1.10.2 / 4K E 1.7.1 / 4K G 1.3.1) — catalog
-  maps 4K G = add-on, 4K B/E = base; never cross-stamp. 2026-09-19 watch:
-  Acoustifier Mac installer v1.0.18 vs Win v1.0.19 + table v1.0.19 —
-  stored 1.0.19 kept per no-churn-without-positive-evidence; re-check
-  whether the Mac cell updates.
+  maps 4K G = add-on, 4K B/E = base; never cross-stamp. RESOLVED 2026-09-22 (article edited 2026-09-22T08:57:30Z; label now
+  explicit "Acoustifier v1.0.18 (v1.0.19 Windows only)"): raised 1.0.19 →
+  1.0.18 @92 per the dual-platform Mac-current convention, Win noted in
+  evidence. A vendor EXPLICITLY documenting a split Mac/Win version is
+  positive evidence, not an anomaly — stop watching and raise.
 - **Image-Line legacy VSTs (legacy recipe verified 2026-09-17):** IL
   publishes NO public version data for legacy VSTs — VST SKUs discontinued
   (only sold as part of the discontinued FL Studio + ALL Plugins Bundle),
@@ -1057,7 +1065,10 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   **Beta-stamp trap (caught 2026-09-17):** `TyrellN6_300_public_beta` files
   are PUBLIC BETAS, not stable — never decode a `public_beta` filename into
   a stable version. Last stable Tyrell N6 is v3.0 (Apr 2013); u-he.com's
-  TyrellN6 page is literally titled "TyrellN6 Beta". **Freebie-soundset trap:**
+  TyrellN6 page is literally titled "TyrellN6 Beta". **2026-09-22:** index
+  re-fetched first-hand (75 files) — every decoded stable matches stored
+  exactly (27 held; TyrellN6 trap honored again: only public_beta builds on
+  index; Beatzille absent as expected) — zero drift. **Freebie-soundset trap:**
   Bazille Strobos, Blue Flamingo, RePercussion, Zebratron are preset
   SOUNDSETS (paid except Zebratron), not plugins — KVR lists them as
   "Soundware". Tag soundset; their KVR "Product, Version" is the soundset
@@ -1068,7 +1079,9 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   unverified≠disproven.
 - **MeldaProduction:** kernel page ("kernel version: 17.10.01") + MPluginManager
   installer (02.30) are healthy re-fetch paths; installer version is NEVER
-  mapped onto plugins.
+  mapped onto plugins. **2026-09-22:** kernel page re-read first-hand —
+  still `installer version: 02.30 · kernel version: 17.10.01`, all 130 rows
+  held (zero-drift; one fetch covers the whole line).
 - **Eventide (H910 conflict RESOLVED 2026-09-17 — it was misattribution, not
   a genuine 3.12.4):** the stored 3.12.4 on `eventide--h910-harmonizer`
   (2026-09-10, bare "Version 3.12.4" snippet, no product attribution) was a
@@ -1103,8 +1116,18 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   scraping. H9 series individual versioning CONFIRMED per plugin via their
   own pages (1.3.4 / 1.3.5 / 1.4.4 / 1.5.4 / 2.10.4); the "H9 Plug-In Series"
   bundle RN (tops 1.3.5) was never stamped onto rows. **Known skips:**
-  Knife Drop — `?product=Knife+Drop` renders H90 Control's changelog (top
-  1.9.15) = product-identity mismatch, needs an alternate discovery path;
+  Knife Drop — RESOLVED 2026-09-22 as a DATA-INTEGRITY fix, not a version
+  problem. First-hand read of `?product=Knife+Drop` confirms the page
+  renders the H90 Control changelog (top 1.9.15) — the site ignores the
+  product key. Deeper: Knife Drop is a Third Man Hardware dot9-series
+  analog synth/fuzz PEDAL ($299), i.e. HARDWARE, and the vendor publishes
+  NO per-product Knife Drop firmware — the only versioned artifacts are
+  H90 Control and the dot9 firmware family (2.2.7+/2.2.8+ requirements).
+  identity_kind corrected plugin→hardware (matches h9/h90-harmonizer rows);
+  the KVR-only 2.2.0 observation demoted @92→@60 (dot9-family single source,
+  no vendor per-product attribution — MJUC demote pattern). Future chips:
+  no version re-checks for this row (hardware, no vendor oracle); watch only
+  for a vendor-published Knife Drop firmware channel;
   Music Mouse — docs-only page (User Guide 1.0.1, Keyboard Map 1.0.1), no
   Downloads/RN section, no oracle coverage.
 - **Voxengo:** official per-product user-guide PDFs carry exact versions
@@ -1173,7 +1196,27 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   inference as verification). **New angle queued:** a JS-rendered browser
   task using help.antarestech.com's OWN search box to enumerate the 24
   missing article IDs — unblocks the now-proven-healthy first-hand fetch
-  recipe.
+  recipe. **2026-09-22 RESOLVED:** the own-search enumeration worked — a
+  live browser task searched the help-center search box, then expanded the
+  "Articles in this section" sidebar "See more" link to the master Release
+  Notes section index
+  (https://help.antarestech.com/hc/en-us/sections/47811896963476-Release-Notes,
+  all 28 articles). 21/21 requested products resolved; ALL top headings
+  match stored exactly (zero drift — no raises needed): AVOX nine 4.6.0
+  (47969143783956 … 47969258718228), Auto-Key 2.6.0 (41116876682772),
+  Auto-Tune EFX 10 10.6.1 (41116824103700), Hybrid 9.6.0 (47967906101268),
+  Slice/Vocal Compressor/Vocal EQ/Vocodist 1.6.0 (47969246801044,
+  41117241499028, 47968793385620, 47969287023764), AutoTune 2026 1.2.1
+  (47967370217620, updated 09/10/2026), Harmony Engine 4.6.1 (47969228097300),
+  Mic Mod 4.6.0 (47969213903252), Vocal De-Esser/Reverb 1.6.0 (47968350562196,
+  47968668073236). **Renaming trap for future chips:** several articles
+  dropped the AVOX/Auto-Tune prefixes (Aspire, Choir, Duo, Mutator, Punch,
+  Sybil, Throat, Warm, Slice, Vocal Compressor, Vocal EQ, Vocodist, Mic Mod)
+  and Auto-Key→"Auto-Key 2", AutoTune→"AutoTune 2026" — search the current
+  article title, not the catalog name. The master section index is now the
+  standing enumeration oracle: diff its article list on each pass for NEW
+  articles (new product coverage), then open each article for the top
+  heading. Article IDs are stable Zendesk numeric IDs.
 - **Compat re-verify failures:** Klanghelm (klanghelm.com JS-gated) and TAL
   (statement page not directly addressable) could not be re-verified this
   chip — values KEPT per unverified≠disproven (prior-day vendor quotes on

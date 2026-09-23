@@ -443,3 +443,13 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - 120 researched across the 09-21 1018 + 2218 chips (2 promoted, 69 observed, 51 skipped), zero other version churn. Eventide ×43 observed (product-scoped RN oracle); Antares ×26 (SoundSoap 6.6.0 first-hand RN article; RN article-ID discoverability remains the blocker); 5 orphaned accepted rows repaired (flipped to superseded — 0 orphans remain).
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Push mechanics: backup `backups/2026-09-22/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-23 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,958** (−1), amber **347** (+0), yellow **1,346** (+1).
+- 2 plugin changes since the 09-22 push (both documented in the 09-22 chip notes — data-integrity corrections, not research misses):
+  - **ssl--ssl-acoustifier** 1.0.19 → **1.0.18** @92 — green→green; vendor's Zendesk article now explicitly labels "Acoustifier v1.0.18 (v1.0.19 Windows only)"; Mac-current dual-platform convention applied (Win noted in evidence).
+  - **eventide--knife-drop** @92 → **@60** (2.2.0) — green→yellow; Knife Drop is a Third Man Hardware dot9-series analog synth/fuzz PEDAL (hardware, not a plugin); the Eventide downloads page ignores the `?product=Knife+Drop` key and renders the H90 Control changelog, so the prior @92 vendor observation was unattributed. identity_kind corrected plugin→hardware; KVR-only evidence demoted to @60. Principled non-target for future version chips.
+- 245 plugins researched across the 09-22 1018 + 2218 chips (1 promoted, knife-drop/Acoustifier corrections logged), zero other version churn.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-23/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
