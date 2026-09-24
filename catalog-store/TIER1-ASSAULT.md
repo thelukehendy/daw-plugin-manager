@@ -123,7 +123,15 @@ EastWest 11 — all worked to zero by the 1918/2218 chips.
   2026-09-16 — Abbey Road Saturator, CLA Effects/Epic/MixHub/Unplugged).
 - BB Tubes is listed as "Magma BB Tubes" in V17 — same product, renamed.
 - Cadence: Waves does across-the-board generation bumps; re-check the
-  installer page monthly for a V18 line.
+  installer page monthly for a V18 line. **2026-09-23 RN diff (zero-drift):**
+  tabs still top at Version 17 — no V18 line; zero new per-plugin version
+  entries since 2026-09-10. Sept entries classified: mixer apps v17 (LV1,
+  eMo IEM, Dugan Speech, MyMon, MyFOH — 09-01), TRACT Measure/SPL Meter
+  suite additions (09-07 — already in catalog @60, no per-product build, no
+  raise), Extreme-C/Axis Scope X15 (09-09 — SoundGrid hardware, skip class),
+  Central v17.0.4 (08-02, already known). Diff template for future passes:
+  look for dated PLUGIN entries with exact builds under v17 tab; app,
+  hardware, and fix-only entries are noise.
 
 ### Arturia — release-notes chip 2026-09-17 (47 rows: 9 promoted / 8 observed / 30 skipped; bands 88 green / 0 amber / 12 yellow / 35 none → 91 / 1 / 13 / 30)
 - RE-FETCH RECIPE (verified 2026-09-17): (1) arturia.com product pages carry a "Software" section with exact builds ("Version X.Y.Z.build | size | date") — but NOT on all pages; some render manual-only, so REQUIRE the Software Version block before raising. (2) Resources pages (`/products/<family>/<slug>/resources`) carry Firmware sections with exact versions + dates (MiniLab 3: "Version 1.2.0 | 356.65 KB | 12/19/2024") AND bundled Software sections — Analog Lab V 5.12.5.6878 (2026-09-16) was found on the MiniLab 3 resources page. (3) support.arturia.com hosts firmware articles (MicroFreak Firmware V5). (4) PACE: SEQUENTIAL fetches with 3–5s gaps, 1 concurrent max; 429s observed 2026-09-16, ZERO 429s with pacing on 2026-09-17. On 429: stop arturia.com for the chip, fall back to KVR/forums/press. (5) Exact software builds live behind Arturia Software Center (auth-walled) — public pages expose marketing generations only for some products; KVR remains the exact-build fallback at the @60 ceiling, never the sole source above 60.
@@ -1019,6 +1027,16 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
 - **Plugin Alliance:** plugin-alliance.com text fetch is automation-blocked —
   route Installer-version reads via an alternate source (never the blocked
   fetch); vendor stopped for the chip per rate-limit rule.
+  **2026-09-23 probe (RESOLVED NEGATIVE):** (a) KVR product pages do NOT
+  surface `verwin` version metadata in rendered-text extraction — KVR is a
+  raw-HTML-only oracle for PA. (b) Shopify `…/collections/all/products.json`
+  (all ~288 handles) is NOT automation-blocked, BUT its `updated_at` is a
+  bulk-sync timestamp (every product showed 2026-09-23T22:22:07-07:00 on
+  2026-09-23) — NOT a per-product version-change signal; never use it as a
+  freshness trigger. (c) Per-product `…/products/{handle}` pages remain
+  blocked (browser-service tool_failure). Next angle: rendered-browser
+  enumeration of the Installer v labels, using the products.json handle list
+  for exact target URLs.
 - **Softube:** RN index shows 2.6.42 (2026-08-21) but no article links are
   exposed — CONSTRUCT the article URL from the version/date slug
   (…/release-notes-for-version-2-6-42-(released-on-august-21th-2026)) and

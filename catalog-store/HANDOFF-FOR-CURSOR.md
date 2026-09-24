@@ -453,3 +453,10 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - 245 plugins researched across the 09-22 1018 + 2218 chips (1 promoted, knife-drop/Acoustifier corrections logged), zero other version churn.
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Push mechanics: backup `backups/2026-09-23/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-24 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,958** (+0), amber **347** (+0), yellow **1,346** (+0).
+- 0 plugin changes since the 09-23 push — zero-churn push: 263 plugins researched across the 09-23 1018 + 2218 chips (0 promoted, 263 observed, all rows held): MeldaProduction 130 @17.10.01, Kilohearts 83 @2.4.6, Soundtoys 27 @5.5.5, Goodhertz 22 @3.14.1; FabFilter Pro-Q 3 probe resolved (3.29 held; 3.31/3.33/3.35 on the page are other products, not Pro-Q 3).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-24/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
