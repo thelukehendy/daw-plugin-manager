@@ -450,3 +450,131 @@ as derivation set, not holdout).
 5. **Successor-URL:** PA bx-boom/bx-refinement predecessors @88; clear
    predecessor tip after identity pass.
 6. **Engine:** wire retraction v2 triggers T1/T2, T9, T12.
+
+---
+
+## Cursor advisory round — PR #7 (2026-09-25)
+
+**Source:** `advisory/cursor-inbox/2026-09-25-*.md` (7 files + fixtures).
+**Method:** Cursor ran a read-only scan of Luke's studio Mac (752 products)
+through the app's matcher against catalog build `2026-09-25T20:39:13Z`.
+**Operator verification:** all three data claims re-checked first-hand against
+the live DB before verdicting — every one confirmed exactly.
+
+### 1. Deterministic identity keys — ACCEPTED
+
+Contract agreed as proposed:
+
+```json
+"identityKeys": {
+  "bundleIds": ["com.fabfilter.Pro-Q.4"],
+  "bundleIdPrefixes": ["com.fabfilter.Pro-Q"],
+  "auComponents": [{ "manufacturer": "FabF", "subtype": "FQ4p" }]
+}
+```
+
+All fields optional; omitted = unresearched (same rule as everything else).
+**No schemaVersion bump** — additive optional fields stay on schema 3.
+Manufacturer rows may carry `bundleIdVendorPrefixes` + a 4-char AU
+manufacturer code; that alone fixes wrong-vendor matches.
+
+Population sources, in trust order: vendor-published IDs → installer
+receipts/pkg manifests → opt-in user scan submissions. Coverage starts near
+zero, so name matching stays as fallback; manufacturer-level vendor prefixes
+for tier-1 vendors go first (cheap, fixes the worst error class). For Windows
+reach later, `identityKeys` should also accept Windows identifiers (VST3
+class IDs, `.dll` product names) now — no second migration.
+
+Open question 4 (opt-in anonymized scan submissions): the privacy design
+(bundle IDs + versions only, no paths/usernames, opt-in) is sound, but it's
+Luke's machine data leaving his machine — **his call, not the operator's.**
+
+### 2. Misattributed rows (Lindell / Reason under Steinberg) — ACCEPTED, FIXED
+
+Verified 8/8 in the live DB. Fixed 2026-09-25 in the operator session:
+7 Lindell 500-series rows (`6X-500`, `7X-500`, `ChannelX`, `254E`, `354E`,
+`TE-100`, `PEX-500`) reassigned `steinberg` → `lindell-audio`;
+`Reason Rack Plugin` → `reason-studios`. Row IDs keep their
+`steinberg--` prefix (stable keys; renaming would break references).
+Sweep for other cross-manufacturer `suite_component` names found nothing
+else suspicious — remaining groups (Acustica, AIR, Softube…) look like
+legitimate suite members. The systematic sweep should re-run against the
+golden fixtures once they exist.
+
+### 3. Shared / generation-colliding patterns — ACCEPTED, PARTLY FIXED
+
+Verified: `Ultra Analog Session` row carried 2.3.5 with an evidence snippet
+literally reading "Ultra Analog Session 2 v2.3.5" — Session 2's version
+stamped on the Session 1 row, a direct violation of the engine's
+no-cross-generation-stamping rule. `Strum Acoustic Session` had the identical
+contamination (2.4.5, evidence "Strum Session 2 v2.4.5"). Both observations
+**rejected** 2026-09-25; both Session-1 rows are intentionally versionless
+pending re-research. (`Lounge Lizard Session` checked too — its 4.4.5
+evidence cites "Lounge Lizard Session 4", the Session line's own major, so
+it stands.)
+
+Export lint added in `catalog-store/src/export_catalog.py` (report-only):
+strict-prefix patterns and bare-common-word patterns are flagged, never
+failing the export. First run: **47 strict-prefix + 52 common-word hits**
+(bundle rows, hub apps with over-broad patterns like Native Access carrying
+"Kontakt", and the AAS collisions). Review of the flagged set is pending;
+lint goes enforcing after review.
+
+### 4. Discontinued rows with latestVersion — ACCEPTED, IMPLEMENTED
+
+Semantics agreed: `latestVersion` on a discontinued row means **final
+release**. Export now emits `finalVersion` instead of `latestVersion` on
+all 57 discontinued rows (verified: 57 carry `finalVersion`, 0 carry
+`latestVersion`). Data dictionary updated. App rule: discontinued always
+renders "Discontinued", never "Outdated"; a below-final install is a quiet
+note, not an alert. `discontinuedAt` / `successorPluginId` accepted where
+known (none known yet — not backfilled).
+
+### 5. DAW installed-version normalization — ACCEPTED (contract)
+
+`installedVersionRule` with **named transforms** (not free-form regex)
+is the right design. Proposed transform vocabulary for Cursor to confirm:
+
+- `strip-build-suffix` — `7.54.0_91d78b1u` → `7.54.0`
+- `prefix-year-2000` — `26.4.1.179` → `2026.4.1.179`
+- `semver-first-3` — `12.7.4d3 build 15815` → `12.7.4`
+- `compare-segments: N` — how many segments participate in comparison
+
+One flag back: the Studio One case (installed Studio One 5 vs catalog
+Studio One Pro 7.2) is a **generation-mapping** problem, not a string
+problem — the rule alone won't solve it; it needs generation +
+identityKeys. Engine will fill Pro Tools / REAPER / Reason / Studio One
+rules + bundle IDs once Cursor confirms the vocabulary.
+
+Open question 2 (installed-vs-marketing version): yes, the export can
+carry the installed-reporting form separately from the marketing version
+— that's exactly what `installedVersionRule` is for.
+
+### 6. Golden scan fixtures in CI — ACCEPTED
+
+Strongest structural idea in the batch. Agreed as proposed: anonymized
+snapshots at `catalog-store/fixtures/scans/<machine>.json` + hand-checked
+`expected.json`; shared matcher contract run by the export job (blocks the
+feed pointer on failure) and the app test suite. **Report-only for one
+week before it blocks**, per Cursor's own suggestion. Cursor commits the
+first snapshot + ~50 hand-checked expectations; operator wires the
+export-side check. (Luke's studio-Mac snapshot in the repo is fine only if
+truly anonymized — his call.)
+
+### 7. App-side plan — NO CONFLICTS
+
+7a/7b/7c are app-internal; nothing conflicts with the data contract.
+Answers to Cursor's questions:
+
+- **schemaVersion:** stays 3 for `identityKeys` / `installedVersionRule` /
+  `finalVersion` — all additive and optional.
+- **Fields the app is ignoring and shouldn't:** `versionScheme` +
+  `versionExample` (normalize before comparing — never raw string-compare),
+  `popularityTier` (tier-1-first sort), `notesForUser` (render verbatim).
+- 7c status rules match the data dictionary exactly.
+
+### Ship order (agreed)
+
+1. Contract verdicts — done, this entry. 2. Data fixes — done above
+(items 2, 3). 3. App foundation (7a–7c, Cursor-side). 4. Golden fixtures
+in CI. 5. Identity-key population. 6. UX/reach.
