@@ -130,6 +130,7 @@ assert.deepStrictEqual(
 const cat = parsePluginCatalog({
   schemaVersion: 3,
   updatedAt: '2026-09-18T00:00:00Z',
+  catalogSource: 'store-export:v4',
   futureField: true,
   manufacturers: [{ id: 'm', name: 'M', updatePortalUrl: 'https://x', extra: 1 }],
   plugins: [
@@ -148,16 +149,46 @@ assert.strictEqual(cat.updatedAt, '2026-09-18T00:00:00Z')
 const older = parsePluginCatalog({
   schemaVersion: 3,
   updatedAt: '2026-01-01T00:00:00Z',
+  catalogSource: 'store-export:v4',
   manufacturers: cat.manufacturers,
   plugins: cat.plugins,
 })
 const newer = parsePluginCatalog({
   schemaVersion: 3,
   updatedAt: '2026-09-18T00:00:00Z',
+  catalogSource: 'store-export:v4',
   manufacturers: cat.manufacturers,
   plugins: cat.plugins,
 })
 assert.strictEqual(preferNewerCatalog(older, newer).updatedAt, newer.updatedAt)
+
+// —— store-export trust gate ——
+for (const catalogSource of [undefined, 'verified-refresh', 'bundled', 'smart-scrub store-export']) {
+  assert.throws(
+    () =>
+      parsePluginCatalog({
+        schemaVersion: 3,
+        updatedAt: '2026-09-18T00:00:00Z',
+        catalogSource,
+        manufacturers: cat.manufacturers,
+        plugins: cat.plugins,
+      }),
+    /store-export/,
+    `catalogSource ${String(catalogSource)} must be rejected`
+  )
+}
+const trusted = parsePluginCatalog({
+  schemaVersion: 3,
+  updatedAt: '2026-09-18T00:00:00Z',
+  catalogSource: 'store-export:v4',
+  manufacturers: cat.manufacturers,
+  plugins: [
+    { id: 'a', manufacturerId: 'm', name: 'A', matchPatterns: ['A'], latestVersion: '1.0', versionConfidence: 90 },
+    { id: 'b', manufacturerId: 'm', name: 'B', matchPatterns: ['B'], latestVersion: '2.0' },
+  ],
+})
+assert.strictEqual(trusted.plugins[0].latestVersion, '1.0')
+assert.strictEqual(trusted.plugins[1].latestVersion, undefined, 'version without confidence is stripped')
 
 // —— remote-urls order + portal contract ——
 import { readFileSync } from 'fs'

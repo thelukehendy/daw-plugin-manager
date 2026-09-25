@@ -35,6 +35,7 @@ const MUTABLE_JSDELIVR =
 const BUNDLED_CATALOG = {
   schemaVersion: 3,
   updatedAt: '2026-09-18T17:18:28Z',
+  catalogSource: 'store-export:v4',
   manufacturers: [{ id: 'm', name: 'Old', updatePortalUrl: 'https://example.com' }],
   plugins: [{ id: 'p', manufacturerId: 'm', name: 'Old Plug', matchPatterns: ['Old Plug'] }],
 }
@@ -42,6 +43,7 @@ const BUNDLED_CATALOG = {
 const NEW_CATALOG = {
   schemaVersion: 3,
   updatedAt: '2026-09-20T00:00:00Z',
+  catalogSource: 'store-export:v4',
   manufacturers: [{ id: 'm', name: 'New', updatePortalUrl: 'https://example.com' }],
   plugins: [{ id: 'p', manufacturerId: 'm', name: 'New Plug', matchPatterns: ['New Plug'] }],
 }
