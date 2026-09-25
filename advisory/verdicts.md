@@ -359,3 +359,94 @@ matches).
    semver-normalize), Denise parentheticals, Madrona Mac/Win splits.
 5. All 18 identity reclass candidates — verify each before reclass; apply
    the allowlist.
+
+---
+
+## Round 4 — wave 8 (2026-09-25)
+
+Reviewed 2026-09-25. **ACCEPTED: 9 · REJECTED: 0 · DEFERRED: 0.**
+
+All six round-4 asks graded DONE. It rose to the harder bar: no padding,
+and it reported failure honestly twice — v1 broke on all three stress
+cases, and the KORG-class hunt found zero unlocks. Nits are cosmetic
+(index says 179 candidates, file says 178; classifier P/R honestly caveated
+as derivation set, not holdout).
+
+### Ask 1 — contamination hunt
+
+- `2026-09-25-contamination-cohort-stamp-detection-deep.md` — **ACCEPTED.**
+  The P0 of the round: 6 signature shapes (S-A…S-F), design SQL with an
+  honest-shared-train playbook join, 178 unique high-confidence
+  clear/reclass candidate IDs with evidence, and an explicit false-positive
+  guard table (Melda 17.10.01, Soundtoys 5.5.5, Goodhertz, Kilohearts,
+  Waves-plugin uniform build). Debatable UA DSP 134×12.0 case held for
+  policy review, not auto-cleared — the right restraint.
+
+### Ask 2 — retraction stress-test
+
+- `2026-09-25-vendor-retraction-protocol-v2-deep.md` — **ACCEPTED.**
+  Strongest file this wave. Broke v1 fairly on all three incidents —
+  D16 (raise-time crime the decrease-shaped tree can't see), Lindell (URL
+  poison, out of v1 scope), Waves V17 (mass undo laundering as
+  retractions) — and shipped v2 with classes F/G/H and a 13-trigger
+  registry with detect/threshold/action/abort. Operational, not
+  philosophical. Wire triggers T1/T2, T9, T12 into the engine.
+
+### Ask 3 — chip falsifiers
+
+- `2026-09-25-chip-falsification-death-conditions-deep.md` — **ACCEPTED.**
+  Death-condition matrix for all 8 accepted chips + 2 related oracles with
+  a KILL/PARK/DEMOTE/RETRACT-WATCH severity ladder and global MUST-NOT
+  rules. Formulaic by design — precisely what was asked.
+
+### Ask 4 — KORG-class hunt
+
+- `2026-09-25-hub-newsroom-korg-class-leaks-deep.md` — **ACCEPTED.**
+  Zero unlocks reported honestly; Slate Zendesk RN titles found and
+  falsified as a primary oracle (titles lag catalog tips). Evidence of
+  absence with fixtures — exactly the discipline requested.
+
+### Ask 5 — identity v2 + second sources
+
+- `2026-09-25-identity-classifier-v2-and-second-sources-deep.md` —
+  **ACCEPTED.** Rule classifier P/R honestly caveated; allow-guards
+  evaluated first so the allowlist is never eaten. 18/18 second sources
+  secured — real verification-shortening work. Ship allow-guards before any
+  regex bulk reclass.
+
+### Ask 6 — open exploration (all three cleared the bar)
+
+- `2026-09-25-accepted-tip-hostile-source-gate-deep.md` — **ACCEPTED.**
+  Genuine data-integrity catch: Serum 2 raised KVR@60 → vstorrent.org@75,
+  a warez host promoting to amber; NI Action Strikes sole tip also
+  vstorrent. Deny-host gate spec is mechanical and shippable.
+  **Operator action: clear/demote both tips; wire the deny-host gate.**
+- `2026-09-25-successor-url-stamp-contamination-deep.md` — **ACCEPTED.**
+  Live PA gen-1 rows @88 citing `-v3` URLs, with a pure-SQL fingerprint —
+  a pairwise identity class the cohort detectors can't see. Clear
+  predecessor tips after identity pass.
+- `2026-09-25-mac-win-silent-higher-detection-deep.md` — **ACCEPTED.**
+  Live green-tip wrongness: oeksound bloom 1.1.3 @92 where the evidence
+  itself says 1.1.3 is a Windows GUI fix and Mac is 1.1.2 — factually wrong
+  for Mac users. Detection recipe + documented negative controls.
+
+### Meta
+
+- `2026-09-25-muse-wave8-inbox-index-and-ship-order.md` — **ACCEPTED.**
+  Map + ask-outcome table; fixture-dir nit honored (one canonical dir per
+  vendor).
+
+### Wave-8 verification / action queue (first-hand operator work)
+
+1. **Integrity (advisory):** clear/demote vstorrent tips on
+   `xfer-records--serum-2` and `native-instruments--action-strikes`; wire
+   deny-host gate.
+2. **oeksound--bloom:** verify Mac/Win split; Mac-current 1.1.2, Win 1.1.3
+   per evidence.
+3. **Ask 1 P0:** verify and clear/reclass the 178 candidate IDs (Softube
+   trains, Waves bundles/series, UA collections); Softube 5-pack + Waves
+   Signature Series → `bundle`; Softube Central → `hub_app`.
+4. **Policy:** UA DSP 134×12.0 — suite_train export vs clear.
+5. **Successor-URL:** PA bx-boom/bx-refinement predecessors @88; clear
+   predecessor tip after identity pass.
+6. **Engine:** wire retraction v2 triggers T1/T2, T9, T12.
