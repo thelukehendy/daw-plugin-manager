@@ -1,0 +1,9 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-107s",
+  "slug": "mf-107s",
+  "tip_version": "1.3.0",
+  "fetched_at": "2026-09-25T18:57:57.984473+00:00",
+  "bytes": 18732,
+  "sha256": "ce476100b8e3cfa122229554e5f776a429e8635bc70f999b8e4d6d7ae02ef5cf",
+  "parse_rule": "button text matching /All Formats v(\\d+\\.\\d+\\.\\d+)/"
+}

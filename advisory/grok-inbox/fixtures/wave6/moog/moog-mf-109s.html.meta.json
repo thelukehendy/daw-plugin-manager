@@ -1,0 +1,9 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-109s",
+  "slug": "mf-109s",
+  "tip_version": "1.3.0",
+  "fetched_at": "2026-09-25T18:57:57.984641+00:00",
+  "bytes": 18734,
+  "sha256": "506d6cdd173a5b8c526e8d65756ea8492e19cad593fe6f6bf9e3a38bd9b9824c",
+  "parse_rule": "button text matching /All Formats v(\\d+\\.\\d+\\.\\d+)/"
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.waves.com/downloads/release-notes",
+  "bytes": 645937,
+  "sha256": "1c3a0e2b92d859b2da2607c46d480ff9c48d2940e425452d67ffdd7b0a24fbe9",
+  "stub_detected": false,
+  "has_central": true,
+  "has_17_0_4": true,
+  "note": "This egress got full RN HTML; keep stub detector \u2014 prior wave saw ~212B Incapsula stubs"
+}

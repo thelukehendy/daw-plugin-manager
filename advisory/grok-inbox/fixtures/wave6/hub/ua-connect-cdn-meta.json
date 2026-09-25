@@ -1,0 +1,11 @@
+{
+  "oracle": "ua-connect-versioned-dmg",
+  "url_from_brew": "https://builds.uaudio.com/apps/UA_Connect/UA_Connect_1_10_0_3844_Mac.dmg",
+  "version": "1.10.0",
+  "build": "3844",
+  "last_modified": "Mon, 14 Sep 2026 18:09:48 GMT",
+  "identity_guard": "ua_connect_app_neq_uad_suite_12_0_sku_stamp",
+  "engine_chip": "ua_connect_brew_url_head_poller",
+  "note": "No public latest-mac.yml (403). Discover current URL via brew cask JSON or UA download page scrape, then HEAD for Last-Modified.",
+  "never": "stamp UA Connect 1.10.0 onto UAD DSP plug-in SKUs (suite history is separate oracle)"
+}

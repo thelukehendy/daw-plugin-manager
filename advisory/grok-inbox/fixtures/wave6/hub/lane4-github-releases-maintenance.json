@@ -1,0 +1,31 @@
+{
+  "lane": 4,
+  "oracle_class": "github-releases",
+  "targets_class": "OSS manufacturers (Airwindows / x42 / Surge class)",
+  "problem": "Unauthenticated api.github.com is rate-limited from this egress",
+  "design": {
+    "prefer": [
+      "GET https://github.com/{owner}/{repo}/releases.atom with If-None-Match",
+      "Store ETag; expect 304 when unchanged",
+      "Parse <title> / <updated> / entry links for tip tag"
+    ],
+    "fallback": "Conditional api.github.com/repos/{owner}/{repo}/releases/latest with If-None-Match + sparse cadence",
+    "golden_tests": "fixtures of atom XML; stub detector if feed has zero entries (airwindows currently empty atom)",
+    "observed": {
+      "x42/sisco.lv2": {
+        "atom_bytes": 5473,
+        "tip": "v0.9.14"
+      },
+      "airwindows/airwindows": {
+        "atom_bytes": 532,
+        "entries": 0,
+        "note": "empty feed \u2014 do not treat as tip; park or use alternate source"
+      },
+      "surge-synthesizer/surge": {
+        "atom_ok": true,
+        "noise": "Nightly/last_cpp17 titles \u2014 need tag allowlist"
+      }
+    }
+  },
+  "engine_chip": "oss_github_releases_atom_etag_poller"
+}

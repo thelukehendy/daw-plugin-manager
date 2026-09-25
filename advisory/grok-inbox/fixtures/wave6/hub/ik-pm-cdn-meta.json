@@ -1,0 +1,11 @@
+{
+  "oracle": "ik-product-manager-cdn-filename",
+  "page": "https://www.ikmultimedia.com/products/productmanager/",
+  "installer_url_template": "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_{version}.dmg",
+  "version": "1.1.15",
+  "referer_required": true,
+  "referer": "https://www.ikmultimedia.com/products/productmanager/",
+  "last_modified_hdr": "Tue, 25 Aug 2026 16:25:00 GMT",
+  "identity_guard": "product_manager_app_neq_amplitube_traks_sku",
+  "engine_chip": "ik_pm_cdn_head_poller"
+}
