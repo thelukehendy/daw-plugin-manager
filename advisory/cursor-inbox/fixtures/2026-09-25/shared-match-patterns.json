@@ -1,0 +1,1978 @@
+{
+ "catalogBuildId": "2026-09-25T20:39:13Z",
+ "catalogCommit": "b19253bf21879ea4a6c5184e76ff6194c0843249",
+ "count": 276,
+ "patterns": [
+  {
+   "pattern": "chorus",
+   "manufacturerIds": [
+    "airwindows",
+    "blue-cat-audio",
+    "kiive-audio",
+    "kilohearts",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "flanger",
+   "manufacturerIds": [
+    "avid",
+    "blue-cat-audio",
+    "calf",
+    "kilohearts",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "aurora",
+   "manufacturerIds": [
+    "cymatics",
+    "d16-group",
+    "izotope",
+    "uvi"
+   ]
+  },
+  {
+   "pattern": "cardinal",
+   "manufacturerIds": [
+    "acustica-audio",
+    "cardinal",
+    "distrho",
+    "oas--distrho"
+   ]
+  },
+  {
+   "pattern": "deesser",
+   "manufacturerIds": [
+    "calf",
+    "lsp-plugins",
+    "softube",
+    "waves"
+   ]
+  },
+  {
+   "pattern": "filter",
+   "manufacturerIds": [
+    "calf",
+    "kilohearts",
+    "lsp-plugins",
+    "lunacy-audio"
+   ]
+  },
+  {
+   "pattern": "limiter",
+   "manufacturerIds": [
+    "calf",
+    "kilohearts",
+    "lsp-plugins",
+    "mastering-the-mix"
+   ]
+  },
+  {
+   "pattern": "phaser",
+   "manufacturerIds": [
+    "blue-cat-audio",
+    "calf",
+    "kilohearts",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "pulse",
+   "manufacturerIds": [
+    "cymatics",
+    "d16-group",
+    "native-instruments",
+    "wave-alchemy"
+   ]
+  },
+  {
+   "pattern": "beam",
+   "manufacturerIds": [
+    "airwindows",
+    "lunacy-audio",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "bite",
+   "manufacturerIds": [
+    "airwindows",
+    "denise",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "channelstrip",
+   "manufacturerIds": [
+    "audio-damage",
+    "avid",
+    "metric-halo"
+   ]
+  },
+  {
+   "pattern": "clipper",
+   "manufacturerIds": [
+    "kilohearts",
+    "lsp-plugins",
+    "softube"
+   ]
+  },
+  {
+   "pattern": "compressor",
+   "manufacturerIds": [
+    "calf",
+    "kilohearts",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "corrosion",
+   "manufacturerIds": [
+    "cymatics",
+    "hornet",
+    "sinevibes"
+   ]
+  },
+  {
+   "pattern": "drive",
+   "manufacturerIds": [
+    "airwindows",
+    "native-instruments",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "dynamics",
+   "manufacturerIds": [
+    "airwindows",
+    "blue-cat-audio",
+    "kilohearts"
+   ]
+  },
+  {
+   "pattern": "equinox",
+   "manufacturerIds": [
+    "8dio",
+    "izotope",
+    "oas--oliver-rasmussen"
+   ]
+  },
+  {
+   "pattern": "everything bundle",
+   "manufacturerIds": [
+    "cinesamples",
+    "polyverse",
+    "u-he"
+   ]
+  },
+  {
+   "pattern": "gate",
+   "manufacturerIds": [
+    "calf",
+    "kilohearts",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "helm",
+   "manufacturerIds": [
+    "helm",
+    "matt-tytel",
+    "oas--matt-tytel"
+   ]
+  },
+  {
+   "pattern": "multiband compressor",
+   "manufacturerIds": [
+    "calf",
+    "lsp-plugins",
+    "vengeance-sound"
+   ]
+  },
+  {
+   "pattern": "mverb",
+   "manufacturerIds": [
+    "oas--distrho",
+    "oas--martin-eastwood",
+    "oas--roland-rabien"
+   ]
+  },
+  {
+   "pattern": "reverb",
+   "manufacturerIds": [
+    "airwindows",
+    "calf",
+    "kilohearts"
+   ]
+  },
+  {
+   "pattern": "saturator",
+   "manufacturerIds": [
+    "calf",
+    "denise",
+    "psp-audioware"
+   ]
+  },
+  {
+   "pattern": "spl transient designer",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "tape",
+   "manufacturerIds": [
+    "airwindows",
+    "hornet",
+    "softube"
+   ]
+  },
+  {
+   "pattern": "transient shaper",
+   "manufacturerIds": [
+    "kilohearts",
+    "slate-digital",
+    "softube"
+   ]
+  },
+  {
+   "pattern": "ada flanger",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "ada std-1 stereo tapped delay",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "adlplug",
+   "manufacturerIds": [
+    "jean-pierre-cimalando",
+    "oas--jean-pierre-cimalando"
+   ]
+  },
+  {
+   "pattern": "adt",
+   "manufacturerIds": [
+    "airwindows",
+    "oas--christopher-arndt"
+   ]
+  },
+  {
+   "pattern": "air",
+   "manufacturerIds": [
+    "airwindows",
+    "sound-particles"
+   ]
+  },
+  {
+   "pattern": "airwindows",
+   "manufacturerIds": [
+    "airwindows",
+    "oas--chris-johnson"
+   ]
+  },
+  {
+   "pattern": "all pianos bundle",
+   "manufacturerIds": [
+    "8dio",
+    "boz-digital"
+   ]
+  },
+  {
+   "pattern": "amber",
+   "manufacturerIds": [
+    "orchestra-tools",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "ampeg b15n",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "ampeg svt3pro",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "ampeg svtvr classic",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "aria engine / player",
+   "manufacturerIds": [
+    "garritan",
+    "plogue"
+   ]
+  },
+  {
+   "pattern": "aura",
+   "manufacturerIds": [
+    "airwindows",
+    "zynaptiq"
+   ]
+  },
+  {
+   "pattern": "autogain",
+   "manufacturerIds": [
+    "hornet",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "autopan",
+   "manufacturerIds": [
+    "airwindows",
+    "avid"
+   ]
+  },
+  {
+   "pattern": "bad tape 2",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "bass xxl",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "basstard",
+   "manufacturerIds": [
+    "8dio",
+    "acustica-audio"
+   ]
+  },
+  {
+   "pattern": "bettermaker eq232d",
+   "manufacturerIds": [
+    "bettermaker",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "bettermaker passive equalizer",
+   "manufacturerIds": [
+    "bettermaker",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "bite harder",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "bloom",
+   "manufacturerIds": [
+    "oeksound",
+    "uvi"
+   ]
+  },
+  {
+   "pattern": "boost",
+   "manufacturerIds": [
+    "sample-magic",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "bx_masterdesk",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "bx_refinement",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "bx_saturator v2",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "bx_subsynth",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "carbon",
+   "manufacturerIds": [
+    "sknote",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "cardinal fx",
+   "manufacturerIds": [
+    "cardinal",
+    "distrho"
+   ]
+  },
+  {
+   "pattern": "cardinal mini",
+   "manufacturerIds": [
+    "cardinal",
+    "distrho"
+   ]
+  },
+  {
+   "pattern": "cardinal modular",
+   "manufacturerIds": [
+    "cardinal",
+    "distrho"
+   ]
+  },
+  {
+   "pattern": "cardinal synth",
+   "manufacturerIds": [
+    "cardinal",
+    "distrho"
+   ]
+  },
+  {
+   "pattern": "carla",
+   "manufacturerIds": [
+    "carla",
+    "oas--filipe-coelho"
+   ]
+  },
+  {
+   "pattern": "chamber",
+   "manufacturerIds": [
+    "airwindows",
+    "psp-audioware"
+   ]
+  },
+  {
+   "pattern": "chameleon",
+   "manufacturerIds": [
+    "accentize",
+    "oas--guitarml"
+   ]
+  },
+  {
+   "pattern": "chandler gav19t",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "chandler limited curve bender",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "chandler limited zener limiter",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "channelx",
+   "manufacturerIds": [
+    "airwindows",
+    "steinberg"
+   ]
+  },
+  {
+   "pattern": "clocks",
+   "manufacturerIds": [
+    "8dio",
+    "wavesfactory"
+   ]
+  },
+  {
+   "pattern": "crystal",
+   "manufacturerIds": [
+    "airwindows",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "curve",
+   "manufacturerIds": [
+    "airwindows",
+    "cableguys"
+   ]
+  },
+  {
+   "pattern": "damage",
+   "manufacturerIds": [
+    "heavyocity",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "dangerous music bax eq",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "dbx 160 compressor/limiter",
+   "manufacturerIds": [
+    "universal-audio",
+    "waves"
+   ]
+  },
+  {
+   "pattern": "dearvr music",
+   "manufacturerIds": [
+    "dear-reality",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "dearvr pro",
+   "manufacturerIds": [
+    "dear-reality",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "deelay",
+   "manufacturerIds": [
+    "hornet",
+    "sixth-sample"
+   ]
+  },
+  {
+   "pattern": "delay compensator",
+   "manufacturerIds": [
+    "impact-soundworks",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "denoise",
+   "manufacturerIds": [
+    "acon-digital",
+    "airwindows"
+   ]
+  },
+  {
+   "pattern": "dexed",
+   "manufacturerIds": [
+    "dexed",
+    "oas--pascal-gauthier"
+   ]
+  },
+  {
+   "pattern": "diezel herbert",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "diezel vh4",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "dirt",
+   "manufacturerIds": [
+    "airwindows",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "distortion",
+   "manufacturerIds": [
+    "airwindows",
+    "kilohearts"
+   ]
+  },
+  {
+   "pattern": "doppler",
+   "manufacturerIds": [
+    "sound-particles",
+    "waves"
+   ]
+  },
+  {
+   "pattern": "dpf plugins",
+   "manufacturerIds": [
+    "distrho",
+    "oas--filipe-coelho"
+   ]
+  },
+  {
+   "pattern": "dpf-plugins",
+   "manufacturerIds": [
+    "distrho",
+    "oas--filipe-coelho"
+   ]
+  },
+  {
+   "pattern": "dragon fire",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "dragonfly reverb",
+   "manufacturerIds": [
+    "dragonfly-reverb",
+    "oas--michael-willis"
+   ]
+  },
+  {
+   "pattern": "drifter",
+   "manufacturerIds": [
+    "wa-production",
+    "waves"
+   ]
+  },
+  {
+   "pattern": "dynamo",
+   "manufacturerIds": [
+    "native-instruments",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "echoes",
+   "manufacturerIds": [
+    "nomad-factory",
+    "softube"
+   ]
+  },
+  {
+   "pattern": "eden wt800",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "elliptical",
+   "manufacturerIds": [
+    "airwindows",
+    "tokyo-dawn-labs"
+   ]
+  },
+  {
+   "pattern": "elysia alpha master",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "elysia alpha mix",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "elysia mpressor",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "energy",
+   "manufacturerIds": [
+    "airwindows",
+    "uvi"
+   ]
+  },
+  {
+   "pattern": "engl e765 rt",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "engl savage 120",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "ensemble",
+   "manufacturerIds": [
+    "airwindows",
+    "kilohearts"
+   ]
+  },
+  {
+   "pattern": "eq",
+   "manufacturerIds": [
+    "airwindows",
+    "crave-dsp"
+   ]
+  },
+  {
+   "pattern": "essentials bundle",
+   "manufacturerIds": [
+    "baby-audio",
+    "fabfilter"
+   ]
+  },
+  {
+   "pattern": "euphoria",
+   "manufacturerIds": [
+    "mercuriall-audio",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "evolve",
+   "manufacturerIds": [
+    "heavyocity",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "evolve mutations",
+   "manufacturerIds": [
+    "heavyocity",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "evolve mutations 2",
+   "manufacturerIds": [
+    "heavyocity",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "exciter",
+   "manufacturerIds": [
+    "airwindows",
+    "calf"
+   ]
+  },
+  {
+   "pattern": "fast compressor",
+   "manufacturerIds": [
+    "focusrite",
+    "sonible"
+   ]
+  },
+  {
+   "pattern": "fast equaliser",
+   "manufacturerIds": [
+    "focusrite",
+    "sonible"
+   ]
+  },
+  {
+   "pattern": "fast reveal",
+   "manufacturerIds": [
+    "focusrite",
+    "sonible"
+   ]
+  },
+  {
+   "pattern": "fiedler audio splat",
+   "manufacturerIds": [
+    "fiedler-audio",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "fluid",
+   "manufacturerIds": [
+    "audio-damage",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "focus",
+   "manufacturerIds": [
+    "airwindows",
+    "nugen-audio"
+   ]
+  },
+  {
+   "pattern": "formant filter",
+   "manufacturerIds": [
+    "kilohearts",
+    "oas--mogesystem"
+   ]
+  },
+  {
+   "pattern": "fracture",
+   "manufacturerIds": [
+    "airwindows",
+    "glitchmachines"
+   ]
+  },
+  {
+   "pattern": "frequency shifter",
+   "manufacturerIds": [
+    "full-bucket-music",
+    "kilohearts"
+   ]
+  },
+  {
+   "pattern": "friedman buxom betty",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "fuchs overdrive supreme 50",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "fuchs train ii",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "gallien krueger 800rb",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "god mode",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "halo",
+   "manufacturerIds": [
+    "antelope-audio",
+    "cymatics"
+   ]
+  },
+  {
+   "pattern": "hardcore",
+   "manufacturerIds": [
+    "ik-multimedia",
+    "image-line"
+   ]
+  },
+  {
+   "pattern": "harmonic maximizer",
+   "manufacturerIds": [
+    "audiority",
+    "bbe-sound"
+   ]
+  },
+  {
+   "pattern": "haze",
+   "manufacturerIds": [
+    "lunacy-audio",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "hype",
+   "manufacturerIds": [
+    "airwindows",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "ignition",
+   "manufacturerIds": [
+    "wa-production",
+    "waves"
+   ]
+  },
+  {
+   "pattern": "illusion",
+   "manufacturerIds": [
+    "cymatics",
+    "liquidsonics"
+   ]
+  },
+  {
+   "pattern": "infrasonic",
+   "manufacturerIds": [
+    "airwindows",
+    "tokyo-dawn-labs"
+   ]
+  },
+  {
+   "pattern": "ivory",
+   "manufacturerIds": [
+    "acustica-audio",
+    "synthogy"
+   ]
+  },
+  {
+   "pattern": "karanyi sounds wavesurfer",
+   "manufacturerIds": [
+    "karanyi",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "kiive tape face",
+   "manufacturerIds": [
+    "kiive",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "layers",
+   "manufacturerIds": [
+    "orchestra-tools",
+    "softube"
+   ]
+  },
+  {
+   "pattern": "lindell 902 de-esser",
+   "manufacturerIds": [
+    "lindell-audio",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "lindell mu-66",
+   "manufacturerIds": [
+    "lindell-audio",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "lsp plugins",
+   "manufacturerIds": [
+    "lsp-plugins",
+    "oas--vladimir-sadovnikov"
+   ]
+  },
+  {
+   "pattern": "ltl chop shop eq",
+   "manufacturerIds": [
+    "louder-than-liftoff",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "ltl silver bullet mk2",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfilteredaudio"
+   ]
+  },
+  {
+   "pattern": "lumina",
+   "manufacturerIds": [
+    "oas--otodesk",
+    "projectsam"
+   ]
+  },
+  {
+   "pattern": "lurssen mastering console",
+   "manufacturerIds": [
+    "con",
+    "ik-multimedia"
+   ]
+  },
+  {
+   "pattern": "maag eq4",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "manta",
+   "manufacturerIds": [
+    "mercurial-tones",
+    "oas--florian-mrugalla"
+   ]
+  },
+  {
+   "pattern": "mantra",
+   "manufacturerIds": [
+    "neural-dsp",
+    "wa-production"
+   ]
+  },
+  {
+   "pattern": "marshall bluesbreaker 1962",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "marshall jmp 2203",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "marshall plexi super lead 1959",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "marshall silver jubilee 2555",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "massive",
+   "manufacturerIds": [
+    "native-instruments",
+    "pulsar-audio"
+   ]
+  },
+  {
+   "pattern": "mercury",
+   "manufacturerIds": [
+    "spitfire-audio",
+    "wavesfactory"
+   ]
+  },
+  {
+   "pattern": "midside",
+   "manufacturerIds": [
+    "airwindows",
+    "goodhertz"
+   ]
+  },
+  {
+   "pattern": "mixland vac attack",
+   "manufacturerIds": [
+    "mixland",
+    "plugin-alliance"
+   ]
+  },
+  {
+   "pattern": "motion filter",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "multiband gate",
+   "manufacturerIds": [
+    "calf",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "multiband limiter",
+   "manufacturerIds": [
+    "calf",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "music box",
+   "manufacturerIds": [
+    "8dio",
+    "wavesfactory"
+   ]
+  },
+  {
+   "pattern": "my crush",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "neon",
+   "manufacturerIds": [
+    "steinberg",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "ninjas 2",
+   "manufacturerIds": [
+    "ninjas2",
+    "oas--clearly-broken"
+   ]
+  },
+  {
+   "pattern": "ninjas2",
+   "manufacturerIds": [
+    "ninjas2",
+    "oas--clearly-broken"
+   ]
+  },
+  {
+   "pattern": "novachord",
+   "manufacturerIds": [
+    "cherry-audio",
+    "soniccouture"
+   ]
+  },
+  {
+   "pattern": "odin",
+   "manufacturerIds": [
+    "oas--thewavewarden",
+    "thewavewarden"
+   ]
+  },
+  {
+   "pattern": "odin 2",
+   "manufacturerIds": [
+    "oas--thewavewarden",
+    "thewavewarden"
+   ]
+  },
+  {
+   "pattern": "odin2",
+   "manufacturerIds": [
+    "oas--thewavewarden",
+    "thewavewarden"
+   ]
+  },
+  {
+   "pattern": "opal",
+   "manufacturerIds": [
+    "acustica-audio",
+    "uvi"
+   ]
+  },
+  {
+   "pattern": "opnplug",
+   "manufacturerIds": [
+    "jean-pierre-cimalando",
+    "oas--jean-pierre-cimalando"
+   ]
+  },
+  {
+   "pattern": "orbit",
+   "manufacturerIds": [
+    "audio-ease",
+    "uvi"
+   ]
+  },
+  {
+   "pattern": "oscilloscope",
+   "manufacturerIds": [
+    "lsp-plugins",
+    "oas--waddafunk"
+   ]
+  },
+  {
+   "pattern": "oxford dynamic eq",
+   "manufacturerIds": [
+    "sonnox",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "oxford envolution",
+   "manufacturerIds": [
+    "sonnox",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "oxford eq",
+   "manufacturerIds": [
+    "sonnox",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "oxford limiter",
+   "manufacturerIds": [
+    "sonnox",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "oxford supresser",
+   "manufacturerIds": [
+    "sonnox",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "pandora",
+   "manufacturerIds": [
+    "cymatics",
+    "projectsam"
+   ]
+  },
+  {
+   "pattern": "perfect room 2",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "phantom",
+   "manufacturerIds": [
+    "cymatics",
+    "discodsp"
+   ]
+  },
+  {
+   "pattern": "pink",
+   "manufacturerIds": [
+    "acustica-audio",
+    "credland"
+   ]
+  },
+  {
+   "pattern": "polaris",
+   "manufacturerIds": [
+    "audiority",
+    "spitfire-audio"
+   ]
+  },
+  {
+   "pattern": "prism",
+   "manufacturerIds": [
+    "cymatics",
+    "oas--powerpcme"
+   ]
+  },
+  {
+   "pattern": "profiler",
+   "manufacturerIds": [
+    "kemper",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "repeater (slate digital edition)",
+   "manufacturerIds": [
+    "d16-group",
+    "slate-digital"
+   ]
+  },
+  {
+   "pattern": "ripple",
+   "manufacturerIds": [
+    "d16-group",
+    "process-audio"
+   ]
+  },
+  {
+   "pattern": "scene",
+   "manufacturerIds": [
+    "apple",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "shadow hills mastering compressor",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "sidechain compressor",
+   "manufacturerIds": [
+    "calf",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "sidechain gate",
+   "manufacturerIds": [
+    "calf",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "sidechain limiter",
+   "manufacturerIds": [
+    "calf",
+    "lsp-plugins"
+   ]
+  },
+  {
+   "pattern": "silk",
+   "manufacturerIds": [
+    "eastwest",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "slappy",
+   "manufacturerIds": [
+    "denise",
+    "denise-audio"
+   ]
+  },
+  {
+   "pattern": "soften",
+   "manufacturerIds": [
+    "focusrite",
+    "sonnox"
+   ]
+  },
+  {
+   "pattern": "softube vocoder",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "space",
+   "manufacturerIds": [
+    "cymatics",
+    "lunacy-audio"
+   ]
+  },
+  {
+   "pattern": "spaces",
+   "manufacturerIds": [
+    "eastwest",
+    "hornet"
+   ]
+  },
+  {
+   "pattern": "spark",
+   "manufacturerIds": [
+    "arturia",
+    "mercuriall-audio"
+   ]
+  },
+  {
+   "pattern": "spectre",
+   "manufacturerIds": [
+    "wavesfactory",
+    "zynaptiq"
+   ]
+  },
+  {
+   "pattern": "spectrum analyzer",
+   "manufacturerIds": [
+    "lsp-plugins",
+    "oas--lluis-estape"
+   ]
+  },
+  {
+   "pattern": "spl attacker",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "spl eq ranger plus",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "spl free ranger",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "spl hawkeye",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "spl iron",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "spl machine head",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "spl transient designer plus",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "spl vitalizer mk2-t",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "spl vitalizer mk3-t",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "steinway model d",
+   "manufacturerIds": [
+    "embertone",
+    "modartt"
+   ]
+  },
+  {
+   "pattern": "summit audio tla-100a",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "surge",
+   "manufacturerIds": [
+    "airwindows",
+    "surge-synthesizer"
+   ]
+  },
+  {
+   "pattern": "tape stop",
+   "manufacturerIds": [
+    "kilohearts",
+    "vengeance-sound"
+   ]
+  },
+  {
+   "pattern": "thx spatial creator",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "thx"
+   ]
+  },
+  {
+   "pattern": "tonelux tilt",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "tonelux tilt live",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "total bundle",
+   "manufacturerIds": [
+    "d16-group",
+    "fabfilter"
+   ]
+  },
+  {
+   "pattern": "transient designer",
+   "manufacturerIds": [
+    "calf",
+    "spl"
+   ]
+  },
+  {
+   "pattern": "tremolo",
+   "manufacturerIds": [
+    "airwindows",
+    "martinic"
+   ]
+  },
+  {
+   "pattern": "tube-tech cl 1b mk ii",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "tunefish",
+   "manufacturerIds": [
+    "brain-control",
+    "oas--brain-control"
+   ]
+  },
+  {
+   "pattern": "uad bx_digital",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad chandler limited curve bender",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad chandler limited zener limiter",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad dytronics cyclosonic panner",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad dytronics tri-stereo chorus",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad eden wt800",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad engl e646 vs limited edition",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad marshall bluesbreaker 1962",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad marshall jmp 2203",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad marshall plexi super lead 1959",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad oto biscuit 8-bit effects",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad softube vocoder",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad spl vitalizer mk2-t",
+   "manufacturerIds": [
+    "spl",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad spl vitalizer mk3-t",
+   "manufacturerIds": [
+    "spl",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad tonelux tilt",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad tonelux tilt live",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad tube-tech cl 1b",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad tube-tech cl 1b mk ii",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "uad valley people dyna-mite",
+   "manufacturerIds": [
+    "softube",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "ultrasonic",
+   "manufacturerIds": [
+    "airwindows",
+    "tokyo-dawn-labs"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio bass mint",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio battalion",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio byome",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio dent",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio fault",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio g8",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio indent",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio instant delay",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio lion",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio lo-fi-af",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio needlepoint",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio sandman",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio silo",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio specops",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio tails",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio triad",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "unfiltered audio zip",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "unfiltered-audio"
+   ]
+  },
+  {
+   "pattern": "utopia",
+   "manufacturerIds": [
+    "native-instruments",
+    "sixth-sample"
+   ]
+  },
+  {
+   "pattern": "vanguard",
+   "manufacturerIds": [
+    "mercurial-tones",
+    "refx"
+   ]
+  },
+  {
+   "pattern": "vapor",
+   "manufacturerIds": [
+    "audio-damage",
+    "eastwest"
+   ]
+  },
+  {
+   "pattern": "vea",
+   "manufacturerIds": [
+    "izotope",
+    "native-instruments"
+   ]
+  },
+  {
+   "pattern": "vertigo vsc-2",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "vertigo vsm-3",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "universal-audio"
+   ]
+  },
+  {
+   "pattern": "vibraphone",
+   "manufacturerIds": [
+    "8dio",
+    "soniccouture"
+   ]
+  },
+  {
+   "pattern": "vinyl",
+   "manufacturerIds": [
+    "calf",
+    "izotope"
+   ]
+  },
+  {
+   "pattern": "vocoder",
+   "manufacturerIds": [
+    "calf",
+    "softube"
+   ]
+  },
+  {
+   "pattern": "vortex",
+   "manufacturerIds": [
+    "cymatics",
+    "ujam"
+   ]
+  },
+  {
+   "pattern": "vu meter",
+   "manufacturerIds": [
+    "hornet",
+    "waves"
+   ]
+  },
+  {
+   "pattern": "wavetable",
+   "manufacturerIds": [
+    "calf",
+    "oas--roland-rabien"
+   ]
+  },
+  {
+   "pattern": "wedge force hydro",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "wedgeforce"
+   ]
+  },
+  {
+   "pattern": "wedge force keemun",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "wedgeforce"
+   ]
+  },
+  {
+   "pattern": "wedge force matcha",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "wedgeforce"
+   ]
+  },
+  {
+   "pattern": "wedge force oolong",
+   "manufacturerIds": [
+    "plugin-alliance",
+    "wedgeforce"
+   ]
+  },
+  {
+   "pattern": "wider",
+   "manufacturerIds": [
+    "airwindows",
+    "polyverse"
+   ]
+  },
+  {
+   "pattern": "wolf shaper",
+   "manufacturerIds": [
+    "oas--wolf-plugins",
+    "wolf-shaper"
+   ]
+  },
+  {
+   "pattern": "wolf spectrum",
+   "manufacturerIds": [
+    "oas--wolf-plugins",
+    "wolf-spectrum"
+   ]
+  },
+  {
+   "pattern": "zam plugins",
+   "manufacturerIds": [
+    "oas--damien-zammit",
+    "zam-audio"
+   ]
+  },
+  {
+   "pattern": "zam-plugins",
+   "manufacturerIds": [
+    "oas--damien-zammit",
+    "zam-audio"
+   ]
+  },
+  {
+   "pattern": "zerocomp",
+   "manufacturerIds": [
+    "hornet",
+    "oas--jun-murakami"
+   ]
+  },
+  {
+   "pattern": "zeroeq",
+   "manufacturerIds": [
+    "hornet",
+    "oas--jun-murakami"
+   ]
+  }
+ ]
+}
