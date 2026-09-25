@@ -1,6 +1,3 @@
-import { readFile } from 'fs/promises'
-import { existsSync } from 'fs'
-import { join } from 'path'
 import type {
   CatalogBrowseReport,
   CatalogManufacturer,
@@ -46,6 +43,7 @@ import {
   popularitySortKey,
 } from './popularity'
 import { catalogAsOfLabel, parsePluginCatalog } from './catalogParse'
+import { platform, yieldToEventLoop } from '../platform'
 import { logCatalogLoad } from './publicFacing'
 import {
   CatalogVerifyError,
@@ -57,7 +55,6 @@ import {
 } from './catalogFeed'
 import {
   atomicInstallCatalog,
-  defaultUserDataPath,
   loadInstalledCatalog,
 } from './catalogCache'
 
@@ -543,7 +540,7 @@ export async function buildReportRows(
 
     if ((i + 1) % chunk === 0 || i === groups.length - 1) {
       onProgress?.(i + 1, groups.length)
-      await new Promise<void>((r) => setImmediate(r))
+      await yieldToEventLoop()
     }
   }
 
@@ -606,7 +603,7 @@ export function buildCatalogBrowseRows(catalog: PluginCatalog): PluginReportRow[
 }
 
 export async function buildCatalogBrowseReport(
-  options?: { appPath?: string; preferBundled?: boolean }
+  options?: { preferBundled?: boolean }
 ): Promise<CatalogBrowseReport> {
   const catalog = await loadCatalog(options)
   const rows = buildCatalogBrowseRows(catalog)
@@ -661,36 +658,13 @@ export async function buildCatalogBrowseReport(
   }
 }
 
-async function loadBundledCatalog(
-  appPath?: string,
-  bundledCatalogPath?: string
-): Promise<PluginCatalog> {
-  const resourcePath =
-    typeof process.resourcesPath === 'string' ? process.resourcesPath : undefined
-
-  const candidates = [
-    bundledCatalogPath || '',
-    join(__dirname, '../../catalog/catalog.json'),
-    join(__dirname, '../../../catalog/catalog.json'),
-    join(process.cwd(), 'catalog/catalog.json'),
-    appPath ? join(appPath, 'catalog/catalog.json') : '',
-    resourcePath ? join(resourcePath, 'catalog/catalog.json') : '',
-  ].filter(Boolean)
-
-  for (const path of candidates) {
-    if (existsSync(path)) {
-      const raw = await readFile(path, 'utf8')
-      try {
-        const catalog = parsePluginCatalog(JSON.parse(raw), 'bundled')
-        catalog.catalogBuildId = catalog.updatedAt
-        catalog.catalogSource = 'bundled'
-        return catalog
-      } catch {
-        continue
-      }
-    }
-  }
-  throw new Error('Bundled plugin catalog not found')
+async function loadBundledCatalog(): Promise<PluginCatalog> {
+  const raw = await platform().bundledCatalogText()
+  if (!raw) throw new Error('Bundled plugin catalog not found')
+  const catalog = parsePluginCatalog(JSON.parse(raw), 'bundled')
+  catalog.catalogBuildId = catalog.updatedAt
+  catalog.catalogSource = 'bundled'
+  return catalog
 }
 
 export async function applyLocalFloors(catalog: PluginCatalog): Promise<PluginCatalog> {
@@ -712,19 +686,15 @@ function preferNewerBuild(
 
 export async function loadCatalog(options?: {
   preferBundled?: boolean
-  appPath?: string
-  userDataPath?: string
-  bundledCatalogPath?: string
   throwOnVerifyFailure?: boolean
   fetch?: FetchLike
   now?: number
 }): Promise<PluginCatalog> {
-  const bundled = await loadBundledCatalog(options?.appPath, options?.bundledCatalogPath)
-  const userDataPath = options?.userDataPath || defaultUserDataPath()
+  const bundled = await loadBundledCatalog()
 
   let current = bundled
   if (!options?.preferBundled) {
-    const installed = await loadInstalledCatalog(userDataPath)
+    const installed = await loadInstalledCatalog()
     current = preferNewerBuild(bundled, installed?.catalog ?? null)
   }
 
@@ -744,7 +714,7 @@ export async function loadCatalog(options?: {
         let parsed
         try {
           parsed = parsePluginCatalog(
-            JSON.parse(Buffer.from(bytes).toString('utf8')),
+            JSON.parse(new TextDecoder().decode(bytes)),
             'remote:v2'
           )
         } catch {
@@ -752,7 +722,7 @@ export async function loadCatalog(options?: {
         }
         parsed.catalogSource = 'remote:v2'
         parsed.catalogBuildId = pointer.buildId
-        await atomicInstallCatalog(userDataPath, bytes, {
+        await atomicInstallCatalog(bytes, {
           buildId: pointer.buildId,
           sha256: pointer.sha256,
           schemaVersion: pointer.schemaVersion,
@@ -777,18 +747,12 @@ export async function loadCatalog(options?: {
 
 /** Force a pointer re-check (Refresh catalog). Surfaces verify failures to the UI. */
 export async function refreshCatalog(options?: {
-  appPath?: string
-  userDataPath?: string
-  bundledCatalogPath?: string
   fetch?: FetchLike
   now?: number
 }): Promise<PluginCatalog> {
   return loadCatalog({
     preferBundled: false,
     throwOnVerifyFailure: true,
-    appPath: options?.appPath,
-    userDataPath: options?.userDataPath,
-    bundledCatalogPath: options?.bundledCatalogPath,
     fetch: options?.fetch,
     now: options?.now,
   })

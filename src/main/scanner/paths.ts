@@ -1,5 +1,4 @@
-import { homedir, platform } from 'os'
-import { join } from 'path'
+import { joinPath as join, platform } from '../platform'
 
 /**
  * Standard plugin search roots.
@@ -10,13 +9,13 @@ import { join } from 'path'
  * vendor Application Support folders used across macOS versions.
  */
 export function getPluginRoots(): string[] {
-  if (platform() === 'win32') return getWindowsPluginRoots()
+  if (platform().os === 'win32') return getWindowsPluginRoots()
   return getMacPluginRoots()
 }
 
 /** @deprecated use getPluginRoots */
 export function getMacPluginRoots(): string[] {
-  const home = homedir()
+  const home = platform().homeDir
   const systemLibrary = '/Library'
   const userLibrary = join(home, 'Library')
 
@@ -85,13 +84,13 @@ export function getMacPluginRoots(): string[] {
 }
 
 function getWindowsPluginRoots(): string[] {
-  const programFiles = process.env['ProgramFiles'] || 'C:\\Program Files'
-  const programFilesX86 = process.env['ProgramFiles(x86)'] || 'C:\\Program Files (x86)'
-  const localAppData = process.env.LOCALAPPDATA || ''
-  const appData = process.env.APPDATA || ''
-  const common = process.env.COMMONPROGRAMFILES || join(programFiles, 'Common Files')
-  const commonX86 =
-    process.env['COMMONPROGRAMFILES(x86)'] || join(programFilesX86, 'Common Files')
+  const env = platform().env
+  const programFiles = env('ProgramFiles') || 'C:\\Program Files'
+  const programFilesX86 = env('ProgramFiles(x86)') || 'C:\\Program Files (x86)'
+  const localAppData = env('LOCALAPPDATA') || ''
+  const appData = env('APPDATA') || ''
+  const common = env('COMMONPROGRAMFILES') || join(programFiles, 'Common Files')
+  const commonX86 = env('COMMONPROGRAMFILES(x86)') || join(programFilesX86, 'Common Files')
 
   return [
     join(common, 'Avid', 'Audio', 'Plug-Ins'),

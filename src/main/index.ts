@@ -2,6 +2,8 @@ import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron'
 import { writeFile } from 'fs/promises'
 import { join } from 'path'
 import { runFullScan } from './scanService'
+import { setPlatform } from './platform'
+import { createNodePlatform } from './nodePlatform'
 import { loadLastLibrary } from './lastLibrary'
 import { CatalogVerifyError, refreshCatalog } from './catalog/catalogService'
 import {
@@ -46,6 +48,7 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
+  setPlatform(createNodePlatform({ userDataDir: app.getPath('userData'), appPath: app.getAppPath() }))
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
@@ -60,10 +63,7 @@ ipcMain.handle('library:loadLast', async () => loadLastLibrary())
 
 ipcMain.handle('catalog:refresh', async () => {
   try {
-    const catalog = await refreshCatalog({
-      appPath: app.getAppPath(),
-      userDataPath: app.getPath('userData'),
-    })
+    const catalog = await refreshCatalog()
     return rendererCatalogMeta(catalog)
   } catch (err) {
     if (err instanceof CatalogVerifyError) {
@@ -84,8 +84,6 @@ ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[]
   // progressive DAW/vendor updates via scan:progress.
   const report = await runFullScan(sendProgress, {
     extraPluginRoots: options?.extraPluginRoots,
-    appPath: app.getAppPath(),
-    userDataPath: app.getPath('userData'),
   })
   lastScan = report
   return report

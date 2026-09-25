@@ -1,9 +1,6 @@
-import { readdir, stat } from 'fs/promises'
-import { existsSync } from 'fs'
-import { basename, extname, join } from 'path'
 import type { AuComponentKey, InstalledPlugin, PluginFormat } from '../../shared/types'
 import { PLUGIN_EXTENSIONS, SKIP_DIR_NAMES, getPluginRoots } from './paths'
-import { readInfoPlist } from './plistReader'
+import { baseName, extName, joinPath, platform } from '../platform'
 import { canonicalizeManufacturer, productFamilyName } from './grouping'
 import { normalizeVersion } from '../catalog/versionCompare'
 
@@ -197,47 +194,29 @@ function readAuComponents(data: Record<string, unknown>): {
   return { keys, vendor }
 }
 
-async function readBundleMeta(bundlePath: string, fallbackName: string): Promise<BundleMeta> {
-  const infoPath = join(bundlePath, 'Contents', 'Info.plist')
+function metaFromPlist(
+  data: Record<string, unknown> | null,
+  fallbackName: string,
+  mtimeMs: number | undefined
+): BundleMeta {
   let version: string | null = null
   let bundleId: string | undefined
   let manufacturer: string | undefined
   let name = fallbackName
-  let modifiedAt: string | undefined
   let auComponents: AuComponentKey[] | undefined
   let auVendor: string | undefined
 
-  try {
-    const s = await stat(bundlePath)
-    modifiedAt = s.mtime.toISOString()
-  } catch {
-    /* ignore */
-  }
-
-  if (existsSync(infoPath)) {
-    try {
-      const data = await readInfoPlist(infoPath)
-      if (data) {
-        version = pickPlistVersion(data)
-        bundleId = data.CFBundleIdentifier as string | undefined
-        name =
-          (data.CFBundleName as string | undefined) ||
-          (data.CFBundleDisplayName as string | undefined) ||
-          fallbackName
-        manufacturer = vendorFromBundleId(bundleId)
-
-        const au = readAuComponents(data)
-        if (au.keys.length) auComponents = au.keys
-        auVendor = au.vendor
-      }
-    } catch {
-      /* ignore corrupt plists */
-    }
-  }
-
-  // Fallback: some vendors stash a better version in nested plists / pkg info
-  if (!version) {
-    version = await readNestedVersion(bundlePath)
+  if (data) {
+    version = pickPlistVersion(data)
+    bundleId = data.CFBundleIdentifier as string | undefined
+    name =
+      (data.CFBundleName as string | undefined) ||
+      (data.CFBundleDisplayName as string | undefined) ||
+      fallbackName
+    manufacturer = vendorFromBundleId(bundleId)
+    const au = readAuComponents(data)
+    if (au.keys.length) auComponents = au.keys
+    auVendor = au.vendor
   }
 
   return {
@@ -245,7 +224,7 @@ async function readBundleMeta(bundlePath: string, fallbackName: string): Promise
     version,
     bundleId,
     manufacturer,
-    modifiedAt,
+    modifiedAt: mtimeMs != null ? new Date(mtimeMs).toISOString() : undefined,
     auComponents,
     auVendor,
   }
@@ -278,25 +257,12 @@ function pickPlistVersion(data: Record<string, unknown>): string | null {
   return null
 }
 
-async function readNestedVersion(bundlePath: string): Promise<string | null> {
-  const candidates = [
-    join(bundlePath, 'Contents', 'Resources', 'Info.plist'),
-    join(bundlePath, 'Contents', 'version.plist'),
-    join(bundlePath, 'Contents', 'PkgInfo'),
+/** Some vendors stash a better version in nested plists. */
+function nestedPlistPaths(bundlePath: string): string[] {
+  return [
+    joinPath(bundlePath, 'Contents', 'Resources', 'Info.plist'),
+    joinPath(bundlePath, 'Contents', 'version.plist'),
   ]
-  for (const p of candidates) {
-    if (!existsSync(p)) continue
-    if (p.endsWith('PkgInfo')) continue
-    try {
-      const data = await readInfoPlist(p)
-      if (!data) continue
-      const v = pickPlistVersion(data)
-      if (v) return v
-    } catch {
-      /* ignore */
-    }
-  }
-  return null
 }
 
 function isPluginBundle(entryName: string): boolean {
@@ -317,102 +283,107 @@ interface RawHit {
   auVendor?: string
 }
 
-async function scanDirectory(
+/** A plugin bundle found on disk, before its plist is read. */
+interface BundleSpot {
+  path: string
+  entry: string
+  format: PluginFormat
+  manufacturerOverride: string | null
+  mtimeMs?: number
+}
+
+const SKIP_DIR_RE =
+  /^(Help|Presets|Documentation|Resources|Logs|Cache|Caches|Uninstallers|Plug-Ins \(Unused\)|Plugins \(Don't Work\)|Plugins \(Maybe\))$/i
+const ARCHIVE_DIR_RE = /\(unused\)|\(don't work\)|\(dont work\)|\(maybe\)|\(disabled\)|\(old\)/i
+/** Distributor / marketplace folders are not the product vendor. */
+const DISTRIBUTOR_FOLDERS = /^(plugin alliance|pluginalliance|ilok|pace|shared components|common files)$/i
+
+function bundleFormat(entry: string, formatHint: PluginFormat | null): PluginFormat {
+  const lower = entry.toLowerCase()
+  if (lower.endsWith('.aaxplugin')) return 'AAX'
+  if (lower.endsWith('.component')) return 'AU'
+  if (lower.endsWith('.vst3')) return 'VST3'
+  if (lower.endsWith('.vst')) return 'VST'
+  if (lower.endsWith('.clap')) return 'CLAP'
+  if (formatHint) return formatHint
+  const matched = Object.keys(PLUGIN_EXTENSIONS).find((e) => lower.endsWith(e))
+  return matched ? formatFromExt(matched) : 'Unknown'
+}
+
+async function walkForBundles(
   dir: string,
   formatHint: PluginFormat | null,
   manufacturerOverride: string | null,
   depth: number,
-  out: RawHit[]
+  out: BundleSpot[]
 ): Promise<void> {
   if (depth > 6) return
-  if (!existsSync(dir)) return
+  const entries = await platform().readDir(dir)
+  if (!entries) return
+  entries.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))
 
-  let entries: string[]
-  try {
-    entries = await readdir(dir)
-  } catch {
-    return
-  }
-
-  for (const entry of entries) {
+  for (const { name: entry, isDir, mtimeMs } of entries) {
     if (entry.startsWith('.')) continue
-    const full = join(dir, entry)
+    const full = joinPath(dir, entry)
 
     if (isPluginBundle(entry)) {
-      const ext = extname(entry).toLowerCase() || `.${entry.split('.').pop()}`
-      // Handle .aaxplugin which is not always returned correctly by extname on all platforms
-      let format = formatHint
-      if (!format) {
-        const matched = Object.keys(PLUGIN_EXTENSIONS).find((e) =>
-          entry.toLowerCase().endsWith(e)
-        )
-        format = matched ? formatFromExt(matched) : 'Unknown'
-      }
-      if (entry.toLowerCase().endsWith('.aaxplugin')) format = 'AAX'
-      else if (entry.toLowerCase().endsWith('.component')) format = 'AU'
-      else if (entry.toLowerCase().endsWith('.vst3')) format = 'VST3'
-      else if (entry.toLowerCase().endsWith('.vst')) format = 'VST'
-      else if (entry.toLowerCase().endsWith('.clap')) format = 'CLAP'
-
-      const meta = await readBundleMeta(full, stripExtension(entry))
-      // Prefer the bundle's own vendor over parent-folder stamps (e.g. "Plugin Alliance/")
-      const mfg =
-        meta.manufacturer ||
-        manufacturerOverride ||
-        'Unknown'
-
-      out.push({
-        name: meta.name,
-        manufacturer: mfg,
-        manufacturerHint: meta.manufacturer,
-        version: meta.version,
-        format: format || 'Unknown',
-        path: full,
-        bundleId: meta.bundleId,
-        modifiedAt: meta.modifiedAt,
-        auComponents: meta.auComponents,
-        auVendor: meta.auVendor,
-      })
+      out.push({ path: full, entry, format: bundleFormat(entry, formatHint), manufacturerOverride, mtimeMs })
       continue
     }
 
     // Manufacturer folder (e.g. Soundtoys/, Slate Digital/) containing nested bundles
-    let isDir = false
-    try {
-      isDir = (await stat(full)).isDirectory()
-    } catch {
-      continue
-    }
     if (!isDir) continue
-
-    // Skip known non-plugin / archive trees
     if (SKIP_DIR_NAMES.has(entry.toLowerCase())) continue
-    if (
-      /^(Help|Presets|Documentation|Resources|Logs|Cache|Caches|Uninstallers|Plug-Ins \(Unused\)|Plugins \(Don't Work\)|Plugins \(Maybe\))$/i.test(
-        entry
-      )
-    ) {
-      continue
-    }
-    // Also skip common "unused / disabled" archive folder name patterns
-    if (/\(unused\)|\(don't work\)|\(dont work\)|\(maybe\)|\(disabled\)|\(old\)/i.test(entry)) {
-      continue
-    }
+    if (SKIP_DIR_RE.test(entry) || ARCHIVE_DIR_RE.test(entry)) continue
     // Don't descend into nested .app bundles (updaters, authorizers)
     if (entry.toLowerCase().endsWith('.app')) continue
 
-    // Distributor / marketplace folders are not the product vendor
-    const DISTRIBUTOR_FOLDERS =
-      /^(plugin alliance|pluginalliance|ilok|pace|shared components|common files)$/i
     if (DISTRIBUTOR_FOLDERS.test(entry)) {
-      await scanDirectory(full, formatHint, manufacturerOverride, depth + 1, out)
+      await walkForBundles(full, formatHint, manufacturerOverride, depth + 1, out)
       continue
     }
-
     const nestedMfg = manufacturerOverride || manufacturerFromFolder(entry)
-    const nextMfg = !extname(entry) ? nestedMfg : manufacturerOverride
-    await scanDirectory(full, formatHint, nextMfg, depth + 1, out)
+    const nextMfg = !extName(entry) ? nestedMfg : manufacturerOverride
+    await walkForBundles(full, formatHint, nextMfg, depth + 1, out)
   }
+}
+
+/** Read every bundle's Info.plist in one batch, then nested plists for the ones without a version. */
+async function hitsFromSpots(spots: BundleSpot[]): Promise<RawHit[]> {
+  const host = platform()
+  const infos = await host.readPlists(spots.map((s) => joinPath(s.path, 'Contents', 'Info.plist')))
+  const metas = spots.map((s, i) => metaFromPlist(infos[i], stripExtension(s.entry), s.mtimeMs))
+
+  const missing = metas.flatMap((m, i) => (m.version ? [] : [i]))
+  if (missing.length) {
+    const nested = await host.readPlists(missing.flatMap((i) => nestedPlistPaths(spots[i].path)))
+    missing.forEach((spotIndex, k) => {
+      for (const data of nested.slice(k * 2, k * 2 + 2)) {
+        const v = data ? pickPlistVersion(data) : null
+        if (v) {
+          metas[spotIndex].version = v
+          break
+        }
+      }
+    })
+  }
+
+  return spots.map((spot, i) => {
+    const meta = metas[i]
+    return {
+      name: meta.name,
+      // Prefer the bundle's own vendor over parent-folder stamps (e.g. "Plugin Alliance/")
+      manufacturer: meta.manufacturer || spot.manufacturerOverride || 'Unknown',
+      manufacturerHint: meta.manufacturer,
+      version: meta.version,
+      format: spot.format,
+      path: spot.path,
+      bundleId: meta.bundleId,
+      modifiedAt: meta.modifiedAt,
+      auComponents: meta.auComponents,
+      auVendor: meta.auVendor,
+    }
+  })
 }
 
 function formatHintForRoot(root: string): PluginFormat | null {
@@ -447,17 +418,18 @@ export async function scanPlugins(
   onProgress?: (message: string, percent: number) => void
 ): Promise<InstalledPlugin[]> {
   const roots = [...new Set([...getPluginRoots(), ...extraRoots])]
-  const hits: RawHit[] = []
-  const existingRoots = roots.filter((r) => existsSync(r))
+  const spots: BundleSpot[] = []
 
-  for (let i = 0; i < existingRoots.length; i++) {
-    const root = existingRoots[i]
+  for (let i = 0; i < roots.length; i++) {
+    const root = roots[i]
     onProgress?.(
-      `Scanning ${basename(root) || root}`,
-      Math.round(((i + 1) / Math.max(existingRoots.length, 1)) * 80)
+      `Scanning ${baseName(root) || root}`,
+      Math.round(((i + 1) / Math.max(roots.length, 1)) * 60)
     )
-    await scanDirectory(root, formatHintForRoot(root), null, 0, hits)
+    await walkForBundles(root, formatHintForRoot(root), null, 0, spots)
   }
+  onProgress?.(`Reading ${spots.length} plugin bundles`, 70)
+  const hits = await hitsFromSpots(spots)
 
   const merged = new Map<string, InstalledPlugin>()
 
