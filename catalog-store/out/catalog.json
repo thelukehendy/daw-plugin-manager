@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-25T13:03:51Z",
+  "updatedAt": "2026-09-25T20:30:23Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -107,6 +107,14 @@
       "versionExample": "1.1",
       "notes": "Update via manufacturer account / downloads portal. Installers are user-driven.",
       "popularityTier": 2
+    },
+    {
+      "id": "ableton",
+      "name": "Ableton",
+      "updatePortalUrl": "https://www.ableton.com/",
+      "websiteUrl": "https://www.ableton.com/",
+      "notes": "Makers of Ableton Live.",
+      "popularityTier": 1
     },
     {
       "id": "accentize",
@@ -1083,6 +1091,14 @@
       "notes": "Open Audio Stack registry author (FOSS)"
     },
     {
+      "id": "cockos",
+      "name": "Cockos",
+      "updatePortalUrl": "https://www.cockos.com/",
+      "websiteUrl": "https://www.cockos.com/",
+      "notes": "Makers of REAPER.",
+      "popularityTier": 1
+    },
+    {
       "id": "oas--colin-raab",
       "name": "Colin Raab",
       "updatePortalUrl": "https://github.com/colinraab/modern-distortion-synth",
@@ -1625,6 +1641,14 @@
       "notes": "Open Audio Stack registry author (FOSS)"
     },
     {
+      "id": "fender",
+      "name": "Fender",
+      "updatePortalUrl": "https://www.fender.com/",
+      "websiteUrl": "https://www.fender.com/",
+      "notes": "Fender Studio Pro is the renamed successor of PreSonus Studio One (Jan 2026).",
+      "popularityTier": 1
+    },
+    {
       "id": "fiedler-audio",
       "name": "Fiedler Audio",
       "updatePortalUrl": "https://www.fiedler-audio.com/",
@@ -1964,7 +1988,7 @@
       "websiteUrl": "https://harrisonconsoles.com",
       "portalApp": "SSL Download Manager",
       "notes": "Update via manufacturer account / downloads portal. Installers are user-driven.",
-      "popularityTier": 3
+      "popularityTier": 1
     },
     {
       "id": "headrush",
@@ -2839,6 +2863,14 @@
       "popularityTier": 2
     },
     {
+      "id": "motu",
+      "name": "MOTU",
+      "updatePortalUrl": "https://motu.com/",
+      "websiteUrl": "https://motu.com/",
+      "notes": "Mark of the Unicorn; makers of Digital Performer.",
+      "popularityTier": 1
+    },
+    {
       "id": "oas--madadog",
       "name": "Madadog",
       "updatePortalUrl": "https://github.com/Madadog/three_osc",
@@ -3454,6 +3486,13 @@
       "popularityTier": 2
     },
     {
+      "id": "pace",
+      "name": "PACE Anti-Piracy",
+      "updatePortalUrl": "https://www.ilok.com/",
+      "websiteUrl": "https://www.ilok.com/",
+      "popularityTier": 1
+    },
+    {
       "id": "oas--potr-software",
       "name": "POTR Software",
       "updatePortalUrl": "https://github.com/POTR-Soft/Chord-Filter",
@@ -3808,6 +3847,14 @@
       "popularityTier": 3
     },
     {
+      "id": "reason-studios",
+      "name": "Reason Studios",
+      "updatePortalUrl": "https://www.reasonstudios.com/",
+      "websiteUrl": "https://www.reasonstudios.com/",
+      "notes": "Makers of Reason (formerly Propellerhead).",
+      "popularityTier": 1
+    },
+    {
       "id": "oas--reece-mitchell",
       "name": "Reece Mitchell",
       "updatePortalUrl": "https://github.com/Reece4000/macro_oscillator",
@@ -3841,9 +3888,9 @@
       "id": "renoise",
       "name": "Renoise",
       "updatePortalUrl": "https://www.renoise.com/redux",
-      "websiteUrl": "https://www.renoise.com/redux",
+      "websiteUrl": "https://www.renoise.com",
       "notes": "Tracker DAW maker; Redux is their only standalone plugin product (VST/AU instrument + phrase sequencer). Official page confirms 'VST/AU Plugin Instrument', Windows/OSX/Linux. The Renoise DAW itself is NOT a plugin - do not seed. Version 1.4.4 from KVR product page verwin (60, skeptical); official Renoise forum announced 'Renoise 3.5 and Redux 1.4 released' (Jul 2025). Downloads are via user Backstage area (no public update portal found). [Added via SURGE universe expansion 2026-09-15.]",
-      "popularityTier": 4
+      "popularityTier": 1
     },
     {
       "id": "oas--resonant-dsp",
@@ -4815,7 +4862,7 @@
       "versionScheme": "marketing",
       "versionExample": "Waveform Pro 14",
       "notes": "Commercial Tracktion instruments; Waveform DAW editions as hub_app [2026-09-15 compat: Checked tracktion.com (home), tracktion.com/products/waveform-pro, tracktion.com/products/biotek, tracktion.com/support. Product pages list system requirements as '64-bit Intel or Apple Silicon' (Waveform Pro 14: macOS 1] [2026-09-15 compat: Waveform Pro page lists system requirement 'macOS 13 or Later, 64-bit Intel or Apple Silicon' (https://www.tracktion.com/products/waveform-pro-ai) — that is DAW support, not plugin architecture, and no Tracktion plugin page states native/universal Apple Silicon execution. Unknown.] [2026-09-16 compat: Vendor's own Waveform Pro page spec table lists 'macOS 13 or Later / 64-bit Intel or Apple Silicon' — Apple Silicon listed as a supported architecture on the manufacturer's own page. Neither value claims 'native-only'; the statement covers both architectures. Note: plugin-specific vendor pages (Novum, Hyperion) fetched showed no architecture wording; retailer listings quote 'native support for Apple silicon' for Novum but that copy was not verified on tracktion.com.]",
-      "popularityTier": 2
+      "popularityTier": 1
     },
     {
       "id": "oas--trencrumb",
@@ -7503,7 +7550,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/std-1-stereo-tapped-delay",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -11621,6 +11668,27 @@
       "popularityTier": 2
     },
     {
+      "id": "ableton--ableton-live",
+      "manufacturerId": "ableton",
+      "name": "Ableton Live",
+      "matchPatterns": [
+        "Ableton Live"
+      ],
+      "notes": "Flagship DAW. Editions (Intro/Standard/Suite) share the Live version line.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "12.4.6",
+      "versionSourceUrl": "https://mac.filehorse.com/download-ableton-live/",
+      "versionVerifiedAt": "2026-09-25T20:29:30Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 80,
+      "versionConfidenceReasons": [
+        "Ableton's own release-notes page did not expose the point version in page text",
+        "Official trial installer filename on vendor-hosted CDN path; MacUpdate corroborates 12.4.6"
+      ]
+    },
+    {
       "id": "steinberg--absolute-7",
       "manufacturerId": "steinberg",
       "name": "Absolute 7",
@@ -11911,7 +11979,7 @@
       "popularityTier": 1,
       "latestVersion": "1.11.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/opticom-xla-3",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -16015,7 +16083,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/svt-3pro",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -19500,7 +19568,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/arachnid-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "2.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/arachnid-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -20475,9 +20543,10 @@
         "AAX"
       ],
       "updatePortalUrl": "https://my.presonus.com/",
-      "notes": "KVR product https://www.kvraudio.com/product/artist-bundle---studio-one-artist-and-notion-by-presonus",
+      "notes": "KVR product https://www.kvraudio.com/product/artist-bundle---studio-one-artist-and-notion-by-presonus Superseded by Fender Studio Pro (Studio One renamed by Fender, Jan 2026).",
+      "supersededByPluginId": "fender--fender-studio-pro",
       "notesForUser": "PreSonus DAW/notation/subscription hub (Artist Bundle - Studio One Artist and Notion).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "universal",
       "popularityTier": 1,
       "latestVersion": "1.0",
@@ -20619,6 +20688,26 @@
       "versionConfidence": 95,
       "versionConfidenceReasons": [
         "oas-registry: manufacturer package version field (95)"
+      ]
+    },
+    {
+      "id": "arturia--software-center",
+      "manufacturerId": "arturia",
+      "name": "Arturia Software Center",
+      "matchPatterns": [
+        "Arturia Software Center"
+      ],
+      "updatePortalUrl": "https://www.arturia.com/",
+      "identityKind": "hub_app",
+      "appleSilicon": "universal",
+      "popularityTier": 1,
+      "latestVersion": "2.12.0",
+      "versionSourceUrl": "https://www.arturia.com/technology/asc",
+      "versionVerifiedAt": "2026-09-25T20:21:49Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 60,
+      "versionConfidenceReasons": [
+        "third-party mirrors only; vendor page shows no version; do not treat as confirmed"
       ]
     },
     {
@@ -21130,7 +21219,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/attracktive-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.1.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/attracktive-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -22674,6 +22763,26 @@
       "isFreeware": true,
       "appleSilicon": "universal",
       "popularityTier": 2
+    },
+    {
+      "id": "avid--avid-link",
+      "manufacturerId": "avid",
+      "name": "Avid Link",
+      "matchPatterns": [
+        "Avid Link"
+      ],
+      "updatePortalUrl": "https://www.avid.com/",
+      "identityKind": "hub_app",
+      "appleSilicon": "native",
+      "popularityTier": 1,
+      "latestVersion": "2026.4.0",
+      "versionSourceUrl": "https://kb.avid.com/pkb/articles/user_guide/Avid-Link-Documentation",
+      "versionVerifiedAt": "2026-09-25T20:21:49Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 88,
+      "versionConfidenceReasons": [
+        "vendor knowledge base; exact version string; first-hand verified 2026-09-25"
+      ]
     },
     {
       "id": "blue-cat-audio--axe-pack",
@@ -27993,7 +28102,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/beta-maxed-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/beta-maxed-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -28816,7 +28925,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/biotek-3-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "3.2.5",
       "versionSourceUrl": "https://www.kvraudio.com/product/biotek-3-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -29455,7 +29564,7 @@
       "updatePortalUrl": "https://www.bitwig.com/download/",
       "notes": "KVR product https://www.kvraudio.com/product/bitwig-studio-16-track-by-bitwig",
       "notesForUser": "Bitwig Studio DAW edition — hub app, not a discrete plugin installer semver.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "6.1.1",
@@ -29483,16 +29592,17 @@
       "updatePortalUrl": "https://www.bitwig.com/download/",
       "notes": "KVR product https://www.kvraudio.com/product/bitwig-studio-6-by-bitwig",
       "notesForUser": "Bitwig Studio DAW edition — hub app, not a discrete plugin installer semver.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "6.1.1",
       "versionSourceUrl": "https://www.bitwig.com/download/",
-      "versionVerifiedAt": "2026-09-10T09:23:36Z",
+      "versionVerifiedAt": "2026-09-25T20:30:19Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "Bitwig download page: one installer for all Studio editions Bitwig Studio 6.1.1"
+        "Vendor download page states Bitwig Studio 6.1.1 explicitly",
+        "Bitwig notes one installer covers all editions, so the version applies to the flagship row"
       ]
     },
     {
@@ -29511,7 +29621,7 @@
       "updatePortalUrl": "https://www.bitwig.com/download/",
       "notes": "KVR product https://www.kvraudio.com/product/bitwig-studio-essentials-by-bitwig",
       "notesForUser": "Bitwig Studio DAW edition — hub app, not a discrete plugin installer semver.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "6.1.1",
@@ -29539,7 +29649,7 @@
       "updatePortalUrl": "https://www.bitwig.com/download/",
       "notes": "KVR product https://www.kvraudio.com/product/bitwig-studio-producer-by-bitwig",
       "notesForUser": "Bitwig Studio DAW edition — hub app, not a discrete plugin installer semver.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "6.1.1",
@@ -29692,7 +29802,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hg-2ms",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -29720,7 +29830,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hg-q",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -40203,7 +40313,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/chop-suey-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.5.0",
       "versionSourceUrl": "https://www.kvraudio.com/product/chop-suey-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -43776,7 +43886,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/collective-2-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "2.0.4",
       "versionSourceUrl": "https://www.kvraudio.com/product/collective-2-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -47398,7 +47508,7 @@
       "updatePortalUrl": "https://www.steinberg.net/download/",
       "notes": "KVR product https://www.kvraudio.com/product/cubase-artist-15-by-steinberg",
       "notesForUser": "Steinberg DAW/editor/hub (Cubase Artist 15).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
       "latestVersion": "15.0.30",
@@ -47426,7 +47536,7 @@
       "updatePortalUrl": "https://www.steinberg.net/download/",
       "notes": "KVR product https://www.kvraudio.com/product/cubase-elements-15-by-steinberg",
       "notesForUser": "Steinberg DAW/editor/hub (Cubase Elements 15).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
       "latestVersion": "15.0.30",
@@ -47454,16 +47564,17 @@
       "updatePortalUrl": "https://www.steinberg.net/download/",
       "notes": "KVR product https://www.kvraudio.com/product/cubase-pro-15-by-steinberg",
       "notesForUser": "Steinberg DAW/editor/hub (Cubase Pro 15).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
       "latestVersion": "15.0.30",
-      "versionSourceUrl": "https://o.steinberg.net/index.php?id=15431&L=1",
-      "versionVerifiedAt": "2026-09-10T11:13:38Z",
+      "versionSourceUrl": "https://forums.steinberg.net/t/cubase-15-0-30-maintenance-update/1033959",
+      "versionVerifiedAt": "2026-09-25T20:29:33Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 92,
+      "versionConfidence": 85,
       "versionConfidenceReasons": [
-        "Steinberg Cubase 15.0.30 public installer exact match KVR"
+        "Vendor-authored announcement on Steinberg's own forum",
+        ""
       ]
     },
     {
@@ -47838,7 +47949,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/high-flyer",
-      "versionVerifiedAt": "2026-09-10T04:06:03Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -49017,7 +49128,7 @@
       "popularityTier": 1,
       "latestVersion": "2.0.2",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/tantra-2",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -49534,7 +49645,7 @@
       "popularityTier": 1,
       "latestVersion": "1.11.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bax-eq",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -49562,7 +49673,7 @@
       "popularityTier": 1,
       "latestVersion": "1.11.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bax-eq",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -52573,6 +52684,27 @@
       "versionConfidence": 90,
       "versionConfidenceReasons": [
         "Per-plugin GitHub tag v0.7.3 on x42/dpl.lv2"
+      ]
+    },
+    {
+      "id": "motu--digital-performer",
+      "manufacturerId": "motu",
+      "name": "Digital Performer",
+      "matchPatterns": [
+        "Digital Performer"
+      ],
+      "notes": "MOTU flagship DAW.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "12.0",
+      "versionSourceUrl": "https://digital-mixing.com/en/music/19199-motu-digital-performer-12-price-dolby-atmos-and-ai-stem-separation-25-09-2026/",
+      "versionVerifiedAt": "2026-09-25T20:29:36Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 75,
+      "versionConfidenceReasons": [
+        "No point release published yet; 12.0 accepted as the release line",
+        ""
       ]
     },
     {
@@ -57874,7 +58006,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/savage-120",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -64802,7 +64934,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/f-em-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.3.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/f-em-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -65752,7 +65884,7 @@
       "updatePortalUrl": "https://www.image-line.com/vst-downloads",
       "notes": "KVR product https://www.kvraudio.com/product/fl-studio-all-plugins-edition-by-image-line",
       "notesForUser": "FL Studio edition (FL Studio All Plugins Edition) — DAW hub, not a discrete FX installer.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "26.1.6",
@@ -65780,7 +65912,7 @@
       "updatePortalUrl": "https://www.image-line.com/vst-downloads",
       "notes": "KVR product https://www.kvraudio.com/product/fl-studio-fruity-edition-by-image-line",
       "notesForUser": "FL Studio edition (FL Studio Fruity Edition) — DAW hub, not a discrete FX installer.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "26.1.6",
@@ -65808,7 +65940,7 @@
       "updatePortalUrl": "https://www.image-line.com/vst-downloads",
       "notes": "KVR product https://www.kvraudio.com/product/fl-studio-mobile-by-image-line",
       "notesForUser": "FL Studio edition (FL Studio Mobile) — DAW hub, not a discrete FX installer.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "4.10.19",
@@ -65837,16 +65969,17 @@
       "updatePortalUrl": "https://www.image-line.com/vst-downloads",
       "notes": "KVR product https://www.kvraudio.com/product/fl-studio-producer-edition-by-image-line",
       "notesForUser": "FL Studio edition (FL Studio Producer Edition) — DAW hub, not a discrete FX installer.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "26.1.6",
       "versionSourceUrl": "https://www.image-line.com/fl-studio-download/",
-      "versionVerifiedAt": "2026-09-10T10:24:31Z",
+      "versionVerifiedAt": "2026-09-25T20:30:19Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 90,
+      "versionConfidence": 85,
       "versionConfidenceReasons": [
-        "Image-Line FL Studio download page documents Version 26.1.6 for Windows and macOS installers (build suffixes differ; marketing semver matches)"
+        "Official vendor download page names the 26.1.6 macOS build",
+        "Current-release corroboration from independent download listing"
       ]
     },
     {
@@ -65865,7 +65998,7 @@
       "updatePortalUrl": "https://www.image-line.com/vst-downloads",
       "notes": "KVR product https://www.kvraudio.com/product/fl-studio-signature-bundle-by-image-line",
       "notesForUser": "FL Studio edition (FL Studio Signature Bundle) — DAW hub, not a discrete FX installer.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "26.1.6",
@@ -67699,6 +67832,28 @@
       "versionConfidence": 60,
       "versionConfidenceReasons": [
         "kvr-product-page (crowdsourced verwin) — skeptical default (60)"
+      ]
+    },
+    {
+      "id": "fender--fender-studio-pro",
+      "manufacturerId": "fender",
+      "name": "Fender Studio Pro",
+      "matchPatterns": [
+        "Fender Studio Pro"
+      ],
+      "notes": "Successor of PreSonus Studio One (Fender rebrand, Jan 2026). Successor of PreSonus Studio One (renamed Jan 2026); last Studio One release was 7.x.",
+      "predecessorPluginId": "presonus--studio-one-artist",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "8.1",
+      "versionSourceUrl": "https://www.fender.com/products/fender-studio-pro",
+      "versionVerifiedAt": "2026-09-25T20:29:33Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 85,
+      "versionConfidenceReasons": [
+        "Vendor product page names the current version line 8.1",
+        ""
       ]
     },
     {
@@ -71864,7 +72019,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/overdrive-supreme-50",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -71892,7 +72047,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/train-ii",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -73404,6 +73559,27 @@
       "updatePortalUrl": "https://cymatics.fm/pages/downloads",
       "notes": "Free. Product page: https://cymatics.fm/collections/plugins/products/gamma-lite",
       "popularityTier": 3
+    },
+    {
+      "id": "apple--garageband",
+      "manufacturerId": "apple",
+      "name": "GarageBand",
+      "matchPatterns": [
+        "GarageBand"
+      ],
+      "notes": "Apple free DAW (macOS). Version from App Store release notes.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "10.4.14",
+      "versionSourceUrl": "https://9to5mac.com/2026/04/22/apple-releases-garageband-update-with-macos-tahoe-app-icon/",
+      "versionVerifiedAt": "2026-09-25T20:29:30Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 80,
+      "versionConfidenceReasons": [
+        "Apple release notes confirm 10.4.14 as latest GarageBand for Mac",
+        ""
+      ]
     },
     {
       "id": "kilohearts--gate",
@@ -77969,7 +78145,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/perfection",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -78081,7 +78257,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/laal",
-      "versionVerifiedAt": "2026-09-10T04:06:03Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -79408,7 +79584,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/natalus-dsceq",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -79430,7 +79606,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "2.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79455,7 +79631,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "2.0.20",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79480,7 +79656,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "3.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79505,7 +79681,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "5.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79530,7 +79706,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "2.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79555,7 +79731,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "2.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79580,7 +79756,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "5.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79605,7 +79781,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79630,7 +79806,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "5.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79655,7 +79831,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79680,7 +79856,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "3.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:37Z",
@@ -79705,7 +79881,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "5.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79730,7 +79906,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:36Z",
@@ -79755,7 +79931,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "4.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:37Z",
@@ -79780,7 +79956,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T03:49:37Z",
@@ -79805,7 +79981,7 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "3.0.0",
       "versionSourceUrl": "https://store.harrisonaudio.com/all-products/harrison-vocal-flow",
       "versionVerifiedAt": "2026-09-10T04:25:12Z",
@@ -79831,7 +80007,7 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "portalApp": "SSL Download Manager",
       "notesForUser": "Installer filename on Harrison downloads is v2.0.0.39457821 (page label v2.1.0 mismatched).",
-      "popularityTier": 3,
+      "popularityTier": 1,
       "latestVersion": "2.0.0",
       "versionSourceUrl": "https://support.harrisonaudio.com/hc/en-gb/articles/15986119874845-Harrison-Plug-in-Downloads",
       "versionVerifiedAt": "2026-09-10T06:29:45Z",
@@ -79899,7 +80075,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/hate-by-dawesome-music",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.13",
       "versionSourceUrl": "https://www.kvraudio.com/product/hate-by-dawesome-music",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -81104,7 +81280,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hitstrip",
-      "versionVerifiedAt": "2026-09-10T04:06:03Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -85153,7 +85329,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/horizen-2-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "2.7.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/horizen-2-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -86040,7 +86216,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/hyperion-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.1.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/hyperion-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -88882,6 +89058,26 @@
       ]
     },
     {
+      "id": "plugin-alliance--installation-manager",
+      "manufacturerId": "plugin-alliance",
+      "name": "Installation Manager",
+      "matchPatterns": [
+        "Installation Manager"
+      ],
+      "updatePortalUrl": "https://www.plugin-alliance.com/",
+      "identityKind": "hub_app",
+      "appleSilicon": "native",
+      "popularityTier": 1,
+      "latestVersion": "1.4.0",
+      "versionSourceUrl": "https://support.plugin-alliance.com/hc/en-us/articles/30226496102813-Plugin-Alliance-Installation-Manager",
+      "versionVerifiedAt": "2026-09-25T20:21:49Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "vendor support article; exact version string; first-hand verified 2026-09-25"
+      ]
+    },
+    {
       "id": "eventide--instant-flanger-mk-ii",
       "manufacturerId": "eventide",
       "name": "Instant Flanger Mk II",
@@ -91575,7 +91771,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/kult-by-dawesome-music",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.26",
       "versionSourceUrl": "https://www.kvraudio.com/product/kult-by-dawesome-music",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -92760,7 +92956,7 @@
       "popularityTier": 1,
       "latestVersion": "1.5.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/knifonium",
-      "versionVerifiedAt": "2026-09-10T04:06:03Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -92788,7 +92984,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/soma",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:31:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -92845,7 +93041,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/knocktonal",
-      "versionVerifiedAt": "2026-09-10T04:06:03Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -100367,6 +100563,27 @@
       ]
     },
     {
+      "id": "apple--logic-pro",
+      "manufacturerId": "apple",
+      "name": "Logic Pro",
+      "matchPatterns": [
+        "Logic Pro"
+      ],
+      "notes": "Apple flagship DAW (macOS). Version from Apple release notes.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "12.3.1",
+      "versionSourceUrl": "https://support.apple.com/en-us/HT203718",
+      "versionVerifiedAt": "2026-09-25T20:29:30Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "Vendor release notes page",
+        "Current version as published by Apple"
+      ]
+    },
+    {
       "id": "cfa-sound--logic-pro-x-deep-house-patches",
       "manufacturerId": "cfa-sound",
       "name": "Logic Pro X Deep House Patches",
@@ -100811,7 +101028,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/sa2rate-2",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -107417,7 +107634,7 @@
       "popularityTier": 1,
       "latestVersion": "1.7.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/magnum-k",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -109553,7 +109770,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/master-mix-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.0.3",
       "versionSourceUrl": "https://www.kvraudio.com/product/master-mix-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -112363,7 +112580,7 @@
       "popularityTier": 1,
       "latestVersion": "1.12.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/tcl-2",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -113648,6 +113865,27 @@
       ],
       "notes": "universe-expansion surge-1318",
       "popularityTier": 3
+    },
+    {
+      "id": "harrison--mixbus",
+      "manufacturerId": "harrison",
+      "name": "Mixbus",
+      "matchPatterns": [
+        "Mixbus"
+      ],
+      "notes": "Harrison flagship DAW.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "11.1",
+      "versionSourceUrl": "https://cdn.manula.com/user/3491/24121_37618_en_1782789937.pdf?v=20260629222723",
+      "versionVerifiedAt": "2026-09-25T20:29:36Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 85,
+      "versionConfidenceReasons": [
+        "Vendor-hosted documentation confirms the 11.1 line",
+        ""
+      ]
     },
     {
       "id": "mixed-in-key--mixed-in-key-studio-edition",
@@ -117037,7 +117275,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/myth-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.63",
       "versionSourceUrl": "https://www.kvraudio.com/product/myth-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -117557,7 +117795,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/oldtimer",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -117667,7 +117905,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/v76u73",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -117695,7 +117933,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/warble",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -117723,7 +117961,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/wunderlich",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -117936,7 +118174,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/novum-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.21",
       "versionSourceUrl": "https://www.kvraudio.com/product/novum-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -121118,7 +121356,7 @@
       "popularityTier": 1,
       "latestVersion": "1.16.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vocal-enhancer",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -121179,7 +121417,7 @@
       "updatePortalUrl": "https://www.steinberg.net/download/",
       "notes": "KVR product https://www.kvraudio.com/product/nuendo-by-steinberg",
       "notesForUser": "Steinberg DAW/editor/hub (Nuendo).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
       "latestVersion": "15.0.30",
@@ -125347,7 +125585,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/outersect-modeler-by-outersect",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.11",
       "versionSourceUrl": "https://www.kvraudio.com/product/outersect-modeler-by-outersect",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -135657,7 +135895,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/platforms-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/platforms-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -138089,9 +138327,10 @@
         "AAX"
       ],
       "updatePortalUrl": "https://my.presonus.com/",
-      "notes": "KVR product https://www.kvraudio.com/product/pro-bundle---studio-one-pro-and-notion-by-presonus",
+      "notes": "KVR product https://www.kvraudio.com/product/pro-bundle---studio-one-pro-and-notion-by-presonus Superseded by Fender Studio Pro (Studio One renamed by Fender, Jan 2026).",
+      "supersededByPluginId": "fender--fender-studio-pro",
       "notesForUser": "PreSonus DAW/notation/subscription hub (Pro Bundle - Studio One Pro and Notion).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "universal",
       "popularityTier": 1,
       "latestVersion": "1.0",
@@ -138237,6 +138476,27 @@
       "versionConfidence": 92,
       "versionConfidenceReasons": [
         "page-confirmed manufacturer releaseNotesPage with clear version (92)"
+      ]
+    },
+    {
+      "id": "avid--pro-tools",
+      "manufacturerId": "avid",
+      "name": "Pro Tools",
+      "matchPatterns": [
+        "Pro Tools"
+      ],
+      "notes": "Avid flagship DAW. Editions (Artist/Studio/Ultimate) share the version line.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "2026.4",
+      "versionSourceUrl": "https://www.toolfarm.com/buy/avid_pro_tools_academic/",
+      "versionVerifiedAt": "2026-09-25T20:29:33Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 80,
+      "versionConfidenceReasons": [
+        "No newer version announced anywhere; 2026.4.1 remains installer-only third-party evidence",
+        ""
       ]
     },
     {
@@ -140557,7 +140817,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.2",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mc77",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:57",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -141818,6 +142078,28 @@
       "notes": "Mercurial Tones sample/preset pack; expand7.",
       "identityKind": "soundset",
       "popularityTier": 3
+    },
+    {
+      "id": "cockos--reaper",
+      "manufacturerId": "cockos",
+      "name": "REAPER",
+      "matchPatterns": [
+        "REAPER",
+        "Reaper"
+      ],
+      "notes": "Cockos flagship DAW. Universal macOS build.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "7.80",
+      "versionSourceUrl": "https://reaper.fm/download.php",
+      "versionVerifiedAt": "2026-09-25T20:29:33Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "Vendor download page, version explicit",
+        ""
+      ]
     },
     {
       "id": "kush-audio--reddi",
@@ -144936,7 +145218,7 @@
       "notesForUser": "Tracktion loop/sound pack — content pack, not a plugin binary.",
       "identityKind": "soundset",
       "appleSilicon": "universal",
-      "popularityTier": 2
+      "popularityTier": 1
     },
     {
       "id": "analog-obsession--rare",
@@ -145166,7 +145448,7 @@
       "notesForUser": "Tracktion loop/sound pack — content pack, not a plugin binary.",
       "identityKind": "soundset",
       "appleSilicon": "universal",
-      "popularityTier": 2
+      "popularityTier": 1
     },
     {
       "id": "native-instruments--raw-rhythm",
@@ -145856,6 +146138,27 @@
       "popularityTier": 2
     },
     {
+      "id": "reason-studios--reason",
+      "manufacturerId": "reason-studios",
+      "name": "Reason",
+      "matchPatterns": [
+        "Reason"
+      ],
+      "notes": "Reason Studios flagship DAW (also ships as Reason Rack Plugin).",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "14.1.0",
+      "versionSourceUrl": "https://www.reasonstudios.com/reason/updates/release-notes",
+      "versionVerifiedAt": "2026-09-25T20:29:35Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "Vendor release-notes page, version explicit",
+        ""
+      ]
+    },
+    {
       "id": "steinberg--reason-rack-plugin",
       "manufacturerId": "steinberg",
       "name": "Reason Rack Plugin",
@@ -146230,7 +146533,7 @@
         "renoise"
       ],
       "notes": "Sample-based instrument + phrase sequencer, VST/AU, Windows/OSX/Linux. Renoise's only standalone plugin.",
-      "popularityTier": 4,
+      "popularityTier": 1,
       "latestVersion": "1.4.4",
       "versionSourceUrl": "https://www.kvraudio.com/product/redux-by-renoise/details",
       "versionVerifiedAt": "2026-09-15T17:43:50Z",
@@ -146941,6 +147244,27 @@
       "versionConfidence": 92,
       "versionConfidenceReasons": [
         "manufacturer product page title \"Renegate v1.6\""
+      ]
+    },
+    {
+      "id": "renoise--renoise",
+      "manufacturerId": "renoise",
+      "name": "Renoise",
+      "matchPatterns": [
+        "Renoise"
+      ],
+      "notes": "Renoise tracker DAW. renoise.com downloads are backstage-gated; version from corroborating sources.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "3.5.4",
+      "versionSourceUrl": "https://aur.archlinux.org/packages/renoise",
+      "versionVerifiedAt": "2026-09-25T20:29:36Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 70,
+      "versionConfidenceReasons": [
+        "renoise.com downloads are backstage-gated; accepted below green until vendor page reachable",
+        ""
       ]
     },
     {
@@ -147663,7 +147987,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/retromod-106-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-106-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -147689,7 +148013,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/retromod-digital-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-digital-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -147715,7 +148039,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/retromod-fat-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-fat-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -147741,7 +148065,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/retromod-lead-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lead-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -147767,7 +148091,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/retromod-lofreq-classic-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lofreq-classic-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -147793,7 +148117,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/retromod-lofreq-modern-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lofreq-modern-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -147819,7 +148143,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/retromod-lofreq-wired-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lofreq-wired-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -151176,7 +151500,7 @@
       "popularityTier": 1,
       "latestVersion": "1.7.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/iron",
-      "versionVerifiedAt": "2026-09-10T04:06:03Z",
+      "versionVerifiedAt": "2026-09-25 17:31:55",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -151274,7 +151598,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mo-verb-plus",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:58",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -151302,7 +151626,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/pq",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:58",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -151492,7 +151816,7 @@
       "popularityTier": 1,
       "latestVersion": "1.19.2",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/twintube",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:58",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -151560,7 +151884,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vitalizer-mk3-t",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:58",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -153087,7 +153411,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.17",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-25T05:28:46Z",
+      "versionVerifiedAt": "2026-09-25 17:22:41",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -153114,7 +153438,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.5",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-25T05:28:46Z",
+      "versionVerifiedAt": "2026-09-25 17:22:41",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -153141,7 +153465,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.41",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-25T05:28:46Z",
+      "versionVerifiedAt": "2026-09-25 17:22:41",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -156345,7 +156669,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/optomax",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:58",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -159428,6 +159752,7 @@
       ],
       "minMacOS": "12.0",
       "portalApp": "Softube Central",
+      "identityKind": "hub_app",
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "3.0.5",
@@ -160034,7 +160359,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/son-of-a-beta-maxed-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/son-of-a-beta-maxed-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -161660,7 +161985,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/spacecraft-by-delta-v-audio",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "2.1.28",
       "versionSourceUrl": "https://www.kvraudio.com/product/spacecraft-by-delta-v-audio",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -164290,7 +164615,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/stagebox-by-stagebox-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/stagebox-by-stagebox-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -166964,9 +167289,10 @@
         "AAX"
       ],
       "updatePortalUrl": "https://my.presonus.com/",
-      "notes": "KVR product https://www.kvraudio.com/product/studio-one-artist-by-presonus",
+      "notes": "KVR product https://www.kvraudio.com/product/studio-one-artist-by-presonus Superseded by Fender Studio Pro (Studio One renamed by Fender, Jan 2026).",
+      "supersededByPluginId": "fender--fender-studio-pro",
       "notesForUser": "PreSonus DAW/notation/subscription hub (Studio One Artist).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "universal",
       "popularityTier": 1,
       "latestVersion": "6.6.3",
@@ -166994,7 +167320,6 @@
       "updatePortalUrl": "https://my.presonus.com/",
       "notes": "KVR product https://www.kvraudio.com/product/studio-one-artist-vst-and-au-and-rewire-support-by-presonus",
       "notesForUser": "PreSonus DAW/notation/subscription hub (Studio One Artist VST and AU and Rewire Support).",
-      "identityKind": "hub_app",
       "appleSilicon": "universal",
       "popularityTier": 1,
       "latestVersion": "1.0",
@@ -168204,7 +168529,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/pt100",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:58",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -168232,7 +168557,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/se100",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:58",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -174880,7 +175205,7 @@
       "popularityTier": 1,
       "latestVersion": "1.7.4",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/kirchhoff-eq",
-      "versionVerifiedAt": "2026-09-10T04:06:03Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -174908,7 +175233,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.2",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/trinity-shaper",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:59",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -176082,7 +176407,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/the-oven",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:59",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -176306,7 +176631,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/lisa",
-      "versionVerifiedAt": "2026-09-10T04:07:13Z",
+      "versionVerifiedAt": "2026-09-25 17:31:56",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -178000,7 +178325,7 @@
       "notesForUser": "Tracktion loop/sound pack — content pack, not a plugin binary.",
       "identityKind": "soundset",
       "appleSilicon": "universal",
-      "popularityTier": 2
+      "popularityTier": 1
     },
     {
       "id": "ik-multimedia--techno",
@@ -180216,7 +180541,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/theia-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "1.23",
       "versionSourceUrl": "https://www.kvraudio.com/product/theia-by-tracktion-software",
       "versionVerifiedAt": "2026-09-10T09:25:41Z",
@@ -184833,7 +185158,7 @@
       "notesForUser": "Tracktion loop/sound pack — content pack, not a plugin binary.",
       "identityKind": "soundset",
       "appleSilicon": "universal",
-      "popularityTier": 2
+      "popularityTier": 1
     },
     {
       "id": "kazrog--true-252",
@@ -197486,7 +197811,7 @@
       "updatePortalUrl": "https://www.steinberg.net/download/",
       "notes": "KVR product https://www.kvraudio.com/product/vst-live-elements-by-steinberg",
       "notesForUser": "Steinberg DAW/editor/hub (VST Live Elements).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
       "latestVersion": "1.4.75",
@@ -197514,7 +197839,7 @@
       "updatePortalUrl": "https://www.steinberg.net/download/",
       "notes": "KVR product https://www.kvraudio.com/product/vst-live-pro-3-by-steinberg",
       "notesForUser": "Steinberg DAW/editor/hub (VST Live Pro 3).",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
       "latestVersion": "3.0.60",
@@ -199135,7 +199460,7 @@
       "popularityTier": 1,
       "latestVersion": "1.16.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vsc-2",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:59",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -199163,7 +199488,7 @@
       "popularityTier": 1,
       "latestVersion": "1.11.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vsm-3",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:59",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -199191,7 +199516,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/vss-2",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:59",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -204162,6 +204487,27 @@
       ]
     },
     {
+      "id": "tracktion--waveform",
+      "manufacturerId": "tracktion",
+      "name": "Waveform",
+      "matchPatterns": [
+        "Waveform"
+      ],
+      "notes": "Tracktion flagship DAW. Edition rows carry no version; this row carries the generation version.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "unknown",
+      "popularityTier": 1,
+      "latestVersion": "14",
+      "versionSourceUrl": "https://www.tracktion.com/products/waveform-pro-whats-new",
+      "versionVerifiedAt": "2026-09-25T20:29:36Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 80,
+      "versionConfidenceReasons": [
+        "Vendor page names generation 14; no point build published",
+        ""
+      ]
+    },
+    {
       "id": "tracktion--waveform-free-13",
       "manufacturerId": "tracktion",
       "name": "Waveform Free 13",
@@ -204176,10 +204522,11 @@
       ],
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/waveform-free-13-by-tracktion-software",
+      "supersededByPluginId": "tracktion--waveform",
       "notesForUser": "Tracktion Waveform DAW edition — hub app.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "universal",
-      "popularityTier": 2
+      "popularityTier": 1
     },
     {
       "id": "tracktion--waveform-pro-13",
@@ -204196,10 +204543,11 @@
       ],
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/waveform-pro-13-by-tracktion-software",
+      "supersededByPluginId": "tracktion--waveform",
       "notesForUser": "Tracktion Waveform DAW edition — hub app.",
-      "identityKind": "hub_app",
+      "identityKind": "standalone_app",
       "appleSilicon": "universal",
-      "popularityTier": 2
+      "popularityTier": 1
     },
     {
       "id": "puremagnetik--waveframe-transwave-synthesis-of-the-ensoniq-fizmo",
@@ -204232,7 +204580,7 @@
       "updatePortalUrl": "https://www.tracktion.com/account",
       "notes": "KVR product https://www.kvraudio.com/product/waverazor-by-tracktion-software",
       "appleSilicon": "universal",
-      "popularityTier": 2,
+      "popularityTier": 1,
       "latestVersion": "2.8",
       "versionSourceUrl": "https://sonicstate.com/news/2025/02/14/mok-updates-waverazor/",
       "versionVerifiedAt": "2026-09-16T15:20:31Z",
@@ -204240,6 +204588,26 @@
       "versionConfidence": 78,
       "versionConfidenceReasons": [
         "Four independent music-tech outlets (Sonic State quoting company-provided release details, CDM, Synth Anatomy, Rekkerd); no official MOK/Tracktion version page found"
+      ]
+    },
+    {
+      "id": "waves--waves-central",
+      "manufacturerId": "waves",
+      "name": "Waves Central",
+      "matchPatterns": [
+        "Waves Central"
+      ],
+      "updatePortalUrl": "https://www.waves.com/downloads",
+      "identityKind": "hub_app",
+      "appleSilicon": "mixed",
+      "popularityTier": 1,
+      "latestVersion": "16.7.2",
+      "versionSourceUrl": "https://www.waves.com/downloads/latest-offline-installer",
+      "versionVerifiedAt": "2026-09-25T20:21:49Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "vendor downloads page; exact version string; first-hand verified 2026-09-25"
       ]
     },
     {
@@ -212433,6 +212801,20 @@
       "popularityTier": 1
     },
     {
+      "id": "steinberg--elicenser-control-center",
+      "manufacturerId": "steinberg",
+      "name": "eLicenser Control Center",
+      "matchPatterns": [
+        "eLicenser Control Center"
+      ],
+      "updatePortalUrl": "https://helpcenter.steinberg.de/",
+      "discontinued": true,
+      "notes": "eLicenser service closed 2025-05-20 per Steinberg; superseded by Steinberg Licensing. No current version.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "mixed",
+      "popularityTier": 1
+    },
+    {
       "id": "waves--emo-d5-dynamics",
       "manufacturerId": "waves",
       "name": "eMo D5 Dynamics",
@@ -212683,7 +213065,7 @@
       "popularityTier": 1,
       "latestVersion": "1.17.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/mpressor",
-      "versionVerifiedAt": "2026-09-10T04:07:14Z",
+      "versionVerifiedAt": "2026-09-25 17:29:59",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -213087,6 +213469,25 @@
         "izotope.com legacy products public installer v1_73",
         "accept manufacturer filename over KVR 1.7.5",
         "confidence raise 10"
+      ]
+    },
+    {
+      "id": "pace--ilok-license-manager",
+      "manufacturerId": "pace",
+      "name": "iLok License Manager",
+      "matchPatterns": [
+        "iLok License Manager"
+      ],
+      "updatePortalUrl": "https://www.ilok.com/",
+      "identityKind": "standalone_app",
+      "popularityTier": 1,
+      "latestVersion": "6.0.1",
+      "versionSourceUrl": "https://updates.ilok.com/iloklicensemanager/LicenseSupportInstallerMacReleaseNotes.html",
+      "versionVerifiedAt": "2026-09-25T20:21:49Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "vendor release-notes page; exact version string; first-hand verified 2026-09-25"
       ]
     },
     {
