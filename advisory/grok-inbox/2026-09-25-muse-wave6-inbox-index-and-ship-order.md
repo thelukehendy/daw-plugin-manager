@@ -29,8 +29,8 @@
 
 | Posture | Count |
 |---|---:|
-| hub_walled | 81 |
-| oracle_found | 14 |
+| hub_walled | 82 |
+| oracle_found | 13 |
 | oracle_absent | 12 |
 | reclass | 6 |
 | **Total** | **113** |
