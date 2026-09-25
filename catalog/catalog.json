@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-25T20:58:18Z",
+  "updatedAt": "2026-09-25T21:25:48Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -658,8 +658,7 @@
       "updatePortalUrl": "https://www.avid.com/account",
       "websiteUrl": "https://www.avid.com",
       "aliases": [
-        "Pro Tools",
-        "AIR"
+        "Pro Tools"
       ],
       "portalApp": "Avid Link",
       "appleSilicon": "native",
@@ -5461,14 +5460,6 @@
       "popularityTier": 3
     },
     {
-      "id": "digidesign",
-      "name": "digidesign",
-      "updatePortalUrl": "https://www.google.com/search?q=digidesign+plugin+download",
-      "portalApp": "Avid Link",
-      "notes": "Portal URL is a search fallback until a direct manufacturer page is curated.",
-      "popularityTier": 3
-    },
-    {
       "id": "oas--digidigital",
       "name": "digidigital",
       "updatePortalUrl": "https://github.com/digidigital/openlightshow",
@@ -5979,13 +5970,6 @@
       "updatePortalUrl": "https://github.com/ummshsh/Recall-Sampler",
       "websiteUrl": "https://github.com/ummshsh/Recall-Sampler",
       "notes": "Open Audio Stack registry author (FOSS)"
-    },
-    {
-      "id": "unfilteredaudio",
-      "name": "unfilteredaudio",
-      "updatePortalUrl": "https://www.plugin-alliance.com/blogs/news/download-and-install-plugin-alliance-plugins",
-      "notes": "Portal URL is a search fallback until a direct manufacturer page is curated.",
-      "popularityTier": 3
     },
     {
       "id": "oas--vertver",
@@ -6946,25 +6930,6 @@
       "popularityTier": 4
     },
     {
-      "id": "steinberg--6x-500",
-      "manufacturerId": "lindell-audio",
-      "name": "6X-500",
-      "matchPatterns": [
-        "6X-500"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Lindell Audio product (scan bundle vendor lindellaudio)]",
-      "portalApp": "Steinberg Download Assistant",
-      "notesForUser": "Steinberg/partner 500-series suite component — SDA hub-walled; no public per-SKU installer semver.",
-      "identityKind": "suite_component",
-      "popularityTier": 2
-    },
-    {
       "id": "native-instruments--70s-guitar-rock-pop-2",
       "manufacturerId": "native-instruments",
       "name": "70s Guitar Rock Pop 2",
@@ -6999,25 +6964,6 @@
       "notes": "8dio Shopify catalog; handle=studio-percussion-auxiliary; expand10 soundset.",
       "identityKind": "soundset",
       "popularityTier": 1
-    },
-    {
-      "id": "steinberg--7x-500",
-      "manufacturerId": "lindell-audio",
-      "name": "7X-500",
-      "matchPatterns": [
-        "7X-500"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Lindell Audio product (scan bundle vendor lindellaudio)]",
-      "portalApp": "Steinberg Download Assistant",
-      "notesForUser": "Steinberg/partner 500-series suite component — SDA hub-walled; no public per-SKU installer semver.",
-      "identityKind": "suite_component",
-      "popularityTier": 2
     },
     {
       "id": "xfer-records--8-bit-shaper",
@@ -39851,25 +39797,6 @@
       "versionConfidenceReasons": [
         "KVR Audio product page crowdsourced version (yellow)"
       ]
-    },
-    {
-      "id": "steinberg--channelx",
-      "manufacturerId": "lindell-audio",
-      "name": "ChannelX",
-      "matchPatterns": [
-        "ChannelX"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Lindell Audio product (scan bundle vendor lindellaudio)]",
-      "portalApp": "Steinberg Download Assistant",
-      "notesForUser": "Steinberg ChannelX suite/partner component — SDA hub-walled; no public per-SKU installer semver.",
-      "identityKind": "suite_component",
-      "popularityTier": 2
     },
     {
       "id": "airwindows--channelx",
@@ -89574,7 +89501,7 @@
     },
     {
       "id": "digidesign--invert-duplicate",
-      "manufacturerId": "digidesign",
+      "manufacturerId": "avid",
       "name": "Invert-Duplicate",
       "matchPatterns": [
         "Invert-Duplicate"
@@ -89590,7 +89517,8 @@
       "updateClass": "bundled",
       "portalApp": "Avid Link",
       "notesForUser": "Bundled with Pro Tools; version tracks host Pro Tools release (currently 2026.4.1). No independent public plugin installer semver — update via Avid Link / Pro Tools installer.",
-      "popularityTier": 3,
+      "appleSilicon": "native",
+      "popularityTier": 1,
       "latestVersion": "2026.4.1",
       "versionSourceUrl": "https://www.avid.com/pro-tools/whats-new",
       "versionVerifiedAt": "2026-09-10T06:10:40Z",
@@ -89928,6 +89856,8 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.synthogy.com/",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.synthogy.com/ flash:heuristic",
+      "updateClass": "paid_upgrade",
+      "notesForUser": "Ivory 3 is a paid upgrade from Ivory II (upgrade pricing, not a free update).",
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "3.0.8",
@@ -97482,7 +97412,7 @@
     },
     {
       "id": "unfilteredaudio--ltl-silver-bullet-mk2",
-      "manufacturerId": "unfilteredaudio",
+      "manufacturerId": "unfiltered-audio",
       "name": "LTL SILVER BULLET mk2",
       "matchPatterns": [
         "LTL SILVER BULLET mk2"
@@ -97496,7 +97426,8 @@
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "notesForUser": "Manufacturer/id mismatch (Unfiltered Audio vs Louder Than Liftoff Silver Bullet) — unresolved; no latestVersion.",
       "identityKind": "unknown_other",
-      "popularityTier": 3
+      "appleSilicon": "universal",
+      "popularityTier": 2
     },
     {
       "id": "plugin-alliance--ltl-silver-bullet-mk2",
@@ -98846,44 +98777,6 @@
       "popularityTier": 2
     },
     {
-      "id": "steinberg--lindell-254e",
-      "manufacturerId": "lindell-audio",
-      "name": "Lindell 254E",
-      "matchPatterns": [
-        "Lindell 254E"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Lindell Audio product (scan bundle vendor lindellaudio)]",
-      "portalApp": "Steinberg Download Assistant",
-      "notesForUser": "Lindell 254E (Steinberg distribution) suite/partner SKU — SDA hub-walled; no public per-SKU semver.",
-      "identityKind": "suite_component",
-      "popularityTier": 2
-    },
-    {
-      "id": "steinberg--lindell-354e",
-      "manufacturerId": "lindell-audio",
-      "name": "Lindell 354E",
-      "matchPatterns": [
-        "Lindell 354E"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Lindell Audio product (scan bundle vendor lindellaudio)]",
-      "portalApp": "Steinberg Download Assistant",
-      "notesForUser": "Lindell 354E (Steinberg distribution) suite/partner SKU — SDA hub-walled; no public per-SKU semver.",
-      "identityKind": "suite_component",
-      "popularityTier": 2
-    },
-    {
       "id": "lindell-audio--lindell-50-buss",
       "manufacturerId": "lindell-audio",
       "name": "Lindell 50 Buss",
@@ -99108,7 +99001,8 @@
       "manufacturerId": "plugin-alliance",
       "name": "Lindell Audio 254E",
       "matchPatterns": [
-        "Lindell Audio 254E"
+        "Lindell Audio 254E",
+        "Lindell 254E"
       ],
       "formats": [
         "VST",
@@ -99134,7 +99028,8 @@
       "manufacturerId": "plugin-alliance",
       "name": "Lindell Audio 354E",
       "matchPatterns": [
-        "Lindell Audio 354E"
+        "Lindell Audio 354E",
+        "Lindell 354E"
       ],
       "formats": [
         "VST",
@@ -99186,7 +99081,8 @@
       "manufacturerId": "plugin-alliance",
       "name": "Lindell Audio 6X-500",
       "matchPatterns": [
-        "Lindell Audio 6X-500"
+        "Lindell Audio 6X-500",
+        "6X-500"
       ],
       "formats": [
         "VST",
@@ -99212,7 +99108,8 @@
       "manufacturerId": "plugin-alliance",
       "name": "Lindell Audio 7X-500",
       "matchPatterns": [
-        "Lindell Audio 7X-500"
+        "Lindell Audio 7X-500",
+        "7X-500"
       ],
       "formats": [
         "VST",
@@ -99264,7 +99161,8 @@
       "manufacturerId": "plugin-alliance",
       "name": "Lindell Audio ChannelX",
       "matchPatterns": [
-        "Lindell Audio ChannelX"
+        "Lindell Audio ChannelX",
+        "ChannelX"
       ],
       "formats": [
         "VST",
@@ -99342,7 +99240,8 @@
       "manufacturerId": "plugin-alliance",
       "name": "Lindell Audio PEX-500",
       "matchPatterns": [
-        "Lindell Audio PEX-500"
+        "Lindell Audio PEX-500",
+        "PEX-500"
       ],
       "formats": [
         "VST",
@@ -99394,7 +99293,8 @@
       "manufacturerId": "plugin-alliance",
       "name": "Lindell Audio TE-100",
       "matchPatterns": [
-        "Lindell Audio TE-100"
+        "Lindell Audio TE-100",
+        "Lindell TE-100"
       ],
       "formats": [
         "VST",
@@ -99536,25 +99436,6 @@
       "versionConfidenceReasons": [
         "installer-filename on official manufacturer domain (88)"
       ]
-    },
-    {
-      "id": "steinberg--lindell-te-100",
-      "manufacturerId": "lindell-audio",
-      "name": "Lindell TE-100",
-      "matchPatterns": [
-        "Lindell TE-100"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Lindell Audio product (scan bundle vendor lindellaudio)]",
-      "portalApp": "Steinberg Download Assistant",
-      "notesForUser": "Lindell TE-100 (Steinberg distribution) suite/partner SKU — SDA hub-walled; no public per-SKU semver.",
-      "identityKind": "suite_component",
-      "popularityTier": 2
     },
     {
       "id": "projectsam--lineage-percussion",
@@ -127932,25 +127813,6 @@
       "popularityTier": 2
     },
     {
-      "id": "steinberg--pex-500",
-      "manufacturerId": "lindell-audio",
-      "name": "PEX-500",
-      "matchPatterns": [
-        "PEX-500"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Lindell Audio product (scan bundle vendor lindellaudio)]",
-      "portalApp": "Steinberg Download Assistant",
-      "notesForUser": "PEX-500 (Steinberg distribution) suite/partner SKU — SDA hub-walled; no public per-SKU semver.",
-      "identityKind": "suite_component",
-      "popularityTier": 2
-    },
-    {
       "id": "voxengo--pha-979",
       "manufacturerId": "voxengo",
       "name": "PHA-979",
@@ -150225,6 +150087,8 @@
         "VST3"
       ],
       "updatePortalUrl": "https://www.scuffhamamps.com/downloads",
+      "updateClass": "paid_upgrade",
+      "notesForUser": "S-Gear 3 is a paid upgrade for v2.7-or-earlier license holders ($39); free for v2.9+ licenses. v3 replaces v2 on the same machine.",
       "appleSilicon": "universal",
       "popularityTier": 2,
       "latestVersion": "3.2.5",
@@ -162531,7 +162395,9 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://o.steinberg.net/en/support/content_and_accessories/steinberg_download_assistant.html",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "updateClass": "paid_upgrade",
       "portalApp": "Steinberg Download Assistant",
+      "notesForUser": "Major version upgrade is paid (e.g. SpectraLayers Pro 11 to 13: upgrade pricing applies). Not a free update.",
       "appleSilicon": "mixed",
       "popularityTier": 1,
       "latestVersion": "13.0.20",
@@ -164012,6 +163878,19 @@
       "updatePortalUrl": "https://splice.com/",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1@https://splice.com/ flash:heuristic",
       "portalApp": "Splice",
+      "appleSilicon": "native",
+      "popularityTier": 2
+    },
+    {
+      "id": "splice--splice-desktop-app",
+      "manufacturerId": "splice",
+      "name": "Splice Desktop",
+      "matchPatterns": [
+        "Splice Desktop"
+      ],
+      "updatePortalUrl": "https://splice.com/download",
+      "notes": "Splice desktop app (standalone). Split 2026-09-25 from splice--splice: the 5.4.12 observation was sourced from the desktop CDN (desktop.splice.com), not the plugin.",
+      "identityKind": "standalone_app",
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "5.4.12",
