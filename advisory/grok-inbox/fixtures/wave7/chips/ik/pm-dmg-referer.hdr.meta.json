@@ -1,0 +1,13 @@
+{
+  "url": "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_1.1.15.dmg",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 529,
+  "sha256": "72acd351b6bd1b683cf3ec763f03f2adf41afe63f1a0cb7f69a18e9601c8e74f",
+  "method": "HEAD",
+  "tip": "1.1.15",
+  "referer": "https://www.ikmultimedia.com/products/productmanager/",
+  "http_status": 200,
+  "last_modified": "Tue, 25 Aug 2026 16:25:00 GMT",
+  "identity": "ik-multimedia--product-manager",
+  "hub_app_only": true
+}

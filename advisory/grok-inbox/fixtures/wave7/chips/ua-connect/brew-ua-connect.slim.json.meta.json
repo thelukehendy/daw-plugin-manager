@@ -1,0 +1,9 @@
+{
+  "url": "https://formulae.brew.sh/api/cask/ua-connect.json",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 321,
+  "sha256": "361d0b0ae5b1d930aecdeed62952dc89690d3121a84682a009a4291cd28f229e",
+  "role": "url_discovery",
+  "tip": "1.10.0",
+  "build": "3844"
+}

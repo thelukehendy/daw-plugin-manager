@@ -1,0 +1,12 @@
+version: 3.26.0
+files:
+  - url: Native-Access-arm64-mac-latest.zip
+    sha512: TmYZhxW0iP7kLOESo+m7M8qVGGUCFa8VekFU7738xvK7UTD17NsJApDSUUDkWOxBtK/M9WYbVEceKvIo8LioqQ==
+    size: 168668162
+  - url: Native-Access-arm64-mac-latest.dmg
+    sha512: zvNLw/K97jdkYhNAxPqvnPBAv0gWiM8QnM0B4xaS+4D7iOn14RnU70E9Aetj+qvZ7TEgODuQmnqx+atJkhGB+Q==
+    size: 169759471
+path: Native-Access-arm64-mac-latest.zip
+sha512: TmYZhxW0iP7kLOESo+m7M8qVGGUCFa8VekFU7738xvK7UTD17NsJApDSUUDkWOxBtK/M9WYbVEceKvIo8LioqQ==
+releaseDate: '2026-09-08T11:39:13.368Z'
+minimumSystemVersion: 13.0.0

@@ -1,0 +1,8 @@
+{
+  "url": "https://store-8pfrvbtcba.mybigcommerce.com/content/plugins/release-notes/Oxford_DoesNotExist_Release_Notes.html",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 179,
+  "sha256": "34426db8c9116a945ff77f9c0a67d83c0357d3d4c6384b600a8df1743e5131f5",
+  "negative": true,
+  "detector": "reject_if_missing_h2_semver_after_RN_title"
+}

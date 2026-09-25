@@ -1,0 +1,10 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mariana",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 8459,
+  "sha256": "1e466a4fd8e500646185102bd60bc95fd947d8385641e6eb8f0d67d3fa7b338d",
+  "slug": "mariana",
+  "tip": "1.2.0",
+  "plugin_id": "moog-music--mariana",
+  "plugin_id_alt": "moog--mariana"
+}

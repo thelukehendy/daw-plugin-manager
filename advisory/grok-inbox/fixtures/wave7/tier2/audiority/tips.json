@@ -1,0 +1,205 @@
+{
+  "vendor": "audiority",
+  "oracle_url": "https://www.audiority.com/plugin-versions/",
+  "fetched_at_pt": "2026-09-25 12:20 PT",
+  "parse_rule": "Table Name | Curr Version | Last Update. Strip leading v. Exact name match (Distortion 1 mkII \u2260 Distortion 1; Heavy Pedal mkII \u2260 Heavy Pedal; NeonVerb MV2; Green Reaper GR9). Kontakt/SFZ editions are soundsets \u2014 skip. Spatial D320 is table-only (not in catalog 2026-09-25) \u2014 identity add before version.",
+  "tip_count": 34,
+  "all_tips": [
+    {
+      "product": "Big Goat",
+      "version": "1.3",
+      "date": "2023-11-01"
+    },
+    {
+      "product": "Big Swarma",
+      "version": "1.0.1",
+      "date": "2025-09-08"
+    },
+    {
+      "product": "Blue Face",
+      "version": "1.3",
+      "date": "2023-11-22"
+    },
+    {
+      "product": "Chief Chorus",
+      "version": "1.0",
+      "date": "2024-01-25"
+    },
+    {
+      "product": "Chief Flanger",
+      "version": "1.0.1",
+      "date": "2026-04-15"
+    },
+    {
+      "product": "Chorus Ensembler",
+      "version": "1.1.2",
+      "date": "2025-08-22"
+    },
+    {
+      "product": "Dark Memory",
+      "version": "1.1.1",
+      "date": "2024-04-15"
+    },
+    {
+      "product": "Deleight",
+      "version": "1.4.1",
+      "date": "2023-05-04"
+    },
+    {
+      "product": "Distortion 1 mkII",
+      "version": "2.1",
+      "date": "2024-05-07"
+    },
+    {
+      "product": "Doomagorgon",
+      "version": "1.0",
+      "date": "2024-06-14"
+    },
+    {
+      "product": "Echoes T7E mkII",
+      "version": "2.3",
+      "date": "2024-09-18"
+    },
+    {
+      "product": "Electric Matter",
+      "version": "1.3",
+      "date": "2024-02-07"
+    },
+    {
+      "product": "Flanger 117",
+      "version": "1.0.1",
+      "date": "2026-05-04"
+    },
+    {
+      "product": "GrainSpace",
+      "version": "2.6",
+      "date": "2025-04-16"
+    },
+    {
+      "product": "Green Reaper GR9",
+      "version": "1.2.1",
+      "date": "2024-05-18"
+    },
+    {
+      "product": "Harmonic Maximizer",
+      "version": "1.3.1",
+      "date": "2025-07-22"
+    },
+    {
+      "product": "Heavy Pedal mkII",
+      "version": "2.2",
+      "date": "2024-01-05"
+    },
+    {
+      "product": "Klirrton Grindstein",
+      "version": "1.3.2",
+      "date": "2024-01-16"
+    },
+    {
+      "product": "LDC2 Compander",
+      "version": "1.3",
+      "date": "2024-03-22"
+    },
+    {
+      "product": "NeonVerb MV2",
+      "version": "1.0.1",
+      "date": "2026-02-13"
+    },
+    {
+      "product": "Octaver 82",
+      "version": "1.2.1",
+      "date": "2024-04-04"
+    },
+    {
+      "product": "PlexiTape",
+      "version": "1.4.2",
+      "date": "2026-07-20"
+    },
+    {
+      "product": "Polaris",
+      "version": "1.9",
+      "date": "2023-09-21"
+    },
+    {
+      "product": "PolyComp",
+      "version": "1.3.1",
+      "date": "2023-09-30"
+    },
+    {
+      "product": "Pre X7",
+      "version": "1.6.1",
+      "date": "2024-11-19"
+    },
+    {
+      "product": "Pyros",
+      "version": "2.3.1",
+      "date": "2024-09-11"
+    },
+    {
+      "product": "Solidus Randy 250",
+      "version": "1.2",
+      "date": "2025-02-04"
+    },
+    {
+      "product": "Solidus VS8100",
+      "version": "1.3",
+      "date": "2023-12-18"
+    },
+    {
+      "product": "Space Age 555",
+      "version": "1.0.3",
+      "date": "2025-11-27"
+    },
+    {
+      "product": "Space Station UM282",
+      "version": "1.5.3",
+      "date": "2026-05-11"
+    },
+    {
+      "product": "Spatial D320",
+      "version": "1.0.1",
+      "date": "2026-07-21"
+    },
+    {
+      "product": "Tube Modulator",
+      "version": "1.5",
+      "date": "2025-05-07"
+    },
+    {
+      "product": "VertiVerb VRS23",
+      "version": "1.0.1",
+      "date": "2023-11-20"
+    },
+    {
+      "product": "XenoVerb",
+      "version": "1.6",
+      "date": "2025-10-17"
+    }
+  ],
+  "table_only_new_sku": {
+    "product": "Spatial D320",
+    "version": "1.0.1",
+    "date": "2026-07-21"
+  },
+  "yellows_not_on_table": [
+    "Dr Drive",
+    "Dr Phase",
+    "Epic Pig Guiro",
+    "Harshness",
+    "L12X Solid State Amplifier",
+    "Side Filter",
+    "TS-1 Transient Shaper",
+    "The Bluesman",
+    "The Driver",
+    "The Overseer",
+    "The Shredder",
+    "The Sword",
+    "Tremolan"
+  ],
+  "fixture": "fixtures/tier2/audiority/plugin-versions.html",
+  "edition_aliases_to_catalog": {
+    "Distortion 1 mkII": "Distortion 1",
+    "Heavy Pedal mkII": "Heavy Pedal",
+    "Green Reaper GR9": "Green Reaper"
+  }
+}

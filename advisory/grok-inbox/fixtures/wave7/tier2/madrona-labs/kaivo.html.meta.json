@@ -1,0 +1,10 @@
+{
+  "url": "https://www.madronalabs.com/products/kaivo",
+  "fetched_at": "2026-09-25T19:20:17Z",
+  "fetched_at_pt": "2026-09-25 ~12:18-12:20 PT",
+  "bytes": 17425,
+  "sha256": "974516d4a712b9f0133e22350fa92de9a6be1f109e9157d026e729c4f44e3caf",
+  "http": 200,
+  "scout": "wave7-ask3-tier2-top5",
+  "note": "golden fixture \u2014 operator re-fetch required before catalog write"
+}

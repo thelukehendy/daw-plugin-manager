@@ -1,0 +1,8 @@
+{
+  "url": "https://formulae.brew.sh/api/cask/spitfire-audio.json",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 93,
+  "sha256": "4d074039aaf0da2a8d94ec29e2ab9200fbb4d7b4e5cc8d603289613450462ddf",
+  "role": "discovered_url_pointer",
+  "tip": "3.4.17"
+}

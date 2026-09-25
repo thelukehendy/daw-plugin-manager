@@ -1,0 +1,10 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-102s",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 10341,
+  "sha256": "6876f63b909bcd37221fe8e03d26f788debc2651c702e3a098eaf5a21950049d",
+  "slug": "mf-102s",
+  "tip": "1.3.0",
+  "plugin_id": "moog-music--mf-102s",
+  "plugin_id_alt": "moog--mf-102s"
+}

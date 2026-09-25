@@ -1,0 +1,10 @@
+{
+  "url": "https://www.audiothing.net/plugin-updates/",
+  "fetched_at": "2026-09-25T19:20:17Z",
+  "fetched_at_pt": "2026-09-25 ~12:18-12:20 PT",
+  "bytes": 447997,
+  "sha256": "90678930637cff2612188fcb54feb55c4c47004529773c4b93f3b2bc8951c501",
+  "http": 200,
+  "scout": "wave7-ask3-tier2-top5",
+  "note": "golden fixture \u2014 operator re-fetch required before catalog write"
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-0.0.0.dmg",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 299,
+  "sha256": "a0b8b73bd48e836bd9175d2001d5e361889388c88ce820828e95eb93ff292aa5",
+  "negative": true,
+  "expected_status": 403,
+  "detector": "wrong_semver_path_403"
+}

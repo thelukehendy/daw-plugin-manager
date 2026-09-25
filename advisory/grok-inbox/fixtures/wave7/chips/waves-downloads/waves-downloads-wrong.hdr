@@ -1,0 +1,20 @@
+HTTP/2 404 
+date: Fri, 25 Sep 2026 19:19:07 GMT
+content-type: text/html; charset=utf-8
+server: Server
+cache-control: no-store, must-revalidate, no-cache
+set-cookie: ARRAffinity=a0759af8ee6b4f5dd10706e7288fdd512a9854dc68934c5ce88a510ebcc3d748;Path=/;HttpOnly;Secure;Domain=www.waves.com
+set-cookie: ARRAffinitySameSite=a0759af8ee6b4f5dd10706e7288fdd512a9854dc68934c5ce88a510ebcc3d748;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.waves.com
+strict-transport-security: max-age=31536000; includeSubDomains
+request-context: appId=cid-v1:c0d9f4db-5f08-4bf6-8a4c-77e92e58da2e
+content-security-policy: frame-ancestors *.waves.com
+x-content-type-options: nosniff
+referrer-policy: no-referrer-when-downgrade
+permissions-policy: camera=(self "https://d-apps.waves.com" "https://t-apps.waves.com" "https://apps.waves.com")
+x-powered-by: ASP.NET
+set-cookie: visid_incap_2775454=/W78+RlrRJyPDzsO7uxu0SrJtmoAAAAAQUIPAAAAAAA+m1SMlVRhrt1T/lLawglI; expires=Sat, 25 Sep 2027 07:02:08 GMT; HttpOnly; path=/; Domain=.waves.com
+set-cookie: nlbi_2775454=P38FemdmAR61sxUOEeViHgAAAAAvCr0X3wxbfeeVcxOq71Y/; HttpOnly; path=/; Domain=.waves.com
+set-cookie: incap_ses_679_2775454=aKCZH17NehixQoVFGktsCSvJtmoAAAAAdPyCVELAbEYLqRmcRCpnMQ==; path=/; Domain=.waves.com
+x-cdn: Imperva
+x-iinfo: 18-21284061-21284091 NNNY CT(18 25 0) RT(1790363946725 241) q(0 1 1 0) r(4 4) U5
+

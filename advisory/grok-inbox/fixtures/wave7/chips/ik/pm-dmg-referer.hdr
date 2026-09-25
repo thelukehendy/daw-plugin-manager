@@ -1,0 +1,18 @@
+HTTP/2 200 
+server: nginx
+date: Fri, 25 Sep 2026 19:19:11 GMT
+content-type: application/x-apple-diskimage
+content-length: 157328057
+x-id-fe: cch1-hw-edge-gc19
+x-shard: cch1-shard0-default
+last-modified: Tue, 25 Aug 2026 16:25:00 GMT
+etag: "960a2b9-659e18b589b07"
+traceparent: 00-a0930b1dd5b6c7fa5343609b0c144472-aabc84805f1ca321-01
+x-id: cch1-hw-edge-gc11
+expires: Tue, 29 Sep 2026 19:19:11 GMT
+cache-control: max-age=345600
+age: 97108
+cache: HIT
+x-cached-since: 2026-09-24T16:20:43+00:00
+accept-ranges: bytes
+

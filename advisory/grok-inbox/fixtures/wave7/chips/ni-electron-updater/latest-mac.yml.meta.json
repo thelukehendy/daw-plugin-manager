@@ -1,0 +1,8 @@
+{
+  "url": "https://na-update.native-instruments.com/latest-mac.yml",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 554,
+  "sha256": "afdbdaad3f8ee4db377a3eaab9c7e3041df8d1c407247d08ea791e39d8667e0c",
+  "tip": "3.26.0",
+  "identity": "native-instruments--native-access"
+}

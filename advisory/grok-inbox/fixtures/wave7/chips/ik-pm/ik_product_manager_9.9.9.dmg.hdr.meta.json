@@ -1,0 +1,9 @@
+{
+  "url": "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_9.9.9.dmg",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 299,
+  "sha256": "ca90d31f66d2dda2898e5e4051efe5b98d44d7e7fd689be82445aebc6c56d0f0",
+  "negative": true,
+  "expected_status": 404,
+  "detector": "wrong_version_path_404"
+}

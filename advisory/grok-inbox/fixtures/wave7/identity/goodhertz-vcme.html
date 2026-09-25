@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>VCME — by Goodhertz, Inc.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="origin">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://static.goodhertz.com/static/store/favicon/apple-touch-icon.f6c45d4c73c4.png?t=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://static.goodhertz.com/static/store/favicon/favicon-32x32.70a101e80f92.png?t=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://static.goodhertz.com/static/store/favicon/favicon-16x16.f01f9610ad9f.png?t=1">
+  
+  <link rel="shortcut icon" href="https://static.goodhertz.com/static/store/favicon/favicon.8665f6a58651.ico?t=1">
+  <!-- <link rel="preconnect" href="https://i.ytimg.com" crossorigin> -->
+  <!-- <link rel="dns-prefetch" href="https://i.ytimg.com"> -->
+
+  
+<meta name="description" content="Vulf Compressor, Mastering Edition"/>
+<meta property="og:title" content="VCME, by Goodhertz"/>
+
+<meta property="og:description" content="Vulf Compressor, Mastering Edition"/>
+<meta property="og:image" content="https://manuals.goodhertz.com/cards/ghz_vcme__og_landscape.png"/>
+
+  <style type="text/css">
+    * { padding:0; margin:0; font-weight:normal; }
+    @font-face { font-family: 'PolymathWeb'; src: url("https://static.goodhertz.com/static/store/fonts/PolymathVar.99eb68842d0f.woff2") format('woff2'); font-weight: 500; font-style: normal; }
+    @font-face { font-family: 'CovikSansMono-Web'; src: url("https://static.goodhertz.com/static/store/fonts/Covik_Sans_Mono-Regular.7771e9299905.woff2") format('woff2'); font-weight: 500; font-style: normal; }
+  </style>
+  <link rel="stylesheet" href="https://static.goodhertz.com/static/store/css/style_2024.86dd7a11d5ca.css">
+  
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://goodhertz.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='//cdn.matomo.cloud/goodhertz.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+  
+  <!--
+  korab says, “hello world!”
+  -->
+</head>
+
+<body>
+  <div id="outer" style="background:white">
+    <div id="container">
+      <header>
+        
+        
+        <div class="account-info-bg">
+          <div class="account-info">
+            <div class="account-info-inner">
+              
+              <a href="/login">Login</a>
+              <span class="sep">///</span>
+              <a href="/create-account/">Create Account</a>
+              
+            </div>
+          </div>
+        </div>
+          <div class="main-nav">
+            <div class="headers">
+              <h3>
+                <a class="circle-logo" aria-label="Homepage" href="/">
+                  <img src="https://static.goodhertz.com/static/store/GoodhertzCircleLogo.17ce5ce0cc35.png" alt="The Ghz / Goodhertz Logo"/>
+                </a>
+              </h3>
+
+              
+              <ul class="top-nav">
+              <li class="nav-search-slot">
+                
+                <div id="plugin-search" class="plugin-search">
+                  <button type="button" id="plugin-search-open" class="plugin-search-open"
+                          aria-expanded="false" aria-controls="plugin-search-modal"
+                          aria-label="Search" title="Search (⌘K)">
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                      <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+                      <path d="M15.5 15.5 L21 21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              
+              <li class="nav-plugins-slot">
+                <a class="" href="/plugins/" >
+                  
+                  <span class="nav-label">Plugins</span>
+                  
+                  
+                </a>
+                
+                
+                <div class="nav-plugins-menu">
+                  <ul class="nav-plugins-list">
+                    
+                    <li>
+                      <a href="/canopener-studio/" style="--plugin-theme: rgba(30, 105, 180, 1.000000)">CanOpener Studio</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/dc19/" style="--plugin-theme: rgba(120, 71, 133, 1.000000)">DC19</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/faraday-lim/" style="--plugin-theme: rgba(95, 95, 111, 1.000000)">Faraday Limiter</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/good-dither/" style="--plugin-theme: rgba(50, 96, 133, 1.000000)">Good Dither</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/la-210/" style="--plugin-theme: rgba(25, 176, 95, 1.000000)">LA-210</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/lohi/" style="--plugin-theme: rgba(38, 198, 214, 1.000000)">Lohi</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/lossy/" style="--plugin-theme: rgba(218, 55, 143, 1.000000)">Lossy</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/loudness/" style="--plugin-theme: rgba(105, 77, 128, 1.000000)">Loudness</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/megaverb/" style="--plugin-theme: rgba(45, 143, 173, 1.000000)">Megaverb</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/midside/" style="--plugin-theme: rgba(65, 96, 164, 1.000000)">Midside</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/midside-matrix/" style="--plugin-theme: rgba(65, 96, 164, 1.000000)">Midside Matrix</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/panpot/" style="--plugin-theme: rgba(72, 60, 139, 1.000000)">Panpot</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/tiltshift/" style="--plugin-theme: rgba(179, 56, 108, 1.000000)">Tiltshift</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/tone-ctrl/" style="--plugin-theme: rgba(85, 172, 255, 1.000000)">Tone Control</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/trem-ctrl/" style="--plugin-theme: rgba(32, 178, 170, 1.000000)">Trem Control</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/tupe/" style="--plugin-theme: rgba(195, 34, 102, 1.000000)">Tupe</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/tupe-wow/" style="--plugin-theme: rgba(210, 45, 114, 1.000000)">Tupe Wow</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/vcme/" style="--plugin-theme: rgba(213, 57, 67, 1.000000)">VCME</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/vcme-soft-clip/" style="--plugin-theme: rgba(213, 57, 67, 1.000000)">VCME Soft Clip</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/vulf-comp/" style="--plugin-theme: rgba(194, 76, 83, 1.000000)">Vulf Compressor</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/wow-ctrl/" style="--plugin-theme: rgba(196, 55, 60, 1.000000)">Wow Control</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li>
+                <a class="" href="/collections/" >
+                  
+                  <span class="nav-label">Collections</span>
+                  
+                  
+                </a>
+                
+              </li>
+              
+              <li>
+                <a class="" href="/about/" >
+                  
+                  <span class="nav-label">About</span>
+                  
+                  
+                </a>
+                
+              </li>
+              
+              <li>
+                <a class="" href="/faq/" >
+                  
+                  <span class="nav-label">FAQ</span>
+                  
+                  
+                </a>
+                
+              </li>
+              
+              <li>
+                <a class="heavy" href="/downloads/" >
+                  
+                  <span class="nav-label">Downloads</span>
+                  
+                  
+                </a>
+                
+              </li>
+              
+              <li class="nav-cart-slot">
+                <a class="heavy buy" href="/checkout/" >
+                  
+<span class="nav-cart" aria-hidden="true">
+  <svg viewBox="0 0 24 24" width="17" height="17" focusable="false">
+    <path d="M1 2h3.1l2.7 12.4h11.3l2.4-8.9H6.1" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="9" cy="19.6" r="1.9" fill="currentColor"/>
+    <circle cx="17.6" cy="19.6" r="1.9" fill="currentColor"/>
+  </svg>
+</span>
+
+                  <span class="nav-label">Buy</span>
+                  <span class="nav-cart-count" aria-hidden="true"></span>
+                  
+                </a>
+                
+              </li>
+              
+              
+              <li class="nav-menu-slot">
+                <button type="button" id="nav-menu-open" class="nav-menu-open"
+                        aria-label="Menu" aria-expanded="false" aria-controls="nav-menu-modal">
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                    <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      
+      
+      
+      
+<link rel="stylesheet" href="https://static.goodhertz.com/static/store/css/view-switches.c92cbe8631d3.css"/>
+<link rel="stylesheet" href="https://static.goodhertz.com/static/store/css/plugin_2024.31456b96cd8c.css"/>
+<style>
+  /* the plugin's colour, for anything in the page's copy that wants it (the
+     pull-quotes: #content blockquote in style_2024.css) */
+  #content {
+    --accent: rgba(213, 57, 67, 1.000000);
+    --accent-soft: rgba(213, 57, 67, 0.450000);
+    --accent-tint: rgba(213, 57, 67, 0.035000);
+    /* the darker cut of it, which is the one that reads as writing on white
+       — it is what the tagline wore in the hero */
+    --accent-deep: rgba(160, 34, 41, 1.000000);
+  }
+  .plugin-themed {
+    color: rgba(213, 57, 67, 1.000000) !important;
+  }
+  
+  .plugin-big-nav-link {
+    color: rgba(213, 57, 67, 1.000000) !important;
+  }
+  .plugin-hero .pattern-bg {
+    background-image: url('https://manuals.goodhertz.com/artifacts/ghz_vcme__pattern_dark.png');
+  }
+  /* the arrows only where there is room for them beside the picture, and how
+     much room that is depends on how wide this plugin's picture is */
+  @media (max-width: 1146px) {
+    .plugin-hero-step { display: none; }
+  }
+</style>
+<div class="plugin-hero">
+  <div class="pattern-bg" role="img" arial-label="A decorative pattern" ></div>
+  <div class="pattern-fg">
+    <h1>
+      <img class="nameplate" src="https://manuals.goodhertz.com/artifacts/ghz_vcme__nameplate_transparent.png?t=3" alt="VCME"/>
+    </h1>
+    <div class="interface-holder" style="max-width:986px">
+      
+      <div class="plugin-hero-image" style="--shot: 986px"
+           data-lang="en" data-mode="light">
+        <picture>
+          <source srcset="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-en_shadow.png" media="(min-width: 602.0px)"/>
+          <img class="interface" style="width:100%;" src="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-en_shadow.png" alt="A screenshot of the VCME interface"/>
+        </picture>
+
+        
+        <a class="plugin-hero-step is-prev" href="/tupe-wow/"
+           aria-label="Previous plugin: Tupe Wow"
+           title="Tupe Wow"><span aria-hidden="true">&#8592;</span></a>
+        
+
+        
+        <a class="plugin-hero-step is-next" href="/vcme-soft-clip/"
+           aria-label="Next plugin: VCME Soft Clip"
+           title="VCME Soft Clip"><span aria-hidden="true">&#8594;</span></a>
+        
+      </div>
+      
+      <div class="plugin-hero-switches">
+        <div class="directory-modes" role="group" aria-label="Interface appearance">
+          <a class="directory-mode" href="mode/light" data-mode="light"
+             aria-current="true">Light</a>
+          <a class="directory-mode" href="mode/dark" data-mode="dark"
+             >Dark</a>
+        </div>
+
+        
+        
+        <details class="plugin-lang directory-modes">
+          <summary class="directory-mode" aria-label="Language">
+            <span class="plugin-lang-name">English</span>
+            <svg class="plugin-lang-caret" viewBox="0 0 12 12" width="9" height="9"
+                 aria-hidden="true" focusable="false">
+              <path d="M1.5 4 6 8.5 10.5 4" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+
+          <div class="plugin-lang-menu">
+          
+            <a href="/vcme/lang/en" data-lang="en"
+               aria-current="true">English</a>
+          
+            <a href="/vcme/lang/es" data-lang="es"
+               >Español</a>
+          
+            <a href="/vcme/lang/pt" data-lang="pt"
+               >Português</a>
+          
+            <a href="/vcme/lang/fr" data-lang="fr"
+               >Français</a>
+          
+            <a href="/vcme/lang/it" data-lang="it"
+               >Italiano</a>
+          
+            <a href="/vcme/lang/ko" data-lang="ko"
+               >한국어</a>
+          
+            <a href="/vcme/lang/ja" data-lang="ja"
+               >日本語</a>
+          
+            <a href="/vcme/lang/zh-Hans" data-lang="zh-Hans"
+               >简体中文</a>
+          
+            <a href="/vcme/lang/zh-Hant" data-lang="zh-Hant"
+               >繁體中文</a>
+          
+          </div>
+        </details>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="application/json" id="plugin-hero-shots">{"en:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-en_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-en_shadow.png"}, "en:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-en-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-en-dark_shadow.png"}, "es:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-es_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-es_shadow.png"}, "es:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-es-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-es-dark_shadow.png"}, "pt:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-pt_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-pt_shadow.png"}, "pt:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-pt-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-pt-dark_shadow.png"}, "fr:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-fr_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-fr_shadow.png"}, "fr:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-fr-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-fr-dark_shadow.png"}, "it:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-it_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-it_shadow.png"}, "it:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-it-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-it-dark_shadow.png"}, "ko:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-ko_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-ko_shadow.png"}, "ko:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-ko-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-ko-dark_shadow.png"}, "ja:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-ja_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-ja_shadow.png"}, "ja:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-ja-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-ja-dark_shadow.png"}, "zh-Hans:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-zh-hans_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-zh-hans_shadow.png"}, "zh-Hans:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-zh-hans-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-zh-hans-dark_shadow.png"}, "zh-Hant:light": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-zh-hant_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-zh-hant_shadow.png"}, "zh-Hant:dark": {"front": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-front-zh-hant-dark_shadow.png", "full": "https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-full-zh-hant-dark_shadow.png"}}</script>
+
+
+
+
+
+      
+      
+      <div id="main">
+        <div id="content">
+
+
+  <div class="plugin-half">
+    <div class="plugin-big-nav-links">
+
+
+
+    
+    
+    <aside class="plugin-buy-box">
+      
+      <a class="plugin-buy-now" href="/checkout/?vcme=1&amp;add=1">Buy Now — $199.00</a>
+      
+      
+      <a class="plugin-cart-button add-to-cart"
+         href="/checkout/?vcme=1&amp;add=1"
+         data-slug="vcme"
+         data-label="Add to Cart">
+<span class="nav-cart" aria-hidden="true">
+  <svg viewBox="0 0 24 24" width="17" height="17" focusable="false">
+    <path d="M1 2h3.1l2.7 12.4h11.3l2.4-8.9H6.1" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="9" cy="19.6" r="1.9" fill="currentColor"/>
+    <circle cx="17.6" cy="19.6" r="1.9" fill="currentColor"/>
+  </svg>
+</span>
+<span class="add-to-cart-label">Add to Cart</span></a>
+      <span class="plugin-cart-includes">Includes VCME Soft Clip</span>
+      
+      <p class="plugin-buy-trials">All plugins have 30-day free trials.</p>
+    </aside>
+    
+
+    
+    <ul class="plugin-big-nav-list">
+    
+      <li>
+      
+        <a class="plugin-manual-link" href="/vcme/manual">
+          <svg class="plugin-manual-mark" viewBox="0 0 24 24" width="16" height="16"
+               aria-hidden="true" focusable="false">
+            <path d="M4 4.8h5.2A2.8 2.8 0 0 1 12 7.6v11.6a2.2 2.2 0 0 0-2.2-2.2H4Z"
+                  fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M20 4.8h-5.2A2.8 2.8 0 0 0 12 7.6v11.6a2.2 2.2 0 0 1 2.2-2.2H20Z"
+                  fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>Read the Manual (3.13)</a>
+      
+      </li>
+    
+    </ul>
+
+    
+    
+
+
+    <div id="ownership">
+      <div class="owners-only" style="--custom-color:rgba(213, 57, 67, 1.000000);">
+        <h2 class="downloads">Downloads 💾</h2>
+
+        
+        
+        
+        
+        
+          
+          <div class="oob-download-notice">
+            <em>Download the latest version of VCME on the <a href="/downloads">Downloads</a> page.</em>
+          </div>
+          
+
+        
+        
+        
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </div>
+
+
+
+
+
+    
+
+    
+    <div id="adv-pages">
+      <h5>Advanced Controls</h5>
+      
+      <p>VCME has <strong>3 pages</strong> of advanced controls. Click on the images below to see the advanced pages in detail. You can also read about the advanced pages in <a href="manual">the plugin manual</a>.</p>
+      
+      <div class="adv-page-images">
+      
+        <div class="adv-page">
+          <a href="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-adv-en_shadow.png"><img src="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-adv-en_shadow.png"/></a>
+        </div>
+      
+        <div class="adv-page">
+          <a href="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-adv-en-page1_shadow.png"><img src="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-adv-en-page1_shadow.png"/></a>
+        </div>
+      
+        <div class="adv-page">
+          <a href="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-adv-en-page2_shadow.png"><img src="https://manuals.goodhertz.com/screencaps/goodhertz-vcme-3.13-adv-en-page2_shadow.png"/></a>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    </div>
+
+    <div id="text">
+      <div id="plugin-text">
+
+
+
+      
+      <div class="plugin-page-head">
+        <h2>VCME</h2>
+        <p class="plugin-page-tagline">Vulf Compressor, Mastering Edition</p>
+      </div>
+
+      
+      
+      <div class="product-copy introduction"><p>Of all the things we’ve engineered at Goodhertz over the past decade, <a href="/vulf-comp">Vulf Compressor</a> remains one of our most wonderful &amp; unusual algorithms.</p>
+<p style="text-align:right">It has that <em>sound</em>.</p>
+
+<p>As <a href="https://www.vulfpeck.com/">Vulfpeck’s</a> Jack Stratton put it during our first email exchange on the prototype: 
+<span class="plugin-themed">“NICE! that special sauce. the way it snaps that snare is the $$$!”</span></p>
+<p>Since its release in 2014, Vulf Compressor has been everywhere: lofi beat tapes to Hollywood film scores — even on Dua Lipa’s vocal chain. Surely, you’ve heard it on some music somewhere. But for all its raw power, Vulf Compressor’s iconic three-main-control design — central to Stratton’s original vision — can be limiting in situations that demand a lighter touch.</p>
+<p>As legendary mixer <a href="https://www.mbrauer.com/">Michael Brauer</a> once said of Vulf Comp: 
+“On the outside, it may look like a Volvo, but under the hood, it’s a <strong>monster truck</strong>.”</p>
+<p>Indeed. But you won&rsquo;t win the 24 Hours of Le Mans with a monster truck.</p>
+<p>That’s why we’re thrilled to announce the official release of <strong>Vulf Compressor Mastering Edition</strong> <span class="plugin-themed">(VCME)</span>, a new kind of Vulf Compressor — 
+a Vulf Compressor purpose-built for mastering &amp; bus processing.
+<br/><br/></p>
+<blockquote>
+<p>“Supremely configurable and quick and easy to use.”</p>
+</blockquote>
+<p><cite>— <a href="https://www.soundonsound.com/reviews/goodhertz-vcme-3">Sound On Sound</a></cite></p>
+<p><span class="plugin-themed">VCME</span> is cut from the same cloth as the original, yet it unlocks a range of compression that is inaccessible in its predecessor: familiar, yet distinctly refined. It’s not for everyone, and… <em>that’s kind of the point</em>.</p></div>
+      
+
+
+
+
+      
+      <div class="product-copy features">
+        <ul>
+<li>
+<p><strong>Classic Compression Controls</strong></p>
+<p>Ratio, threshold, makeup gain, sidechain HPF. <span class="plugin-themed">VCME</span> retains the vari-mu characteristics of Vulf Compressor but in a way that is easier to dial in if you’re used to a classic compressor control-set.</p>
+</li>
+<li>
+<p><strong>Release “Style” Control</strong></p>
+<p>Choose your own release character: opto, FET, or anywhere in between.</p>
+</li>
+<li>
+<p><strong>Soft Clip</strong></p>
+<p>A very special analog soft clipping / saturation section follows the compression stage. Use it to prevent digital overs, add subtle clipping, or apply all-out fuzz and saturation. It has four different modes, each with their own vibe.</p>
+<ul>
+<li><strong>Chino</strong>: Hifi, classic tube sound, notes of Hendrix</li>
+<li><strong>Rødovre</strong>: Round, tube-y, smooth</li>
+<li><strong>Detroit</strong>: Grungy, warm, notes of Jamerson</li>
+<li><strong>Melbourn</strong>: Punchy, British, transformer saturation</li>
+</ul>
+<p>In fact, the Soft Clip section is so cool we turned it into a standalone plugin: <a href="/vcme-soft-clip">VCME Soft Clip</a> — a plugin you get for free when you purchase VCME.</p>
+</li>
+<li>
+<p><strong>Sidechain Tilt</strong></p>
+<p>The first of its kind: a completely linear spectral tilt on the sidechain, allowing one to control precisely how the compressor reacts to the frequency spectrum, often eliminating the need for a de-esser or multiband compressor.</p>
+</li>
+<li>
+<p><strong>Extensive Stereo / Surround Linking</strong></p>
+<p>Support for M/S &amp; surround modes.</p>
+</li>
+<li>
+<p><strong>Transparent Frequency Response</strong></p>
+<p>No matter the settings, Vulf Compressor imparts a certain color on everything; here we’ve ensured the frequency spectrum remains completely untouched.</p>
+</li>
+</ul>
+      </div>
+      
+      
+      
+      <div class="product-copy about">
+        <!-- <h3 class="top">Getting to know VCME</h3> -->
+        <p><strong>What if I already own Vulf Compressor?</strong></p>
+<p>Vulf Compressor and VCME are very different plugins built for very different purposes. If you&rsquo;ve always wanted Vulf-style compression, but with more flexibility and versatility, VCME has got you covered.</p>
+<p><span class="plugin-themed">VCME</span> is 25% off for owners of any version of Vulf Compressor. Make sure you are logged into your Goodhertz account with an existing Vulf Compressor license before making a VCME purchase.</p>
+<p><strong>Is VCME Soft Clip included with a purchase of VCME?</strong></p>
+<p>Yes! Every purchase of <span class="plugin-themed">VCME</span> includes a separate <a href="https://goodhertz.com/vcme-soft-clip/">VCME Soft Clip</a> plugin free of charge. </p>
+<p><strong>What if I just want VCME Soft Clip</strong>?</p>
+<p>If you are sure you <em>only</em> want <span class="plugin-themed">VCME Soft Clip</span>, we’ve now made it possible to buy it as a standalone purchase with a reduced price. More info is available on the <a href="https://goodhertz.com/vcme-soft-clip/">VCME Soft Clip page</a>.</p>
+      </div>
+      
+      
+      
+      
+
+      </div>
+    </div>
+  </div>
+
+</div>
+      </div>
+      
+      <footer>
+        <div class="pattern-bg"></div>
+        <div class="pattern-fg">
+          <div class="footer-inner">
+            <div class="copyright column">
+              <span>© Goodhertz, Inc. 2026</span>
+              <img src="https://static.goodhertz.com/static/store/ghz__logo_white.99e7f2a924fb.svg" alt="Ghz Logo"/>
+            </div>
+            <div class="hard-info column">
+              <ul>
+                <li><a href="/checkout/">Buy</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/gifting">Gifting</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/downloads">Downloads</a></li>
+              </ul>
+            </div>
+            <div class="soft-info column">
+              <ul>
+                <li><a href="/tonal">Blog</a></li>
+                <li><a href="/mailing-list">Mailing List</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-use">Terms of Use</a></li>
+                <li><a href="/accessibility">Accessibility</a></li>
+                <li><a href="/trademarks">Trademarks</a></li>
+                <li><a href="/type-note">Type Note</a></li>
+                <li><a href="https://static.goodhertz.com/static/store/GoodhertzOfficialAssets.b811d5b5caf7.pdf">Logos</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+              </ul>
+            </div>
+            <div class="socials column">
+            <ul>
+              <li><a rel="noopener" href="https://youtube.com/goodhertz">YouTube</a></li>
+              <li><a rel="noopener" href="https://instagram.com/goodhertz">Instagram</a></li>
+              <li><a rel="noopener" href="https://twitter.com/goodhertz">Twitter</a></li>
+              <li><a rel="noopener" href="https://facebook.com/goodhertz">Facebook</a></li>
+              <li><a rel="noopener" href="https://soundcloud.com/goodhertz">SoundCloud</a></li>
+              </ul></div>
+            <div class="column spacer" style="display: none"></div>
+            
+            <div class="plugin-categories column">
+              <ul>
+              <li><a href="/plugins/" data-search-kind="category" data-count="21">All Plugins</a></li>
+              <li><a href="/collections/">Collections</a></li>
+              <li class="footer-note">Plugins by category ↓</li>
+              
+              <li><a href="/plugins/?category=compressors-limiters" data-search-kind="category" data-count="6">Compressors / Limiters</a></li>
+              
+              <li><a href="/plugins/?category=mastering" data-search-kind="category" data-count="8">Mastering</a></li>
+              
+              <li><a href="/plugins/?category=analog-color" data-search-kind="category" data-count="9">Analog Color</a></li>
+              
+              <li><a href="/plugins/?category=stereo-field" data-search-kind="category" data-count="4">Stereo Field</a></li>
+              
+              <li><a href="/plugins/?category=reverb-delay" data-search-kind="category" data-count="3">Reverb &amp; Delay</a></li>
+              
+              <li><a href="/plugins/?category=eq" data-search-kind="category" data-count="4">EQ</a></li>
+              
+              <li><a href="/plugins/?category=modulation" data-search-kind="category" data-count="4">Modulation</a></li>
+              
+              <li><a href="/plugins/?category=digital-destruction" data-search-kind="category" data-count="3">Digital Destruction</a></li>
+              
+              <li><a href="/plugins/?category=utility" data-search-kind="category" data-count="3">Utility</a></li>
+              
+              <li><a href="/plugins/?category=free" data-search-kind="category" data-count="3">Free</a></li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  
+  <script id="plugin-index" type="application/json">[{"name": "CanOpener Studio", "slug": "canopener-studio", "tagline": "Conjure speakers from your headphones.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_canopener-studio__logo_blocked.png", "theme": "rgba(30, 105, 180, 1.000000)", "free": false}, {"name": "Vulf Compressor", "slug": "vulf-comp", "tagline": "Beastly compression, by Vulf.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_vulf-comp__logo_blocked.png", "theme": "rgba(194, 76, 83, 1.000000)", "free": false}, {"name": "Tone Control", "slug": "tone-ctrl", "tagline": "Timeless EQ, taken back to the future.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_tone-ctrl__logo_blocked.png", "theme": "rgba(85, 172, 255, 1.000000)", "free": false}, {"name": "Trem Control", "slug": "trem-ctrl", "tagline": "Classic tremolo for the 21st century.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_trem-ctrl__logo_blocked.png", "theme": "rgba(32, 178, 170, 1.000000)", "free": false}, {"name": "Lossy", "slug": "lossy", "tagline": "Digital artifacts, on demand.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_lossy__logo_blocked.png", "theme": "rgba(218, 55, 143, 1.000000)", "free": false}, {"name": "Lohi", "slug": "lohi", "tagline": "Filter sweeps: lo, hi, \u0026 anywhere in between.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_lohi__logo_blocked.png", "theme": "rgba(38, 198, 214, 1.000000)", "free": false}, {"name": "Faraday Limiter", "slug": "faraday-lim", "tagline": "Peak limiter w/ a powerful magnetic field.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_faraday-lim__logo_blocked.png", "theme": "rgba(95, 95, 111, 1.000000)", "free": false}, {"name": "Panpot", "slug": "panpot", "tagline": "New directions in panning.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_panpot__logo_blocked.png", "theme": "rgba(72, 60, 139, 1.000000)", "free": false}, {"name": "Good Dither", "slug": "good-dither", "tagline": "World-class dither, simple controls.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_good-dither__logo_blocked.png", "theme": "rgba(50, 96, 133, 1.000000)", "free": false}, {"name": "Midside", "slug": "midside", "tagline": "Expressive stereo imaging.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_midside__logo_blocked.png", "theme": "rgba(65, 96, 164, 1.000000)", "free": false}, {"name": "Tiltshift", "slug": "tiltshift", "tagline": "Superior tone-shaping, from mix to master.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_tiltshift__logo_blocked.png", "theme": "rgba(179, 56, 108, 1.000000)", "free": false}, {"name": "Midside Matrix", "slug": "midside-matrix", "tagline": "Easy Mid/Side conversion.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_midside-matrix__logo_blocked.png", "theme": "rgba(65, 96, 164, 1.000000)", "free": true}, {"name": "Wow Control", "slug": "wow-ctrl", "tagline": "Wow, flutter, tape.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_wow-ctrl__logo_blocked.png", "theme": "rgba(196, 55, 60, 1.000000)", "free": false}, {"name": "Megaverb", "slug": "megaverb", "tagline": "Incredibly good bad reverb.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_megaverb__logo_blocked.png", "theme": "rgba(45, 143, 173, 1.000000)", "free": false}, {"name": "Tupe", "slug": "tupe", "tagline": "Tube + Tape = Tupe", "logo": "https://manuals.goodhertz.com/artifacts/ghz_tupe__logo_blocked.png", "theme": "rgba(195, 34, 102, 1.000000)", "free": false}, {"name": "Tupe Wow", "slug": "tupe-wow", "tagline": "Tube + Tape + Wow = Tupe Wow \u2014\u00a0Now in Beta", "logo": "https://manuals.goodhertz.com/artifacts/ghz_tupe-wow__logo_blocked.png", "theme": "rgba(210, 45, 114, 1.000000)", "free": false}, {"name": "Loudness", "slug": "loudness", "tagline": "Hit the target (with this free plugin)", "logo": "https://manuals.goodhertz.com/artifacts/ghz_loudness__logo_blocked.png", "theme": "rgba(105, 77, 128, 1.000000)", "free": true}, {"name": "DC19", "slug": "dc19", "tagline": "It\u2019s a delay you can play.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_dc19__logo_blocked.png", "theme": "rgba(120, 71, 133, 1.000000)", "free": false}, {"name": "VCME", "slug": "vcme", "tagline": "Vulf Compressor, Mastering Edition", "logo": "https://manuals.goodhertz.com/artifacts/ghz_vcme__logo_blocked.png", "theme": "rgba(213, 57, 67, 1.000000)", "free": false}, {"name": "VCME Soft Clip", "slug": "vcme-soft-clip", "tagline": "The Soft Clip from VCME", "logo": "https://manuals.goodhertz.com/artifacts/ghz_vcme-soft-clip__logo_blocked.png", "theme": "rgba(213, 57, 67, 1.000000)", "free": false}, {"name": "LA-210", "slug": "la-210", "tagline": "An opto comp, a soft clip, a tape.\u00a0As free as the freeway.", "logo": "https://manuals.goodhertz.com/artifacts/ghz_la-210__logo_blocked.png", "theme": "rgba(25, 176, 95, 1.000000)", "free": true}]</script>
+  <div id="plugin-search-modal" class="plugin-search-modal" hidden>
+    <div class="plugin-search-backdrop" data-search-close="1"></div>
+    <div class="plugin-search-panel" role="dialog" aria-modal="true" aria-label="Search">
+      <div class="plugin-search-bar">
+        <svg class="plugin-search-glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M15.5 15.5 L21 21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <input type="search" id="plugin-search-field" class="plugin-search-field"
+               placeholder="Search" autocomplete="off" spellcheck="false"
+               role="combobox" aria-expanded="false" aria-autocomplete="list"
+               aria-controls="plugin-search-results">
+        <button type="button" id="plugin-search-close" class="plugin-search-close"
+                data-search-close="1" aria-label="Close search">esc</button>
+      </div>
+      <ul id="plugin-search-results" class="plugin-search-results" role="listbox" aria-label="Plugins"></ul>
+      <p id="plugin-search-note" class="plugin-search-note"></p>
+    </div>
+  </div>
+
+  
+  <div id="nav-menu-modal" class="nav-menu-modal" hidden>
+    <div class="nav-menu-backdrop" data-menu-close="1"></div>
+    <div class="nav-menu-panel" role="dialog" aria-modal="true" aria-label="Menu">
+      <div class="nav-menu-bar">
+        <span class="nav-menu-title">Menu</span>
+        <button type="button" class="nav-menu-close" data-menu-close="1" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <button type="button" class="nav-menu-search">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M15.5 15.5 L21 21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        Search
+      </button>
+      <ul class="nav-menu-links"></ul>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://static.goodhertz.com/static/store/deps/flickity.min.5616dd71600a.css">
+  <link rel="stylesheet" href="https://static.goodhertz.com/static/store/css/magnific.ef84b4c7b308.css">
+  <script src="https://static.goodhertz.com/static/store/deps/jquery-3.5.0.min.121080079062.js"></script>
+  <script src="https://static.goodhertz.com/static/store/deps/flickity.pkgd.min.8625a9d2a4f7.js"></script>
+  <script src="https://static.goodhertz.com/static/store/js/ext/magnific.min.3151b6e2594c.js"></script>
+  <script src="https://static.goodhertz.com/static/store/js/general.3fd5c55a8e42.js"></script>
+  <script src="https://static.goodhertz.com/static/store/js/plugin-search.12e859c8ddbc.js"></script>
+  <script src="https://static.goodhertz.com/static/store/js/nav-menu.4009a0cbd31f.js"></script>
+  
+<script src="https://static.goodhertz.com/static/store/js/add-to-cart.1e11ce9abf9e.js"></script>
+
+
+<script src="https://static.goodhertz.com/static/store/js/plugin-switches.bde726e25ca9.js"></script>
+
+</body>
+
+</html>

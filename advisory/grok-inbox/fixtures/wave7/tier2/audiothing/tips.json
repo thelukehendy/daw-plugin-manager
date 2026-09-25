@@ -1,0 +1,328 @@
+{
+  "vendor": "audiothing",
+  "oracle_url": "https://www.audiothing.net/plugin-updates/",
+  "fetched_at_pt": "2026-09-25 12:20 PT",
+  "parse_rule": "HTML table rows: Product | Version | Latest Update | Compatibility. Exact product-name match (case-sensitive after trim). Strip trailing \" (discontinued)\". Never inherit Environments version onto \"Environments - *\" expansions. Toys/instruments absent from this table stay KVR@60 \u2014 do not invent.",
+  "tip_count": 55,
+  "sample_tips": [
+    {
+      "product": "Arguments",
+      "version": "1.0",
+      "latest_update": "19 Nov 2024"
+    },
+    {
+      "product": "B00GA",
+      "version": "1.0.1",
+      "latest_update": "25 Nov 2025"
+    },
+    {
+      "product": "Environments",
+      "version": "1.0",
+      "latest_update": "14 May 2026"
+    },
+    {
+      "product": "Filterjam",
+      "version": "1.3.4",
+      "latest_update": "13 Aug 2026"
+    },
+    {
+      "product": "Fog Convolver 2",
+      "version": "2.4",
+      "latest_update": "12 Feb 2026"
+    },
+    {
+      "product": "Frostbite 2",
+      "version": "2.3",
+      "latest_update": "22 Oct 2025"
+    },
+    {
+      "product": "Speakers",
+      "version": "1.3.3",
+      "latest_update": "7 Aug 2026"
+    },
+    {
+      "product": "Things Bubbles",
+      "version": "1.1.1",
+      "latest_update": "2 Oct 2025"
+    }
+  ],
+  "all_tips": [
+    {
+      "product": "Arguments",
+      "version": "1.0",
+      "latest_update": "19 Nov 2024"
+    },
+    {
+      "product": "B00GA",
+      "version": "1.0.1",
+      "latest_update": "25 Nov 2025"
+    },
+    {
+      "product": "Blindfold EQ",
+      "version": "1.2",
+      "latest_update": "19 Jan 2023"
+    },
+    {
+      "product": "Dials",
+      "version": "1.1",
+      "latest_update": "22 May 2025"
+    },
+    {
+      "product": "Dub Filter",
+      "version": "1.0.1",
+      "latest_update": "18 Jun 2025"
+    },
+    {
+      "product": "Echo Cube",
+      "version": "1.0",
+      "latest_update": "2 Mar 2026"
+    },
+    {
+      "product": "Environments",
+      "version": "1.0",
+      "latest_update": "14 May 2026"
+    },
+    {
+      "product": "Filterjam",
+      "version": "1.3.4",
+      "latest_update": "13 Aug 2026"
+    },
+    {
+      "product": "Fog Convolver 2",
+      "version": "2.4",
+      "latest_update": "12 Feb 2026"
+    },
+    {
+      "product": "Frostbite 2",
+      "version": "2.3",
+      "latest_update": "22 Oct 2025"
+    },
+    {
+      "product": "Gong Amp",
+      "version": "1.2",
+      "latest_update": "17 Oct 2025"
+    },
+    {
+      "product": "Hand Clapper",
+      "version": "1.5.3",
+      "latest_update": "22 Jan 2026"
+    },
+    {
+      "product": "Hats",
+      "version": "1.5.2",
+      "latest_update": "25 Nov 2023"
+    },
+    {
+      "product": "JULY",
+      "version": "1.2.1",
+      "latest_update": "9 Apr 2026"
+    },
+    {
+      "product": "Latin Percussion",
+      "version": "1.7",
+      "latest_update": "5 Aug 2026"
+    },
+    {
+      "product": "Lines",
+      "version": "1.1",
+      "latest_update": "24 Oct 2024"
+    },
+    {
+      "product": "Mantis",
+      "version": "1.1",
+      "latest_update": "8 Jun 2026"
+    },
+    {
+      "product": "Megaphone",
+      "version": "1.5.5",
+      "latest_update": "6 Apr 2026"
+    },
+    {
+      "product": "miniBit",
+      "version": "1.8",
+      "latest_update": "5 Feb 2026"
+    },
+    {
+      "product": "miniVerb",
+      "version": "1.3",
+      "latest_update": "5 Feb 2026"
+    },
+    {
+      "product": "Moon Echo",
+      "version": "1.0",
+      "latest_update": "16 Jul 2024"
+    },
+    {
+      "product": "Noises",
+      "version": "1.3",
+      "latest_update": "3 Apr 2026"
+    },
+    {
+      "product": "Octaves",
+      "version": "1.0",
+      "latest_update": "13 Apr 2026"
+    },
+    {
+      "product": "Orbita",
+      "version": "1.1",
+      "latest_update": "24 Sep 2026"
+    },
+    {
+      "product": "Outer Space 2",
+      "version": "2.2.1",
+      "latest_update": "3 Nov 2025"
+    },
+    {
+      "product": "Phase Motion 2",
+      "version": "2.1.1",
+      "latest_update": "30 Dec 2025"
+    },
+    {
+      "product": "Philicorda",
+      "version": "1.2.1",
+      "latest_update": "11 Sep 2026"
+    },
+    {
+      "product": "Reels",
+      "version": "1.5.4",
+      "latest_update": "30 Mar 2026"
+    },
+    {
+      "product": "RES-09",
+      "version": "1.1",
+      "latest_update": "3 Sep 2026"
+    },
+    {
+      "product": "Space Strip",
+      "version": "1.3",
+      "latest_update": "14 Jan 2026"
+    },
+    {
+      "product": "Speakers",
+      "version": "1.3.3",
+      "latest_update": "7 Aug 2026"
+    },
+    {
+      "product": "Springs",
+      "version": "1.3.5",
+      "latest_update": "23 Feb 2026"
+    },
+    {
+      "product": "SR-88",
+      "version": "1.6.2",
+      "latest_update": "29 Feb 2024"
+    },
+    {
+      "product": "SX1000",
+      "version": "1.1",
+      "latest_update": "27 Jan 2026"
+    },
+    {
+      "product": "The Orb",
+      "version": "1.2.2",
+      "latest_update": "22 Nov 2023"
+    },
+    {
+      "product": "Things Bubbles",
+      "version": "1.1.1",
+      "latest_update": "2 Oct 2025"
+    },
+    {
+      "product": "Things Crusher",
+      "version": "1.2.2",
+      "latest_update": "11 Mar 2026"
+    },
+    {
+      "product": "Things Flip EQ",
+      "version": "1.2.1",
+      "latest_update": "11 Mar 2026"
+    },
+    {
+      "product": "Things Fold",
+      "version": "1.1.1",
+      "latest_update": "3 Dec 2025"
+    },
+    {
+      "product": "Things Motor",
+      "version": "1.2",
+      "latest_update": "3 Dec 2025"
+    },
+    {
+      "product": "Things Texture",
+      "version": "1.1.2",
+      "latest_update": "2 Oct 2025"
+    },
+    {
+      "product": "Things Voice",
+      "version": "1.1",
+      "latest_update": "3 Dec 2025"
+    },
+    {
+      "product": "Type A",
+      "version": "1.3.3",
+      "latest_update": "27 Aug 2025"
+    },
+    {
+      "product": "Type B",
+      "version": "1.2",
+      "latest_update": "22 Jan 2025"
+    },
+    {
+      "product": "Type X",
+      "version": "1.0.1",
+      "latest_update": "14 Jun 2025"
+    },
+    {
+      "product": "Valves",
+      "version": "1.1.3",
+      "latest_update": "28 Jan 2026"
+    },
+    {
+      "product": "Vinyl Strip",
+      "version": "1.6.2",
+      "latest_update": "26 Feb 2025"
+    },
+    {
+      "product": "Wave Box",
+      "version": "1.5.3",
+      "latest_update": "15 May 2025"
+    },
+    {
+      "product": "Wires",
+      "version": "1.2.5",
+      "latest_update": "17 Jun 2025"
+    },
+    {
+      "product": "Wurly",
+      "version": "1.3",
+      "latest_update": "26 May 2026"
+    },
+    {
+      "product": "Alborosie Dub Station (discontinued)",
+      "version": "1.1",
+      "latest_update": "31 Jul 2023"
+    },
+    {
+      "product": "Outer Verb (discontinued)",
+      "version": "1.0.0",
+      "latest_update": "16 Jan 2017"
+    },
+    {
+      "product": "Speaker (discontinued)",
+      "version": "1.5.1",
+      "latest_update": "29 Jan 2020"
+    },
+    {
+      "product": "Valve Exciter (discontinued)",
+      "version": "1.5.2",
+      "latest_update": "5 Sep 2017"
+    },
+    {
+      "product": "Valve Filter (discontinued)",
+      "version": "1.5.2",
+      "latest_update": "5 Sep 2017"
+    }
+  ],
+  "catalog_gap_note": "Things - Tilt (audiothing--things-tilt) is the sole plugin gap and is ABSENT from plugin-updates table (2026-09-25). Yellow Toys/instruments (Bells, Toy Piano, Magical Toy Keyboard, Environments - Piscina Mirabilis, Environments - Temple of Mercury, \u2026) are also absent \u2014 this oracle cannot raise them.",
+  "fixture": "fixtures/tier2/audiothing/plugin-updates.html"
+}
