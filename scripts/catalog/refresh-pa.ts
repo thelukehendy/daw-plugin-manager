@@ -1,8 +1,12 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
+import { createRequire } from 'module'
 import { scrapePluginAlliance } from './scrapers/pluginAlliance'
 import { applyUpdates } from './refresh'
 import type { PluginCatalog } from '../../src/shared/types'
+
+const require = createRequire(import.meta.url)
+require('./lib/blockLegacyWrites').assertLegacyCatalogWritesAllowed('catalog:refresh-pa')
 
 async function main() {
   const path = join(process.cwd(), 'catalog/catalog.json')

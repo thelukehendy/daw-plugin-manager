@@ -344,7 +344,10 @@ export async function discoverPublicVersions(catalog: PluginCatalog): Promise<Di
           try {
             fetches++
             const html = await fetchText(u)
-            const best = pickBestVersion(extractVersions(html, plugin.name), plugin.latestVersion)
+            const best = pickBestVersion(
+              extractVersions(html, plugin.name),
+              plugin.latestVersion ?? undefined
+            )
             if (best) {
               hits++
               const sourceUrl = u.split('#')[0].split('?')[0]
