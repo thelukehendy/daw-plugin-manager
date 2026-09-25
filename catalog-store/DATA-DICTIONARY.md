@@ -27,7 +27,8 @@ absence means "not researched", never "false".
 | `id` / `name` / `manufacturerId` | — | Identity. |
 | `matchPatterns` | `match_patterns` | Filename/bundle substrings used to detect the installed plugin. |
 | `formats` | `formats` | e.g. `["AU","VST3","AAX"]`. Render as format badges. |
-| `latestVersion` | via accepted observation | Current version. Absent = no accepted version (don't show "up to date"). |
+| `latestVersion` | via accepted observation | Current version. Absent = no accepted version (don't show "up to date"). **Never present on discontinued rows — see `finalVersion`.** |
+| `finalVersion` | via accepted observation (discontinued rows only) | Final release of a discontinued product. The app must render the row as "Discontinued" and may note "final version X, you have Y" — never an "Outdated" alert. |
 | `versionConfidence` | `confidence` (0–100) | ≥85 green = verified, 70–84 amber = likely, <70 yellow = weak. **Render as a badge** — this honest-uncertainty UI is the app's differentiator. |
 | `versionConfidenceReasons` | `confidence_reasons` | Human-readable why, e.g. `["manufacturer-downloads-page"]`. Tooltip text. |
 | `versionSourceUrl` | `source_url` | Evidence page. "Verify" link. |
