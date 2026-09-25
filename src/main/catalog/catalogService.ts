@@ -1,7 +1,6 @@
-import { readFile, writeFile, mkdir } from 'fs/promises'
+import { readFile } from 'fs/promises'
 import { existsSync } from 'fs'
 import { join } from 'path'
-import { homedir } from 'os'
 import type {
   CatalogBrowseReport,
   CatalogManufacturer,
@@ -30,12 +29,14 @@ import {
   groupInstalledPlugins,
   productLineName,
   uniqueSortedVersions,
+  type PluginGroup,
 } from '../scanner/grouping'
 import {
   buildCatalogIndex,
   findManufacturerIndexed,
   matchCatalogPluginIndexed,
   type CatalogIndex,
+  type MatchInput,
 } from './catalogIndex'
 import { isContentLikeKind, isVersionTrackedKind, resolveIdentityKind } from './identity'
 import {
@@ -63,60 +64,34 @@ import {
 export { catalogAsOfLabel } from './catalogParse'
 export { CatalogVerifyError, CATALOG_VERIFY_USER_MESSAGE } from './catalogFeed'
 
-function localCatalogOverridePath(): string {
-  return join(homedir(), 'Library/Application Support/DAW Plugin Manager/catalog-overrides.json')
-}
-
-interface CatalogOverrides {
-  updatedAt: string
-  versionFloors: Record<string, string>
-}
-
-async function loadOverrides(): Promise<CatalogOverrides> {
-  const path = localCatalogOverridePath()
-  if (!existsSync(path)) return { updatedAt: new Date(0).toISOString(), versionFloors: {} }
-  try {
-    return JSON.parse(await readFile(path, 'utf8')) as CatalogOverrides
-  } catch {
-    return { updatedAt: new Date(0).toISOString(), versionFloors: {} }
+function matchInputForGroup(group: PluginGroup): MatchInput {
+  const vendorNames = new Set<string>([group.manufacturer])
+  const bundleIds = new Set<string>()
+  const auComponents: MatchInput['auComponents'] = []
+  for (const m of group.members) {
+    if (m.manufacturerHint) vendorNames.add(m.manufacturerHint)
+    if (m.auVendor) vendorNames.add(m.auVendor)
+    for (const id of m.bundleIds || (m.bundleId ? [m.bundleId] : [])) bundleIds.add(id)
+    auComponents.push(...(m.auComponents || []))
+  }
+  return {
+    name: group.name,
+    productLine: group.productLine,
+    vendorNames: [...vendorNames].filter(Boolean),
+    bundleIds: [...bundleIds],
+    auComponents,
   }
 }
 
-async function saveOverrides(overrides: CatalogOverrides): Promise<void> {
-  const path = localCatalogOverridePath()
-  try {
-    await mkdir(join(homedir(), 'Library/Application Support/DAW Plugin Manager'), {
-      recursive: true,
-    })
-    overrides.updatedAt = new Date().toISOString()
-    await writeFile(path, JSON.stringify(overrides, null, 2), 'utf8')
-  } catch {
-    /* non-fatal */
-  }
-}
-
-function matchCatalogPlugin(
-  name: string,
-  manufacturer: string,
-  productLine: string,
-  catalog: PluginCatalog,
-  index?: CatalogIndex
-): {
-  plugin: CatalogPlugin
-  manufacturer: CatalogManufacturer
-  score: number
-} | null {
-  const idx = index || buildCatalogIndex(catalog)
-  return matchCatalogPluginIndexed(name, manufacturer, productLine, idx)
-}
-
-function findManufacturer(
-  manufacturer: string,
-  catalog: PluginCatalog,
-  index?: CatalogIndex
+function findManufacturerForGroup(
+  input: MatchInput,
+  index: CatalogIndex
 ): CatalogManufacturer | undefined {
-  const idx = index || buildCatalogIndex(catalog)
-  return findManufacturerIndexed(manufacturer, idx)
+  for (const v of input.vendorNames) {
+    const m = findManufacturerIndexed(v, index)
+    if (m) return m
+  }
+  return undefined
 }
 
 function portalAppFor(
@@ -424,8 +399,6 @@ export async function buildReportRows(
   daws: DawInfo[] = [],
   onProgress?: (done: number, total: number) => void
 ): Promise<PluginReportRow[]> {
-  const overrides = await loadOverrides()
-  const floorUpdates: Record<string, string> = {}
   const groups = groupInstalledPlugins(plugins)
   const index = buildCatalogIndex(catalog)
   const rows: PluginReportRow[] = []
@@ -455,14 +428,9 @@ export async function buildReportRows(
       }
     })
 
-    const match = matchCatalogPlugin(
-      group.name,
-      group.manufacturer,
-      group.productLine,
-      catalog,
-      index
-    )
-    const mfgFallback = findManufacturer(group.manufacturer, catalog, index)
+    const matchInput = matchInputForGroup(group)
+    const match = matchCatalogPluginIndexed(matchInput, index)
+    const mfgFallback = findManufacturerForGroup(matchInput, index)
     const isAppleBundled = canonicalizeManufacturer(group.manufacturer) === 'Apple'
 
     if (!match) {
@@ -479,12 +447,14 @@ export async function buildReportRows(
         id: group.key,
         name: group.name,
         manufacturer: canonicalizeManufacturer(group.manufacturer),
-        manufacturerId: mfgFallback?.id ?? null,
         productLine: group.productLine,
         installedVersion: group.newestVersion,
         installedVersions,
         versionDetails,
         latestVersion: null,
+        finalVersion: null,
+        catalogPluginId: null,
+        matchMethod: null,
         releaseDate: null,
         status,
         ...conf,
@@ -502,7 +472,7 @@ export async function buildReportRows(
         popularityTier: effectivePopularityTier(null, mfgFallback || null),
       })
     } else {
-      const { plugin, manufacturer, score: matchScore } = match
+      const { plugin, manufacturer, score: matchScore, method: matchMethod } = match
       const scheme = manufacturer.versionScheme
       const compatibilityFlags = evaluateCompatibility(
         plugin,
@@ -521,17 +491,6 @@ export async function buildReportRows(
             installedVersion: group.newestVersion,
           })
 
-      const overrideKey = `${manufacturer.id}::${group.productLine.toLowerCase()}`
-      const floorFromOverride =
-        overrides.versionFloors[overrideKey] || overrides.versionFloors[plugin.id]
-      const relation = compareVersions(group.newestVersion, effectiveLatest, scheme)
-      if (relation === 'newer' && group.newestVersion) {
-        const prev = floorFromOverride
-        if (!prev || compareVersions(group.newestVersion, prev, scheme) === 'newer') {
-          floorUpdates[overrideKey] = group.newestVersion
-        }
-      }
-
       const conf = computeVersionConfidence({
         status,
         plugin,
@@ -547,12 +506,14 @@ export async function buildReportRows(
         id: group.key,
         name: group.name,
         manufacturer: manufacturer.name,
-        manufacturerId: manufacturer.id,
         productLine: group.productLine,
         installedVersion: group.newestVersion,
         installedVersions,
         versionDetails,
         latestVersion: effectiveLatest,
+        finalVersion: plugin.finalVersion ?? null,
+        catalogPluginId: plugin.id,
+        matchMethod,
         releaseDate: plugin.releaseDate ?? null,
         status,
         ...conf,
@@ -578,13 +539,6 @@ export async function buildReportRows(
       onProgress?.(i + 1, groups.length)
       await new Promise<void>((r) => setImmediate(r))
     }
-  }
-
-  if (Object.keys(floorUpdates).length) {
-    await saveOverrides({
-      ...overrides,
-      versionFloors: { ...overrides.versionFloors, ...floorUpdates },
-    })
   }
 
   return rows
@@ -619,6 +573,9 @@ export function buildCatalogBrowseRows(catalog: PluginCatalog): PluginReportRow[
       installedVersions: [],
       versionDetails: [],
       latestVersion: plugin.latestVersion ?? null,
+      finalVersion: plugin.finalVersion ?? null,
+      catalogPluginId: plugin.id,
+      matchMethod: null,
       releaseDate: plugin.releaseDate ?? null,
       status,
       ...conf,

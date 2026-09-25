@@ -4,6 +4,7 @@
  */
 
 import type { PluginCatalog } from '../../shared/types'
+import { isStoreExportSource, sanitizeStoreExportVersions, trustGateMessage } from './catalogTrust'
 
 export class CatalogParseError extends Error {
   constructor(message: string) {
@@ -31,6 +32,9 @@ export function parsePluginCatalog(raw: unknown, sourceHint?: string): PluginCat
   if (!manufacturers.length && !plugins.length) {
     throw new CatalogParseError('Catalog has no manufacturers or plugins')
   }
+  if (!isStoreExportSource(o.catalogSource)) {
+    throw new CatalogParseError(trustGateMessage(o.catalogSource))
+  }
 
   const updatedAt =
     typeof o.updatedAt === 'string' && o.updatedAt.trim()
@@ -42,12 +46,12 @@ export function parsePluginCatalog(raw: unknown, sourceHint?: string): PluginCat
       ? o.schemaVersion
       : 3
 
-  const catalog: PluginCatalog = {
+  const catalog: PluginCatalog = sanitizeStoreExportVersions({
     schemaVersion,
     updatedAt,
     manufacturers,
     plugins,
-  }
+  })
 
   // App origin hint wins — never keep engine `store-export` / path strings as fetch provenance.
   if (sourceHint) {

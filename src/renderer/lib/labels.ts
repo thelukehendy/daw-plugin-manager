@@ -3,7 +3,7 @@ import type { ConfidenceBand, IdentityKind, UpdateStatus } from '../../shared/ty
 export const STATUS_LABEL: Record<UpdateStatus, string> = {
   current: 'Up to date',
   update_available: 'Update available',
-  update_likely: 'Update likely',
+  update_likely: 'Update likely available',
   unverified: 'Unverified version',
   unknown: 'Unknown',
   paid_upgrade: 'Paid upgrade',
@@ -18,7 +18,7 @@ export const STATUS_LABEL: Record<UpdateStatus, string> = {
 export const STATUS_LABEL_COMPACT: Record<UpdateStatus, string> = {
   current: 'OK',
   update_available: 'Update Available',
-  update_likely: 'Update likely',
+  update_likely: 'Update likely available',
   unverified: 'Unverified',
   unknown: 'Unknown',
   paid_upgrade: 'Paid',

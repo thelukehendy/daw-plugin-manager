@@ -97,7 +97,9 @@ export default function App() {
     if (!api) return
     const unsub = api.onScanProgress((p) => {
       setProgress(p)
-      if (p.partial?.daws) {
+      const partial = p.partial
+      if (partial?.daws) {
+        const daws = partial.daws
         setReport((prev) => {
           if (!prev) {
             return {
@@ -108,10 +110,10 @@ export default function App() {
                 homedir: '',
                 scannedAt: new Date().toISOString(),
               },
-              daws: p.partial.daws!,
+              daws,
               plugins: [],
               rows: [],
-              manufacturers: p.partial.manufacturers || [],
+              manufacturers: partial.manufacturers || [],
               catalog: {
                 updatedAt: new Date(0).toISOString(),
                 source: 'scanning',
@@ -119,10 +121,10 @@ export default function App() {
                 manufacturerCount: 0,
               },
               summary: {
-                dawCount: p.partial.daws!.length,
+                dawCount: daws.length,
                 pluginBundleCount: 0,
                 pluginCount: 0,
-                manufacturerCount: p.partial.manufacturers?.length || 0,
+                manufacturerCount: partial.manufacturers?.length || 0,
                 current: 0,
                 outdated: 0,
                 unknown: 0,
@@ -134,13 +136,13 @@ export default function App() {
           }
           return {
             ...prev,
-            daws: p.partial!.daws!,
-            manufacturers: p.partial!.manufacturers || prev.manufacturers,
+            daws: daws,
+            manufacturers: partial.manufacturers || prev.manufacturers,
             summary: {
               ...prev.summary,
-              dawCount: p.partial!.daws!.length,
+              dawCount: daws.length,
               manufacturerCount:
-                p.partial!.manufacturers?.length ?? prev.summary.manufacturerCount,
+                partial.manufacturers?.length ?? prev.summary.manufacturerCount,
             },
           }
         })

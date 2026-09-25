@@ -74,10 +74,17 @@ export function DetailPanel({
           <dt>Installed</dt>
           <dd className="mono">{displayVersion(row.installedVersion)}</dd>
         </div>
-        <div>
-          <dt>Catalog latest</dt>
-          <dd className="mono">{displayVersion(row.latestVersion)}</dd>
-        </div>
+        {row.status === 'discontinued' ? (
+          <div>
+            <dt>Final version</dt>
+            <dd className="mono">{row.finalVersion || '—'}</dd>
+          </div>
+        ) : (
+          <div>
+            <dt>Catalog latest</dt>
+            <dd className="mono">{displayVersion(row.latestVersion)}</dd>
+          </div>
+        )}
         <div>
           <dt>Identity</dt>
           <dd>{identityLabel(row.identityKind)}</dd>

@@ -256,6 +256,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-weight: 600;
   color: var(--ink-soft);
 }
+.daw-chip-verdict {
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.daw-verdict-current { color: var(--ok); }
+.daw-verdict-update_available { color: var(--accent); }
+.daw-verdict-update_likely { color: var(--amber); }
 .daw-strip-meta {
   font-size: 11px;
   color: var(--muted);

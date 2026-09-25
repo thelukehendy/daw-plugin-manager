@@ -54,6 +54,16 @@ export type VersionScheme =
 
 export type AppleSilicon = 'native' | 'universal' | 'rosetta' | 'intel-only' | 'mixed'
 
+/** Catalog view of an installed DAW. `check_in_app` = no trustworthy comparison possible. */
+export interface DawCatalogInfo {
+  catalogPluginId: string
+  latestVersion: string | null
+  confidence: number | null
+  status: 'current' | 'update_available' | 'update_likely' | 'check_in_app'
+  updateUrl: string | null
+  portalApp: string | null
+}
+
 export interface DawInfo {
   id: string
   name: string
@@ -61,6 +71,14 @@ export interface DawInfo {
   path: string
   bundleId?: string
   detectedAt: string
+  catalog?: DawCatalogInfo | null
+}
+
+/** Audio Unit component identity from a bundle's `AudioComponents` plist entry. */
+export interface AuComponentKey {
+  manufacturer: string
+  subtype?: string
+  type?: string
 }
 
 export interface InstalledPlugin {
@@ -71,6 +89,11 @@ export interface InstalledPlugin {
   formats: PluginFormat[]
   paths: string[]
   bundleId?: string
+  /** Every CFBundleIdentifier seen across formats (AU, VST3, AAX often differ). */
+  bundleIds?: string[]
+  auComponents?: AuComponentKey[]
+  /** Vendor half of an AU component name ("FabFilter: Pro-Q 4" → "FabFilter"). */
+  auVendor?: string
   manufacturerHint?: string
   modifiedAt?: string
 }
@@ -114,6 +137,31 @@ export interface CatalogManufacturer {
   changelogUrl?: string
   /** 1 = household … 4 = long tail; omitted/null = unranked (never treat as tier 0). */
   popularityTier?: number | null
+  /** Bundle-ID prefixes owned by this vendor, e.g. `com.fabfilter`. Omitted = unresearched. */
+  bundleIdVendorPrefixes?: string[]
+  /** 4-character AU manufacturer code, e.g. `FabF`. */
+  auManufacturerCode?: string
+}
+
+/** Deterministic identifiers for a catalog row. All optional; omitted = unresearched. */
+export interface CatalogIdentityKeys {
+  bundleIds?: string[]
+  bundleIdPrefixes?: string[]
+  auComponents?: AuComponentKey[]
+  vst3ClassIds?: string[]
+  winProductNames?: string[]
+}
+
+export type InstalledVersionTransform =
+  | 'strip-build-suffix'
+  | 'prefix-year-2000'
+  | 'semver-first-3'
+
+/** How an installed app reports its version, and how to compare it with the catalog. */
+export interface InstalledVersionRule {
+  source?: 'CFBundleShortVersionString' | 'CFBundleVersion' | string
+  transforms?: (InstalledVersionTransform | string)[]
+  compareSegments?: number
 }
 
 export interface CatalogPlugin {
@@ -123,6 +171,11 @@ export interface CatalogPlugin {
   matchPatterns: string[]
   /** Absent = no accepted version — UI must show "unknown", never invent. */
   latestVersion?: string
+  /** Discontinued rows only: last release ever shipped. Never an update target. */
+  finalVersion?: string
+  discontinuedAt?: string
+  identityKeys?: CatalogIdentityKeys
+  installedVersionRule?: InstalledVersionRule
   releaseDate?: string
   updatePortalUrl?: string
   formats?: PluginFormat[]
@@ -175,6 +228,14 @@ export interface PluginCatalog {
   plugins: CatalogPlugin[]
 }
 
+/** How an installed product was tied to its catalog row, strongest first. */
+export type MatchMethod =
+  | 'bundle-id'
+  | 'au-component'
+  | 'bundle-prefix'
+  | 'exact-name'
+  | 'name-pattern'
+
 export interface CompatibilityFlag {
   severity: CompatSeverity
   dawName: string
@@ -193,6 +254,11 @@ export interface PluginReportRow {
   versionDetails: InstalledVersionInfo[]
   /** Null or absent → UI shows literal "unknown" */
   latestVersion: string | null
+  /** Discontinued products: last release shipped (informational only). */
+  finalVersion?: string | null
+  /** Catalog row this install resolved to; null when unmatched. */
+  catalogPluginId?: string | null
+  matchMethod?: MatchMethod | null
   releaseDate: string | null
   status: UpdateStatus
   confidence: number

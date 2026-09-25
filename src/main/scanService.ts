@@ -11,6 +11,8 @@ import type {
 import { scanDaws } from './scanner/dawScanner'
 import { scanPlugins } from './scanner/pluginScanner'
 import { buildManufacturerGroups, buildReportRows, loadCatalog } from './catalog/catalogService'
+import { buildCatalogIndex } from './catalog/catalogIndex'
+import { dawCatalogInfo } from './catalog/dawCatalog'
 import { rendererCatalogMeta, scrubReportForRenderer } from './catalog/publicFacing'
 import { saveLastLibrary } from './lastLibrary'
 
@@ -108,6 +110,9 @@ export async function runFullScan(
     74,
     { daws }
   )
+
+  const dawIndex = buildCatalogIndex(catalog)
+  for (const daw of daws) daw.catalog = dawCatalogInfo(daw, dawIndex)
 
   emit('compare', 'Matching library to catalog…', 78, { daws })
   const rows = await buildReportRows(plugins, catalog, system, daws, (done, total) => {
