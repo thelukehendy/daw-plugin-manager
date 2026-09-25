@@ -22,6 +22,13 @@ contextBridge.exposeInMainWorld('dawPluginManager', {
     return () => ipcRenderer.removeListener('scan:progress', listener)
   },
 
+  saveScanSnapshot: (): Promise<{
+    ok: boolean
+    canceled?: boolean
+    error?: string
+    pluginCount?: number
+  }> => ipcRenderer.invoke('scan:saveSnapshot'),
+
   openExternal: (url: string): Promise<{ ok: boolean; error?: string }> =>
     ipcRenderer.invoke('shell:openExternal', url),
 

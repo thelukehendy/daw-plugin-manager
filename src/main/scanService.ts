@@ -133,10 +133,7 @@ export async function runFullScan(
     manufacturerCount: manufacturers.length,
     current: rows.filter((r) => r.status === 'current').length,
     outdated: rows.filter(
-      (r) =>
-        r.status === 'update_available' ||
-        r.status === 'update_likely' ||
-        r.status === 'unverified'
+      (r) => r.status === 'update_available' || r.status === 'update_likely'
     ).length,
     updateAvailable: rows.filter((r) => r.status === 'update_available').length,
     unknown: rows.filter((r) => r.status === 'unknown').length,

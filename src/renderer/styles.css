@@ -331,6 +331,17 @@ button, input, select, textarea { font: inherit; color: inherit; }
   display: grid;
   gap: 6px;
 }
+.snapshot-share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.snapshot-share-note {
+  margin: 0;
+  font-size: 11px;
+  color: var(--ink-soft);
+  max-width: 70ch;
+}
 .settings-strip label {
   display: grid;
   gap: 3px;

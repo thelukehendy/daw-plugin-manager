@@ -1,4 +1,5 @@
-import { app, BrowserWindow, ipcMain, shell } from 'electron'
+import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron'
+import { writeFile } from 'fs/promises'
 import { join } from 'path'
 import { runFullScan } from './scanService'
 import { loadLastLibrary } from './lastLibrary'
@@ -8,9 +9,12 @@ import {
   rendererCatalogMeta,
   scrubUserFacingError,
 } from './catalog/publicFacing'
-import type { ScanProgress } from '../shared/types'
+import type { ScanProgress, ScanReport } from '../shared/types'
+import { toScanSnapshot } from '../shared/scanSnapshot'
 
 let mainWindow: BrowserWindow | null = null
+/** Latest full scan this session; source for the anonymized snapshot export. */
+let lastScan: ScanReport | null = null
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
@@ -78,11 +82,29 @@ ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[]
 
   // Indexed catalog match + setImmediate yields keep the renderer painting
   // progressive DAW/vendor updates via scan:progress.
-  return runFullScan(sendProgress, {
+  const report = await runFullScan(sendProgress, {
     extraPluginRoots: options?.extraPluginRoots,
     appPath: app.getAppPath(),
     userDataPath: app.getPath('userData'),
   })
+  lastScan = report
+  return report
+})
+
+ipcMain.handle('scan:saveSnapshot', async () => {
+  if (!lastScan) return { ok: false, error: 'Run a scan first, then save it.' }
+  const snapshot = toScanSnapshot(lastScan.plugins, lastScan.daws, lastScan.system)
+  const opts = {
+    title: 'Save anonymized scan',
+    defaultPath: `daw-plugin-scan-${snapshot.capturedAt}.json`,
+    filters: [{ name: 'JSON', extensions: ['json'] }],
+  }
+  const result = mainWindow
+    ? await dialog.showSaveDialog(mainWindow, opts)
+    : await dialog.showSaveDialog(opts)
+  if (result.canceled || !result.filePath) return { ok: false, canceled: true }
+  await writeFile(result.filePath, JSON.stringify(snapshot, null, 1) + '\n', 'utf8')
+  return { ok: true, pluginCount: snapshot.plugins.length }
 })
 
 ipcMain.handle('shell:openExternal', async (_event, url: string) => {

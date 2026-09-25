@@ -20,7 +20,7 @@ export const TRIAGE_LABEL: Record<TriageBucket, string> = {
   needs_update: 'Needs update',
   use_hub: 'Use vendor hub',
   paid: 'Paid upgrade',
-  uncertain: 'Unknown / unverified',
+  uncertain: 'Not tracked / check for updates',
   clear: 'All clear',
 }
 
@@ -135,9 +135,9 @@ export function buildVendorSignal(
     case 'uncertain': {
       const unk = focusProducts.filter((p) => p.status === 'unknown').length
       const unv = focusProducts.filter((p) => p.status === 'unverified').length
-      if (unk && unv) primary = `${unk} unknown · ${unv} unverified`
-      else if (unk) primary = unk === 1 ? '1 unknown' : `${unk} unknown`
-      else primary = unv === 1 ? '1 unverified' : `${unv} unverified`
+      if (unk && unv) primary = `${unk} not tracked · ${unv} to check`
+      else if (unk) primary = `${unk} not tracked`
+      else primary = `${unv} to check`
       break
     }
     case 'clear':
@@ -190,9 +190,7 @@ export function partitionByTriage(
         ...g,
         products: focus,
         productCount: focus.length,
-        outdatedCount: focus.filter((p) =>
-          UPDATE_STATUSES.includes(p.status) || p.status === 'unverified'
-        ).length,
+        outdatedCount: focus.filter((p) => UPDATE_STATUSES.includes(p.status)).length,
         unknownCount: focus.filter((p) => p.status === 'unknown').length,
         currentCount: focus.filter((p) => CLEAR_STATUSES.includes(p.status)).length,
         popularityTier: (() => {

@@ -10,6 +10,13 @@ export interface DawPluginManagerApi {
     manufacturerCount: number
   }>
   onScanProgress: (callback: (progress: ScanProgress) => void) => () => void
+  /** Save an anonymized snapshot of the latest scan (no paths or usernames). */
+  saveScanSnapshot: () => Promise<{
+    ok: boolean
+    canceled?: boolean
+    error?: string
+    pluginCount?: number
+  }>
   openExternal: (url: string) => Promise<{ ok: boolean; error?: string }>
   getAppInfo: () => Promise<{
     version: string

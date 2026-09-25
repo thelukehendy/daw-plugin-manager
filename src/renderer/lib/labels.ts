@@ -4,8 +4,8 @@ export const STATUS_LABEL: Record<UpdateStatus, string> = {
   current: 'Up to date',
   update_available: 'Update available',
   update_likely: 'Update likely available',
-  unverified: 'Unverified version',
-  unknown: 'Unknown',
+  unverified: 'Check for updates',
+  unknown: 'Not tracked',
   paid_upgrade: 'Paid upgrade',
   use_vendor_hub: 'Use vendor hub',
   content: 'Content',
@@ -19,8 +19,8 @@ export const STATUS_LABEL_COMPACT: Record<UpdateStatus, string> = {
   current: 'OK',
   update_available: 'Update Available',
   update_likely: 'Update likely available',
-  unverified: 'Unverified',
-  unknown: 'Unknown',
+  unverified: 'Check',
+  unknown: 'Not tracked',
   paid_upgrade: 'Paid',
   use_vendor_hub: 'Hub',
   content: 'Content',
@@ -37,9 +37,9 @@ export const STATUS_HINT: Record<UpdateStatus, string> = {
   update_likely:
     'The catalog thinks a newer build exists, but we’re only fairly sure — check the portal.',
   unverified:
-    'We have a version number from a weak source. That is not the same as “update available.”',
+    'The catalog only has a version from a weak source — check the vendor for updates. Not an update alert.',
   unknown:
-    'No trustworthy latest version is on file. Yellow here never means an update is waiting.',
+    'The catalog has no accepted latest version for this product. Nothing is wrong with your install.',
   paid_upgrade: 'A paid next-generation product exists — not a free in-place update.',
   use_vendor_hub: 'This vendor ships updates through their hub / account app, not a one-off installer.',
   content: 'Library, expansion, or pack — not a version-tracked plugin installer.',
@@ -64,9 +64,9 @@ export function statusHover(
     case 'current':
       return 'OK — installed meets or exceeds the catalog latest we trust for this plugin.'
     case 'unknown':
-      return 'Unknown — no trustworthy latest on file. Not an update alert.'
+      return 'Not tracked — no accepted latest version on file. Not an update alert.'
     case 'unverified':
-      return 'Unverified — a weak or crowdsourced number only. Not “update available.”'
+      return 'Check for updates — the catalog only has a weak or crowdsourced number.'
     case 'paid_upgrade':
       return 'Paid upgrade — next generation for sale; your current install isn’t “outdated” for free.'
     case 'use_vendor_hub':

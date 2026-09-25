@@ -1,13 +1,14 @@
 {
  "snapshot": "luke-studio-mac.json",
  "reviewedBy": "Cursor, 2026-09-25",
- "catalogBuildId": "2026-09-25T20:58:18Z",
+ "catalogBuildId": "2026-09-25T21:25:48Z",
  "method": "Identity expectations only (catalog row id). Hand-checked: vendor from bundle ID / AU vendor agrees with the catalog manufacturer, product name agrees, and installed version is on the same release line. Statuses are only asserted where they don't drift with new releases.",
  "expectations": [
   {
    "name": "Reason Rack",
    "catalogPluginId": "steinberg--reason-rack-plugin",
-   "note": "was matched to Steinberg manufacturer before 2026-09-25 fix; row id keeps steinberg-- prefix"
+   "note": "was matched to Steinberg manufacturer before 2026-09-25 fix; row id keeps steinberg-- prefix",
+   "dataFixedIn": "2026-09-25T20:58:18Z"
   },
   {
    "name": "Ultra Analog Session",
@@ -16,7 +17,8 @@
     "update_available",
     "update_likely"
    ],
-   "note": "Session 2 version was stamped on the Session 1 row"
+   "note": "Session 2 version was stamped on the Session 1 row",
+   "dataFixedIn": "2026-09-25T20:58:18Z"
   },
   {
    "name": "Strum Acoustic Session",
@@ -25,7 +27,8 @@
     "update_available",
     "update_likely"
    ],
-   "note": "Session 2 version was stamped on the Session 1 row"
+   "note": "Session 2 version was stamped on the Session 1 row",
+   "dataFixedIn": "2026-09-25T20:58:18Z"
   },
   {
    "name": "B4 II",
@@ -50,7 +53,8 @@
   {
    "name": "LTL SILVER BULLET mk2",
    "catalogPluginId": "plugin-alliance--ltl-silver-bullet-mk2",
-   "note": "installed 1.1.0 equals the Plugin Alliance row"
+   "note": "installed 1.1.0 equals the Plugin Alliance row; versionless unfilteredaudio--ltl-silver-bullet-mk2 duplicate wins since the unfiltered-audio merge",
+   "knownDataIssue": true
   },
   {
    "name": "AIRChorus",
@@ -60,50 +64,50 @@
   {
    "name": "Invert-Duplicate",
    "catalogPluginId": "digidesign--invert-duplicate",
-   "knownDataIssue": true,
-   "note": "catalog splits Avid and 'digidesign' into two manufacturers"
+   "note": "catalog split Avid and 'digidesign'",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "6X-500",
    "catalogPluginId": "plugin-alliance--lindell-audio-6x-500",
-   "knownDataIssue": true,
-   "note": "installed version equals the Plugin Alliance row; versionless lindell-audio duplicate still wins on exact name"
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "7X-500",
    "catalogPluginId": "plugin-alliance--lindell-audio-7x-500",
-   "knownDataIssue": true,
-   "note": "installed version equals the Plugin Alliance row; versionless lindell-audio duplicate still wins on exact name"
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "ChannelX",
    "catalogPluginId": "plugin-alliance--lindell-audio-channelx",
-   "knownDataIssue": true,
-   "note": "installed version equals the Plugin Alliance row; versionless lindell-audio duplicate still wins on exact name"
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "Lindell 254E",
    "catalogPluginId": "plugin-alliance--lindell-audio-254e",
-   "knownDataIssue": true,
-   "note": "installed version equals the Plugin Alliance row; versionless lindell-audio duplicate still wins on exact name"
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "Lindell 354E",
    "catalogPluginId": "plugin-alliance--lindell-audio-354e",
-   "knownDataIssue": true,
-   "note": "installed version equals the Plugin Alliance row; versionless lindell-audio duplicate still wins on exact name"
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "Lindell TE-100",
    "catalogPluginId": "plugin-alliance--lindell-audio-te-100",
-   "knownDataIssue": true,
-   "note": "installed version equals the Plugin Alliance row; versionless lindell-audio duplicate still wins on exact name"
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "PEX-500",
    "catalogPluginId": "plugin-alliance--lindell-audio-pex-500",
-   "knownDataIssue": true,
-   "note": "installed version equals the Plugin Alliance row; versionless lindell-audio duplicate still wins on exact name"
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
   },
   {
    "name": "Auto-Key",

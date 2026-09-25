@@ -357,8 +357,7 @@ export function buildManufacturerGroups(rows: PluginReportRow[]): ManufacturerRe
     const outdatedLike = sorted.filter(
       (p) =>
         p.status === 'update_available' ||
-        p.status === 'update_likely' ||
-        p.status === 'unverified'
+        p.status === 'update_likely'
     ).length
     groups.push({
       id: (sorted[0]?.manufacturerId || manufacturer).toLowerCase(),

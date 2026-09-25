@@ -80,6 +80,7 @@ export default function App() {
   const [selected, setSelected] = useState<PluginReportRow | null>(null)
   const [extraRoots, setExtraRoots] = useState('')
   const [showSettings, setShowSettings] = useState(false)
+  const [snapshotNote, setSnapshotNote] = useState<string | null>(null)
   const [fromSnapshot, setFromSnapshot] = useState(false)
   const [refreshingCatalog, setRefreshingCatalog] = useState(false)
 
@@ -291,6 +292,15 @@ export default function App() {
     }
   }
 
+  async function handleSaveSnapshot() {
+    const api = window.dawPluginManager
+    if (!api?.saveScanSnapshot) return
+    setSnapshotNote(null)
+    const res = await api.saveScanSnapshot()
+    if (res.ok) setSnapshotNote(`Saved ${res.pluginCount} plugins.`)
+    else if (!res.canceled) setSnapshotNote(res.error || 'Could not save the scan.')
+  }
+
   async function openUpdate(url: string | null) {
     if (!url || !window.dawPluginManager) return
     await window.dawPluginManager.openExternal(url)
@@ -376,7 +386,7 @@ export default function App() {
             className="btn"
             onClick={() => setShowSettings((s) => !s)}
             aria-expanded={showSettings}
-            title="Add extra folders to scan beyond the usual AU / VST3 / VST locations."
+            title="Extra plugin folders to scan, and saving an anonymized scan to share."
           >
             Paths
           </button>
@@ -416,6 +426,22 @@ export default function App() {
               placeholder="/custom/plugin/path"
             />
           </label>
+          <div className="snapshot-share">
+            <button
+              type="button"
+              className="btn"
+              onClick={handleSaveSnapshot}
+              disabled={scanning}
+            >
+              Save anonymized scan
+            </button>
+            <p className="snapshot-share-note">
+              Saves a file you can share to help improve the catalog: plugin and app names,
+              vendors, bundle IDs and versions only. No file paths, usernames or machine names.
+              Nothing is sent anywhere.
+              {snapshotNote && <strong> {snapshotNote}</strong>}
+            </p>
+          </div>
         </div>
       )}
 
