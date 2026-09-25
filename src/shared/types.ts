@@ -201,6 +201,8 @@ export interface CatalogPlugin {
   predecessorPluginId?: string
   updateClass?: string
   generation?: string | number
+  /** Installed major versions this generation row covers, when not equal to `generation`. */
+  versionMajors?: number[]
   generationRank?: number
   portalApp?: string
   /** 1 = household … 4 = long tail; omitted/null = unranked. */

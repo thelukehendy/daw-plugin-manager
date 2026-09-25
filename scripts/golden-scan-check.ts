@@ -98,9 +98,19 @@ async function main() {
 
   for (const source of sources) {
     const catalog = parsePluginCatalog(JSON.parse(source.json), 'golden')
+    const manufacturerIds = new Set(catalog.manufacturers.map((m) => m.id))
+    const orphans = catalog.plugins.filter((p) => !manufacturerIds.has(p.manufacturerId))
     const failures: Failure[] = []
     let checked = 0
     console.log(`\n== ${source.label} (${catalog.updatedAt})`)
+    if (orphans.length) {
+      console.log(
+        `  data: ${orphans.length} rows reference a manufacturerId that doesn't exist (${orphans
+          .slice(0, 5)
+          .map((p) => `${p.id} → ${p.manufacturerId}`)
+          .join(', ')}${orphans.length > 5 ? ', …' : ''}); the app can't match them`
+      )
+    }
 
     for (const file of snapshots) {
       const machine = file.replace(/\.json$/, '')

@@ -35,6 +35,8 @@ export interface MatchInput {
   vendorNames: string[]
   bundleIds?: string[]
   auComponents?: AuComponentKey[]
+  /** Newest installed version; picks between generation rows sharing a name. */
+  installedVersion?: string | null
 }
 
 export interface CatalogMatch {
@@ -255,6 +257,30 @@ function manufacturerAgrees(
   return manufacturerNames(candidateMfg).some((n) => containsWord(installedName, n))
 }
 
+function majorOf(version: string | null | undefined): number | null {
+  const m = version?.match(/^\s*(\d+)/)
+  return m ? Number(m[1]) : null
+}
+
+function generationCovers(plugin: CatalogPlugin, major: number): boolean {
+  if (plugin.versionMajors?.length) return plugin.versionMajors.includes(major)
+  return Number(plugin.generation) === major
+}
+
+/**
+ * Several equally good rows that are generations of one product (S-Gear 2 / S-Gear 3):
+ * keep the one covering the installed major. None covers it → no match, never the
+ * newest generation's version.
+ */
+function resolveGeneration(tied: CatalogMatch[], installedVersion?: string | null): CatalogMatch | null {
+  if (tied.length < 2) return tied[0] ?? null
+  const generational = tied.filter((m) => m.plugin.generation != null || m.plugin.versionMajors?.length)
+  if (generational.length < 2) return tied[0]
+  const major = majorOf(installedVersion)
+  if (major == null) return null
+  return generational.find((m) => generationCovers(m.plugin, major)) ?? null
+}
+
 function pickAmong(
   list: CatalogPlugin[],
   input: MatchInput,
@@ -322,7 +348,7 @@ export function matchCatalogPluginIndexed(
     (index.byExactName.get(nameLower) || []).map((p) => p.manufacturerId)
   )
 
-  let best: CatalogMatch | null = null
+  const scored: CatalogMatch[] = []
   for (const plugin of candidates) {
     const mfg = index.manufacturerById.get(plugin.manufacturerId)
     if (!mfg) continue
@@ -360,8 +386,13 @@ export function matchCatalogPluginIndexed(
       score = 60 + (lineMatch ? 50 : 0) + (fuzzyPattern ? 20 : 0)
     }
 
-    if (!best || score > best.score) best = { plugin, manufacturer: mfg, score, method }
+    scored.push({ plugin, manufacturer: mfg, score, method })
   }
 
-  return best
+  if (!scored.length) return null
+  const top = Math.max(...scored.map((m) => m.score))
+  return resolveGeneration(
+    scored.filter((m) => m.score === top),
+    input.installedVersion
+  )
 }

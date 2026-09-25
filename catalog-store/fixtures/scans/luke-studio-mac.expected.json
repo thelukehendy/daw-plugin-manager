@@ -1,9 +1,31 @@
 {
  "snapshot": "luke-studio-mac.json",
  "reviewedBy": "Cursor, 2026-09-25",
- "catalogBuildId": "2026-09-25T21:25:48Z",
+ "catalogBuildId": "2026-09-25T21:45:55Z",
  "method": "Identity expectations only (catalog row id). Hand-checked: vendor from bundle ID / AU vendor agrees with the catalog manufacturer, product name agrees, and installed version is on the same release line. Statuses are only asserted where they don't drift with new releases.",
  "expectations": [
+  {
+   "name": "S-Gear",
+   "catalogPluginId": "scuffham--sgear-2",
+   "statusNotIn": [
+    "paid_upgrade"
+   ],
+   "knownDataIssue": true,
+   "note": "installed 2.7.0 is generation 2; scuffham--sgear-2 has manufacturerId 'scuffham', which doesn't exist (manufacturer is 'scuffham-amps')"
+  },
+  {
+   "name": "SpectraLayers",
+   "catalogPluginId": "steinberg--spectralayers",
+   "status": "paid_upgrade",
+   "note": "installed 11.x, latest 13.x on a paid_upgrade row"
+  },
+  {
+   "name": "Ivory",
+   "catalogPluginId": "synthogy--ivory",
+   "status": "paid_upgrade",
+   "dataFixedIn": "2026-09-25T21:25:48Z",
+   "note": "installed 2.x, latest 3.x on a paid_upgrade row"
+  },
   {
    "name": "Reason Rack",
    "catalogPluginId": "steinberg--reason-rack-plugin",

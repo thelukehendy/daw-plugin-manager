@@ -70,11 +70,15 @@ function findDawRow(daw: DawInfo, index: CatalogIndex): CatalogPlugin | null {
     if (byId) return byId
   }
   const name = normName(daw.name)
-  return (
-    apps.find(
-      (p) => normName(p.name) === name || p.matchPatterns?.some((m) => normName(m) === name)
-    ) || null
+  const exact = apps.find(
+    (p) => normName(p.name) === name || p.matchPatterns?.some((m) => normName(m) === name)
   )
+  if (exact) return exact
+  // Edition / major suffixes: "Ableton Live 12 Suite" → "Ableton Live". Longest name wins.
+  const prefixed = apps
+    .filter((p) => name.startsWith(`${normName(p.name)} `))
+    .sort((a, b) => b.name.length - a.name.length)
+  return prefixed[0] || null
 }
 
 export function dawCatalogInfo(daw: DawInfo, index: CatalogIndex): DawCatalogInfo | null {

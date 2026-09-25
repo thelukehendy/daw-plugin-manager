@@ -1,75 +1,70 @@
-import type { DawCatalogInfo, DawInfo, PluginReportRow } from '../../shared/types'
+import type { DawCatalogInfo, DawInfo } from '../../shared/types'
 
-const DAW_VERDICT: Record<DawCatalogInfo['status'], string | null> = {
+/** "10.1.43 (2022-06-16_0e617fc804)" → "10.1.43"; "7.54.0_91d78b1u" → "7.54.0". Display only. */
+export function cleanDawVersion(version: string | null): string | null {
+  if (!version) return null
+  const m = version.match(/^\s*(\d+(?:\.\d+){0,3})/)
+  return m ? m[1] : version
+}
+
+const VERDICT: Record<DawCatalogInfo['status'], string | null> = {
   current: 'Up to date',
-  update_available: 'Update available',
-  update_likely: 'Update likely available',
+  update_available: 'Update',
+  update_likely: 'Likely update',
   check_in_app: null,
 }
 
 function dawTitle(d: DawInfo): string {
-  const found = d.version ? `${d.name} ${d.version} — detected on this Mac.` : `${d.name} — detected on this Mac.`
+  const found = `${d.name} ${d.version ?? ''}`.trim()
   const cat = d.catalog
-  if (!cat) return found
+  if (!cat) return `${found}. Not in the catalog yet — check for updates in the app.`
   if (cat.status === 'check_in_app') {
-    const where = cat.portalApp || d.name
-    return `${found} Check for updates in ${where}.`
+    const latest = cat.latestVersion ? ` Catalog latest: ${cat.latestVersion}.` : ''
+    return `${found}.${latest} The catalog can't compare this install yet — check for updates in ${cat.portalApp || d.name}.`
   }
-  return cat.latestVersion ? `${found} Latest: ${cat.latestVersion}.` : found
+  return `${found}. Catalog latest: ${cat.latestVersion ?? 'unknown'}.`
 }
 
-/** Readable installed-DAW strip — always at the top of Library. */
+/** Installed DAWs, one compact line. */
 export function DawStrip({
   daws,
-  rows,
+  onOpenUrl,
 }: {
   daws: DawInfo[]
-  rows: PluginReportRow[]
+  onOpenUrl: (url: string | null) => void
 }) {
-  if (!daws.length) {
-    return (
-      <div
-        className="daw-strip-panel empty"
-        title="Hosts found in Applications after a scan. Run Scan to detect Logic, Ableton, and friends."
-      >
-        <span className="daw-strip-label">Installed DAWs</span>
-        <span className="daw-strip-empty">None detected yet — run Scan</span>
-      </div>
-    )
-  }
-
-  const libraryCount = rows.length
-
   return (
-    <div
-      className="daw-strip-panel"
-      aria-label="Installed DAWs"
-      title="Music apps found on this Mac. Plugin counts below are your whole library, not per-DAW usage."
-    >
-      <span className="daw-strip-label">Installed DAWs</span>
-      <ul className="daw-strip-list">
-        {daws.map((d) => {
-          const verdict = DAW_VERDICT[d.catalog?.status ?? 'check_in_app']
-          return (
-            <li key={d.id || d.path} className="daw-chip" title={dawTitle(d)}>
-              <span className="daw-chip-name">{d.name}</span>
-              {d.version && <span className="daw-chip-ver mono">{d.version}</span>}
-              {verdict && (
-                <span className={`daw-chip-verdict daw-verdict-${d.catalog?.status}`}>
-                  {verdict}
-                </span>
-              )}
-            </li>
-          )
-        })}
-      </ul>
-      <span
-        className="daw-strip-meta mono"
-        title="How many hosts were found, and how many plugins matched in your last scan."
-      >
-        {daws.length} DAW{daws.length === 1 ? '' : 's'}
-        {libraryCount > 0 ? ` · ${libraryCount} plugins in library` : ''}
-      </span>
+    <div className="daw-strip" aria-label="Installed DAWs">
+      <span className="daw-strip-label">DAWs</span>
+      {daws.length === 0 ? (
+        <span className="daw-strip-empty">Detecting…</span>
+      ) : (
+        <ul className="daw-list">
+          {daws.map((d) => {
+            const status = d.catalog?.status ?? 'check_in_app'
+            const verdict = VERDICT[status]
+            const actionable = status === 'update_available' || status === 'update_likely'
+            return (
+              <li key={d.id || d.path} className={`daw-item daw-${status}`} title={dawTitle(d)}>
+                <span className="daw-name">{d.name}</span>
+                <span className="daw-ver mono">{cleanDawVersion(d.version)}</span>
+                {verdict &&
+                  (actionable && d.catalog?.updateUrl ? (
+                    <button
+                      type="button"
+                      className="daw-verdict"
+                      onClick={() => onOpenUrl(d.catalog?.updateUrl ?? null)}
+                    >
+                      {verdict} {d.catalog?.latestVersion} ↗
+                    </button>
+                  ) : (
+                    <span className="daw-verdict">{verdict}</span>
+                  ))}
+              </li>
+            )
+          })}
+        </ul>
+      )}
     </div>
   )
 }

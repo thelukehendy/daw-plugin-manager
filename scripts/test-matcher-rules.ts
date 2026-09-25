@@ -81,6 +81,23 @@ assert.strictEqual(
 )
 assert.ok(isWeakPattern('EQ') && isWeakPattern('reverb') && !isWeakPattern('Pro-Q 4'))
 
+// —— generation rows sharing a name ——
+const genCatalog: PluginCatalog = {
+  ...catalog,
+  manufacturers: [...catalog.manufacturers, { id: 'scuffham-amps', name: 'Scuffham Amps', updatePortalUrl: 'https://s' }],
+  plugins: [
+    { id: 'sg2', manufacturerId: 'scuffham-amps', name: 'S-Gear 2', matchPatterns: ['S-Gear'], generation: '2', latestVersion: '2.9.9', versionConfidence: 90, updateClass: 'paid_upgrade', successorPluginId: 'sg3' },
+    { id: 'sg3', manufacturerId: 'scuffham-amps', name: 'S-Gear 3', matchPatterns: ['S-Gear'], generation: '3', latestVersion: '3.2.5', versionConfidence: 92 },
+  ],
+}
+const genIndex = buildCatalogIndex(genCatalog)
+const sgear = (v: string | null) =>
+  matchCatalogPluginIndexed({ name: 'S-Gear', productLine: 'S-Gear', vendorNames: ['Scuffham Amps'], installedVersion: v }, genIndex)
+assert.strictEqual(sgear('2.7.0')?.plugin.id, 'sg2', 'installed major 2 → generation 2 row')
+assert.strictEqual(sgear('3.1.0')?.plugin.id, 'sg3')
+assert.strictEqual(sgear('4.0.0'), null, 'no generation covers it → no match, not the newest')
+assert.strictEqual(sgear(null), null, 'unknown installed version → no guess')
+
 // —— DAW verdicts ——
 const daw = (version: string) => ({ id: 'pt', name: 'Pro Tools', version, path: '', bundleId: 'com.avid.ProTools', detectedAt: '' })
 assert.strictEqual(dawCatalogInfo(daw('26.4.1.179'), index)?.status, 'current', 'Pro Tools 26.4.1 == 2026.4')
@@ -90,5 +107,16 @@ const noRule = buildCatalogIndex({
   plugins: catalog.plugins.map((p) => (p.id === 'avid--pro-tools' ? { ...p, installedVersionRule: undefined } : p)),
 })
 assert.strictEqual(dawCatalogInfo(daw('25.12.0'), noRule)?.status, 'check_in_app', 'no rule → no verdict')
+
+const live = buildCatalogIndex({
+  ...catalog,
+  manufacturers: [...catalog.manufacturers, { id: 'ableton', name: 'Ableton', updatePortalUrl: 'https://a' }],
+  plugins: [{ id: 'ableton--live', manufacturerId: 'ableton', name: 'Ableton Live', matchPatterns: ['Ableton Live'], identityKind: 'standalone_app', latestVersion: '12.4.6', versionConfidence: 82 }],
+})
+assert.strictEqual(
+  dawCatalogInfo({ id: 'l', name: 'Ableton Live 12 Suite', version: '12.2.7', path: '', detectedAt: '' }, live)?.catalogPluginId,
+  'ableton--live',
+  'edition suffix still finds the DAW row'
+)
 
 console.log('test-matcher-rules: ok')

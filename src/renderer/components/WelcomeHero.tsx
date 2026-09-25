@@ -23,8 +23,8 @@ export function WelcomeHero({
           </button>
         </div>
         <p className="welcome-footnote">
-          Confidence shows as Verified, Likely, or Unknown. Yellow is weak evidence — not “update
-          available.”
+          “Update” means a verified newer version. “Likely update” means fairly sure. “Check” means
+          only a weak source, so it’s never counted as an update. Versions are never guessed.
         </p>
       </div>
     </section>

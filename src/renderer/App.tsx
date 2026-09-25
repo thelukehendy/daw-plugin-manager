@@ -1,79 +1,150 @@
-import { useEffect, useMemo, useState } from 'react'
-import type {
-  ManufacturerReportGroup,
-  PluginReportRow,
-  ScanProgress,
-  ScanReport,
-} from '../shared/types'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import type { ConfidenceBand, PluginReportRow, ScanProgress, ScanReport } from '../shared/types'
 import { WelcomeHero } from './components/WelcomeHero'
-import { FilterBar, type ConfidenceFilter, type IdentityFilter } from './components/FilterBar'
-import { PluginList } from './components/PluginList'
 import { DetailPanel } from './components/DetailPanel'
 import { DawStrip } from './components/DawStrip'
-import { type TriageFilter, TRIAGE_CHIP_TITLE, partitionByTriage } from './lib/triage'
-import { scrubVisibleText } from './lib/labels'
+import {
+  LibraryTable,
+  STATUS_ORDER,
+  type SortKey,
+  type VendorGroup,
+} from './components/LibraryTable'
+import { TRIAGE_CHIP_TITLE, TRIAGE_ORDER, productTriage, type TriageFilter } from './lib/triage'
+import { identityLabel, scrubVisibleText } from './lib/labels'
 
 type Mode = 'welcome' | 'library'
+type ConfidenceFilter = 'all' | ConfidenceBand
+type IdentityFilter = 'all' | string
 type Theme = 'dark' | 'light'
 
 const THEME_KEY = 'daw-pm-theme'
+const GROUPED_KEY = 'daw-pm-grouped'
 
-function readStoredTheme(): Theme {
+const VIEW_LABEL: Record<TriageFilter, string> = {
+  needs_update: 'Updates',
+  use_hub: 'Via hub app',
+  paid: 'Paid upgrades',
+  uncertain: 'Check manually',
+  clear: 'Nothing to do',
+  all: 'All',
+}
+
+const VIEW_EMPTY: Record<TriageFilter, string> = {
+  needs_update: 'No updates waiting. Everything the catalog can verify is current.',
+  use_hub: 'No plugins that update through a vendor hub app.',
+  paid: 'No paid next-generation upgrades for what you have installed.',
+  uncertain: 'Nothing to check by hand.',
+  clear: 'Nothing here.',
+  all: 'No plugins match.',
+}
+
+const IDENTITY_OPTIONS = [
+  'plugin',
+  'hub_app',
+  'soundset',
+  'expansion',
+  'bundle',
+  'suite_component',
+  'discontinued',
+  'gen_ambiguous',
+  'hardware',
+]
+
+function readStored<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
   try {
-    const v = localStorage.getItem(THEME_KEY)
-    if (v === 'light' || v === 'dark') return v
+    const v = localStorage.getItem(key) as T | null
+    if (v && allowed.includes(v)) return v
   } catch {
     /* ignore */
   }
-  return 'dark'
+  return fallback
 }
 
-function filterGroups(
-  groups: ManufacturerReportGroup[],
-  opts: {
-    query: string
-    confidence: ConfidenceFilter
-    identity: IdentityFilter
-    manufacturer: string
+function store(key: string, value: string): void {
+  try {
+    localStorage.setItem(key, value)
+  } catch {
+    /* ignore */
   }
-): ManufacturerReportGroup[] {
-  const q = opts.query.trim().toLowerCase()
-  return groups
-    .map((g) => {
-      if (opts.manufacturer && g.manufacturer !== opts.manufacturer) return null
-      const products = g.products.filter((row) => {
-        if (opts.confidence !== 'all' && row.confidenceBand !== opts.confidence) return false
-        if (opts.identity !== 'all' && row.identityKind !== opts.identity) return false
-        if (!q) return true
-        return (
-          row.name.toLowerCase().includes(q) ||
-          row.manufacturer.toLowerCase().includes(q) ||
-          row.productLine.toLowerCase().includes(q) ||
-          (row.installedVersion || '').toLowerCase().includes(q) ||
-          (row.latestVersion || '').toLowerCase().includes(q) ||
-          (row.portalApp || '').toLowerCase().includes(q) ||
-          row.formats.join(' ').toLowerCase().includes(q)
-        )
-      })
-      if (!products.length) return null
-      return { ...g, products, productCount: products.length }
-    })
-    .filter(Boolean) as ManufacturerReportGroup[]
 }
 
-function toggleTriage(current: TriageFilter, next: TriageFilter): TriageFilter {
-  return current === next ? 'all' : next
+function emptyReport(daws: ScanReport['daws'], catalog?: Partial<ScanReport['catalog']>): ScanReport {
+  return {
+    system: { platform: 'darwin', osVersion: null, arch: 'arm64', homedir: '', scannedAt: new Date().toISOString() },
+    daws,
+    plugins: [],
+    rows: [],
+    manufacturers: [],
+    catalog: {
+      updatedAt: catalog?.updatedAt ?? new Date(0).toISOString(),
+      source: catalog?.source ?? 'scanning',
+      pluginCount: catalog?.pluginCount ?? 0,
+      manufacturerCount: catalog?.manufacturerCount ?? 0,
+    },
+    summary: {
+      dawCount: daws.length,
+      pluginBundleCount: 0,
+      pluginCount: 0,
+      manufacturerCount: 0,
+      current: 0,
+      outdated: 0,
+      unknown: 0,
+      bundled: 0,
+      legacy: 0,
+      compatWarnings: 0,
+    },
+  }
+}
+
+function matchesQuery(row: PluginReportRow, q: string): boolean {
+  if (!q) return true
+  return (
+    row.name.toLowerCase().includes(q) ||
+    row.manufacturer.toLowerCase().includes(q) ||
+    row.productLine.toLowerCase().includes(q) ||
+    (row.portalApp || '').toLowerCase().includes(q)
+  )
+}
+
+function compareRows(sort: SortKey) {
+  return (a: PluginReportRow, b: PluginReportRow): number => {
+    if (sort === 'status') {
+      const d = STATUS_ORDER[a.status] - STATUS_ORDER[b.status]
+      if (d) return d
+    } else if (sort === 'vendor') {
+      const d = a.manufacturer.localeCompare(b.manufacturer)
+      if (d) return d
+    } else if (sort === 'installed') {
+      const d = (a.installedVersion || '').localeCompare(b.installedVersion || '', undefined, {
+        numeric: true,
+      })
+      if (d) return d
+    }
+    return a.name.localeCompare(b.name)
+  }
+}
+
+function formatDate(iso: string | null | undefined, withTime = false): string | null {
+  const t = iso ? Date.parse(iso) : NaN
+  if (!Number.isFinite(t) || t <= 0) return null
+  return new Date(t).toLocaleString(undefined, {
+    month: 'short',
+    day: 'numeric',
+    ...(withTime ? { hour: 'numeric', minute: '2-digit' } : { year: 'numeric' }),
+  })
 }
 
 export default function App() {
   const [mode, setMode] = useState<Mode>('welcome')
-  const [theme, setTheme] = useState<Theme>(() => readStoredTheme())
+  const [theme, setTheme] = useState<Theme>(() => readStored(THEME_KEY, ['dark', 'light'], 'dark'))
+  const [grouped, setGrouped] = useState(() => readStored(GROUPED_KEY, ['1', '0'], '1') === '1')
   const [report, setReport] = useState<ScanReport | null>(null)
   const [scanning, setScanning] = useState(false)
   const [progress, setProgress] = useState<ScanProgress | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [query, setQuery] = useState('')
-  const [triageFilter, setTriageFilter] = useState<TriageFilter>('all')
+  const [view, setView] = useState<TriageFilter>('all')
+  const [sort, setSort] = useState<SortKey>('name')
   const [confidenceFilter, setConfidenceFilter] = useState<ConfidenceFilter>('all')
   const [identityFilter, setIdentityFilter] = useState<IdentityFilter>('all')
   const [manufacturerFilter, setManufacturerFilter] = useState('')
@@ -83,128 +154,143 @@ export default function App() {
   const [snapshotNote, setSnapshotNote] = useState<string | null>(null)
   const [fromSnapshot, setFromSnapshot] = useState(false)
   const [refreshingCatalog, setRefreshingCatalog] = useState(false)
+  const searchRef = useRef<HTMLInputElement>(null)
+  const viewChosenFor = useRef<ScanReport | null>(null)
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
-    try {
-      localStorage.setItem(THEME_KEY, theme)
-    } catch {
-      /* ignore */
-    }
+    store(THEME_KEY, theme)
   }, [theme])
+
+  useEffect(() => store(GROUPED_KEY, grouped ? '1' : '0'), [grouped])
 
   useEffect(() => {
     const api = window.dawPluginManager
     if (!api) return
-    const unsub = api.onScanProgress((p) => {
+    return api.onScanProgress((p) => {
       setProgress(p)
-      const partial = p.partial
-      if (partial?.daws) {
-        const daws = partial.daws
-        setReport((prev) => {
-          if (!prev) {
-            return {
-              system: {
-                platform: 'darwin',
-                osVersion: null,
-                arch: 'arm64',
-                homedir: '',
-                scannedAt: new Date().toISOString(),
-              },
-              daws,
-              plugins: [],
-              rows: [],
-              manufacturers: partial.manufacturers || [],
-              catalog: {
-                updatedAt: new Date(0).toISOString(),
-                source: 'scanning',
-                pluginCount: 0,
-                manufacturerCount: 0,
-              },
-              summary: {
-                dawCount: daws.length,
-                pluginBundleCount: 0,
-                pluginCount: 0,
-                manufacturerCount: partial.manufacturers?.length || 0,
-                current: 0,
-                outdated: 0,
-                unknown: 0,
-                bundled: 0,
-                legacy: 0,
-                compatWarnings: 0,
-              },
-            }
-          }
-          return {
-            ...prev,
-            daws: daws,
-            manufacturers: partial.manufacturers || prev.manufacturers,
-            summary: {
-              ...prev.summary,
-              dawCount: daws.length,
-              manufacturerCount:
-                partial.manufacturers?.length ?? prev.summary.manufacturerCount,
-            },
-          }
-        })
-        setMode('library')
-        setFromSnapshot(false)
-      }
+      const daws = p.partial?.daws
+      if (!daws) return
+      setReport((prev) => (prev ? { ...prev, daws } : emptyReport(daws)))
+      setMode('library')
+      setFromSnapshot(false)
     })
-    return unsub
   }, [])
 
-  // Instant reopen from persisted library snapshot
   useEffect(() => {
     const api = window.dawPluginManager
     if (!api?.loadLastLibrary) return
     let cancelled = false
-    ;(async () => {
-      try {
-        const last = await api.loadLastLibrary()
+    api
+      .loadLastLibrary()
+      .then((last) => {
         if (cancelled || !last) return
         setReport(last)
         setMode('library')
         setFromSnapshot(true)
-      } catch {
+      })
+      .catch(() => {
         /* first launch */
-      }
-    })()
+      })
     return () => {
       cancelled = true
     }
   }, [])
 
-  const manufacturerNames = useMemo(() => {
-    if (!report?.manufacturers) return [] as string[]
-    return [...new Set(report.manufacturers.map((g) => g.manufacturer))].sort((a, b) =>
-      a.localeCompare(b)
+  const manufacturerNames = useMemo(
+    () => [...new Set((report?.rows || []).map((r) => r.manufacturer))].sort((a, b) => a.localeCompare(b)),
+    [report]
+  )
+
+  const filteredRows = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    return (report?.rows || []).filter(
+      (row) =>
+        (!manufacturerFilter || row.manufacturer === manufacturerFilter) &&
+        (confidenceFilter === 'all' || row.confidenceBand === confidenceFilter) &&
+        (identityFilter === 'all' || row.identityKind === identityFilter) &&
+        matchesQuery(row, q)
     )
+  }, [report, query, manufacturerFilter, confidenceFilter, identityFilter])
+
+  const counts = useMemo(() => {
+    const c: Record<TriageFilter, number> = {
+      needs_update: 0,
+      use_hub: 0,
+      paid: 0,
+      uncertain: 0,
+      clear: 0,
+      all: filteredRows.length,
+    }
+    for (const r of filteredRows) c[productTriage(r.status)]++
+    return c
+  }, [filteredRows])
+
+  // Open on the view that needs attention first, once per loaded report.
+  useEffect(() => {
+    if (!report?.rows.length || viewChosenFor.current === report) return
+    viewChosenFor.current = report
+    const first = TRIAGE_ORDER.find((b) => b !== 'clear' && report.rows.some((r) => productTriage(r.status) === b))
+    setView(first ?? 'all')
   }, [report])
 
-  const groups = useMemo(() => {
-    if (!report?.manufacturers) return [] as ManufacturerReportGroup[]
-    return filterGroups(report.manufacturers, {
-      query,
-      confidence: confidenceFilter,
-      identity: identityFilter,
-      manufacturer: manufacturerFilter,
-    })
-  }, [report, query, confidenceFilter, identityFilter, manufacturerFilter])
-
-  const triageCounts = useMemo(() => {
-    const p = partitionByTriage(groups)
-    return {
-      needs_update: p.needs_update.reduce((n, g) => n + g.productCount, 0),
-      use_hub: p.use_hub.reduce((n, g) => n + g.productCount, 0),
-      paid: p.paid.reduce((n, g) => n + g.productCount, 0),
-      uncertain: p.uncertain.reduce((n, g) => n + g.productCount, 0),
-      clear: p.clear.reduce((n, g) => n + g.productCount, 0),
+  const groups = useMemo((): VendorGroup[] => {
+    const rows = (view === 'all' ? filteredRows : filteredRows.filter((r) => productTriage(r.status) === view))
+      .slice()
+      .sort(compareRows(sort))
+    if (!grouped) {
+      return rows.length
+        ? [{ key: 'all', vendor: '', portalApp: null, updateUrl: null, popularityTier: null, rows }]
+        : []
     }
-  }, [groups])
+    const vendorMeta = new Map((report?.manufacturers || []).map((g) => [g.manufacturer, g]))
+    const byVendor = new Map<string, PluginReportRow[]>()
+    for (const r of rows) byVendor.set(r.manufacturer, [...(byVendor.get(r.manufacturer) || []), r])
+    return [...byVendor.entries()]
+      .map(([vendor, vrows]) => {
+        const meta = vendorMeta.get(vendor)
+        return {
+          key: vendor,
+          vendor,
+          portalApp: meta?.portalApp ?? vrows.find((r) => r.portalApp)?.portalApp ?? null,
+          updateUrl: meta?.updateUrl ?? vrows.find((r) => r.updateUrl)?.updateUrl ?? null,
+          popularityTier: meta?.popularityTier ?? null,
+          rows: vrows,
+        }
+      })
+      .sort(
+        (a, b) =>
+          (a.popularityTier ?? 99) - (b.popularityTier ?? 99) ||
+          b.rows.length - a.rows.length ||
+          a.vendor.localeCompare(b.vendor)
+      )
+  }, [filteredRows, view, sort, grouped, report])
 
-  const visibleCount = groups.reduce((n, g) => n + g.products.length, 0)
-  const totalCount = report?.rows.length || 0
+  const visibleRows = useMemo(() => groups.flatMap((g) => g.rows), [groups])
+
+  // Keyboard: "/" search, ↑/↓ move selection, Esc close detail.
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      const typing = (e.target as HTMLElement)?.closest('input, textarea, select')
+      if (e.key === '/' && !typing) {
+        e.preventDefault()
+        searchRef.current?.focus()
+        return
+      }
+      if (e.key === 'Escape') {
+        if (typing) (e.target as HTMLElement).blur()
+        else setSelected(null)
+        return
+      }
+      if (typing || (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') || !visibleRows.length) return
+      e.preventDefault()
+      const i = selected ? visibleRows.findIndex((r) => r.id === selected.id) : -1
+      const next = e.key === 'ArrowDown' ? Math.min(i + 1, visibleRows.length - 1) : Math.max(i - 1, 0)
+      setSelected(visibleRows[next])
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [visibleRows, selected])
 
   async function handleRefreshCatalog() {
     const api = window.dawPluginManager
@@ -213,51 +299,7 @@ export default function App() {
     setError(null)
     try {
       const meta = await api.refreshCatalog()
-      setReport((prev) => {
-        if (!prev) {
-          return {
-            system: {
-              platform: 'darwin',
-              osVersion: null,
-              arch: 'arm64',
-              homedir: '',
-              scannedAt: new Date().toISOString(),
-            },
-            daws: [],
-            plugins: [],
-            rows: [],
-            manufacturers: [],
-            catalog: {
-              updatedAt: meta.updatedAt,
-              source: meta.source,
-              pluginCount: meta.pluginCount,
-              manufacturerCount: meta.manufacturerCount,
-            },
-            summary: {
-              dawCount: 0,
-              pluginBundleCount: 0,
-              pluginCount: 0,
-              manufacturerCount: 0,
-              current: 0,
-              outdated: 0,
-              unknown: 0,
-              bundled: 0,
-              legacy: 0,
-              compatWarnings: 0,
-            },
-          }
-        }
-        return {
-          ...prev,
-          catalog: {
-            ...prev.catalog,
-            updatedAt: meta.updatedAt,
-            source: meta.source,
-            pluginCount: meta.pluginCount,
-            manufacturerCount: meta.manufacturerCount,
-          },
-        }
-      })
+      setReport((prev) => (prev ? { ...prev, catalog: { ...prev.catalog, ...meta } } : emptyReport([], meta)))
     } catch (err) {
       const raw = err instanceof Error ? err.message : String(err)
       setError(scrubVisibleText(raw) || "Couldn't verify the catalog")
@@ -282,8 +324,6 @@ export default function App() {
       setReport(result)
       setMode('library')
       setSelected(null)
-      setQuery('')
-      setTriageFilter('all')
     } catch (err) {
       const raw = err instanceof Error ? err.message : String(err)
       setError(scrubVisibleText(raw) || 'Scan failed. Try again.')
@@ -306,8 +346,11 @@ export default function App() {
     await window.dawPluginManager.openExternal(url)
   }
 
-  const catalogMeta = report?.catalog
   const showLibrary = mode === 'library' && report
+  const catalogDate = report?.catalog.source !== 'scanning' ? formatDate(report?.catalog.updatedAt) : null
+  const scannedAt = formatDate(report?.system.scannedAt, true)
+  const filtersActive =
+    !!query || !!manufacturerFilter || confidenceFilter !== 'all' || identityFilter !== 'all'
 
   return (
     <div className={`app shell mode-${mode}`}>
@@ -323,58 +366,26 @@ export default function App() {
           <span className="brand-mark">DAW Plugin Manager</span>
         </button>
 
+        {showLibrary && (
+          <div className="search-wrap">
+            <input
+              ref={searchRef}
+              className="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search plugins, vendors, hub apps"
+              aria-label="Search"
+            />
+            <kbd className="search-hint" aria-hidden>
+              /
+            </kbd>
+          </div>
+        )}
+
         <div className="topbar-actions">
-          {catalogMeta &&
-            catalogMeta.source !== 'scanning' &&
-            catalogMeta.source !== 'pending' &&
-            catalogMeta.updatedAt &&
-            Number.isFinite(Date.parse(catalogMeta.updatedAt)) && (
-              <span
-                className="catalog-meta mono"
-                title={
-                  catalogMeta.source === 'online'
-                    ? 'When the version catalog you fetched was last published. Online = pulled fresh for this session.'
-                    : catalogMeta.source === 'shipped'
-                      ? 'When the version catalog bundled with this app was last published. Use Refresh catalog to pull newer.'
-                      : 'When the version catalog was last published.'
-                }
-              >
-                Catalog as of{' '}
-                {new Date(catalogMeta.updatedAt).toLocaleDateString(undefined, {
-                  year: 'numeric',
-                  month: 'short',
-                  day: 'numeric',
-                })}
-                {catalogMeta.source === 'online'
-                  ? ' · Online'
-                  : catalogMeta.source === 'shipped'
-                    ? ' · Shipped'
-                    : ''}
-              </span>
-            )}
-          {fromSnapshot && !scanning && (
-            <span
-              className="snapshot-pill"
-              title="Showing the last library scan saved on this Mac. Rescan to refresh installs."
-            >
-              Last scan
-            </span>
-          )}
           <button
             type="button"
-            className="btn"
-            onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
-            title={
-              theme === 'dark'
-                ? 'Switch to light appearance'
-                : 'Switch to dark appearance (default)'
-            }
-          >
-            {theme === 'dark' ? 'Light' : 'Dark'}
-          </button>
-          <button
-            type="button"
-            className="btn"
+            className="btn btn-quiet"
             onClick={handleRefreshCatalog}
             disabled={refreshingCatalog || scanning}
             title="Download the newest published version catalog. Does not rescan plugins on disk."
@@ -383,25 +394,21 @@ export default function App() {
           </button>
           <button
             type="button"
-            className="btn"
+            className={`btn btn-quiet ${showSettings ? 'on' : ''}`}
             onClick={() => setShowSettings((s) => !s)}
             aria-expanded={showSettings}
-            title="Extra plugin folders to scan, and saving an anonymized scan to share."
+            title="Extra plugin folders, appearance, and saving an anonymized scan."
           >
-            Paths
+            Settings
           </button>
           <button
             type="button"
             className="btn btn-primary"
             onClick={handleScan}
             disabled={scanning}
-            title={
-              report
-                ? 'Walk plugin folders again and rematch to the catalog.'
-                : 'Scan AU / VST3 / VST folders and match them to the version catalog.'
-            }
+            title="Scan plugin folders on this Mac and match them to the catalog."
           >
-            {scanning ? `${progress?.percent ?? 0}%` : report ? 'Rescan' : 'Scan'}
+            {scanning ? `Scanning ${progress?.percent ?? 0}%` : report ? 'Rescan' : 'Scan'}
           </button>
         </div>
       </header>
@@ -413,7 +420,14 @@ export default function App() {
         </div>
       )}
 
-      {error && <div className="error-banner">{error}</div>}
+      {error && (
+        <div className="error-banner" role="alert">
+          {error}
+          <button type="button" className="link-btn" onClick={() => setError(null)}>
+            Dismiss
+          </button>
+        </div>
+      )}
 
       {showSettings && (
         <div className="settings-strip">
@@ -426,130 +440,160 @@ export default function App() {
               placeholder="/custom/plugin/path"
             />
           </label>
+          <div className="settings-row">
+            <span className="settings-label">Appearance</span>
+            <div className="seg">
+              {(['dark', 'light'] as const).map((t) => (
+                <button
+                  key={t}
+                  type="button"
+                  className={theme === t ? 'on' : ''}
+                  onClick={() => setTheme(t)}
+                >
+                  {t === 'dark' ? 'Dark' : 'Light'}
+                </button>
+              ))}
+            </div>
+          </div>
           <div className="snapshot-share">
-            <button
-              type="button"
-              className="btn"
-              onClick={handleSaveSnapshot}
-              disabled={scanning}
-            >
+            <button type="button" className="btn" onClick={handleSaveSnapshot} disabled={scanning}>
               Save anonymized scan
             </button>
             <p className="snapshot-share-note">
-              Saves a file you can share to help improve the catalog: plugin and app names,
-              vendors, bundle IDs and versions only. No file paths, usernames or machine names.
-              Nothing is sent anywhere.
+              Saves a file you can share to help improve the catalog: plugin and app names, vendors,
+              bundle IDs and versions only. No file paths, usernames or machine names. Nothing is
+              sent anywhere.
               {snapshotNote && <strong> {snapshotNote}</strong>}
             </p>
           </div>
         </div>
       )}
 
-      {/* DAWs always at top when we know them */}
-      {(report?.daws?.length || scanning) && (
-        <DawStrip daws={report?.daws || []} rows={report?.rows || []} />
-      )}
+      {(report?.daws?.length || scanning) && <DawStrip daws={report?.daws || []} onOpenUrl={openUpdate} />}
 
-      {mode === 'welcome' && !report && (
-        <WelcomeHero onScan={handleScan} scanning={scanning} />
-      )}
+      {mode === 'welcome' && !report && <WelcomeHero onScan={handleScan} scanning={scanning} />}
 
       {showLibrary && (
         <div className={`workspace ${selected ? 'with-detail' : ''}`}>
           <div className="workspace-main">
-            <div className="triage-bar" role="toolbar" aria-label="Triage filters">
-              <button
-                type="button"
-                className={`triage-chip ${triageFilter === 'all' ? 'active' : ''}`}
-                onClick={() => setTriageFilter('all')}
-                title={TRIAGE_CHIP_TITLE.all}
-              >
-                All
-              </button>
-              <button
-                type="button"
-                className={`triage-chip tone-bad ${triageFilter === 'needs_update' ? 'active' : ''}`}
-                onClick={() => setTriageFilter((t) => toggleTriage(t, 'needs_update'))}
-                title={TRIAGE_CHIP_TITLE.needs_update}
-              >
-                <b>{triageCounts.needs_update}</b> need update
-              </button>
-              <button
-                type="button"
-                className={`triage-chip tone-hub ${triageFilter === 'use_hub' ? 'active' : ''}`}
-                onClick={() => setTriageFilter((t) => toggleTriage(t, 'use_hub'))}
-                title={TRIAGE_CHIP_TITLE.use_hub}
-              >
-                <b>{triageCounts.use_hub}</b> hub
-              </button>
-              <button
-                type="button"
-                className={`triage-chip tone-paid ${triageFilter === 'paid' ? 'active' : ''}`}
-                onClick={() => setTriageFilter((t) => toggleTriage(t, 'paid'))}
-                title={TRIAGE_CHIP_TITLE.paid}
-              >
-                <b>{triageCounts.paid}</b> paid
-              </button>
-              <button
-                type="button"
-                className={`triage-chip tone-uncertain ${triageFilter === 'uncertain' ? 'active' : ''}`}
-                onClick={() => setTriageFilter((t) => toggleTriage(t, 'uncertain'))}
-                title={TRIAGE_CHIP_TITLE.uncertain}
-              >
-                <b>{triageCounts.uncertain}</b> unknown
-              </button>
-              <button
-                type="button"
-                className={`triage-chip tone-ok ${triageFilter === 'clear' ? 'active' : ''}`}
-                onClick={() => setTriageFilter((t) => toggleTriage(t, 'clear'))}
-                title={TRIAGE_CHIP_TITLE.clear}
-              >
-                <b>{triageCounts.clear}</b> clear
-              </button>
-              <span className="grow" />
-              <span className="triage-bar-meta mono">
-                {report.summary.pluginCount
-                  ? `${report.summary.pluginCount} plugins`
-                  : scanning
-                    ? 'Organizing…'
-                    : 'Scan to match plugins'}
-              </span>
+            <div className="view-bar">
+              <nav className="view-tabs" aria-label="Views">
+                {([...TRIAGE_ORDER, 'all'] as TriageFilter[]).map((v) => (
+                  <button
+                    key={v}
+                    type="button"
+                    className={`view-tab tab-${v} ${view === v ? 'on' : ''} ${counts[v] ? '' : 'is-empty'}`}
+                    onClick={() => {
+                      setView(v)
+                      setSelected(null)
+                    }}
+                    title={TRIAGE_CHIP_TITLE[v]}
+                    aria-pressed={view === v}
+                  >
+                    {VIEW_LABEL[v]}
+                    <span className="count">{counts[v]}</span>
+                  </button>
+                ))}
+              </nav>
+              <div className="view-filters">
+                <select
+                  value={manufacturerFilter}
+                  onChange={(e) => setManufacturerFilter(e.target.value)}
+                  aria-label="Vendor"
+                  className={manufacturerFilter ? 'on' : ''}
+                >
+                  <option value="">All vendors</option>
+                  {manufacturerNames.map((m) => (
+                    <option key={m} value={m}>
+                      {m}
+                    </option>
+                  ))}
+                </select>
+                <select
+                  value={confidenceFilter}
+                  onChange={(e) => setConfidenceFilter(e.target.value as ConfidenceFilter)}
+                  aria-label="Confidence"
+                  className={confidenceFilter !== 'all' ? 'on' : ''}
+                  title="How sure the catalog is about the latest version"
+                >
+                  <option value="all">Any confidence</option>
+                  <option value="high">Verified (85+)</option>
+                  <option value="medium">Likely (70–84)</option>
+                  <option value="low">Weak (&lt;70)</option>
+                </select>
+                <select
+                  value={identityFilter}
+                  onChange={(e) => setIdentityFilter(e.target.value)}
+                  aria-label="Kind"
+                  className={identityFilter !== 'all' ? 'on' : ''}
+                >
+                  <option value="all">All kinds</option>
+                  {IDENTITY_OPTIONS.map((k) => (
+                    <option key={k} value={k}>
+                      {identityLabel(k)}
+                    </option>
+                  ))}
+                </select>
+                {filtersActive && (
+                  <button
+                    type="button"
+                    className="link-btn"
+                    onClick={() => {
+                      setQuery('')
+                      setManufacturerFilter('')
+                      setConfidenceFilter('all')
+                      setIdentityFilter('all')
+                    }}
+                  >
+                    Clear
+                  </button>
+                )}
+                <label className="group-toggle" title="Group rows under vendor headers">
+                  <input type="checkbox" checked={grouped} onChange={(e) => setGrouped(e.target.checked)} />
+                  Group by vendor
+                </label>
+              </div>
             </div>
 
-            <FilterBar
-              query={query}
-              onQuery={setQuery}
-              confidence={confidenceFilter}
-              onConfidence={setConfidenceFilter}
-              identity={identityFilter}
-              onIdentity={setIdentityFilter}
-              manufacturer={manufacturerFilter}
-              onManufacturer={setManufacturerFilter}
-              manufacturers={manufacturerNames}
-              visibleCount={visibleCount}
-              totalCount={totalCount}
-            />
-
-            <PluginList
+            <LibraryTable
               groups={groups}
-              triageFilter={triageFilter}
+              grouped={grouped}
+              sort={sort}
+              onSort={setSort}
               selectedId={selected?.id ?? null}
               onSelect={setSelected}
               onOpenUrl={openUpdate}
               emptyHint={
                 scanning
                   ? 'Matching your library to the catalog…'
-                  : 'Nothing matches. Clear triage chips or search, then Rescan if needed.'
+                  : filtersActive
+                    ? 'Nothing matches these filters.'
+                    : VIEW_EMPTY[view]
               }
             />
+
+            <footer className="status-bar mono">
+              <span>
+                {visibleRows.length === (report.rows.length || 0)
+                  ? `${visibleRows.length} plugins`
+                  : `${visibleRows.length} of ${report.rows.length} plugins`}
+                {grouped && groups.length > 0 && ` · ${groups.length} vendors`}
+              </span>
+              <span className="grow" />
+              {scannedAt && (
+                <span title={fromSnapshot ? 'Showing the last saved scan. Rescan to refresh.' : undefined}>
+                  {fromSnapshot ? 'Last scan' : 'Scanned'} {scannedAt}
+                </span>
+              )}
+              {catalogDate && (
+                <span title="When the version catalog was published">Catalog {catalogDate}</span>
+              )}
+              <span className="kbd-hints">↑↓ select · / search · esc close</span>
+            </footer>
           </div>
 
           {selected && (
-            <DetailPanel
-              row={selected}
-              onClose={() => setSelected(null)}
-              onOpenUrl={openUpdate}
-            />
+            <DetailPanel row={selected} onClose={() => setSelected(null)} onOpenUrl={openUpdate} />
           )}
         </div>
       )}

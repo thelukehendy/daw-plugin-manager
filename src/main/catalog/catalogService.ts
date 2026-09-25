@@ -77,6 +77,7 @@ function matchInputForGroup(group: PluginGroup): MatchInput {
   return {
     name: group.name,
     productLine: group.productLine,
+    installedVersion: group.newestVersion,
     vendorNames: [...vendorNames].filter(Boolean),
     bundleIds: [...bundleIds],
     auComponents,
@@ -249,6 +250,12 @@ export function decideStatus(opts: {
   }
 
   if (relation === 'outdated') {
+    // Behind by a whole major on a row the store marks paid: a paid upgrade, not an update.
+    const installedMajor = Number(installedVersion.match(/^\s*(\d+)/)?.[1])
+    const latestMajor = Number(latest.match(/^\s*(\d+)/)?.[1])
+    if (plugin?.updateClass === 'paid_upgrade' && installedMajor < latestMajor) {
+      return 'paid_upgrade'
+    }
     // Yellow: never "update available"
     if (conf != null && conf < MEDIUM) {
       return portal ? 'use_vendor_hub' : 'unverified'
