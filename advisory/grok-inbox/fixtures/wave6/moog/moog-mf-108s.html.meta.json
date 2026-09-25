@@ -1,0 +1,9 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-108s",
+  "slug": "mf-108s",
+  "tip_version": "1.3.0",
+  "fetched_at": "2026-09-25T18:57:57.984561+00:00",
+  "bytes": 18737,
+  "sha256": "31edfb8685ff2cbc128b9bdd44f2750a0fec6ace8738ccbc3fedde4542b184ab",
+  "parse_rule": "button text matching /All Formats v(\\d+\\.\\d+\\.\\d+)/"
+}

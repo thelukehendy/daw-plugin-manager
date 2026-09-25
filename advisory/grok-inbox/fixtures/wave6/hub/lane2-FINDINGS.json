@@ -1,0 +1,284 @@
+{
+  "wave": 6,
+  "lane": 2,
+  "title": "creative hub-walled angles",
+  "generated_at_pt": "2026-09-25T12:00:00-07:00",
+  "identity_law": "hub_app_or_generation_neq_sku_stamp",
+  "already_accepted_not_relisted": [
+    "waves-incapsula-stub-and-browser-rn",
+    "softube-sc3-yaml",
+    "ua-uad-version-history-12.0",
+    "eastwest-support-updates",
+    "output-help-arcade-coproducer-engines",
+    "slate-vmr-vs-hub",
+    "ik-pm-page-canary-1.1.15",
+    "ni-access-3.26.0-status",
+    "spitfire-app-changelog-3.4.17",
+    "uvi-falcon-year-neq-semver",
+    "8dio-oracle-absent"
+  ],
+  "breakthroughs_ranked": [
+    {
+      "rank": 1,
+      "id": "waves-downloads-central-canary",
+      "vendor": "waves",
+      "confidence": 0.93,
+      "urls": [
+        "https://www.waves.com/downloads",
+        "https://cf-installers.waves.com/WavesCentral/Install_Waves_Central.dmg"
+      ],
+      "tip": {
+        "product": "Waves Central",
+        "version": "17.0.4",
+        "display": "V17.0.4",
+        "date": "2026-08-02"
+      },
+      "engine_chip": "waves_central_canary_poller",
+      "fixtures": [
+        "waves-downloads.body",
+        "waves-downloads-canary.json",
+        "waves-central-dmg.hdr"
+      ],
+      "identity_guards": [
+        "never_stamp_onto_plugin_skus",
+        "generation_bump_still_needs_rn_diff"
+      ],
+      "stub_detector": true,
+      "maintenance": "poll 2-4x/day; on stub fallback DMG Last-Modified + brew waves-central",
+      "muse_priority": 1
+    },
+    {
+      "rank": 2,
+      "id": "ni-native-access-electron-updater-yml",
+      "vendor": "native-instruments",
+      "confidence": 0.95,
+      "urls": [
+        "https://na-update.native-instruments.com/arm64/latest-mac.yml",
+        "https://na-update.native-instruments.com/latest-mac.yml",
+        "https://na-update.native-instruments.com/latest.yml"
+      ],
+      "tip": {
+        "product": "Native Access",
+        "version": "3.26.0",
+        "releaseDate": "2026-09-08"
+      },
+      "engine_chip": "ni_access_yml_poller",
+      "fixtures": [
+        "ni-arm64-latest-mac.yml",
+        "ni-latest-mac.yml",
+        "ni-latest.yml"
+      ],
+      "identity_guards": [
+        "native_access_neq_komplete_sku_matrix"
+      ],
+      "maintenance": "daily YAML GET; golden sha256; HEAD zip only on version change",
+      "muse_priority": 2,
+      "note": "Same tip as accepted status 3.26.0; NEW durable Softube-sc3-class transport"
+    },
+    {
+      "rank": 3,
+      "id": "ik-product-manager-cdn-filename-referer",
+      "vendor": "ik-multimedia",
+      "confidence": 0.9,
+      "urls": [
+        "https://www.ikmultimedia.com/products/productmanager/",
+        "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_1.1.15.dmg"
+      ],
+      "tip": {
+        "product": "IK Product Manager",
+        "version": "1.1.15",
+        "last_modified": "2026-08-25T16:25:00Z"
+      },
+      "engine_chip": "ik_pm_cdn_head_poller",
+      "fixtures": [
+        "ik-pm-cdn-meta.json",
+        "ik-pm-dmg.hdr",
+        "ik-pm-page.html"
+      ],
+      "identity_guards": [
+        "pm_neq_amplitube_traks_sku"
+      ],
+      "referer_required": true,
+      "maintenance": "weekly page scrape for filename version + Referer HEAD",
+      "muse_priority": 3
+    },
+    {
+      "rank": 4,
+      "id": "ua-connect-versioned-dmg",
+      "vendor": "universal-audio",
+      "confidence": 0.88,
+      "urls": [
+        "https://builds.uaudio.com/apps/UA_Connect/UA_Connect_1_10_0_3844_Mac.dmg"
+      ],
+      "tip": {
+        "product": "UA Connect",
+        "version": "1.10.0",
+        "build": "3844",
+        "last_modified": "2026-09-14T18:09:48Z"
+      },
+      "engine_chip": "ua_connect_brew_url_head_poller",
+      "fixtures": [
+        "ua-connect-dmg.hdr",
+        "ua-connect-cdn-meta.json",
+        "brew-ua-connect.json"
+      ],
+      "identity_guards": [
+        "connect_app_neq_uad_suite_12_0"
+      ],
+      "maintenance": "weekly brew cask URL refresh + HEAD Last-Modified",
+      "muse_priority": 4
+    },
+    {
+      "rank": 5,
+      "id": "spitfire-app-cloudfront-semver-path",
+      "vendor": "spitfire",
+      "confidence": 0.87,
+      "urls": [
+        "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-3.4.17.dmg"
+      ],
+      "tip": {
+        "product": "Spitfire Audio App",
+        "version": "3.4.17"
+      },
+      "engine_chip": "spitfire_app_brew_url_head_poller",
+      "fixtures": [
+        "brew-spitfire-audio.json",
+        "spitfire-app-dmg.hdr",
+        "spitfire-app-cdn-meta.json"
+      ],
+      "identity_guards": [
+        "app_neq_library_sku"
+      ],
+      "muse_priority": 5,
+      "note": "Corroborates accepted Intercom v3.4.17 with CDN path oracle"
+    },
+    {
+      "rank": 6,
+      "id": "moog-softwareUpdate-tip-pattern",
+      "vendor": "moog",
+      "confidence": 0.84,
+      "urls": [
+        "https://software.moogmusic.com/softwareUpdate/mariana"
+      ],
+      "tip": {
+        "product": "Mariana",
+        "version": "1.2.0"
+      },
+      "engine_chip": "moog_softwareUpdate_tip_poller",
+      "fixtures": [
+        "moog-mariana.html",
+        "moog-softwareUpdate-meta.json"
+      ],
+      "note": "Lane1/adjacent pattern to replicate when hunting Output/UVI/Slate tip pages",
+      "muse_priority": 6
+    },
+    {
+      "rank": 7,
+      "id": "softube-path-discipline-control",
+      "vendor": "softube",
+      "confidence": 0.8,
+      "urls": [
+        "https://softubestorage.b-cdn.net/softubecentraldata/softubecentral/sc3/latest-mac.yml",
+        "https://softubestorage.b-cdn.net/softubecentraldata/softubecentral/latest-mac.yml"
+      ],
+      "tip": {
+        "sc3": "3.0.5",
+        "root_legacy": "2.2.0",
+        "brew_stale": "2.2.0"
+      },
+      "engine_chip": "softube_sc3_yml_poller",
+      "note": "Already accepted sc3; NEW lesson = root YAML + brew lag traps",
+      "muse_priority": 7
+    },
+    {
+      "rank": 8,
+      "id": "homebrew-cask-url-discovery",
+      "vendor": "multi",
+      "confidence": 0.72,
+      "urls": [
+        "https://formulae.brew.sh/api/cask/{token}.json"
+      ],
+      "engine_chip": "brew_cask_url_discovery",
+      "note": "Discovery only \u2014 verify with YAML/HEAD; softube-central proves lag",
+      "muse_priority": 8
+    },
+    {
+      "rank": 9,
+      "id": "lane4-github-releases-atom-etag",
+      "vendor": "oss-class",
+      "lane_note": 4,
+      "confidence": 0.55,
+      "urls": [
+        "https://github.com/{owner}/{repo}/releases.atom",
+        "https://api.github.com/repos/{owner}/{repo}/releases/latest"
+      ],
+      "engine_chip": "oss_github_releases_atom_etag_poller",
+      "fixtures": [
+        "github-x42-sisco.lv2-releases.atom",
+        "github-airwindows-releases.atom",
+        "lane4-github-releases-maintenance.json"
+      ],
+      "design": {
+        "prefer_atom_with_if_none_match": true,
+        "expect_304_when_unchanged": true,
+        "api_github_unauth_rate_limited_on_this_egress": true,
+        "empty_atom_is_not_a_tip": true
+      },
+      "observed": {
+        "x42/sisco.lv2": "v0.9.14",
+        "airwindows/airwindows": "empty_atom",
+        "surge-synthesizer/surge": "noisy_titles_need_allowlist"
+      },
+      "muse_priority": 9
+    }
+  ],
+  "negative_results": [
+    {
+      "vendor": "output",
+      "result": "no_new_yml_or_cdn; keep help center trio"
+    },
+    {
+      "vendor": "uvi",
+      "result": "no_new_numeric_cdn; falcon year canary only"
+    },
+    {
+      "vendor": "slate",
+      "result": "complete_access_spa; keep VMR zendesk"
+    },
+    {
+      "vendor": "eastwest",
+      "result": "support/updates still best; no appcast"
+    },
+    {
+      "vendor": "8dio",
+      "result": "oracle_absent unchanged"
+    },
+    {
+      "vendor": "itunes-search",
+      "result": "no_desktop_hub_apps"
+    }
+  ],
+  "maintenance_playbook": {
+    "pollers": [
+      "waves_central_canary_poller",
+      "ni_access_yml_poller",
+      "ik_pm_cdn_head_poller",
+      "ua_connect_brew_url_head_poller",
+      "spitfire_app_brew_url_head_poller",
+      "oss_github_releases_atom_etag_poller"
+    ],
+    "golden_fixtures": "fixtures/lane2/* \u2014 sha256 bodies as parser regression tests",
+    "stub_detectors": [
+      "incapsula_lt_500b",
+      "spa_loading_shell",
+      "yaml_missing_version_key",
+      "atom_zero_entries",
+      "brew_version_lags_yaml"
+    ]
+  },
+  "fixture_root": "fixtures/lane2",
+  "docs": [
+    "breakthroughs.md",
+    "FINDINGS.json"
+  ]
+}

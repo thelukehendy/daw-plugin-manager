@@ -1,0 +1,9 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-102s",
+  "slug": "mf-102s",
+  "tip_version": "1.3.0",
+  "fetched_at": "2026-09-25T18:57:57.984126+00:00",
+  "bytes": 18739,
+  "sha256": "c77c66f825d31d08262d8e3daa4ab85ab2d029e5f0a7883df4bc0c4f5c4a3ce0",
+  "parse_rule": "button text matching /All Formats v(\\d+\\.\\d+\\.\\d+)/"
+}

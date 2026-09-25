@@ -1,0 +1,1620 @@
+{
+  "wave": 6,
+  "lane": 1,
+  "generated_at": "2026-09-25T12:00:00-07:00",
+  "count": 113,
+  "summary": {
+    "hub_walled": 82,
+    "oracle_absent": 12,
+    "oracle_found": 13,
+    "reclass": 6
+  },
+  "plugins": [
+    {
+      "plugin_id": "ik-multimedia--amplitube-5",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-5-max",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-brian-may",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-electric-gypsy",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-fender",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-fulltone",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-joe-satriani",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-l-a-rocker",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-mesa-boogie",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-metal",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-orange",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-svx",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--amplitube-svx-2",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--clavitube",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--sampletank-4-alternate-keys",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-99",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-blau",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-bully",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-cato",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-dco-x",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-galaxy",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-gs-v",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-harpy-260",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-j-60",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-j-8",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-kw-8000",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-m-12",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-m-poly",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-megawave",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-memory-v",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-minimod",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-modulum",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-noir",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-obie-one",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-osc-v",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-oxa",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-polymorph",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-pro-v",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-pro-vs",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-sam",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-sh-v",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-sorcerer",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-string-box",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-syner-v",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-t-03",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-triptych",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-v-80",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "ik-multimedia--syntronik-vcf3",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ik-pm-page.html",
+        "fixtures/lane1/ik-product-manager.html",
+        "fixtures/lane1/ik-at5-pdf-neighbor-probe.txt",
+        "fixtures/lane1/ik-AmpliTube_5_v5.10.4_comparison.pdf.headers.txt",
+        "fixtures/lane1/ik-amplitube5.html",
+        "fixtures/lane1/ik-syntronik2.html"
+      ],
+      "recommendation": "Do not stamp per-SKU from KVR or AT5 gear PDF. Updates only via IK Product Manager (public PM download URL 1.1.15 already known \u2014 not a per-SKU oracle). Keep identity_kind=plugin; mark manufacturer hub_walled."
+    },
+    {
+      "plugin_id": "korg--arp-2600",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--arp-2600` (ARP 2600) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--odyssey",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--odyssey` (Odyssey) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--electribe-r",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--electribe-r` (ELECTRIBE-R) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--ep-1",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--ep-1` (EP-1) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--filter-ark",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--filter-ark` (Filter Ark) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--kaoss-pad",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--kaoss-pad` (KAOSS PAD) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--m1",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--m1` (M1) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--mde-x",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--mde-x` (MDE-X) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--ms-20",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--ms-20` (MS-20) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--mono-poly",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--mono-poly` (Mono/Poly) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--ps-3300",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--ps-3300` (PS-3300) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--polysix",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--polysix` (Polysix) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--prophecy",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--prophecy` (Prophecy) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--sgx-2",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--sgx-2` (SGX-2) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--trinity",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--trinity` (TRINITY) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--triton",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--triton` (TRITON) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--vox-super-continental",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--vox-super-continental` (VOX Super Continental) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--wavestation",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--wavestation` (WAVESTATION) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--microkorg",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--microkorg` (microKORG) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--minikorg-700s",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--minikorg-700s` (miniKORG 700S) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--modwave-native",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--modwave-native` (modwave native) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--multi-poly-native",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--multi-poly-native` (multi/poly native) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--opsix-native",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--opsix-native` (opsix native) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "korg--wavestate-native",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/korg-software-pass.html",
+        "fixtures/lane1/korg-collection.html",
+        "fixtures/lane1/korg-software-pass-faq.html",
+        "fixtures/lane1/korg-modwave-native.html",
+        "fixtures/lane1/korg-opsix-native.html",
+        "fixtures/lane1/korg-wavestate-native.html"
+      ],
+      "recommendation": "needs_identity: manufacturer korg + plugin `korg--wavestate-native` (wavestate native) absent from catalog.db. Public product pages exist but installers/versions gated by KORG Software Pass (id.korg.com). Do not stamp Collection/news marketing versions (e.g. TRINITY 1.1.0) as tip without public installer filename. Hub-wall manufacturer."
+    },
+    {
+      "plugin_id": "image-line--dx10",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "Not listed on public VST Downloads grid (unlike Drumaxx/Morphine/Toxic). Likely fully discontinued as discrete VST; FL-native only inside host. oracle_absent for discrete plugin tip; do not invent from FL 26.1.6."
+    },
+    {
+      "plugin_id": "image-line--drumaxx",
+      "posture": "hub_walled",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "Public page lists discontinued VST installers behind support.image-line.com/redirect/* (account/license gated). No public version string on page. Do not stamp FL Studio 26.1.6 as plugin tip."
+    },
+    {
+      "plugin_id": "image-line--il-delay-bank-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-delay-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-equo-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-flangus-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-multiband-compressor-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-parametric-eq-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-spectroman-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-stereo-enhancer-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-vocoder-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--il-waveshaper-juice-pack",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "VST registrations discontinued; installers only via account My Licenses. FL Studio host 26.1.6 is NOT a per-plugin tip. Keep KVR@60 if present; do not raise from host version. Consider identity note: IL stock/Juice effects versioned with FL for FL-native, VST path discontinued."
+    },
+    {
+      "plugin_id": "image-line--morphine",
+      "posture": "hub_walled",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "Public page lists discontinued VST installers behind support.image-line.com/redirect/* (account/license gated). No public version string on page. Do not stamp FL Studio 26.1.6 as plugin tip."
+    },
+    {
+      "plugin_id": "image-line--simsynth-live",
+      "posture": "oracle_absent",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "Not listed on public VST Downloads grid (unlike Drumaxx/Morphine/Toxic). Likely fully discontinued as discrete VST; FL-native only inside host. oracle_absent for discrete plugin tip; do not invent from FL 26.1.6."
+    },
+    {
+      "plugin_id": "image-line--toxic-biohazard",
+      "posture": "hub_walled",
+      "oracle_url": "https://www.image-line.com/vst-downloads",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/il-vst-downloads.html",
+        "fixtures/lane1/il-fl-studio-download.html",
+        "fixtures/lane1/il-kb-589.html"
+      ],
+      "recommendation": "Public page lists discontinued VST installers behind support.image-line.com/redirect/* (account/license gated). No public version string on page. Do not stamp FL Studio 26.1.6 as plugin tip."
+    },
+    {
+      "plugin_id": "moog--mf-101s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-101s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-101s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mf-102s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-102s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-102s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mf-103s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-103s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-103s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mf-104s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-104s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-104s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mf-105s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-105s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-105s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mf-107s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-107s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-107s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mf-108s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-108s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-108s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mf-109s",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mf-109s",
+      "tip_version": "1.3.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mf-109s.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.3.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "moog--mariana",
+      "posture": "oracle_found",
+      "oracle_url": "https://software.moogmusic.com/softwareUpdate/mariana",
+      "tip_version": "1.2.0",
+      "evidence_paths": [
+        "fixtures/lane1/moog-mariana.html",
+        "fixtures/lane1/moog-store.html"
+      ],
+      "recommendation": "ACCEPT tip 1.2.0 from public softwareUpdate buttons (macOS+Windows All Formats agree). needs_identity: manufacturer moog + plugin rows absent from catalog.db. MF-106S does NOT exist as software (store lists 8 Moogerfoogers skipping 106); do not invent mf-106s."
+    },
+    {
+      "plugin_id": "universal-audio--uad-producer-edition",
+      "posture": "reclass",
+      "oracle_url": "https://help.uaudio.com/hc/en-us/articles/215270403-UAD-Version-History-Release-Notes",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ua-version-history.html",
+        "fixtures/lane1/ua-plugins.html"
+      ],
+      "recommendation": "RECLASS identity_kind from plugin \u2192 bundle (or edition). Never stamp suite/edition marketing versions (DB shows bogus 1.0/2.0). Existing UA Version History tip 12.0 doctrine applies to individual UAD DSP plugs, not these edition SKUs. Portal: UA Connect hub_walled for component tips."
+    },
+    {
+      "plugin_id": "universal-audio--uad-studio-edition",
+      "posture": "reclass",
+      "oracle_url": "https://help.uaudio.com/hc/en-us/articles/215270403-UAD-Version-History-Release-Notes",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ua-version-history.html",
+        "fixtures/lane1/ua-plugins.html"
+      ],
+      "recommendation": "RECLASS identity_kind from plugin \u2192 bundle (or edition). Never stamp suite/edition marketing versions (DB shows bogus 1.0/2.0). Existing UA Version History tip 12.0 doctrine applies to individual UAD DSP plugs, not these edition SKUs. Portal: UA Connect hub_walled for component tips."
+    },
+    {
+      "plugin_id": "universal-audio--uad-signature-edition-v3",
+      "posture": "reclass",
+      "oracle_url": "https://help.uaudio.com/hc/en-us/articles/215270403-UAD-Version-History-Release-Notes",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ua-version-history.html",
+        "fixtures/lane1/ua-plugins.html"
+      ],
+      "recommendation": "RECLASS identity_kind from plugin \u2192 bundle (or edition). Never stamp suite/edition marketing versions (DB shows bogus 1.0/2.0). Existing UA Version History tip 12.0 doctrine applies to individual UAD DSP plugs, not these edition SKUs. Portal: UA Connect hub_walled for component tips."
+    },
+    {
+      "plugin_id": "universal-audio--uadx-essentials-edition",
+      "posture": "reclass",
+      "oracle_url": "https://help.uaudio.com/hc/en-us/articles/215270403-UAD-Version-History-Release-Notes",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ua-version-history.html",
+        "fixtures/lane1/ua-plugins.html"
+      ],
+      "recommendation": "RECLASS identity_kind from plugin \u2192 bundle (or edition). Never stamp suite/edition marketing versions (DB shows bogus 1.0/2.0). Existing UA Version History tip 12.0 doctrine applies to individual UAD DSP plugs, not these edition SKUs. Portal: UA Connect hub_walled for component tips."
+    },
+    {
+      "plugin_id": "universal-audio--uadx-signature-edition-v2",
+      "posture": "reclass",
+      "oracle_url": "https://help.uaudio.com/hc/en-us/articles/215270403-UAD-Version-History-Release-Notes",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/ua-version-history.html",
+        "fixtures/lane1/ua-plugins.html"
+      ],
+      "recommendation": "RECLASS identity_kind from plugin \u2192 bundle (or edition). Never stamp suite/edition marketing versions (DB shows bogus 1.0/2.0). Existing UA Version History tip 12.0 doctrine applies to individual UAD DSP plugs, not these edition SKUs. Portal: UA Connect hub_walled for component tips."
+    },
+    {
+      "plugin_id": "sonnox--oxford-debuzzer",
+      "posture": "oracle_found",
+      "oracle_url": "https://store-8pfrvbtcba.mybigcommerce.com/content/plugins/release-notes/Oxford_DeBuzzer_Release_Notes.html",
+      "tip_version": "3.01.0",
+      "evidence_paths": [
+        "fixtures/lane1/sonnox-rn-debuzzer.html",
+        "fixtures/lane1/sonnox-rn-declicker.html",
+        "fixtures/lane1/sonnox-rn-denoiser.html",
+        "fixtures/lane1/sonnox-installers.csv",
+        "fixtures/lane1/sonnox-farewell-article.html",
+        "fixtures/lane1/sonnox-docs.html"
+      ],
+      "recommendation": "Freeze RN tip 3.01.0 (parent-confirmed). Restore trio discontinued via farewell article. CSV Mac may show higher (dual Mac/Win mismatch) \u2014 do not prefer CSV over RN tip. Mac CSV tip 3.02.0 (Win 3.01.0 dual mismatch); RN shows 3.01.0. Farewell article: Restore trio being retired (discontinued posture). Freeze tip=3.02.0 with discontinued=true; do not expect future bumps."
+    },
+    {
+      "plugin_id": "sonnox--oxford-declicker",
+      "posture": "oracle_found",
+      "oracle_url": "https://store-8pfrvbtcba.mybigcommerce.com/content/plugins/release-notes/Oxford_DeClicker_Release_Notes.html",
+      "tip_version": "3.01.0",
+      "evidence_paths": [
+        "fixtures/lane1/sonnox-rn-debuzzer.html",
+        "fixtures/lane1/sonnox-rn-declicker.html",
+        "fixtures/lane1/sonnox-rn-denoiser.html",
+        "fixtures/lane1/sonnox-installers.csv",
+        "fixtures/lane1/sonnox-farewell-article.html",
+        "fixtures/lane1/sonnox-docs.html"
+      ],
+      "recommendation": "Freeze RN tip 3.01.0 (parent-confirmed). Restore trio discontinued via farewell article. CSV Mac may show higher (dual Mac/Win mismatch) \u2014 do not prefer CSV over RN tip. Mac CSV tip 3.02.0 (Win 3.01.0 dual mismatch); RN shows 3.01.0. Farewell article: Restore trio being retired (discontinued posture). Freeze tip=3.02.0 with discontinued=true; do not expect future bumps."
+    },
+    {
+      "plugin_id": "sonnox--oxford-denoiser",
+      "posture": "oracle_found",
+      "oracle_url": "https://store-8pfrvbtcba.mybigcommerce.com/content/plugins/release-notes/Oxford_DeNoiser_Release_Notes.html",
+      "tip_version": "3.01.0",
+      "evidence_paths": [
+        "fixtures/lane1/sonnox-rn-debuzzer.html",
+        "fixtures/lane1/sonnox-rn-declicker.html",
+        "fixtures/lane1/sonnox-rn-denoiser.html",
+        "fixtures/lane1/sonnox-installers.csv",
+        "fixtures/lane1/sonnox-farewell-article.html",
+        "fixtures/lane1/sonnox-docs.html"
+      ],
+      "recommendation": "Freeze RN tip 3.01.0 (parent-confirmed). Restore trio discontinued via farewell article. CSV Mac may show higher (dual Mac/Win mismatch) \u2014 do not prefer CSV over RN tip. Mac CSV tip 3.02.0 (Win 3.01.0 dual mismatch); RN shows 3.01.0. Farewell article: Restore trio being retired (discontinued posture). Freeze tip=3.02.0 with discontinued=true; do not expect future bumps."
+    },
+    {
+      "plugin_id": "sonnox--fraunhofer-pro-codec",
+      "posture": "oracle_found",
+      "oracle_url": "https://store-8pfrvbtcba.mybigcommerce.com/content/plugins/release-notes/SonnoxFPCRel.html",
+      "tip_version": "4.00.0",
+      "evidence_paths": [
+        "fixtures/lane1/sonnox-rn-fraunhofer.html",
+        "fixtures/lane1/sonnox-installers.csv",
+        "fixtures/lane1/sonnox-docs.html"
+      ],
+      "recommendation": "Freeze RN tip 4.00.0 (parent-confirmed). Restore trio discontinued via farewell article. CSV Mac may show higher (dual Mac/Win mismatch) \u2014 do not prefer CSV over RN tip. Mac installer CSV tip 4.02.0 (Win CSV 4.01.0 \u2014 dual mismatch). RN page tip 4.00.0 lagging. Prefer Mac-only accept of 4.02.0 OR skip per dual-mismatch playbook; document mismatch. Not in Restore farewell set."
+    },
+    {
+      "plugin_id": "roland--zenology",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/roland-rc-zenology.html",
+        "fixtures/lane1/roland-rc_zenology_pro.html",
+        "fixtures/lane1/roland-rc_zenology_fx.html",
+        "fixtures/lane1/rolandcloud-zenology.html"
+      ],
+      "recommendation": "needs_identity: manufacturer roland absent from catalog.db. Product pages public; downloads via Roland Cloud Manager (membership login). No public per-plugin tip version on product pages. Hub-wall."
+    },
+    {
+      "plugin_id": "roland--zenology-pro",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/roland-rc-zenology.html",
+        "fixtures/lane1/roland-rc_zenology_pro.html",
+        "fixtures/lane1/roland-rc_zenology_fx.html",
+        "fixtures/lane1/rolandcloud-zenology.html"
+      ],
+      "recommendation": "needs_identity: manufacturer roland absent from catalog.db. Product pages public; downloads via Roland Cloud Manager (membership login). No public per-plugin tip version on product pages. Hub-wall."
+    },
+    {
+      "plugin_id": "roland--zenology-fx",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/roland-rc-zenology.html",
+        "fixtures/lane1/roland-rc_zenology_pro.html",
+        "fixtures/lane1/roland-rc_zenology_fx.html",
+        "fixtures/lane1/rolandcloud-zenology.html"
+      ],
+      "recommendation": "needs_identity: manufacturer roland absent from catalog.db. Product pages public; downloads via Roland Cloud Manager (membership login). No public per-plugin tip version on product pages. Hub-wall."
+    },
+    {
+      "plugin_id": "roland--zenology-lite",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/roland-rc-zenology.html",
+        "fixtures/lane1/roland-rc_zenology_pro.html",
+        "fixtures/lane1/roland-rc_zenology_fx.html",
+        "fixtures/lane1/rolandcloud-zenology.html"
+      ],
+      "recommendation": "needs_identity: manufacturer roland absent from catalog.db. Product pages public; downloads via Roland Cloud Manager (membership login). No public per-plugin tip version on product pages. Hub-wall."
+    },
+    {
+      "plugin_id": "arturia--analog-lab-play",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/arturia-analog-lab-play.html",
+        "fixtures/lane1/arturia-pigments-play.html"
+      ],
+      "recommendation": "Free SKUs; download is email-gated link, updates via Arturia Software Center (already hub_walled). No public version string on product pages. oracle_absent for tip; keep ASC hub doctrine."
+    },
+    {
+      "plugin_id": "arturia--pigments-play",
+      "posture": "hub_walled",
+      "oracle_url": null,
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/arturia-analog-lab-play.html",
+        "fixtures/lane1/arturia-pigments-play.html"
+      ],
+      "recommendation": "Free SKUs; download is email-gated link, updates via Arturia Software Center (already hub_walled). No public version string on product pages. oracle_absent for tip; keep ASC hub doctrine."
+    },
+    {
+      "plugin_id": "uvi--dual-delay-x",
+      "posture": "reclass",
+      "oracle_url": "https://www.uvi.net/dual-delay-x",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/uvi-dual-delay-x.html"
+      ],
+      "recommendation": "DB identity_kind=soundset already (not plugin). Product is UVI Falcon/Workstation effect/soundware delivered via UVI Portal (hub_walled). Do not stamp as versionless plugin residual; confirm soundset/effect classification. No public tip version on page."
+    },
+    {
+      "plugin_id": "lexicon--mpx-native-reverb",
+      "posture": "hub_walled",
+      "oracle_url": "https://www.flux.audio/download",
+      "tip_version": null,
+      "evidence_paths": [
+        "fixtures/lane1/lexicon-mpx-native.html",
+        "fixtures/lane1/lexicon-mpx-1.0.8.dmg.headers.txt",
+        "fixtures/lane1/lexicon-mpx-downloads.html",
+        "fixtures/lane1/lexicon-mpx.html",
+        "fixtures/lane1/flux-mpx.html"
+      ],
+      "recommendation": "Current MPX ships via FLUX::Center labeled \"vLatest\" \u2014 no public semver. 1.0.8 dmg on lexiconpro is Legacy (Intel) only. needs_identity manufacturer lexicon. Do not stamp 1.0.8 as current tip."
+    }
+  ],
+  "notes": {
+    "aligned_at": "2026-09-25T12:02:00-07:00",
+    "parent_tip_alignment": "Sonnox RN 3.01.0 / Pro-Codec 4.00.0; Lexicon Flux vLatest no semver; Moog unchanged",
+    "changes": [
+      {
+        "plugin_id": "sonnox--oxford-debuzzer",
+        "from": "3.02.0",
+        "to": "3.01.0"
+      },
+      {
+        "plugin_id": "sonnox--oxford-declicker",
+        "from": "3.02.0",
+        "to": "3.01.0"
+      },
+      {
+        "plugin_id": "sonnox--oxford-denoiser",
+        "from": "3.02.0",
+        "to": "3.01.0"
+      },
+      {
+        "plugin_id": "sonnox--fraunhofer-pro-codec",
+        "from": "4.02.0",
+        "to": "4.00.0"
+      },
+      {
+        "plugin_id": "lexicon--mpx-native-reverb",
+        "from": [
+          "oracle_found",
+          "1.0.8"
+        ],
+        "to": [
+          "hub_walled",
+          null
+        ]
+      }
+    ]
+  }
+}

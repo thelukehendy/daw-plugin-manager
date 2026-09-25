@@ -1,0 +1,15 @@
+{
+  "oracle": "ni-native-access-electron-updater-yml",
+  "urls": {
+    "arm64_mac": "https://na-update.native-instruments.com/arm64/latest-mac.yml",
+    "x64_mac": "https://na-update.native-instruments.com/latest-mac.yml",
+    "win": "https://na-update.native-instruments.com/latest.yml"
+  },
+  "version": "3.26.0",
+  "releaseDate_arm64": "2026-09-08T11:39:13.368Z",
+  "zip_last_modified": "Thu, 10 Sep 2026 12:27:06 GMT",
+  "identity_guard": "native_access_app_neq_komplete_sku_matrix",
+  "engine_chip": "ni_access_yml_poller",
+  "maintenance": "daily GET yml; sha256 golden fixture; stub if not starting with 'version:'",
+  "fixture": "ni-arm64-latest-mac.yml"
+}

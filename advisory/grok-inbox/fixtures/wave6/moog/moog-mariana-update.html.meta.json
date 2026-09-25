@@ -1,0 +1,9 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mariana",
+  "slug": "mariana",
+  "tip_version": "1.2.0",
+  "fetched_at": "2026-09-25T18:57:57.983872+00:00",
+  "bytes": 19434,
+  "sha256": "1f15309aed836c9f2448bef844e672da2f51b834c00e0fbcef4f7f2cf056d7b0",
+  "parse_rule": "button text matching /All Formats v(\\d+\\.\\d+\\.\\d+)/"
+}

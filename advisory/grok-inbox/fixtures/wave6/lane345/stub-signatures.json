@@ -1,0 +1,63 @@
+{
+  "purpose": "Generalize beyond Waves Incapsula. Classify BEFORE parse. Never treat stub as empty changelog.",
+  "signatures": [
+    {
+      "id": "incapsula",
+      "match_any": [
+        "Incapsula",
+        "SWJIYLWA",
+        "_Incapsula_Resource"
+      ],
+      "typical_bytes": 212,
+      "action": "fetch_degraded:waf",
+      "example": "waves.com curl"
+    },
+    {
+      "id": "cloudflare_challenge",
+      "match_any": [
+        "Just a moment",
+        "cf-mitigated",
+        "Attention Required"
+      ],
+      "action": "fetch_degraded:cloudflare"
+    },
+    {
+      "id": "js_required_shell",
+      "match_any": [
+        "Please enable JavaScript"
+      ],
+      "max_bytes": 8000,
+      "example": "soundtheory.com/home 5134 bytes",
+      "action": "fetch_degraded:js-shell"
+    },
+    {
+      "id": "tiny_spa_shell",
+      "max_bytes": 12000,
+      "match_any": [
+        "must-revalidate"
+      ],
+      "example": "hornetplugins.com/plugins/ 8056 bytes, no product list",
+      "action": "fetch_degraded:spa-index"
+    },
+    {
+      "id": "pagebuilder_version_noise",
+      "match_any": [
+        "Slider Revolution",
+        "PixelYourSite",
+        "pys-version"
+      ],
+      "action": "parse_guard:ignore_builder_versions",
+      "example": "pulsar.audio/download/"
+    },
+    {
+      "id": "ok_html",
+      "min_bytes": 20000,
+      "require_any_signal": [
+        "version",
+        "changelog",
+        "v\\d+\\.\\d+"
+      ],
+      "action": "parse"
+    }
+  ]
+}

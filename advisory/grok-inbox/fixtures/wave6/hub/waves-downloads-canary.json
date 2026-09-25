@@ -1,0 +1,33 @@
+{
+  "oracle": "waves-downloads-central-canary",
+  "url": "https://www.waves.com/downloads",
+  "fixture": "waves-downloads.body",
+  "bytes": 114127,
+  "sha256": "58b14cb3c17a1de8c960639dceb0968b46dba319c616c757abf9c99a597041f5",
+  "mac_version": "V17.0.4",
+  "mac_date": "Aug 02, 2026",
+  "win_version": "V17.0.4",
+  "win_date": "Aug 02, 2026",
+  "live_fetch_2026-09-25_afternoon_pt": "INTERMITTENT_STUB_212B",
+  "stub_detector": {
+    "min_bytes": 500,
+    "reject_substrings": [
+      "Incapsula",
+      "_Incapsula_Resource"
+    ],
+    "require_regex": "Mac:\\\\s*V?\\\\d"
+  },
+  "corroborators": [
+    {
+      "url": "https://cf-installers.waves.com/WavesCentral/Install_Waves_Central.dmg",
+      "last_modified": "Sun, 02 Aug 2026 10:26:42 GMT"
+    },
+    {
+      "source": "homebrew-cask waves-central",
+      "version": "17.0.4"
+    }
+  ],
+  "identity_guard": "hub_app_neq_sku_generation_stamp",
+  "engine_chip": "waves_central_canary_poller",
+  "never": "stamp V17 / V17.0.4 onto plugin SKUs"
+}

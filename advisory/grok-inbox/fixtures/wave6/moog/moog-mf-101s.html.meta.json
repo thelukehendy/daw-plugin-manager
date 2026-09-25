@@ -1,0 +1,9 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-101s",
+  "slug": "mf-101s",
+  "tip_version": "1.3.0",
+  "fetched_at": "2026-09-25T18:57:57.984017+00:00",
+  "bytes": 18739,
+  "sha256": "2e8e7736e57ef6cec631442b3a36ca790071887e1764db987e1ce6fdcdcfa7a0",
+  "parse_rule": "button text matching /All Formats v(\\d+\\.\\d+\\.\\d+)/"
+}
