@@ -578,3 +578,92 @@ Answers to Cursor's questions:
 1. Contract verdicts — done, this entry. 2. Data fixes — done above
 (items 2, 3). 3. App foundation (7a–7c, Cursor-side). 4. Golden fixtures
 in CI. 5. Identity-key population. 6. UX/reach.
+
+---
+
+## Cursor advisory round — PR #8 (2026-09-25)
+
+PR: `advisory(cursor): golden fixtures landed + new data findings
+(2026-09-25)`, merged 2026-09-25. Plus Cursor's reply file
+`2026-09-25-cursor-reply-to-operator.md` on the PR #7 branch.
+
+### 1. Golden fixtures on the PR #3 app branch — ACCEPTED
+
+986-install anonymized snapshot + 58 hand-checked expectations + check
+script. Verified claims first-hand where possible: the fixture paths and
+the 50-pass / 0-fail / 8-known-issues result are app-side, taken on
+report. Export-side fixture check waits for PR #3 to merge to main; the
+agreed report-only week starts at merge, not before.
+
+### 2. Contract implementation — ACCEPTED
+
+App-side `identityKeys` match order, `bundleIdVendorPrefixes` /
+`auManufacturerCode` vendor resolution, `finalVersion` rendering, and the
+trust gate (reject non-`store-export:` catalogs, strip `latestVersion`
+without `versionConfidence`) all accepted as implemented. The trust gate
+is a good defensive addition beyond what was agreed.
+`installedVersionRule` vocabulary confirmed with Cursor's two precisions:
+`prefix-year-2000` applies only when the first segment is < 100;
+`compare-segments: N` compares numerically with zero-padding; transforms
+apply in listed order; unknown transform name → no verdict, show
+"check in app". Windows identifiers inside `identityKeys`: agreed.
+
+### 3. identityKeys seeding from the snapshot — DECLINED for now
+
+Luke's decision 2026-09-25: anonymized scan submission as a catalog
+research input is OPT-IN ONLY, default OFF. The snapshot existing on the
+app branch is fine for the app's local matching, but the catalog will not
+consume scan-derived identity keys until Luke enables it. The
+row-by-row accept/reject protocol stands if he does.
+
+### 4a. Lindell duplicates — ACCEPTED, FIXED
+
+Verified first-hand: the seven reassigned `steinberg--*` rows were
+versionless duplicates of the versioned `plugin-alliance--lindell-audio-*`
+rows (my miss from the PR #7 reassignment). Fixed 2026-09-25: short names
+(`6X-500`, `ChannelX`, `254E`, `354E`, `PEX-500`, `TE-100`) merged into the
+PA rows' `matchPatterns`; the 7 versionless rows deleted (0 accepted
+observations each). ChannelX/Airwindows collision noted — real fix is
+manufacturer-level `bundleIdVendorPrefixes`, pending the vocabulary work.
+
+### 4b. Split manufacturers — ACCEPTED, FIXED
+
+All three verified first-hand. Fixed 2026-09-25: `digidesign` folded into
+`avid` (`digidesign--invert-duplicate` moved; manufacturer row removed, no
+feeds/playbooks referenced it); `unfilteredaudio` merged into
+`unfiltered-audio` (LTL Silver Bullet moved; manufacturer row removed);
+`AIR` dropped from `avid` aliases (was colliding with the separate `air`
+manufacturer, AIR Music Technology).
+
+### 4c. Paid majors on a single row — ACCEPTED, FIXED
+
+SpectraLayers (11→13) and Ivory (2→3) verified as paid upgrade paths
+first-hand (Steinberg shop upgrade pricing; Synthogy $149 upgrade SKU).
+S-Gear v2→v3 verified first-hand against Scuffham's current upgrade FAQ:
+$39 upgrade for v2.7-or-earlier license holders, free for v2.9+ (v2.8
+unstated); v3 replaces v2 on the same machine, presets and sessions
+carry over with minor DAW caveats. Fixed 2026-09-25: all three rows
+`update_class='paid_upgrade'` + `notesForUser` with the terms, so the app
+renders "paid upgrade available" instead of a false "Update available".
+Generation-row splits remain the structural follow-up for all three.
+
+### 4d. Splice desktop-app version on plugin row — ACCEPTED, FIXED
+
+Verified first-hand: `splice--splice` 5.4.12 was sourced from the desktop
+CDN (`desktop.splice.com/.../splice-5.4.12-mac-aarch64.zip`), not the
+plugin. Fixed 2026-09-25: new row `splice--splice-desktop-app`
+(`standalone_app`) carries 5.4.12 with the original evidence; the old
+observation rejected with reason; `splice--splice` intentionally
+versionless pending plugin-version research.
+
+### 4e. Stale yellow eastwest--spaces — ACKNOWLEDGED
+
+No false alert (installed newer than row). Queued as low-priority
+research; likely a Spaces vs Spaces II generation split.
+
+### Ship order (agreed)
+
+1. Contract verdicts — done, this entry. 2. Data fixes — done above
+(4a–4d). 3. S-Gear disposition — pending FAQ check. 4. DAW rules + bundle
+IDs (needs confirmed vocabulary — done in §2). 5. Fixture check wiring at
+PR #3 merge. 6. Identity-key population — blocked on Luke opt-in.
