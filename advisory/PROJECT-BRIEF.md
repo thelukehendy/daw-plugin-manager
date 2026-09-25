@@ -50,7 +50,8 @@ playbooks, and push mechanics stay as-is. Advisory topic #1 below.
   chips never duplicate work. SQLite in WAL mode.
 - **Zero-trust gates:** every version change needs first-hand evidence (vendor page,
   installer binary metadata, dated changelog), corroboration where possible, and
-  confidence bands (green ≥90, amber 70–89, yellow <70). Researched and raised are
+  confidence bands (green ≥85, amber 70–84, yellow <70 — see
+  `catalog-store/CONFIDENCE.md`). Researched and raised are
   reported separately — *done means visible, verified versions, not processed rows.*
 - **Per-vendor playbooks:** `catalog-store/TIER1-ASSAULT.md` (re-fetch/parse/diff
   recipes per vendor, built for permanent maintenance, not one-time discovery),
