@@ -5,6 +5,67 @@ between waves. The advisor should read the latest entry before starting a wave.
 
 ---
 
+## Round 3 — 2026-09-25: wave 6 verdicts are in — now make the accepted chips buildable
+
+Wave-6 verdicts are posted in `advisory/verdicts.md`: **12 accepted, 0
+rejected.** Round-2 guidance worked — keep the format (≤12 dense files,
+in-repo fixtures, explicit non-goals, no pivot assumption).
+
+The bottleneck has moved. Discovery is no longer the constraint;
+implementation is. I have a 6-item first-hand verification queue from your
+accepted chips, and the engine's chips will work through it. Wave 7 should
+not be another discovery sweep — it should make the accepted designs
+*buildable*. Note the trust boundary: my re-fetch is mine to do, not yours
+to parallelize. What you *can* do is everything around it.
+
+**Ask 1 — close the mf-105s gap.** Your Moog table claims MF-105S 1.3.0 but
+no `moog-mf-105s.html` fixture is in the repo. Re-fetch, commit the fixture
++ `.meta.json`, or correct the table. Small, concrete, blocking one raise.
+
+**Ask 2 — chip-ready packs for each accepted wave-6 oracle.** Moog is the
+template: exact fetch recipe + parse rule + golden fixture + negative
+control (the mf-106s soft-404 was the right instinct). Do the same pack for:
+Sonnox RN pages, NI `latest-mac.yml`, Waves `/downloads` canary, UA Connect
+DMG basename, IK PM CDN HEAD (with the Referer requirement), Spitfire
+CloudFront path. One file per oracle, each ending in "ready for the engine
+to wire after operator re-fetch."
+
+**Ask 3 — tier-2 top-5 deep dive (scout only).** Your recon produced a
+scored top-20 with a documented formula. Take the top 5 and give each the
+Moog treatment: fixture-backed oracle spec, parse rule, traps. Still
+scout-only — no catalog proposals, tier-2 research stays paused — but if
+Luke ever opens tier 2, these five should be wiring-ready.
+
+**Ask 4 — systematic identity sweep.** The UA Editions reclass was the
+template: rows wearing plugin clothing that are actually bundles, suites,
+or commerce editions. Sweep tier 1 for more of them — naming patterns
+("Collection", "Bundle", "Edition", "Pack", "Suite"), manufacturers with
+known bundle lines, rows whose portal URL is a shop page. Concrete
+reclass candidates with evidence, not a philosophy essay.
+
+**Ask 5 — second creative pass on the 82 hub_walled residuals, with a
+bar.** KORG 24, IK 48, Roland 4 and friends are parked honestly — but
+parked is not solved. One more creative pass is welcome *only* where you
+have a genuinely new angle (installer filename conventions on public CDNs,
+support-article version mentions, community-manager posts). New evidence
+or don't file; do not re-grind parked rows with the same queries.
+
+### Explicitly out of scope for wave 7
+
+- Freshness/portal implementation — still gated on the taxonomy landing and
+  Luke's pending pivot call.
+- Re-verifying my verification queue for me — that's the trust boundary.
+- New hub-walled discovery beyond Ask 5's bar — wave 6 covered the map;
+  depth now beats breadth.
+
+### Standing rules (unchanged)
+
+≤12 files · fixtures in-repo with SHA256SUMS · check `verdicts.md` first ·
+no pivot assumption · no telemetry · no Luke-input workflows · no
+credentialed scraping · nothing becomes catalog data without my re-fetch.
+
+---
+
 ## Round 2 — 2026-09-25: push hard, stop repeating solved work
 
 At Luke's request, sharpening your focus for wave 6.
