@@ -1,0 +1,233 @@
+{
+ "count": 57,
+ "rows": [
+  {
+   "id": "voxengo--analogflux-impulse",
+   "latestVersion": "1.5.1"
+  },
+  {
+   "id": "voxengo--analogflux-insert",
+   "latestVersion": "1.5.1"
+  },
+  {
+   "id": "voxengo--analogflux-tapebus",
+   "latestVersion": "1.5.2"
+  },
+  {
+   "id": "loomer--architect",
+   "latestVersion": "0.10.23"
+  },
+  {
+   "id": "loomer--aspect-2",
+   "latestVersion": "2.0.3"
+  },
+  {
+   "id": "spl--attacker",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "zynaptiq--aura",
+   "latestVersion": "1.3.3"
+  },
+  {
+   "id": "native-instruments--b4",
+   "latestVersion": "2.0.4"
+  },
+  {
+   "id": "blue-cat-audio--blue-cats-stereo-triple-eq",
+   "latestVersion": "3.31"
+  },
+  {
+   "id": "blue-cat-audio--blue-cats-widening-triple-eq",
+   "latestVersion": "3.31"
+  },
+  {
+   "id": "celemony--celemony-melodyne-4-studio",
+   "latestVersion": "4.2.4"
+  },
+  {
+   "id": "steinberg--dcota",
+   "latestVersion": "1.0.1"
+  },
+  {
+   "id": "spl--de-verb",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "spl--eq-rangers-vol-1",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "accusonus--era",
+   "latestVersion": "5.2"
+  },
+  {
+   "id": "voxengo--esseq",
+   "latestVersion": "1.5"
+  },
+  {
+   "id": "steinberg--groove-agent-3",
+   "latestVersion": "3.0.2"
+  },
+  {
+   "id": "guitar-rig-5--guitar-rig-5",
+   "latestVersion": "5.2.2"
+  },
+  {
+   "id": "steinberg--halion-player",
+   "latestVersion": "3.3.0"
+  },
+  {
+   "id": "tritik--krush",
+   "latestVersion": "1.3.0"
+  },
+  {
+   "id": "steinberg--lm-4-markii",
+   "latestVersion": "1.1.0"
+  },
+  {
+   "id": "voxengo--lampthruster",
+   "latestVersion": "2.5"
+  },
+  {
+   "id": "loomer--manifold",
+   "latestVersion": "1.9.1"
+  },
+  {
+   "id": "spl--mo-verb",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "liquidsonics--mobile-convolution",
+   "latestVersion": "1.2.11"
+  },
+  {
+   "id": "presonus--notion",
+   "latestVersion": "6.8.2"
+  },
+  {
+   "id": "psp-audioware--psp-hertzrider",
+   "latestVersion": "1.0.3"
+  },
+  {
+   "id": "psp-audioware--psp-lotary",
+   "latestVersion": "1.0.3"
+  },
+  {
+   "id": "psp-audioware--psp-masterq",
+   "latestVersion": "1.5.2"
+  },
+  {
+   "id": "steinberg--padshop-pro",
+   "latestVersion": "1.2.20"
+  },
+  {
+   "id": "modartt--pianoteq-pro-7",
+   "latestVersion": "7.5.4"
+  },
+  {
+   "id": "modartt--pianoteq-stage-7",
+   "latestVersion": "7.5.4"
+  },
+  {
+   "id": "voxengo--pristine-space-light",
+   "latestVersion": "1.3"
+  },
+  {
+   "id": "audio-damage--quatromod",
+   "latestVersion": "1.0.3"
+  },
+  {
+   "id": "steinberg--rnd-portico-5033-equalizer",
+   "latestVersion": "1.2.1.2"
+  },
+  {
+   "id": "steinberg--rnd-portico-5043-compressor",
+   "latestVersion": "1.2.1.2"
+  },
+  {
+   "id": "reaktor-6--reaktor-6",
+   "latestVersion": "6.5.0"
+  },
+  {
+   "id": "loomer--resound",
+   "latestVersion": "1.9.1"
+  },
+  {
+   "id": "spl--spl-attacker",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "plugin-alliance--spl-attacker",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "spl--bass-ranger",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "plugin-alliance--spl-eq-rangers-vol-1",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "spl--full-ranger",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "spl--vox-ranger",
+   "latestVersion": "1.9"
+  },
+  {
+   "id": "plugin-alliance--schoeps-mono-upmix-1to3",
+   "latestVersion": "1.2.0"
+  },
+  {
+   "id": "loomer--sequent-2",
+   "latestVersion": "2.0.5"
+  },
+  {
+   "id": "loomer--shift-2",
+   "latestVersion": "2.4.1"
+  },
+  {
+   "id": "arturia--spark",
+   "latestVersion": "2.4.0"
+  },
+  {
+   "id": "arturia--spark-1",
+   "latestVersion": "1.7.2"
+  },
+  {
+   "id": "steinberg--spectralayers-pro-7",
+   "latestVersion": "7.0.20"
+  },
+  {
+   "id": "steinberg--spectralayers-pro-8",
+   "latestVersion": "8.0.20"
+  },
+  {
+   "id": "loomer--string",
+   "latestVersion": "1.17.4"
+  },
+  {
+   "id": "tokyo-dawn-labs--tdr-feedback-compressor-ii",
+   "latestVersion": "2.0.1"
+  },
+  {
+   "id": "plugin-alliance--unfiltered-audio-dent",
+   "latestVersion": "1.0"
+  },
+  {
+   "id": "unfiltered-audio--unfiltered-audio-dent",
+   "latestVersion": "1.0"
+  },
+  {
+   "id": "sugar-bytes--unique-le",
+   "latestVersion": "1.1.0"
+  },
+  {
+   "id": "steinberg--xphraze",
+   "latestVersion": "1.2"
+  }
+ ]
+}

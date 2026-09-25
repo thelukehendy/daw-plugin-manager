@@ -1,0 +1,505 @@
+{
+ "catalogBuildId": "2026-09-25T20:39:13Z",
+ "catalogCommit": "b19253bf21879ea4a6c5184e76ff6194c0843249",
+ "machine": "macOS 26 arm64 (Luke studio Mac), read-only scan",
+ "totals": {
+  "products": 752,
+  "current": 513,
+  "outdated": 116,
+  "other": 57,
+  "bundled": 66
+ },
+ "timingMs": {
+  "diskScan": 7722,
+  "catalogMatch": 45981
+ },
+ "dawsDetected": [
+  {
+   "name": "Ableton Live 10 Suite",
+   "installedVersionString": "10.1.43 (2022-06-16_0e617fc804)",
+   "bundleId": "com.ableton.live"
+  },
+  {
+   "name": "Ableton Live 12 Suite",
+   "installedVersionString": "12.2.7 (2025-11-03_828a8aa814)",
+   "bundleId": "com.ableton.live"
+  },
+  {
+   "name": "GarageBand",
+   "installedVersionString": "10.4.14",
+   "bundleId": "com.apple.garageband10"
+  },
+  {
+   "name": "Logic Pro",
+   "installedVersionString": "12.3.1",
+   "bundleId": "com.apple.logic10"
+  },
+  {
+   "name": "Pro Tools",
+   "installedVersionString": "26.4.1.179",
+   "bundleId": "com.avid.ProTools"
+  },
+  {
+   "name": "REAPER",
+   "installedVersionString": "7.54.0_91d78b1u",
+   "bundleId": "com.cockos.reaper"
+  },
+  {
+   "name": "Reason 12",
+   "installedVersionString": "12.7.4d3 build 15815",
+   "bundleId": "se.propellerheads.reason"
+  },
+  {
+   "name": "Studio One 4",
+   "installedVersionString": "4.6.2 Build 58729",
+   "bundleId": "com.presonus.studioone2"
+  },
+  {
+   "name": "Studio One 5",
+   "installedVersionString": "5.5.2 Build 86528",
+   "bundleId": "com.presonus.studioone2"
+  }
+ ],
+ "wrongVendorMatches": [
+  {
+   "installed": "6X-500",
+   "bundleVendor": "lindellaudio",
+   "matchedCatalogRow": "steinberg | 6X-500",
+   "identityKind": "suite_component"
+  },
+  {
+   "installed": "7X-500",
+   "bundleVendor": "lindellaudio",
+   "matchedCatalogRow": "steinberg | 7X-500",
+   "identityKind": "suite_component"
+  },
+  {
+   "installed": "ChannelX",
+   "bundleVendor": "lindellaudio",
+   "matchedCatalogRow": "steinberg | ChannelX",
+   "identityKind": "suite_component"
+  },
+  {
+   "installed": "Lindell 254E",
+   "bundleVendor": "lindellaudio",
+   "matchedCatalogRow": "steinberg | Lindell 254E",
+   "identityKind": "suite_component"
+  },
+  {
+   "installed": "Lindell 354E",
+   "bundleVendor": "lindellaudio",
+   "matchedCatalogRow": "steinberg | Lindell 354E",
+   "identityKind": "suite_component"
+  },
+  {
+   "installed": "Lindell TE-100",
+   "bundleVendor": "lindellaudio",
+   "matchedCatalogRow": "steinberg | Lindell TE-100",
+   "identityKind": "suite_component"
+  },
+  {
+   "installed": "PEX-500",
+   "bundleVendor": "lindellaudio",
+   "matchedCatalogRow": "steinberg | PEX-500",
+   "identityKind": "suite_component"
+  },
+  {
+   "installed": "Reason Rack",
+   "bundleVendor": "propellerheads",
+   "matchedCatalogRow": "steinberg | Reason Rack Plugin",
+   "identityKind": "unknown_other"
+  }
+ ],
+ "suspectedGenerationCollisions": [
+  {
+   "installed": "Ultra Analog Session",
+   "installedVersion": "1.1.5",
+   "catalogRows": [
+    "applied-acoustics--Ultra Analog Session (patterns: Ultra Analog Session, Ultra Analog) latest 2.3.5",
+    "applied-acoustics--Ultra Analog Session 2 latest 2.3.5"
+   ],
+   "appResult": "outdated 1.1.5 -> 2.3.5"
+  },
+  {
+   "installed": "Strum Acoustic Session",
+   "installedVersion": "1.0.3",
+   "catalogRows": [
+    "applied-acoustics--Strum Acoustic Session latest 2.4.5",
+    "applied-acoustics--Strum Session identityKind gen_ambiguous"
+   ],
+   "appResult": "outdated 1.0.3 -> 2.4.5"
+  }
+ ],
+ "discontinuedWithLatestVersion": [
+  {
+   "installed": "B4 II / B4 II FX",
+   "installedVersion": "2.0.3.009",
+   "catalogRow": "native-instruments | B4 II",
+   "identityKind": "discontinued",
+   "latestVersion": "2.0.4",
+   "appResult": "outdated"
+  }
+ ],
+ "outdatedSample": [
+  {
+   "installedMfr": "Accusonus",
+   "name": "PlosiveRemover",
+   "installed": "4.1.10",
+   "latest": "5.2",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 75
+  },
+  {
+   "installedMfr": "Acon Digital",
+   "name": "DeClick2",
+   "installed": "2.1.2",
+   "latest": "2.1.27",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Acon Digital",
+   "name": "DeClip2",
+   "installed": "2.1.2",
+   "latest": "2.1.27",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Acon Digital",
+   "name": "DeHum2",
+   "installed": "2.1.2",
+   "latest": "2.1.27",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Acon Digital",
+   "name": "DeNoise2",
+   "installed": "2.1.2",
+   "latest": "2.1.27",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "AIR Music Technology",
+   "name": "Structure",
+   "installed": "1.5.11",
+   "latest": "2.2.0",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 60
+  },
+  {
+   "installedMfr": "Antares",
+   "name": "AVOX SYBIL",
+   "installed": "4.4.1",
+   "latest": "4.6.0",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Applied Acoustics Systems",
+   "name": "Lounge Lizard Session 4",
+   "installed": "4.0.1",
+   "latest": "4.4.5",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 95
+  },
+  {
+   "installedMfr": "Applied Acoustics Systems",
+   "name": "Strum Acoustic Session",
+   "installed": "1.0.3",
+   "latest": "2.4.5",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 95
+  },
+  {
+   "installedMfr": "Applied Acoustics Systems",
+   "name": "Ultra Analog Session",
+   "installed": "1.1.5",
+   "latest": "2.3.5",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 95
+  },
+  {
+   "installedMfr": "Audiomovers",
+   "name": "Listento",
+   "installed": "2.102.20230815",
+   "latest": "2.141.20260225",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 60
+  },
+  {
+   "installedMfr": "Audiomovers",
+   "name": "Listento-MIDI",
+   "installed": "2.102.20230815",
+   "latest": "2.141.20260225",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 60
+  },
+  {
+   "installedMfr": "Audiomovers",
+   "name": "Listento-Receiver",
+   "installed": "2.102.20230815",
+   "latest": "2.141.20260225",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 60
+  },
+  {
+   "installedMfr": "AudioThing",
+   "name": "Things Texture",
+   "installed": "1.1.1",
+   "latest": "1.1.2",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Native Instruments",
+   "name": "B4 II",
+   "installed": "2.0.3.009",
+   "latest": "2.0.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 70
+  },
+  {
+   "installedMfr": "Native Instruments",
+   "name": "B4 II FX",
+   "installed": "2.0.3.009",
+   "latest": "2.0.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 58
+  },
+  {
+   "installedMfr": "Bertom Audio",
+   "name": "EQ Curve Analyzer 2",
+   "installed": "2.1.2",
+   "latest": "2.1.3",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Eiosis",
+   "name": "Eiosis AirEQ",
+   "installed": "1.3.2",
+   "latest": "1.3.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 60
+  },
+  {
+   "installedMfr": "Eventide",
+   "name": "Quadravox",
+   "installed": "3.10.0",
+   "latest": "3.11.5",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Eventide",
+   "name": "SplitEQ",
+   "installed": "1.2.0",
+   "latest": "1.3.5",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Eventide",
+   "name": "UltraChannel",
+   "installed": "3.10.0",
+   "latest": "3.11.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "FabFilter",
+   "name": "FabFilter Pro-C 2",
+   "installed": "2.20",
+   "latest": "2.22",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "FabFilter",
+   "name": "FabFilter Pro-C 2 (Mono)",
+   "installed": "2.20",
+   "latest": "2.22",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "FabFilter",
+   "name": "FabFilter Pro-Q 4",
+   "installed": "4.12",
+   "latest": "4.13",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "Focusrite",
+   "name": "FB360 Control",
+   "installed": "3.3.3",
+   "latest": "3.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 85
+  },
+  {
+   "installedMfr": "Focusrite",
+   "name": "FB360 Converter",
+   "installed": "3.3.3",
+   "latest": "3.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 85
+  },
+  {
+   "installedMfr": "Focusrite",
+   "name": "FB360 Mix Loudness",
+   "installed": "3.3.3",
+   "latest": "3.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 85
+  },
+  {
+   "installedMfr": "Focusrite",
+   "name": "FB360 Spatialiser",
+   "installed": "3.3.3",
+   "latest": "3.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 85
+  },
+  {
+   "installedMfr": "Focusrite",
+   "name": "FB360 Stereo Loudness",
+   "installed": "3.3.3",
+   "latest": "3.4",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 85
+  },
+  {
+   "installedMfr": "Harrison",
+   "name": "Harrison_32ClassicChannelStrip",
+   "installed": "1.1.0",
+   "latest": "2.0.20",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "HoRNet",
+   "name": "Corrosion",
+   "installed": "1.1.1",
+   "latest": "1.1.2",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "iZotope",
+   "name": "RX",
+   "installed": "11.4.0",
+   "latest": "12.0.0",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 95
+  },
+  {
+   "installedMfr": "Kazrog",
+   "name": "True Iron",
+   "installed": "1.4.1",
+   "latest": "1.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 92
+  },
+  {
+   "installedMfr": "Kilohearts",
+   "name": "Disperser",
+   "installed": "2.4.5",
+   "latest": "2.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "Kilohearts",
+   "name": "Faturator",
+   "installed": "2.4.5",
+   "latest": "2.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "Kilohearts",
+   "name": "kHs 3-Band EQ",
+   "installed": "2.4.5",
+   "latest": "2.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "Kilohearts",
+   "name": "kHs Bitcrush",
+   "installed": "2.4.5",
+   "latest": "2.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "Kilohearts",
+   "name": "kHs Channel Mixer",
+   "installed": "2.4.5",
+   "latest": "2.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "Kilohearts",
+   "name": "kHs Chorus",
+   "installed": "2.4.5",
+   "latest": "2.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  },
+  {
+   "installedMfr": "Kilohearts",
+   "name": "kHs Clipper",
+   "installed": "2.4.5",
+   "latest": "2.4.6",
+   "status": "outdated",
+   "matched": true,
+   "confidence": 88
+  }
+ ]
+}
