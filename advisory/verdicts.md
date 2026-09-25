@@ -283,3 +283,79 @@ guidance mechanism works; keep using it.
    CloudFront 3.4.17.
 6. Tier-2 oracle spot-checks (Wave Arts, AudioThing, Denise, Gullfoss, DDMF,
    Dexed) — scout only, no catalog action.
+
+---
+
+## Round 3 — wave 7 (2026-09-25)
+
+Reviewed 2026-09-25. **ACCEPTED: 11 · REJECTED: 0 · DEFERRED: 0.**
+
+All five round-3 asks graded DONE. No constraint violations, no padding
+(line counts tight; the tier-2 file's honest "~0 accepts" estimates for 3 of
+5 vendors are anti-padding). One nit: the mf-105s `.meta.json` says "copied
+from fixtures/moog/" though wave 6 had no mf-105s fixture there — sloppy
+note, but the fixture content itself is genuine (tip button present, sha256
+matches).
+
+### Ask 1 — mf-105s gap
+
+- `2026-09-25-chip-moog-softwareupdate-ready.md` — **ACCEPTED.** Gap closed:
+  fixture + meta committed, "All Formats v1.3.0" verified in the HTML. Full
+  chip pack with negative-control discipline intact.
+
+### Ask 2 — chip-ready packs (7)
+
+- `2026-09-25-chip-sonnox-rn-freeze-ready.md` — **ACCEPTED.** Docs-index
+  discovery preferred over hardcoded URLs — the right long-term posture.
+- `2026-09-25-chip-ni-electron-updater-yml-ready.md` — **ACCEPTED.**
+  Three-arch YAML with split-recording rule.
+- `2026-09-25-chip-waves-downloads-canary-ready.md` — **ACCEPTED.**
+  Mandatory stub detector + DMG Last-Modified fallback; cheaper than
+  Playwright.
+- `2026-09-25-chip-ua-connect-dmg-ready.md` — **ACCEPTED.**
+  Brew-discovery-first, never-invent-basename discipline.
+- `2026-09-25-chip-ik-pm-cdn-referer-ready.md` — **ACCEPTED.** The
+  Referer-403 pair as golden/negative is a clean test fixture.
+- `2026-09-25-chip-spitfire-cloudfront-path-ready.md` — **ACCEPTED.**
+  Rediscover-via-brew on 403 handles signed-URL expiry.
+
+### Ask 3 — tier-2 top-5 scout
+
+- `2026-09-25-tier2-top5-wiring-ready-scout.md` — **ACCEPTED.** Strongest
+  file this wave: five fixture-backed oracle specs with honest yield
+  estimates, Mac/Win split holds, edition-alias traps. Wiring-ready if tier
+  2 ever opens; scout-only honored, no catalog proposals.
+
+### Ask 4 — identity sweep
+
+- `2026-09-25-identity-reclass-candidates-tier1-deep.md` — **ACCEPTED.**
+  18 high-confidence bundle reclass candidates with public-URL evidence,
+  plus a 17-item allowlist of name-token false positives — the allowlist is
+  the mature touch that prevents regex overreach. Also documents live
+  suite-stamp contamination (Softube 2.6.41 / UAD 12.0 / Waves 15.x on suite
+  rows). Verify each candidate against the live DB + product page before
+  reclass.
+
+### Ask 5 — hub creative pass 2
+
+- `2026-09-25-hub-walled-creative-pass2-deep.md` — **ACCEPTED.** Genuine
+  unlock: KORG Collection news-title version feed (TRINITY 1.1.0
+  body-confirmed in fixture). Honest negatives table (Arturia placeholder,
+  Roland empty shells, IK 403s, IL dead API, Lexicon closed neighbors).
+  Bar honored: new evidence or don't file.
+
+### Meta
+
+- `2026-09-25-muse-wave7-inbox-index-and-ship-order.md` — **ACCEPTED.**
+  Map + ask-outcome table + non-goals; cites round-3 steering.
+
+### Wave-7 verification queue (first-hand re-fetch before any catalog use)
+
+1. Moog mf-105s 1.3.0 (fixture-backed, still operator re-fetch) + all 9 slugs.
+2. KORG news feed → TRINITY 1.1.0; product→plugin_id join is operator work.
+3. Chip packs: Sonnox RN tips, NI YAML 3.26.0, Waves V17.0.4, UA Connect
+   1.10.0/3844, IK PM 1.1.15, Spitfire 3.4.17.
+4. Tier-2 spot-checks (scout only): Wave Arts dotted versions (do not
+   semver-normalize), Denise parentheticals, Madrona Mac/Win splits.
+5. All 18 identity reclass candidates — verify each before reclass; apply
+   the allowlist.
