@@ -1,0 +1,118 @@
+{
+  "name": "identity_classifier_v2",
+  "date": "2026-09-25",
+  "positive_class": "bundle",
+  "description": "Rule-based formalization of wave7 identity sweep. Name-pattern + portal-URL-shape + allowlist guards.",
+  "allow_guards": [
+    {
+      "id": "goodhertz_mastering_edition_branding",
+      "regex": "\\bMastering\\s+Edition\\b",
+      "scope": "only when manufacturer_id=goodhertz or name/id matches VCME/Vulf/goodhertz"
+    },
+    {
+      "id": "ua_c_suite_product_line",
+      "regex": "\\bC-Suite\\s+C-(Axe|Max|Vox)\\b"
+    },
+    {
+      "id": "limited_edition_marketing",
+      "regex": "\\bLimited\\s+Edition\\b"
+    },
+    {
+      "id": "slate_verbsuite_single_plugin",
+      "regex": "\\bVerbSuite\\b"
+    },
+    {
+      "id": "il_juice_pack_suffix",
+      "regex": "\\(Juice\\s+Pack\\)"
+    },
+    {
+      "id": "slate_repeater_edition_sku",
+      "regex": "\\bRepeater\\s*\\(Slate\\s+Digital\\s+Edition\\)"
+    },
+    {
+      "id": "slate_edition_of_third_party",
+      "regex": "\\bSlate\\s+Digital\\s+Edition\\b"
+    }
+  ],
+  "bundle_name_rules": [
+    {
+      "id": "ua_editions_template",
+      "regex": "\\b(UAD|UADx)\\b.*\\b(Producer|Studio|Signature|Essentials)\\s+Edition\\b"
+    },
+    {
+      "id": "ua_editions_generic",
+      "regex": "\\b(UAD|UADx)\\b.*\\bEdition\\s*V?\\d*\\b"
+    },
+    {
+      "id": "ua_mfr_edition_residual",
+      "note": "universal-audio--* with Edition token excluding Limited/Mastering/C-Suite"
+    },
+    {
+      "id": "named_collection_sku",
+      "regex": "\\b(Pultec\\s+Passive\\s+EQ\\s+Collection|Tube-Tech\\s+(?:Complete\\s+)?(?:Collection|EQ\\s+Collection)|Complete\\s+Collection)\\b"
+    },
+    {
+      "id": "softube_flow_suite",
+      "regex": "\\bFlow\\s+(Mastering|Mixing)\\s+Suite\\b"
+    },
+    {
+      "id": "name_token_bundle",
+      "regex": "\\bBundle\\b"
+    },
+    {
+      "id": "named_multi_pack",
+      "regex": "\\b(Passive-Active\\s+Pack|Brilliance\\s+Pack|Amp\\s+Room\\s+Bundle)\\b"
+    },
+    {
+      "id": "waves_signature_series",
+      "regex": "\\bSignature\\s+Series\\b"
+    },
+    {
+      "id": "eq_collection",
+      "regex": "\\b(EQ\\s+Collection|Passive\\s+EQ\\s+Collection)\\b"
+    }
+  ],
+  "portal_url_rules": [
+    {
+      "id": "waves_bundles_path",
+      "match": "waves.com/bundles/ OR /bundles/ under waves--*",
+      "vote": "bundle"
+    },
+    {
+      "id": "waves_plugins_path",
+      "match": "waves.com/plugins/",
+      "vote": "plugin"
+    },
+    {
+      "id": "ua_collection_product_path",
+      "match": "uaudio.com/products/.*collection",
+      "vote": "bundle"
+    },
+    {
+      "id": "softube_commerce_path_name",
+      "match": "softube.com + name has collection|suite|pack|bundle",
+      "vote": "bundle"
+    },
+    {
+      "id": "retailer_bundle_slug",
+      "match": "sweetwater.com slug with plug-in-bundle|bundle",
+      "vote": "bundle"
+    }
+  ],
+  "softube_product_page_copy_cues": [
+    "includes the following plug-ins",
+    "includes 70+ plug-ins",
+    "3-in-1 collection of EQ plugins",
+    "subscription suite"
+  ],
+  "metrics_on_wave7_holdout": {
+    "note": "HIGH18+ALLOW17 are the derivation set formalized as rules \u2014 not a blind holdout. Value is: perfect allowlist safety + reproducible classifier. True holdout = future name-pattern hits.",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 18,
+    "fn": 0,
+    "fp": 0,
+    "tn": 17
+  }
+}

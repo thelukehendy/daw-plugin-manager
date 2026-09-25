@@ -1,0 +1,9 @@
+{
+  "chip": "moog-softwareupdate",
+  "negative_url": "https://software.moogmusic.com/softwareUpdate/mf-106s",
+  "must_http": 200,
+  "must_not_match": "All Formats v\\d+",
+  "detector": "soft404_missing_All_Formats_v_button",
+  "wave7_fixture": "wave7-pack/.../fixtures/wave7/chips/moog/moog-mf-106s.html",
+  "live_2026-09-25": {"http": 200, "bytes": 15348, "all_formats_matches": 0}
+}

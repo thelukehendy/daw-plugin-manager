@@ -1,0 +1,432 @@
+{
+  "date": "2026-09-25",
+  "test_set": {
+    "high18_n": 18,
+    "allow17_n": 17
+  },
+  "metrics": {
+    "tp": 18,
+    "fn": 0,
+    "fp": 0,
+    "tn": 17,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "definition": "positive_class=bundle; precision/recall on HIGH18+ALLOW17 holdout"
+  },
+  "high18_results": [
+    {
+      "plugin_id": "universal-audio--uad-producer-edition",
+      "name": "UAD Producer Edition",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:ua_editions_template",
+        "name:ua_editions_generic",
+        "url:retailer_bundle_slug"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "universal-audio--uad-studio-edition",
+      "name": "UAD Studio Edition",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:ua_editions_template",
+        "name:ua_editions_generic"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "universal-audio--uad-signature-edition-v3",
+      "name": "UAD Signature Edition V3",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:ua_editions_template",
+        "name:ua_editions_generic"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "universal-audio--uadx-essentials-edition",
+      "name": "UADx Essentials Edition",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:ua_editions_template",
+        "name:ua_editions_generic"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "universal-audio--uadx-signature-edition-v2",
+      "name": "UADx Signature Edition V2",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:ua_editions_template",
+        "name:ua_editions_generic"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "universal-audio--uadx-pultec-passive-eq-collection",
+      "name": "UADx Pultec Passive EQ Collection",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:named_collection_sku",
+        "name:eq_collection",
+        "url:ua_collection_product_path"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "softube--tube-tech-complete-collection-2",
+      "name": "Tube-Tech Complete Collection 2",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:named_collection_sku",
+        "name:complete_collection",
+        "url:softube_commerce_path_name"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "softube--flow-mastering-suite",
+      "name": "Flow Mastering Suite",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:softube_flow_suite",
+        "url:softube_commerce_path_name"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "softube--flow-mixing-suite",
+      "name": "Flow Mixing Suite",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:softube_flow_suite",
+        "url:softube_commerce_path_name"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "softube--passive-active-pack",
+      "name": "Passive-Active Pack",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:named_multi_pack",
+        "url:softube_commerce_path_name"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "softube--abbey-road-studios-brilliance-pack",
+      "name": "Abbey Road Studios Brilliance Pack",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:named_multi_pack",
+        "name:abbey_brilliance_pack",
+        "url:softube_commerce_path_name"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "softube--uad-softube-amp-room-bundle",
+      "name": "UAD Softube Amp Room Bundle",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:name_token_bundle",
+        "name:named_multi_pack",
+        "url:softube_commerce_path_name"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "softube--uad-tube-tech-eq-collection",
+      "name": "UAD Tube-Tech EQ Collection",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:named_collection_sku",
+        "name:eq_collection",
+        "url:softube_commerce_path_name"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "waves--chris-lord-alge-artist-signature-series",
+      "name": "Chris Lord-Alge Artist Signature Series",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:waves_signature_series",
+        "url:waves_bundles_path"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "waves--eddie-kramer-signature-series",
+      "name": "Eddie Kramer Signature Series",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:waves_signature_series",
+        "url:waves_bundles_path"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "waves--jack-joseph-puig-signature-series",
+      "name": "Jack Joseph Puig Signature Series",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:waves_signature_series",
+        "url:waves_bundles_path"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "waves--manny-marroquin-signature-series",
+      "name": "Manny Marroquin Signature Series",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:waves_signature_series",
+        "url:waves_bundles_path"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    },
+    {
+      "plugin_id": "waves--tony-maserati-signature-series",
+      "name": "Tony Maserati Signature Series",
+      "predicted": "bundle",
+      "rules_fired": [
+        "name:waves_signature_series",
+        "url:waves_bundles_path"
+      ],
+      "allow_guards": [],
+      "confidence": "high",
+      "gold": "bundle"
+    }
+  ],
+  "allow17_results": [
+    {
+      "plugin_id": "goodhertz--vcme-vulf-compressor-mastering-edition",
+      "name": "VCME (Vulf Compressor Mastering Edition)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "goodhertz_mastering_edition_branding"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "slate-digital--verbsuite-classics",
+      "name": "VerbSuite Classics",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "slate_verbsuite_single_plugin"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "universal-audio--uad-c-suite-c-axe",
+      "name": "UAD C-Suite C-Axe",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "ua_c_suite_product_line"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "universal-audio--uad-c-suite-c-max",
+      "name": "UAD C-Suite C-Max",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "ua_c_suite_product_line"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "universal-audio--uad-c-suite-c-vox",
+      "name": "UAD C-Suite C-Vox",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "ua_c_suite_product_line"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "universal-audio--uad-engl-e646-vs-limited-edition",
+      "name": "UAD ENGL E646 VS Limited Edition",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "limited_edition_marketing"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "slate-digital--repeater-slate-digital-edition",
+      "name": "Repeater (Slate Digital Edition)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "slate_repeater_edition_sku",
+        "slate_edition_of_third_party"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-delay-juice-pack",
+      "name": "IL Delay (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-delay-bank-juice-pack",
+      "name": "IL Delay Bank (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-equo-juice-pack",
+      "name": "IL EQUO (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-flangus-juice-pack",
+      "name": "IL Flangus (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-multiband-compressor-juice-pack",
+      "name": "IL Multiband Compressor (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-parametric-eq-juice-pack",
+      "name": "IL Parametric EQ (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-spectroman-juice-pack",
+      "name": "IL Spectroman (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-stereo-enhancer-juice-pack",
+      "name": "IL Stereo Enhancer (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-vocoder-juice-pack",
+      "name": "IL Vocoder (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    },
+    {
+      "plugin_id": "image-line--il-waveshaper-juice-pack",
+      "name": "IL WaveShaper (Juice Pack)",
+      "predicted": "plugin",
+      "rules_fired": [],
+      "allow_guards": [
+        "il_juice_pack_suffix"
+      ],
+      "confidence": "allow_guard",
+      "gold": "plugin"
+    }
+  ],
+  "universe_predicted_bundle_extra": []
+}

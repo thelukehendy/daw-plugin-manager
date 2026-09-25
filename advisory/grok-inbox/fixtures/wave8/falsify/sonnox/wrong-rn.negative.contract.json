@@ -1,0 +1,6 @@
+{
+  "chip": "sonnox-rn-freeze",
+  "negative": "storefront shell / missing tip H2 after Release Notes H3",
+  "detector": "reject_if_missing_h2_semver_after_release_notes_h3",
+  "farewell_404": "do NOT invent discontinued_frozen"
+}

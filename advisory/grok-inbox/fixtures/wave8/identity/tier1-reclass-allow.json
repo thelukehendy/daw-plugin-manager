@@ -1,0 +1,208 @@
+[
+  {
+    "plugin_id": "goodhertz--vcme-vulf-compressor-mastering-edition",
+    "name": "VCME (Vulf Compressor Mastering Edition)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "Real single-plugin SKU; 'Mastering Edition' is product branding. goodhertz.com/vcme/ is a plugin product page.",
+    "public_url": "https://goodhertz.com/vcme/",
+    "evidence": [
+      "fixtures/identity/goodhertz-vcme.html",
+      "observed_version 3.14.1 from downloadsPage"
+    ]
+  },
+  {
+    "plugin_id": "slate-digital--verbsuite-classics",
+    "name": "VerbSuite Classics",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "Single plugin hosting multiple Fusion-IR reverb models ('every iconic digital reverb in one plugin'). Neural-DSP Fortin Suite allowlist class.",
+    "public_url": "https://slatedigital.com/verbsuite-classics-digital-reverb-plugin/",
+    "evidence": [
+      "fixtures/identity/slate-verbsuite.html",
+      "observed_version 1.2.3.0"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uad-c-suite-c-axe",
+    "name": "UAD C-Suite C-Axe",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "Product-line token 'C-Suite'; each of C-Axe/C-Max/C-Vox is a discrete UAD plugin.",
+    "public_url": null,
+    "evidence": [
+      "Name-token false positive"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uad-c-suite-c-max",
+    "name": "UAD C-Suite C-Max",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "Product-line token 'C-Suite'.",
+    "public_url": null,
+    "evidence": [
+      "Name-token false positive"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uad-c-suite-c-vox",
+    "name": "UAD C-Suite C-Vox",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "Product-line token 'C-Suite'.",
+    "public_url": null,
+    "evidence": [
+      "Name-token false positive"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uad-engl-e646-vs-limited-edition",
+    "name": "UAD ENGL E646 VS Limited Edition",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "Single amp plugin; 'Limited Edition' is SKU marketing not a commerce pack.",
+    "public_url": null,
+    "evidence": [
+      "PA also has engl-e646-vs as plugin"
+    ]
+  },
+  {
+    "plugin_id": "slate-digital--repeater-slate-digital-edition",
+    "name": "Repeater (Slate Digital Edition)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow_with_dedupe",
+    "why": "Real plugin edition of d16 Repeater; NOT a bundle. Hygiene: duplicate of d16-group--repeater-slate-digital-edition (suite_component). Link alias; don't version from Slate hub stamp independently.",
+    "public_url": null,
+    "evidence": [
+      "wave6 identity-candidates.tsv P0 duplicate"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-delay-juice-pack",
+    "name": "IL Delay (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-delay-bank-juice-pack",
+    "name": "IL Delay Bank (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-equo-juice-pack",
+    "name": "IL EQUO (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-flangus-juice-pack",
+    "name": "IL Flangus (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-multiband-compressor-juice-pack",
+    "name": "IL Multiband Compressor (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-parametric-eq-juice-pack",
+    "name": "IL Parametric EQ (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-spectroman-juice-pack",
+    "name": "IL Spectroman (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-stereo-enhancer-juice-pack",
+    "name": "IL Stereo Enhancer (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-vocoder-juice-pack",
+    "name": "IL Vocoder (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  },
+  {
+    "plugin_id": "image-line--il-waveshaper-juice-pack",
+    "name": "IL WaveShaper (Juice Pack)",
+    "identity_kind": "plugin",
+    "proposed_kind": "plugin",
+    "confidence": "allow",
+    "why": "'(Juice Pack)' is historical product-line suffix; each row is a discrete IL plugin, not a pack of catalog rows.",
+    "public_url": "https://www.image-line.com/vst-downloads",
+    "evidence": [
+      "Name-token Pack false positive"
+    ]
+  }
+]

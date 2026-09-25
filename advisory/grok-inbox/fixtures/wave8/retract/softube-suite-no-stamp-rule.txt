@@ -1,0 +1,4 @@
+QUOTE: "Monoment Bass, Parallels, and Statement Lead: Fixed an issue... in version 2.6.41."
+SUITE: 2.6.42
+RULE: never stamp suite onto named SKUs (same class as Waves V17)
+SOURCE: refs/2026-09-25-softube-rn-suite-vs-sku-deep.md

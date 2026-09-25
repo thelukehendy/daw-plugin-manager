@@ -1,0 +1,10 @@
+{
+  "source_file": "soundtoys-release-log.html",
+  "bytes": 77809,
+  "quotes": {
+    "Soundtoys 5.5.5 Update": "My Account --> --> Release Log Read More Release Log &nbsp; Soundtoys 5.5.5 Update July 7, 2026 Improvements: Fixes intermittent stereo drop outs that would occasionally happen when instantiating PanMan Fixes issue with EchoBoy Rhythm Echo mode where edits to custom delay pattern",
+    "July 7, 2026": "ase Log Read More Release Log &nbsp; Soundtoys 5.5.5 Update July 7, 2026 Improvements: Fixes intermittent stereo drop outs that would occasionally happen when instantiating PanMan Fixes issue with EchoBoy Rhythm Echo mode where edits to custom delay patterns were not reflected in"
+  },
+  "url": "https://www.soundtoys.com/release-log/",
+  "role": "false_positive_guard_honest_cohort"
+}

@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+
+    <title>Roland Cloud</title>
+
+    <link rel="stylesheet" href="/content/css/style.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0124/1396.js" async="async"></script>
+
+    
+
+
+    <!-- Facebook domain verification -->
+    <meta name="facebook-domain-verification" content="zdbzx4h6wxuhkah0d19cdo3f4apoeh" />
+
+    <script type="text/javascript">
+        // store users first page https://rolandvs.atlassian.net/browse/MST-4452?atlOrigin=eyJpIjoiZTVmMDc4NjIxYzY2NDkwNmI2YzE4N2ZhNmNmNTdlZTIiLCJwIjoiaiJ9
+        function setCookie() {
+            var currentURL = window.location.href;
+            var capnCookie = getCookie("capnURL");
+
+            if (currentURL.indexOf("utm_source") > 0) {
+                if (capnCookie == null || capnCookie != currentURL) {
+                    var expires = "";
+                    var date = new Date();
+                    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                    document.cookie = "capnURL=" + (currentURL || "") + expires + "; path=/";
+                }
+            }
+        }
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0)
+                    return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+        $(document).ready(function () {
+            setCookie();
+            var a = getCookie("capnURL");
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LV8MN4XFF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8LV8MN4XFF');
+    </script>
+    <!-- OneTrust Cookies Consent Notice start for www.rolandcloud.com -->
+    <script type="text/javascript" src="https://cdn-ukwest.onetrust.com/consent/d1bd9fd8-0aea-4476-bc1c-39ed6d8b9232/OtAutoBlock.js"></script>
+    <script src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="d1bd9fd8-0aea-4476-bc1c-39ed6d8b9232"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end for www.rolandcloud.com -->
+    <!-- End Google Tag Manager -->
+    <!-- Adobe analytics -->
+    <script type="text/javascript">
+    (function () {
+      function getEnv() {
+        return window.location.hostname.includes('rolandcloud.com') ? 'production' : 'development';
+      }
+
+      function appendAdobeAnalyticsScript() {
+        var script = document.createElement('script');
+        script.src = getEnv() === 'production'
+          ? 'https://assets.adobedtm.com/9b498e8f2e23/9a4431cd379c/launch-840302a8cdb1.min.js'
+          : 'https://assets.adobedtm.com/9b498e8f2e23/9a4431cd379c/launch-bed61f5537d8-development.min.js';
+        script.async = true;
+        script.onerror = function () {
+          console.warn('Adobe Analytics script failed to load.');
+        };
+        document.body.appendChild(script);
+      }
+
+      function trackPageView() {
+        var dlPage = {
+          breadcrumbs: window.location.pathname,
+          culture: window.navigator.language || 'en-US',
+          pageName: document.title,
+          platform: 'Kentico CMS (RCW)',
+          siteName: 'rolandcloud.com',
+        };
+
+        var dl = { event: 'pageView', page: dlPage };
+
+        window.adobeDataLayer = window.adobeDataLayer || [];
+        window.adobeDataLayer.push(dl);
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        appendAdobeAnalyticsScript();
+
+        setTimeout(trackPageView, 500);
+      });
+    })();
+    </script>
+
+    
+</head>
+
+<body>
+
+
+    <a href="#wrapper" class="skip-to-content" title="Skip to Content">Skip to Content</a>
+
+    <header id="header" style="background-color:black;position:sticky;left:0px;right:0px;top:0px">
+        
+<div class="row" style="width=100% !important">
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10">
+        <nav class="navbar navbar-expand-lg navbar-toggler" style="margin-bottom:0px !important">
+            
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a href="/">
+                <img class="logo" src="/Content/images/rolandcloud-logo_TOPBAR.png" alt="Roland Cloud" />
+            </a>
+            
+            <div class="navMenuDiv">
+                <nav id="main-nav" class="collapse">
+	<ul>		
+			<li class="main-nav-item" >
+				<a style="color:white" href="/shop">Shop</a>
+			</li>
+			<li class="main-nav-item" >
+				<a style="color:white" href="/news">News</a>
+			</li>
+			<li class="main-nav-item" >
+				<a style="color:white" href="/memberships">Memberships</a>
+			</li>
+			<li class="main-nav-item" >
+				<a style="color:white" href="/support">Support</a>
+			</li>
+			<li class="main-nav-item" >
+				<a style="color:white" href="/about-roland">About</a>
+			</li>
+	</ul>
+</nav>
+
+            </div>
+            
+
+            <a id="user_join" style="display:none" class="primary-btn btnMenu btnMenuJoin btn withMarginRight btnMenuJoinOnly"><i class="fa fa-download"> </i> Roland Cloud Manager</a>
+
+            <div id="user_menu" style="display:none" class="header-profile collapsed" data-toggle="collapse" data-target=".profile-dropdown">
+                <span class="profile-image">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </span>
+                <span class="profile-name">
+                    <span id="user_first_name" class="name-field"></span>
+                    <span id="user_last_name" class="name-field"></span>
+                </span>
+                <div class="profile-dropdown collapse">
+                    <ul>
+                        <li><a href="/roland-account/">My Account</a></li>
+                        <li><a id="user_logout">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="no_user_menu" class="menuButtons">
+                <a id="rcmDownload" class="btn primary-btn btnMenu btnMenuDownloadRCM"><i class="fa fa-download"> </i> Roland Cloud Manager</a>
+                <a class="btn primary-btn btnMenu btnMenuSignIn" href="/roland-account/" style="width: 100px">My Account</a>
+            </div>
+
+        </nav>
+    </div>
+</div>
+<script type="text/javascript">
+    var storageStateKey = "backstage-state";
+    var storageSubscriptionsKey = "backstage-user-subscriptions-for-rcw";
+    var userState = JSON.parse(window.localStorage.getItem(storageStateKey));
+    var userSubscriptions = JSON.parse(window.localStorage.getItem(storageSubscriptionsKey)) || [];
+    var noUserMenu = document.getElementById("no_user_menu");
+    var userMenu = document.getElementById("user_menu");
+    var userJoin = document.getElementById("user_join")
+    var userFirstName = document.getElementById("user_first_name")
+    var userLastName = document.getElementById("user_last_name")
+    var userLogout = document.getElementById("user_logout");
+    var rcmDownload = document.getElementById('rcmDownload');
+    var isMobile =  (window.navigator.platform.indexOf("Win") == -1 && window.navigator.platform.indexOf("Mac") == -1)
+    var currentPath = window.location.pathname.toLowerCase();
+    var isDownloadPage=currentPath.includes("catalog/essentials/roland-cloud-manager");
+    rcmDownload.style.display = 'none';
+
+
+    if (!isMobile && !isDownloadPage) {
+        rcmDownload.style.display = 'inline-block';
+        var rcmDownloadLink = '/Catalog/Essentials/Roland-Cloud-Manager'
+
+        if(rcmDownload){
+            rcmDownload.setAttribute('href', rcmDownloadLink);
+        }
+    }
+
+    if (userState && userState.state.userInfo.email) {
+        noUserMenu.style.display = "none";
+        userMenu.style.display = "block";
+        userJoin.style.display = "block"
+        userFirstName.innerText = userState.state.userInfo.firstName;
+        userLastName.innerText = userState.state.userInfo.lastName;
+
+        userLogout.addEventListener("click", function () {
+            var credKey = Object.keys(localStorage).find(function (s) { return s.startsWith("backstage-credentials") });
+            window.localStorage.removeItem(storageStateKey);
+            window.localStorage.removeItem(credKey);
+            window.localStorage.removeItem(storageSubscriptionsKey);
+            window.location.href = '/roland-account/login';
+        });
+
+        window.isSignedIn = true;
+        window.isSubscribed = userSubscriptions.length > 0 && userSubscriptions.every(function (s) { return s.statusId === 4; /* 4 means subscribed */ })
+    }
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+        if (!window.isSignedIn)
+            Array.prototype.forEach.call(document.getElementsByClassName("show-anonymous"), function (el) { el.classList.remove("hidden"); });
+        if (window.isSignedIn && !window.isSubscribed)
+            Array.prototype.forEach.call(document.getElementsByClassName("show-unsubscribed"), function (el) { el.classList.remove("hidden"); });
+
+
+    });
+
+
+</script>
+<script>
+(function () {
+    var MOBILE_BREAKPOINT = 550;
+    var rcmDownloadLink = '/Catalog/Essentials/Roland-Cloud-Manager';
+
+    var currentPath = window.location.pathname.toLowerCase();
+    var isDownloadPage = currentPath.includes("catalog/essentials/roland-cloud-manager");
+
+    function init() {
+        var menu = document.getElementById("no_user_menu");
+        if (!menu) return;
+
+        var desktopMarkup = menu.innerHTML;
+
+        function getMobileMarkup() {
+            var html = '';
+
+            if (!isDownloadPage) {
+                html += `
+                    <a id="rcmDownload"
+                       class="btn primary-btn btnMenu btnMenuDownloadRCM"
+                       href="${rcmDownloadLink}"
+                       style="display:inline-block;width:30px;">
+                        <i class="fa fa-download"></i>
+                    </a>
+                `;
+            }
+
+            html += `
+                <a class="btn primary-btn btnMenu btnMenuSignIn"
+                   href="/roland-account/"
+                   style="width:30px;">
+                    <i class="fa fa-user"></i>
+                </a>
+            `;
+
+            return html;
+        }
+
+        function updateMenu() {
+            if (window.innerWidth < MOBILE_BREAKPOINT) {
+                if (!menu.classList.contains("mobile-menu")) {
+                    menu.innerHTML = getMobileMarkup();
+                    menu.classList.add("mobile-menu");
+                }
+            } else {
+                if (menu.classList.contains("mobile-menu")) {
+                    menu.innerHTML = desktopMarkup;
+                    menu.classList.remove("mobile-menu");
+                }
+            }
+        }
+
+        updateMenu();
+        window.addEventListener("resize", updateMenu);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+
+    </header>
+     
+
+
+<div class="generic">
+    <div class="container-fluid">
+        <div class="content-wrap">
+            <h1>Not Found - 404</h1>
+        </div>
+    </div>
+</div>
+          
+    <footer id="footer" style="background-color:black;">
+        
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-md-4">
+            <div class="footer-links">
+	<ul>
+			<li><a href="/contact-us">Contact Us</a></li>
+			<li><a href="/news">News</a></li>
+			<li><a href="/support">Support</a></li>
+			<li><a href="/policies">Policies</a></li>
+			<li><a href="/about">About Us</a></li>
+	</ul>
+</div>
+
+        </div>
+        
+        <div class="col-md-4">
+            <div class="footer-logo">
+                <img src="/Content/images/Roland_Cloud_Official_White-grad.png" alt="Roland" />
+                <p>© <span id="year"></span>. Roland Cloud. All Rights Reserved.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="footer-social">
+                <div class="social-icons">
+                    <a aria-label="X" href="https://x.com/therolandcloud" target="_blank" title="Link to X Page">
+                        <svg viewBox="0 0 24 24" width="0.9em" height="0.9em" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
+                    </a>
+                    <a aria-label="Facebook" href="https://www.facebook.com/therolandcloud" target="_blank" title="Link to Facebook Page">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a aria-label="Instagram" href="https://www.instagram.com/therolandcloud" target="_blank" title="Link to Instagram Page">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                    <a aria-label="YouTube" href="https://www.youtube.com/channel/UCvN88Pl91O0cEeS6lHbRcMA" target="_blank" title="Link to YouTube Page">
+                        <span class="fa fa-youtube"></span>
+                    </a>
+                </div>
+                
+
+<div id="localization-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content">
+
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Choose Language</h4>
+                </div>
+
+                
+                <div class="modal-body">
+
+                    
+					<ul id="localization-list" class="localization-list">
+							<li class=active>
+								<div class="radio-container">
+									<input checked="checked" id="language" name="language" type="radio" value="en-US" />
+									<label>English - United States</label>
+								</div>
+							</li>
+							<li >
+								<div class="radio-container">
+									<input id="language" name="language" type="radio" value="ja-JP" />
+									<label>Japanese - Japan</label>
+								</div>
+							</li>
+							<li >
+								<div class="radio-container">
+									<input id="language" name="language" type="radio" value="es-MX" />
+									<label>Spanish - Mexico</label>
+								</div>
+							</li>
+						
+					</ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="row" style="text-align: right">Version 2.1.0.26786</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+    </footer>
+
+    <div class="back-to-top"></div>
+
+    
+<script src="/Content/js/dist/vendor.min.js"></script>
+<script src="/Content/js/dist/master.min.js"></script>
+
+<script type="text/javascript">
+    (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, 'https://diffuser-cdn.app-us1.com/diffuser/diffuser.js', "vgo");
+    vgo('setAccount', '66978442');
+    vgo('setTrackByDefault', true);
+    vgo('process');
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "lane": 5,
+  "ask": "Ask5 identity classifier v2 + second sources",
+  "date": "2026-09-25",
+  "timezone": "America/Los_Angeles",
+  "draft": "inbox-drafts/2026-09-25-identity-classifier-v2-and-second-sources-deep.md",
+  "classifier": {
+    "rules": "fixtures/identity/classifier-v2-rules.json",
+    "pr_results": "fixtures/identity/classifier-v2-pr.json",
+    "test_set": {"high18": 18, "allow17": 17, "note": "derivation set formalized as rules; allowlist safety is the ship gate"},
+    "metrics": {
+      "positive_class": "bundle",
+      "tp": 18, "fn": 0, "fp": 0, "tn": 17,
+      "precision": 1.0, "recall": 1.0, "f1": 1.0
+    },
+    "allowlist_eaten": false,
+    "universe_tier1_name_pattern_rows": 71,
+    "universe_bundle_predictions_beyond_high18": 0
+  },
+  "second_sources": {
+    "secured": 18,
+    "total": 18,
+    "index": "fixtures/identity/second-sources-18.json",
+    "proofs_dir": "fixtures/identity/proofs/",
+    "html_dir": "fixtures/identity/second-src/"
+  },
+  "recommendation": "Ship 18 HIGH reclasses with second-source URLs; apply classifier allow-guards before any regex denylist; clear latestVersion on reclassed rows"
+}
