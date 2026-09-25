@@ -1,0 +1,9 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-106s",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 5651,
+  "sha256": "cecc621b3423c9296c253f50981f45d03ceb1aa8cdceb390c24459bb199bfa35",
+  "slug": "mf-106s",
+  "negative": true,
+  "detector": "soft404_missing_All_Formats_v_button"
+}

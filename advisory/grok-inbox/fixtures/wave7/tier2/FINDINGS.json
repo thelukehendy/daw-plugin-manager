@@ -1,0 +1,147 @@
+{
+  "wave": 7,
+  "ask": 3,
+  "lane": 3,
+  "date_pt": "2026-09-25",
+  "mode": "scout_only",
+  "tier2_status": "paused",
+  "catalog_action": "none",
+  "selection_formula": "score=(fillable_plugin_gaps*q_accept)+(yellows*q_raise*0.65); Class A preferred; skip Airwindows + soundset mountains",
+  "top5": [
+    {
+      "rank": 1,
+      "manufacturer_id": "audiothing",
+      "recon_score": 22,
+      "oracle_urls": [
+        "https://www.audiothing.net/plugin-updates/"
+      ],
+      "fixture_dir": "fixtures/tier2/audiothing",
+      "expected_accepts": 0,
+      "expected_raises": 0,
+      "note": "Table canary for ~55 greens; Toys yellows + Things-Tilt gap absent from table",
+      "catalog_gap": "audiothing--things-tilt (Things - Tilt)"
+    },
+    {
+      "rank": 2,
+      "manufacturer_id": "wave-arts",
+      "recon_score": 15,
+      "oracle_urls": [
+        "https://wavearts.com/support/version-history/dialog-2-04",
+        "https://wavearts.com/downloads"
+      ],
+      "fixture_dir": "fixtures/tier2/wave-arts",
+      "expected_accepts": "14-16",
+      "expected_raises": 0,
+      "note": "Best new-accept Class A; suite\u2260SKU; Dialog 2.11>Mac 2.10",
+      "catalog_plugin_names": [
+        "TrackPlug 7",
+        "MasterVerb 7",
+        "FinalPlug 7",
+        "MultiDynamics 7",
+        "Panorama 7",
+        "Convology XT",
+        "Dialog 2",
+        "IR Capture",
+        "Tube Saturator 2",
+        "Tube Saturator Vintage",
+        "MR Click 6",
+        "MR Noise 6",
+        "MR Gate 6",
+        "MR Hum 6",
+        "Power Suite 7",
+        "Master Restoration Suite 6",
+        "MlsTool",
+        "Sofa2Pan"
+      ]
+    },
+    {
+      "rank": 3,
+      "manufacturer_id": "audiority",
+      "recon_score": 8,
+      "oracle_urls": [
+        "https://www.audiority.com/plugin-versions/"
+      ],
+      "fixture_dir": "fixtures/tier2/audiority",
+      "expected_accepts": "0-1",
+      "expected_raises": 0,
+      "note": "Spatial D320 table-only new SKU; 13 yellows not on table",
+      "edition_aliases": {
+        "Distortion 1 mkII": "Distortion 1",
+        "Heavy Pedal mkII": "Heavy Pedal",
+        "Green Reaper GR9": "Green Reaper",
+        "NeonVerb MV2": "NeonVerb MV2",
+        "LDC2 Compander": "LDC2 Compander"
+      },
+      "table_only_sku": "Spatial D320 1.0.1"
+    },
+    {
+      "rank": 4,
+      "manufacturer_id": "denise-audio",
+      "recon_score": 4.6,
+      "oracle_urls": [
+        "https://www.deniseaudio.com/downloads",
+        "https://www.deniseaudio.com/legacy-downloads"
+      ],
+      "fixture_dir": "fixtures/tier2/denise-audio",
+      "expected_accepts": 10,
+      "expected_raises": 0,
+      "note": "Legacy page expands yield; Bass XL\u2260Bass XXL; Bad Tape\u2260Bad Tape 2"
+    },
+    {
+      "rank": 5,
+      "manufacturer_id": "madrona-labs",
+      "recon_score": 3,
+      "oracle_urls": [
+        "https://www.madronalabs.com/products/sumu",
+        "https://www.madronalabs.com/products/aalto",
+        "https://www.madronalabs.com/products/kaivo",
+        "https://www.madronalabs.com/products/virta",
+        "https://www.madronalabs.com/products/aaltoverb"
+      ],
+      "fixture_dir": "fixtures/tier2/madrona-labs",
+      "expected_accepts": 0,
+      "expected_raises": 0,
+      "note": "Aalto/Kaivo/Virta Mac/Win HOLD; Sumu+Aaltoverb canary",
+      "mac_win_holds": [
+        "Aalto 1.9.5/1.9.4",
+        "Kaivo 1.9.5/1.9.4",
+        "Virta 1.9.5/1.9.3"
+      ]
+    }
+  ],
+  "skipped": {
+    "airwindows": "policy locked",
+    "soundset_mountains": "Puremagnetik/Soniccouture/Impact/ProjectSAM score 0",
+    "class_b_higher_score": [
+      "hornet",
+      "wa-production",
+      "ddmf"
+    ],
+    "class_a_below_cut": {
+      "soundtheory_gullfoss": "score ~2\u00d71.15; Gullfoss-only PDF if later opened",
+      "dexed": "already green 1.0.1@90",
+      "blue-cat-audio": "33 green / 2 discontinued yellow \u2014 maintenance not assault"
+    },
+    "class_b_fixture_leftovers": {
+      "note": "Partial live fetches under fixtures/tier2/{hornet,wa-production,ddmf}/ are NOT part of this top-5 scout; left as leftovers only. Do not package for Muse as Class A wiring.",
+      "dirs": [
+        "fixtures/tier2/hornet",
+        "fixtures/tier2/wa-production",
+        "fixtures/tier2/ddmf"
+      ]
+    }
+  },
+  "outputs": {
+    "inbox_draft": "inbox-drafts/2026-09-25-tier2-top5-wiring-ready-scout.md",
+    "findings": "lane3/FINDINGS.json",
+    "fixtures": "fixtures/tier2/{audiothing,wave-arts,audiority,denise-audio,madrona-labs}/",
+    "each_vendor_has": [
+      "golden HTML",
+      "*.meta.json (url/sha256/fetched_at)",
+      "tips.json"
+    ]
+  },
+  "wiring_ready_tagline": "Wiring-ready after operator re-fetch; scout-only \u2014 no catalog action.",
+  "status": "DONE",
+  "packaging_note": "Parent may package \u226412 for Muse from the Class A five only."
+}

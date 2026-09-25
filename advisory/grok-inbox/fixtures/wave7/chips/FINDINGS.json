@@ -1,0 +1,357 @@
+{
+  "wave": 7,
+  "ask": 2,
+  "title": "chip-ready packs for accepted wave-6 oracles",
+  "generated_at": "2026-09-25T19:21:18.509882+00:00",
+  "generated_at_pt": "2026-09-25T12:20:00-07:00",
+  "advisor_only": true,
+  "no_catalog_write": true,
+  "no_git_commit": true,
+  "live_refetch_date": "2026-09-25",
+  "ready_line": "Ready for the engine to wire after operator re-fetch.",
+  "chips": [
+    {
+      "id": "moog-softwareupdate",
+      "draft": "inbox-drafts/2026-09-25-chip-moog-softwareupdate-ready.md",
+      "fixture_dir": "fixtures/chips/moog",
+      "engine_chip": "moog-softwareupdate-walk-v1",
+      "tips_observed": {
+        "mariana": "1.2.0",
+        "mf-101s": "1.3.0",
+        "mf-102s": "1.3.0",
+        "mf-103s": "1.3.0",
+        "mf-104s": "1.3.0",
+        "mf-105s": "1.3.0",
+        "mf-107s": "1.3.0",
+        "mf-108s": "1.3.0",
+        "mf-109s": "1.3.0"
+      },
+      "negative": "mf-106s soft-200 without All Formats v",
+      "gap_close": "mf-105s fixture confirmed tip 1.3.0 sha256 89f1eab5\u2026",
+      "identity_guard": "per-slug plugin_id only; never Mariana\u2194MF cross-stamp; never invent mf-106s",
+      "slugs_detail": {
+        "mariana": {
+          "plugin_id": "moog-music--mariana",
+          "tip": "1.2.0",
+          "observed_tips": [
+            "1.2.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mariana.html",
+          "bytes": 8459,
+          "sha256": "1e466a4fd8e500646185102bd60bc95fd947d8385641e6eb8f0d67d3fa7b338d",
+          "gap_close": false
+        },
+        "mf-101s": {
+          "plugin_id": "moog-music--mf-101s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-101s.html",
+          "bytes": 9895,
+          "sha256": "02c964afdc54f9f81d99809a6b8c97b7556828c1c892199c7c7b18059fbcbd94",
+          "gap_close": false
+        },
+        "mf-102s": {
+          "plugin_id": "moog-music--mf-102s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-102s.html",
+          "bytes": 10341,
+          "sha256": "6876f63b909bcd37221fe8e03d26f788debc2651c702e3a098eaf5a21950049d",
+          "gap_close": false
+        },
+        "mf-103s": {
+          "plugin_id": "moog-music--mf-103s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-103s.html",
+          "bytes": 9671,
+          "sha256": "24ee18c81f5a908fb74692f9066efa6bc03e7eb66f96b3a3a29d44b4cd9e1191",
+          "gap_close": false
+        },
+        "mf-104s": {
+          "plugin_id": "moog-music--mf-104s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-104s.html",
+          "bytes": 9895,
+          "sha256": "bcaa0edce91c99b867ae423327de3798a23d4881aa3a46881e431bb6ba61a2fe",
+          "gap_close": false
+        },
+        "mf-105s": {
+          "plugin_id": "moog-music--mf-105s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-105s.html",
+          "bytes": 18518,
+          "sha256": "89f1eab53d0f63db4b32d0ea118fafb2897bb665fc63f4543bbb3beaf58cee38",
+          "gap_close": true
+        },
+        "mf-106s": {
+          "plugin_id": null,
+          "tip": null,
+          "observed_tips": [],
+          "negative": true,
+          "fixture": "fixtures/chips/moog/moog-mf-106s.html",
+          "bytes": 5651,
+          "sha256": "cecc621b3423c9296c253f50981f45d03ceb1aa8cdceb390c24459bb199bfa35",
+          "gap_close": false
+        },
+        "mf-107s": {
+          "plugin_id": "moog-music--mf-107s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-107s.html",
+          "bytes": 9895,
+          "sha256": "225d53f940d68a8fc77192c4e8fa97793688e1f806766efadf2d73efb6fb8010",
+          "gap_close": false
+        },
+        "mf-108s": {
+          "plugin_id": "moog-music--mf-108s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-108s.html",
+          "bytes": 9895,
+          "sha256": "fd5d2df6c4eb84a181e79b9dea382fd650f40940235b0c6772e9a3e3a8587b9d",
+          "gap_close": false
+        },
+        "mf-109s": {
+          "plugin_id": "moog-music--mf-109s",
+          "tip": "1.3.0",
+          "observed_tips": [
+            "1.3.0"
+          ],
+          "negative": false,
+          "fixture": "fixtures/chips/moog/moog-mf-109s.html",
+          "bytes": 9895,
+          "sha256": "c3f515ae4171596bbfa0736355e1cb322e3399a56f238ffb31e303e785857496",
+          "gap_close": false
+        }
+      }
+    },
+    {
+      "id": "sonnox-rn-freeze",
+      "draft": "inbox-drafts/2026-09-25-chip-sonnox-rn-freeze-ready.md",
+      "fixture_dir": "fixtures/chips/sonnox",
+      "tips_observed": {
+        "sonnox--oxford-debuzzer": "3.01.0",
+        "sonnox--oxford-declicker": "3.01.0",
+        "sonnox--oxford-denoiser": "3.01.0",
+        "sonnox--fraunhofer-pro-codec": "4.00.0"
+      },
+      "posture": {
+        "restore_trio": "discontinued_frozen (farewell article)",
+        "pro_codec": "open raise after Muse re-fetch"
+      },
+      "negative": "wrong-rn.html storefront shell / missing h2 semver",
+      "identity_guard": "one RN \u2192 one plugin_id; never Restore\u2192Pro-Codec stamp"
+    },
+    {
+      "id": "ni-electron-updater-yml",
+      "draft": "inbox-drafts/2026-09-25-chip-ni-electron-updater-yml-ready.md",
+      "fixture_dir": "fixtures/chips/ni",
+      "engine_chip": "ni_access_yml_poller",
+      "tips_observed": {
+        "arm64/latest-mac.yml": "3.26.0",
+        "latest-mac.yml": "3.26.0",
+        "latest.yml": "3.26.0"
+      },
+      "releaseDate_arm64": "2026-09-08T11:39:13.368Z",
+      "negative": "wrong-path.yml NoSuchKey XML",
+      "identity_guard": "Native Access hub_app ONLY; never Komplete/Kontakt SKU matrix"
+    },
+    {
+      "id": "waves-downloads-canary",
+      "draft": "inbox-drafts/2026-09-25-chip-waves-downloads-canary-ready.md",
+      "fixture_dir": "fixtures/chips/waves",
+      "engine_chip": "waves_central_canary_poller",
+      "tips_observed": {
+        "waves--waves-central": {
+          "version": "17.0.4",
+          "display": "V17.0.4",
+          "mac_date": "Aug 02, 2026",
+          "win_date": "Aug 02, 2026",
+          "dmg_last_modified": "Sun, 02 Aug 2026 10:26:42 GMT"
+        }
+      },
+      "negative": "incapsula-stub.html ~212B",
+      "identity_guard": "Central hub_app ONLY; never stamp V17 onto plugin SKUs"
+    },
+    {
+      "id": "ua-connect-dmg",
+      "draft": "inbox-drafts/2026-09-25-chip-ua-connect-dmg-ready.md",
+      "fixture_dir": "fixtures/chips/ua",
+      "engine_chip": "ua_connect_brew_url_head_poller",
+      "tips_observed": {
+        "universal-audio--ua-connect": {
+          "version": "1.10.0",
+          "build": "3844",
+          "basename": "UA_Connect_1_10_0_3844_Mac.dmg",
+          "last_modified": "Mon, 14 Sep 2026 18:09:48 GMT"
+        }
+      },
+      "negative": "latest-mac.yml.hdr 403",
+      "identity_guard": "Connect hub_app ONLY; Connect \u2260 UAD suite 12.0"
+    },
+    {
+      "id": "ik-pm-cdn-referer",
+      "draft": "inbox-drafts/2026-09-25-chip-ik-pm-cdn-referer-ready.md",
+      "fixture_dir": "fixtures/chips/ik",
+      "engine_chip": "ik_pm_cdn_head_poller",
+      "tips_observed": {
+        "ik-multimedia--product-manager": {
+          "version": "1.1.15",
+          "cdn": "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_1.1.15.dmg",
+          "last_modified_with_referer": "Tue, 25 Aug 2026 16:25:00 GMT",
+          "without_referer": "403"
+        }
+      },
+      "negative": "pm-dmg-noref.hdr 403",
+      "identity_guard": "PM hub_app ONLY; never AmpliTube/Syntronik/T-RackS SKU stamp"
+    },
+    {
+      "id": "spitfire-cloudfront-path",
+      "draft": "inbox-drafts/2026-09-25-chip-spitfire-cloudfront-path-ready.md",
+      "fixture_dir": "fixtures/chips/spitfire",
+      "engine_chip": "spitfire_app_brew_url_head_poller",
+      "tips_observed": {
+        "spitfire--spitfire-audio-app": {
+          "version": "3.4.17",
+          "path": "SpitfireAudio.Mac-3.4.17.dmg",
+          "url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-3.4.17.dmg",
+          "http_status": 200
+        }
+      },
+      "negative": "wrong-semver.hdr (Mac-0.0.0 \u2192 403)",
+      "identity_guard": "Spitfire Audio app hub_app ONLY; never library/soundset greens"
+    }
+  ],
+  "fixture_inventory": {
+    "ik": [
+      "pm-dmg-noref.hdr",
+      "pm-dmg-noref.hdr.meta.json",
+      "pm-dmg-referer.hdr",
+      "pm-dmg-referer.hdr.meta.json"
+    ],
+    "moog": [
+      "moog-mariana.html",
+      "moog-mariana.html.meta.json",
+      "moog-mf-101s.html",
+      "moog-mf-101s.html.meta.json",
+      "moog-mf-102s.html",
+      "moog-mf-102s.html.meta.json",
+      "moog-mf-103s.html",
+      "moog-mf-103s.html.meta.json",
+      "moog-mf-104s.html",
+      "moog-mf-104s.html.meta.json",
+      "moog-mf-105s.html",
+      "moog-mf-105s.html.meta.json",
+      "moog-mf-106s.html",
+      "moog-mf-106s.html.meta.json",
+      "moog-mf-107s.html",
+      "moog-mf-107s.html.meta.json",
+      "moog-mf-108s.html",
+      "moog-mf-108s.html.meta.json",
+      "moog-mf-109s.html",
+      "moog-mf-109s.html.meta.json"
+    ],
+    "ni": [
+      "arm64-latest-mac.yml",
+      "arm64-latest-mac.yml.meta.json",
+      "latest-mac.yml",
+      "latest-mac.yml.meta.json",
+      "latest.yml",
+      "latest.yml.meta.json",
+      "wrong-path.yml",
+      "wrong-path.yml.meta.json"
+    ],
+    "sonnox": [
+      "Oxford_DeBuzzer_Release_Notes.html",
+      "Oxford_DeBuzzer_Release_Notes.html.meta.json",
+      "Oxford_DeClicker_Release_Notes.html",
+      "Oxford_DeClicker_Release_Notes.html.meta.json",
+      "Oxford_DeNoiser_Release_Notes.html",
+      "Oxford_DeNoiser_Release_Notes.html.meta.json",
+      "SonnoxFPCRel.html",
+      "SonnoxFPCRel.html.meta.json",
+      "TIPS.json",
+      "docs.html",
+      "docs.html.meta.json",
+      "farewell.html",
+      "farewell.html.meta.json",
+      "sonnox-docs.html",
+      "sonnox-docs.html.meta.json",
+      "sonnox-farewell.html",
+      "sonnox-farewell.html.meta.json",
+      "sonnox-rn-Oxford_DeBuzzer_Release_Notes.html",
+      "sonnox-rn-Oxford_DeBuzzer_Release_Notes.html.meta.json",
+      "sonnox-rn-Oxford_DeClicker_Release_Notes.html",
+      "sonnox-rn-Oxford_DeClicker_Release_Notes.html.meta.json",
+      "sonnox-rn-Oxford_DeNoiser_Release_Notes.html",
+      "sonnox-rn-Oxford_DeNoiser_Release_Notes.html.meta.json",
+      "sonnox-rn-SonnoxFPCRel.html",
+      "sonnox-rn-SonnoxFPCRel.html.meta.json",
+      "sonnox-rn-WRONG.hdr",
+      "sonnox-rn-WRONG.html",
+      "sonnox-rn-WRONG.html.meta.json",
+      "wrong-rn.html",
+      "wrong-rn.html.meta.json"
+    ],
+    "spitfire": [
+      "SpitfireAudio.Mac-0.0.0.dmg.hdr",
+      "SpitfireAudio.Mac-0.0.0.dmg.hdr.meta.json",
+      "SpitfireAudio.Mac-3.4.17.dmg.hdr",
+      "SpitfireAudio.Mac-3.4.17.dmg.hdr.meta.json",
+      "brew-spitfire-audio.json",
+      "brew-spitfire-audio.json.meta.json",
+      "brew-spitfire-audio.slim.json",
+      "brew-spitfire-audio.slim.json.meta.json",
+      "dmg.hdr",
+      "dmg.hdr.meta.json",
+      "dmg.url.txt",
+      "dmg.url.txt.meta.json",
+      "wrong-semver.hdr",
+      "wrong-semver.hdr.meta.json"
+    ],
+    "ua": [
+      "connect-dmg.hdr",
+      "connect-dmg.hdr.meta.json",
+      "latest-mac.yml.hdr",
+      "latest-mac.yml.hdr.meta.json"
+    ],
+    "waves": [
+      "central-dmg.hdr",
+      "central-dmg.hdr.meta.json",
+      "downloads.html",
+      "downloads.html.meta.json",
+      "incapsula-stub.html",
+      "incapsula-stub.html.meta.json"
+    ]
+  },
+  "success_criteria": {
+    "chip_markdowns": 7,
+    "findings_json": true,
+    "fixtures_chips_populated": true
+  }
+}

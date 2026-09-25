@@ -1,0 +1,13 @@
+HTTP/2 200 
+accept-ranges: bytes
+content-length: 554
+content-type: application/yaml
+etag: "a3bde3bc0d9c3c458a476759a6425893"
+last-modified: Thu, 10 Sep 2026 12:27:08 GMT
+server: WasabiS3/8.0.240-2026-07-17-daa4841f12
+x-amz-id-2: nY2et2MAosjs1QyNB/6IoH7ZGiKEW7KbiUMW0gfZPUoIpnPsrj20J3Sc5ywdmht1QS4koMMhoHsc
+x-amz-request-id: 28E15B76E5C61957:B
+x-wasabi-cm-reference-id: 1789053697 F8-R301-U44.prod3.ams 2811079146:26629340:47
+date: Fri, 25 Sep 2026 19:19:07 GMT
+alt-svc: h3=":443"; ma=93600,h3-29=":443"; ma=93600
+

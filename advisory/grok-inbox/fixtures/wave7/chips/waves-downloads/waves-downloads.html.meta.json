@@ -1,0 +1,12 @@
+{
+  "url": "https://www.waves.com/downloads",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 483,
+  "sha256": "8851e441b79eac768991f37e4d662a3514cbc2763fcbbf3f676a59d164567f29",
+  "tip": "17.0.4",
+  "display": "V17.0.4",
+  "date": "2026-08-02",
+  "raw_bytes": 114126,
+  "raw_sha256": "6e493e8924135db7a5df3009bf33681c791a8f6a752503fed4dffcf7c3dfbcd5",
+  "identity": "waves--waves-central"
+}

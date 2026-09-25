@@ -1,0 +1,10 @@
+{
+  "url": "https://wavearts.com/downloads",
+  "fetched_at": "2026-09-25T19:20:17Z",
+  "fetched_at_pt": "2026-09-25 ~12:18-12:20 PT",
+  "bytes": 54447,
+  "sha256": "6a04457f7ede1048cbf81a7961455a576bc4a0172a0bd0ca27fac211f32cccbd",
+  "http": 200,
+  "scout": "wave7-ask3-tier2-top5",
+  "note": "golden fixture \u2014 operator re-fetch required before catalog write"
+}

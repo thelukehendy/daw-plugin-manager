@@ -1,0 +1,16 @@
+HTTP/2 200 
+content-type: attachment
+content-length: 34556581
+last-modified: Wed, 04 Feb 2026 12:27:52 GMT
+x-amz-server-side-encryption: AES256
+content-disposition: binary/octet-stream
+accept-ranges: bytes
+server: AmazonS3
+date: Fri, 25 Sep 2026 18:56:49 GMT
+etag: "e8f64b8118174d339674f653d3d520e5"
+x-cache: Hit from cloudfront
+via: 1.1 6b0264d1694ae38286bac63d55b3986a.cloudfront.net (CloudFront)
+x-amz-cf-pop: HIO52-P3
+x-amz-cf-id: CrcFSoeU-q0RFw7NfM-4WPzl7zZyStXKWS8JNlUHbb3DaMharGn4zA==
+age: 1339
+

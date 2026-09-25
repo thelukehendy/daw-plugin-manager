@@ -1,0 +1,10 @@
+{
+  "url": "https://software.moogmusic.com/softwareUpdate/mf-104s",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 9895,
+  "sha256": "bcaa0edce91c99b867ae423327de3798a23d4881aa3a46881e431bb6ba61a2fe",
+  "slug": "mf-104s",
+  "tip": "1.3.0",
+  "plugin_id": "moog-music--mf-104s",
+  "plugin_id_alt": "moog--mf-104s"
+}

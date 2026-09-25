@@ -1,0 +1,135 @@
+{
+  "vendor": "wave-arts",
+  "oracle_urls": [
+    "https://wavearts.com/support/version-history/dialog-2-04",
+    "https://wavearts.com/downloads"
+  ],
+  "fetched_at_pt": "2026-09-25 12:20 PT",
+  "version_scheme": "vendor dotted \u2014 do NOT semver-normalize (7.11 stays 7.11; 7.01 stays 7.01)",
+  "parse_rule": "Version-history page: product name(s) then dotted version; grouped headings share one date. Prefer history tip over Mac/Win filename when they disagree. Filename corroboration: ProductN-XYZ.dmg \u2192 X.YZ (TrackPlug7-711 \u2192 7.11). Suite installer build \u2260 component versions.",
+  "newest_tips_hand_verified": [
+    {
+      "product": "Power Suite",
+      "catalog_name": "Power Suite 7",
+      "version": "7.01",
+      "kind": "installer_bundle",
+      "evidence": "PowerSuite7-701.dmg/.exe; history also lists 7.00 as prior"
+    },
+    {
+      "product": "TrackPlug",
+      "catalog_name": "TrackPlug 7",
+      "version": "7.11",
+      "date": "2025-08-20",
+      "kind": "plugin",
+      "evidence": "grouped heading + TrackPlug7-711.*"
+    },
+    {
+      "product": "MasterVerb",
+      "catalog_name": "MasterVerb 7",
+      "version": "7.03",
+      "date": "2025-08-20",
+      "kind": "plugin"
+    },
+    {
+      "product": "FinalPlug",
+      "catalog_name": "FinalPlug 7",
+      "version": "7.06",
+      "date": "2025-08-20",
+      "kind": "plugin"
+    },
+    {
+      "product": "MultiDynamics",
+      "catalog_name": "MultiDynamics 7",
+      "version": "7.09",
+      "date": "2025-08-20",
+      "kind": "plugin"
+    },
+    {
+      "product": "Panorama",
+      "catalog_name": "Panorama 7",
+      "version": "7.09",
+      "date": "2025-08-20",
+      "kind": "plugin"
+    },
+    {
+      "product": "Convology XT",
+      "catalog_name": "Convology XT",
+      "version": "1.34",
+      "kind": "plugin",
+      "evidence": "ConvologyXT-134.*"
+    },
+    {
+      "product": "IR Capture",
+      "catalog_name": "IR Capture",
+      "version": "1.9",
+      "kind": "plugin"
+    },
+    {
+      "product": "Tube Saturator",
+      "catalog_name": "Tube Saturator 2",
+      "version": "2.18",
+      "kind": "plugin",
+      "evidence": "TubeSaturator2-218.*"
+    },
+    {
+      "product": "Tube Saturator Vintage",
+      "catalog_name": "Tube Saturator Vintage",
+      "version": "1.11",
+      "kind": "plugin"
+    },
+    {
+      "product": "Dialog",
+      "catalog_name": "Dialog 2",
+      "version": "2.11",
+      "date": "2024-04-23",
+      "kind": "plugin",
+      "evidence": "history tip; Win Dialog2-211.exe; Mac Dialog2-210.dmg STALE"
+    },
+    {
+      "product": "MR Click",
+      "catalog_name": "MR Click 6",
+      "version": "6.10",
+      "date": "2024-04-03",
+      "kind": "plugin",
+      "evidence": "history tip; Win MRClick6-610.exe; Mac MRClick6-609.dmg may lag"
+    },
+    {
+      "product": "MR Noise",
+      "catalog_name": "MR Noise 6",
+      "version": "6.10",
+      "kind": "plugin",
+      "evidence": "Win MRNoise6-610.exe; Mac MRNoise6-609.dmg \u2014 require own history hit before accept; do not copy from MR Click"
+    },
+    {
+      "product": "MR Gate",
+      "catalog_name": "MR Gate 6",
+      "version": "6.09",
+      "kind": "plugin",
+      "evidence": "MRGate6-609.* both platforms"
+    },
+    {
+      "product": "MR Hum",
+      "catalog_name": "MR Hum 6",
+      "version": "6.09",
+      "kind": "plugin",
+      "evidence": "MRHum6-609.*"
+    },
+    {
+      "product": "Master Restoration Suite",
+      "catalog_name": "Master Restoration Suite 6",
+      "version": "6.09",
+      "kind": "installer_bundle",
+      "evidence": "MasterRestorationSuite6-609.*"
+    }
+  ],
+  "traps": [
+    "Grouped heading: \"TrackPlug 7.11, MasterVerb 7.03, FinalPlug 7.06, MultiDynamics 7.09, Panorama 7.09\" + one date \u2014 regex wanting version+date keeps only Panorama",
+    "Power Suite / Master Restoration Suite installer build \u2260 component versions (vendor wording)",
+    "Dialog history 2.11 beats Mac dmg 2.10 \u2014 never \"Mac-current wins\"",
+    "MR Noise/Hum/Gate need own tips \u2014 do not stamp MR Click 6.10 onto siblings"
+  ],
+  "fixture": [
+    "fixtures/tier2/wave-arts/version-history.html",
+    "fixtures/tier2/wave-arts/downloads.html"
+  ]
+}

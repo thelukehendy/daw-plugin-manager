@@ -1,0 +1,10 @@
+{
+  "url": "https://www.deniseaudio.com/legacy-downloads",
+  "fetched_at": "2026-09-25T19:20:17Z",
+  "fetched_at_pt": "2026-09-25 ~12:18-12:20 PT",
+  "bytes": 58634,
+  "sha256": "656f9ccde68a8a20b88d5aa2111823011393257ed580eda11b8257e180191c26",
+  "http": 200,
+  "scout": "wave7-ask3-tier2-top5",
+  "note": "golden fixture \u2014 operator re-fetch required before catalog write"
+}

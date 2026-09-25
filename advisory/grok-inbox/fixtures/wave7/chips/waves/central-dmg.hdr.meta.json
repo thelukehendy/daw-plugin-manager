@@ -1,0 +1,9 @@
+{
+  "url": "https://cf-installers.waves.com/WavesCentral/Install_Waves_Central.dmg",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 551,
+  "sha256": "9118a7fce93b2409ce1a1947c5fa5a4c0a4fb8f7e4a54118c468fba0ebeb49da",
+  "method": "HEAD",
+  "role": "Last-Modified_fallback",
+  "last_modified": "Sun, 02 Aug 2026 10:26:42 GMT"
+}

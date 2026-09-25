@@ -1,0 +1,10 @@
+{
+  "url": "https://www.madronalabs.com/products/sumu",
+  "fetched_at": "2026-09-25T19:20:17Z",
+  "fetched_at_pt": "2026-09-25 ~12:18-12:20 PT",
+  "bytes": 18778,
+  "sha256": "4452d896931e13a19f0f3813f2cad93ef74edfc7c1c1b4a3a85450550adc46cd",
+  "http": 200,
+  "scout": "wave7-ask3-tier2-top5",
+  "note": "golden fixture \u2014 operator re-fetch required before catalog write"
+}

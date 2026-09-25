@@ -1,0 +1,9 @@
+{
+  "url": "https://builds.uaudio.com/apps/UA_Connect/latest-mac.yml",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 334,
+  "sha256": "a58136a137ab761fb04b78a274e73514a488511a93e2e4308157623e8209566f",
+  "negative": true,
+  "expected_status": 403,
+  "detector": "no_public_latest_yml_listing_403"
+}

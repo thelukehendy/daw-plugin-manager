@@ -1,0 +1,11 @@
+{
+  "url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-3.4.17.dmg",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 519,
+  "sha256": "a629c98e8cad24f250b771d1e121fe72aa7e405f8b868e9d43292f96303c81d2",
+  "method": "HEAD",
+  "tip": "3.4.17",
+  "last_modified": "Wed, 04 Feb 2026 12:27:52 GMT",
+  "identity": "spitfire--spitfire-audio-app",
+  "hub_app_only": true
+}

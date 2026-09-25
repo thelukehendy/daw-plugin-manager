@@ -1,0 +1,38 @@
+{
+  "Oxford_DeBuzzer_Release_Notes.html": {
+    "bytes": 13587,
+    "sha256": "f954fc62d5c752073a8e37eb048bc2bfbbd6fa9d5a51a030869c9b87bbcf0cc1",
+    "first_versions": [],
+    "dates": []
+  },
+  "Oxford_DeClicker_Release_Notes.html": {
+    "bytes": 13624,
+    "sha256": "1437f2e15cd2162432efa0d1d37e8cf954c4c7f9082f97102639c8acb32e09f2",
+    "first_versions": [],
+    "dates": []
+  },
+  "Oxford_DeNoiser_Release_Notes.html": {
+    "bytes": 13596,
+    "sha256": "533c3faacbfbecc5f4fc95c86e4b8d74696d1de48fa1fe31be4d8c3ef691b85a",
+    "first_versions": [],
+    "dates": []
+  },
+  "SonnoxFPCRel.html": {
+    "bytes": 14251,
+    "sha256": "789c0b8764445b9cfa5d321f17ed88dfb948ff60161bb4d0265793483b4546c4",
+    "first_versions": [],
+    "dates": []
+  },
+  "docs.html": {
+    "bytes": 249329,
+    "sha256": "35d486a8bed54b70c0f88e126edf3692ca079f9910bc899fe56b1fe41271a2b9",
+    "first_versions": [],
+    "dates": []
+  },
+  "farewell.html": {
+    "bytes": 226362,
+    "sha256": "2792b55e7e7c3681dd322192e3c9d5d118f3c8f0ea9fba66496038d4c8c60581",
+    "first_versions": [],
+    "dates": []
+  }
+}

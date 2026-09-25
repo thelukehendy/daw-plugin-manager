@@ -1,0 +1,10 @@
+{
+  "url": "https://builds.uaudio.com/apps/UA_Connect/UA_Connect_1_10_0_3844_Mac.dmg",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 610,
+  "sha256": "0f03de609b47154834b9e0642d4dd5666024b23e27189f7fc1450241b37bbf8b",
+  "tip": "1.10.0",
+  "build": "3844",
+  "method": "HEAD",
+  "last_modified": "Mon, 14 Sep 2026 18:09:48 GMT"
+}
