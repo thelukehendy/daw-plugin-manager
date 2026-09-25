@@ -1,7 +1,7 @@
 {
-  "comment": "Public catalog endpoints for shipped builds. Synced to GitHub owner/repo.",
+  "comment": "Legacy branch URLs kept for older builds. App v2 fetches catalog-version.json then commit-pinned endpoints — do not use these @main catalog.json URLs for updates.",
   "urls": [
-    "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json",
-    "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json"
+    "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/main/catalog/catalog.json",
+    "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@main/catalog/catalog.json"
   ]
 }

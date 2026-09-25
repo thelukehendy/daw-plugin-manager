@@ -10,6 +10,12 @@
     "build": "electron-vite build",
     "preview": "env -u ELECTRON_RUN_AS_NODE electron-vite preview",
     "scan:cli": "tsx scripts/scan-cli.ts",
+    "test:contracts": "tsx scripts/test-catalog-contracts.ts && tsx scripts/test-catalog-feed-v2.ts",
+    "test:feed": "tsx scripts/test-catalog-feed-v2.ts",
+    "test:matcher": "tsx scripts/test-matcher-rules.ts",
+    "test:golden": "tsx scripts/golden-scan-check.ts --with-previous",
+    "test": "npm run test:contracts && npm run test:matcher && npm run test:golden",
+    "scan:snapshot": "tsx scripts/capture-scan-snapshot.ts",
     "catalog:validate": "tsx scripts/validate-catalog.ts",
     "electron:fetch": "node scripts/fetch-electron.js",
     "catalog:refresh": "tsx scripts/catalog/refresh.ts",
@@ -30,13 +36,18 @@
     },
     "files": [
       "out/**/*",
-      "catalog/**/*",
+      "catalog/catalog.json",
+      "catalog/remote-urls.json",
       "package.json"
     ],
     "extraResources": [
       {
-        "from": "catalog",
-        "to": "catalog"
+        "from": "catalog/catalog.json",
+        "to": "catalog/catalog.json"
+      },
+      {
+        "from": "catalog/remote-urls.json",
+        "to": "catalog/remote-urls.json"
       }
     ],
     "mac": {

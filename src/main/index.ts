@@ -1,18 +1,30 @@
-import { app, BrowserWindow, ipcMain, shell } from 'electron'
+import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron'
+import { writeFile } from 'fs/promises'
 import { join } from 'path'
 import { runFullScan } from './scanService'
-import type { ScanProgress } from '../shared/types'
+import { loadLastLibrary } from './lastLibrary'
+import { CatalogVerifyError, refreshCatalog } from './catalog/catalogService'
+import {
+  CATALOG_VERIFY_USER_MESSAGE,
+  rendererCatalogMeta,
+  scrubUserFacingError,
+} from './catalog/publicFacing'
+import type { ScanProgress, ScanReport } from '../shared/types'
+import { toScanSnapshot } from '../shared/scanSnapshot'
 
 let mainWindow: BrowserWindow | null = null
+/** Latest full scan this session; source for the anonymized snapshot export. */
+let lastScan: ScanReport | null = null
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
-    width: 1180,
-    height: 860,
+    width: 1280,
+    height: 880,
     minWidth: 900,
     minHeight: 640,
     title: 'DAW Plugin Manager',
-    backgroundColor: '#14181f',
+    backgroundColor: '#0e1418',
+    show: false,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       contextIsolation: true,
@@ -26,12 +38,15 @@ function createWindow(): void {
   } else {
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   }
+
+  mainWindow.once('ready-to-show', () => {
+    mainWindow?.show()
+    mainWindow?.focus()
+  })
 }
 
 app.whenReady().then(() => {
-  // Safety: this app is discovery-only. Never grant write FS APIs to renderer.
   createWindow()
-
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
@@ -41,6 +56,23 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
 
+ipcMain.handle('library:loadLast', async () => loadLastLibrary())
+
+ipcMain.handle('catalog:refresh', async () => {
+  try {
+    const catalog = await refreshCatalog({
+      appPath: app.getAppPath(),
+      userDataPath: app.getPath('userData'),
+    })
+    return rendererCatalogMeta(catalog)
+  } catch (err) {
+    if (err instanceof CatalogVerifyError) {
+      throw new Error(CATALOG_VERIFY_USER_MESSAGE)
+    }
+    throw new Error(scrubUserFacingError(err instanceof Error ? err.message : String(err)))
+  }
+})
+
 ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[] }) => {
   const sendProgress = (progress: ScanProgress) => {
     if (!event.sender.isDestroyed()) {
@@ -48,13 +80,33 @@ ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[]
     }
   }
 
-  return runFullScan(sendProgress, {
+  // Indexed catalog match + setImmediate yields keep the renderer painting
+  // progressive DAW/vendor updates via scan:progress.
+  const report = await runFullScan(sendProgress, {
     extraPluginRoots: options?.extraPluginRoots,
     appPath: app.getAppPath(),
+    userDataPath: app.getPath('userData'),
   })
+  lastScan = report
+  return report
 })
 
-/** Open manufacturer portal / download page in the user's default browser. */
+ipcMain.handle('scan:saveSnapshot', async () => {
+  if (!lastScan) return { ok: false, error: 'Run a scan first, then save it.' }
+  const snapshot = toScanSnapshot(lastScan.plugins, lastScan.daws, lastScan.system)
+  const opts = {
+    title: 'Save anonymized scan',
+    defaultPath: `daw-plugin-scan-${snapshot.capturedAt}.json`,
+    filters: [{ name: 'JSON', extensions: ['json'] }],
+  }
+  const result = mainWindow
+    ? await dialog.showSaveDialog(mainWindow, opts)
+    : await dialog.showSaveDialog(opts)
+  if (result.canceled || !result.filePath) return { ok: false, canceled: true }
+  await writeFile(result.filePath, JSON.stringify(snapshot, null, 1) + '\n', 'utf8')
+  return { ok: true, pluginCount: snapshot.plugins.length }
+})
+
 ipcMain.handle('shell:openExternal', async (_event, url: string) => {
   if (!url || typeof url !== 'string') return { ok: false, error: 'Invalid URL' }
   try {
@@ -65,7 +117,7 @@ ipcMain.handle('shell:openExternal', async (_event, url: string) => {
     await shell.openExternal(parsed.toString())
     return { ok: true }
   } catch (err) {
-    return { ok: false, error: String(err) }
+    return { ok: false, error: 'Could not open that link.' }
   }
 })
 
@@ -73,5 +125,6 @@ ipcMain.handle('app:getInfo', async () => ({
   version: app.getVersion(),
   name: app.getName(),
   discoveryOnly: true,
-  policy: 'This utility never deletes, overwrites, or installs software. Updates are opened in your browser for you to install.',
+  policy:
+    'This utility never deletes, overwrites, or installs software. Updates are opened in your browser for you to install.',
 }))

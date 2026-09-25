@@ -1,9 +1,13 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
+import { createRequire } from 'module'
 import type { CatalogPlugin, PluginCatalog, VersionEvidence } from '../../src/shared/types'
 import { assertPortalUrl, type VersionUpdate } from './http'
 import { scrapers } from './scrapers'
 import { discoverPublicVersions } from './discovery'
+
+const require = createRequire(import.meta.url)
+require('./lib/blockLegacyWrites').assertLegacyCatalogWritesAllowed('catalog:refresh')
 
 function markVerified(
   plugin: CatalogPlugin,

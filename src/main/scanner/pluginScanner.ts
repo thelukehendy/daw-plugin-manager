@@ -1,7 +1,7 @@
 import { readdir, stat } from 'fs/promises'
 import { existsSync } from 'fs'
 import { basename, extname, join } from 'path'
-import type { InstalledPlugin, PluginFormat } from '../../shared/types'
+import type { AuComponentKey, InstalledPlugin, PluginFormat } from '../../shared/types'
 import { PLUGIN_EXTENSIONS, SKIP_DIR_NAMES, getPluginRoots } from './paths'
 import { readInfoPlist } from './plistReader'
 import { canonicalizeManufacturer, productFamilyName } from './grouping'
@@ -72,7 +72,6 @@ const BUNDLE_VENDOR_MAP: Record<string, string> = {
   // NOTE: do not map bare "de" / "eu" / "ch" — those are country-code bundle prefixes
   brainworx: 'Plugin Alliance',
   Brainworx: 'Plugin Alliance',
-  bettermaker: 'Bettermaker',
   ch: 'Celera',
   acon: 'Acon Digital',
   acondigital: 'Acon Digital',
@@ -126,7 +125,6 @@ const BUNDLE_VENDOR_MAP: Record<string, string> = {
   tekitaudio: "Tek'it Audio",
   myCompany: 'Kiive Audio',
   mycompany: 'Kiive Audio',
-  uaudio: 'Universal Audio',
   'universal-audio': 'Universal Audio',
   universalaudio: 'Universal Audio',
 }
@@ -172,6 +170,31 @@ interface BundleMeta {
   bundleId?: string
   manufacturer?: string
   modifiedAt?: string
+  auComponents?: AuComponentKey[]
+  auVendor?: string
+}
+
+function readAuComponents(data: Record<string, unknown>): {
+  keys: AuComponentKey[]
+  vendor?: string
+} {
+  const list = data.AudioComponents
+  if (!Array.isArray(list)) return { keys: [] }
+  const keys: AuComponentKey[] = []
+  let vendor: string | undefined
+  for (const entry of list as Array<Record<string, unknown>>) {
+    const manufacturer = typeof entry.manufacturer === 'string' ? entry.manufacturer : ''
+    if (!manufacturer) continue
+    keys.push({
+      manufacturer,
+      subtype: typeof entry.subtype === 'string' ? entry.subtype : undefined,
+      type: typeof entry.type === 'string' ? entry.type : undefined,
+    })
+    const name = typeof entry.name === 'string' ? entry.name : ''
+    const colon = name.indexOf(':')
+    if (!vendor && colon > 0) vendor = name.slice(0, colon).trim()
+  }
+  return { keys, vendor }
 }
 
 async function readBundleMeta(bundlePath: string, fallbackName: string): Promise<BundleMeta> {
@@ -181,6 +204,8 @@ async function readBundleMeta(bundlePath: string, fallbackName: string): Promise
   let manufacturer: string | undefined
   let name = fallbackName
   let modifiedAt: string | undefined
+  let auComponents: AuComponentKey[] | undefined
+  let auVendor: string | undefined
 
   try {
     const s = await stat(bundlePath)
@@ -201,9 +226,9 @@ async function readBundleMeta(bundlePath: string, fallbackName: string): Promise
           fallbackName
         manufacturer = vendorFromBundleId(bundleId)
 
-        // AudioComponents manufacturer code sometimes present on AU/AAX duals
-        const ac = data.AudioComponents as Array<{ manufacturer?: string; name?: string }> | undefined
-        if (ac?.[0]?.name && !name) name = ac[0].name
+        const au = readAuComponents(data)
+        if (au.keys.length) auComponents = au.keys
+        auVendor = au.vendor
       }
     } catch {
       /* ignore corrupt plists */
@@ -215,7 +240,15 @@ async function readBundleMeta(bundlePath: string, fallbackName: string): Promise
     version = await readNestedVersion(bundlePath)
   }
 
-  return { name: stripExtension(name), version, bundleId, manufacturer, modifiedAt }
+  return {
+    name: stripExtension(name),
+    version,
+    bundleId,
+    manufacturer,
+    modifiedAt,
+    auComponents,
+    auVendor,
+  }
 }
 
 function cleanVersionString(version: string): string {
@@ -280,6 +313,8 @@ interface RawHit {
   path: string
   bundleId?: string
   modifiedAt?: string
+  auComponents?: AuComponentKey[]
+  auVendor?: string
 }
 
 async function scanDirectory(
@@ -335,6 +370,8 @@ async function scanDirectory(
         path: full,
         bundleId: meta.bundleId,
         modifiedAt: meta.modifiedAt,
+        auComponents: meta.auComponents,
+        auVendor: meta.auVendor,
       })
       continue
     }
@@ -437,6 +474,9 @@ export async function scanPlugins(
         formats: [hit.format],
         paths: [hit.path],
         bundleId: hit.bundleId,
+        bundleIds: hit.bundleId ? [hit.bundleId] : [],
+        auComponents: hit.auComponents ? [...hit.auComponents] : [],
+        auVendor: hit.auVendor,
         manufacturerHint: hit.manufacturerHint,
         modifiedAt: hit.modifiedAt,
       })
@@ -446,6 +486,16 @@ export async function scanPlugins(
     if (!existing.formats.includes(hit.format)) existing.formats.push(hit.format)
     if (!existing.paths.includes(hit.path)) existing.paths.push(hit.path)
     if (!existing.bundleId && hit.bundleId) existing.bundleId = hit.bundleId
+    if (hit.bundleId && !existing.bundleIds?.includes(hit.bundleId)) {
+      existing.bundleIds = [...(existing.bundleIds || []), hit.bundleId]
+    }
+    for (const au of hit.auComponents || []) {
+      const dup = existing.auComponents?.some(
+        (k) => k.manufacturer === au.manufacturer && k.subtype === au.subtype
+      )
+      if (!dup) existing.auComponents = [...(existing.auComponents || []), au]
+    }
+    if (!existing.auVendor && hit.auVendor) existing.auVendor = hit.auVendor
   }
 
   onProgress?.('Merging plugin formats', 90)

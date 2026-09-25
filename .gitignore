@@ -16,3 +16,6 @@ scan-report.json
 # weekly export snapshots (tracked via MANIFEST.md)
 /catalog-store/backups/*/
 !/catalog-store/backups/MANIFEST.md
+
+# local UI preview data (real scan, never commit)
+/src/renderer/public/__dev-*

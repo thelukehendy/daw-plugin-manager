@@ -6,6 +6,7 @@
  * Env:
  *   STICKY_LIMIT     default 40
  *   STICKY_DRY_RUN   "1" = no catalog writes
+ *   ALLOW_LEGACY_CATALOG_WRITE=1  archive only — never for shipping
  */
 const { readFileSync, writeFileSync } = require('node:fs')
 const { CATALOG_PATH } = require('./lib/paths')
@@ -23,8 +24,9 @@ const {
 } = require('./lib/accuracyGate')
 const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('./lib/knownSourcesJs')
 
-const LIMIT = Math.max(1, Number(process.env.STICKY_LIMIT || 200))
 const DRY_RUN = process.env.STICKY_DRY_RUN === '1'
+const ALLOW_CATALOG_WRITE = process.env.ALLOW_LEGACY_CATALOG_WRITE === '1'
+const LIMIT = Math.max(1, Number(process.env.STICKY_LIMIT || 200))
 const FRESH_DAYS = Math.max(1, Number(process.env.CATALOG_FRESH_DAYS || 60))
 
 function loadManufacturerMap() {
@@ -32,14 +34,15 @@ function loadManufacturerMap() {
 }
 
 function markVerified(plugin, version, sourceUrl) {
-  plugin.latestVersion = normalizeVersion(version)
+  // Findings only — never stamp updatePortalUrl or publish latestVersion here.
   plugin.versionEvidence = 'page-confirmed'
   plugin.versionSourceUrl = sourceUrl
   plugin.versionVerifiedAt = new Date().toISOString().slice(0, 10)
-  plugin.updatePortalUrl = plugin.updatePortalUrl || sourceUrl
-  const stamp = `verifiedPublic:${plugin.latestVersion}@${sourceUrl}`
+  const proposed = normalizeVersion(version)
+  const stamp = `verifiedPublic:${proposed}@${sourceUrl}`
   const notes = (plugin.notes || '').replace(/\s*verifiedPublic:\S+/g, '').trim()
   plugin.notes = notes ? `${notes} ${stamp}` : stamp
+  plugin._proposedLatestVersion = proposed
 }
 
 async function reverifyOne(gap, knownSources, manufacturerMap) {
@@ -181,13 +184,26 @@ async function main() {
     }
   }
 
-  if (!DRY_RUN) {
+  if (ALLOW_CATALOG_WRITE && !DRY_RUN) {
     if (hits) {
+      console.warn(
+        '[sticky] ALLOW_LEGACY_CATALOG_WRITE=1 — writing catalog.json (archive only)'
+      )
       catalog.updatedAt = new Date().toISOString()
       catalog.catalogSource = catalog.catalogSource || 'sticky-reverify'
       writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
     }
     if (promotions.length) {
+      mergeDiscoveredSources(known, promotions)
+      saveKnownSources(known)
+    }
+  } else {
+    if (hits) {
+      console.log(
+        '[sticky] Skipping catalog.json write. Set ALLOW_LEGACY_CATALOG_WRITE=1 only for archive.'
+      )
+    }
+    if (!DRY_RUN && promotions.length) {
       mergeDiscoveredSources(known, promotions)
       saveKnownSources(known)
     }

@@ -2,6 +2,12 @@
 /**
  * Accuracy-first smart scrub orchestrator.
  *
+ * BLOCKED by default — catalog.json is store-export only.
+ * See scripts/catalog/lib/blockLegacyWrites.js
+ */
+require('./lib/blockLegacyWrites').assertLegacyCatalogWritesAllowed('catalog:smart-scrub')
+
+/**
  * 1) Build gap queue + coverage
  * 2) Sticky-URL reverify (cheap, no Gemini) → page-confirmed
  * 3) Flash Lite extract + page-confirm (primary Gemini path, ~500 RPD free)

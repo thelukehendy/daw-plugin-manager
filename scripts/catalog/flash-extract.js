@@ -40,6 +40,8 @@ const { loadKnownSources, saveKnownSources, mergeDiscoveredSources } = require('
 
 const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY
 const DRY_RUN = process.env.FLASH_DRY_RUN === '1'
+/** Archive/dev only — never write latestVersion / portals into published catalog.json. */
+const ALLOW_CATALOG_WRITE = process.env.ALLOW_LEGACY_CATALOG_WRITE === '1'
 const SKIP_SMART = process.env.FLASH_SKIP_SMART === '1'
 const LIMIT = Math.max(1, Number(process.env.FLASH_LIMIT || 480))
 const CHEAP_RPM = Math.max(1, Number(process.env.FLASH_CHEAP_RPM || 12))
@@ -251,15 +253,42 @@ ${snippet}
 }
 
 function markVerified(plugin, version, sourceUrl, via) {
-  plugin.latestVersion = normalizeVersion(version)
+  // Findings / evidence only. Never stamp updatePortalUrl (source ≠ portal).
+  // Do not assign latestVersion onto the published catalog object.
   plugin.versionEvidence = 'page-confirmed'
   plugin.versionSourceUrl = sourceUrl
   plugin.versionVerifiedAt = new Date().toISOString().slice(0, 10)
-  plugin.updatePortalUrl = plugin.updatePortalUrl || sourceUrl
-  const stamp = `verifiedPublic:${plugin.latestVersion}@${sourceUrl}`
+  const proposed = normalizeVersion(version)
+  const stamp = `verifiedPublic:${proposed}@${sourceUrl}`
   const notes = (plugin.notes || '').replace(/\s*verifiedPublic:\S+/g, '').trim()
   const tag = via ? ` flash:${via}` : ''
   plugin.notes = notes ? `${notes} ${stamp}${tag}` : `${stamp}${tag}`
+  plugin._proposedLatestVersion = proposed
+}
+
+function maybeWriteCatalog(catalog, known, promotions, stats) {
+  if (ALLOW_CATALOG_WRITE && !DRY_RUN && (stats.hits || promotions.length)) {
+    console.warn(
+      '[flash] ALLOW_LEGACY_CATALOG_WRITE=1 — writing catalog.json (archive only; never for shipping)'
+    )
+    catalog.updatedAt = new Date().toISOString()
+    catalog.catalogSource = 'flash-extract-parallel'
+    writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
+    if (promotions.length) {
+      mergeDiscoveredSources(known, promotions)
+      saveKnownSources(known)
+    }
+    return
+  }
+  if (stats.hits || promotions.length) {
+    console.log(
+      '[flash] Skipping catalog.json write (findings stay in escalation/usage). Set ALLOW_LEGACY_CATALOG_WRITE=1 only for archive.'
+    )
+  }
+  if (!DRY_RUN && promotions.length) {
+    mergeDiscoveredSources(known, promotions)
+    saveKnownSources(known)
+  }
 }
 
 function shouldEscalate(reason, meta = {}) {
@@ -523,11 +552,9 @@ async function main() {
         lastVerifiedAt: new Date().toISOString().slice(0, 10),
         addedBy: 'discovery'
       })
-      // Flush periodically so long runs keep progress
+      // Flush periodically only when legacy catalog writes are explicitly allowed
       if (stats.hits % 25 === 0) {
-        catalog.updatedAt = new Date().toISOString()
-        catalog.catalogSource = 'flash-extract-parallel'
-        writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
+        maybeWriteCatalog(catalog, known, promotions, stats)
       }
     })
   }
@@ -706,15 +733,7 @@ async function main() {
   await Promise.all(cheapModels.map((m) => cheapWorker(m)))
 
   // Persist cheap-tier progress before smart finishes / crashes.
-  if (!DRY_RUN && (stats.hits || promotions.length)) {
-    catalog.updatedAt = new Date().toISOString()
-    catalog.catalogSource = 'flash-extract-parallel'
-    writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
-    if (promotions.length) {
-      mergeDiscoveredSources(known, promotions)
-      saveKnownSources(known)
-    }
-  }
+  maybeWriteCatalog(catalog, known, promotions, stats)
 
   escalateQ.close()
   await smartPromise
@@ -724,15 +743,7 @@ async function main() {
     if (item) unresolvedPush(item)
   }
 
-  if (!DRY_RUN && (stats.hits || promotions.length)) {
-    catalog.updatedAt = new Date().toISOString()
-    catalog.catalogSource = 'flash-extract-parallel'
-    writeFileSync(CATALOG_PATH, `${JSON.stringify(catalog, null, 2)}\n`)
-    if (promotions.length) {
-      mergeDiscoveredSources(known, promotions)
-      saveKnownSources(known)
-    }
-  }
+  maybeWriteCatalog(catalog, known, promotions, stats)
 
   const escalationDoc = {
     schemaVersion: 1,

@@ -2,10 +2,67 @@
 
 export type PluginFormat = 'AAX' | 'AU' | 'VST' | 'VST3' | 'UAD' | 'CLAP' | 'Unknown'
 
-/** Report statuses shown to users. Installed ≥ catalog is always "current". */
-export type UpdateStatus = 'current' | 'outdated' | 'unknown' | 'bundled' | 'legacy'
+/**
+ * Display / compare status for a row.
+ * Yellow confidence never implies "update available" — use update_likely / unverified instead.
+ */
+export type UpdateStatus =
+  | 'current'
+  | 'update_available'
+  | 'update_likely'
+  | 'unverified'
+  | 'unknown'
+  | 'paid_upgrade'
+  | 'use_vendor_hub'
+  | 'content'
+  | 'discontinued'
+  | 'bundled'
+  | 'legacy'
+
+/** @deprecated Prefer UpdateStatus; kept for older report consumers */
+export type LegacyUpdateStatus = 'outdated' | UpdateStatus
+
+export type ConfidenceBand = 'high' | 'medium' | 'low'
 
 export type CompatSeverity = 'info' | 'warn' | 'block'
+
+export type IdentityKind =
+  | 'plugin'
+  | 'soundset'
+  | 'expansion'
+  | 'bundle'
+  | 'suite_component'
+  | 'hub_app'
+  | 'hardware'
+  | 'eurorack'
+  | 'discontinued'
+  | 'gen_ambiguous'
+  | 'daw_stock_effect'
+  | 'instrument'
+  | 'effect'
+  | 'standalone_app'
+  | 'unknown_other'
+  | string
+
+export type VersionScheme =
+  | 'semver'
+  | 'semver4'
+  | 'date'
+  | 'build'
+  | 'marketing'
+  | string
+
+export type AppleSilicon = 'native' | 'universal' | 'rosetta' | 'intel-only' | 'mixed'
+
+/** Catalog view of an installed DAW. `check_in_app` = no trustworthy comparison possible. */
+export interface DawCatalogInfo {
+  catalogPluginId: string
+  latestVersion: string | null
+  confidence: number | null
+  status: 'current' | 'update_available' | 'update_likely' | 'check_in_app'
+  updateUrl: string | null
+  portalApp: string | null
+}
 
 export interface DawInfo {
   id: string
@@ -14,6 +71,14 @@ export interface DawInfo {
   path: string
   bundleId?: string
   detectedAt: string
+  catalog?: DawCatalogInfo | null
+}
+
+/** Audio Unit component identity from a bundle's `AudioComponents` plist entry. */
+export interface AuComponentKey {
+  manufacturer: string
+  subtype?: string
+  type?: string
 }
 
 export interface InstalledPlugin {
@@ -24,6 +89,11 @@ export interface InstalledPlugin {
   formats: PluginFormat[]
   paths: string[]
   bundleId?: string
+  /** Every CFBundleIdentifier seen across formats (AU, VST3, AAX often differ). */
+  bundleIds?: string[]
+  auComponents?: AuComponentKey[]
+  /** Vendor half of an AU component name ("FabFilter: Pro-Q 4" → "FabFilter"). */
+  auVendor?: string
   manufacturerHint?: string
   modifiedAt?: string
 }
@@ -39,39 +109,59 @@ export interface InstalledVersionInfo {
 }
 
 export interface DawCompatibilityIssue {
-  /** Plugin version range / note about DAW conflict */
   dawId?: string
   dawNamePattern: string
-  /** Only `warn` / `block` are shown. `info` is ignored (not a confirmed issue). */
   severity: CompatSeverity
   note: string
-  /**
-   * Must be true for the issue to surface. Unverified / advisory notes never alert.
-   * Refresh weekly via catalog pipeline with a public source URL.
-   */
   verified: boolean
-  /** Public advisory / release-note URL proving the issue */
   sourceUrl?: string
-  /** ISO date the issue was last confirmed */
   verifiedAt?: string
-  /** If set, issue applies when installed DAW version is below this */
   minDawVersion?: string
-  /** If set, issue applies when installed DAW version is above this */
   maxDawVersion?: string
-  /** Plugin versions at/above which the issue was introduced */
   pluginVersionFrom?: string
-  /** Plugin versions below which the issue no longer applies */
   pluginVersionTo?: string
 }
 
 export interface CatalogManufacturer {
   id: string
   name: string
-  /** Direct manufacturer downloads / account / updater page */
   updatePortalUrl: string
   websiteUrl?: string
   aliases?: string[]
   notes?: string
+  /** Vendor hub app name, e.g. Native Access, Waves Central */
+  portalApp?: string
+  appleSilicon?: AppleSilicon
+  versionScheme?: VersionScheme
+  versionExample?: string
+  changelogUrl?: string
+  /** 1 = household … 4 = long tail; omitted/null = unranked (never treat as tier 0). */
+  popularityTier?: number | null
+  /** Bundle-ID prefixes owned by this vendor, e.g. `com.fabfilter`. Omitted = unresearched. */
+  bundleIdVendorPrefixes?: string[]
+  /** 4-character AU manufacturer code, e.g. `FabF`. */
+  auManufacturerCode?: string
+}
+
+/** Deterministic identifiers for a catalog row. All optional; omitted = unresearched. */
+export interface CatalogIdentityKeys {
+  bundleIds?: string[]
+  bundleIdPrefixes?: string[]
+  auComponents?: AuComponentKey[]
+  vst3ClassIds?: string[]
+  winProductNames?: string[]
+}
+
+export type InstalledVersionTransform =
+  | 'strip-build-suffix'
+  | 'prefix-year-2000'
+  | 'semver-first-3'
+
+/** How an installed app reports its version, and how to compare it with the catalog. */
+export interface InstalledVersionRule {
+  source?: 'CFBundleShortVersionString' | 'CFBundleVersion' | string
+  transforms?: (InstalledVersionTransform | string)[]
+  compareSegments?: number
 }
 
 export interface CatalogPlugin {
@@ -79,32 +169,44 @@ export interface CatalogPlugin {
   manufacturerId: string
   name: string
   matchPatterns: string[]
-  latestVersion: string
+  /** Absent = no accepted version — UI must show "unknown", never invent. */
+  latestVersion?: string
+  /** Discontinued rows only: last release ever shipped. Never an update target. */
+  finalVersion?: string
+  discontinuedAt?: string
+  identityKeys?: CatalogIdentityKeys
+  installedVersionRule?: InstalledVersionRule
   releaseDate?: string
   updatePortalUrl?: string
   formats?: PluginFormat[]
   minMacOS?: string
   dawCompatibility?: string
   notes?: string
+  notesForUser?: string
   bundled?: boolean
-  /** Product line key for multi-generation products (Kontakt, Guitar Rig, …) */
   productLine?: string
-  /** Known conflicts between this plugin’s newer builds and specific DAWs */
   dawIssues?: DawCompatibilityIssue[]
-  /**
-   * How the latestVersion was obtained.
-   * page-confirmed = version + product found on a fetched public page (Flash Lite extract and/or sticky heuristic) — high trust;
-   * agent-verified = Antigravity found + page-confirmed (rare cold path) — also high trust;
-   * live-scrape = dedicated manufacturer scraper (provisional until page-confirmed);
-   * public-page = legacy sticky stamp without hard page-confirm (treat as medium);
-   * search-verified = weekly discovery via free search then fetch;
-   * manufacturer-feed = official API/feed; curated-seed = hand-verified once; unverified-seed = unknown provenance.
-   */
   versionEvidence?: VersionEvidence
-  /** Public page used to verify latestVersion (never an installer binary URL). */
   versionSourceUrl?: string
-  /** ISO date (YYYY-MM-DD) when latestVersion was last confirmed. */
   versionVerifiedAt?: string
+  /** Catalog Policy-A confidence 0–100 — prefer over recomputing from evidence. */
+  versionConfidence?: number
+  versionConfidenceReasons?: string[]
+  identityKind?: IdentityKind
+  discontinued?: boolean
+  requiresIlok?: boolean
+  isFreeware?: boolean
+  appleSilicon?: AppleSilicon
+  successorPluginId?: string
+  predecessorPluginId?: string
+  updateClass?: string
+  generation?: string | number
+  /** Installed major versions this generation row covers, when not equal to `generation`. */
+  versionMajors?: number[]
+  generationRank?: number
+  portalApp?: string
+  /** 1 = household … 4 = long tail; omitted/null = unranked. */
+  popularityTier?: number | null
 }
 
 export type VersionEvidence =
@@ -116,14 +218,25 @@ export type VersionEvidence =
   | 'manufacturer-feed'
   | 'curated-seed'
   | 'unverified-seed'
+  | string
 
 export interface PluginCatalog {
   schemaVersion: number
   updatedAt: string
   catalogSource?: string
+  /** Installed v2 pointer buildId (ISO). Main-only; chrome uses it as freshness date. */
+  catalogBuildId?: string
   manufacturers: CatalogManufacturer[]
   plugins: CatalogPlugin[]
 }
+
+/** How an installed product was tied to its catalog row, strongest first. */
+export type MatchMethod =
+  | 'bundle-id'
+  | 'au-component'
+  | 'bundle-prefix'
+  | 'exact-name'
+  | 'name-pattern'
 
 export interface CompatibilityFlag {
   severity: CompatSeverity
@@ -136,24 +249,37 @@ export interface PluginReportRow {
   id: string
   name: string
   manufacturer: string
-  /** Product line used for hierarchy (often same as name). */
+  manufacturerId: string | null
   productLine: string
   installedVersion: string | null
   installedVersions: string[]
   versionDetails: InstalledVersionInfo[]
+  /** Null or absent → UI shows literal "unknown" */
   latestVersion: string | null
+  /** Discontinued products: last release shipped (informational only). */
+  finalVersion?: string | null
+  /** Catalog row this install resolved to; null when unmatched. */
+  catalogPluginId?: string | null
+  matchMethod?: MatchMethod | null
   releaseDate: string | null
   status: UpdateStatus
-  /**
-   * 0–100 confidence that status + latestVersion are correct.
-   * Outdated always uses red styling; current/bundled use green when high, yellow when medium.
-   */
   confidence: number
-  /** high ≥85 (green OK), medium 70–84 (yellow OK), low <70 (yellow OK — improve catalog). */
-  confidenceBand: 'high' | 'medium' | 'low'
+  confidenceBand: ConfidenceBand
   confidenceReason: string
-  formats: PluginFormat[]
+  confidenceReasons: string[]
+  versionSourceUrl: string | null
+  versionVerifiedAt: string | null
+  identityKind: IdentityKind
+  portalApp: string | null
   updateUrl: string | null
+  successorPluginId: string | null
+  successorName: string | null
+  updateClass: string | null
+  notesForUser: string | null
+  appleSilicon: AppleSilicon | null
+  requiresIlok: boolean
+  isFreeware: boolean
+  formats: PluginFormat[]
   dawCompatibility: string | null
   minMacOS: string | null
   osCompatible: boolean | null
@@ -161,12 +287,18 @@ export interface PluginReportRow {
   paths: string[]
   catalogMatched: boolean
   installCount: number
+  /** True when this row comes from catalog browse (no local install). */
+  catalogOnly?: boolean
+  /** Effective COALESCE(plugin, manufacturer) popularity; null = unranked. */
+  popularityTier?: number | null
 }
 
 export interface ManufacturerReportGroup {
   id: string
   manufacturer: string
+  manufacturerId: string | null
   updateUrl: string | null
+  portalApp: string | null
   productCount: number
   bundleCount: number
   outdatedCount: number
@@ -174,9 +306,10 @@ export interface ManufacturerReportGroup {
   currentCount: number
   bundledCount: number
   hasCompatWarning: boolean
-  /** Weakest confidence among child products (drives manufacturer badge tone). */
   confidence: number
-  confidenceBand: 'high' | 'medium' | 'low'
+  confidenceBand: ConfidenceBand
+  /** Best (lowest) effective tier among products; null = all unranked. */
+  popularityTier?: number | null
   products: PluginReportRow[]
 }
 
@@ -200,17 +333,49 @@ export interface ScanReport {
     pluginCount: number
     manufacturerCount: number
   }
-  summary: {
-    dawCount: number
-    pluginBundleCount: number
+  summary: ScanSummary
+}
+
+export interface ScanSummary {
+  dawCount: number
+  pluginBundleCount: number
+  pluginCount: number
+  manufacturerCount: number
+  current: number
+  outdated: number
+  unknown: number
+  bundled: number
+  legacy: number
+  compatWarnings: number
+  updateAvailable?: number
+  paidUpgrade?: number
+  content?: number
+  discontinued?: number
+  useVendorHub?: number
+}
+
+/** Lightweight catalog browse payload (no filesystem scan). */
+export interface CatalogBrowseReport {
+  mode: 'catalog'
+  rows: PluginReportRow[]
+  manufacturers: ManufacturerReportGroup[]
+  catalog: {
+    updatedAt: string
+    source: string
     pluginCount: number
     manufacturerCount: number
-    current: number
-    outdated: number
-    unknown: number
-    bundled: number
-    legacy: number
-    compatWarnings: number
+  }
+  summary: {
+    pluginCount: number
+    manufacturerCount: number
+    withVersion: number
+    unknownVersion: number
+    green: number
+    amber: number
+    yellow: number
+    content: number
+    discontinued: number
+    hub: number
   }
 }
 
@@ -229,4 +394,9 @@ export interface ScanProgress {
   phase: 'daws' | 'plugins' | 'catalog' | 'compare' | 'done' | 'error'
   message: string
   percent: number
+  /** Progressive payloads so the UI can paint before the full report returns. */
+  partial?: {
+    daws?: DawInfo[]
+    manufacturers?: ManufacturerReportGroup[]
+  }
 }

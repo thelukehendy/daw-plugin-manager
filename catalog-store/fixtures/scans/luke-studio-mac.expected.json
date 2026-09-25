@@ -1,0 +1,299 @@
+{
+ "snapshot": "luke-studio-mac.json",
+ "reviewedBy": "Cursor, 2026-09-25",
+ "catalogBuildId": "2026-09-25T21:45:55Z",
+ "method": "Identity expectations only (catalog row id). Hand-checked: vendor from bundle ID / AU vendor agrees with the catalog manufacturer, product name agrees, and installed version is on the same release line. Statuses are only asserted where they don't drift with new releases.",
+ "expectations": [
+  {
+   "name": "S-Gear",
+   "catalogPluginId": "scuffham--sgear-2",
+   "statusNotIn": [
+    "paid_upgrade"
+   ],
+   "knownDataIssue": true,
+   "note": "installed 2.7.0 is generation 2; scuffham--sgear-2 has manufacturerId 'scuffham', which doesn't exist (manufacturer is 'scuffham-amps')"
+  },
+  {
+   "name": "SpectraLayers",
+   "catalogPluginId": "steinberg--spectralayers",
+   "status": "paid_upgrade",
+   "note": "installed 11.x, latest 13.x on a paid_upgrade row"
+  },
+  {
+   "name": "Ivory",
+   "catalogPluginId": "synthogy--ivory",
+   "status": "paid_upgrade",
+   "dataFixedIn": "2026-09-25T21:25:48Z",
+   "note": "installed 2.x, latest 3.x on a paid_upgrade row"
+  },
+  {
+   "name": "Reason Rack",
+   "catalogPluginId": "steinberg--reason-rack-plugin",
+   "note": "was matched to Steinberg manufacturer before 2026-09-25 fix; row id keeps steinberg-- prefix",
+   "dataFixedIn": "2026-09-25T20:58:18Z"
+  },
+  {
+   "name": "Ultra Analog Session",
+   "catalogPluginId": "applied-acoustics--ultra-analog-session",
+   "statusNotIn": [
+    "update_available",
+    "update_likely"
+   ],
+   "note": "Session 2 version was stamped on the Session 1 row",
+   "dataFixedIn": "2026-09-25T20:58:18Z"
+  },
+  {
+   "name": "Strum Acoustic Session",
+   "catalogPluginId": "applied-acoustics--strum-acoustic-session",
+   "statusNotIn": [
+    "update_available",
+    "update_likely"
+   ],
+   "note": "Session 2 version was stamped on the Session 1 row",
+   "dataFixedIn": "2026-09-25T20:58:18Z"
+  },
+  {
+   "name": "B4 II",
+   "catalogPluginId": "native-instruments--b4",
+   "status": "discontinued"
+  },
+  {
+   "name": "B4 II FX",
+   "catalogPluginId": "native-instruments--b4",
+   "status": "discontinued"
+  },
+  {
+   "name": "Drifter",
+   "catalogPluginId": "wa-production--drifter",
+   "note": "previously mismatched to Waves; AU vendor is W.A.Production"
+  },
+  {
+   "name": "Ignition",
+   "catalogPluginId": "wa-production--ignition",
+   "note": "previously mismatched to Waves; AU vendor is W.A.Production"
+  },
+  {
+   "name": "LTL SILVER BULLET mk2",
+   "catalogPluginId": "plugin-alliance--ltl-silver-bullet-mk2",
+   "note": "installed 1.1.0 equals the Plugin Alliance row; versionless unfilteredaudio--ltl-silver-bullet-mk2 duplicate wins since the unfiltered-audio merge",
+   "knownDataIssue": true
+  },
+  {
+   "name": "AIRChorus",
+   "catalogPluginId": "air--airchorus",
+   "note": "AIR Music Technology, not Avid"
+  },
+  {
+   "name": "Invert-Duplicate",
+   "catalogPluginId": "digidesign--invert-duplicate",
+   "note": "catalog split Avid and 'digidesign'",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "6X-500",
+   "catalogPluginId": "plugin-alliance--lindell-audio-6x-500",
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "7X-500",
+   "catalogPluginId": "plugin-alliance--lindell-audio-7x-500",
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "ChannelX",
+   "catalogPluginId": "plugin-alliance--lindell-audio-channelx",
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "Lindell 254E",
+   "catalogPluginId": "plugin-alliance--lindell-audio-254e",
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "Lindell 354E",
+   "catalogPluginId": "plugin-alliance--lindell-audio-354e",
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "Lindell TE-100",
+   "catalogPluginId": "plugin-alliance--lindell-audio-te-100",
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "PEX-500",
+   "catalogPluginId": "plugin-alliance--lindell-audio-pex-500",
+   "note": "versionless lindell-audio duplicate won on exact name",
+   "dataFixedIn": "2026-09-25T21:25:48Z"
+  },
+  {
+   "name": "Auto-Key",
+   "catalogPluginId": "antares--auto-key"
+  },
+  {
+   "name": "Melodyne",
+   "catalogPluginId": "celemony--melodyne"
+  },
+  {
+   "name": "Quadravox",
+   "catalogPluginId": "eventide--quadravox"
+  },
+  {
+   "name": "FabFilter Micro",
+   "catalogPluginId": "fabfilter--fabfilter-micro"
+  },
+  {
+   "name": "AmpliTube 5",
+   "catalogPluginId": "ik-multimedia--amplitube-5"
+  },
+  {
+   "name": "Disperser",
+   "catalogPluginId": "kilohearts--disperser"
+  },
+  {
+   "name": "DC1A3",
+   "catalogPluginId": "klanghelm--dc1a3"
+  },
+  {
+   "name": "MAGC",
+   "catalogPluginId": "meldaproduction--magc"
+  },
+  {
+   "name": "Newfangled EQuivocate",
+   "catalogPluginId": "newfangled-audio--newfangled-equivocate"
+  },
+  {
+   "name": "fiedler audio stage",
+   "catalogPluginId": "plugin-alliance--fiedler-audio-stage"
+  },
+  {
+   "name": "Slate Digital FG-X",
+   "catalogPluginId": "slate-digital--slate-digital-fg-x"
+  },
+  {
+   "name": "Saturation Knob",
+   "catalogPluginId": "softube--saturation-knob"
+  },
+  {
+   "name": "Blitzer",
+   "catalogPluginId": "ssl--blitzer"
+  },
+  {
+   "name": "Oxford Drum Gate",
+   "catalogPluginId": "sonnox--oxford-drum-gate"
+  },
+  {
+   "name": "Crystallizer",
+   "catalogPluginId": "soundtoys--crystallizer"
+  },
+  {
+   "name": "Keyscape",
+   "catalogPluginId": "spectrasonics--keyscape"
+  },
+  {
+   "name": "LABS",
+   "catalogPluginId": "spitfire-audio--labs"
+  },
+  {
+   "name": "TDR Kotelnikov",
+   "catalogPluginId": "tokyo-dawn-labs--tdr-kotelnikov"
+  },
+  {
+   "name": "ValhallaDelay",
+   "catalogPluginId": "valhalla-dsp--valhalladelay"
+  },
+  {
+   "name": "soothe",
+   "catalogPluginId": "oeksound--soothe"
+  },
+  {
+   "name": "Boom",
+   "catalogPluginId": "air--boom"
+  },
+  {
+   "name": "SketchCassette II",
+   "catalogPluginId": "aberrant-dsp--sketchcassette-ii"
+  },
+  {
+   "name": "dxRevivePro",
+   "catalogPluginId": "accentize--dxrevivepro"
+  },
+  {
+   "name": "Things Texture",
+   "catalogPluginId": "audiothing--things-texture"
+  },
+  {
+   "name": "Harmonic Maximizer",
+   "catalogPluginId": "bbe-sound--harmonic-maximizer"
+  },
+  {
+   "name": "Corrosion",
+   "catalogPluginId": "hornet--corrosion"
+  },
+  {
+   "name": "True Iron",
+   "catalogPluginId": "kazrog--true-iron"
+  },
+  {
+   "name": "DAWCassette",
+   "catalogPluginId": "klevgrand--dawcassette"
+  },
+  {
+   "name": "Lindell 50 Buss",
+   "catalogPluginId": "lindell-audio--lindell-50-buss"
+  },
+  {
+   "name": "Lustrous Plates",
+   "catalogPluginId": "liquidsonics--lustrous-plates"
+  },
+  {
+   "name": "LTL Chop Shop EQ",
+   "catalogPluginId": "louder-than-liftoff--ltl-chop-shop-eq"
+  },
+  {
+   "name": "Aligner",
+   "catalogPluginId": "nugen-audio--aligner"
+  },
+  {
+   "name": "StandardCLIP",
+   "catalogPluginId": "sir-audio-tools--standardclip"
+  },
+  {
+   "name": "ANA 2",
+   "catalogPluginId": "sonic-academy--ana-2"
+  },
+  {
+   "name": "GSatPlus",
+   "catalogPluginId": "tbproaudio--gsatplus"
+  },
+  {
+   "name": "Unfiltered Audio Bass Mint",
+   "catalogPluginId": "unfiltered-audio--unfiltered-audio-bass-mint"
+  },
+  {
+   "name": "BassmentCore",
+   "catalogPluginId": "united-plugins--bassmentcore"
+  },
+  {
+   "name": "Heat2",
+   "catalogPluginId": "wa-production--heat2"
+  },
+  {
+   "name": "Cassette",
+   "catalogPluginId": "wavesfactory--cassette"
+  },
+  {
+   "name": "DS-10 Drum Shaper",
+   "catalogPluginId": "xln-audio--ds-10-drum-shaper"
+  },
+  {
+   "name": "ADPTR Hype",
+   "catalogPluginId": "adptr--adptr-hype"
+  }
+ ]
+}
