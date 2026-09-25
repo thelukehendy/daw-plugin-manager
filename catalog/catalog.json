@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-25T21:25:48Z",
+  "updatedAt": "2026-09-25T21:45:55Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -7773,6 +7773,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.ADPTR.ADPTRHype"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Adpt",
+            "subtype": "HyP3"
+          }
+        ]
+      },
       "popularityTier": 3,
       "latestVersion": "1.5.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hype",
@@ -8169,6 +8180,11 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.wizoo.AIR Chorus"
+        ]
+      },
       "portalApp": "inMusic Software Center",
       "notesForUser": "AIR Creative Collection / Creative FX suite component — no individual public installer semver.",
       "identityKind": "suite_component",
@@ -8792,6 +8808,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.sonicacademy.ana2"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "SnAc",
+            "subtype": "ANA2"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "2.5.6",
@@ -14441,6 +14468,18 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.nugenaudio.Aligner_AAX",
+          "com.nugenaudio.Aligner_AU"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "NGAU",
+            "subtype": "NAAL"
+          }
+        ]
+      },
       "portalApp": "NUGEN My Products",
       "appleSilicon": "mixed",
       "popularityTier": 2,
@@ -17123,6 +17162,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.ikmultimedia.AmpliTube5"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Ikmm",
+            "subtype": "Atb5"
+          }
+        ]
+      },
       "portalApp": "IK Product Manager",
       "appleSilicon": "mixed",
       "popularityTier": 1,
@@ -22145,6 +22195,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.antares.autokey"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Antr",
+            "subtype": "AKey"
+          }
+        ]
+      },
       "portalApp": "AutoTune Central",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -23264,6 +23325,13 @@
         "AU",
         "VST"
       ],
+      "identityKeys": {
+        "bundleIds": [
+          "B4 II.FX.vst",
+          "B4 II.MusicDevice.component",
+          "B4 II.Synth.vst"
+        ]
+      },
       "portalApp": "Native Access",
       "notesForUser": "B4 II is a legacy NI organ — discontinued/superseded era; no clean public latestVersion for this SKU.",
       "identityKind": "discontinued",
@@ -25911,6 +25979,17 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://unitedplugins.com/download",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:02.19@https://unitedplugins.com/download",
+      "identityKeys": {
+        "bundleIds": [
+          "com.unitedplugins.BassmentCore"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Mura",
+            "subtype": "BstC"
+          }
+        ]
+      },
       "portalApp": "UnitedPluginsManager",
       "popularityTier": 2,
       "latestVersion": "2.4",
@@ -30666,6 +30745,17 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.solidstatelogic.com/support-page/downloads",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.7@https://www.solidstatelogic.com/support-page/downloads flash:heuristic",
+      "identityKeys": {
+        "bundleIds": [
+          "com.SSL.Blitzer"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "SSLN",
+            "subtype": "BLTZ"
+          }
+        ]
+      },
       "portalApp": "SSL Download Manager",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -32488,6 +32578,11 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.wizoo.Boom"
+        ]
+      },
       "portalApp": "inMusic Software Center",
       "appleSilicon": "mixed",
       "popularityTier": 2,
@@ -38341,6 +38436,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.wavesfactory.Cassette"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "WsFy",
+            "subtype": "CtTe"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "1.0.7",
@@ -46401,6 +46507,20 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.HoRNet.aax.Corrosion",
+          "com.HoRNet.audiounit.Corrosion",
+          "com.HoRNet.vst.Corrosion",
+          "com.HoRNet.vst3.Corrosion"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "HrNt",
+            "subtype": "Cors"
+          }
+        ]
+      },
       "portalApp": "HoRNet DoIn",
       "appleSilicon": "mixed",
       "popularityTier": 2,
@@ -47335,6 +47455,20 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.soundtoys.com/release-log/",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:5.5.5@https://www.soundtoys.com/release-log/",
+      "identityKeys": {
+        "bundleIds": [
+          "com.soundtoys.aax.Crystallizer",
+          "com.soundtoys.audiounit.Crystallizer",
+          "com.soundtoys.vst.Crystallizer",
+          "com.soundtoys.vst3.Crystallizer"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "SToy",
+            "subtype": "CR  "
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "5.5.5",
@@ -48216,6 +48350,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.klevgrand.DAWCassette"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Klev",
+            "subtype": "Rntt"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "1.2.3",
@@ -48394,6 +48539,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.klanghelm.DC1A3"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "KlHm",
+            "subtype": "DC13"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "3.5.0",
@@ -49095,6 +49251,17 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.xlnaudio.com/login",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.5@https://www.xlnaudio.com/login flash:heuristic",
+      "identityKeys": {
+        "bundleIds": [
+          "com.xlnaudio.ds10drumshaper"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "xlnA",
+            "subtype": "xaDS"
+          }
+        ]
+      },
       "popularityTier": 2,
       "latestVersion": "1.3.6",
       "versionSourceUrl": "https://www.xlnaudio.com/release_notes?filter=ds-10",
@@ -53407,6 +53574,17 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://kilohearts.com/download",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:2.4.6@https://kilohearts.com/download",
+      "identityKeys": {
+        "bundleIds": [
+          "com.kiloHearts.Disperser"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": " kHs",
+            "subtype": "kdsp"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "2.4.6",
@@ -55061,6 +55239,17 @@
       ],
       "updatePortalUrl": "https://www.waproduction.com/users/login",
       "notes": "KVR product https://www.kvraudio.com/product/drifter-by-w-a-production",
+      "identityKeys": {
+        "bundleIds": [
+          "com.w.a.production.Drifter"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "WAPr",
+            "subtype": "WDri"
+          }
+        ]
+      },
       "appleSilicon": "mixed",
       "popularityTier": 2,
       "latestVersion": "1.0.0",
@@ -66598,6 +66787,21 @@
       "generation": "1",
       "generationRank": 1,
       "updateClass": "free_current",
+      "identityKeys": {
+        "bundleIds": [
+          "com.fabfilter.Micro.AAX.1",
+          "com.fabfilter.Micro.AU.1",
+          "com.fabfilter.Micro.Clap.1",
+          "com.fabfilter.Micro.Vst.1",
+          "com.fabfilter.Micro.Vst3.1"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "FabF",
+            "subtype": "FMic"
+          }
+        ]
+      },
       "appleSilicon": "universal",
       "popularityTier": 1,
       "latestVersion": "1.32",
@@ -73025,6 +73229,20 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.TBProAudio.aax.GSatPlus",
+          "com.TBProAudio.audiounit.GSatPlus",
+          "com.TBProAudio.vst.GSatPlus",
+          "com.TBProAudio.vst3.GSatPlus"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "TBPA",
+            "subtype": "TB70"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "1.3.11",
@@ -79225,6 +79443,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.bbesound.SWE2"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "BBEs",
+            "subtype": "SWE2"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "4.7.1",
@@ -80437,6 +80666,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.WAProduction.Heat2"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "W4pr",
+            "subtype": "H32t"
+          }
+        ]
+      },
       "notesForUser": "Manufacturer Update log shows 2.1.0 (2024-04-17). KVR lists 2.2.1 uncorroborated — kept manufacturer.",
       "appleSilicon": "mixed",
       "popularityTier": 2,
@@ -87540,6 +87780,17 @@
       ],
       "updatePortalUrl": "https://www.waproduction.com/users/login",
       "notes": "KVR product https://www.kvraudio.com/product/ignition-by-w-a-production",
+      "identityKeys": {
+        "bundleIds": [
+          "com.w.a.production.Ignition"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "WAPr",
+            "subtype": "WIgn"
+          }
+        ]
+      },
       "appleSilicon": "mixed",
       "popularityTier": 2,
       "latestVersion": "1.0.0",
@@ -89515,6 +89766,11 @@
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
       "updateClass": "bundled",
+      "identityKeys": {
+        "bundleIds": [
+          "com.digidesign.plugin.Invert-Duplicate"
+        ]
+      },
       "portalApp": "Avid Link",
       "notesForUser": "Bundled with Pro Tools; version tracks host Pro Tools release (currently 2026.4.1). No independent public plugin installer semver — update via Avid Link / Pro Tools installer.",
       "appleSilicon": "native",
@@ -92267,6 +92523,18 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.spectrasonics.Keyscape",
+          "com.spectrasonics.KeyscapeA"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "GOSW",
+            "subtype": "Kstn"
+          }
+        ]
+      },
       "portalApp": "Spectrasonics account",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -94202,6 +94470,17 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.spitfireaudio.com/en-us/account/login?return_url=%2Faccount",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:13.0006@https://www.spitfireaudio.com/en-us/account/login?return_url=%2Faccount flash:heuristic",
+      "identityKeys": {
+        "bundleIds": [
+          "com.spitfireaudio.Labs"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "SpFi",
+            "subtype": "SfLb"
+          }
+        ]
+      },
       "portalApp": "Spitfire account",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -97370,6 +97649,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.louderthanliftoff.ChopShopEQ"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "LtCs",
+            "subtype": "ltCS"
+          }
+        ]
+      },
       "portalApp": "PA Installation Manager",
       "popularityTier": 2,
       "latestVersion": "1.4.1",
@@ -97411,30 +97701,12 @@
       ]
     },
     {
-      "id": "unfilteredaudio--ltl-silver-bullet-mk2",
-      "manufacturerId": "unfiltered-audio",
-      "name": "LTL SILVER BULLET mk2",
-      "matchPatterns": [
-        "LTL SILVER BULLET mk2"
-      ],
-      "formats": [
-        "AAX",
-        "AU",
-        "VST3"
-      ],
-      "minMacOS": "12.0",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
-      "notesForUser": "Manufacturer/id mismatch (Unfiltered Audio vs Louder Than Liftoff Silver Bullet) — unresolved; no latestVersion.",
-      "identityKind": "unknown_other",
-      "appleSilicon": "universal",
-      "popularityTier": 2
-    },
-    {
       "id": "plugin-alliance--ltl-silver-bullet-mk2",
       "manufacturerId": "plugin-alliance",
       "name": "LTL Silver Bullet mk2",
       "matchPatterns": [
-        "LTL Silver Bullet mk2"
+        "LTL Silver Bullet mk2",
+        "LTL SILVER BULLET mk2"
       ],
       "formats": [
         "VST",
@@ -98790,6 +99062,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.LindellPlugins.Lindell50Buss"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "LApb"
+          }
+        ]
+      },
       "popularityTier": 2,
       "latestVersion": "1.0.4",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/50-series",
@@ -99012,6 +99295,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/lindell-audio-254e-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "se.lindellaudio.254E"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "LBc3"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.2.2",
@@ -99039,6 +99333,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/lindell-audio-354e-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "se.lindellaudio.Lindell354E"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "LBc4"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.0.4",
@@ -99092,6 +99397,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/lindell-audio-6x-500-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "se.lindellaudio.6X-500"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "LBp2"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.2.2",
@@ -99119,6 +99435,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/lindell-audio-7x-500-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "se.lindellaudio.7X-500"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "LBc2"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.2.2",
@@ -99172,6 +99499,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/lindell-audio-channelx-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "se.lindellaudio.ChannelX"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "LCS1"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.2.2",
@@ -99251,6 +99589,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/lindell-audio-pex-500-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "se.lindellaudio.PEX-500"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "LBe1"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.2.2",
@@ -99304,6 +99653,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/lindell-audio-te-100-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "se.lindellaudio.TE-100"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Brwx",
+            "subtype": "TEq1"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.1.3",
@@ -101495,6 +101855,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.liquidsonics.lustrousplates"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "LqSn",
+            "subtype": "LsP1"
+          }
+        ]
+      },
       "appleSilicon": "universal",
       "popularityTier": 2,
       "latestVersion": "1.3.7",
@@ -101694,6 +102065,17 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.meldaproduction.com/downloads",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:17.09@https://www.meldaproduction.com/downloads",
+      "identityKeys": {
+        "bundleIds": [
+          "com.meldaproduction.MAGC"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Meld",
+            "subtype": "Magc"
+          }
+        ]
+      },
       "portalApp": "MPluginManager",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -110506,6 +110888,19 @@
       "productLine": "Melodyne",
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.celemony.melodyne.aax",
+          "com.celemony.melodyne.au",
+          "com.celemony.melodyne.vst3"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "CLMY",
+            "subtype": "MPLG"
+          }
+        ]
+      },
       "appleSilicon": "universal",
       "popularityTier": 1,
       "latestVersion": "5.4.2",
@@ -119945,6 +120340,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.newfangledaudio.EQuivocate"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Newf",
+            "subtype": "eqv8"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.14.4",
@@ -125767,6 +126173,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.sonnox.OxfordDrumGate"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Snnx",
+            "subtype": "OxDG"
+          }
+        ]
+      },
       "popularityTier": 1,
       "latestVersion": "2.05.0",
       "versionSourceUrl": "https://sonnox.com/installers",
@@ -141222,6 +141639,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.eventide.quadravox"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Tide",
+            "subtype": "QudW"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "3.11.5",
@@ -146016,6 +146444,26 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. [2026-09-25 reassigned from steinberg: vendor-confirmed Reason Studios product (scan bundle vendor propellerheads)]",
+      "identityKeys": {
+        "bundleIds": [
+          "se.propellerheads.reasonrackplugin.au",
+          "se.propellerheads.reasonrackplugin.vst"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Reas",
+            "subtype": "ReEf"
+          },
+          {
+            "manufacturer": "Reas",
+            "subtype": "ReIn"
+          },
+          {
+            "manufacturer": "Reas",
+            "subtype": "ReMI"
+          }
+        ]
+      },
       "portalApp": "Steinberg Download Assistant",
       "notesForUser": "Manufacturer mismatch (Reason Studios vs Steinberg listing) — identity unresolved; no safe latestVersion.",
       "identityKind": "unknown_other",
@@ -150071,9 +150519,32 @@
       "popularityTier": 2
     },
     {
+      "id": "scuffham--sgear-2",
+      "manufacturerId": "scuffham",
+      "name": "S-Gear 2",
+      "matchPatterns": [
+        "S-Gear",
+        "SGear",
+        "SGear2",
+        "SGearAU2"
+      ],
+      "generation": "2",
+      "updateClass": "paid_upgrade",
+      "successorPluginId": "scuffham--sgear",
+      "notesForUser": "S-Gear 3 is a paid upgrade: $39 for v2.7-or-earlier licenses, free for v2.9+ (v2.8 not addressed by Scuffham's FAQ). v3 replaces v2 on the same machine.",
+      "latestVersion": "2.9.9",
+      "versionSourceUrl": "https://scuffhamamps.com/download/release-history",
+      "versionVerifiedAt": "2026-09-25T21:45:47.157137+00:00",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-hand vendor release notes page"
+      ]
+    },
+    {
       "id": "scuffham--sgear",
       "manufacturerId": "scuffham-amps",
-      "name": "S-Gear",
+      "name": "S-Gear 3",
       "matchPatterns": [
         "S-Gear",
         "SGear",
@@ -150087,8 +150558,8 @@
         "VST3"
       ],
       "updatePortalUrl": "https://www.scuffhamamps.com/downloads",
-      "updateClass": "paid_upgrade",
-      "notesForUser": "S-Gear 3 is a paid upgrade for v2.7-or-earlier license holders ($39); free for v2.9+ licenses. v3 replaces v2 on the same machine.",
+      "generation": "3",
+      "predecessorPluginId": "scuffham--sgear-2",
       "appleSilicon": "universal",
       "popularityTier": 2,
       "latestVersion": "3.2.5",
@@ -154586,6 +155057,20 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.softube.SaturationKnob_AAX_Protect",
+          "com.softube.SaturationKnob_VST_AU_Protect",
+          "com.softube.SaturationKnob_VST_AU_Protect_AU",
+          "com.softube.SaturationKnob_VST_AU_Protect_VST3"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "SfTb",
+            "subtype": "satn"
+          }
+        ]
+      },
       "portalApp": "Softube Central",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -158324,6 +158809,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.AberrantDSP.SketchCassetteII"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Abrn",
+            "subtype": "SCii"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "2.3",
@@ -158474,6 +158970,11 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.slate-digital.FG-X"
+        ]
+      },
       "portalApp": "Slate RME",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -164559,6 +165060,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.SirAudioTools.StandardCLIP"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "SIRA",
+            "subtype": "SvuN"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "1.6.057",
@@ -166643,6 +167155,12 @@
         "VST",
         "VST3"
       ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.applied-acoustics.strum-acoustic-session.au",
+          "com.applied-acoustics.strum-acoustic-session.vst"
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2
     },
@@ -175374,6 +175892,17 @@
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.tokyodawn.net/tdr-kotelnikov/",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.TokyoDawnLabs.TDRKotelnikov"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Tdrl",
+            "subtype": "Td96"
+          }
+        ]
+      },
       "popularityTier": 1,
       "latestVersion": "1.6.7",
       "versionSourceUrl": "https://www.tokyodawn.net/tdr-kotelnikov/",
@@ -180690,6 +181219,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.AudioThing.ThingsTexture"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "AdTg",
+            "subtype": "tTx5"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "1.1.2",
@@ -185087,6 +185627,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.Kazrog.TrueIron"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Kazr",
+            "subtype": "KPTr"
+          }
+        ]
+      },
       "portalApp": "PluginUpdate",
       "appleSilicon": "native",
       "popularityTier": 2,
@@ -192812,6 +193363,12 @@
         "VST",
         "VST3"
       ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.applied-acoustics.uas.au",
+          "com.applied-acoustics.uas.vst"
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2
     },
@@ -193900,6 +194457,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.UnfilteredAudio.BassMint"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "UnAu",
+            "subtype": "uABM"
+          }
+        ]
+      },
       "appleSilicon": "universal",
       "popularityTier": 2,
       "latestVersion": "1.1.7",
@@ -197944,6 +198512,17 @@
       "generation": "1",
       "generationRank": 1,
       "updateClass": "free_current",
+      "identityKeys": {
+        "bundleIds": [
+          "com.ValhallaDSP.ValhallaDelay"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "oDin",
+            "subtype": "dLay"
+          }
+        ]
+      },
       "appleSilicon": "universal",
       "popularityTier": 1,
       "latestVersion": "3.0.5",
@@ -212603,6 +213182,17 @@
       ],
       "minMacOS": "12.0",
       "notes": "Seed catalog entry. Refresh remote catalog for live latest versions.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.accentize.dxrevivepro"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "Actz",
+            "subtype": "dxRP"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "1.2.8",
@@ -213192,6 +213782,17 @@
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/en/products.html",
       "notes": "KVR product https://www.kvraudio.com/product/fiedler-audio-stage-by-plugin-alliance",
+      "identityKeys": {
+        "bundleIds": [
+          "com.fiedler-audio.stage"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "FIAU",
+            "subtype": "STAG"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.2.0",
@@ -216525,6 +217126,17 @@
       "updateClass": "paid_upgrade",
       "successorPluginId": "oeksound--soothe2",
       "supersededByPluginId": "oeksound--soothe2",
+      "identityKeys": {
+        "bundleIds": [
+          "com.oeksound.soothe"
+        ],
+        "auComponents": [
+          {
+            "manufacturer": "OekS",
+            "subtype": "SthA"
+          }
+        ]
+      },
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.5.1",

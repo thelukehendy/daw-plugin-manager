@@ -667,3 +667,90 @@ research; likely a Spaces vs Spaces II generation split.
 (4a–4d). 3. S-Gear disposition — pending FAQ check. 4. DAW rules + bundle
 IDs (needs confirmed vocabulary — done in §2). 5. Fixture check wiring at
 PR #3 merge. 6. Identity-key population — blocked on Luke opt-in.
+
+## Cursor advisory round — PR #9 (2026-09-25)
+
+Reply: `2026-09-25-cursor-reply-to-operator-thoughts.md`
+Proposals: `fixtures/2026-09-25/proposed-identity-keys.json` (57 rows)
+Fixture report: golden check on build `2026-09-25T21:25:48Z` → 57 pass, 0 fail, 1 known data issue (the LTL duplicate below; the 8 Lindell/Invert-Duplicate issues fixed by the PR #8 build).
+
+### Luke's decisions recorded by Cursor — ACCEPTED as stated
+
+- Luke counts his own Mac as opted in (already the golden fixture).
+  The general default stays off / opt-in only; no destination for other
+  users' submissions exists yet, so the app ships "Save anonymized scan"
+  (local file, nothing sent) instead of a toggle.
+- Memory corrected accordingly: the opt-in decision now covers Luke's own
+  machines; it is not a blanket approval of scan-derived data.
+
+### 1. Proposed identity keys — ACCEPTED, ALL 57 ROWS
+
+Row-by-row review against the live DB: all 57 proposals target existing
+rows, all keys non-empty, 81 unique bundle IDs with zero cross-row
+collisions, all AU codes 4-char manufacturer/subtype. Vendor agreement
+holds on visual scan (e.g. `se.propellerheads.*` on the reason-studios
+row, `se.lindellaudio.*` + AU `Brwx` on the PA Lindell rows,
+`com.digidesign.plugin.Invert-Duplicate` on the avid row).
+Populated 2026-09-25 into `plugins.identity_keys` (new column) with
+`identity_source` = "luke-studio-mac scan snapshot (opted in by Luke
+2026-09-25)"; the exporter now emits `identityKeys` (parsed JSON, omitted
+when null). 56 rows carry keys in the export (two proposals targeted the
+same `native-instruments--b4` row and were merged).
+One verbatim oddity preserved: `kilohearts--disperser` AU manufacturer
+" kHs" (leading space) — kept as the scan reported it, since the matcher
+compares against what the OS reports.
+Note for the app: `identityKeys` is absent (not null) on rows without
+keys.
+
+### 2. LTL Silver Bullet mk2 duplicate — ACCEPTED, FIXED
+
+Same error class as the Lindell rows: the `unfilteredaudio` →
+`unfiltered-audio` merge made the versionless
+`unfilteredaudio--ltl-silver-bullet-mk2` row win on vendor agreement over
+`plugin-alliance--ltl-silver-bullet-mk2` (1.1.0). Fixed 2026-09-25: the
+"LTLSILVER BULLET mk2" pattern merged into the PA row, the versionless
+dupe deleted (it had zero observations). The fixture caught it — the
+loop is working.
+
+### 3. S-Gear generation split — SHAPE CONFIRMED, IMPLEMENTED
+
+Shape accepted with one convention note: `generation` exports as a
+string in this catalog ("2", "3" — existing convention, e.g. "MK2-T",
+"Plus"), not a number; the app should compare `String(installedMajor)`
+against it. `predecessorPluginId` was already supported by the exporter.
+Implemented 2026-09-25:
+- `scuffham--sgear-2` (new): "S-Gear 2", generation "2", latestVersion
+  2.9.9 @90 (first-hand: Scuffham's own release-history page —
+  "MAC v2.9.9 M1 … 27th Oct 2021", the last 2.x; Windows last 2.9.8),
+  successorPluginId `scuffham--sgear`, updateClass paid_upgrade,
+  notesForUser with the $39 / free-for-2.9+ terms (v2.8 not addressed by
+  the FAQ — noted honestly).
+- `scuffham--sgear`: renamed "S-Gear 3", generation "3",
+  predecessorPluginId `scuffham--sgear-2`; paid_upgrade class and pricing
+  note moved to the v2 row (the v3 row has no successor to point at).
+- Same matchPatterns on both rows; the generation pick resolves it, per
+  the app's rule.
+Luke's installed 2.7.0 should now resolve to the v2 row + paid-upgrade
+tag. This is the reference implementation for the SpectraLayers and
+Ivory splits.
+
+### 4. Windows identifiers — BLESSED
+
+`identityKeys.vst3ClassIds` (32 uppercase hex, no dashes/braces) and
+`identityKeys.winProductNames` (verbatim DLL version-resource
+ProductName) confirmed as the field names. No population yet.
+
+### 5. App-side completions — ACKNOWLEDGED
+
+Confidence < 70 labelling/counts exclusion, discontinued handling,
+tier-1-first sort, versionless neutral styling, vendor-disagreement =
+non-match, and the two-gate matcher check (current + previous build,
+`dataFixedIn` expectations, `--catalog` for ad-hoc builds) all done on
+PR #3. No operator action.
+
+### Ship order
+
+1. Data fixes (identity keys, LTL dupe, S-Gear split) — done, this build.
+2. Blessed Windows identifier field names — done, §4.
+3. Next: SpectraLayers + Ivory generation splits (same reference shape),
+   then the outstanding DAW corrections (Ableton/Renoise/Studio One).
