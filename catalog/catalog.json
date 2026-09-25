@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-25T20:30:23Z",
+  "updatedAt": "2026-09-25T20:39:13Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -11679,13 +11679,14 @@
       "appleSilicon": "unknown",
       "popularityTier": 1,
       "latestVersion": "12.4.6",
-      "versionSourceUrl": "https://mac.filehorse.com/download-ableton-live/",
-      "versionVerifiedAt": "2026-09-25T20:29:30Z",
+      "versionSourceUrl": "https://www.ableton.com/en/release-notes/live-12/",
+      "versionVerifiedAt": "2026-09-25T20:36:46Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 80,
+      "versionConfidence": 82,
       "versionConfidenceReasons": [
-        "Ableton's own release-notes page did not expose the point version in page text",
-        "Official trial installer filename on vendor-hosted CDN path; MacUpdate corroborates 12.4.6"
+        "first-party page confirms 12.4 line",
+        "12.4.6 corroborated by 5+ independent mirrors incl. FileHorse trial DMG filename",
+        "vendor patch-level page not directly retrievable"
       ]
     },
     {
@@ -20698,17 +20699,10 @@
         "Arturia Software Center"
       ],
       "updatePortalUrl": "https://www.arturia.com/",
+      "notes": " Current version not published by Arturia on their site; left versionless pending official evidence (2026-09-25).",
       "identityKind": "hub_app",
       "appleSilicon": "universal",
-      "popularityTier": 1,
-      "latestVersion": "2.12.0",
-      "versionSourceUrl": "https://www.arturia.com/technology/asc",
-      "versionVerifiedAt": "2026-09-25T20:21:49Z",
-      "versionEvidence": "page-confirmed",
-      "versionConfidence": 60,
-      "versionConfidenceReasons": [
-        "third-party mirrors only; vendor page shows no version; do not treat as confirmed"
-      ]
+      "popularityTier": 1
     },
     {
       "id": "strezov-sampling--arva-children-choir",
@@ -47571,10 +47565,9 @@
       "versionSourceUrl": "https://forums.steinberg.net/t/cubase-15-0-30-maintenance-update/1033959",
       "versionVerifiedAt": "2026-09-25T20:29:33Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 85,
+      "versionConfidence": 75,
       "versionConfidenceReasons": [
-        "Vendor-authored announcement on Steinberg's own forum",
-        ""
+        "Steinberg official forum announcement, not a release-notes page; treat as amber until vendor RN confirms"
       ]
     },
     {
@@ -52697,14 +52690,13 @@
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
-      "latestVersion": "12.0",
-      "versionSourceUrl": "https://digital-mixing.com/en/music/19199-motu-digital-performer-12-price-dolby-atmos-and-ai-stem-separation-25-09-2026/",
-      "versionVerifiedAt": "2026-09-25T20:29:36Z",
+      "latestVersion": "12",
+      "versionSourceUrl": "https://motu.com/en-us/products/software/dp/",
+      "versionVerifiedAt": "2026-09-25T20:36:46Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 75,
+      "versionConfidence": 85,
       "versionConfidenceReasons": [
-        "No point release published yet; 12.0 accepted as the release line",
-        ""
+        "vendor product page, major version only"
       ]
     },
     {
@@ -65976,10 +65968,10 @@
       "versionSourceUrl": "https://www.image-line.com/fl-studio-download/",
       "versionVerifiedAt": "2026-09-25T20:30:19Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 85,
+      "versionConfidence": 80,
       "versionConfidenceReasons": [
-        "Official vendor download page names the 26.1.6 macOS build",
-        "Current-release corroboration from independent download listing"
+        "vendor download page shows no version in text on re-fetch 2026-09-25",
+        "26.1.6 corroborated by one third-party software page"
       ]
     },
     {
@@ -73572,13 +73564,12 @@
       "appleSilicon": "unknown",
       "popularityTier": 1,
       "latestVersion": "10.4.14",
-      "versionSourceUrl": "https://9to5mac.com/2026/04/22/apple-releases-garageband-update-with-macos-tahoe-app-icon/",
-      "versionVerifiedAt": "2026-09-25T20:29:30Z",
-      "versionEvidence": "page-confirmed",
-      "versionConfidence": 80,
+      "versionSourceUrl": "https://itunes.apple.com/lookup?id=682658836",
+      "versionVerifiedAt": "2026-09-25T20:36:46Z",
+      "versionEvidence": "manufacturer-feed",
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "Apple release notes confirm 10.4.14 as latest GarageBand for Mac",
-        ""
+        "Apple-served JSON, first-party"
       ]
     },
     {
@@ -100574,13 +100565,12 @@
       "appleSilicon": "unknown",
       "popularityTier": 1,
       "latestVersion": "12.3.1",
-      "versionSourceUrl": "https://support.apple.com/en-us/HT203718",
-      "versionVerifiedAt": "2026-09-25T20:29:30Z",
-      "versionEvidence": "page-confirmed",
-      "versionConfidence": 90,
+      "versionSourceUrl": "https://itunes.apple.com/lookup?id=634148309",
+      "versionVerifiedAt": "2026-09-25T20:36:46Z",
+      "versionEvidence": "manufacturer-feed",
+      "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "Vendor release notes page",
-        "Current version as published by Apple"
+        "Apple-served JSON, first-party"
       ]
     },
     {
@@ -113877,14 +113867,13 @@
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
-      "latestVersion": "11.1",
-      "versionSourceUrl": "https://cdn.manula.com/user/3491/24121_37618_en_1782789937.pdf?v=20260629222723",
-      "versionVerifiedAt": "2026-09-25T20:29:36Z",
+      "latestVersion": "12",
+      "versionSourceUrl": "https://www.forum.harrisonconsoles.com/thread-13183.html",
+      "versionVerifiedAt": "2026-09-25T20:38:55Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 85,
       "versionConfidenceReasons": [
-        "Vendor-hosted documentation confirms the 11.1 line",
-        ""
+        "Harrison staff announcement on Harrison's own forum"
       ]
     },
     {
@@ -138490,13 +138479,13 @@
       "appleSilicon": "unknown",
       "popularityTier": 1,
       "latestVersion": "2026.4",
-      "versionSourceUrl": "https://www.toolfarm.com/buy/avid_pro_tools_academic/",
-      "versionVerifiedAt": "2026-09-25T20:29:33Z",
+      "versionSourceUrl": "https://resources.avid.com/SupportFiles/PT/Whats_New_in_Pro_Tools_2026.4.pdf",
+      "versionVerifiedAt": "2026-09-25T20:36:46Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 80,
+      "versionConfidence": 88,
       "versionConfidenceReasons": [
-        "No newer version announced anywhere; 2026.4.1 remains installer-only third-party evidence",
-        ""
+        "Avid-hosted official PDF opened and read first-hand",
+        "Avid press release corroboration"
       ]
     },
     {
@@ -147258,13 +147247,12 @@
       "appleSilicon": "unknown",
       "popularityTier": 1,
       "latestVersion": "3.5.4",
-      "versionSourceUrl": "https://aur.archlinux.org/packages/renoise",
-      "versionVerifiedAt": "2026-09-25T20:29:36Z",
+      "versionSourceUrl": "https://www.renoise.com/",
+      "versionVerifiedAt": "2026-09-25T20:36:46Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 70,
+      "versionConfidence": 90,
       "versionConfidenceReasons": [
-        "renoise.com downloads are backstage-gated; accepted below green until vendor page reachable",
-        ""
+        "vendor homepage, current patch of confirmed 3.5 line"
       ]
     },
     {
@@ -167329,6 +167317,27 @@
       "versionConfidence": 60,
       "versionConfidenceReasons": [
         "KVR product page Product Version (crowdsourced; yellow band)"
+      ]
+    },
+    {
+      "id": "presonus--studio-one-pro",
+      "manufacturerId": "presonus",
+      "name": "Studio One Pro",
+      "matchPatterns": [
+        "Studio One Pro"
+      ],
+      "notes": "Final 7.x line; rebranded by Fender as Fender Studio Pro 8 (Jan 2026). Patch-level 7.2.2 seen only in changelog mirrors; vendor KB page not directly retrievable.",
+      "identityKind": "standalone_app",
+      "appleSilicon": "universal",
+      "popularityTier": 1,
+      "latestVersion": "7.2",
+      "versionSourceUrl": "https://www.production-expert.com/production-expert-1/presonus-studio-one-pro-7-2-now-available-with-splice-integration-and-stem-separation",
+      "versionVerifiedAt": "2026-09-25T20:36:47Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 70,
+      "versionConfidenceReasons": [
+        "reputable trade press, not vendor",
+        "product superseded by Fender Studio Pro 8"
       ]
     },
     {
@@ -213479,7 +213488,8 @@
         "iLok License Manager"
       ],
       "updatePortalUrl": "https://www.ilok.com/",
-      "identityKind": "standalone_app",
+      "notes": " License management utility; identity corrected 2026-09-25.",
+      "identityKind": "hub_app",
       "popularityTier": 1,
       "latestVersion": "6.0.1",
       "versionSourceUrl": "https://updates.ilok.com/iloklicensemanager/LicenseSupportInstallerMacReleaseNotes.html",
