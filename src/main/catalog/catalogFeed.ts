@@ -4,7 +4,7 @@
  * (or hashes / commits) to the renderer.
  */
 
-import { sha256Hex } from '../platform'
+import { platform, sha256Hex } from '../platform'
 
 export const CATALOG_VERIFY_USER_MESSAGE = "Couldn't verify the catalog"
 
@@ -173,7 +173,7 @@ export async function fetchCatalogPointer(options?: {
   fetch?: FetchLike
   now?: number
 }): Promise<CatalogPointer> {
-  const fetchFn = options?.fetch || fetch
+  const fetchFn = options?.fetch || platform().fetch
   const url = pointerUrlWithCacheBust(options?.now ?? Date.now())
   let res: Response
   try {
@@ -232,7 +232,7 @@ export async function fetchVerifiedCatalogBytes(
   if (!isSupportedSchemaVersion(pointer.schemaVersion)) {
     throw new CatalogVerifyError()
   }
-  const fetchFn = options?.fetch || fetch
+  const fetchFn = options?.fetch || platform().fetch
   const primary = pointer.endpoints.jsdelivrPinned
   const fallback = pointer.endpoints.rawPinned
 

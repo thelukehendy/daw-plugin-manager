@@ -1,0 +1,16 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Main window: app commands plus catalog downloads from the two published hosts only.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    {
+      "identifier": "http:default",
+      "allow": [
+        { "url": "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/*" },
+        { "url": "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@*" }
+      ]
+    }
+  ]
+}

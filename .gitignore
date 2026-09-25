@@ -17,5 +17,10 @@ scan-report.json
 /catalog-store/backups/*/
 !/catalog-store/backups/MANIFEST.md
 
-# local UI preview data (real scan, never commit)
-/src/renderer/public/__dev-*
+# local UI preview data (real scan, never commit or bundle)
+/.dev
+
+# Tauri
+/src-tauri/target
+/src-tauri/gen
+/dist-tauri

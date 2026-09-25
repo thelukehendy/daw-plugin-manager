@@ -26,7 +26,11 @@
     "catalog:smart-scrub": "node scripts/catalog/smart-scrub.js",
     "catalog:install-weekly": "bash scripts/catalog/install-weekly-launchd.sh",
     "catalog:sync-remote-urls": "bash scripts/sync-remote-urls.sh",
-    "dist:mac": "npm run build && env -u ELECTRON_RUN_AS_NODE electron-builder --mac"
+    "dist:mac": "npm run build && env -u ELECTRON_RUN_AS_NODE electron-builder --mac",
+    "tauri:ui:dev": "vite --config vite.tauri.config.ts",
+    "tauri:ui:build": "vite build --config vite.tauri.config.ts",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
   },
   "build": {
     "appId": "com.dawpluginmanager.app",
@@ -59,10 +63,13 @@
     }
   },
   "dependencies": {
+    "@tauri-apps/api": "^2.11.1",
+    "@tauri-apps/plugin-http": "^2.6.1",
     "plist": "^3.1.0",
     "semver": "^7.6.3"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2.11.5",
     "@types/node": "^22.10.0",
     "@types/plist": "^3.0.5",
     "@types/react": "^18.3.12",

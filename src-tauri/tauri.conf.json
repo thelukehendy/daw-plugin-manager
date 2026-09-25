@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DAW Plugin Manager",
+  "version": "1.0.0",
+  "identifier": "com.dawpluginmanager.app",
+  "build": {
+    "beforeDevCommand": "npm run tauri:ui:dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run tauri:ui:build",
+    "frontendDist": "../dist-tauri/ui"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "DAW Plugin Manager",
+        "width": 1280,
+        "height": 880,
+        "minWidth": 900,
+        "minHeight": 640,
+        "backgroundColor": "#0e1418"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src 'self' ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "category": "Music",
+    "targets": [
+      "app",
+      "dmg"
+    ],
+    "resources": {
+      "../catalog/catalog.json": "catalog/catalog.json"
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.png"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "11.0",
+      "signingIdentity": "Developer ID Application: Wake Media Productions, LLC (RD52FH6Q85)",
+      "hardenedRuntime": true
+    }
+  }
+}

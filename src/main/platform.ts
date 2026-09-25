@@ -31,6 +31,8 @@ export interface Platform {
   writeAppFile(relativePath: string, data: string | Uint8Array): Promise<void>
   /** Text of the catalog.json shipped with the app. */
   bundledCatalogText(): Promise<string | null>
+  /** Network fetch for the catalog feed (not subject to web-view CORS). */
+  fetch(input: string, init?: RequestInit): Promise<Response>
 }
 
 let current: Platform | null = null

@@ -115,6 +115,7 @@ export function createNodePlatform(options?: {
       await writeFile(tmp, typeof data === 'string' ? data : Buffer.from(data))
       await rename(tmp, target)
     },
+    fetch: (input, init) => fetch(input, init),
     async bundledCatalogText() {
       const paths = options?.bundledCatalogPath
         ? [options.bundledCatalogPath]
