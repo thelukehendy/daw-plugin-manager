@@ -1,0 +1,106 @@
+{
+  "vendor": "denise-audio",
+  "oracle_urls": [
+    "https://www.deniseaudio.com/downloads",
+    "https://www.deniseaudio.com/legacy-downloads"
+  ],
+  "fetched_at_pt": "2026-09-25 12:20 PT",
+  "parse_rule": "Visible product heading + parenthetical (X.Y). S3 zip object names have NO version \u2014 ignore filenames; HEAD Last-Modified is canary only. Exact generation match: Bad Tape \u2260 Bad Tape 2; Perfect Room \u2260 Perfect Room 2; Bass XL (legacy) \u2260 Bass XXL (current).",
+  "current_downloads_tips": [
+    {
+      "product": "Bass XXL",
+      "version": "1.3"
+    },
+    {
+      "product": "Motion Filter",
+      "version": "1.4"
+    },
+    {
+      "product": "Perfect Room 2",
+      "version": "1.4"
+    }
+  ],
+  "legacy_downloads_tips": [
+    {
+      "product": "Bad Tape",
+      "version": "1.2"
+    },
+    {
+      "product": "Bad Tape 2",
+      "version": "1.4"
+    },
+    {
+      "product": "Bass XL",
+      "version": "1.0"
+    },
+    {
+      "product": "Bite Harder",
+      "version": "1.3"
+    },
+    {
+      "product": "Dragon Fire",
+      "version": "1.3"
+    },
+    {
+      "product": "God Mode",
+      "version": "1.3"
+    },
+    {
+      "product": "My Crush",
+      "version": "1.1"
+    },
+    {
+      "product": "Noize 2",
+      "version": "1.2"
+    },
+    {
+      "product": "Perfect Plate XL",
+      "version": "1.3"
+    },
+    {
+      "product": "Perfect Room",
+      "version": "1.1"
+    },
+    {
+      "product": "Poltergate",
+      "version": "1.2"
+    },
+    {
+      "product": "Slappy",
+      "version": "1.1"
+    },
+    {
+      "product": "Sub Generator",
+      "version": "1.2"
+    },
+    {
+      "product": "The Sweeper",
+      "version": "1.0"
+    }
+  ],
+  "fixture": [
+    "fixtures/tier2/denise-audio/downloads.html",
+    "fixtures/tier2/denise-audio/legacy-downloads.html"
+  ],
+  "catalog_map": {
+    "Bass XXL": "denise-audio--denise-audio-bass-xxl",
+    "Motion Filter": "denise-audio--denise-audio-motion-filter",
+    "Perfect Room 2": "denise-audio--denise-audio-perfect-room-2",
+    "Bad Tape": "denise-audio--denise-audio-bad-tape",
+    "Bad Tape 2": "denise-audio--denise-audio-bad-tape-2",
+    "Bite Harder": "denise-audio--denise-audio-bite-harder",
+    "Dragon Fire": "denise-audio--denise-audio-dragon-fire",
+    "God Mode": "denise-audio--denise-audio-god-mode",
+    "My Crush": "denise-audio--denise-audio-my-crush",
+    "Slappy": "denise-audio--denise-audio-slappy"
+  },
+  "do_not_map": [
+    "Bass XL",
+    "Perfect Room",
+    "Noize 2",
+    "Perfect Plate XL",
+    "Poltergate",
+    "Sub Generator",
+    "The Sweeper"
+  ]
+}

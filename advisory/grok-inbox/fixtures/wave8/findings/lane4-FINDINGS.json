@@ -1,0 +1,24 @@
+{
+  "lane": 4,
+  "ask": "Ask4 hub-newsroom KORG-class leaks",
+  "date": "2026-09-25",
+  "timezone": "America/Los_Angeles",
+  "draft": "inbox-drafts/2026-09-25-hub-newsroom-korg-class-leaks-deep.md",
+  "new_sku_tip_unlocks": 0,
+  "near_miss": {
+    "vendor": "slate-digital",
+    "angle": "zendesk_rn_title_version_feed",
+    "korg_class_shape": true,
+    "unlock": false,
+    "why": "RN titles embed versions (VMR 2.10.1.3 etc) + body changelogs, but tips LAG catalog/KVR (VMR tip 3.3.10.0). Hub RN body has Complete Access Hub 2.19.0 — hub_app only, no slate hub_app row.",
+    "fixtures": [
+      "fixtures/hub/slate/META.json",
+      "fixtures/hub/slate/rn-title-index.json",
+      "fixtures/hub/slate/rn/article-12998887383315.json",
+      "fixtures/hub/slate/rn/article-hub-rn.json"
+    ]
+  },
+  "vendors_probed": ["ik-multimedia", "roland", "arturia", "image-line", "lexicon", "slate-digital", "eastwest", "output", "uvi", "8dio"],
+  "posture": "all targets remain hub_walled for SKU tips; KORG wave7 news-title chip remains only partial unlock in class",
+  "fixtures_root": "fixtures/hub/"
+}

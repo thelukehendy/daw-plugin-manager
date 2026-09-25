@@ -1,0 +1,8 @@
+version: 3.26.0
+files:
+  - url: Native-Access-latest.exe
+    sha512: qzj/vTTvaIpHjsCTAXQp5InCPbLO6N4b1PhmWmxkIkMRX/M3PBdP0ETek4epxQZS1PnLYmCSSAjSFFj9jJcT+g==
+    size: 179877344
+path: Native-Access-latest.exe
+sha512: qzj/vTTvaIpHjsCTAXQp5InCPbLO6N4b1PhmWmxkIkMRX/M3PBdP0ETek4epxQZS1PnLYmCSSAjSFFj9jJcT+g==
+releaseDate: '2026-09-08T11:49:43.556Z'

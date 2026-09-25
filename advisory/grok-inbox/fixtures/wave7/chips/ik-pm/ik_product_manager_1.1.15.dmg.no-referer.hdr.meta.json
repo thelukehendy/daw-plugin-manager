@@ -1,0 +1,11 @@
+{
+  "url": "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_1.1.15.dmg",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 266,
+  "sha256": "5408922cfb16fd61d3355d3ecdd750226f9eb85a0df4a41dfb2a91eeb0e3bc73",
+  "negative": true,
+  "method": "HEAD",
+  "referer": null,
+  "expected_status": 403,
+  "detector": "403_without_referer"
+}

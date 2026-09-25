@@ -1,0 +1,35 @@
+{
+  "rule": "Never accept /releases/latest blindly. Skip prerelease, draft, and tags matching nightly|rc|beta. Prefer the newest non-prerelease stable tag. Date-style tags (Cardinal 26.02) are versions, not dates to discard.",
+  "traps": [
+    {
+      "repo": "surge-synthesizer/surge",
+      "latest_tag": "Nightly",
+      "published": "2024-08-07",
+      "catalog_tier": 1,
+      "do": "ignore Nightly; use stable tag list"
+    },
+    {
+      "repo": "Chowdhury-DSP/BYOD",
+      "latest_release_last_modified": "2024-03-16",
+      "catalog": "chowdsp greens came from OAS not this tag",
+      "do": "do not regress OAS versions to 2024 github tag"
+    },
+    {
+      "repo": "airwindows/airwindows",
+      "latest": 404,
+      "do": "no per-SKU version; consolidated commit only (existing policy)"
+    },
+    {
+      "repo": "mtytel/vital",
+      "latest": "empty parse 2026-09-25",
+      "do": "confirm repo rename before a chip"
+    },
+    {
+      "repo": "lsp-plugins/lsp-plugins",
+      "latest_tag": "1.2.35",
+      "published": "2026-08-23",
+      "catalog_match": "65 plugins already at 1.2.35",
+      "do": "health probe: tag==catalog, not a rediscovery"
+    }
+  ]
+}

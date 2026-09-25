@@ -1,0 +1,107 @@
+{
+  "wave": 8,
+  "ask": 6,
+  "lane": 6,
+  "title": "database robustness — silent Mac/Win higher, successor-URL stamps, hostile accepted tips",
+  "theme": "database_robustness_accuracy",
+  "generated_at_pt": "2026-09-25T13:07:34-07:00",
+  "advisor_only": true,
+  "no_catalog_write": true,
+  "no_git_commit": true,
+  "no_db_telemetry_credentialed_scrape": true,
+  "db": "/workspace/daw-plugin-manager-publish/catalog-store/data/catalog.db",
+  "tier_filter": "COALESCE(plugins.popularity_tier, manufacturers.popularity_tier)=1",
+  "tip_filter": "plugin_version_current.observation_id = version_observations.id AND status='accepted'",
+  "non_redundant_vs": [
+    "ask1 cohort Softube/Waves/UA hub stamps",
+    "ask2 Acoustifier protocol + D16 historical retraction",
+    "ask3 chip falsification / brew death (Softube root, UA, Spitfire)"
+  ],
+  "angles_skipped": [
+    {
+      "id": "brew_generalized",
+      "reason": "Only superseded Softube Central / NI Native Access brew traps remain; live tips clean. Covered by ask3 death conditions."
+    },
+    {
+      "id": "content_hash_verified_at_paradox",
+      "reason": "No amber-fresh vs green-stale paradox: both bands median ~15.5–15.6d verified_at. Old green is rotation debt already named in TIER1-REFLECT, not a new accuracy class."
+    }
+  ],
+  "drafts": [
+    "inbox-drafts/2026-09-25-mac-win-silent-higher-detection-deep.md",
+    "inbox-drafts/2026-09-25-successor-url-stamp-contamination-deep.md",
+    "inbox-drafts/2026-09-25-accepted-tip-hostile-source-gate-deep.md"
+  ],
+  "fixtures": [
+    "fixtures/explore/oeksound/bloom-tip-live.json",
+    "fixtures/explore/ssl/acoustifier-tip-live.json",
+    "fixtures/explore/valhalla-dsp/documented-mac-current-tips.json",
+    "fixtures/explore/plugin-alliance/successor-url-stamp-tips.json",
+    "fixtures/explore/plugin-alliance/successor-url-stamp-detect.sql",
+    "fixtures/explore/xfer-records/serum-2-observation-history.json",
+    "fixtures/explore/native-instruments/action-strikes-observation-history.json"
+  ],
+  "strongest_finding": {
+    "id": "serum_vstorrent_confidence_raise",
+    "summary": "xfer-records--serum-2 tip was raised from KVR@60 to vstorrent.org@75 (amber) with reasons claiming third-party-mirror corroboration — pirate host became tip and increased confidence.",
+    "plugin_id": "xfer-records--serum-2",
+    "from": {"source": "kvraudio", "confidence": 60, "status": "superseded"},
+    "to": {"source": "vstorrent.org", "confidence": 75, "status": "accepted", "verified_at": "2026-09-14T17:36:56Z"},
+    "companion": "native-instruments--action-strikes sole tip also vstorrent.org@58",
+    "why_robustness": "Tip table is SoT; deny-host must hard-fail accept; confidence must never increase on warez mirrors."
+  },
+  "findings": [
+    {
+      "id": "mac_win_silent_higher",
+      "live_clear_candidate": {
+        "plugin_id": "oeksound--bloom",
+        "tip": "1.1.3",
+        "confidence": 92,
+        "evidence": "### 1.1.3 Released on November 4, 2025 (Windows GUI resize fix); downloads page Mac still lists 1.1.2",
+        "correct_mac_current": "1.1.2",
+        "win_alternate": "1.1.3"
+      },
+      "documented_ok_controls": [
+        "ssl--ssl-acoustifier 1.0.18",
+        "valhalla plate/shimmer/freqecho/spacemodulator/ubermod Mac-current tips"
+      ],
+      "detection": "Mac/Win version sets in evidence unequal AND tip==max AND no mac-current/windows-only language"
+    },
+    {
+      "id": "successor_url_stamp",
+      "tier1_with_successor": 100,
+      "live_clear_candidates": [
+        {
+          "predecessor": "plugin-alliance--bx-boom",
+          "tip": "3.0.0@88",
+          "url": "https://www.plugin-alliance.com/products/bx_boom-v3",
+          "successor": "plugin-alliance--bx-boom-v3"
+        },
+        {
+          "predecessor": "plugin-alliance--bx-refinement",
+          "tip": "3.0.0@88",
+          "url": "https://www.plugin-alliance.com/products/bx_refinement-v3",
+          "successor": "plugin-alliance--bx-refinement-v3"
+        },
+        {
+          "predecessor": "plugin-alliance--proaudiodsp-dsm",
+          "tip": "3.7.0@90",
+          "identity_kind": "gen_ambiguous",
+          "url": "https://www.plugin-alliance.com/products/dsm-v3",
+          "successor": "plugin-alliance--pro-audio-dsp-dsm-v3"
+        }
+      ],
+      "fingerprint": "accepted tip source_url embeds successor slug while successor_plugin_id set",
+      "d16_status": "corrected (fazortan/redoptor/syntorus/toraverb 1.4.0@95) — detector correctly dark"
+    },
+    {
+      "id": "accepted_tip_hostile_weak_sources",
+      "tier1_accepted_tips": 2777,
+      "conf_le_60": 500,
+      "kvr_url_le_60": 470,
+      "pirate_tips": 2,
+      "press_only_tips": 5,
+      "forum_tips": 15
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "url": "https://sonnox.com/articles/a-farewell-to-three-sonnox-classics/",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 226362,
+  "sha256": "2792b55e7e7c3681dd322192e3c9d5d118f3c8f0ea9fba66496038d4c8c60581",
+  "role": "discontinued_posture",
+  "retires": [
+    "oxford-debuzzer",
+    "oxford-declicker",
+    "oxford-denoiser"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ssl--ssl-acoustifier",
+  "observed_version": "1.0.18",
+  "confidence": 92,
+  "evidence_snippet": "Zendesk API updated_at 2026-09-22T08:57:30Z; table label now explicit 'Acoustifier v1.0.18 (v1.0.19 Windows only)'; Mac data-link: SSL Acoustifier macOS v1.0.18 Installer.dmg; Win data-link: 2025.11.24 - v1.0.19 / SSL Acoustifier 64-bit v1.0.19.exe. Per dual-platform convention: Mac current accepted, Win noted. Resolves 2026-09-19 dual-mismatch watch.",
+  "verified_at": "2026-09-23T05:23:09Z"
+}

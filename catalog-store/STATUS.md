@@ -1,9 +1,10 @@
 # STATUS — DAW Plugin Catalog Store
 
-> **DAILY PUSH 2026-09-18 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bulk of band movement from the 2026-09-17 midday push (+332 tier-1 promotions); since midday: toxic-iii 1.41 @60→@90, H910 3.12.4→2.5.11 integrity correction.
+> **DAW IDENTITY PUSH 2026-09-25 ~13:45 PT** — per Luke: DAW versions in the catalog + iLok-style studio apps. Added 14 flagship `standalone_app` identities (Ableton Live 12.4.6 @80, Logic Pro 12.3.1 @90, Pro Tools 2026.4 @80, Cubase Pro 15 15.0.30 @85, Fender Studio Pro 8.1 @85, Bitwig Studio 6 6.1.1 @92, FL Studio Producer Edition 26.1.6 @85, REAPER 7.80 @90, Reason 14.1.0 @90, Digital Performer 12.0 @75, Waveform 14 @80, Mixbus 11.1 @85, Renoise 3.5.4 @70, GarageBand 10.4.14 @80) — iLok License Manager 6.0.1 @90 was already accepted, no duplicate. Reclassified 20 DAW rows mis-typed as `hub_app` to `standalone_app` (Bitwig/FL/Steinberg/Tracktion/PreSonus editions; Studio One VST-AU-ReWire add-on -> `plugin`). Studio One -> Fender Studio Pro supersession wired (3 rows; predecessor back-link on Fender row). 5 new manufacturers (Ableton, Cockos, Reason Studios, MOTU, Fender); renoise/harrison/tracktion promoted to tier 1. Bitwig flagship raised 6.1->6.1.1 and FL flagship 70->85 after re-verifying official vendor download pages. Manufacturers **666** (+5), plugins **9511** (+11).
+> **DAILY PUSH 2026-09-25 ~06:00 PT** — shipped the research chips' work via cron `daw-catalog-daily-push` (12h maintenance cadence, tier-1-only; TIER-1 assault COMPLETE, owner-verified 2026-09-16). Bands: green **3,958** (+0), amber **347** (+0), yellow **1,346** (+0). **106 researched** across the 09-24 1018 + 2218 chips (**3 promoted**, 103 observed): SSL auto-series vendor installer-link rollback corrections — ssl--ssl-autoeq 1.0.43→1.0.41, ssl--ssl-autodyn 1.0.6→1.0.5, ssl--ssl-autobus 1.0.18→1.0.17, all @92 green→green (version decreases are legitimate corrections when the vendor re-points installers). Plugin Alliance 47-row changelog-top freshness enumeration slice 1 — all held; SSL auto-series Zendesk watch — no 1.0.43-class re-release. Identity fix: cenozoix-compressor seed notes re-mapped to the correct product page. Zero upward version churn — the freshness loop confirming stability.
 > Resumed 2026-09-13 ~9:44 PM PT per Luke; `daw-catalog-keep-going` + `daw-catalog-weekly-scrub` stay paused pending his call. Pause snapshot: `PAUSE-SNAPSHOT.md`.
 
-**Snapshot:** 2026-09-18 ~06:00 PT (daily push, ships through maintenance chip 2218 incl. H910 correction)  
+**Snapshot:** 2026-09-25 ~06:00 PT (daily push, ships through maintenance chip 2218 — 106 researched, 3 promoted: SSL auto-series installer-link rollback corrections)  
 **Path:** `/workspace/daw-plugin-catalog-store`  
 **SQLite:** `data/catalog.db` · `meta.schema_version=4`  
 **Export:** `out/catalog.json` · PluginCatalog `schemaVersion: 3` · `catalogSource: store-export:v4`
@@ -12,12 +13,12 @@
 
 | Metric | Value |
 |---|---|
-| Manufacturers | **609** |
-| Plugins (universe) | **8910** |
-| Accepted current versions | **5149** |
-| Green (≥85) | **3527** |
-| Amber (70–84) | **111** |
-| Yellow (<70) | **1511** |
+| Manufacturers | **660** |
+| Plugins (universe) | **9494** |
+| Accepted current versions | **5651** |
+| Green (≥85) | **3958** |
+| Amber (70–84) | **347** |
+| Yellow (<70) | **1346** |
 | True plugin gaps (non-Airwindows) | **74** |
 | Airwindows intentional unversioned | **512** |
 
@@ -47,9 +48,9 @@
 
 | Band | Score | Count |
 |---|---|---|
-| Green | ≥ 85 | **3527** |
-| Amber | 70–84 | **111** |
-| Yellow | < 70 | **1511** (KVR @ 60) |
+| Green | ≥ 85 | **3959** |
+| Amber | 70–84 | **347** |
+| Yellow | < 70 | **1345** (KVR @ 60) |
 
 ## This pass (universe expand 11)
 

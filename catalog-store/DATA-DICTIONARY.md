@@ -1,8 +1,8 @@
 # DATA DICTIONARY — app-facing catalog fields (for Cursor / Electron)
 
-Source of truth: `catalog-store/data/catalog.db` (schema v5).
+Source of truth: `catalog-store/data/catalog.db` (schema v6).
 App-facing file: `catalog/catalog.json` (synced copy of `catalog-store/out/catalog.json`).
-PluginCatalog schema v3 + v5 additions below. Fields are omitted when unset —
+PluginCatalog schema v3 + v5/v6 additions below. Fields are omitted when unset —
 absence means "not researched", never "false".
 
 ## Manufacturer entry
@@ -18,6 +18,7 @@ absence means "not researched", never "false".
 | `versionScheme` *(v5)* | `version_scheme` | How this manufacturer writes versions: `semver` (1.2.3), `semver4` (1.2.3.4), `date` (Airwindows-style `2026-09-05-…`), `build` (bare build number), `marketing` (non-numeric). Feed this to the version normalizer before comparing. |
 | `versionExample` *(v5)* | `version_example` | A real observed version string, e.g. `"4.10.19"`. Use as a normalizer test fixture. |
 | `changelogUrl` *(v5)* | `changelog_url` | Fixed changelog / release-notes page. Link "What's new" here. |
+| `popularityTier` *(v6)* | `popularity_tier` | 1 = household names … 4 = long tail. Omitted = unranked. Sort "Needs update" tier-1-first. |
 
 ## Plugin entry
 
@@ -26,7 +27,8 @@ absence means "not researched", never "false".
 | `id` / `name` / `manufacturerId` | — | Identity. |
 | `matchPatterns` | `match_patterns` | Filename/bundle substrings used to detect the installed plugin. |
 | `formats` | `formats` | e.g. `["AU","VST3","AAX"]`. Render as format badges. |
-| `latestVersion` | via accepted observation | Current version. Absent = no accepted version (don't show "up to date"). |
+| `latestVersion` | via accepted observation | Current version. Absent = no accepted version (don't show "up to date"). **Never present on discontinued rows — see `finalVersion`.** |
+| `finalVersion` | via accepted observation (discontinued rows only) | Final release of a discontinued product. The app must render the row as "Discontinued" and may note "final version X, you have Y" — never an "Outdated" alert. |
 | `versionConfidence` | `confidence` (0–100) | ≥85 green = verified, 70–84 amber = likely, <70 yellow = weak. **Render as a badge** — this honest-uncertainty UI is the app's differentiator. |
 | `versionConfidenceReasons` | `confidence_reasons` | Human-readable why, e.g. `["manufacturer-downloads-page"]`. Tooltip text. |
 | `versionSourceUrl` | `source_url` | Evidence page. "Verify" link. |
@@ -44,6 +46,24 @@ absence means "not researched", never "false".
 | | | `intel-only` — Intel-only and known broken under Rosetta. Show a warning badge. |
 | | | Omitted = unresearched. Never assume. |
 | `notesForUser` | `notes_for_user` | Short UX hint string, safe to render verbatim. |
+| `popularityTier` *(v6)* | resolved `COALESCE(plugins.popularity_tier, manufacturers.popularity_tier)` | **Effective tier, resolved at export time** — the app never does the join itself. 1 = household names (sort these first in "Needs update"), 2–4 = long tail. Omitted = unranked. |
+
+## Version pointer (`catalog/catalog-version.json`)
+
+Published fresh with every push (see `catalog/CATALOG-FEED.md` for the fetch
+flow). The app discovers new builds through this pointer — never by polling
+the mutable branch URL.
+
+| JSON key | Meaning for the app |
+|---|---|
+| `feedVersion` | Pointer format version (currently 1). |
+| `buildId` | The export's `updatedAt` timestamp. Compare against the installed build — upgrade only when newer. Display as "Catalog as of <buildId>". |
+| `catalogCommit` | Full 40-char SHA of the GitHub commit containing this build's `catalog.json`. |
+| `sha256` / `sizeBytes` | Integrity check for the downloaded catalog. **Reject the download on mismatch** — keep the old catalog. |
+| `schemaVersion` | Catalog schema version. Refuse builds the app can't parse. |
+| `counts` | `manufacturers` / `plugins` / `tier1Plugins` — for the "catalog as of" display. |
+| `endpoints.jsdelivrPinned` | `https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@<catalogCommit>/catalog/catalog.json` — immutable, safe to cache forever. Primary download. |
+| `endpoints.rawPinned` | `https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/<catalogCommit>/catalog/catalog.json` — fallback. |
 
 ## Conventions the app must respect
 

@@ -407,3 +407,68 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Flags for next maintenance chips: Valhalla 10-row re-fresh (head-of-queue); sonible/Eventide/Heavyocity resolved-negative probes logged with no-retry directives in TIER1-ASSAULT.md.
 - Push mechanics: backup `backups/2026-09-18/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.
+
+
+## Daily push 2026-09-19 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,959** (+0), amber **347** (−1), yellow **1,345** (+1).
+- Only plugin change since the 09-18 push: **klanghelm--mjuc** 1.8.1 @70 → @60 (amber→yellow) — DATA-INTEGRITY CORRECTION via the zero-trust weak-single-source rule (sole source was third-party allmacworld.co; the vendor publishes no version number; old row auto-superseded). Version unchanged.
+- 247 plugins researched across the 09-18 1018 + 2218 maintenance chips: zero version churn. MeldaProduction ×130 observed (kernel 17.10.01, zero churn); FabFilter ×16 observed (all current-gen held); Cytomic ×3 observed (new HTML-grep recipe — cheap, no browser egress); Soundtoys ×24 observed (5.5.5, Jul 7 2026); oeksound ×4 observed; Newfangled ×6 observed.
+- Valhalla 7 rows still unre-confirmed (browser-service fetch infra failure — third consecutive chip; stored versions NOT re-verified, re-queued for next 12h pass); Klanghelm JS-gating cleared via rendered live-browser session (DC1A3 3.5.0, IVGI2 2.5.0, TENSjr 1.0.7 held; MJUC = permanent vendor-unconfirmable class).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, byte-identical); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-19/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push.
+
+
+## Daily push 2026-09-20 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0).
+- Only plugin change since the 09-19 push: **softube--central (Softube Central)** 2.2.0 → **3.0.5** @90 (green→green raise; official Known Issues page updated 10 Sep 2026 lists 3.0.5 as latest with direct Mac/Win download links — new known-issues-page version-oracle recipe recorded in TIER1-ASSAULT.md).
+- 265 plugins researched across the 09-19 1018 + 2218 maintenance chips: zero other version churn. Softube ×145 re-freshed (RN index unchanged, family holds 2.6.41); Valhalla ×10 observed via search-cache fallback (5th consecutive browser-fetch failure; first-hand re-fetch queued); SSL Acoustifier dual-mismatch watch continues (Mac 1.0.18 vs Win 1.0.19, stored 1.0.19 kept); Sonnox installers CSV URL re-discovered (all 15 match); TAL Software 28 (JS-storefront migration found); Toontrack 5 (RN hubs match); SSL Zendesk-API recipe added (45 observed).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-20/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-21 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0).
+- Only plugin change since the 09-20 push: **native-instruments--native-access (Native Access products)** 3.25.2 → **3.26.0** @92 (green→green raise; installer-binary-metadata oracle — PE version resource from NI's own GCS-bucket exe, parent first-hand verified the full chain; new oracle recipe + standing manager-app oracle rule recorded in TIER1-ASSAULT.md).
+- 170 plugins researched across the 09-20 1018 + 2218 maintenance chips: zero other version churn. Kilohearts ×84 (2.4.6 held); FabFilter ×16 observed + 7 bundle SKUs terminal skips (legacy rows: /support/downloads has no per-product legacy versions — inherently weak); Toontrack ×5 observed; Soundtoys ×24 (5.5.5 held); Goodhertz ×22 (3.14.1 held); Valhalla ×10 observed via search-cache fallback (6th consecutive browser-fetch failure; FreqEcho spaced-query refinement; first-hand re-fetch still queued).
+- Data-integrity flag (pre-existing, export/app unaffected — needs engine repair): 5 orphaned accepted rows not pointed to by plugin_version_current (2026-09-10 era; in HEAD): Native Access 3.25.2 @80, Surge XT 1.3.4 @95, Battery 4.3.1 @60, Massive 1.7.0 @60, Voxengo BMS 2.7 @90.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-21/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-22 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,959** (+0), amber **347** (+0), yellow **1,345** (+0).
+- 2 plugin changes since the 09-21 push (both green→green, from the 09-21 2218 maintenance chip):
+  - **celemony--tonalic** 1.0.3.003 → **1.0.4.011** @92 — held raise candidate first-hand verified: official tonalic.com release-notes page (Sep 14 2026, deep ARA integration in UA LUNA).
+  - **eventide--precision-time-align** 3.11.4 → **3.7.13** @92 — data-integrity correction: product's own downloads page tops at 3.7.13 (full 3.7.x trail); prior 3.11.4 was an unattributed H910-class framework stamp misattribution (second catch by this rule).
+- 120 researched across the 09-21 1018 + 2218 chips (2 promoted, 69 observed, 51 skipped), zero other version churn. Eventide ×43 observed (product-scoped RN oracle); Antares ×26 (SoundSoap 6.6.0 first-hand RN article; RN article-ID discoverability remains the blocker); 5 orphaned accepted rows repaired (flipped to superseded — 0 orphans remain).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-22/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-23 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,958** (−1), amber **347** (+0), yellow **1,346** (+1).
+- 2 plugin changes since the 09-22 push (both documented in the 09-22 chip notes — data-integrity corrections, not research misses):
+  - **ssl--ssl-acoustifier** 1.0.19 → **1.0.18** @92 — green→green; vendor's Zendesk article now explicitly labels "Acoustifier v1.0.18 (v1.0.19 Windows only)"; Mac-current dual-platform convention applied (Win noted in evidence).
+  - **eventide--knife-drop** @92 → **@60** (2.2.0) — green→yellow; Knife Drop is a Third Man Hardware dot9-series analog synth/fuzz PEDAL (hardware, not a plugin); the Eventide downloads page ignores the `?product=Knife+Drop` key and renders the H90 Control changelog, so the prior @92 vendor observation was unattributed. identity_kind corrected plugin→hardware; KVR-only evidence demoted to @60. Principled non-target for future version chips.
+- 245 plugins researched across the 09-22 1018 + 2218 chips (1 promoted, knife-drop/Acoustifier corrections logged), zero other version churn.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-23/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-24 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,958** (+0), amber **347** (+0), yellow **1,346** (+0).
+- 0 plugin changes since the 09-23 push — zero-churn push: 263 plugins researched across the 09-23 1018 + 2218 chips (0 promoted, 263 observed, all rows held): MeldaProduction 130 @17.10.01, Kilohearts 83 @2.4.6, Soundtoys 27 @5.5.5, Goodhertz 22 @3.14.1; FabFilter Pro-Q 3 probe resolved (3.29 held; 3.31/3.33/3.35 on the page are other products, not Pro-Q 3).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-24/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-25 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,958** (+0), amber **347** (+0), yellow **1,346** (+0).
+- 106 plugins researched across the 09-24 1018 + 2218 chips (3 promoted, 103 observed). 3 version corrections since the 09-24 push — all SSL auto-series vendor installer-link rollbacks, green→green @92 (documented in the 09-24 chip notes; version decreases are legitimate corrections when the vendor re-points installers):
+  - **ssl--ssl-autoeq** 1.0.43 → **1.0.41**
+  - **ssl--ssl-autodyn** 1.0.6 → **1.0.5**
+  - **ssl--ssl-autobus** 1.0.18 → **1.0.17**
+- Identity/data-integrity fix: plugin-alliance--tbtech-cenozoix-compressor seed notes re-mapped to the correct product page (was pointing at mpressor).
+- Freshness: Plugin Alliance 47-row changelog-top enumeration slice 1 — all held; SSL auto-series Zendesk watch — no 1.0.43-class re-release. 100 export rows carry refreshed `versionVerifiedAt` only.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-25/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.

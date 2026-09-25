@@ -1,78 +1,391 @@
 {
   "schemaVersion": 1,
   "kind": "catalog-coverage-report",
-  "generatedAt": "2026-08-11T17:10:55.515Z",
+  "generatedAt": "2026-09-18T17:05:38.184Z",
   "freshDays": 60,
-  "plugins_total": 816,
-  "manufacturers_total": 100,
-  "verified_strong": 287,
-  "verified_within_7d": 287,
-  "pending_unverified": 340,
-  "sticky_eligible": 90,
-  "cold_eligible": 250,
-  "manual_curation": 155,
+  "plugins_total": 9494,
+  "manufacturers_total": 660,
+  "verified_strong": 5086,
+  "verified_within_7d": 5083,
+  "pending_unverified": 4402,
+  "sticky_eligible": 1034,
+  "cold_eligible": 3368,
+  "manual_curation": 9,
   "by_evidence": {
-    "page-confirmed": 287,
-    "unverified-seed": 351,
-    "live-scrape": 69,
-    "search-verified": 107,
-    "manufacturer-feed": 2
+    "unverified-seed": 3843,
+    "page-confirmed": 5086,
+    "manufacturer-feed": 565
   },
   "by_reason": {
-    "fresh_strong": 287,
-    "unverified_or_missing_source": 299,
-    "awaiting_page_confirmation": 41,
-    "other": 34,
-    "manual_curation_http_unreachable": 155
+    "unverified_or_missing_source": 3834,
+    "fresh_strong": 5083,
+    "awaiting_page_confirmation": 565,
+    "manual_curation_http_unreachable": 9,
+    "stale_gt_fresh_days": 3
   },
   "pending_manufacturers": [
     {
-      "manufacturer": "Solid State Logic",
-      "total": 39,
-      "pending": 33,
-      "freshStrong": 6,
-      "sticky": 33,
+      "manufacturer": "Airwindows",
+      "total": 515,
+      "pending": 512,
+      "freshStrong": 3,
+      "sticky": 0,
+      "cold": 512,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Native Instruments",
+      "total": 434,
+      "pending": 365,
+      "freshStrong": 69,
+      "sticky": 365,
       "cold": 0,
       "manual": 0
     },
     {
+      "manufacturer": "8Dio",
+      "total": 328,
+      "pending": 307,
+      "freshStrong": 21,
+      "sticky": 0,
+      "cold": 307,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Puremagnetik",
+      "total": 250,
+      "pending": 250,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 250,
+      "manual": 0
+    },
+    {
+      "manufacturer": "IK Multimedia",
+      "total": 257,
+      "pending": 137,
+      "freshStrong": 120,
+      "sticky": 0,
+      "cold": 137,
+      "manual": 0
+    },
+    {
+      "manufacturer": "UVI",
+      "total": 186,
+      "pending": 126,
+      "freshStrong": 60,
+      "sticky": 0,
+      "cold": 126,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Spitfire Audio",
+      "total": 225,
+      "pending": 108,
+      "freshStrong": 117,
+      "sticky": 3,
+      "cold": 105,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Applied Acoustics Systems",
+      "total": 110,
+      "pending": 98,
+      "freshStrong": 12,
+      "sticky": 0,
+      "cold": 98,
+      "manual": 0
+    },
+    {
+      "manufacturer": "EastWest",
+      "total": 116,
+      "pending": 74,
+      "freshStrong": 42,
+      "sticky": 0,
+      "cold": 74,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Impact Soundworks",
+      "total": 72,
+      "pending": 72,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 72,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Nembrini Audio",
+      "total": 63,
+      "pending": 63,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 63,
+      "manual": 0
+    },
+    {
+      "manufacturer": "XLN Audio",
+      "total": 70,
+      "pending": 57,
+      "freshStrong": 13,
+      "sticky": 0,
+      "cold": 57,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Fracture Sounds",
+      "total": 56,
+      "pending": 56,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 56,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Soniccouture",
+      "total": 53,
+      "pending": 52,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 52,
+      "manual": 0
+    },
+    {
+      "manufacturer": "SKnote",
+      "total": 36,
+      "pending": 36,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 36,
+      "manual": 0
+    },
+    {
+      "manufacturer": "u-he",
+      "total": 67,
+      "pending": 35,
+      "freshStrong": 32,
+      "sticky": 0,
+      "cold": 35,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Modartt",
+      "total": 42,
+      "pending": 34,
+      "freshStrong": 8,
+      "sticky": 0,
+      "cold": 34,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Heavyocity",
+      "total": 72,
+      "pending": 33,
+      "freshStrong": 39,
+      "sticky": 0,
+      "cold": 33,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Keepforest",
+      "total": 32,
+      "pending": 32,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 32,
+      "manual": 0
+    },
+    {
       "manufacturer": "Plugin Alliance",
-      "total": 175,
-      "pending": 27,
-      "freshStrong": 114,
-      "sticky": 27,
+      "total": 291,
+      "pending": 30,
+      "freshStrong": 261,
+      "sticky": 30,
       "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Arturia",
+      "total": 135,
+      "pending": 30,
+      "freshStrong": 105,
+      "sticky": 0,
+      "cold": 30,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Boz Digital Labs",
+      "total": 51,
+      "pending": 29,
+      "freshStrong": 22,
+      "sticky": 0,
+      "cold": 29,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Cymatics",
+      "total": 49,
+      "pending": 29,
+      "freshStrong": 20,
+      "sticky": 0,
+      "cold": 29,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Ugritone",
+      "total": 27,
+      "pending": 27,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 27,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Steinberg",
+      "total": 80,
+      "pending": 27,
+      "freshStrong": 53,
+      "sticky": 0,
+      "cold": 27,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Nomad Factory",
+      "total": 37,
+      "pending": 27,
+      "freshStrong": 10,
+      "sticky": 0,
+      "cold": 27,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Universal Audio",
+      "total": 234,
+      "pending": 25,
+      "freshStrong": 209,
+      "sticky": 0,
+      "cold": 25,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Bogren Digital",
+      "total": 25,
+      "pending": 25,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 25,
+      "manual": 0
+    },
+    {
+      "manufacturer": "KORG",
+      "total": 24,
+      "pending": 24,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 24,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Cinesamples",
+      "total": 47,
+      "pending": 24,
+      "freshStrong": 23,
+      "sticky": 0,
+      "cold": 24,
+      "manual": 0
+    },
+    {
+      "manufacturer": "MeldaProduction",
+      "total": 153,
+      "pending": 23,
+      "freshStrong": 130,
+      "sticky": 23,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Excite Audio",
+      "total": 29,
+      "pending": 22,
+      "freshStrong": 7,
+      "sticky": 0,
+      "cold": 22,
+      "manual": 0
+    },
+    {
+      "manufacturer": "PSPaudioware",
+      "total": 91,
+      "pending": 22,
+      "freshStrong": 69,
+      "sticky": 0,
+      "cold": 22,
+      "manual": 0
+    },
+    {
+      "manufacturer": "DDMF",
+      "total": 25,
+      "pending": 21,
+      "freshStrong": 4,
+      "sticky": 0,
+      "cold": 21,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Audio Assault",
+      "total": 24,
+      "pending": 21,
+      "freshStrong": 3,
+      "sticky": 0,
+      "cold": 21,
       "manual": 0
     },
     {
       "manufacturer": "AIR Music Technology",
       "total": 26,
-      "pending": 26,
-      "freshStrong": 0,
+      "pending": 21,
+      "freshStrong": 5,
       "sticky": 0,
-      "cold": 26,
+      "cold": 21,
       "manual": 0
     },
     {
-      "manufacturer": "Antares",
-      "total": 26,
-      "pending": 26,
-      "freshStrong": 0,
+      "manufacturer": "Orchestral Tools",
+      "total": 85,
+      "pending": 21,
+      "freshStrong": 64,
       "sticky": 0,
-      "cold": 26,
+      "cold": 21,
       "manual": 0
     },
     {
-      "manufacturer": "Slate Digital",
-      "total": 26,
-      "pending": 26,
-      "freshStrong": 0,
+      "manufacturer": "Audified",
+      "total": 57,
+      "pending": 19,
+      "freshStrong": 38,
       "sticky": 0,
-      "cold": 26,
+      "cold": 19,
       "manual": 0
     },
     {
-      "manufacturer": "Unfiltered Audio",
+      "manufacturer": "CFA-Sound",
+      "total": 24,
+      "pending": 19,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 19,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Softube",
+      "total": 164,
+      "pending": 19,
+      "freshStrong": 145,
+      "sticky": 19,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ProjectSAM",
       "total": 19,
       "pending": 19,
       "freshStrong": 0,
@@ -81,7 +394,34 @@
       "manual": 0
     },
     {
-      "manufacturer": "Harrison",
+      "manufacturer": "Dave Mollen",
+      "total": 19,
+      "pending": 19,
+      "freshStrong": 0,
+      "sticky": 19,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "discoDSP",
+      "total": 34,
+      "pending": 18,
+      "freshStrong": 16,
+      "sticky": 2,
+      "cold": 16,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wave Arts",
+      "total": 18,
+      "pending": 18,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 18,
+      "manual": 0
+    },
+    {
+      "manufacturer": "HOFA-Plugins",
       "total": 17,
       "pending": 17,
       "freshStrong": 0,
@@ -90,43 +430,691 @@
       "manual": 0
     },
     {
-      "manufacturer": "Steinberg",
-      "total": 11,
-      "pending": 11,
-      "freshStrong": 0,
+      "manufacturer": "Sinevibes",
+      "total": 22,
+      "pending": 17,
+      "freshStrong": 5,
       "sticky": 0,
-      "cold": 11,
+      "cold": 17,
       "manual": 0
     },
     {
-      "manufacturer": "Lindell Audio",
-      "total": 11,
-      "pending": 11,
-      "freshStrong": 0,
+      "manufacturer": "Xhun Audio",
+      "total": 37,
+      "pending": 16,
+      "freshStrong": 21,
       "sticky": 0,
-      "cold": 11,
+      "cold": 16,
       "manual": 0
     },
     {
-      "manufacturer": "Soundtoys",
-      "total": 23,
-      "pending": 11,
-      "freshStrong": 12,
-      "sticky": 11,
-      "cold": 0,
+      "manufacturer": "Pulsar Modular",
+      "total": 16,
+      "pending": 16,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 16,
       "manual": 0
     },
     {
-      "manufacturer": "Metric Halo",
-      "total": 6,
-      "pending": 6,
+      "manufacturer": "Korneff Audio",
+      "total": 15,
+      "pending": 15,
       "freshStrong": 0,
       "sticky": 0,
-      "cold": 6,
+      "cold": 15,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Image-Line",
+      "total": 40,
+      "pending": 15,
+      "freshStrong": 25,
+      "sticky": 0,
+      "cold": 15,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sonalksis",
+      "total": 15,
+      "pending": 15,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 15,
+      "manual": 0
+    },
+    {
+      "manufacturer": "A.O.M.",
+      "total": 15,
+      "pending": 15,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 15,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Strezov Sampling",
+      "total": 14,
+      "pending": 14,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 14,
+      "manual": 0
+    },
+    {
+      "manufacturer": "WA Production",
+      "total": 102,
+      "pending": 14,
+      "freshStrong": 88,
+      "sticky": 0,
+      "cold": 14,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Mercuriall Audio",
+      "total": 14,
+      "pending": 13,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 13,
       "manual": 0
     },
     {
       "manufacturer": "Wavesfactory",
+      "total": 24,
+      "pending": 13,
+      "freshStrong": 11,
+      "sticky": 0,
+      "cold": 13,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sonuscore",
+      "total": 14,
+      "pending": 13,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 13,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Initial Audio",
+      "total": 34,
+      "pending": 12,
+      "freshStrong": 22,
+      "sticky": 0,
+      "cold": 12,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Line 6",
+      "total": 16,
+      "pending": 12,
+      "freshStrong": 4,
+      "sticky": 0,
+      "cold": 12,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Drumforge",
+      "total": 15,
+      "pending": 12,
+      "freshStrong": 3,
+      "sticky": 0,
+      "cold": 12,
+      "manual": 0
+    },
+    {
+      "manufacturer": "SONiVOX",
+      "total": 12,
+      "pending": 12,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 12,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Minimal Audio",
+      "total": 12,
+      "pending": 12,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 12,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Boom Library",
+      "total": 12,
+      "pending": 12,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 12,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vengeance Sound",
+      "total": 13,
+      "pending": 12,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 12,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sound Particles",
+      "total": 18,
+      "pending": 11,
+      "freshStrong": 7,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "AudioThing",
+      "total": 99,
+      "pending": 11,
+      "freshStrong": 88,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kuassa",
+      "total": 43,
+      "pending": 11,
+      "freshStrong": 32,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Output",
+      "total": 22,
+      "pending": 11,
+      "freshStrong": 11,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Lunacy",
+      "total": 11,
+      "pending": 11,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Caelum Audio",
+      "total": 11,
+      "pending": 11,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Embertone",
+      "total": 11,
+      "pending": 11,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Relab Development",
+      "total": 12,
+      "pending": 11,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 11,
+      "manual": 0
+    },
+    {
+      "manufacturer": "OTODESK",
+      "total": 10,
+      "pending": 10,
+      "freshStrong": 0,
+      "sticky": 10,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Denise Audio",
+      "total": 10,
+      "pending": 10,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 10,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Guillermo Moñino Cánovas",
+      "total": 10,
+      "pending": 10,
+      "freshStrong": 0,
+      "sticky": 10,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "sonible",
+      "total": 44,
+      "pending": 10,
+      "freshStrong": 34,
+      "sticky": 0,
+      "cold": 10,
+      "manual": 0
+    },
+    {
+      "manufacturer": "GetGood Drums",
+      "total": 10,
+      "pending": 10,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 10,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Slate + Ash",
+      "total": 9,
+      "pending": 9,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "D16 Group",
+      "total": 40,
+      "pending": 9,
+      "freshStrong": 31,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sixth Sample",
+      "total": 12,
+      "pending": 9,
+      "freshStrong": 3,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "NoiseAsh",
+      "total": 12,
+      "pending": 9,
+      "freshStrong": 3,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Joey Sturgis Tones",
+      "total": 9,
+      "pending": 9,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sonnox",
+      "total": 26,
+      "pending": 9,
+      "freshStrong": 17,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "TC Electronic",
+      "total": 10,
+      "pending": 9,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Mercurial Tones",
+      "total": 11,
+      "pending": 9,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Igor Zinken",
+      "total": 9,
+      "pending": 9,
+      "freshStrong": 0,
+      "sticky": 9,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Roland",
+      "total": 9,
+      "pending": 9,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Moog Music",
+      "total": 9,
+      "pending": 9,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 9,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Eventide",
+      "total": 51,
+      "pending": 8,
+      "freshStrong": 43,
+      "sticky": 8,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Blue Cat Audio",
+      "total": 43,
+      "pending": 8,
+      "freshStrong": 35,
+      "sticky": 0,
+      "cold": 8,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ChowDSP",
+      "total": 11,
+      "pending": 8,
+      "freshStrong": 3,
+      "sticky": 8,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Aurora DSP",
+      "total": 9,
+      "pending": 8,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 8,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wave Alchemy",
+      "total": 8,
+      "pending": 8,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 8,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Slate Digital",
+      "total": 39,
+      "pending": 8,
+      "freshStrong": 31,
+      "sticky": 0,
+      "cold": 8,
+      "manual": 0
+    },
+    {
+      "manufacturer": "TiagoLr",
+      "total": 8,
+      "pending": 8,
+      "freshStrong": 0,
+      "sticky": 8,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kiive Audio",
+      "total": 10,
+      "pending": 7,
+      "freshStrong": 3,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Florian Mrugalla",
+      "total": 7,
+      "pending": 7,
+      "freshStrong": 0,
+      "sticky": 7,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Garritan",
+      "total": 8,
+      "pending": 7,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "PreSonus",
+      "total": 17,
+      "pending": 7,
+      "freshStrong": 10,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "FLUX::",
+      "total": 31,
+      "pending": 7,
+      "freshStrong": 24,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "G-Sonique",
+      "total": 7,
+      "pending": 7,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Audio Ease",
+      "total": 11,
+      "pending": 7,
+      "freshStrong": 4,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Ample Sound",
+      "total": 42,
+      "pending": 7,
+      "freshStrong": 35,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "sjaehn",
+      "total": 7,
+      "pending": 7,
+      "freshStrong": 0,
+      "sticky": 7,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Positive Grid",
+      "total": 9,
+      "pending": 7,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "UJAM",
+      "total": 70,
+      "pending": 7,
+      "freshStrong": 63,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tone Empire",
+      "total": 8,
+      "pending": 7,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Solid State Logic",
+      "total": 52,
+      "pending": 7,
+      "freshStrong": 45,
+      "sticky": 7,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Mixed In Key",
+      "total": 13,
+      "pending": 7,
+      "freshStrong": 6,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "BeatSkillz",
+      "total": 7,
+      "pending": 7,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Focusrite",
+      "total": 12,
+      "pending": 7,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "FabFilter",
+      "total": 23,
+      "pending": 7,
+      "freshStrong": 16,
+      "sticky": 7,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "cjitter",
+      "total": 7,
+      "pending": 7,
+      "freshStrong": 0,
+      "sticky": 7,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Roland Rabien",
+      "total": 7,
+      "pending": 7,
+      "freshStrong": 0,
+      "sticky": 7,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kemper",
+      "total": 8,
+      "pending": 7,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 7,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ZL Audio",
+      "total": 7,
+      "pending": 7,
+      "freshStrong": 0,
+      "sticky": 7,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Pulsar Audio",
+      "total": 11,
+      "pending": 6,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Audio Damage",
+      "total": 61,
+      "pending": 6,
+      "freshStrong": 55,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Christopher Arndt",
+      "total": 6,
+      "pending": 6,
+      "freshStrong": 0,
+      "sticky": 6,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Martinic",
+      "total": 11,
+      "pending": 6,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Audiority",
+      "total": 52,
+      "pending": 6,
+      "freshStrong": 46,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Singular Sound",
       "total": 6,
       "pending": 6,
       "freshStrong": 0,
@@ -135,43 +1123,106 @@
       "manual": 0
     },
     {
-      "manufacturer": "ADPTR Audio",
-      "total": 5,
-      "pending": 5,
+      "manufacturer": "Baby Audio",
+      "total": 31,
+      "pending": 6,
+      "freshStrong": 25,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tracktion",
+      "total": 34,
+      "pending": 6,
+      "freshStrong": 28,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "DSmolken",
+      "total": 6,
+      "pending": 6,
       "freshStrong": 0,
+      "sticky": 6,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sample Magic",
+      "total": 10,
+      "pending": 6,
+      "freshStrong": 4,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Process.Audio",
+      "total": 6,
+      "pending": 6,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Two notes",
+      "total": 8,
+      "pending": 6,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jun Murakami",
+      "total": 6,
+      "pending": 6,
+      "freshStrong": 0,
+      "sticky": 6,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "TAL Software",
+      "total": 34,
+      "pending": 6,
+      "freshStrong": 28,
+      "sticky": 0,
+      "cold": 6,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wasted Audio",
+      "total": 6,
+      "pending": 6,
+      "freshStrong": 0,
+      "sticky": 6,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Waves",
+      "total": 260,
+      "pending": 5,
+      "freshStrong": 255,
+      "sticky": 5,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Acustica Audio",
+      "total": 139,
+      "pending": 5,
+      "freshStrong": 134,
       "sticky": 0,
       "cold": 5,
       "manual": 0
     },
     {
-      "manufacturer": "Bettermaker",
-      "total": 5,
-      "pending": 5,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 5,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Focusrite",
-      "total": 5,
-      "pending": 5,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 5,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Sonnox",
-      "total": 5,
-      "pending": 5,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 5,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Tokyo Dawn Labs",
+      "manufacturer": "Ardura",
       "total": 5,
       "pending": 5,
       "freshStrong": 0,
@@ -180,88 +1231,268 @@
       "manual": 0
     },
     {
-      "manufacturer": "BBE Sound",
-      "total": 4,
-      "pending": 4,
+      "manufacturer": "Surge Synth Team",
+      "total": 10,
+      "pending": 5,
+      "freshStrong": 5,
+      "sticky": 5,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Overloud",
+      "total": 51,
+      "pending": 5,
+      "freshStrong": 46,
+      "sticky": 0,
+      "cold": 5,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Three-Body Technology",
+      "total": 5,
+      "pending": 5,
       "freshStrong": 0,
+      "sticky": 0,
+      "cold": 5,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Freepats",
+      "total": 5,
+      "pending": 5,
+      "freshStrong": 0,
+      "sticky": 5,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Soundtheory",
+      "total": 5,
+      "pending": 5,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 5,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Lexicon",
+      "total": 5,
+      "pending": 5,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 5,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vienna Symphonic Library",
+      "total": 11,
+      "pending": 5,
+      "freshStrong": 6,
+      "sticky": 0,
+      "cold": 5,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Nugen Audio",
+      "total": 31,
+      "pending": 4,
+      "freshStrong": 27,
       "sticky": 0,
       "cold": 4,
       "manual": 0
     },
     {
-      "manufacturer": "Klanghelm",
+      "manufacturer": "Jean Pierre Cimalando",
       "total": 4,
       "pending": 4,
       "freshStrong": 0,
+      "sticky": 4,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Voxengo",
+      "total": 73,
+      "pending": 4,
+      "freshStrong": 69,
       "sticky": 0,
       "cold": 4,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Fractal Audio Systems",
+      "total": 9,
+      "pending": 4,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 4,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sonimus",
+      "total": 6,
+      "pending": 4,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 4,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Cal Goheen",
+      "total": 4,
+      "pending": 4,
+      "freshStrong": 0,
+      "sticky": 4,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "GuitarML",
+      "total": 4,
+      "pending": 4,
+      "freshStrong": 0,
+      "sticky": 4,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Lluís Estapé",
+      "total": 4,
+      "pending": 4,
+      "freshStrong": 0,
+      "sticky": 4,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "HeadRush",
+      "total": 5,
+      "pending": 4,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 4,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Matthijs Hollemans",
+      "total": 4,
+      "pending": 4,
+      "freshStrong": 0,
+      "sticky": 4,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "yonie",
+      "total": 4,
+      "pending": 4,
+      "freshStrong": 0,
+      "sticky": 4,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Madrona Labs",
+      "total": 5,
+      "pending": 3,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 3,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Olivier Doaré",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "KIT Plugins",
+      "total": 21,
+      "pending": 3,
+      "freshStrong": 18,
+      "sticky": 0,
+      "cold": 3,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jesús Valdez",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Peter Eastman",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "LANDR",
+      "total": 18,
+      "pending": 3,
+      "freshStrong": 15,
+      "sticky": 0,
+      "cold": 3,
+      "manual": 0
+    },
+    {
+      "manufacturer": "AnClark Liu",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "tesselode",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kushview",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
       "manual": 0
     },
     {
       "manufacturer": "Spectrasonics",
       "total": 4,
-      "pending": 4,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 4,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Wedgeforce",
-      "total": 4,
-      "pending": 4,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 4,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Klevgrand",
-      "total": 3,
-      "pending": 3,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Waves",
-      "total": 4,
       "pending": 3,
       "freshStrong": 1,
-      "sticky": 3,
-      "cold": 0,
+      "sticky": 2,
+      "cold": 1,
       "manual": 0
     },
     {
-      "manufacturer": "Eiosis",
-      "total": 3,
+      "manufacturer": "TheWaveWarden",
+      "total": 6,
       "pending": 3,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3,
+      "freshStrong": 3,
+      "sticky": 2,
+      "cold": 1,
       "manual": 0
     },
     {
-      "manufacturer": "Eventide",
-      "total": 3,
-      "pending": 3,
-      "freshStrong": 0,
-      "sticky": 3,
-      "cold": 0,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Kiive Audio",
-      "total": 3,
-      "pending": 3,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Native Instruments",
+      "manufacturer": "Hermann",
       "total": 3,
       "pending": 3,
       "freshStrong": 0,
@@ -270,25 +1501,16 @@
       "manual": 0
     },
     {
-      "manufacturer": "Audiomovers",
+      "manufacturer": "Martin Zuther",
       "total": 3,
       "pending": 3,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3,
+      "sticky": 3,
+      "cold": 0,
       "manual": 0
     },
     {
-      "manufacturer": "Applied Acoustics Systems",
-      "total": 3,
-      "pending": 3,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 3,
-      "manual": 0
-    },
-    {
-      "manufacturer": "TAL Software",
+      "manufacturer": "Karanyi Sounds",
       "total": 4,
       "pending": 3,
       "freshStrong": 1,
@@ -297,7 +1519,70 @@
       "manual": 0
     },
     {
-      "manufacturer": "Celemony",
+      "manufacturer": "reFX",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 3,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Modular Samples",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ArborealAudio",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Inphonik",
+      "total": 5,
+      "pending": 3,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 3,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Consistent Interruption",
+      "total": 3,
+      "pending": 3,
+      "freshStrong": 0,
+      "sticky": 3,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sound Radix",
+      "total": 10,
+      "pending": 2,
+      "freshStrong": 8,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "DISTRHO",
+      "total": 22,
+      "pending": 2,
+      "freshStrong": 20,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Luna Co. Audio",
       "total": 2,
       "pending": 2,
       "freshStrong": 0,
@@ -306,7 +1591,7 @@
       "manual": 0
     },
     {
-      "manufacturer": "Softube",
+      "manufacturer": "James Stubbs",
       "total": 2,
       "pending": 2,
       "freshStrong": 0,
@@ -315,7 +1600,286 @@
       "manual": 0
     },
     {
-      "manufacturer": "Fiedler Audio",
+      "manufacturer": "Glen MacArthur",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "SPL",
+      "total": 20,
+      "pending": 2,
+      "freshStrong": 18,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Unfiltered Audio",
+      "total": 24,
+      "pending": 2,
+      "freshStrong": 22,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Innermost",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Paul Jones",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "masseyis",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Filipe Coelho",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "lucianoiam",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Accentize",
+      "total": 13,
+      "pending": 2,
+      "freshStrong": 11,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Polyverse Music",
+      "total": 10,
+      "pending": 2,
+      "freshStrong": 8,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Surreal Machines",
+      "total": 8,
+      "pending": 2,
+      "freshStrong": 6,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Cableguys",
+      "total": 25,
+      "pending": 2,
+      "freshStrong": 23,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "magnetophon",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Venomode",
+      "total": 4,
+      "pending": 2,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Pascal Gauthier",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Synchro Arts",
+      "total": 10,
+      "pending": 2,
+      "freshStrong": 8,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Clearly Broken",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "NL Sounds",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Miguel Moreno",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tritik",
+      "total": 10,
+      "pending": 2,
+      "freshStrong": 8,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Quamplex",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Rudro085",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "sout_Nantang",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "mogesystem",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Uwe Arthur Felchle",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Matt Tytel",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "KαΩSS",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Midilab",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Artur Iunusov",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "samplaman",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Speechrezz",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "VoosteQ",
       "total": 2,
       "pending": 2,
       "freshStrong": 0,
@@ -324,381 +1888,264 @@
       "manual": 0
     },
     {
-      "manufacturer": "Sonic Academy",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "AudioPunks",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Accentize",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "IK Multimedia",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Bertom Audio",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Impulse Record",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "HoRNet",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "D16 Group",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Modalics",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "TBProAudio",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "leotokarev",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "PitchInnovations",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Guitar Rig 5",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "WA Production",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "digidesign",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Karanyi Sounds",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Louder Than Liftoff",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "unfilteredaudio",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "con",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "LiquidSonics",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "mpegh",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Mixland",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Nugen Audio",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Newfangled Audio",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Soundspot",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Reaktor 6",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Audio Modern",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "SIR Audio Tools",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "SPL",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Cableguys",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Black Salt Audio",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Aberrant DSP",
-      "total": 1,
-      "pending": 1,
-      "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Sonarworks",
+      "manufacturer": "Daniel Wray",
       "total": 2,
-      "pending": 1,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Mike Oliphant",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Matt Anikiej",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Austrian Audio",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vivek Vijayan",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Giulio Zausa",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Reilly Spitzfaden",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "BaconPaul",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "JP Cimalando",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ManasWolrd",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Forever 89",
+      "total": 3,
+      "pending": 2,
       "freshStrong": 1,
+      "sticky": 0,
+      "cold": 2,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Brain Control",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wolf Plugins",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jeff Learman",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "SolidFuel",
+      "total": 2,
+      "pending": 2,
+      "freshStrong": 0,
+      "sticky": 2,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Daniel Rudrich",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
       "sticky": 1,
       "cold": 0,
       "manual": 0
     },
     {
-      "manufacturer": "Overloud",
-      "total": 1,
+      "manufacturer": "Antelope Audio",
+      "total": 47,
       "pending": 1,
-      "freshStrong": 0,
+      "freshStrong": 46,
       "sticky": 0,
       "cold": 1,
       "manual": 0
     },
     {
-      "manufacturer": "THX",
+      "manufacturer": "tgalpha",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
+      "sticky": 1,
+      "cold": 0,
       "manual": 0
     },
     {
-      "manufacturer": "AudioThing",
+      "manufacturer": "Archie3d",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
+      "sticky": 1,
+      "cold": 0,
       "manual": 0
     },
     {
-      "manufacturer": "Steven Slate Audio",
+      "manufacturer": "Dougal Stewart",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
+      "sticky": 1,
+      "cold": 0,
       "manual": 0
     },
     {
       "manufacturer": "Kazrog",
-      "total": 1,
+      "total": 18,
       "pending": 1,
-      "freshStrong": 0,
+      "freshStrong": 17,
       "sticky": 0,
       "cold": 1,
       "manual": 0
     },
     {
-      "manufacturer": "UVI",
+      "manufacturer": "Chris Johnson",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tone2",
+      "total": 11,
+      "pending": 1,
+      "freshStrong": 10,
       "sticky": 0,
       "cold": 1,
       "manual": 0
     },
     {
-      "manufacturer": "Universal Audio",
+      "manufacturer": "Altinus",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "iamlamprey",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ML Sound Lab",
+      "total": 10,
+      "pending": 1,
+      "freshStrong": 9,
       "sticky": 0,
       "cold": 1,
       "manual": 0
     },
     {
-      "manufacturer": "Acon Digital",
+      "manufacturer": "Filippo Terenzi",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
+      "sticky": 1,
+      "cold": 0,
       "manual": 0
     },
     {
-      "manufacturer": "Accusonus",
+      "manufacturer": "Gandalf the grey",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 1,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Artem Popov",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
       "manual": 0
     },
     {
@@ -711,7 +2158,358 @@
       "manual": 0
     },
     {
-      "manufacturer": "Cymatics",
+      "manufacturer": "Neural DSP",
+      "total": 30,
+      "pending": 1,
+      "freshStrong": 29,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Spatian.dev",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Cherry Audio",
+      "total": 53,
+      "pending": 1,
+      "freshStrong": 52,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Waldorf",
+      "total": 8,
+      "pending": 1,
+      "freshStrong": 7,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Greg Recco",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "rty65tt",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "flarkAUDIO",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "AudioRealism",
+      "total": 6,
+      "pending": 1,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "michael02022",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Devious Machines",
+      "total": 7,
+      "pending": 1,
+      "freshStrong": 6,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Loïc Bartoletti",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Thomas Brok",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "BespokeSynth",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Andrew Kotov",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "EwonRael",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Mads Kjeldgaard",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Gabriel Bizzo",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Dmitry Khrykin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sugoi Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "AUDITIVE",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Filipe Borato",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Juan Sebastian Ospina",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Fuse Audio Labs",
+      "total": 30,
+      "pending": 1,
+      "freshStrong": 29,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Francis Secada",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Audio Modern",
+      "total": 10,
+      "pending": 1,
+      "freshStrong": 9,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "BillyDM",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "magillos",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Pierre Guillot",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Celemony",
+      "total": 10,
+      "pending": 1,
+      "freshStrong": 9,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Phonolyth",
+      "total": 2,
+      "pending": 1,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wisker",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Noah Baxter",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Austin Naremore",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Anis Dadou",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Alexander Weichart",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "xunil-cloud",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Valdemar Erlingsson",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Toni Lyttinen",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "James J",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Impulse Record",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
@@ -720,7 +2518,250 @@
       "manual": 0
     },
     {
-      "manufacturer": "LinPlug",
+      "manufacturer": "minburg",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "herzplatinedurchgebrannt",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "erroreyes",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vitling",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "IcebreakerAudio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Damien Sellier",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Eyal Delarea",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kazuma Narita",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Melinte Florin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "potatoTeto",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "0x07dc",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Ava Wallenfang",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Matth-ewe-f",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Juan Manuel López G",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "RSK21",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Bart Brouns",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Dimethoxy",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sylwester",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Michael Willis",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "008takeshi",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Fuimadane",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wamphyre",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "InToEtherion",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Peter Semiletov",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Andy Ma",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Thiago Henrique Gomes Lobato",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "vertver",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Modalics",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
@@ -729,7 +2770,430 @@
       "manual": 0
     },
     {
-      "manufacturer": "Scuffham Amps",
+      "manufacturer": "Toontrack",
+      "total": 6,
+      "pending": 1,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Eiosis",
+      "total": 3,
+      "pending": 1,
+      "freshStrong": 2,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "zplane",
+      "total": 12,
+      "pending": 1,
+      "freshStrong": 11,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Egor Smirnov",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Oliver Rasmussen",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Interspectral6",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Synthesis",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Blamstrain/TPOLM",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jerry Yifeng",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sjoerd van Kreel",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Floe",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Cannery Coders",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Neo-VECTR",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Gluton",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Fake Industries",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Luke M Craig",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Christian Abbott",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "CROWBAIT",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Shannon Oram",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Dylan Martin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Allen SC Wu",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Duncan",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "TobiasKozel",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Gerald Mwangi",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "kiztam",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "tetra-fox",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Davit G",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "eulmour",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sreya Saju",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "bljustice",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Albert Shefner",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Institute of Electronic Music and Acoustics",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "tucktuckg00se",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Ariel Hartung",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Aris Kiriki-Liszt",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Attila M. Magyar",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "bsutherland",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Birch San",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "mikerodd",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Binyamin Friedman",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Oleg Kapitonov",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "olegkapitonov",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Seho Young",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Quentin FAIDIDE",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Martin Morrell",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Ales Tsurko",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vladimir Sadovnikov",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "unfilteredaudio",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
@@ -738,29 +3202,1676 @@
       "manual": 0
     },
     {
-      "manufacturer": "Tek'it Audio",
+      "manufacturer": "Anorak",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "David Vos",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Arunas Cesonis",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Rafael Bormann Chuede",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kazi Ahmed",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vincent Alsteen",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "kelvin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Matthew Yee-King",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Max Woolf",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "maksut",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "mpegh",
       "total": 1,
       "pending": 1,
       "freshStrong": 0,
       "sticky": 0,
       "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "liuanlin-mx",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Reece Mitchell",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "yokemura",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Arden Butterfield",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Alexander Brandt",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "geissmannsbin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Romain Clement",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "David Su",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Leon Focker",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Yan Han",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "MrMatch246",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Mark Wilkins",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "whoadrian",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "thement",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Gahel",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Colin Raab",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Samuel Santana",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Rochen Sound Collective",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "hyakkei",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jon Taylor",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "isaiahdoyle",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "polygon",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Alex Zhang",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Martin Eastwood",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "realsigmamusic",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "n5ssiva",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Manos Labrakis",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ToneScientist",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wilkinson Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "sdatkinson",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Rodrigo Diaz",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "DamRsn",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "brummer10",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Aurelien Leblond",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Hyperfocus DSP",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Luciano Dato",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Danylo",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Michael Hurst",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Aaron Kofsky",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Iris",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tokyo Dawn Labs",
+      "total": 24,
+      "pending": 1,
+      "freshStrong": 23,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Utokusa",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Joakim Frostegård",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "maor1993",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "digidigital",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Maika",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Spatial Media Lab",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tanguy VIVIER",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "waddafunk",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jacob Weber",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "PentagramPro",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Peter H.",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "IRCAM",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jesse Chappell",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "vvvar",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "azur1s",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Qirui Huang",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Carlos Tarjano",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kevin Jenkins",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "POTR Software",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "powerpcme",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Soundspot",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Keith Bloemer",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Nebula Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "EDEN",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Lancaster Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Audio Solutions",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Austin A.",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Nathaniel D'Annunzio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "quantumVerb Dev Team",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "RCJacH",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "je3928",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sinuslabs",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ummshsh",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Kiriki-liszt",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Aris Kiriki-Liszt == yg331",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Gabriel Soule",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Mukkemann1972",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "prg318",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Christian Voigt",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Leo McCormack",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Rytmenpinne",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Alexander Holm",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Sam Greene",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "HomerChel",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "xivilay",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "JanosGit",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "oeksound",
+      "total": 6,
+      "pending": 1,
+      "freshStrong": 5,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Torsion Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Wavelet Audio",
+      "total": 2,
+      "pending": 1,
+      "freshStrong": 1,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "emprcl",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Full FX Media",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Patrizio Rullo",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "SFZTools",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "SFZ Tools",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Geert Bevin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jason Howard",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "chsh2",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "sonosaurus",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Egor Kurtashkin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Webprofusion",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Johannes",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Philipp Schaupp",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jaron Sweder",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Trencrumb",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Yvonne Yuan",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Akai",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vlad",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Orchisama Das",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "NaviCisco",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ECHOES LAB",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Vincenzo Sicurella",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Resonant DSP",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "TU Berlin",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ToneBoosters",
+      "total": 34,
+      "pending": 1,
+      "freshStrong": 33,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "TONE3000",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Creative Intent",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "hergezod",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Aaron Anderson",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Überton",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "larrymarmalade",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Cradle",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Eros Marcello",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Madadog",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Dušan Zatkovský",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Robin Davies",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Patrick",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Simon Heimler",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Syl Morrison",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Steven Slate Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "PPsRetroVault",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Dave Larsen",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Ricky van Poppel",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "kayrockscreenprinting",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "PluginGuru",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 0,
+      "cold": 1,
+      "manual": 0
+    },
+    {
+      "manufacturer": "ZQ",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Butch Warns",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "mimoz",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Izmar Verhage",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Keijiro Takahashi",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tote Bag Labs",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "VAST Dynamics",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Paul Battersby",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Versilian Studios",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Farbrausch",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Billy Messenger",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Dan King",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Quentin Stoll",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Maxence Marchand",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Daniel \"unicornFurnace\" Crowley",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Dropsnorz",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Ankalot",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Anthony",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Raphael Radna",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Damien Zammit",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "DspiveyVR",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Zones Convolution",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jose",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "zynaddsubfx",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Anton Lazarev",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Nick Dowell",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Garneek",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Nikhil Unni",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Strange Loops Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Justin Ehrlichman",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "soerenbnoergaard",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Tobante Audio",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Patric Schmitz",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "plugdata-team",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Steve Folta",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jürgen Hock",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Jean Pierre Cimalando / Joep Vanlier",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "AZProductions",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
+      "manual": 0
+    },
+    {
+      "manufacturer": "smiarx",
+      "total": 1,
+      "pending": 1,
+      "freshStrong": 0,
+      "sticky": 1,
+      "cold": 0,
       "manual": 0
     }
   ],
   "run": {
-    "at": "2026-08-11T17:10:55.516Z",
     "sticky_hits": 0,
-    "sticky_rejects": 90,
-    "flash_hits": 0,
-    "flash_calls": 128,
-    "flash_heuristic_hits": 0,
-    "flash_rejects": 28,
-    "flash_tokens": 247676,
-    "flash_skipped": false,
     "antigravity_hits": 0,
     "page_confirm_rejects": 0,
     "tokens_used": 0,
-    "next_batch_size": 8,
-    "antigravity_skipped": true
+    "next_batch_size": null
   }
 }

@@ -1,0 +1,10 @@
+{
+  "url": "https://cf-installers.waves.com/WavesCentral/Install_Waves_Central.dmg",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 551,
+  "sha256": "bdfad99d508b6568b3b954a5cd05bd3936a09fa71b12c89dfb9245fe84c81eba",
+  "method": "HEAD",
+  "last_modified": "Sun, 02 Aug 2026 10:26:42 GMT",
+  "content_length": 246840651,
+  "role": "Last-Modified fallback corroborator"
+}

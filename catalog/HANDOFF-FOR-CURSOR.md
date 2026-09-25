@@ -353,3 +353,9 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - +2 accepted → **4270**; true plugin gaps **535** (512 Airwindows intentional + **23** actionable)
 - Reclass 13: WA soundset×11, OMNYSS expansion, BIAS Amp 2 discontinued
 - Airwindows policy locked in STATUS + this handoff for Electron
+
+## DAW identity push (2026-09-25 ~13:45 PT, operator)
+- **14 DAW flagship identities added as `standalone_app`** with accepted versions; each exports with `identityKind: "standalone_app"` (not `"plugin"`), so Electron must keep the app-vs-plugin distinction: Ableton Live 12.4.6, Logic Pro 12.3.1, GarageBand 10.4.14, Pro Tools 2026.4, Cubase Pro 15 15.0.30, Fender Studio Pro 8.1, Bitwig Studio 6 6.1.1, FL Studio Producer Edition 26.1.6, REAPER 7.80, Reason 14.1.0, Digital Performer 12.0, Waveform 14, Mixbus 11.1, Renoise 3.5.4. **iLok License Manager 6.0.1** already existed as `standalone_app` — validated, not duplicated.
+- **Studio One -> Fender Studio Pro migration:** Fender Studio Pro is the Jan 2026 rename of PreSonus Studio One. Studio One rows carry `supersededByPluginId: "fender--fender-studio-pro"`; Fender Studio Pro carries `predecessorPluginId: "presonus--studio-one-artist"`. No version was stamped across edition rows.
+- **Identity reclassification:** 20 DAW edition/app rows previously mis-typed `hub_app` are now `standalone_app` (they are installable apps, not manager hubs). Edition rows are versionless; only flagship rows carry `latestVersion`.
+- Bands affected: amber rows added (Ableton 80, GarageBand 80, Bitwig was 80->92, FL was 70->85 after vendor-page re-verification, DP 75, Waveform 80, Renoise 70). Green rows added (Logic 90, REAPER 90, Reason 90, Cubase 85, Fender 85, Mixbus 85).

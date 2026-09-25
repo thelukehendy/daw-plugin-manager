@@ -1,0 +1,64 @@
+[
+  {
+    "plugin_id": "presonus--ampire-xt-metal-pack",
+    "name": "Ampire XT Metal Pack",
+    "identity_kind": "plugin",
+    "proposed_kind": "expansion",
+    "confidence": "review",
+    "why": "Likely Ampire content/expansion pack (tip 1.0 smells like placeholder). Prefer expansion over bundle once Muse confirms.",
+    "public_url": "https://www.presonus.com/products/Ampire",
+    "evidence": [
+      "fixtures/identity/presonus-ampire.html",
+      "observed_version 1.0"
+    ]
+  },
+  {
+    "plugin_id": "steinberg--yamaha-vintage-stomp-pack",
+    "name": "Yamaha Vintage Stomp Pack",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "review",
+    "why": "Pack of stomps; public product URL soft. Keep review until Muse finds Yamaha/Steinberg product page scoping.",
+    "public_url": "https://www.steinberg.net/download/",
+    "evidence": [
+      "observed_version 1.1.1",
+      "name token Pack"
+    ]
+  },
+  {
+    "plugin_id": "plugin-alliance--nvelope-mastering-edition",
+    "name": "Nvelope Mastering Edition",
+    "identity_kind": "hardware",
+    "proposed_kind": "plugin",
+    "confidence": "review_reverse",
+    "why": "REVERSE misclass: currently hardware; wave6 flagged as plugin SKU (elysia nvelope). Mastering Edition is plugin edition not 500-series unit.",
+    "public_url": null,
+    "evidence": [
+      "wave6 identity-candidates.tsv P0"
+    ]
+  },
+  {
+    "plugin_id": "plugin-alliance--xfilter-mastering-edition",
+    "name": "Xfilter Mastering Edition",
+    "identity_kind": "hardware",
+    "proposed_kind": "plugin",
+    "confidence": "review_reverse",
+    "why": "REVERSE misclass paired with Nvelope Mastering Edition.",
+    "public_url": null,
+    "evidence": [
+      "wave6 identity-candidates.tsv P0"
+    ]
+  },
+  {
+    "plugin_id": "plugin-alliance--uad-engl-e646-vs-limited-edition",
+    "name": "UAD ENGL E646 VS Limited Edition",
+    "identity_kind": "unknown_other",
+    "proposed_kind": "delete_or_alias",
+    "confidence": "review",
+    "why": "Cross-mfr contamination: UAD product under plugin-alliance. Alias to universal-audio--uad-engl-e646-vs-limited-edition or delete.",
+    "public_url": null,
+    "evidence": [
+      "identity_kind=unknown_other notes cite UA KVR product"
+    ]
+  }
+]

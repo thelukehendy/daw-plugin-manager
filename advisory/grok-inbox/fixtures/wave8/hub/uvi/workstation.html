@@ -1,0 +1,718 @@
+<!-- truncated fixture uvi/workstation.html original_bytes=422938 -->
+<title>UVI</title>
+<!DOCTYPE html>
+<html class="scroll-smooth min-h-screen" lang="en" data-theme="dark">
+<head>
+    <title>UVI</title>
+    <meta charset="utf-8">
+    <meta name="description" content="UVI is a developer of software instruments, effects and soundware, leveraging leading-edge research and design to create unique, expressive tools for musicians and audio professionals">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.uvi.net/build/assets/favicon-GdqrPo9o.png">
+    <script src="https://js.stripe.com/v3/" async></script>
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.list-item][wire\:loading\.list-item], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #0069FF;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+    <script src="/vendor/uvi-sound/uvi-soundcloud/assets/app-Ci2vZlac.js"></script>
+
+    <link rel="preload" as="style" href="https://www.uvi.net/build/assets/app-B1PXcuwE.css" /><link rel="preload" as="style" href="https://www.uvi.net/build/assets/app-Db41g6X1.css" /><link rel="modulepreload" as="script" href="https://www.uvi.net/build/assets/app-B1cFpZDK.js" /><link rel="stylesheet" href="https://www.uvi.net/build/assets/app-B1PXcuwE.css" data-navigate-track="reload" /><link rel="stylesheet" href="https://www.uvi.net/build/assets/app-Db41g6X1.css" data-navigate-track="reload" /><script type="module" src="https://www.uvi.net/build/assets/app-B1cFpZDK.js" data-navigate-track="reload"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","wait_for_update":500}); !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('consent','revoke');fbq('init','500010050205155'); (function(a,b,c,d,e,f,g){e['ire_o']=c;e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};f=d.createElement(b);g=d.getElementsByTagName(b)[0];f.async=1;f.src=a;g.parentNode.insertBefore(f,g);})("https://utt.impactcdn.com/A6360738-b97c-4995-ae26-5e144d5aac8a1.js",'script','ire',document,window);ire('consent','default',{"tracking":"denied"});ire('identify',{customerId:"",customerEmail:"",customProfileId:""});</script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T34S9X53');</script><!-- End Google Tag Manager --><script>window.__uviAnalytics={"route":"https:\/\/www.uvi.net\/uvi-analytics\/identifiers","csrfToken":"rXW9izWKWzHjxYv30Wb0k2fru7khzCgOOVnJjr0n","ga4Id":"G-S9P6KEDW3C","identifiers":{"ga4_client_id":null,"meta_fbp":null,"meta_fbc":null,"ga4_session_id":0,"ga4_session_number":0},"consent":{"hasResponded":false,"state":{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"routes":{"accept":"https:\/\/www.uvi.net\/uvi-analytics\/consent\/accept","deny":"https:\/\/www.uvi.net\/uvi-analytics\/consent\/deny"}}};</script><script src="https://www.uvi.net/vendor/uvi-sound/uvi-analytics/assets/app-DDMqtH2U.js" defer></script>    </head>
+<body class="bg-black text-white h-screen min-h-screen max-w-full flex flex-col overflow-x-hidden relative">
+    <div x-persist="app.contexts">
+        <div x-init="
+        Alpine.store('layout').initialize({
+            events: {
+                videoPlayer: {
+                    triggerClickEvent: 'Player.TRIGGER_CLICK_EVENT',
+                }
+            }
+        });
+
+        Cart.initialize({
+            events: {
+                'front:cart.product.update': 'CartEvents.PRODUCT_LINES_UPDATED',
+                'back:cart.update': 'CartEventsEnum.REFRESHED',
+                'front:cart.voucher.apply': 'CartEvents.APPLY_VOUCHER',
+                'front:cart.voucher.remove': 'CartEvents.REMOVE_VOUCHER'
+            },
+        });
+
+        StripeService.initialize({
+            config: {
+                publicKey: 'pk_live_51KmHJYHd1vqwHM7go61nEPwv0RYphBx3v5JQbByva0Vhv4VhSEcpyd5FNdYiEy105ywAdg88nuAWqJ73YcDbY9YF00lZVlmkK2',
+            },
+        });
+
+        Invoice.initialize({
+            events: {
+                triggerDownload: 'InvoiceEvents.TRIGGER_DOWNLOAD'
+            }
+        });
+    ">
+    <div x-data
+    x-init="Alpine.store('notification').initialize({
+        templates: {
+            info: $refs['info'],
+            success: $refs['success'],
+            error: $refs['error'],
+            warning: $refs['warning'],
+            unknown: $refs['unknown'],
+        },
+        events: {
+            show: 'showNotification'
+        },
+        persistantContainer: document.querySelector('#persistantNotification'),
+    })"
+>
+    <template x-ref="info">
+        <div id="toast-success" class="notification-root flex gap-4 items-center w-full p-4 text-white bg-dark-gray rounded-lg shadow-sm border border-white/10" role="alert">
+            <div class="text-lg">
+            <i class="fa-solid fa-info text-primary"></i>
+        </div>
+        <div class="text-sm" x-html="content"></div>
+    <button type="button"
+            class="text-white/60 hover:text-white cursor-pointer"
+            data-dismiss-target="#toast-success"
+            aria-label="Close"
+            x-ref="close"
+    >
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+    </template>
+    <template x-ref="success">
+        <div id="toast-success" class="notification-root flex gap-4 items-center w-full p-4 text-white bg-dark-gray rounded-lg shadow-sm border border-white/10" role="alert">
+            <div class="text-lg">
+            <i class="fa-solid fa-check text-success rounded-lg"></i>
+        </div>
+        <div class="text-sm" x-html="content"></div>
+    <button type="button"
+            class="text-white/60 hover:text-white cursor-pointer"
+            data-dismiss-target="#toast-success"
+            aria-label="Close"
+            x-ref="close"
+    >
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+    </template>
+    <template x-ref="error">
+        <div id="toast-success" class="notification-root flex gap-4 items-center w-full p-4 text-white bg-dark-gray rounded-lg shadow-sm border border-white/10" role="alert">
+            <div class="text-lg">
+            <i class="fa-solid fa-exclamation text-error"></i>
+        </div>
+        <div class="text-sm" x-html="content"></div>
+    <button type="button"
+            class="text-white/60 hover:text-white cursor-pointer"
+            data-dismiss-target="#toast-success"
+            aria-label="Close"
+            x-ref="close"
+    >
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+    </template>
+    <template x-ref="warning">
+        <div id="toast-success" class="notification-root flex gap-4 items-center w-full p-4 text-white bg-dark-gray rounded-lg shadow-sm border border-white/10" role="alert">
+            <div class="text-lg">
+            <i class="fa-solid fa-exclamation text-secondary"></i>
+        </div>
+        <div class="text-sm" x-html="content"></div>
+    <button type="button"
+            class="text-white/60 hover:text-white cursor-pointer"
+            data-dismiss-target="#toast-success"
+            aria-label="Close"
+            x-ref="close"
+    >
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+    </template>
+    <template x-ref="unknown">
+        <div id="toast-success" class="notification-root flex gap-4 items-center w-full p-4 text-white bg-dark-gray rounded-lg shadow-sm border border-white/10" role="alert">
+        <div class="text-sm" x-html="content"></div>
+    <button type="button"
+            class="text-white/60 hover:text-white cursor-pointer"
+            data-dismiss-target="#toast-success"
+            aria-label="Close"
+            x-ref="close"
+    >
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+    </template>
+</div>
+    <audio x-data="audioPlayer_context({
+        events: {
+            triggerAudioPlayEvent: 'AudioPlayer.TRIGGER_PLAY_EVENT',
+            triggerAudioStopEvent: 'AudioPlayer.TRIGGER_STOP_EVENT',
+            trackChanged: 'AudioPlayer.TRACK_CHANGED'
+        }
+    })"
+></audio>
+    <div x-data="components_search_context({
+        events: {
+            refreshPage: 'SearchPageEvents.REFRESH',
+            open: 'SearchPageEvents.OPEN_DRAWER',
+        }
+    })"
+>
+    <template x-teleport="body">
+        <div x-show="$data.isOpened"
+             class="fixed left-0 top-0 z-42 w-full h-screen text-black">
+            <div class="absolute backdrop-blur-2xl bg-black/80 right-0 top-0 w-full h-full"
+                 @click="$data.close()"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0"
+                 x-transition:enter-end="opacity-100"
+                 x-transition:leave="transition ease-in duration-300"
+                 x-transition:leave-start="opacity-100"
+                 x-transition:leave-end="opacity-0">
+            </div>
+
+            <div class="fixed block right-0 w-full"
+                 @click.outside="$data.close()"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0"
+                 x-transition:enter-end="opacity-100"
+                 x-transition:leave="transition ease-in duration-300"
+                 x-transition:leave-start="opacity-100"
+                 x-transition:leave-end="opacity-0">
+                <div class="absolute top-10 right-6 lg:right-10 cursor-pointer text-white text-2xl lg:text-3xl hover:text-primary transition-colors"
+                     @click="$data.close()">
+                    <i class=" fa-sharp fa-light fa-xmark-large"></i>
+                </div>
+
+                <div class="container max-w-xl mx-auto pt-20 lg:pt-40">
+                    <div class="relative text-2xl">
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-white hover:text-primary transition-colors cursor-pointer"
+                             @click="$data.search()"
+                             x-ref="searchSubmit">
+                            <i class="fa-sharp fa-light fa-magnifying-glass"></i>
+                        </div>
+                        <input type="search"
+                               x-ref="searchInput"
+                               x-model="$data.q"
+                               id="inputSearch"
+                               class="w-full text-white py-6 pr-16 pl-4 border-b-2 border-white/10
+                                focus-visible:outline-0 focus-visible:border-white/10
+                                placeholder:text-white/10
+                                transition-colors"
+                               name="search"
+                               placeholder="Search for products"
+                               aria-label="search"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+    <div wire:key="lw-396435438-0-2" wire:snapshot="{&quot;data&quot;:{&quot;lastAnalyticsLinesHash&quot;:&quot;&quot;},&quot;memo&quot;:{&quot;id&quot;:&quot;DErkltEkscwcVnxu2Fol&quot;,&quot;name&quot;:&quot;cart.context&quot;,&quot;path&quot;:&quot;uvi-workstation&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;,&quot;islands&quot;:[]},&quot;checksum&quot;:&quot;b24e54f2dd43424116b9574adb5e3c4097c244c2cf784167275b8adefa35374b&quot;}" wire:effects="{&quot;listeners&quot;:[&quot;CartEvents.PRODUCT_LINES_UPDATED&quot;,&quot;CartEvents.APPLY_VOUCHER&quot;,&quot;CartEvents.REMOVE_VOUCHER&quot;]}" wire:id="DErkltEkscwcVnxu2Fol" wire:name="cart.context"></div>    <div wire:key="lw-396435438-1-2" wire:snapshot="{&quot;data&quot;:[],&quot;memo&quot;:{&quot;id&quot;:&quot;6WMrR8MfhQEkrUMFUMOL&quot;,&quot;name&quot;:&quot;invoice.context&quot;,&quot;path&quot;:&quot;uvi-workstation&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;,&quot;islands&quot;:[]},&quot;checksum&quot;:&quot;43106c28c8d4ee1c9a856f36117e4c3014a7a4247d80e1b0b798d2b090de5247&quot;}" wire:effects="{&quot;listeners&quot;:[&quot;InvoiceEvents.TRIGGER_DOWNLOAD&quot;]}" wire:id="6WMrR8MfhQEkrUMFUMOL" wire:name="invoice.context"></div></div>
+    </div>
+
+    <div x-persist="header">
+        <div class="w-full bg-black/50 backdrop-blur-lg fixed top-0 z-40"
+     id="main-header"
+     x-data="main_header({
+        events: {
+            triggerHeaderScrollEvent: &quot;Header.TRIGGER_HEADER_SCROLL_EVENT&quot;,
+            triggerHeaderInitialStateEvent: &quot;Header.TRIGGER_HEADER_INITIAL_STATE_EVENT&quot;,
+            triggerMainMenuOpenEvent: &quot;Header.TRIGGER_MAIN_MENU_OPEN_EVENT&quot;,
+            triggerMainMenuCloseEvent: &quot;Header.TRIGGER_MAIN_MENU_CLOSE_EVENT&quot;
+        }
+     })"
+>
+    <div class="px-5 border-b border-white/20 min-h-(--main-menu-height) lg:min-h-(--main-menu-height-lg) flex items-center">
+        <div class="flex items-center flex-nowrap justify-between mx-auto w-full xl:container h-full">
+            <a href="https://www.uvi.net"
+               class="flex items-center lg:py-5"
+               wire:navigate
+            >
+                <svg width="91" height="64" viewBox="0 0 91 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="max-w-16 lg:max-w-24">
+<g clip-path="url(#clip0_2141_2506)">
+<path d="M51.8495 39.9011L53.1605 41.1703C53.1605 41.1703 52.5824 40.5483 51.8495 39.9011Z" fill="white"/>
+<path d="M83.5746 9.69629H38.0205V14.8189H83.5746C84.6283 14.8189 85.4864 15.681 85.4864 16.7398V56.9542C85.4864 58.013 84.6283 58.8752 83.5746 58.8752H7.01007C5.95628 58.8752 5.09823 58.013 5.09823 56.9542V20.4628H0V56.9565C0 60.8396 3.14543 64 7.01007 64H83.5746C87.4392 64 90.5846 60.8396 90.5846 56.9565V16.7398C90.5846 12.8567 87.4392 9.69629 83.5746 9.69629Z" fill="white"/>
+<path d="M17.0358 53.2678H27.469C30.3322 53.2678 33.0429 52.1678 35.1027 50.1691L45.092 40.4728L55.1155 50.1783C57.173 52.1701 59.8815 53.2678 62.7401 53.2678H73.5238C77.0356 53.2678 79.892 50.3978 79.892 46.8692V26.8249C79.892 23.2962 77.0356 20.4262 73.5238 20.4262H62.8471C59.9839 20.4262 57.2732 21.5262 55.2134 23.5249L45.0989 33.3401L35.1163 23.5592C33.052 21.5376 30.3277 20.424 27.4462 20.424H17.0358C13.524 20.424 10.6676 23.294 10.6676 26.8226V46.8669C10.6676 50.3955 13.524 53.2655 17.0358 53.2655V53.2678ZM58.7548 27.2113C59.8587 26.1388 61.3131 25.5488 62.8471 25.5488H73.5238C74.2248 25.5488 74.7938 26.1205 74.7938 26.8249V46.8692C74.7938 47.5735 74.2248 48.1452 73.5238 48.1452H62.7401C61.2084 48.1452 59.7563 47.5575 58.6524 46.4896L53.1604 41.1726L51.8495 39.9034C51.5103 39.6038 51.1394 39.2997 50.7752 39.0481C48.9112 37.756 47.0904 38.497 45.793 39.7365L45.8022 39.7227M15.7658 26.8272C15.7658 26.1228 16.3348 25.5511 17.0358 25.5511H27.4462C28.9916 25.5511 30.4528 26.148 31.559 27.2319L41.4322 36.9053L31.5612 46.485C30.4574 47.5575 29.003 48.1475 27.469 48.1475H17.0358C16.3348 48.1475 15.7658 47.5758 15.7658 46.8715V26.8272Z" fill="white"/>
+<path d="M1.08114 13.5496C1.46351 13.927 2.00747 14.222 2.69482 14.4232C3.36169 14.6176 4.24022 14.7182 5.30539 14.7182C6.37055 14.7182 7.26274 14.6084 7.94326 14.3912C8.642 14.1694 9.19961 13.8561 9.60246 13.4604C10.0076 13.0602 10.2875 12.5869 10.4355 12.0517C10.5766 11.5441 10.6471 10.9998 10.6471 10.4372V0H6.86672V9.6917C6.86672 10.252 6.73016 10.6636 6.45932 10.9152C6.17709 11.1759 5.79928 11.3039 5.30311 11.3039C4.80694 11.3039 4.48375 11.1782 4.24477 10.922C4.00352 10.6636 3.88061 10.2497 3.88061 9.69399V0H0.104736V10.4349C0.104736 11.0615 0.168464 11.6378 0.293644 12.1501C0.427928 12.6966 0.691943 13.1654 1.08114 13.5496Z" fill="white"/>
+<path d="M16.3166 9.59794C16.6193 10.5516 16.9403 11.416 17.268 12.1729C17.6026 12.9436 17.9645 13.5794 18.34 14.0619C18.761 14.6039 19.2162 14.8783 19.6919 14.8783C20.1676 14.8783 20.5204 14.7937 20.8072 14.6222C21.0848 14.4552 21.3102 14.2288 21.4763 13.9498C21.6288 13.6937 21.754 13.4033 21.8496 13.0808C21.9361 12.7858 22.0271 12.4771 22.1204 12.1524L25.5777 0H21.7517L21.3875 1.29665C21.1167 2.23426 20.9119 3.25877 20.7776 4.34274C20.6433 5.42443 20.575 6.51983 20.575 7.59923C20.575 8.41106 20.616 9.20689 20.6979 9.96613C20.7343 10.3137 20.7799 10.6499 20.8345 10.9723C20.7594 10.8351 20.6865 10.6865 20.616 10.5264C20.468 10.1902 20.3269 9.82205 20.1949 9.43786C20.0629 9.0491 19.9446 8.66033 19.8399 8.27843C19.7329 7.89195 19.6419 7.53977 19.5622 7.21961C19.4803 6.89488 19.4143 6.63646 19.3596 6.44437L17.5093 0H13.7129L15.4791 6.7165C15.7317 7.67698 16.0116 8.64661 16.3144 9.59794H16.3166Z" fill="white"/>
+<path d="M32.4966 0H28.7162V14.7159H32.4966V0Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2141_2506">
+<rect width="90.5846" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+            </a>
+
+            <nav class="hidden lg:flex items-stretch justify-center mt-2">
+                <a class="group py-4 flex place-items-center cursor-pointer"
+                   href="https://www.uvi.net/all-products"
+                   wire:navigate
+                   @mouseenter="$data.openProductMenu(false)">
+                    <div
+                        class="flex flex-col justify-center items-center gap-y-2 px-10 xl:px-16 leading-6 transition-colors border-r border-white/20"
+                        x-bind:class="{
+                            'text-primary': $data.isActive,
+                         }"
+                    >
+                        <div class="block font-medium">
+                            Explore all products
+                            <i class="fa-solid fa-chevron-down ml-2 transition-transform"
+                               :class="{'rotate-180': $data.isActive}"
+                            ></i>
+                        </div>
+                        <div class="text-center text-white/30 text-xs font-medium uppercase">
+                            128 PRODUCTS
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.uvi.net/sonicpass"
+                   @mouseenter="$data.closeProductMenu()"
+                   wire:navigate
+                   class="group flex place-items-center py-4">
+                    <div
+                            class="flex flex-col place-items-center gap-y-2 pl-10 xl:pl-16 leading-6 transition-colors group-hover:text-primary">
+                        <div class="flex items-center justify-center gap-x-4">
+                            <div>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5">
+<g clip-path="url(#clip0_2145_3439)">
+<g clip-path="url(#paint0_angular_2145_3439_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.0125 -0.0125 0 12.5002 12.5)"><foreignObject x="-1080" y="-1080" width="2160" height="2160"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(3, 18, 48, 1) 0deg,rgba(1, 6, 37, 1) 9.21103deg,rgba(2, 32, 239, 1) 144.219deg,rgba(45, 205, 219, 1) 224.063deg,rgba(3, 18, 48, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M23.2102 0H1.79024C0.801654 0 0.000244141 0.80141 0.000244141 1.79V23.21C0.000244141 24.1986 0.801654 25 1.79024 25H23.2102C24.1988 25 25.0002 24.1986 25.0002 23.21V1.79C25.0002 0.80141 24.1988 0 23.2102 0Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.0039215688593685627,&#34;g&#34;:0.023529412224888802,&#34;b&#34;:0.14509804546833038,&#34;a&#34;:1.0},&#34;position&#34;:0.025586185976862907},{&#34;color&#34;:{&#34;r&#34;:0.0078431377187371254,&#34;g&#34;:0.12549020349979401,&#34;b&#34;:0.93725490570068359,&#34;a&#34;:1.0},&#34;position&#34;:0.40060812234878540},{&#34;color&#34;:{&#34;r&#34;:0.17647059261798859,&#34;g&#34;:0.80392158031463623,&#34;b&#34;:0.85882353782653809,&#34;a&#34;:1.0},&#34;position&#34;:0.62239795923233032}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.0039215688593685627,&#34;g&#34;:0.023529412224888802,&#34;b&#34;:0.14509804546833038,&#34;a&#34;:1.0},&#34;position&#34;:0.025586185976862907},{&#34;color&#34;:{&#34;r&#34;:0.0078431377187371254,&#34;g&#34;:0.12549020349979401,&#34;b&#34;:0.93725490570068359,&#34;a&#34;:1.0},&#34;position&#34;:0.40060812234878540},{&#34;color&#34;:{&#34;r&#34;:0.17647059261798859,&#34;g&#34;:0.80392158031463623,&#34;b&#34;:0.85882353782653809,&#34;a&#34;:1.0},&#34;position&#34;:0.62239795923233032}],&#34;transform&#34;:{&#34;m00&#34;:1.5308085524965700e-15,&#34;m01&#34;:-25.0,&#34;m02&#34;:25.0002441406250,&#34;m10&#34;:25.0,&#34;m11&#34;:1.5308085524965700e-15,&#34;m12&#34;:-1.5308085524965700e-15},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+<path d="M19.5279 7.3975C19.2154 6.857 18.7774 6.4225 18.2262 6.1065C17.6744 5.79025 17.0704 5.63 16.4309 5.63H10.7617V5.621H8.19092V19.371H10.7617V19.3373H10.9709V18.5313C10.9709 17.733 11.1064 17.0308 11.3739 16.444C11.6414 15.8573 12.0072 15.3598 12.4609 14.9653C12.9097 14.5753 13.3909 14.249 13.8917 13.995C14.3862 13.744 15.0352 13.4508 15.8204 13.1238C16.7287 12.749 17.4592 12.4078 17.9922 12.1088C18.5152 11.8155 18.9684 11.423 19.3397 10.9423C19.7059 10.468 19.9129 9.8645 19.9552 9.1485C19.9829 8.52575 19.8392 7.9365 19.5277 7.3975H19.5279ZM17.1627 9.09475C17.1224 9.4165 16.9157 9.69525 16.5489 9.92C16.2074 10.1293 15.6497 10.3983 14.8914 10.719C14.3134 10.9645 13.8079 11.1898 13.3892 11.3885C12.9732 11.5858 12.5512 11.8205 12.1352 12.086C11.6292 12.4033 11.1712 12.7368 10.7619 13.0848V8.19175H16.1037C16.3874 8.19175 16.6434 8.24275 16.8647 8.34375C17.0414 8.4245 17.2367 8.62025 17.1629 9.09475H17.1627Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="paint0_angular_2145_3439_clip_path"><path d="M23.2102 0H1.79024C0.801654 0 0.000244141 0.80141 0.000244141 1.79V23.21C0.000244141 24.1986 0.801654 25 1.79024 25H23.2102C24.1988 25 25.0002 24.1986 25.0002 23.21V1.79C25.0002 0.80141 24.1988 0 23.2102 0Z"/></clipPath><clipPath id="clip0_2145_3439">
+<rect width="25" height="25" fill="white" transform="translate(0.000244141)"/>
+</clipPath>
+</defs>
+</svg>
+
+                            </div>
+                            <div class="font-medium">
+                                SonicPass
+                            </div>
+                        </div>
+                        <div class="text-center text-white/30 text-xs font-medium uppercase">
+                            SUBSCRIBE
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.uvi.net/sonicbundle"
+                   @mouseenter="$data.closeProductMenu()"
+                   wire:navigate
+                   class="group flex flex-col justify-center items-center gap-y-2 px-16 leading-6 transition-colors hover:text-primary">
+                    <div class="flex items-center justify-center gap-x-4">
+                        <div>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5">
+<rect width="25" height="25" rx="5" fill="white"/>
+<g clip-path="url(#paint0_angular_2496_1696_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.0125 -0.0125 0 12.5 12.5)"><foreignObject x="-1080" y="-1080" width="2160" height="2160"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(88, 134, 252, 1) 0deg,rgba(98, 0, 255, 1) 84.6deg,rgba(255, 104, 95, 1) 219.6deg,rgba(88, 134, 252, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M23.2098 0H1.79023C0.801176 0 0 0.801176 0 1.79023V23.2098C0 24.1979 0.801176 25 1.79023 25H23.2098C24.1979 25 25 24.1988 25 23.2098V1.79023C25 0.802149 24.1988 0 23.2098 0ZM18.6617 16.3973C18.6256 17.2326 18.2849 17.9578 17.6492 18.5546C17.0126 19.1513 16.1063 19.4541 14.9537 19.4541H9.05631V19.4658H6.44445V5.49725H14.832C15.4842 5.49725 16.1004 5.6608 16.6641 5.98302C17.2267 6.30524 17.6736 6.74915 17.9929 7.30014C18.3112 7.85113 18.4572 8.45275 18.429 9.08648C18.3862 9.78155 18.1944 10.3734 17.8585 10.8446C17.5207 11.3197 17.0418 11.7392 16.4353 12.0926L16.3224 12.1578L16.4178 12.2464C16.6144 12.4284 16.8383 12.6339 17.0827 12.8558C17.6901 13.4204 18.1194 13.9948 18.357 14.5633C18.5945 15.1308 18.6957 15.7471 18.6597 16.3964L18.6617 16.3973Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.34509804844856262,&#34;g&#34;:0.52549022436141968,&#34;b&#34;:0.98823529481887817,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.38431373238563538,&#34;g&#34;:0.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.23499999940395355},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.40784314274787903,&#34;b&#34;:0.37254902720451355,&#34;a&#34;:1.0},&#34;position&#34;:0.61000001430511475}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.34509804844856262,&#34;g&#34;:0.52549022436141968,&#34;b&#34;:0.98823529481887817,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.38431373238563538,&#34;g&#34;:0.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.23499999940395355},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.40784314274787903,&#34;b&#34;:0.37254902720451355,&#34;a&#34;:1.0},&#34;position&#34;:0.61000001430511475}],&#34;transform&#34;:{&#34;m00&#34;:1.5308085524965700e-15,&#34;m01&#34;:-25.0,&#34;m02&#34;:25.0,&#34;m10&#34;:25.0,&#34;m11&#34;:1.5308085524965700e-15,&#34;m12&#34;:-1.5308085524965700e-15},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+<g clip-path="url(#paint1_angular_2496_1696_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.00247362 -0.0032596 0 12.3157 10.6051)"><foreignObject x="-1404.27" y="-1404.27" width="2808.53" height="2808.53"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(88, 134, 252, 1) 0deg,rgba(98, 0, 255, 1) 84.6deg,rgba(255, 104, 95, 1) 219.6deg,rgba(88, 134, 252, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M11.7342 11.3489C12.1596 11.1473 12.6736 10.9186 13.2606 10.6684C14.0306 10.3433 14.5962 10.0697 14.9428 9.85748C15.3108 9.63164 15.5181 9.35225 15.559 9.03002C15.6174 8.65134 15.5191 8.40018 15.265 8.28434C15.0421 8.18309 14.7841 8.1315 14.4989 8.1315H9.05615V13.0787C9.47378 12.7224 9.94202 12.3817 10.4589 12.0576C10.8824 11.7879 11.3117 11.5494 11.7352 11.3479L11.7342 11.3489Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.34509804844856262,&#34;g&#34;:0.52549022436141968,&#34;b&#34;:0.98823529481887817,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.38431373238563538,&#34;g&#34;:0.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.23499999940395355},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.40784314274787903,&#34;b&#34;:0.37254902720451355,&#34;a&#34;:1.0},&#34;position&#34;:0.61000001430511475}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.34509804844856262,&#34;g&#34;:0.52549022436141968,&#34;b&#34;:0.98823529481887817,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.38431373238563538,&#34;g&#34;:0.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.23499999940395355},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.40784314274787903,&#34;b&#34;:0.37254902720451355,&#34;a&#34;:1.0},&#34;position&#34;:0.61000001430511475}],&#34;transform&#34;:{&#34;m00&#34;:3.9918553162660920e-16,&#34;m01&#34;:-6.5191941261291504,&#34;m02&#34;:15.575345993041992,&#34;m10&#34;:4.9472379684448242,&#34;m11&#34;:3.0293095743189665e-16,&#34;m12&#34;:8.1315002441406250},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+<g clip-path="url(#paint2_angular_2496_1696_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.00172939 -0.00305745 0 12.6356 15.1547)"><foreignObject x="-1578.24" y="-1578.24" width="3156.48" height="3156.48"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(88, 134, 252, 1) 0deg,rgba(98, 0, 255, 1) 84.6deg,rgba(255, 104, 95, 1) 219.6deg,rgba(88, 134, 252, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M15.2 14.7687L15.198 14.7658L15.1951 14.7638L13.7427 13.4662L13.6969 13.4253L13.6405 13.4496C12.6105 13.8867 11.7548 14.3511 11.0987 14.83C10.4319 15.3158 9.93831 15.9622 9.62972 16.7527L9.57812 16.8841H14.3774C14.7921 16.8841 15.1241 16.7731 15.3635 16.5541C15.6079 16.3302 15.7169 16.0479 15.6887 15.7149C15.6604 15.3908 15.4969 15.0724 15.201 14.7687H15.2Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.34509804844856262,&#34;g&#34;:0.52549022436141968,&#34;b&#34;:0.98823529481887817,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.38431373238563538,&#34;g&#34;:0.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.23499999940395355},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.40784314274787903,&#34;b&#34;:0.37254902720451355,&#34;a&#34;:1.0},&#34;position&#34;:0.61000001430511475}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.34509804844856262,&#34;g&#34;:0.52549022436141968,&#34;b&#34;:0.98823529481887817,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.38431373238563538,&#34;g&#34;:0.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.23499999940395355},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.40784314274787903,&#34;b&#34;:0.37254902720451355,&#34;a&#34;:1.0},&#34;position&#34;:0.61000001430511475}],&#34;transform&#34;:{&#34;m00&#34;:3.7443001436125701e-16,&#34;m01&#34;:-6.1149058341979980,&#34;m02&#34;:15.693031311035156,&#34;m10&#34;:3.4587829113006592,&#34;m11&#34;:2.1178937850927648e-16,&#34;m12&#34;:13.425292968750},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+<defs>
+<clipPath id="paint0_angular_2496_1696_clip_path"><path d="M23.2098 0H1.79023C0.801176 0 0 0.801176 0 1.79023V23.2098C0 24.1979 0.801176 25 1.79023 25H23.2098C24.1979 25 25 24.1988 25 23.2098V1.79023C25 0.802149 24.1988 0 23.2098 0ZM18.6617 16.3973C18.6256 17.2326 18.2849 17.9578 17.6492 18.5546C17.0126 19.1513 16.1063 19.4541 14.9537 19.4541H9.05631V19.4658H6.44445V5.49725H14.832C15.4842 5.49725 16.1004 5.6608 16.6641 5.98302C17.2267 6.30524 17.6736 6.74915 17.9929 7.30014C18.3112 7.85113 18.4572 8.45275 18.429 9.08648C18.3862 9.78155 18.1944 10.3734 17.8585 10.8446C17.5207 11.3197 17.0418 11.7392 16.4353 12.0926L16.3224 12.1578L16.4178 12.2464C16.6144 12.4284 16.8383 12.6339 17.0827 12.8558C17.6901 13.4204 18.1194 13.9948 18.357 14.5633C18.5945 15.1308 18.6957 15.7471 18.6597 16.3964L18.6617 16.3973Z"/></clipPath><clipPath id="paint1_angular_2496_1696_clip_path"><path d="M11.7342 11.3489C12.1596 11.1473 12.6736 10.9186 13.2606 10.6684C14.0306 10.3433 14.5962 10.0697 14.9428 9.85748C15.3108 9.63164 15.5181 9.35225 15.559 9.03002C15.6174 8.65134 15.5191 8.40018 15.265 8.28434C15.0421 8.18309 14.7841 8.1315 14.4989 8.1315H9.05615V13.0787C9.47378 12.7224 9.94202 12.3817 10.4589 12.0576C10.8824 11.7879 11.3117 11.5494 11.7352 11.3479L11.7342 11.3489Z"/></clipPath><clipPath id="paint2_angular_2496_1696_clip_path"><path d="M15.2 14.7687L15.198 14.7658L15.1951 14.7638L13.7427 13.4662L13.6969 13.4253L13.6405 13.4496C12.6105 13.8867 11.7548 14.3511 11.0987 14.83C10.4319 15.3158 9.93831 15.9622 9.62972 16.7527L9.57812 16.8841H14.3774C14.7921 16.8841 15.1241 16.7731 15.3635 16.5541C15.6079 16.3302 15.7169 16.0479 15.6887 15.7149C15.6604 15.3908 15.4969 15.0724 15.201 14.7687H15.2Z"/></clipPath></defs>
+</svg>
+
+                        </div>
+                        <div class="font-medium">
+                            SonicBundle
+                        </div>
+                    </div>
+                    <div class="text-center text-white/30 transition duration-400 text-xs font-medium uppercase">
+                        BEST OFFER
+                    </div>
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-x-6 lg:gap-x-8 shrink">
+                <a href="https://support.uvi.net" target="_blank"
+                   class="hidden lg:block hover:text-primary transition-colors">
+                    <i class="fa-sharp fa-light fa-circle-question fa-lg"></i>
+                </a>
+
+                <div x-data="components_search_opener({
+        event: {
+            open: 'SearchPageEvents.OPEN_DRAWER'
+        }
+    })"
+    >
+    <a @click="$data.open()"
+       class="cursor-pointer hover:text-primary transition-colors">
+        <i class="fa-sharp fa-light fa-magnifying-glass fa-lg"></i>
+    </a>
+</div>
+
+                                    <a href="https://www.uvi.net/login" wire:navigate>
+                        <i class="fa-kit fa-uvi-user fa-lg hover:text-primary transition-colors"></i>
+                    </a>
+                
+                <div x-data="components_cart_link('https://www.uvi.net/cart')"
+                    class="rounded-full text-sm px-3.5 py-1.5 flex gap-x-2 items-center transition duration-300 order-1 lg:order-last"
+                    x-bind:class="{
+                        'bg-primary text-white': ($data.value > 0),
+                        'bg-white text-black': ($data.value === 0),
+                        'cursor-pointer hover:shadow-(--button-shadow-white-hover)': $data.enabled
+                    }"
+                >
+                    <i class="fa-kit fa-cart"></i>
+
+                    <span x-text="$data.value" x-show="$data.enabled" class="font-medium h-5 w-3 text-right"></span>
+                    <span class="h-5 w-3"  x-show="!$data.enabled">
+                        <i class="fa-sharp fa-light fa-spinner-third fa-spin"></i>
+                    </span>
+                </div>
+
+                <div @click="$dispatch('Header.TRIGGER_MAIN_MENU_OPEN_EVENT', {isMobile: true})"
+                     class="cursor-pointer order-last lg:hidden">
+                    <i class="fa-sharp fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    
+    <div class="border-b border-white/20 hidden lg:block" x-cloak
+     x-transition:enter="transition ease-out duration-200"
+     x-transition:enter-start="opacity-0"
+     x-transition:enter-end="opacity-100"
+     x-transition:leave=""
+     x-transition:leave-start="opacity-100"
+     x-transition:leave-end="opacity-0"
+     @mouseleave="$data.close(); $data.closeSubmenu();"
+     x-show="$data.opened"
+     x-data="main_menu({
+        events: {
+            triggerHeaderInitialStateEvent: &quot;Header.TRIGGER_HEADER_INITIAL_STATE_EVENT&quot;,
+            triggerMainMenuOpenEvent: &quot;Header.TRIGGER_MAIN_MENU_OPEN_EVENT&quot;,
+            triggerMainMenuCloseEvent: &quot;Header.TRIGGER_MAIN_MENU_CLOSE_EVENT&quot;,
+            triggerMainSubmenuOpenEvent: &quot;Header.TRIGGER_MAIN_SUBMENU_OPEN_EVENT&quot;,
+            triggerMainSubmenuCloseEvent: &quot;Header.TRIGGER_MAIN_SUBMENU_CLOSE_EVENT&quot;,
+        },
+        isMobile: false
+     })">
+    <div class="text-white w-full bg-(image:--background-main-menu)">
+        <div class="flex justify-center mx-auto container">
+                                                            <a href="https://www.uvi.net/falcon-expansions"
+                       wire:navigate
+                       style="--accent: var(--color-primary)"
+                       class="py-6 px-12 uppercase font-semibold cursor-pointer hover:text-(--accent)"
+                       :class="{
+                           'text-(--accent)': $data.submenuActive === 4,
+                       }"
+                       @mouseenter="$data.openSubmenu(4)"
+                    >
+                        Falcon
+                        <i class="fa-solid fa-chevron-down ml-2 transition-transform"
+                           :class="{'rotate-180': $data.submenuActive === 4}"
+                        ></i>
+                    </a>
+                                                                <a href="https://www.uvi.net/soundware"
+                       wire:navigate
+                       style="--accent: var(--color-primary)"
+                       class="py-6 px-12 uppercase font-semibold cursor-pointer hover:text-(--accent)"
+                       :class="{
+                           'text-(--accent)': $data.submenuActive === 5,
+                       }"
+                       @mouseenter="$data.openSubmenu(5)"
+                    >
+                        Soundware
+                        <i class="fa-solid fa-chevron-down ml-2 transition-transform"
+                           :class="{'rotate-180': $data.submenuActive === 5}"
+                        ></i>
+                    </a>
+                                                                <a href="https://www.uvi.net/rumble"
+                       style="--accent: var(--color-primary)"
+                       class="py-6 px-12 uppercase font-semibold cursor-pointer hover:text-(--accent)"
+                       @mouseenter="$data.closeSubmenu()"
+                       wire:navigate
+                    >
+                        Rumble
+                    </a>
+                                                                <a href="https://www.uvi.net/effects"
+                       wire:navigate
+                       style="--accent: var(--color-primary)"
+                       class="py-6 px-12 uppercase font-semibold cursor-pointer hover:text-(--accent)"
+                       :class="{
+                           'text-(--accent)': $data.submenuActive === 6,
+                       }"
+                       @mouseenter="$data.openSubmenu(6)"
+                    >
+                        Effects
+                        <i class="fa-solid fa-chevron-down ml-2 transition-transform"
+                           :class="{'rotate-180': $data.submenuActive === 6}"
+                        ></i>
+                    </a>
+                                    </div>
+    </div>
+
+                        <div class="py-8 border-t border-white/20 bg-black/80"
+     x-data="main_submenu({
+        events: {
+            triggerMainSubmenuOpenEvent: &quot;Header.TRIGGER_MAIN_SUBMENU_OPEN_EVENT&quot;,
+            triggerMainSubmenuCloseEvent: &quot;Header.TRIGGER_MAIN_SUBMENU_CLOSE_EVENT&quot;,
+        },
+        isMobile: false
+     })"
+     x-show="$data.opened === 4"
+     x-transition:enter="transition ease-out duration-200"
+     x-transition:enter-start="opacity-0"
+     x-transition:enter-end="opacity-100"
+     x-transition:leave=""
+     x-transition:leave-start="opacity-100"
+     x-transition:leave-end="opacity-0"
+>
+    <div class="mx-auto container max-w-fit">
+        <div class="flex items-baseline gap-x-8 mb-8">
+            <div class="text-3xl font-hector">
+                Falcon &amp; Expansions
+            </div>
+
+            <a
+                href="falcon-expansions"
+                class="text-primary hover:underline hover:underline-offset-2 cursor-pointer uppercase text-sm"
+                wire:navigate
+            >
+                31 PRODUCTS
+            </a>
+
+                            <div class="flex items-center gap-x-4 grow justify-end self-center">
+                                    </div>
+                    </div>
+
+        <div class="flex justify-center items-start gap-x-2.5 mx-auto">
+            <a href="https://www.uvi.net/falcon"
+               wire:navigate
+                class="aspect-box rounded-lg relative overflow-hidden h-[302px]"
+            >
+                
+                <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFC_Falcon/medias/conversions/1761051815_Falcon-26_cover-responsive-xs.webp, https://cdn.uvi.net/UVIFC_Falcon/medias/conversions/1761051815_Falcon-26_cover-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFC_Falcon/medias/conversions/1761051815_Falcon-26_cover-responsive-xs.webp, https://cdn.uvi.net/UVIFC_Falcon/medias/conversions/1761051815_Falcon-26_cover-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="object-contain hover:scale-105 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhBgNBBIAAAAAAAAAAACH5BAEAAAAALAAAAAAGA0EEAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqEMNHwrRiEp0ohStaBwLAAA7" srcset="https://cdn.uvi.net/UVIFC_Falcon/medias/conversions/1761051815_Falcon-26_cover-responsive-xs-retina.webp 2x">
+</picture>
+    <script>
+        window.addEventListener(
+            'alpine:init',
+            () => window.Alpine.data('uviimagelazy', () => ({
+                show: false,
+                init() {
+                    this.$nextTick(() => this.show = true);
+                }
+            }))
+        )
+    </script>
+            </a>
+
+            <div class="grid gap-[10px] shrink-0 grid-cols-6" >
+                                    <a
+                        href="https://www.uvi.net/atmospherics-2"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX28_Atmospherics_2/medias/conversions/1764089735_Atmospherics2_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX28_Atmospherics_2/medias/conversions/1764089735_Atmospherics2_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX28_Atmospherics_2/medias/conversions/1764089735_Atmospherics2_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX28_Atmospherics_2/medias/conversions/1764089735_Atmospherics2_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX28_Atmospherics_2/medias/conversions/1764089735_Atmospherics2_Product-Store_VF-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/modular-waves"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX29_Modular_waves/medias/conversions/1764089696_ModularWaves_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX29_Modular_waves/medias/conversions/1764089696_ModularWaves_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX29_Modular_waves/medias/conversions/1764089696_ModularWaves_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX29_Modular_waves/medias/conversions/1764089696_ModularWaves_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX29_Modular_waves/medias/conversions/1764089696_ModularWaves_Product-Store_VF-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/afropop"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX31_Afropop/medias/conversions/1764089586_Afropop_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX31_Afropop/medias/conversions/1764089586_Afropop_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX31_Afropop/medias/conversions/1764089586_Afropop_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX31_Afropop/medias/conversions/1764089586_Afropop_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX31_Afropop/medias/conversions/1764089586_Afropop_Product-Store_VF-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/cinematic-shades"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX05_Cinematic_shades/medias/conversions/1764175275_Cinematic_Shades_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX05_Cinematic_shades/medias/conversions/1764175275_Cinematic_Shades_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX05_Cinematic_shades/medias/conversions/1764175275_Cinematic_Shades_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX05_Cinematic_shades/medias/conversions/1764175275_Cinematic_Shades_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX05_Cinematic_shades/medias/conversions/1764175275_Cinematic_Shades_Product-Store-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/analog-motion"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX01_Analog_motion/medias/conversions/1764350399_Analog-Motion_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX01_Analog_motion/medias/conversions/1764350399_Analog-Motion_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX01_Analog_motion/medias/conversions/1764350399_Analog-Motion_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX01_Analog_motion/medias/conversions/1764350399_Analog-Motion_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX01_Analog_motion/medias/conversions/1764350399_Analog-Motion_Product-Store-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/escapism"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX30_Escapism/medias/conversions/1764089657_ESCAPISM_Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX30_Escapism/medias/conversions/1764089657_ESCAPISM_Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX30_Escapism/medias/conversions/1764089657_ESCAPISM_Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX30_Escapism/medias/conversions/1764089657_ESCAPISM_Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX30_Escapism/medias/conversions/1764089657_ESCAPISM_Store_VF-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/modular-drums"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX26_Modular_drums/medias/conversions/1764089929_ModularDrums_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX26_Modular_drums/medias/conversions/1764089929_ModularDrums_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX26_Modular_drums/medias/conversions/1764089929_ModularDrums_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX26_Modular_drums/medias/conversions/1764089929_ModularDrums_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX26_Modular_drums/medias/conversions/1764089929_ModularDrums_Product-Store_VF-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/pulsacion"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX27_Pulsacion/medias/conversions/1764089846_Pulsacion_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX27_Pulsacion/medias/conversions/1764089846_Pulsacion_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX27_Pulsacion/medias/conversions/1764089846_Pulsacion_Product-Store_VF-responsive-xs.webp, https://cdn.uvi.net/UVIFCX27_Pulsacion/medias/conversions/1764089846_Pulsacion_Product-Store_VF-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX27_Pulsacion/medias/conversions/1764089846_Pulsacion_Product-Store_VF-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/lofi-dreams"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX16_Lofi_dreams/medias/conversions/1764340516_Lofi-Dreams_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX16_Lofi_dreams/medias/conversions/1764340516_Lofi-Dreams_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX16_Lofi_dreams/medias/conversions/1764340516_Lofi-Dreams_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX16_Lofi_dreams/medias/conversions/1764340516_Lofi-Dreams_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHov+bLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/McccefwxyyCKPTHLJJp+Mcsoqr8xyyy6/DHPMMs9Mc80234xzzjrvzHPPPv8MdNBCD0100UYfjXTSSi/NdNNOPw111FJPTXXVVl+NddZab811115/DXbYYo9Ndtlmn4122mqvzXbbbr8Nd9xyz0133XbfjXfeeu/Nd99+/w144IIPTnjhhh+OeOKKL854444/Dnnkkk/+Tnnlll+Oeeaab855555/Dnrooo9Oeummn4566qqvznrrrr8Oe+yyz0577bbfjnvuuu/Oe+++/w588MIPT3zxxh+PfPLKL898884/D3300k9PffXWX4999tpvz3333n8Pfvjij09++eafj3766q/Pfvvuvw9//PLPT3/99t+Pf/76789///7/D8AACnCABCygAQ+IwAQqcIEMbKADHwjBCEpwghSsoAUviMEManCDHOygBz8IwhCKcIQkLKEJT4jCFKpwhSxsoQtfCMMYynCGNKyhDW+IwxzqcIc87KEPfwjEIApxiEQsohGPiMQkKnGJTGyiE58IxShKcYpUrKL+Fa+IxSxqcYtc7KIXvwjGMIpxjGQsoxnPiMY0qnGNbGyjG98IxzjKcY50rKMd74jHPOpxj3zsox//CMhACnKQhCykIQ+JyEQqcpGMbKQjHwnJSEpykpSspCUviclManKTnOykJz8JylCKcpSkLKUpT4nKVKpylaxspStfCctYynKWtKylLW+Jy1zqcpe87KUvfwnMYApzmMQspjGPicxkKnOZzGymM58JzWhKc5rUrKY1r4nNbGpzm9zspje/Cc5winOc5CynOc+JznSqc53sbKc73wnPeMpznvSspz3vic986nOf/OynP/8J0IAKdKAELahBD4rQhCp0oQxtqENkHwrRiEp0ohStqEUvitGManSjHO2oRz8K0pCKdKQkLalJT4rSlKp0pSxtqUtfCtOYynSmNK2pTW+K05zqdKc87alPfwrUoAp1qEQtqlGPitSkKnWpTG2qU58K1ahKdapU5WYBAAA7" srcset="https://cdn.uvi.net/UVIFCX16_Lofi_dreams/medias/conversions/1764340516_Lofi-Dreams_Product-Store-responsive-xs-retina.webp 2x">
+</picture>
+                    </a>
+                                    <a
+                        href="https://www.uvi.net/devinity"
+                        wire:navigate
+                        class="rounded-lg overflow-hidden relative max-w-[120px]"
+                    >
+                        
+                        <picture 
+         
+         x-data="uviimagelazy"
+>
+                <template x-if="show">
+        <source media="(width <= 320px)" srcset="https://cdn.uvi.net/UVIFCX08_Devinity/medias/conversions/1764248782_Devinity_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX08_Devinity/medias/conversions/1764248782_Devinity_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+                <template x-if="show">
+        <source media="(min-width: 320px)" srcset="https://cdn.uvi.net/UVIFCX08_Devinity/medias/conversions/1764248782_Devinity_Product-Store-responsive-xs.webp, https://cdn.uvi.net/UVIFCX08_Devinity/medias/conversions/1764248782_Devinity_Product-Store-responsive-xs-retina.webp 2x">
+    </template>
+        <img class="hover:scale-110 transition-[scale] duration-500" src="data:image/gif;base64,R0lGODlhAAXUAoAAAAAAAAAAACH5BAEAAAAALAAAAAAABdQCAAL+hI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCt

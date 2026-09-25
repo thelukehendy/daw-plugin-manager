@@ -1,0 +1,8 @@
+{
+  "url": "https://na-update.native-instruments.com/does-not-exist/latest-mac.yml",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 409,
+  "sha256": "5a9966500832bc07f9fd6d0ffcd662414ec897a15196f5f08c6bb5361a99682a",
+  "negative": true,
+  "detector": "reject_if_missing_version_and_files_keys_or_xml_error"
+}

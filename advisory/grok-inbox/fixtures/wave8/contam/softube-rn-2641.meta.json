@@ -1,0 +1,10 @@
+{
+  "source_file": "softube-rn-2641.html",
+  "bytes": 70017,
+  "quotes": {
+    "All plug-ins": "se Notes for version 2.6.41 (Released on August 20th, 2026) All plug-ins: Fixed an issue that could make plug-ins load slower than necessary on systems with a large number of Softube plug-ins installed. Amp Room, Flow Mastering Suite, and Flow Mixing Suite: Fixed an issue that co",
+    "Amp Room, Flow Mastering Suite": " systems with a large number of Softube plug-ins installed. Amp Room, Flow Mastering Suite, and Flow Mixing Suite: Fixed an issue that could cause presets and projects saved with versions 2.6.38 to 2.6.40 to recall with incorrect parameter values. Softube On-Screen Display (updat",
+    "2.6.41": "Release Notes for version 2.6.41 (Released on August 20th, 2026) - Softube This week: Save 75% on Model 84. Shop now Free Sale Newsletter Hardware Plug-ins Subscribe-to-Own Blog Support About us Release Notes Release Notes for version 2.6.41 (Rel"
+  },
+  "url": "https://www.softube.com/release-notes/release-notes-for-version-2-6-41-(released-on-august-20th-2026)"
+}

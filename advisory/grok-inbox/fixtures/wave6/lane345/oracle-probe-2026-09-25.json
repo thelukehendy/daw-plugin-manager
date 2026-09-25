@@ -1,0 +1,210 @@
+{
+  "probed_at_pt": "2026-09-25 ~11:55-12:05 PT",
+  "method": "curl GET public pages, no credentials",
+  "results": [
+    {
+      "id": "nembrini-audio",
+      "url": "https://www.nembriniaudio.com/products.json?limit=250",
+      "http": 200,
+      "signal": "82 products, 18 product_type=BUNDLE, 0 version tokens in title/body",
+      "oracle": "identity inventory only",
+      "version_yield": "none \u2014 CENTRAL app"
+    },
+    {
+      "id": "wave-arts",
+      "url": "https://wavearts.com/support/version-history/dialog-2-04",
+      "http": 200,
+      "signal": "dated per-product versions; see wavearts-version-history-tips.json",
+      "oracle": "official version history + S3 filenames",
+      "version_yield": "high"
+    },
+    {
+      "id": "ddmf",
+      "url": "https://ddmf.eu/news/",
+      "http": 200,
+      "bytes": 57119,
+      "last_modified": "Thu, 04 Jun 2026 12:25:04 GMT",
+      "signal": "Plugindoctor v2.6.0 dated June 3 2026 plus older per-product posts",
+      "oracle": "news blog",
+      "version_yield": "medium-high, per-post scope"
+    },
+    {
+      "id": "denise-audio",
+      "url": "https://www.deniseaudio.com/downloads",
+      "http": 200,
+      "signal": "Bass XXL (1.3), Motion Filter (1.4), Perfect Room 2 (1.4); S3 zips have NO version in filename",
+      "oracle": "downloads parenthetical",
+      "version_yield": "3 of 10 SKUs"
+    },
+    {
+      "id": "audiothing",
+      "url": "https://www.audiothing.net/plugin-updates/",
+      "http": 200,
+      "signal": "HTML table Product|Version|Latest Update. Sample: Arguments 1.0 19 Nov 2024; B00GA 1.0.1 25 Nov 2025; Environments 1.0 14 May 2026",
+      "oracle": "official update table",
+      "version_yield": "high for yellows"
+    },
+    {
+      "id": "hornet",
+      "url": "https://www.hornetplugins.com/plugins/",
+      "http": 200,
+      "bytes": 8056,
+      "signal": "index is a tiny JS shell, not a version list",
+      "oracle": "per-slug product pages (already used for 72 greens), not the index",
+      "version_yield": "yellow raise only"
+    },
+    {
+      "id": "overloud",
+      "url": "https://download.overloud.com/TH-U/changelog.txt",
+      "http": 200,
+      "signal": "tip 2.0.19 -> 2.1 host changelog",
+      "oracle": "TH-U host only",
+      "version_yield": "do not stamp editions"
+    },
+    {
+      "id": "soundtheory",
+      "url": "https://www.soundtheory.com/static/Gullfoss%20Changelog.pdf",
+      "http": 200,
+      "bytes": 101607,
+      "signal": "Gullfoss v1.11.9 (2025-11-04). Homepage is 'Please enable JavaScript' 5KB.",
+      "oracle": "PDF changelog",
+      "version_yield": "Gullfoss SKU only"
+    },
+    {
+      "id": "madrona-labs",
+      "url": "https://www.madronalabs.com/products/sumu",
+      "http": 200,
+      "signal": "Download link text 'Sumu 1.3.0' Mac and Windows",
+      "oracle": "product page link text",
+      "version_yield": "high, small catalog"
+    },
+    {
+      "id": "relab-development",
+      "url": "https://relabdevelopment.com/downloads/",
+      "http": 200,
+      "signal": "installer version tokens 1.1.0/1.2.x/2.2.0 beside product names",
+      "oracle": "downloads page",
+      "version_yield": "medium-high"
+    },
+    {
+      "id": "minimal-audio",
+      "url": "https://www.minimal.audio/products/rift",
+      "http": 200,
+      "signal": "marketing shell text empty; embedded semver list tops at 2.6.0 (also 2.5.1, 2.5.0...). Homepage is JS fallback.",
+      "oracle": "per-product embedded changelog, not homepage",
+      "version_yield": "medium, verify 2.6.0 is Rift before write"
+    },
+    {
+      "id": "lunacy-audio",
+      "url": "https://lunacy.audio/",
+      "http": 200,
+      "bytes": 902793,
+      "signal": "NOVA/BEAM/CUBE marketing, no clean semver in visible text",
+      "oracle": "absent this pass",
+      "version_yield": "low"
+    },
+    {
+      "id": "kiive-audio",
+      "url": "https://www.kiiveaudio.com/products/xtcomp",
+      "http": 200,
+      "signal": "'current version on the Plugin Alliance store'; legacy Kiive account download",
+      "oracle": "PA migration, not Kiive homepage",
+      "version_yield": "low until PA handle map"
+    },
+    {
+      "id": "hofa-plugins",
+      "url": "https://hofa-plugins.de/en/",
+      "http": 200,
+      "signal": "product names carry V2/V3 generation; homepage dates are DD.MM.YYYY news not builds. IQ EQ page had no semver in text.",
+      "oracle": "generation labels only",
+      "version_yield": "low \u2014 do not invent 3.0 from 'EQ V3'"
+    },
+    {
+      "id": "refx",
+      "url": "https://refx.com/nexus",
+      "http": 200,
+      "signal": "NEXUS5 marketing, no installer semver",
+      "oracle": "absent",
+      "version_yield": "low"
+    },
+    {
+      "id": "black-rooster-audio",
+      "url": "https://blackroosteraudio.com/en/news",
+      "http": 200,
+      "signal": "framework v3.0.0 release (11 Apr 2025) \u2014 already stamped on 26 greens",
+      "oracle": "framework news",
+      "version_yield": "maintenance canary, not new greens"
+    },
+    {
+      "id": "pulsar-audio",
+      "url": "https://pulsar.audio/download/",
+      "http": 200,
+      "signal": "'LATEST PLUGIN VERSIONS' heading but page-builder semver noise (Slider Revolution 6.7.40, PixelYourSite 11.2.0.7)",
+      "oracle": "unsafe without block isolation",
+      "version_yield": "guarded"
+    },
+    {
+      "id": "nomad-factory",
+      "url": "https://www.nomadfactory.com/news/blog",
+      "http": 200,
+      "signal": "Integral Studio Pack '2026-compliant' post 2026-03-24, no per-plugin semver",
+      "oracle": "pack announcement",
+      "version_yield": "low"
+    },
+    {
+      "id": "dexed",
+      "url": "https://api.github.com/repos/asb2m10/dexed/releases/latest",
+      "http": 200,
+      "signal": "tag v1.0.1 published 2025-11-29"
+    },
+    {
+      "id": "lsp",
+      "url": "https://api.github.com/repos/lsp-plugins/lsp-plugins/releases/latest",
+      "http": 200,
+      "signal": "tag 1.2.35 published 2026-08-23 \u2014 matches catalog cohort"
+    },
+    {
+      "id": "cardinal",
+      "url": "https://api.github.com/repos/DISTRHO/Cardinal/releases/latest",
+      "http": 200,
+      "signal": "tag 26.02 published 2026-02-28 date-style"
+    },
+    {
+      "id": "surge",
+      "url": "https://api.github.com/repos/surge-synthesizer/surge/releases/latest",
+      "http": 200,
+      "signal": "tag name Nightly published 2024-08-07 \u2014 /releases/latest TRAP"
+    },
+    {
+      "id": "vital",
+      "url": "https://api.github.com/repos/mtytel/vital/releases/latest",
+      "http": "parsed empty",
+      "signal": "no tag_name \u2014 do not assume repo still publishes latest"
+    },
+    {
+      "id": "byod",
+      "url": "https://api.github.com/repos/Chowdhury-DSP/BYOD/releases/latest",
+      "http": 200,
+      "signal": "Last-Modified Sat, 16 Mar 2024 \u2014 stale vs OAS-sourced chowdsp greens"
+    },
+    {
+      "id": "airwindows-releases",
+      "url": "https://api.github.com/repos/airwindows/airwindows/releases/latest",
+      "http": 404,
+      "signal": "no GitHub Releases; per-SKU versions stay policy-unversioned"
+    },
+    {
+      "id": "kvr-new-products-rss",
+      "url": "https://www.kvraudio.com/rss/new-products.php",
+      "http": 404,
+      "signal": "dead path"
+    },
+    {
+      "id": "kvr-forum-feed",
+      "url": "https://www.kvraudio.com/forum/feed.php",
+      "http": 301,
+      "location": "/forum/feed",
+      "signal": "exists as forum firehose, not a version oracle"
+    }
+  ]
+}

@@ -15,6 +15,18 @@
 
 ## Cadence
 - Weekly CSV fetch; hash the CSV body as content_hash.
+
+## Freshness chip 2026-09-19 (10:18 PDT)
+- Re-discovered current CSV URL from installers page HTML (sheet id rotated from the 2026-09-10 pass):
+  `https://docs.google.com/spreadsheets/d/e/2PACX-1vR-xQQaeJnzlI4TY_FXNA8Uccx5iAGmF78_EELOC1_5ak42VvLtVzjcvu7CaVqL3x7WwmG0IFk6UHaL/pub?gid=0&single=true&output=csv`
+- NEW dual-mismatch sighting: Oxford Drum Gate (gen-1) row — Platforms=`macos` (Mac-only product),
+  Mac installer embeds `2.05.0` matching the Version Number column, but the Windows Installer URL cell
+  embeds a stale `2.04.0`. Treat as Mac-only per the Platforms column — ignore the stale Win cell;
+  do NOT raise or lower confidence on the Win cell alone. Stored `2.05.0` verified against Mac.
+- New-angle probe (CSV URL re-discovery) succeeded — keep as first step when fetch fails:
+  `curl` the installers page and grep for `docs.google.com` before assuming rotation broke the recipe.
+- Result: 17 re-checked, 0 raises (all stored versions matched live), 2 keeps (Soften no row;
+  Restore components still Mac 3.02.0 vs Win 3.01.0).
 ## plugin-gaps mop-2 (2026-09-10 ~1:50 AM PT)
 - Restore DeBuzzer/DeClicker/DeNoiser + Fraunhofer Pro-Codec still **skipped** (Mac≠Win installer versions on public CSV). Do not invent a unified version.
 

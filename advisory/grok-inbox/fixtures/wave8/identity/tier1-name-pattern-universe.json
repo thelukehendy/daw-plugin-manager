@@ -1,0 +1,712 @@
+[
+  {
+    "id": "d16-group--repeater-slate-digital-edition",
+    "name": "Repeater (Slate Digital Edition)",
+    "identity_kind": "suite_component",
+    "manufacturer_id": "d16-group",
+    "update_portal_url": "https://userarea.d16.pl/",
+    "eff_tier": 1,
+    "mfr_name": "D16 Group",
+    "website_url": "https://d16.pl"
+  },
+  {
+    "id": "eventide--h9-series-blackhole",
+    "name": "H9 Series: Blackhole",
+    "identity_kind": "suite_component",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-crushstation",
+    "name": "H9 Series: CrushStation",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-crystals",
+    "name": "H9 Series: Crystals",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-mangledverb",
+    "name": "H9 Series: MangledVerb",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-micropitch",
+    "name": "H9 Series: MicroPitch",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-rotary-mod",
+    "name": "H9 Series: Rotary Mod",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-shimmerverb",
+    "name": "H9 Series: ShimmerVerb",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-spring",
+    "name": "H9 Series: Spring",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-tricerachorus",
+    "name": "H9 Series: TriceraChorus",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "eventide--h9-series-ultratap",
+    "name": "H9 Series: UltraTap",
+    "identity_kind": "plugin",
+    "manufacturer_id": "eventide",
+    "update_portal_url": "https://www.eventideaudio.com/my-account",
+    "eff_tier": 1,
+    "mfr_name": "Eventide",
+    "website_url": "https://www.eventideaudio.com"
+  },
+  {
+    "id": "goodhertz--vcme-vulf-compressor-mastering-edition",
+    "name": "VCME (Vulf Compressor Mastering Edition)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "goodhertz",
+    "update_portal_url": "https://goodhertz.com/account/",
+    "eff_tier": 1,
+    "mfr_name": "Goodhertz",
+    "website_url": "https://goodhertz.com"
+  },
+  {
+    "id": "image-line--il-delay-juice-pack",
+    "name": "IL Delay (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-delay-bank-juice-pack",
+    "name": "IL Delay Bank (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-equo-juice-pack",
+    "name": "IL EQUO (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-flangus-juice-pack",
+    "name": "IL Flangus (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-multiband-compressor-juice-pack",
+    "name": "IL Multiband Compressor (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-parametric-eq-juice-pack",
+    "name": "IL Parametric EQ (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-spectroman-juice-pack",
+    "name": "IL Spectroman (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-stereo-enhancer-juice-pack",
+    "name": "IL Stereo Enhancer (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-vocoder-juice-pack",
+    "name": "IL Vocoder (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "image-line--il-waveshaper-juice-pack",
+    "name": "IL WaveShaper (Juice Pack)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "image-line",
+    "update_portal_url": "https://www.image-line.com/vst-downloads",
+    "eff_tier": 1,
+    "mfr_name": "Image-Line",
+    "website_url": "https://www.image-line.com"
+  },
+  {
+    "id": "native-instruments--enhanced-eq-premium-tube-series",
+    "name": "Enhanced EQ (Premium Tube Series)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "native-instruments",
+    "update_portal_url": "https://www.native-instruments.com/en/specials/native-access-2/",
+    "eff_tier": 1,
+    "mfr_name": "Native Instruments",
+    "website_url": "https://www.native-instruments.com"
+  },
+  {
+    "id": "native-instruments--komplete-kontrol-mk3-series-s49-s61-s88",
+    "name": "Komplete Kontrol Mk3 Series (S49 / S61 / S88)",
+    "identity_kind": "hardware",
+    "manufacturer_id": "native-instruments",
+    "update_portal_url": "https://www.native-instruments.com/en/specials/native-access-2/",
+    "eff_tier": 1,
+    "mfr_name": "Native Instruments",
+    "website_url": "https://www.native-instruments.com"
+  },
+  {
+    "id": "native-instruments--passive-eq-premium-tube-series",
+    "name": "Passive EQ (Premium Tube Series)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "native-instruments",
+    "update_portal_url": "https://www.native-instruments.com/en/specials/native-access-2/",
+    "eff_tier": 1,
+    "mfr_name": "Native Instruments",
+    "website_url": "https://www.native-instruments.com"
+  },
+  {
+    "id": "native-instruments--solid-bus-comp-solid-mix-series",
+    "name": "Solid Bus Comp (Solid Mix Series)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "native-instruments",
+    "update_portal_url": "https://www.native-instruments.com/en/specials/native-access-2/",
+    "eff_tier": 1,
+    "mfr_name": "Native Instruments",
+    "website_url": "https://www.native-instruments.com"
+  },
+  {
+    "id": "native-instruments--solid-dynamics-solid-mix-series",
+    "name": "Solid Dynamics (Solid Mix Series)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "native-instruments",
+    "update_portal_url": "https://www.native-instruments.com/en/specials/native-access-2/",
+    "eff_tier": 1,
+    "mfr_name": "Native Instruments",
+    "website_url": "https://www.native-instruments.com"
+  },
+  {
+    "id": "native-instruments--solid-eq-solid-mix-series",
+    "name": "Solid EQ (Solid Mix Series)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "native-instruments",
+    "update_portal_url": "https://www.native-instruments.com/en/specials/native-access-2/",
+    "eff_tier": 1,
+    "mfr_name": "Native Instruments",
+    "website_url": "https://www.native-instruments.com"
+  },
+  {
+    "id": "native-instruments--vari-comp-premium-tube-series",
+    "name": "Vari Comp (Premium Tube Series)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "native-instruments",
+    "update_portal_url": "https://www.native-instruments.com/en/specials/native-access-2/",
+    "eff_tier": 1,
+    "mfr_name": "Native Instruments",
+    "website_url": "https://www.native-instruments.com"
+  },
+  {
+    "id": "plugin-alliance--karacter-500-series",
+    "name": "Karacter 500 Series",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--lindell-audio-50-series",
+    "name": "Lindell Audio 50 Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--lindell-audio-80-series",
+    "name": "Lindell Audio 80 Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--mpressor-500-series",
+    "name": "Mpressor 500 Series",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--nvelope-500-series",
+    "name": "Nvelope 500 Series",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--nvelope-mastering-edition",
+    "name": "Nvelope Mastering Edition",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--skulpter-500-series",
+    "name": "Skulpter 500 Series",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--uad-engl-e646-vs-limited-edition",
+    "name": "UAD ENGL E646 VS Limited Edition",
+    "identity_kind": "unknown_other",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--xfilter-500-series",
+    "name": "Xfilter 500 Series",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--xfilter-mastering-edition",
+    "name": "Xfilter Mastering Edition",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "plugin-alliance--xmax-500-series",
+    "name": "Xmax 500 Series",
+    "identity_kind": "hardware",
+    "manufacturer_id": "plugin-alliance",
+    "update_portal_url": "https://www.plugin-alliance.com/en/products.html",
+    "eff_tier": 1,
+    "mfr_name": "Plugin Alliance",
+    "website_url": "https://www.plugin-alliance.com"
+  },
+  {
+    "id": "presonus--ampire-xt-metal-pack",
+    "name": "Ampire XT Metal Pack",
+    "identity_kind": "plugin",
+    "manufacturer_id": "presonus",
+    "update_portal_url": "https://my.presonus.com/",
+    "eff_tier": 1,
+    "mfr_name": "PreSonus",
+    "website_url": "https://www.presonus.com"
+  },
+  {
+    "id": "slate-digital--repeater-slate-digital-edition",
+    "name": "Repeater (Slate Digital Edition)",
+    "identity_kind": "plugin",
+    "manufacturer_id": "slate-digital",
+    "update_portal_url": "https://app.completeaccess.audio/installers",
+    "eff_tier": 1,
+    "mfr_name": "Slate Digital",
+    "website_url": "https://slatedigital.com"
+  },
+  {
+    "id": "slate-digital--verbsuite-classics",
+    "name": "VerbSuite Classics",
+    "identity_kind": "plugin",
+    "manufacturer_id": "slate-digital",
+    "update_portal_url": null,
+    "eff_tier": 1,
+    "mfr_name": "Slate Digital",
+    "website_url": "https://slatedigital.com"
+  },
+  {
+    "id": "softube--abbey-road-studios-brilliance-pack",
+    "name": "Abbey Road Studios Brilliance Pack",
+    "identity_kind": "plugin",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "softube--flow-mastering-suite",
+    "name": "Flow Mastering Suite",
+    "identity_kind": "plugin",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "softube--flow-mixing-suite",
+    "name": "Flow Mixing Suite",
+    "identity_kind": "plugin",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "softube--passive-active-pack",
+    "name": "Passive-Active Pack",
+    "identity_kind": "plugin",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "softube--tube-tech-complete-collection-2",
+    "name": "Tube-Tech Complete Collection 2",
+    "identity_kind": "plugin",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "softube--uad-softube-amp-room-bundle",
+    "name": "UAD Softube Amp Room Bundle",
+    "identity_kind": "plugin",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "softube--uad-tube-tech-eq-collection",
+    "name": "UAD Tube-Tech EQ Collection",
+    "identity_kind": "plugin",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "softube--weiss-gambit-series-for-console-1",
+    "name": "Weiss Gambit Series for Console 1",
+    "identity_kind": "suite_component",
+    "manufacturer_id": "softube",
+    "update_portal_url": "https://www.softube.com/installers",
+    "eff_tier": 1,
+    "mfr_name": "Softube",
+    "website_url": "https://www.softube.com"
+  },
+  {
+    "id": "ssl--ssl-b-series-dynamics",
+    "name": "SSL B-Series Dynamics",
+    "identity_kind": "hardware",
+    "manufacturer_id": "ssl",
+    "update_portal_url": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
+    "eff_tier": 1,
+    "mfr_name": "Solid State Logic",
+    "website_url": "https://solidstatelogic.com"
+  },
+  {
+    "id": "ssl--ssl-e-series-dynamics",
+    "name": "SSL E-Series Dynamics",
+    "identity_kind": "hardware",
+    "manufacturer_id": "ssl",
+    "update_portal_url": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
+    "eff_tier": 1,
+    "mfr_name": "Solid State Logic",
+    "website_url": "https://solidstatelogic.com"
+  },
+  {
+    "id": "steinberg--yamaha-vintage-stomp-pack",
+    "name": "Yamaha Vintage Stomp Pack",
+    "identity_kind": "plugin",
+    "manufacturer_id": "steinberg",
+    "update_portal_url": "https://www.steinberg.net/download/",
+    "eff_tier": 1,
+    "mfr_name": "Steinberg",
+    "website_url": "https://www.steinberg.net"
+  },
+  {
+    "id": "universal-audio--uad-c-suite-c-axe",
+    "name": "UAD C-Suite C-Axe",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/my/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uad-c-suite-c-max",
+    "name": "UAD C-Suite C-Max",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/my/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uad-c-suite-c-vox",
+    "name": "UAD C-Suite C-Vox",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/my/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uad-engl-e646-vs-limited-edition",
+    "name": "UAD ENGL E646 VS Limited Edition",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uad-producer-edition",
+    "name": "UAD Producer Edition",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uad-signature-edition-v3",
+    "name": "UAD Signature Edition V3",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uad-studio-edition",
+    "name": "UAD Studio Edition",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uadx-essentials-edition",
+    "name": "UADx Essentials Edition",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uadx-pultec-passive-eq-collection",
+    "name": "UADx Pultec Passive EQ Collection",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": null,
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "universal-audio--uadx-signature-edition-v2",
+    "name": "UADx Signature Edition V2",
+    "identity_kind": "plugin",
+    "manufacturer_id": "universal-audio",
+    "update_portal_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "eff_tier": 1,
+    "mfr_name": "Universal Audio",
+    "website_url": "https://www.uaudio.com"
+  },
+  {
+    "id": "waves--chris-lord-alge-artist-signature-series",
+    "name": "Chris Lord-Alge Artist Signature Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "waves",
+    "update_portal_url": "https://www.waves.com/downloads/central",
+    "eff_tier": 1,
+    "mfr_name": "Waves",
+    "website_url": "https://www.waves.com"
+  },
+  {
+    "id": "waves--eddie-kramer-signature-series",
+    "name": "Eddie Kramer Signature Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "waves",
+    "update_portal_url": "https://www.waves.com/downloads/central",
+    "eff_tier": 1,
+    "mfr_name": "Waves",
+    "website_url": "https://www.waves.com"
+  },
+  {
+    "id": "waves--jack-joseph-puig-signature-series",
+    "name": "Jack Joseph Puig Signature Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "waves",
+    "update_portal_url": "https://www.waves.com/downloads/central",
+    "eff_tier": 1,
+    "mfr_name": "Waves",
+    "website_url": "https://www.waves.com"
+  },
+  {
+    "id": "waves--manny-marroquin-signature-series",
+    "name": "Manny Marroquin Signature Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "waves",
+    "update_portal_url": "https://www.waves.com/downloads/central",
+    "eff_tier": 1,
+    "mfr_name": "Waves",
+    "website_url": "https://www.waves.com"
+  },
+  {
+    "id": "waves--oneknob-series",
+    "name": "OneKnob Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "waves",
+    "update_portal_url": "https://www.waves.com/downloads/central",
+    "eff_tier": 1,
+    "mfr_name": "Waves",
+    "website_url": "https://www.waves.com"
+  },
+  {
+    "id": "waves--tony-maserati-signature-series",
+    "name": "Tony Maserati Signature Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "waves",
+    "update_portal_url": "https://www.waves.com/downloads/central",
+    "eff_tier": 1,
+    "mfr_name": "Waves",
+    "website_url": "https://www.waves.com"
+  },
+  {
+    "id": "waves--v-series",
+    "name": "V-Series",
+    "identity_kind": "plugin",
+    "manufacturer_id": "waves",
+    "update_portal_url": "https://www.waves.com/downloads/central",
+    "eff_tier": 1,
+    "mfr_name": "Waves",
+    "website_url": "https://www.waves.com"
+  }
+]

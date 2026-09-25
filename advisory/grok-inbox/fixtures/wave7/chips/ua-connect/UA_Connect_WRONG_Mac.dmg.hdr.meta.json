@@ -1,0 +1,9 @@
+{
+  "url": "https://builds.uaudio.com/apps/UA_Connect/UA_Connect_9_9_9_9999_Mac.dmg",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 334,
+  "sha256": "0c3e8fb9b397173e616554ee3abdad68443c01b2e5cba64e645d1e78e2b801d9",
+  "negative": true,
+  "expected_status": 403,
+  "detector": "wrong_basename_403"
+}

@@ -1,0 +1,5870 @@
+[
+  {
+    "id": "airwindows",
+    "name": "Airwindows",
+    "website": "https://www.airwindows.com",
+    "portal": "https://www.airwindows.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 515,
+    "kind_plugin": 515,
+    "kinds": {
+      "plugin": 515
+    },
+    "versioned": 3,
+    "no_ver": 512,
+    "true_gaps": 512,
+    "green": 1,
+    "amber": 0,
+    "yellow": 2,
+    "avg_conf": 70.7,
+    "min_verified": "2026-09-10T09:50:22Z",
+    "max_verified": "2026-09-10T09:55:28Z",
+    "source_kinds": {
+      "downloadsPage": 1,
+      "other": 2
+    },
+    "extract_methods": {
+      "kvr-product-page": 2,
+      "github-dawplugin-release-updated+asset-name-convention": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 2,
+      "github.com": 1
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# airwindows\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- **Freeware:** all `is_freeware=1` (MIT / free downloads on airwindows.com).\n- **Strategy:** Do **not** invent one global version for ~514 algorithm plugs. Standalone zips (`Air4.zip`, \u2026) and platform packs (`64 Bit Windows VSTs.zip`) lack semver in filenames.\n- **Airwindows Consolidated only:** GitHu",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 8,
+      "skipped": 514
+    },
+    "feeds": []
+  },
+  {
+    "id": "puremagnetik",
+    "name": "Puremagnetik",
+    "website": "https://puremagnetik.com/",
+    "portal": "https://puremagnetik.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 250,
+    "kind_plugin": 0,
+    "kinds": {
+      "bundle": 30,
+      "discontinued": 4,
+      "soundset": 216
+    },
+    "versioned": 0,
+    "no_ver": 250,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {
+      "skipped": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "acustica-audio",
+    "name": "Acustica Audio",
+    "website": "https://www.acustica-audio.com",
+    "portal": "https://www.acustica-audio.com/pages/aquarius",
+    "portal_app": "Aquarius",
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 139,
+    "kind_plugin": 0,
+    "kinds": {
+      "hub_app": 4,
+      "soundset": 1,
+      "suite_component": 134
+    },
+    "versioned": 134,
+    "no_ver": 5,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 134,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T08:53:58Z",
+    "max_verified": "2026-09-16T15:20:19Z",
+    "source_kinds": {
+      "other": 134
+    },
+    "extract_methods": {
+      "kvr-product-page": 132,
+      "surge-chip-2026-09-16-0718 A1": 2
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 134
+    },
+    "playbook": {
+      "method": "KVR product-page verwin (crowdsourced @60). Aquarius portal for installs \u2014 do not grind for versions.",
+      "urls": "[\"https://www.kvraudio.com/developer/acustica-audio\", \"https://www.acustica-audio.com/\"]",
+      "extract": "Fetch KVR URL from plugins.notes; parse id=\"verwin\"; accept kvr-product-page confidence 60. Backfill portal_app=Aquarius on plugin rows.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T08:56:05Z",
+      "success": "134/134 former plugin gaps via KVR@60 (2026-09-10 hub-remain chip).",
+      "hub_walled": 1,
+      "portal_app": "Aquarius"
+    },
+    "attempts": {
+      "observed": 137,
+      "skipped": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "applied-acoustics",
+    "name": "Applied Acoustics Systems",
+    "website": "https://www.applied-acoustics.com",
+    "portal": "https://www.applied-acoustics.com/portal/login/",
+    "portal_app": null,
+    "changelog_url": "https://www.applied-acoustics.com/objeq-delay/resources/",
+    "version_scheme": "semver",
+    "version_example": "1.3.5",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 110,
+    "kind_plugin": 11,
+    "kinds": {
+      "discontinued": 6,
+      "expansion": 8,
+      "gen_ambiguous": 2,
+      "plugin": 11,
+      "soundset": 83
+    },
+    "versioned": 12,
+    "no_ver": 98,
+    "true_gaps": 0,
+    "green": 11,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 90.1,
+    "min_verified": "2026-09-10T04:15:31Z",
+    "max_verified": "2026-09-15T21:23:44Z",
+    "source_kinds": {
+      "downloadsPage": 11,
+      "other": 1
+    },
+    "extract_methods": {
+      "aas-support-latest-installers-table": 8,
+      "live-html-sha256": 3,
+      "?": 1
+    },
+    "source_hosts": {
+      "www.applied-acoustics.com": 11,
+      "www.kvraudio.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 15,
+      "promoted": 1,
+      "skipped": 15
+    },
+    "feeds": []
+  },
+  {
+    "id": "hornet",
+    "name": "HoRNet",
+    "website": "https://www.hornetplugins.com",
+    "portal": "https://www.hornetplugins.com/hornet-doin/",
+    "portal_app": "HoRNet DoIn",
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "2.1.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 105,
+    "kind_plugin": 105,
+    "kinds": {
+      "plugin": 105
+    },
+    "versioned": 105,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 72,
+    "amber": 0,
+    "yellow": 33,
+    "avg_conf": 81.8,
+    "min_verified": "2026-09-10T05:25:57Z",
+    "max_verified": "2026-09-16T02:51:51Z",
+    "source_kinds": {
+      "productPage": 69,
+      "other": 33,
+      "releaseNotesPage": 3
+    },
+    "extract_methods": {
+      "pageText-version-available": 38,
+      "kvr-verwin-osx": 33,
+      "manufacturer-product-page-banner": 22,
+      "hornet-product-page-is-available": 8,
+      "?": 3,
+      "pageText": 1
+    },
+    "source_hosts": {
+      "www.hornetplugins.com": 72,
+      "www.kvraudio.com": 33
+    },
+    "playbook": {
+      "method": "Public product pages /plugins/{slug}/ with plain-text version banners (\"X.Y.Z is available\" / updated/upgraded). Chrome/WebFetch past CleanTalk; never DoIn portal for versions.",
+      "urls": "[\"https://www.hornetplugins.com/plugins/\", \"https://www.hornetplugins.com/plugins/corrosion/\", \"https://www.hornetplugins.com/\"]",
+      "extract": "Parse version from product-page news/banner. Map slug carefully; skip redirects that land on successor SKUs. Prefer manufacturer over KVR.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T08:32:51Z",
+      "success": "105/105 currents; ~47 manufacturer productPage @90-92; rest KVR@60 until product-page banners found",
+      "hub_walled": 0,
+      "portal_app": "HoRNet DoIn"
+    },
+    "attempts": {
+      "observed": 158,
+      "skipped": 33
+    },
+    "feeds": []
+  },
+  {
+    "id": "wa-production",
+    "name": "WA Production",
+    "website": "https://www.waproduction.com",
+    "portal": "https://www.waproduction.com/users/login",
+    "portal_app": null,
+    "changelog_url": "https://www.waproduction.com/plugins/view/multibender",
+    "version_scheme": "semver",
+    "version_example": "1.6.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 102,
+    "kind_plugin": 89,
+    "kinds": {
+      "bundle": 1,
+      "plugin": 89,
+      "soundset": 12
+    },
+    "versioned": 88,
+    "no_ver": 14,
+    "true_gaps": 1,
+    "green": 63,
+    "amber": 0,
+    "yellow": 25,
+    "avg_conf": 82.3,
+    "min_verified": "2026-09-10T06:29:45Z",
+    "max_verified": "2026-09-14T05:24:48Z",
+    "source_kinds": {
+      "releaseNotesPage": 1,
+      "productPage": 62,
+      "other": 25
+    },
+    "extract_methods": {
+      "manufacturer-product-page-update-log": 38,
+      "kvr-product-page": 25,
+      "?": 24,
+      "manufacturer-update-log": 1
+    },
+    "source_hosts": {
+      "www.waproduction.com": 63,
+      "www.kvraudio.com": 25
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# wa-production\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- Manufacturer portal-walled \u2192 KVR product pages @60 for ~86 plugs (Win=Mac).\n- Skip soundset Chill Vocals Universe / Titan Vocal Bundle.\n",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 150
+    },
+    "feeds": []
+  },
+  {
+    "id": "audiothing",
+    "name": "AudioThing",
+    "website": "https://www.audiothing.net",
+    "portal": "https://www.audiothing.net/account/",
+    "portal_app": null,
+    "changelog_url": "https://www.audiothing.net/plugin-updates/",
+    "version_scheme": "semver",
+    "version_example": "1.5.3",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 99,
+    "kind_plugin": 88,
+    "kinds": {
+      "bundle": 7,
+      "expansion": 4,
+      "plugin": 88
+    },
+    "versioned": 88,
+    "no_ver": 11,
+    "true_gaps": 1,
+    "green": 60,
+    "amber": 0,
+    "yellow": 28,
+    "avg_conf": 79.9,
+    "min_verified": "2026-09-10T04:23:24Z",
+    "max_verified": "2026-09-16T08:44:31Z",
+    "source_kinds": {
+      "releaseNotesPage": 10,
+      "productPage": 50,
+      "other": 28
+    },
+    "extract_methods": {
+      "audiothing-demo-installer-filename": 41,
+      "kvr-product-page": 27,
+      "updatesTable": 8,
+      "?": 6,
+      "demo-installer-filename": 4,
+      "manual-html-parse": 1,
+      "kvr-verwin-verosx": 1
+    },
+    "source_hosts": {
+      "www.audiothing.net": 60,
+      "www.kvraudio.com": 28
+    },
+    "playbook": {
+      "method": "Product-page demo basenames preferred; Toys/instruments often KVR@60; Magical Toy Keyboard page 404 \u2192 KVR 1.0",
+      "urls": "[\"https://www.audiothing.net/plugin-updates/\", \"https://www.kvraudio.com/developer/audiothing\"]",
+      "extract": "Never stamp Environments parent onto expansions. Toys often 404.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:58:41Z",
+      "success": "82/86 versioned; 27 yellow (Toys/instruments).",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 93,
+      "promoted": 1,
+      "skipped": 3
+    },
+    "feeds": []
+  },
+  {
+    "id": "analog-obsession",
+    "name": "Analog Obsession",
+    "website": "https://analogobsession.com",
+    "portal": "https://analogobsession.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 72,
+    "kind_plugin": 72,
+    "kinds": {
+      "plugin": 72
+    },
+    "versioned": 72,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 65,
+    "amber": 0,
+    "yellow": 7,
+    "avg_conf": 86.4,
+    "min_verified": "2026-09-10T09:25:33Z",
+    "max_verified": "2026-09-10T09:46:41Z",
+    "source_kinds": {
+      "downloadsPage": 25,
+      "productPage": 39,
+      "other": 7,
+      "releaseNotesPage": 1
+    },
+    "extract_methods": {
+      "manufacturer-patreon-version-banner": 39,
+      "manufacturer-official-cdn-installer-filename": 25,
+      "kvr-product-page": 7,
+      "page-confirmed": 1
+    },
+    "source_hosts": {
+      "www.patreon.com": 62,
+      "www.kvraudio.com": 7,
+      "analogobsession.com": 3
+    },
+    "playbook": {
+      "method": "No reliable public manufacturer semver; KVR developer index.",
+      "urls": "[\"https://www.kvraudio.com/developer/analog-obsession\", \"https://analogobsession.com/\"]",
+      "extract": "JS site; prefer KVR verwin.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "71/72 @60 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 136
+    },
+    "feeds": []
+  },
+  {
+    "id": "impact-soundworks",
+    "name": "Impact Soundworks",
+    "website": "https://impactsoundworks.com/",
+    "portal": "https://impactsoundworks.com/my-account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 72,
+    "kind_plugin": 11,
+    "kinds": {
+      "bundle": 5,
+      "plugin": 11,
+      "soundset": 56
+    },
+    "versioned": 0,
+    "no_ver": 72,
+    "true_gaps": 11,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {
+      "skipped": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "xln-audio",
+    "name": "XLN Audio",
+    "website": "https://www.xlnaudio.com",
+    "portal": "https://www.xlnaudio.com/account",
+    "portal_app": null,
+    "changelog_url": "https://www.xlnaudio.com/release_notes?filter=xo",
+    "version_scheme": "semver",
+    "version_example": "1.8.8",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 70,
+    "kind_plugin": 11,
+    "kinds": {
+      "bundle": 20,
+      "expansion": 33,
+      "hub_app": 2,
+      "plugin": 11,
+      "soundset": 4
+    },
+    "versioned": 13,
+    "no_ver": 57,
+    "true_gaps": 0,
+    "green": 8,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 80.2,
+    "min_verified": "2026-09-10T04:15:31Z",
+    "max_verified": "2026-09-10T10:49:23Z",
+    "source_kinds": {
+      "releaseNotesPage": 8,
+      "productPage": 5
+    },
+    "extract_methods": {
+      "page-confirmed": 6,
+      "kvr-product-page": 5,
+      "live-html-sha256": 2
+    },
+    "source_hosts": {
+      "www.xlnaudio.com": 8,
+      "www.kvraudio.com": 5
+    },
+    "playbook": {
+      "method": "XLN public release_notes table; KVR for legacy/SKU editions.",
+      "urls": "[\"https://www.xlnaudio.com/release_notes\"]",
+      "extract": "See playbooks/xln-audio.md version-chip-expand-5",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:49:23Z",
+      "success": "expand-5 chip",
+      "hub_walled": 1,
+      "portal_app": "XLN Online Installer"
+    },
+    "attempts": {
+      "observed": 15,
+      "skipped": 28
+    },
+    "feeds": []
+  },
+  {
+    "id": "nembrini-audio",
+    "name": "Nembrini Audio",
+    "website": "https://www.nembriniaudio.com",
+    "portal": "https://www.nembriniaudio.com",
+    "portal_app": "Central",
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 63,
+    "kind_plugin": 63,
+    "kinds": {
+      "plugin": 63
+    },
+    "versioned": 0,
+    "no_ver": 63,
+    "true_gaps": 63,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": {
+      "method": "Full product catalog enumerable via official Shopify endpoint products.json?limit=250. No dedicated public downloads page; versions managed inside the Nembrini Audio CENTRAL app.",
+      "urls": "[\"https://www.nembriniaudio.com/products.json?limit=250\",\"https://www.nembriniaudio.com/\"]",
+      "extract": "Exclude bundle/SKU products (Echobandit Bundle etc.) and Full Access Subscription \u2014 not installable plugins. Rack variants are separate SKUs from non-rack. Per-product URL pattern /products/<handle>.",
+      "cadence": "irregular; re-fetch products.json",
+      "last_scrub": "2026-09-15",
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "skipped": 28
+    },
+    "feeds": []
+  },
+  {
+    "id": "audio-damage",
+    "name": "Audio Damage",
+    "website": "https://www.audiodamage.com",
+    "portal": "https://www.audiodamage.com/account",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "3.2",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 61,
+    "kind_plugin": 54,
+    "kinds": {
+      "discontinued": 7,
+      "plugin": 54
+    },
+    "versioned": 55,
+    "no_ver": 6,
+    "true_gaps": 0,
+    "green": 50,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 85.3,
+    "min_verified": "2026-09-10T08:02:39Z",
+    "max_verified": "2026-09-10T09:16:51Z",
+    "source_kinds": {
+      "downloadsPage": 44,
+      "productPage": 6,
+      "other": 5
+    },
+    "extract_methods": {
+      "installer-filename": 31,
+      "installer-filename-inner-app": 18,
+      "kvr-verwin-osx": 4,
+      "kvr-product-page": 1,
+      "installer-filename-dropbox": 1
+    },
+    "source_hosts": {
+      "cdn.shopify.com": 23,
+      "audio-damage-demo-versions.s3.us-east-2.amazonaws.com": 18,
+      "www.audiodamage.com": 7,
+      "www.kvraudio.com": 5,
+      "www.dropbox.com": 2
+    },
+    "playbook": {
+      "method": "Shopify product pages + free-and-legacy Dropbox/Shopify zips; Cloudflare often blocks collections. Discontinued SKUs \u2192 free-and-legacy.",
+      "urls": "[\"https://www.audiodamage.com/pages/free-and-legacy\", \"https://www.audiodamage.com/collections/effects\"]",
+      "extract": "Prefer installer/Dropbox filename encodes (AD040_QuatroMod_103\u21921.0.3). Unversioned legacy zips \u2192 identity_kind=discontinued, do not invent.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T08:54:57Z",
+      "success": "Small-gaps: QuatroMod 1.0.3 + Pulse KVR 1.0; Mayhem/Basic/Panstation1 discontinued",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 98
+    },
+    "feeds": []
+  },
+  {
+    "id": "united-plugins",
+    "name": "United Plugins",
+    "website": "https://unitedplugins.com",
+    "portal": "https://unitedplugins.com/download/",
+    "portal_app": "UnitedPluginsManager",
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 59,
+    "kind_plugin": 59,
+    "kinds": {
+      "plugin": 59
+    },
+    "versioned": 59,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 2,
+    "amber": 0,
+    "yellow": 57,
+    "avg_conf": 61.1,
+    "min_verified": "2026-09-10T05:52:36Z",
+    "max_verified": "2026-09-10T12:04:03Z",
+    "source_kinds": {
+      "other": 13,
+      "releaseNotesPage": 2,
+      "productPage": 44
+    },
+    "extract_methods": {
+      "kvr-verwin": 44,
+      "kvr-product-page": 13,
+      "manufacturer-news-version": 2
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 57,
+      "unitedplugins.com": 2
+    },
+    "playbook": {
+      "method": "Public /download/ only publishes UnitedPluginsManager version; per-plugin current versions not public. Legacy /download/old is not current.",
+      "urls": "[\"https://unitedplugins.com/download/\", \"https://www.soundtoys.com/downloads/`\", \"https://www.meldaproduction.com/download`\", \"https://www.meldaproduction.com/downloads`\", \"https://unitedplugins.com/download/`\", \"https://www.soundtoys.com/release-log/\", \"https://www.meldaproduction.com/downloads\", \"https://www.meldaproduction.com/changes/\", \"https://unitedplugins.com/download/old`\"]",
+      "extract": "Do not accept manager version as plugin CFBundle. Hub-walled for current per-SKU versions.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T12:30:58Z",
+      "success": "0 accepted \u2014 manager-only public oracle (NOTES-soundtoys-melda).",
+      "hub_walled": 1,
+      "portal_app": "UnitedPluginsManager"
+    },
+    "attempts": {
+      "observed": 69,
+      "skipped": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "audified",
+    "name": "Audified",
+    "website": "https://shop.audified.com",
+    "portal": "https://shop.audified.com/account",
+    "portal_app": null,
+    "changelog_url": "https://audified.com/wp-content/uploads/2025/08/U73b-Compressor-Release-Notes.pdf",
+    "version_scheme": "semver",
+    "version_example": "3.1.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 57,
+    "kind_plugin": 42,
+    "kinds": {
+      "discontinued": 14,
+      "gen_ambiguous": 1,
+      "plugin": 42
+    },
+    "versioned": 38,
+    "no_ver": 19,
+    "true_gaps": 4,
+    "green": 27,
+    "amber": 0,
+    "yellow": 11,
+    "avg_conf": 82.7,
+    "min_verified": "2026-09-10T09:25:34Z",
+    "max_verified": "2026-09-10T09:44:59Z",
+    "source_kinds": {
+      "releaseNotesPage": 27,
+      "other": 11
+    },
+    "extract_methods": {
+      "manufacturer-release-notes-pdf": 27,
+      "kvr-product-page": 11
+    },
+    "source_hosts": {
+      "audified.com": 27,
+      "www.kvraudio.com": 11
+    },
+    "playbook": {
+      "method": "Shop/downloads hub-oriented; KVR@60 for public receipts.",
+      "urls": "[\"https://www.kvraudio.com/developer/audified\", \"https://shop.audified.com/\"]",
+      "extract": "Many AmpLion/ToneSpot SKUs lack verwin.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "38@60 expand-2; ~19 open",
+      "hub_walled": 1,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 65
+    },
+    "feeds": []
+  },
+  {
+    "id": "cherry-audio",
+    "name": "Cherry Audio",
+    "website": "https://cherryaudio.com",
+    "portal": "https://cherryaudio.com/products/downloads",
+    "portal_app": "Cherry Audio Sync",
+    "changelog_url": "https://cherryaudio.com/products/ca2600/version-history",
+    "version_scheme": "semver",
+    "version_example": "1.4.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 53,
+    "kind_plugin": 51,
+    "kinds": {
+      "bundle": 1,
+      "expansion": 1,
+      "plugin": 51
+    },
+    "versioned": 52,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 47,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 88.9,
+    "min_verified": "2026-09-10T05:31:58Z",
+    "max_verified": "2026-09-16T08:44:30Z",
+    "source_kinds": {
+      "releaseNotesPage": 47,
+      "other": 5
+    },
+    "extract_methods": {
+      "manufacturer-version-history": 46,
+      "kvr-product-page": 5,
+      "?": 1
+    },
+    "source_hosts": {
+      "cherryaudio.com": 47,
+      "www.kvraudio.com": 5
+    },
+    "playbook": {
+      "method": "KVR Product Version per instrument/effect/expansion.",
+      "urls": "[\"https://www.kvraudio.com/developer/cherry-audio\"]",
+      "extract": "Round7 +5 expansions/VM bundle; skip dual Novachord/Solovox verwin.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T06:20:44Z",
+      "success": "51/52.",
+      "hub_walled": 0,
+      "portal_app": "Cherry Audio Sync"
+    },
+    "attempts": {
+      "observed": 97,
+      "promoted": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "soniccouture",
+    "name": "Soniccouture",
+    "website": "https://soniccouture.com/",
+    "portal": "https://www.soniccouture.com/en/support/install-current/",
+    "portal_app": "Native Access",
+    "changelog_url": "https://www.soniccouture.com/en/support/install-current/",
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 53,
+    "kind_plugin": 0,
+    "kinds": {
+      "soundset": 53
+    },
+    "versioned": 1,
+    "no_ver": 52,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 50.0,
+    "min_verified": "2026-09-14T17:44:38Z",
+    "max_verified": "2026-09-14T17:44:38Z",
+    "source_kinds": {
+      "other": 1
+    },
+    "extract_methods": {
+      "third-party-news": 1
+    },
+    "source_hosts": {
+      "matrixsynth.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "audiority",
+    "name": "Audiority",
+    "website": "https://www.audiority.com",
+    "portal": "https://www.audiority.com/user-area/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.3",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 52,
+    "kind_plugin": 46,
+    "kinds": {
+      "plugin": 46,
+      "soundset": 6
+    },
+    "versioned": 46,
+    "no_ver": 6,
+    "true_gaps": 0,
+    "green": 33,
+    "amber": 0,
+    "yellow": 13,
+    "avg_conf": 83.0,
+    "min_verified": "2026-09-10T11:24:55Z",
+    "max_verified": "2026-09-10T11:53:10Z",
+    "source_kinds": {
+      "downloadsPage": 31,
+      "productPage": 15
+    },
+    "extract_methods": {
+      "page-confirmed": 31,
+      "kvr-product-page": 13,
+      "audiority-plugin-versions-table": 2
+    },
+    "source_hosts": {
+      "www.audiority.com": 33,
+      "www.kvraudio.com": 13
+    },
+    "playbook": {
+      "method": "Public Plugin Versions table primary @92; KVR@60 for leftovers.",
+      "urls": "[\"https://www.audiority.com/plugin-versions/\"]",
+      "extract": "## version-chip-expand-6\n- Primary: https://www.audiority.com/plugin-versions/ Curr Version table @92.\n- Leftovers not on table \u2192 KVR@60 (Dr Drive, freeware pedals, Pills, etc.).\n- Soundsets skipped.\n",
+      "cadence": "on release",
+      "last_scrub": "2026-09-10T11:24:55Z",
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 46
+    },
+    "feeds": []
+  },
+  {
+    "id": "boz-digital",
+    "name": "Boz Digital Labs",
+    "website": "https://www.bozdigitallabs.com",
+    "portal": "https://www.bozdigitallabs.com/my-account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 51,
+    "kind_plugin": 31,
+    "kinds": {
+      "bundle": 5,
+      "plugin": 31,
+      "soundset": 15
+    },
+    "versioned": 22,
+    "no_ver": 29,
+    "true_gaps": 11,
+    "green": 0,
+    "amber": 0,
+    "yellow": 22,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:26:24Z",
+    "max_verified": "2026-09-15T17:44:35Z",
+    "source_kinds": {
+      "other": 22
+    },
+    "extract_methods": {
+      "kvr-product-page": 22
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 22
+    },
+    "playbook": {
+      "method": "Account downloads walled; use KVR Product Version for plugins.",
+      "urls": "[\"https://www.bozdigitallabs.com/\"]",
+      "extract": "Skip soundset/bundle; KVR verwin @60.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 1,
+      "portal_app": "Boz account downloads"
+    },
+    "attempts": {
+      "observed": 34,
+      "promoted": 2,
+      "skipped": 12
+    },
+    "feeds": []
+  },
+  {
+    "id": "overloud",
+    "name": "Overloud",
+    "website": "https://www.overloud.com",
+    "portal": "https://www.overloud.com/user",
+    "portal_app": "Overloud account",
+    "changelog_url": "https://download.overloud.com/TH-U/changelog.txt",
+    "version_scheme": "semver",
+    "version_example": "1.2.5",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 51,
+    "kind_plugin": 46,
+    "kinds": {
+      "expansion": 4,
+      "plugin": 46,
+      "unknown_other": 1
+    },
+    "versioned": 46,
+    "no_ver": 5,
+    "true_gaps": 0,
+    "green": 26,
+    "amber": 0,
+    "yellow": 20,
+    "avg_conf": 76.0,
+    "min_verified": "2026-09-10T05:45:00Z",
+    "max_verified": "2026-09-10T07:22:46Z",
+    "source_kinds": {
+      "other": 20,
+      "downloadsPage": 24,
+      "releaseNotesPage": 2
+    },
+    "extract_methods": {
+      "installer-filename": 24,
+      "kvr-product-page": 20,
+      "manufacturer-changelog": 2
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 20,
+      "www.overloud.com": 18,
+      "download.overloud.com": 8
+    },
+    "playbook": {
+      "method": "KVR product pages verwin (round6 +46). GEM/TH-U/REmatrix per-product versions.",
+      "urls": "[\"https://www.kvraudio.com/developer/overloud\"]",
+      "extract": "Exact title match; do not map TH-U editions onto rig libraries.",
+      "cadence": "on-demand scrub",
+      "last_scrub": "2026-09-10T06:20:44Z",
+      "success": "round6 kvr-product-page",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 72,
+      "skipped": 5
+    },
+    "feeds": []
+  },
+  {
+    "id": "blue-cat-audio",
+    "name": "Blue Cat Audio",
+    "website": "https://www.bluecataudio.com",
+    "portal": "https://www.bluecataudio.com/Register/LostKey/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "V4.43",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 43,
+    "kind_plugin": 33,
+    "kinds": {
+      "bundle": 6,
+      "discontinued": 4,
+      "plugin": 33
+    },
+    "versioned": 35,
+    "no_ver": 8,
+    "true_gaps": 0,
+    "green": 33,
+    "amber": 0,
+    "yellow": 2,
+    "avg_conf": 89.9,
+    "min_verified": "2026-09-10T08:00:57Z",
+    "max_verified": "2026-09-16T08:44:31Z",
+    "source_kinds": {
+      "downloadsPage": 33,
+      "other": 2
+    },
+    "extract_methods": {
+      "manufacturer-downloads-page": 33,
+      "?": 2
+    },
+    "source_hosts": {
+      "www.bluecataudio.com": 33,
+      "www.440audio.com": 2
+    },
+    "playbook": {
+      "method": "Public Download/Products table lists Last updated + version for demos/freeware.",
+      "urls": "[\"https://www.bluecataudio.com/Download/Products/\"]",
+      "extract": "Parse \"Blue Cat's NAME \u2026 Last updated: YYYY/MM/DD \u2026 VERSION\". Bundles/series and legacy Widening/Digital Peak Meter SKUs not on table.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T08:06:09Z",
+      "success": "High \u2014 33/43 accepted @92 from downloads table.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 33,
+      "promoted": 2,
+      "skipped": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "ample-sound",
+    "name": "Ample Sound",
+    "website": "https://www.amplesound.net",
+    "portal": "https://www.amplesound.net/en/account.asp",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 42,
+    "kind_plugin": 42,
+    "kinds": {
+      "plugin": 42
+    },
+    "versioned": 35,
+    "no_ver": 7,
+    "true_gaps": 7,
+    "green": 35,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 95.0,
+    "min_verified": "2026-09-15T21:23:49Z",
+    "max_verified": "2026-09-15T21:23:53Z",
+    "source_kinds": {
+      "productPage": 35
+    },
+    "extract_methods": {
+      "?": 35
+    },
+    "source_hosts": {
+      "amplesound.net": 35
+    },
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "modartt",
+    "name": "Modartt",
+    "website": "https://www.modartt.com",
+    "portal": "https://www.modartt.com/user",
+    "portal_app": null,
+    "changelog_url": "https://www.modartt.com/pianoteq_changes",
+    "version_scheme": "semver 3-part",
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 42,
+    "kind_plugin": 7,
+    "kinds": {
+      "bundle": 1,
+      "discontinued": 9,
+      "plugin": 7,
+      "soundset": 25
+    },
+    "versioned": 8,
+    "no_ver": 34,
+    "true_gaps": 1,
+    "green": 0,
+    "amber": 0,
+    "yellow": 8,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:49:23Z",
+    "max_verified": "2026-09-15T17:31:18Z",
+    "source_kinds": {
+      "productPage": 4,
+      "other": 4
+    },
+    "extract_methods": {
+      "kvr-product-page": 4,
+      "third-party-download-mirror": 4
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 4,
+      "www.filehorse.com": 3,
+      "mac.filehorse.com": 1
+    },
+    "playbook": {
+      "method": "See playbooks markdown version-chip-expand-6.",
+      "urls": "[]",
+      "extract": "## version-chip-expand-6\n- organteq-2 stamped **2.1.2** from KVR Organteq (same as organteq current). pianoteq-demo: no clean KVR page \u2014 skipped.\n",
+      "cadence": "on release",
+      "last_scrub": "2026-09-10T11:24:55Z",
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": "Modartt user area"
+    },
+    "attempts": {
+      "observed": 8,
+      "promoted": 4,
+      "skipped": 22
+    },
+    "feeds": []
+  },
+  {
+    "id": "rob-papen",
+    "name": "Rob Papen",
+    "website": "https://www.robpapen.com",
+    "portal": "https://www.robpapen.com/downloads.html",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 38,
+    "kind_plugin": 38,
+    "kinds": {
+      "plugin": 38
+    },
+    "versioned": 38,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 3,
+    "amber": 0,
+    "yellow": 35,
+    "avg_conf": 62.2,
+    "min_verified": "2026-09-10T08:04:28Z",
+    "max_verified": "2026-09-10T08:05:03Z",
+    "source_kinds": {
+      "other": 35,
+      "productPage": 3
+    },
+    "extract_methods": {
+      "kvr-product-page": 38
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 35,
+      "www.robpapen.com": 3
+    },
+    "playbook": {
+      "method": "Demo/download pages are login-oriented; demos lack public semver in HTML. Prefer KVR product verwin.",
+      "urls": "[\"https://www.robpapen.com/\", \"https://www.robpapen.com/downloads.html\"]",
+      "extract": "My Products portal for owners. Public demos do not publish version strings reliably.",
+      "cadence": "quarterly",
+      "last_scrub": "2026-09-10T08:06:09Z",
+      "success": "38/38 via KVR@60 this pass.",
+      "hub_walled": 1,
+      "portal_app": "Rob Papen My Products"
+    },
+    "attempts": {
+      "observed": 38
+    },
+    "feeds": []
+  },
+  {
+    "id": "nomad-factory",
+    "name": "Nomad Factory",
+    "website": "https://nomadfactory.com/",
+    "portal": "https://download.plugivery.com",
+    "portal_app": null,
+    "changelog_url": "https://www.nomadfactory.com/news/blog",
+    "version_scheme": "semver 3-part",
+    "version_example": "2.1.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 37,
+    "kind_plugin": 37,
+    "kinds": {
+      "plugin": 37
+    },
+    "versioned": 10,
+    "no_ver": 27,
+    "true_gaps": 27,
+    "green": 1,
+    "amber": 3,
+    "yellow": 6,
+    "avg_conf": 70.5,
+    "min_verified": "2026-09-14T17:44:36Z",
+    "max_verified": "2026-09-15T14:48:31Z",
+    "source_kinds": {
+      "downloadsPage": 4,
+      "other": 6
+    },
+    "extract_methods": {
+      "kvr-product-page": 6,
+      "distributor-release-page": 4
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 6,
+      "download.plugivery.com": 4
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 4,
+      "promoted": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "initial-audio",
+    "name": "Initial Audio",
+    "website": "https://initialaudio.com",
+    "portal": "https://initialaudio.com/my-account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver (vX.Y.Z)",
+    "version_example": "v1.6.4",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 34,
+    "kind_plugin": 22,
+    "kinds": {
+      "expansion": 12,
+      "plugin": 22
+    },
+    "versioned": 22,
+    "no_ver": 12,
+    "true_gaps": 0,
+    "green": 3,
+    "amber": 0,
+    "yellow": 19,
+    "avg_conf": 64.4,
+    "min_verified": "2026-09-10T09:50:22Z",
+    "max_verified": "2026-09-10T12:27:27Z",
+    "source_kinds": {
+      "other": 19,
+      "productPage": 3
+    },
+    "extract_methods": {
+      "kvr-product-page": 19,
+      "manufacturer-product-version-label": 1,
+      "manufacturer-product-version-badge": 1,
+      "product-page-version-badge": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 19,
+      "initialaudio.com": 3
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# initial-audio\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- KVR@60 for plugin SKUs; expansions skipped (`identity_kind=expansion`).\n",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 25
+    },
+    "feeds": []
+  },
+  {
+    "id": "tracktion",
+    "name": "Tracktion",
+    "website": "https://www.tracktion.com",
+    "portal": "https://www.tracktion.com/account",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "marketing",
+    "version_example": "Waveform Pro 14",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 34,
+    "kind_plugin": 28,
+    "kinds": {
+      "hub_app": 2,
+      "plugin": 28,
+      "soundset": 4
+    },
+    "versioned": 28,
+    "no_ver": 6,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 1,
+    "yellow": 27,
+    "avg_conf": 60.6,
+    "min_verified": "2026-09-10T09:25:41Z",
+    "max_verified": "2026-09-16T15:20:31Z",
+    "source_kinds": {
+      "other": 28
+    },
+    "extract_methods": {
+      "kvr-product-page": 27,
+      "surge-chip-2026-09-16-0718 A4": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 27,
+      "sonicstate.com": 1
+    },
+    "playbook": {
+      "method": "Per-instrument semver mostly KVR; Waveform = hub_app.",
+      "urls": "[\"https://www.tracktion.com/downloads\", \"https://www.kvraudio.com/developer/tracktion-software\"]",
+      "extract": "Careful identity_kind for Waveform vs instruments vs sound packs.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "28@60 expand-2; Waveform hub_app still open",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 29
+    },
+    "feeds": []
+  },
+  {
+    "id": "discodsp",
+    "name": "discoDSP",
+    "website": "https://www.discodsp.com",
+    "portal": "https://www.discodsp.com/",
+    "portal_app": null,
+    "changelog_url": "https://www.discodsp.com/news/archive/",
+    "version_scheme": "semver 3-part style (major.minor, e.g. Discovery Pro 8.10, OB-Xd 3.x)",
+    "version_example": "8.10",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 32,
+    "kind_plugin": 16,
+    "kinds": {
+      "expansion": 16,
+      "plugin": 16
+    },
+    "versioned": 16,
+    "no_ver": 16,
+    "true_gaps": 0,
+    "green": 9,
+    "amber": 0,
+    "yellow": 7,
+    "avg_conf": 78.0,
+    "min_verified": "2026-09-10T09:23:36Z",
+    "max_verified": "2026-09-10T09:25:40Z",
+    "source_kinds": {
+      "productPage": 9,
+      "other": 7
+    },
+    "extract_methods": {
+      "page-confirmed": 9,
+      "kvr-product-page": 7
+    },
+    "source_hosts": {
+      "www.discodsp.com": 9,
+      "www.kvraudio.com": 7
+    },
+    "playbook": {
+      "method": "Product page heading Name X.Y (Discovery Pro 9.3 etc).",
+      "urls": "[\"https://www.discodsp.com/discoverypro/\", \"https://www.discodsp.com/news/\"]",
+      "extract": "Sound banks = expansion.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "9@92 + 7@60 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 16
+    },
+    "feeds": []
+  },
+  {
+    "id": "baby-audio",
+    "name": "Baby Audio",
+    "website": "https://babyaud.io",
+    "portal": "https://babyaud.io/account",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.7",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 31,
+    "kind_plugin": 25,
+    "kinds": {
+      "bundle": 6,
+      "plugin": 25
+    },
+    "versioned": 25,
+    "no_ver": 6,
+    "true_gaps": 0,
+    "green": 16,
+    "amber": 0,
+    "yellow": 9,
+    "avg_conf": 80.5,
+    "min_verified": "2026-09-10T05:06:03Z",
+    "max_verified": "2026-09-10T05:34:30Z",
+    "source_kinds": {
+      "downloadsPage": 16,
+      "other": 9
+    },
+    "extract_methods": {
+      "downloads-accordion-label": 16,
+      "kvr-product-page": 9
+    },
+    "source_hosts": {
+      "babyaud.io": 16,
+      "www.kvraudio.com": 9
+    },
+    "playbook": {
+      "method": "babyaud.io/downloads accordion vX.Y + KVR Product Version for SKUs absent from trials.",
+      "urls": "[\"https://babyaud.io/downloads\", \"https://www.kvraudio.com/developer/baby-audio\"]",
+      "extract": "Trials accordion first; else KVR verwin. Do not stamp Pro/2 onto gen-1 SKUs.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T05:35:51Z",
+      "success": "Round5: 25/25 complete.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 25
+    },
+    "feeds": []
+  },
+  {
+    "id": "flux",
+    "name": "FLUX::",
+    "website": "https://www.flux.audio",
+    "portal": "https://www.flux.audio",
+    "portal_app": null,
+    "changelog_url": "https://www.flux.audio/2023/08/01/spat-revolution-23-08-apple-silicon-arm-native-packed-with-new-features/",
+    "version_scheme": "calendar YY.MM plus build number",
+    "version_example": "20.12",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 31,
+    "kind_plugin": 24,
+    "kinds": {
+      "bundle": 7,
+      "plugin": 24
+    },
+    "versioned": 24,
+    "no_ver": 7,
+    "true_gaps": 0,
+    "green": 23,
+    "amber": 1,
+    "yellow": 0,
+    "avg_conf": 84.4,
+    "min_verified": "2026-09-15T21:23:45Z",
+    "max_verified": "2026-09-15T21:23:48Z",
+    "source_kinds": {
+      "productPage": 24
+    },
+    "extract_methods": {
+      "?": 24
+    },
+    "source_hosts": {
+      "doc.flux.audio": 24
+    },
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "nugen-audio",
+    "name": "Nugen Audio",
+    "website": "https://nugenaudio.com",
+    "portal": "https://www.nugenaudio.com/full-versions-download/",
+    "portal_app": "NUGEN My Products",
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "2.10.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 31,
+    "kind_plugin": 27,
+    "kinds": {
+      "bundle": 4,
+      "plugin": 27
+    },
+    "versioned": 27,
+    "no_ver": 4,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 27,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T05:52:36Z",
+    "max_verified": "2026-09-10T05:52:36Z",
+    "source_kinds": {
+      "other": 27
+    },
+    "extract_methods": {
+      "kvr-product-page": 27
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 27
+    },
+    "playbook": {
+      "method": "Public: KVR verwin 27/31. My Products/downloads hub-walled/broken for binaries. Stay KVR@60.",
+      "urls": "[\"https://www.kvraudio.com/developer/nugen-audio\", \"https://nugenaudio.com/account/\"]",
+      "extract": "Skip Focus/Modern Mastering/Post/Producer N/A. Exact ELEMENTS/3D Ext slugs.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T07:51:48Z",
+      "success": "27/31 via KVR; 27 yellow; 4 bundle unknowns.",
+      "hub_walled": 1,
+      "portal_app": "NUGEN My Products"
+    },
+    "attempts": {
+      "observed": 27,
+      "skipped": 4
+    },
+    "feeds": []
+  },
+  {
+    "id": "fuse-audio-labs",
+    "name": "Fuse Audio Labs",
+    "website": "https://www.fuseaudiolabs.com",
+    "portal": "https://www.fuseaudiolabs.com/",
+    "portal_app": null,
+    "changelog_url": "https://www.fuseaudiolabs.com/#/pages/changelog",
+    "version_scheme": "semver 3-part",
+    "version_example": "2.7",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 30,
+    "kind_plugin": 29,
+    "kinds": {
+      "bundle": 1,
+      "plugin": 29
+    },
+    "versioned": 29,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 29,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T09:33:07Z",
+    "max_verified": "2026-09-10T09:33:08Z",
+    "source_kinds": {
+      "releaseNotesPage": 29
+    },
+    "extract_methods": {
+      "manufacturer-changelog": 29
+    },
+    "source_hosts": {
+      "fuseaudiolabs.de": 29
+    },
+    "playbook": {
+      "method": "JS SPA; KVR Fuse Audio Labs product pages.",
+      "urls": "[\"https://www.kvraudio.com/developer/fuse-audio-labs\", \"https://fuseaudiolabs.com/\"]",
+      "extract": "No server-rendered version oracle.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "29/29 @60 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 58
+    },
+    "feeds": []
+  },
+  {
+    "id": "neural-dsp",
+    "name": "Neural DSP",
+    "website": "https://neuraldsp.com",
+    "portal": "https://neuraldsp.com/pages/downloads",
+    "portal_app": null,
+    "changelog_url": "https://neuraldsp.com/news/apple-native-silicon-updates-for-soldano-slo-100-fort",
+    "version_scheme": "semver 3-part (e.g. v2.0.1, v1.0.1, v3.0.2 in release notes)",
+    "version_example": "2.0.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 30,
+    "kind_plugin": 29,
+    "kinds": {
+      "hardware": 1,
+      "plugin": 29
+    },
+    "versioned": 29,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 29,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T09:48:23Z",
+    "max_verified": "2026-09-10T10:56:52Z",
+    "source_kinds": {
+      "downloadsPage": 22,
+      "releaseNotesPage": 7
+    },
+    "extract_methods": {
+      "page-confirmed": 22,
+      "mfr-corroboration": 7
+    },
+    "source_hosts": {
+      "neuraldsp.com": 29
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# neural-dsp\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- Primary: https://neuraldsp.com/downloads \u2014 per-plugin installer versions (Mac/Win listed together) @92.\n- Mapped X SKUs + Suites (Abasi, Tom Morello, Fortin Cali/NTS, Omega, Tone King, Mesa, Mantra, Morgan, \u2026).\n- Legacy non-X / Darkglass Ultra via KVR@60 when downloads page only lists X successor.\n- ",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 36
+    },
+    "feeds": []
+  },
+  {
+    "id": "acon-digital",
+    "name": "Acon Digital",
+    "website": "https://acondigital.com",
+    "portal": "https://acondigital.com/account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "2.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 29,
+    "kind_plugin": 29,
+    "kinds": {
+      "plugin": 29
+    },
+    "versioned": 29,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 16,
+    "amber": 1,
+    "yellow": 12,
+    "avg_conf": 76.9,
+    "min_verified": "2026-09-10T05:06:06Z",
+    "max_verified": "2026-09-14T17:41:11Z",
+    "source_kinds": {
+      "downloadsPage": 14,
+      "productPage": 2,
+      "other": 13
+    },
+    "extract_methods": {
+      "kvr-product-page": 12,
+      "public-installer-filename-head": 10,
+      "installer-filename-official-page": 5,
+      "?": 1,
+      "installer-filename": 1
+    },
+    "source_hosts": {
+      "acondigital.com": 16,
+      "www.kvraudio.com": 13
+    },
+    "playbook": {
+      "method": "Public /software/ installer filenames + KVR verwin for Studio*/dialogue line.",
+      "urls": "[\"https://acondigital.com/software/\", \"https://www.kvraudio.com/developer/acon-digital\"]",
+      "extract": "Round7 completed 29/29 via KVR for previously missing Studio*.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T05:56:41Z",
+      "success": "29/29 complete.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 37
+    },
+    "feeds": []
+  },
+  {
+    "id": "excite-audio",
+    "name": "Excite Audio",
+    "website": "https://www.excite-audio.com",
+    "portal": "https://www.excite-audio.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 29,
+    "kind_plugin": 7,
+    "kinds": {
+      "plugin": 7,
+      "soundset": 22
+    },
+    "versioned": 7,
+    "no_ver": 22,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 7,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T09:25:36Z",
+    "max_verified": "2026-09-10T09:25:36Z",
+    "source_kinds": {
+      "other": 7
+    },
+    "extract_methods": {
+      "kvr-product-page": 7
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 7
+    },
+    "playbook": {
+      "method": "Bloom content = soundset; discrete plugs via KVR.",
+      "urls": "[\"https://www.kvraudio.com/developer/excite-audio\", \"https://www.excite-audio.com/\"]",
+      "extract": "Skip soundsets for version chip.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "7/7 plugins @60 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 7
+    },
+    "feeds": []
+  },
+  {
+    "id": "air",
+    "name": "AIR Music Technology",
+    "website": "https://www.airmusictech.com",
+    "portal": "https://www.airmusictech.com/",
+    "portal_app": "inMusic Software Center",
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.1.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 26,
+    "kind_plugin": 5,
+    "kinds": {
+      "gen_ambiguous": 1,
+      "plugin": 5,
+      "suite_component": 20
+    },
+    "versioned": 5,
+    "no_ver": 21,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T05:52:36Z",
+    "max_verified": "2026-09-10T05:53:27Z",
+    "source_kinds": {
+      "other": 5
+    },
+    "extract_methods": {
+      "kvr-product-page": 5
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 5
+    },
+    "playbook": {
+      "method": "inMusic Software Center portal.",
+      "urls": "[\"https://www.airmusictech.com/\"]",
+      "extract": "Do not grind inMusic Software Center for versions.",
+      "cadence": "lab-only",
+      "last_scrub": "2026-09-10T12:30:58Z",
+      "success": "Hub-walled \u2014 26 unknowns (HUB_WALLED).",
+      "hub_walled": 1,
+      "portal_app": "inMusic Software Center"
+    },
+    "attempts": {
+      "observed": 10,
+      "skipped": 21
+    },
+    "feeds": []
+  },
+  {
+    "id": "black-rooster-audio",
+    "name": "Black Rooster Audio",
+    "website": "https://blackroosteraudio.com",
+    "portal": "https://blackroosteraudio.com/en/myaccount/download",
+    "portal_app": null,
+    "changelog_url": "https://blackroosteraudio.com/en/news",
+    "version_scheme": "semver",
+    "version_example": "3.0.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 26,
+    "kind_plugin": 26,
+    "kinds": {
+      "plugin": 26
+    },
+    "versioned": 26,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 26,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 90.0,
+    "min_verified": "2026-09-10T10:24:31Z",
+    "max_verified": "2026-09-10T10:24:31Z",
+    "source_kinds": {
+      "releaseNotesPage": 26
+    },
+    "extract_methods": {
+      "page-confirmed": 26
+    },
+    "source_hosts": {
+      "blackroosteraudio.com": 26
+    },
+    "playbook": {
+      "method": "Catalog-wide framework release notes (v3.0.0); product pages use /download/current/.",
+      "urls": "[\"https://blackroosteraudio.com/en/newsreader/v3-0-0-release\", \"https://blackroosteraudio.com/en/news\"]",
+      "extract": "Stamp catalog-wide version from news when entire catalog called out; else KVR.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 26
+    },
+    "feeds": []
+  },
+  {
+    "id": "ddmf",
+    "name": "DDMF",
+    "website": "https://ddmf.eu/",
+    "portal": "https://ddmf.eu/news/",
+    "portal_app": null,
+    "changelog_url": "https://ddmf.eu/news/",
+    "version_scheme": "semver",
+    "version_example": "2.6.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 25,
+    "kind_plugin": 25,
+    "kinds": {
+      "plugin": 25
+    },
+    "versioned": 4,
+    "no_ver": 21,
+    "true_gaps": 21,
+    "green": 0,
+    "amber": 1,
+    "yellow": 3,
+    "avg_conf": 61.3,
+    "min_verified": "2026-09-14T17:44:36Z",
+    "max_verified": "2026-09-14T17:44:46Z",
+    "source_kinds": {
+      "other": 4
+    },
+    "extract_methods": {
+      "official-news-post": 2,
+      "kvr-product-timeline": 2
+    },
+    "source_hosts": {
+      "ddmf.eu": 2,
+      "www.kvraudio.com": 2
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 4
+    },
+    "feeds": []
+  },
+  {
+    "id": "mcdsp",
+    "name": "McDSP",
+    "website": "https://mcdsp.com",
+    "portal": "https://mcdsp.com/account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "major.minor",
+    "version_example": "7.2",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 25,
+    "kind_plugin": 25,
+    "kinds": {
+      "plugin": 25
+    },
+    "versioned": 25,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 25,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T06:30:59Z",
+    "max_verified": "2026-09-10T06:30:59Z",
+    "source_kinds": {
+      "downloadsPage": 25
+    },
+    "extract_methods": {
+      "installer-filename": 25
+    },
+    "source_hosts": {
+      "mcdsp.com": 25
+    },
+    "playbook": {
+      "method": "KVR product pages verwin 7.3.0.18 (round6 +25 complete). Mac verosx 7.3.17 diverges \u2014 accepted Win Product Version per policy.",
+      "urls": "[\"https://www.kvraudio.com/developer/mcdsp\", \"https://mcdsp.com/downloads/plugin-downloads/\"]",
+      "extract": "Document Win\u2260Mac; do not invent unified semver from installer zips alone.",
+      "cadence": "quarterly",
+      "last_scrub": "2026-09-10T05:46:04Z",
+      "success": "round6 kvr-product-page",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 50
+    },
+    "feeds": []
+  },
+  {
+    "id": "unfiltered-audio",
+    "name": "Unfiltered Audio",
+    "website": "https://www.unfilteredaudio.com",
+    "portal": "https://www.plugin-alliance.com/blogs/news/download-and-install-plugin-alliance-plugins",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 24,
+    "kind_plugin": 21,
+    "kinds": {
+      "discontinued": 2,
+      "gen_ambiguous": 1,
+      "plugin": 21
+    },
+    "versioned": 22,
+    "no_ver": 2,
+    "true_gaps": 0,
+    "green": 19,
+    "amber": 0,
+    "yellow": 3,
+    "avg_conf": 84.2,
+    "min_verified": "2026-09-10T04:10:16Z",
+    "max_verified": "2026-09-10T09:34:39Z",
+    "source_kinds": {
+      "productPage": 18,
+      "other": 3,
+      "downloadsPage": 1
+    },
+    "extract_methods": {
+      "html-installer-label": 18,
+      "kvr-product-page": 3,
+      "twin-canonical": 1
+    },
+    "source_hosts": {
+      "www.plugin-alliance.com": 19,
+      "www.kvraudio.com": 3
+    },
+    "playbook": {
+      "method": "Retail Unfiltered Audio titles often mirrored under Plugin Alliance. Prefer PA Installation Manager / Legacy Installers for current SKUs; KVR for RE/legacy-only titles when Mac=Win.",
+      "urls": "[\"https://www.plugin-alliance.com/collections/all-products\", \"https://www.kvraudio.com/developer/unfiltered-audio\"]",
+      "extract": "Duplicate identities: unfiltered-audio--unfiltered-audio-* \u2194 plugin-alliance--unfiltered-audio-*. Twin versions when same SKU. g8-dynamic-gate is alias of G8. Dent gen1 \u2260 Dent 2.",
+      "cadence": "as-needed",
+      "last_scrub": "2026-09-10T09:36Z",
+      "success": "gaps-mop expand-2: BattleFX/Renoun/Yoko KVR@60; Dent twin@88 then discontinued; G8 alias reclass.",
+      "hub_walled": 0,
+      "portal_app": "Plugin Alliance Installation Manager"
+    },
+    "attempts": {
+      "observed": 38,
+      "skipped": 3
+    },
+    "feeds": []
+  },
+  {
+    "id": "wavesfactory",
+    "name": "Wavesfactory",
+    "website": "https://www.wavesfactory.com",
+    "portal": "https://www.wavesfactory.com/my-account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 24,
+    "kind_plugin": 12,
+    "kinds": {
+      "plugin": 12,
+      "soundset": 12
+    },
+    "versioned": 11,
+    "no_ver": 13,
+    "true_gaps": 1,
+    "green": 11,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T03:57:17Z",
+    "max_verified": "2026-09-10T11:53:10Z",
+    "source_kinds": {
+      "releaseNotesPage": 6,
+      "productPage": 5
+    },
+    "extract_methods": {
+      "live-page-fetch": 6,
+      "wavesfactory-product-page-changelog": 5
+    },
+    "source_hosts": {
+      "www.wavesfactory.com": 11
+    },
+    "playbook": {
+      "method": "Product-page changelog headers (# Version X.Y.Z) on wavesfactory.com/audio-plugins/{slug}; blog changelog index for suite; KVR for identity densify. Kontakt instruments = soundset.",
+      "urls": "[\"https://www.wavesfactory.com/audio-plugins/\",\"https://www.wavesfactory.com/blog/posts/changelog-and-updates/\",\"https://www.kvraudio.com/developer/wavesfactory\"]",
+      "extract": "Newest changelog header wins. Do not stamp Kontakt library rows. Soft404 product pages (Sharine) stay unversioned.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T11:54:49Z",
+      "success": "expand8: +5 plugin chips @92 from product pages; prior 6 already green via blog changelog.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 17
+    },
+    "feeds": []
+  },
+  {
+    "id": "kit-plugins",
+    "name": "KIT Plugins",
+    "website": "https://kitplugins.com",
+    "portal": "https://kitplugins.com/account",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.0.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 21,
+    "kind_plugin": 18,
+    "kinds": {
+      "plugin": 18,
+      "soundset": 3
+    },
+    "versioned": 18,
+    "no_ver": 3,
+    "true_gaps": 0,
+    "green": 16,
+    "amber": 0,
+    "yellow": 2,
+    "avg_conf": 84.9,
+    "min_verified": "2026-09-10T10:26:24Z",
+    "max_verified": "2026-09-10T10:34:33Z",
+    "source_kinds": {
+      "downloadsPage": 16,
+      "other": 2
+    },
+    "extract_methods": {
+      "installer-filename": 16,
+      "kvr-product-page": 2
+    },
+    "source_hosts": {
+      "kitpluginsinstaller.s3.us-east-1.amazonaws.com": 16,
+      "www.kvraudio.com": 2
+    },
+    "playbook": {
+      "method": "Shopify silent; KVR for plugins.",
+      "urls": "[\"https://kitplugins.com/\"]",
+      "extract": "Skip soundsets; KVR verwin @60.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 34
+    },
+    "feeds": []
+  },
+  {
+    "id": "kush-audio",
+    "name": "Kush Audio",
+    "website": "https://www.thehouseofkush.com",
+    "portal": "https://www.thehouseofkush.com/account",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 19,
+    "kind_plugin": 19,
+    "kinds": {
+      "plugin": 19
+    },
+    "versioned": 19,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 14,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 82.0,
+    "min_verified": "2026-09-10T08:04:38Z",
+    "max_verified": "2026-09-10T09:53:40Z",
+    "source_kinds": {
+      "downloadsPage": 13,
+      "other": 5,
+      "productPage": 1
+    },
+    "extract_methods": {
+      "downloads-page-mac-version-label": 13,
+      "kvr-product-page": 6
+    },
+    "source_hosts": {
+      "thehouseofkush.com": 13,
+      "www.kvraudio.com": 5,
+      "www.thehouseofkush.com": 1
+    },
+    "playbook": {
+      "method": "Marketing/subscription site (thehouseofkush.com) does not list per-plugin semver publicly.",
+      "urls": "[\"https://www.thehouseofkush.com/\"]",
+      "extract": "KVR verwin fallback until a public changelog appears.",
+      "cadence": "quarterly",
+      "last_scrub": "2026-09-10T08:06:09Z",
+      "success": "19/19 via KVR@60 this pass.",
+      "hub_walled": 1,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 32
+    },
+    "feeds": []
+  },
+  {
+    "id": "projectsam",
+    "name": "ProjectSAM",
+    "website": "https://projectsam.com/",
+    "portal": "https://projectsam.com/account/",
+    "portal_app": null,
+    "changelog_url": "https://projectsam.com/available-now-true-strike-update-2-0/",
+    "version_scheme": "major.minor",
+    "version_example": "2.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 19,
+    "kind_plugin": 0,
+    "kinds": {
+      "soundset": 19
+    },
+    "versioned": 0,
+    "no_ver": 19,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "kazrog",
+    "name": "Kazrog",
+    "website": "https://kazrog.com",
+    "portal": "https://kazrog.com/account/",
+    "portal_app": "PluginUpdate",
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "3.6.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 18,
+    "kind_plugin": 17,
+    "kinds": {
+      "bundle": 1,
+      "plugin": 17
+    },
+    "versioned": 17,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 12,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 82.6,
+    "min_verified": "2026-09-10T05:06:04Z",
+    "max_verified": "2026-09-10T05:52:36Z",
+    "source_kinds": {
+      "releaseNotesPage": 12,
+      "other": 5
+    },
+    "extract_methods": {
+      "blog-version-table": 12,
+      "kvr-product-page": 5
+    },
+    "source_hosts": {
+      "kazrog.com": 12,
+      "www.kvraudio.com": 5
+    },
+    "playbook": {
+      "method": "KVR Product Version; PluginUpdate is the updater app.",
+      "urls": "[\"https://www.kvraudio.com/developer/kazrog\"]",
+      "extract": "Round7 17/17 complete.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T05:56:41Z",
+      "success": "17/17 complete.",
+      "hub_walled": 0,
+      "portal_app": "PluginUpdate"
+    },
+    "attempts": {
+      "observed": 18
+    },
+    "feeds": []
+  },
+  {
+    "id": "wave-arts",
+    "name": "Wave Arts",
+    "website": "https://wavearts.com",
+    "portal": "https://wavearts.com/downloads",
+    "portal_app": null,
+    "changelog_url": "https://wavearts.com/support/version-history/dialog-2-04",
+    "version_scheme": "2- to 3-part (e.g. ConvologyXT 1.27, Panorama 7.02, Tube Saturator 2.15)",
+    "version_example": "1.27",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 18,
+    "kind_plugin": 18,
+    "kinds": {
+      "plugin": 18
+    },
+    "versioned": 0,
+    "no_ver": 18,
+    "true_gaps": 18,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": {
+      "method": "Official downloads page (wavearts.com/downloads) lists latest installers for the full line; no public version numbers anywhere official. Support FAQ confirms product-code naming.",
+      "urls": "[\"https://wavearts.com/downloads\",\"https://wavearts.com/products\",\"https://wavearts.com/support/faq\"]",
+      "extract": "No version column on downloads table \u2014 version-less seeds only. Bundles (Power Suite 7, Master Restoration Suite 6) ship the individual plugins.",
+      "cadence": "irregular; re-fetch downloads page",
+      "last_scrub": "2026-09-15",
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "hofa-plugins",
+    "name": "HOFA-Plugins",
+    "website": "https://hofa-plugins.de/en/",
+    "portal": "https://hofa-plugins.de/en/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 17,
+    "kind_plugin": 14,
+    "kinds": {
+      "bundle": 1,
+      "hub_app": 1,
+      "plugin": 14,
+      "standalone_app": 1
+    },
+    "versioned": 0,
+    "no_ver": 17,
+    "true_gaps": 14,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {
+      "skipped": 17
+    },
+    "feeds": []
+  },
+  {
+    "id": "dmg-audio",
+    "name": "DMG Audio",
+    "website": "https://dmgaudio.com",
+    "portal": "https://dmgaudio.com/downloads.php",
+    "portal_app": null,
+    "changelog_url": "https://dmgaudio.com/news.php",
+    "version_scheme": "semver",
+    "version_example": "1.43",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 16,
+    "kind_plugin": 16,
+    "kinds": {
+      "plugin": 16
+    },
+    "versioned": 16,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 16,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T08:00:58Z",
+    "max_verified": "2026-09-10T08:00:59Z",
+    "source_kinds": {
+      "downloadsPage": 16
+    },
+    "extract_methods": {
+      "manufacturer-downloads-page": 16
+    },
+    "source_hosts": {
+      "dmgaudio.com": 16
+    },
+    "playbook": {
+      "method": "Public downloads.php shows current installer version next to each product heading.",
+      "urls": "[\"https://dmgaudio.com/downloads.php\", \"https://dmgaudio.com/\"]",
+      "extract": "Product titles are letter-spaced (COMP ASSION); version is immediate sibling text e.g. \"1.30\". Also \"Current version: vX.Y\" on product pages.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T08:06:09Z",
+      "success": "High \u2014 16/16 accepted @92.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 16
+    },
+    "feeds": []
+  },
+  {
+    "id": "line-6",
+    "name": "Line 6",
+    "website": "https://line6.com",
+    "portal": "https://line6.com/software/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "3.15",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 16,
+    "kind_plugin": 8,
+    "kinds": {
+      "hardware": 8,
+      "plugin": 8
+    },
+    "versioned": 4,
+    "no_ver": 12,
+    "true_gaps": 4,
+    "green": 0,
+    "amber": 0,
+    "yellow": 4,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T09:50:22Z",
+    "max_verified": "2026-09-10T09:50:22Z",
+    "source_kinds": {
+      "other": 4
+    },
+    "extract_methods": {
+      "kvr-product-page": 4
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 4
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# line-6\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- Helix Native / Amp Farm / Echo Farm / GearBox via KVR@60.\n- Helix/HX/POD hardware SKUs remain `hardware` unversioned.\n- Metallurgy / POD Farm: no safe KVR match this pass.\n",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 4
+    },
+    "feeds": []
+  },
+  {
+    "id": "sonuscore",
+    "name": "Sonuscore",
+    "website": "https://www.sonuscore.com",
+    "portal": "https://www.sonuscore.com",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 14,
+    "kind_plugin": 0,
+    "kinds": {
+      "instrument": 13,
+      "soundset": 1
+    },
+    "versioned": 1,
+    "no_ver": 13,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 1,
+    "yellow": 0,
+    "avg_conf": 75.0,
+    "min_verified": "2026-09-16T08:44:39Z",
+    "max_verified": "2026-09-16T08:44:39Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "?": 1
+    },
+    "source_hosts": {
+      "www.sonuscore.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "promoted": 1,
+      "skipped": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "accentize",
+    "name": "Accentize",
+    "website": "https://www.accentize.com",
+    "portal": "https://www.accentize.com/userarea/",
+    "portal_app": null,
+    "changelog_url": "https://www.accentize.com/product/spectral-balance/",
+    "version_scheme": "semver",
+    "version_example": "1.1.6",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 13,
+    "kind_plugin": 13,
+    "kinds": {
+      "plugin": 13
+    },
+    "versioned": 11,
+    "no_ver": 2,
+    "true_gaps": 2,
+    "green": 8,
+    "amber": 0,
+    "yellow": 3,
+    "avg_conf": 83.3,
+    "min_verified": "2026-09-10T04:23:24Z",
+    "max_verified": "2026-09-10T10:26:24Z",
+    "source_kinds": {
+      "releaseNotesPage": 1,
+      "productPage": 7,
+      "other": 3
+    },
+    "extract_methods": {
+      "page-confirmed": 7,
+      "kvr-product-page": 3,
+      "manual-html-parse": 1
+    },
+    "source_hosts": {
+      "www.accentize.com": 8,
+      "www.kvraudio.com": 3
+    },
+    "playbook": {
+      "method": "Product Version History / changelog on accentize.com product pages.",
+      "urls": "[\"https://www.accentize.com/products-overview/\", \"https://www.accentize.com/product/chameleon/\"]",
+      "extract": "Latest Version X.Y.Z in Version History; Chameleon page hosts Surround changelog too.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 11
+    },
+    "feeds": []
+  },
+  {
+    "id": "liquidsonics",
+    "name": "LiquidSonics",
+    "website": "https://www.liquidsonics.com",
+    "portal": "https://www.liquidsonics.com/downloads/",
+    "portal_app": null,
+    "changelog_url": "https://liquidsonics.com/software/seventh-heaven-professional",
+    "version_scheme": "semver",
+    "version_example": "1.5.9",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 13,
+    "kind_plugin": 12,
+    "kinds": {
+      "discontinued": 1,
+      "plugin": 12
+    },
+    "versioned": 13,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 11,
+    "amber": 0,
+    "yellow": 2,
+    "avg_conf": 83.8,
+    "min_verified": "2026-09-10T04:23:24Z",
+    "max_verified": "2026-09-16T08:44:31Z",
+    "source_kinds": {
+      "releaseNotesPage": 1,
+      "downloadsPage": 10,
+      "other": 2
+    },
+    "extract_methods": {
+      "public-installer-filename": 9,
+      "manual-html-parse": 1,
+      "?": 1,
+      "kvr-product-page": 1,
+      "manufacturer-installer-filename": 1
+    },
+    "source_hosts": {
+      "www.liquidsonics.com": 11,
+      "mobile-convolution-reverb-ios.soft112.com": 1,
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "KVR Product Version.",
+      "urls": "[\"https://www.kvraudio.com/developer/liquidsonics\"]",
+      "extract": "Round7 +2 Filtrate/Seventh Heaven Pro.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T05:56:41Z",
+      "success": "12/14.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 13,
+      "promoted": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "mixed-in-key",
+    "name": "Mixed In Key",
+    "website": "https://mixedinkey.com",
+    "portal": "https://mixedinkey.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver4",
+    "version_example": "7.0.0.1189",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 13,
+    "kind_plugin": 5,
+    "kinds": {
+      "plugin": 5,
+      "soundset": 1,
+      "suite_component": 7
+    },
+    "versioned": 6,
+    "no_ver": 7,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 6,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T08:04:43Z",
+    "max_verified": "2026-09-10T08:04:44Z",
+    "source_kinds": {
+      "other": 6
+    },
+    "extract_methods": {
+      "kvr-product-page": 6
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 6
+    },
+    "playbook": {
+      "method": "Products marketing pages; suite SKUs sometimes on KVR. Individual Captain plugins often lack KVR product pages.",
+      "urls": "[\"https://mixedinkey.com/products/\"]",
+      "extract": "Captain Plugins / Human Plugins / Pilot Plugins suite pages on KVR worked; per-module Captain Chords/Melody/etc. 404 on KVR \u2014 leave open or wait for suite mapping policy.",
+      "cadence": "quarterly",
+      "last_scrub": "2026-09-10T08:06:09Z",
+      "success": "6/13 via KVR@60; 7 Captain/Human/Pilot individuals still open.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 6,
+      "skipped": 7
+    },
+    "feeds": []
+  },
+  {
+    "id": "glitchmachines",
+    "name": "Glitchmachines",
+    "website": "https://glitchmachines.com",
+    "portal": "https://glitchmachines.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "2.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 12,
+    "kind_plugin": 12,
+    "kinds": {
+      "plugin": 12
+    },
+    "versioned": 12,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 9,
+    "amber": 0,
+    "yellow": 3,
+    "avg_conf": 82.5,
+    "min_verified": "2026-09-10T09:20:52Z",
+    "max_verified": "2026-09-10T09:34:39Z",
+    "source_kinds": {
+      "productPage": 9,
+      "other": 3
+    },
+    "extract_methods": {
+      "manufacturer-user-guide-banner": 6,
+      "kvr-product-page": 3,
+      "page-confirmed": 3
+    },
+    "source_hosts": {
+      "glitchmachines.com": 9,
+      "www.kvraudio.com": 3
+    },
+    "playbook": {
+      "method": "Freebie pages USER GUIDE Version; paid gen-2 often KVR.",
+      "urls": "[\"https://glitchmachines.com/products/fracture/\", \"https://www.kvraudio.com/developer/glitchmachines\"]",
+      "extract": "Avoid marketing Version 2.0 copy as semver.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "2@90 + 9@60 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 18
+    },
+    "feeds": []
+  },
+  {
+    "id": "ignite-amps",
+    "name": "Ignite Amps",
+    "website": "https://www.igniteamps.com",
+    "portal": "https://www.igniteamps.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "2.0.2",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 12,
+    "kind_plugin": 12,
+    "kinds": {
+      "plugin": 12
+    },
+    "versioned": 12,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 11,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 89.3,
+    "min_verified": "2026-09-10T10:49:23Z",
+    "max_verified": "2026-09-10T10:49:23Z",
+    "source_kinds": {
+      "downloadsPage": 11,
+      "productPage": 1
+    },
+    "extract_methods": {
+      "page-confirmed": 11,
+      "kvr-product-page": 1
+    },
+    "source_hosts": {
+      "www.igniteamps.com": 11,
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "Ignite homepage download table per freeware SKU; KVR fallback for PTEq-1a.",
+      "urls": "[\"https://www.igniteamps.com/\"]",
+      "extract": "See playbooks/ignite-amps.md version-chip-expand-5",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T10:49:23Z",
+      "success": "expand-5 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 12
+    },
+    "feeds": []
+  },
+  {
+    "id": "minimal-audio",
+    "name": "Minimal Audio",
+    "website": "https://www.minimal.audio",
+    "portal": "https://www.minimal.audio",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 12,
+    "kind_plugin": 12,
+    "kinds": {
+      "plugin": 12
+    },
+    "versioned": 0,
+    "no_ver": 12,
+    "true_gaps": 12,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "noiseash",
+    "name": "NoiseAsh",
+    "website": "https://noiseash.com/",
+    "portal": "https://noiseash.com/",
+    "portal_app": null,
+    "changelog_url": "https://noiseash.com/knowledge-base/",
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 12,
+    "kind_plugin": 10,
+    "kinds": {
+      "bundle": 2,
+      "plugin": 10
+    },
+    "versioned": 3,
+    "no_ver": 9,
+    "true_gaps": 8,
+    "green": 0,
+    "amber": 3,
+    "yellow": 0,
+    "avg_conf": 70.0,
+    "min_verified": "2026-09-16T05:51:18Z",
+    "max_verified": "2026-09-16T05:51:18Z",
+    "source_kinds": {
+      "productPage": 3
+    },
+    "extract_methods": {
+      "manual": 3
+    },
+    "source_hosts": {
+      "noiseash.com": 3
+    },
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "plogue",
+    "name": "Plogue",
+    "website": "https://www.plogue.com",
+    "portal": "https://www.plogue.com/account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 12,
+    "kind_plugin": 9,
+    "kinds": {
+      "hub_app": 3,
+      "plugin": 9
+    },
+    "versioned": 12,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 11,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 89.3,
+    "min_verified": "2026-09-10T10:26:24Z",
+    "max_verified": "2026-09-14T04:46:35Z",
+    "source_kinds": {
+      "downloadsPage": 11,
+      "other": 1
+    },
+    "extract_methods": {
+      "manufacturer-downloads-page": 11,
+      "kvr-product-page": 1
+    },
+    "source_hosts": {
+      "www.plogue.com": 11,
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "Public pages sparse; KVR for plugins/hub_app.",
+      "urls": "[\"https://www.plogue.com/\"]",
+      "extract": "KVR verwin @60.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 23
+    },
+    "feeds": []
+  },
+  {
+    "id": "relab-development",
+    "name": "Relab Development",
+    "website": "https://relabdevelopment.com/",
+    "portal": "https://relabdevelopment.com/downloads/",
+    "portal_app": null,
+    "changelog_url": "https://relabdevelopment.com/downloads/",
+    "version_scheme": "semver 3-part",
+    "version_example": "1.1.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 12,
+    "kind_plugin": 12,
+    "kinds": {
+      "plugin": 12
+    },
+    "versioned": 1,
+    "no_ver": 11,
+    "true_gaps": 11,
+    "green": 0,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 45.0,
+    "min_verified": "2026-09-14T17:44:38Z",
+    "max_verified": "2026-09-14T17:44:38Z",
+    "source_kinds": {
+      "other": 1
+    },
+    "extract_methods": {
+      "user-forum": 1
+    },
+    "source_hosts": {
+      "www.motunation.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "zplane",
+    "name": "zplane",
+    "website": "https://www.zplane.de",
+    "portal": "https://www.zplane.de/",
+    "portal_app": null,
+    "changelog_url": "https://products.zplane.de/blog/epv2-retune-m1-compatible-update",
+    "version_scheme": "semver 3-part",
+    "version_example": "2.2.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 12,
+    "kind_plugin": 8,
+    "kinds": {
+      "hub_app": 4,
+      "plugin": 8
+    },
+    "versioned": 11,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 6,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 76.4,
+    "min_verified": "2026-09-10T10:24:31Z",
+    "max_verified": "2026-09-10T10:34:34Z",
+    "source_kinds": {
+      "productPage": 3,
+      "downloadsPage": 3,
+      "other": 5
+    },
+    "extract_methods": {
+      "kvr-product-page": 5,
+      "page-confirmed": 3,
+      "installer-filename": 3
+    },
+    "source_hosts": {
+      "products.zplane.de": 6,
+      "www.kvraudio.com": 5
+    },
+    "playbook": {
+      "method": "products.zplane.de product pages with demo/download version labels.",
+      "urls": "[\"https://products.zplane.de/elastiquepitch\", \"https://products.zplane.de/retune\", \"https://products.zplane.de/decoda\"]",
+      "extract": "ELASTIQUE PITCH Vx.y.z / RETUNE demo vx.y.z / deCoda Demo Vx.y.z",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 14
+    },
+    "feeds": []
+  },
+  {
+    "id": "chowdsp",
+    "name": "ChowDSP",
+    "website": "https://chowdsp.com",
+    "portal": "https://chowdsp.com/products.html",
+    "portal_app": null,
+    "changelog_url": "https://github.com/Chowdhury-DSP/BYOD/releases",
+    "version_scheme": "semver",
+    "version_example": "1.3.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 11,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 11,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 93.6,
+    "min_verified": "2026-09-10T04:56:43Z",
+    "max_verified": "2026-09-10T09:55:55Z",
+    "source_kinds": {
+      "vendorFeed": 8,
+      "downloadsPage": 3
+    },
+    "extract_methods": {
+      "oas-registry-plugins-index": 8,
+      "installer-basename-mac-win-match": 3
+    },
+    "source_hosts": {
+      "open-audio-stack.github.io": 8,
+      "chowdsp.com": 3
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 19
+    },
+    "feeds": []
+  },
+  {
+    "id": "dear-reality",
+    "name": "Dear Reality",
+    "website": "https://www.dear-reality.com",
+    "portal": "https://www.dear-reality.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.13",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 11,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 2,
+    "amber": 0,
+    "yellow": 9,
+    "avg_conf": 65.5,
+    "min_verified": "2026-09-10T09:25:37Z",
+    "max_verified": "2026-09-10T09:34:14Z",
+    "source_kinds": {
+      "other": 11
+    },
+    "extract_methods": {
+      "kvr-product-page": 9,
+      "manufacturer-manual-version": 2
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 9,
+      "files.plugin-alliance.com": 2
+    },
+    "playbook": {
+      "method": "Marketing site light on installers; KVR@60 dearVR/EXOVERB.",
+      "urls": "[\"https://www.kvraudio.com/developer/dear-reality\", \"https://www.dear-reality.com/\"]",
+      "extract": "Prefer KVR verwin.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "11/11 @60 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 13
+    },
+    "feeds": []
+  },
+  {
+    "id": "gforce-software",
+    "name": "GForce Software",
+    "website": "https://www.gforcesoftware.com",
+    "portal": "https://www.gforcesoftware.com/account/",
+    "portal_app": null,
+    "changelog_url": "https://www.gforcesoftware.com/help/updates-and-releases/",
+    "version_scheme": "semver",
+    "version_example": "1.1.2",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 11,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 11,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T10:34:33Z",
+    "max_verified": "2026-09-10T10:34:34Z",
+    "source_kinds": {
+      "downloadsPage": 11
+    },
+    "extract_methods": {
+      "installer-filename": 11
+    },
+    "source_hosts": {
+      "www.gforcesoftware.com": 11
+    },
+    "playbook": {
+      "method": "Marketing silent this pass; KVR @60.",
+      "urls": "[\"https://www.gforcesoftware.com/\"]",
+      "extract": "KVR verwin @60.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 22
+    },
+    "feeds": []
+  },
+  {
+    "id": "lindell-audio",
+    "name": "Lindell Audio",
+    "website": "https://www.plugin-alliance.com/collections/lindell-audio",
+    "portal": "https://www.plugin-alliance.com/blogs/news/download-and-install-plugin-alliance-plugins",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 11,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 11,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T04:02:35Z",
+    "max_verified": "2026-09-10T04:02:35Z",
+    "source_kinds": {
+      "productPage": 11
+    },
+    "extract_methods": {
+      "html-installer-label": 11
+    },
+    "source_hosts": {
+      "www.plugin-alliance.com": 11
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 22
+    },
+    "feeds": []
+  },
+  {
+    "id": "lunacy-audio",
+    "name": "Lunacy",
+    "website": "https://lunacy.audio/",
+    "portal": "https://lunacy.audio/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 0,
+    "no_ver": 11,
+    "true_gaps": 11,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "mastering-the-mix",
+    "name": "Mastering The Mix",
+    "website": "https://www.masteringthemix.com",
+    "portal": "https://www.masteringthemix.com/account",
+    "portal_app": null,
+    "changelog_url": "https://masteringthemix.zendesk.com/hc/en-gb/articles/360010987797-BASSROOM",
+    "version_scheme": "V + semver",
+    "version_example": "V1.1.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 11,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 11,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:26:24Z",
+    "max_verified": "2026-09-10T11:41:49Z",
+    "source_kinds": {
+      "other": 10,
+      "productPage": 1
+    },
+    "extract_methods": {
+      "kvr-product-page": 10,
+      "kvr-verwin": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 11
+    },
+    "playbook": {
+      "method": "Shopify product pages lack installer semver; KVR @60.",
+      "urls": "[\"https://www.masteringthemix.com/\"]",
+      "extract": "KVR verwin; prefer manufacturer if changelog appears.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 11
+    },
+    "feeds": []
+  },
+  {
+    "id": "pulsar-audio",
+    "name": "Pulsar Audio",
+    "website": "https://pulsar.audio/",
+    "portal": "https://pulsar.audio/download/",
+    "portal_app": null,
+    "changelog_url": "https://pulsar.audio/download/",
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 5,
+    "no_ver": 6,
+    "true_gaps": 6,
+    "green": 0,
+    "amber": 0,
+    "yellow": 5,
+    "avg_conf": 59.0,
+    "min_verified": "2026-09-14T17:44:37Z",
+    "max_verified": "2026-09-14T17:44:37Z",
+    "source_kinds": {
+      "other": 5
+    },
+    "extract_methods": {
+      "kvr-product-timeline": 4,
+      "kvr-product-metadata": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 5
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 5
+    },
+    "feeds": []
+  },
+  {
+    "id": "tone2",
+    "name": "Tone2",
+    "website": "https://www.tone2.com",
+    "portal": "https://www.tone2.com",
+    "portal_app": null,
+    "changelog_url": "https://www.tone2.com/gladiator-update.html",
+    "version_scheme": "major.minor (2-part), some 3-part",
+    "version_example": "3.2.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 11,
+    "kinds": {
+      "plugin": 11
+    },
+    "versioned": 10,
+    "no_ver": 1,
+    "true_gaps": 1,
+    "green": 10,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-15T05:51:03Z",
+    "max_verified": "2026-09-15T05:51:04Z",
+    "source_kinds": {
+      "downloadsPage": 10
+    },
+    "extract_methods": {
+      "?": 10
+    },
+    "source_hosts": {
+      "www.tone2.com": 10
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1,
+      "promoted": 10
+    },
+    "feeds": []
+  },
+  {
+    "id": "vienna-symphonic-library",
+    "name": "Vienna Symphonic Library",
+    "website": "https://www.vsl.co.at",
+    "portal": "https://www.vsl.co.at",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 11,
+    "kind_plugin": 6,
+    "kinds": {
+      "expansion": 1,
+      "hub_app": 4,
+      "plugin": 6
+    },
+    "versioned": 6,
+    "no_ver": 5,
+    "true_gaps": 3,
+    "green": 3,
+    "amber": 2,
+    "yellow": 1,
+    "avg_conf": 81.7,
+    "min_verified": "2026-09-15T21:23:48Z",
+    "max_verified": "2026-09-15T21:23:49Z",
+    "source_kinds": {
+      "productPage": 6
+    },
+    "extract_methods": {
+      "?": 6
+    },
+    "source_hosts": {
+      "www.vsl.co.at": 4,
+      "sonicstate.com": 2
+    },
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "denise-audio",
+    "name": "Denise Audio",
+    "website": "https://www.deniseaudio.com",
+    "portal": "https://www.deniseaudio.com",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 10,
+    "kind_plugin": 10,
+    "kinds": {
+      "plugin": 10
+    },
+    "versioned": 0,
+    "no_ver": 10,
+    "true_gaps": 10,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "ml-sound-lab",
+    "name": "ML Sound Lab",
+    "website": "https://ml-sound-lab.com",
+    "portal": "https://ml-sound-lab.com/",
+    "portal_app": null,
+    "changelog_url": "https://ml-sound-lab.com/pages/ml-drums-update",
+    "version_scheme": null,
+    "version_example": "2.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 10,
+    "kind_plugin": 9,
+    "kinds": {
+      "plugin": 9,
+      "soundset": 1
+    },
+    "versioned": 9,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 9,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:49:23Z",
+    "max_verified": "2026-09-10T10:49:23Z",
+    "source_kinds": {
+      "productPage": 9
+    },
+    "extract_methods": {
+      "kvr-product-page": 9
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 9
+    },
+    "playbook": {
+      "method": "ML Sound Lab KVR@60; soundset skipped.",
+      "urls": "[\"https://www.mlsoundlab.com/\"]",
+      "extract": "See playbooks/ml-sound-lab.md version-chip-expand-5",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:49:23Z",
+      "success": "expand-5 chip",
+      "hub_walled": 1,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 9
+    },
+    "feeds": []
+  },
+  {
+    "id": "polyverse",
+    "name": "Polyverse Music",
+    "website": "https://polyversemusic.com",
+    "portal": "https://polyversemusic.com/support/",
+    "portal_app": null,
+    "changelog_url": "https://polyversemusic.com/supermodal-v0-5-2/",
+    "version_scheme": "semver",
+    "version_example": "v0.5.2",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 10,
+    "kind_plugin": 8,
+    "kinds": {
+      "bundle": 2,
+      "plugin": 8
+    },
+    "versioned": 8,
+    "no_ver": 2,
+    "true_gaps": 0,
+    "green": 8,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T09:23:36Z",
+    "max_verified": "2026-09-10T09:23:36Z",
+    "source_kinds": {
+      "downloadsPage": 8
+    },
+    "extract_methods": {
+      "page-confirmed": 8
+    },
+    "source_hosts": {
+      "polyversemusic.com": 8
+    },
+    "playbook": {
+      "method": "Public update page Current versions list.",
+      "urls": "[\"https://polyversemusic.com/update/\"]",
+      "extract": "Email gate for keys; version list is public.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "8/8 @92 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "sample-magic",
+    "name": "Sample Magic",
+    "website": "https://www.samplemagic.com",
+    "portal": "https://www.samplemagic.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 10,
+    "kind_plugin": 4,
+    "kinds": {
+      "plugin": 4,
+      "soundset": 6
+    },
+    "versioned": 4,
+    "no_ver": 6,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 4,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:49:23Z",
+    "max_verified": "2026-09-10T10:49:23Z",
+    "source_kinds": {
+      "productPage": 4
+    },
+    "extract_methods": {
+      "kvr-product-page": 4
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 4
+    },
+    "playbook": {
+      "method": "Sample Magic plugins KVR@60; packs soundset.",
+      "urls": "[\"https://www.samplemagic.com/\"]",
+      "extract": "See playbooks/sample-magic.md version-chip-expand-5",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:49:23Z",
+      "success": "expand-5 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 4
+    },
+    "feeds": []
+  },
+  {
+    "id": "sound-radix",
+    "name": "Sound Radix",
+    "website": "https://www.soundradix.com",
+    "portal": "https://www.soundradix.com/account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 10,
+    "kind_plugin": 10,
+    "kinds": {
+      "plugin": 10
+    },
+    "versioned": 8,
+    "no_ver": 2,
+    "true_gaps": 2,
+    "green": 5,
+    "amber": 0,
+    "yellow": 3,
+    "avg_conf": 80.0,
+    "min_verified": "2026-09-10T09:20:52Z",
+    "max_verified": "2026-09-10T09:25:40Z",
+    "source_kinds": {
+      "other": 3,
+      "downloadsPage": 5
+    },
+    "extract_methods": {
+      "page-confirmed": 5,
+      "kvr-product-page": 3
+    },
+    "source_hosts": {
+      "www.soundradix.com": 5,
+      "www.kvraudio.com": 3
+    },
+    "playbook": {
+      "method": "Downloads page Mac/Windows versions; accept only Mac==Win.",
+      "urls": "[\"https://www.soundradix.com/downloads/\"]",
+      "extract": "Skip Drum Leveler / SurferEQ 2 platform mismatch; Muteomatic login-gated.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "5@92 + 3@60 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "synchro-arts",
+    "name": "Synchro Arts",
+    "website": "https://www.synchroarts.com",
+    "portal": "https://www.synchroarts.com/downloads",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 10,
+    "kind_plugin": 7,
+    "kinds": {
+      "plugin": 7,
+      "suite_component": 1,
+      "unknown_other": 2
+    },
+    "versioned": 8,
+    "no_ver": 2,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 7,
+    "avg_conf": 63.1,
+    "min_verified": "2026-09-10T05:52:36Z",
+    "max_verified": "2026-09-16T08:44:30Z",
+    "source_kinds": {
+      "other": 7,
+      "releaseNotesPage": 1
+    },
+    "extract_methods": {
+      "kvr-product-page": 7,
+      "?": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 7,
+      "synchroarts.zendesk.com": 1
+    },
+    "playbook": {
+      "method": "KVR Product Version per VocAlign/RePitch/Revoice title.",
+      "urls": "[\"https://www.kvraudio.com/developer/synchro-arts\"]",
+      "extract": "Reject dual verwin strings. Round7 +7.",
+      "cadence": "as-needed",
+      "last_scrub": "2026-09-10T05:56:41Z",
+      "success": "7/10.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 7,
+      "promoted": 1,
+      "skipped": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "tc-electronic",
+    "name": "TC Electronic",
+    "website": "https://www.tcelectronic.com/",
+    "portal": "https://support.empowertribe.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 10,
+    "kind_plugin": 10,
+    "kinds": {
+      "plugin": 10
+    },
+    "versioned": 1,
+    "no_ver": 9,
+    "true_gaps": 9,
+    "green": 0,
+    "amber": 1,
+    "yellow": 0,
+    "avg_conf": 70.0,
+    "min_verified": "2026-09-15T17:43:51Z",
+    "max_verified": "2026-09-15T17:43:51Z",
+    "source_kinds": {
+      "other": 1
+    },
+    "extract_methods": {
+      "third-party-manual-copy": 1
+    },
+    "source_hosts": {
+      "manuals.plus": 1
+    },
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "positive-grid",
+    "name": "Positive Grid",
+    "website": "https://www.positivegrid.com",
+    "portal": "https://www.positivegrid.com/account",
+    "portal_app": null,
+    "changelog_url": "https://help.positivegrid.com/hc/en-us/articles/360024798051-BIAS-FX-2-Desktop-Update-History-Release-Notes",
+    "version_scheme": "4-part: major.minor.patch.build (e.g. 2.7.0.6600)",
+    "version_example": "2.7.0.6600",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 9,
+    "kind_plugin": 2,
+    "kinds": {
+      "discontinued": 1,
+      "expansion": 1,
+      "hardware": 4,
+      "hub_app": 1,
+      "plugin": 2
+    },
+    "versioned": 2,
+    "no_ver": 7,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 76.0,
+    "min_verified": "2026-09-10T09:50:22Z",
+    "max_verified": "2026-09-10T09:52:38Z",
+    "source_kinds": {
+      "productPage": 1,
+      "other": 1
+    },
+    "extract_methods": {
+      "page-confirmed": 1,
+      "kvr-product-page": 1
+    },
+    "source_hosts": {
+      "www.positivegrid.com": 1,
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# positive-grid\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- BIAS FX 2: manufacturer page Update Version **2.7.0** @92 (corroborates KVR).\n- BIAS X: KVR@60 `1.2.3`.\n- BIAS Amp 2 / OMNYSS / JamUp: User Center / discontinued / no public per-SKU semver this pass.\n- Pedals/Spark/`riff` remain `hardware` unversioned.\n",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 3
+    },
+    "feeds": []
+  },
+  {
+    "id": "auburn-sounds",
+    "name": "Auburn Sounds",
+    "website": "https://www.auburnsounds.com",
+    "portal": "https://www.auburnsounds.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "2.5",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 8,
+    "kind_plugin": 8,
+    "kinds": {
+      "plugin": 8
+    },
+    "versioned": 8,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 8,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T09:20:51Z",
+    "max_verified": "2026-09-10T09:20:51Z",
+    "source_kinds": {
+      "productPage": 8
+    },
+    "extract_methods": {
+      "page-confirmed": 8
+    },
+    "source_hosts": {
+      "www.auburnsounds.com": 8
+    },
+    "playbook": {
+      "method": "Product page H1 embeds version (Couture v1.10 etc).",
+      "urls": "[\"https://www.auburnsounds.com/products/Couture.html\", \"https://www.auburnsounds.com/blog/The-Mouse-Wheel-Update.html\"]",
+      "extract": "Parse title Name vX.Y.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T09:27:00Z",
+      "success": "8/8 @92 expand-2",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "leapwing-audio",
+    "name": "Leapwing Audio",
+    "website": "https://www.leapwingaudio.com",
+    "portal": "https://www.leapwingaudio.com/my-account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "2.0.5",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 8,
+    "kind_plugin": 8,
+    "kinds": {
+      "plugin": 8
+    },
+    "versioned": 8,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 7,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T05:13:19Z",
+    "max_verified": "2026-09-10T05:34:30Z",
+    "source_kinds": {
+      "releaseNotesPage": 7,
+      "other": 1
+    },
+    "extract_methods": {
+      "release-notes-heading": 7,
+      "kvr-product-page": 1
+    },
+    "source_hosts": {
+      "www.leapwingaudio.com": 7,
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "Support release-notes + KVR Product Version.",
+      "urls": "[\"https://www.leapwingaudio.com/\",\"https://www.kvraudio.com/product/limitone-by-leapwing-audio\"]",
+      "extract": "LimitOne 1.0.1 via KVR round5 \u2192 8/8.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T05:35:51Z",
+      "success": "Round5: LimitOne filled \u2192 8/8",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "surreal-machines",
+    "name": "Surreal Machines",
+    "website": "https://www.surrealmachines.com/",
+    "portal": "https://www.surrealmachines.com/support/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 8,
+    "kind_plugin": 6,
+    "kinds": {
+      "bundle": 2,
+      "plugin": 6
+    },
+    "versioned": 6,
+    "no_ver": 2,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 6,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T12:23:17Z",
+    "max_verified": "2026-09-10T12:23:17Z",
+    "source_kinds": {
+      "productPage": 6
+    },
+    "extract_methods": {
+      "kvr-verwin": 6
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 6
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "tone-projects",
+    "name": "Tone Projects",
+    "website": "https://www.toneprojects.com",
+    "portal": "https://www.toneprojects.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 8,
+    "kind_plugin": 8,
+    "kinds": {
+      "plugin": 8
+    },
+    "versioned": 8,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 6,
+    "amber": 0,
+    "yellow": 2,
+    "avg_conf": 84.0,
+    "min_verified": "2026-09-10T08:00:59Z",
+    "max_verified": "2026-09-10T08:05:04Z",
+    "source_kinds": {
+      "productPage": 6,
+      "other": 2
+    },
+    "extract_methods": {
+      "manufacturer-product-page": 6,
+      "kvr-product-page": 2
+    },
+    "source_hosts": {
+      "www.toneprojects.com": 6,
+      "www.kvraudio.com": 2
+    },
+    "playbook": {
+      "method": "Each product page shows \"Current version: X.Y.Z (Month Year)\" plus changelog.",
+      "urls": "[\"https://www.toneprojects.com/kelvin-tone-shaper.html\", \"https://www.toneprojects.com/unisum-mastering-compressor.html\", \"https://www.toneprojects.com/products.html\"]",
+      "extract": "Prefer \"Current version:\" field over changelog history. Compadre / Sonitex STX-1260 lack Current version on live pages \u2014 KVR@60 fallback.",
+      "cadence": "monthly",
+      "last_scrub": "2026-09-10T08:06:09Z",
+      "success": "High \u2014 6/8 manufacturer @92; 2/8 KVR@60 (Compadre, Sonitex).",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "two-notes",
+    "name": "Two notes",
+    "website": "https://www.two-notes.com",
+    "portal": "https://www.two-notes.com/en/my-account/",
+    "portal_app": null,
+    "changelog_url": "https://www.two-notes.com/en/genome/changelog/",
+    "version_scheme": "major.minor for GENOME (e.g. 1.14); 3-part for Torpedo Remote (v5.4.30)",
+    "version_example": "1.14",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 8,
+    "kind_plugin": 1,
+    "kinds": {
+      "bundle": 1,
+      "hardware": 4,
+      "hub_app": 2,
+      "plugin": 1
+    },
+    "versioned": 2,
+    "no_ver": 6,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 2,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:49:23Z",
+    "max_verified": "2026-09-10T10:49:23Z",
+    "source_kinds": {
+      "productPage": 2
+    },
+    "extract_methods": {
+      "kvr-product-page": 2
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 2
+    },
+    "playbook": {
+      "method": "Two notes KVR@60 for GENOME/WoS; hardware unversioned; site 403/marketing no patch.",
+      "urls": "[\"https://www.two-notes.com/en/genome/\"]",
+      "extract": "See playbooks/two-notes.md version-chip-expand-5",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:49:23Z",
+      "success": "expand-5 chip",
+      "hub_walled": 1,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "waldorf",
+    "name": "Waldorf",
+    "website": "https://waldorfmusic.com",
+    "portal": "https://waldorfmusic.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 8,
+    "kind_plugin": 7,
+    "kinds": {
+      "bundle": 1,
+      "plugin": 7
+    },
+    "versioned": 7,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 7,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:26:24Z",
+    "max_verified": "2026-09-10T10:26:24Z",
+    "source_kinds": {
+      "other": 7
+    },
+    "extract_methods": {
+      "kvr-product-page": 7
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 7
+    },
+    "playbook": {
+      "method": "Marketing silent; KVR for plugins.",
+      "urls": "[\"https://waldorfmusic.com/en/\"]",
+      "extract": "Skip Edition bundle; KVR @60.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 7
+    },
+    "feeds": []
+  },
+  {
+    "id": "wave-alchemy",
+    "name": "Wave Alchemy",
+    "website": "https://www.wavealchemy.co.uk/",
+    "portal": "https://www.wavealchemy.co.uk/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 8,
+    "kind_plugin": 7,
+    "kinds": {
+      "plugin": 7,
+      "unknown_other": 1
+    },
+    "versioned": 0,
+    "no_ver": 8,
+    "true_gaps": 7,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "devious-machines",
+    "name": "Devious Machines",
+    "website": "https://deviousmachines.com/",
+    "portal": "https://deviousmachines.com/downloads/",
+    "portal_app": null,
+    "changelog_url": "https://deviousmachines.com/infiltrator-downloads/",
+    "version_scheme": "3-part semver-style (e.g. 2.5.22)",
+    "version_example": "2.5.22",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 7,
+    "kind_plugin": 7,
+    "kinds": {
+      "plugin": 7
+    },
+    "versioned": 6,
+    "no_ver": 1,
+    "true_gaps": 1,
+    "green": 6,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 90.0,
+    "min_verified": "2026-09-14T17:44:35Z",
+    "max_verified": "2026-09-14T17:44:36Z",
+    "source_kinds": {
+      "downloadsPage": 6
+    },
+    "extract_methods": {
+      "official-downloads-page": 6
+    },
+    "source_hosts": {
+      "deviousmachines.com": 6
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "kiive-audio",
+    "name": "Kiive Audio",
+    "website": "https://www.kiiveaudio.com",
+    "portal": "https://www.kiiveaudio.com",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 7,
+    "kind_plugin": 7,
+    "kinds": {
+      "plugin": 7
+    },
+    "versioned": 1,
+    "no_ver": 6,
+    "true_gaps": 6,
+    "green": 0,
+    "amber": 1,
+    "yellow": 0,
+    "avg_conf": 80.0,
+    "min_verified": "2026-09-14T05:23:44Z",
+    "max_verified": "2026-09-14T05:23:44Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "?": 1
+    },
+    "source_hosts": {
+      "www.kiiveaudio.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "audiorealism",
+    "name": "AudioRealism",
+    "website": "https://www.audiorealism.se",
+    "portal": "https://www.audiorealism.se/",
+    "portal_app": null,
+    "changelog_url": "https://news.audiorealism.se/",
+    "version_scheme": "semver",
+    "version_example": "1.5.2",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 6,
+    "kind_plugin": 5,
+    "kinds": {
+      "plugin": 5,
+      "unknown_other": 1
+    },
+    "versioned": 5,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 3,
+    "amber": 0,
+    "yellow": 2,
+    "avg_conf": 76.8,
+    "min_verified": "2026-09-10T09:50:22Z",
+    "max_verified": "2026-09-10T11:01:32Z",
+    "source_kinds": {
+      "downloadsPage": 3,
+      "other": 2
+    },
+    "extract_methods": {
+      "mfr-corroboration": 3,
+      "kvr-product-page": 2
+    },
+    "source_hosts": {
+      "www.audiorealism.se": 3,
+      "www.kvraudio.com": 2
+    },
+    "playbook": {
+      "method": "Official news blog (news.audiorealism.se) doubles as version/changelog feed: each release post lists version number + features incl. Apple Silicon notes. Tag pages per product: /tag/abl3/, /tag/redominator/.",
+      "urls": "[\"https://news.audiorealism.se/\",\"https://news.audiorealism.se/tag/abl3/\",\"https://news.audiorealism.se/tag/redominator/\"]",
+      "extract": "Version in post title (e.g. ABL3 3.3.4.0, ReDominator 1.5.2.4); feature bullets carry compat statements. No login needed.",
+      "cadence": "irregular; check tag pages",
+      "last_scrub": "2026-09-15",
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "metric-halo",
+    "name": "Metric Halo",
+    "website": "https://mhsecure.com",
+    "portal": "http://mhsecure.com/metric_halo/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 6,
+    "kind_plugin": 6,
+    "kinds": {
+      "plugin": 6
+    },
+    "versioned": 6,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 6,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T03:57:17Z",
+    "max_verified": "2026-09-10T03:57:17Z",
+    "source_kinds": {
+      "downloadsPage": 6
+    },
+    "extract_methods": {
+      "live-page-fetch": 6
+    },
+    "source_hosts": {
+      "mhsecure.com": 6
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 12
+    },
+    "feeds": []
+  },
+  {
+    "id": "sonic-charge",
+    "name": "Sonic Charge",
+    "website": "https://soniccharge.com",
+    "portal": "https://soniccharge.com/download",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver 3-part",
+    "version_example": "3.3.3",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 6,
+    "kind_plugin": 6,
+    "kinds": {
+      "plugin": 6
+    },
+    "versioned": 6,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 6,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 87.2,
+    "min_verified": "2026-09-10T09:48:23Z",
+    "max_verified": "2026-09-10T09:52:01Z",
+    "source_kinds": {
+      "downloadsPage": 6
+    },
+    "extract_methods": {
+      "installer-filename-official": 4,
+      "manufacturer-page-version-label": 1,
+      "page-confirmed": 1
+    },
+    "source_hosts": {
+      "soniccharge.com": 6
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# sonic-charge\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- Downloads https://soniccharge.com/download documents shared multi-installer **Version: 2024.08.30** for Synplant 2, Microtonic, Bitspeek, Permut8, Echobode \u2192 stamp those five with pack version @90 (distributed that way).\n- Cyclone separate archive: `1.1` Mac==Win @92.\n",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 11
+    },
+    "feeds": []
+  },
+  {
+    "id": "stl-tones",
+    "name": "STL Tones",
+    "website": "https://www.stltones.com",
+    "portal": "https://www.stltones.com/pages/file-downloads",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "major.minor",
+    "version_example": "2.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 6,
+    "kind_plugin": 6,
+    "kinds": {
+      "plugin": 6
+    },
+    "versioned": 6,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 6,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:49:23Z",
+    "max_verified": "2026-09-10T10:49:23Z",
+    "source_kinds": {
+      "productPage": 6
+    },
+    "extract_methods": {
+      "kvr-product-page": 6
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 6
+    },
+    "playbook": {
+      "method": "STL account-walled; KVR@60 for ToneHub family.",
+      "urls": "[\"https://www.stltones.com/\"]",
+      "extract": "See playbooks/stl-tones.md version-chip-expand-5",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:49:23Z",
+      "success": "expand-5 chip",
+      "hub_walled": 1,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "madrona-labs",
+    "name": "Madrona Labs",
+    "website": "https://www.madronalabs.com",
+    "portal": "https://www.madronalabs.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.9.5",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 5,
+    "kind_plugin": 5,
+    "kinds": {
+      "plugin": 5
+    },
+    "versioned": 2,
+    "no_ver": 3,
+    "true_gaps": 3,
+    "green": 2,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T09:52:01Z",
+    "max_verified": "2026-09-10T09:52:01Z",
+    "source_kinds": {
+      "downloadsPage": 2
+    },
+    "extract_methods": {
+      "installer-filename-official-cdn": 2
+    },
+    "source_hosts": {
+      "nyc3.digitaloceanspaces.com": 2
+    },
+    "playbook": {
+      "method": "expand-3 version chip",
+      "urls": "[]",
+      "extract": "# madrona-labs\n\n## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))\n- Product pages show installer version in link text.\n- **Accepted Mac==Win:** Sumu `1.3.0`, Aaltoverb `2.0.3` @92.\n- **Skipped mismatch:** Aalto 1.9.5/1.9.4, Kaivo 1.9.5/1.9.4, Virta 1.9.5/1.9.3.\n",
+      "cadence": null,
+      "last_scrub": null,
+      "success": "",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 4
+    },
+    "feeds": []
+  },
+  {
+    "id": "bbe-sound",
+    "name": "BBE Sound",
+    "website": "https://bbesound.com",
+    "portal": "https://plugins.bbesound.com",
+    "portal_app": null,
+    "changelog_url": "https://plugins.bbesound.com/news/n212-Native-support-for-Apple-Silicon-M1-and-M2/",
+    "version_scheme": "semver",
+    "version_example": "4.4.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 4,
+    "kind_plugin": 4,
+    "kinds": {
+      "plugin": 4
+    },
+    "versioned": 4,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 4,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T04:02:35Z",
+    "max_verified": "2026-09-10T04:02:36Z",
+    "source_kinds": {
+      "productPage": 4
+    },
+    "extract_methods": {
+      "html-download-label": 4
+    },
+    "source_hosts": {
+      "plugins.bbesound.com": 4
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "krotos",
+    "name": "Krotos",
+    "website": "https://www.krotosaudio.com",
+    "portal": "https://www.krotosaudio.com/my-account/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.4.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 4,
+    "kind_plugin": 4,
+    "kinds": {
+      "plugin": 4
+    },
+    "versioned": 4,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 4,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T10:26:24Z",
+    "max_verified": "2026-09-10T10:26:24Z",
+    "source_kinds": {
+      "other": 4
+    },
+    "extract_methods": {
+      "kvr-product-page": 4
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 4
+    },
+    "playbook": {
+      "method": "Site flaky; KVR @60.",
+      "urls": "[\"https://www.krotos.co.uk/\"]",
+      "extract": "KVR verwin @60.",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:26:24Z",
+      "success": "expand-4 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 4
+    },
+    "feeds": []
+  },
+  {
+    "id": "thewavewarden",
+    "name": "TheWaveWarden",
+    "website": "https://www.thewavewarden.com",
+    "portal": "https://www.thewavewarden.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 4,
+    "kind_plugin": 3,
+    "kinds": {
+      "discontinued": 1,
+      "plugin": 3
+    },
+    "versioned": 3,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 3,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 87.0,
+    "min_verified": "2026-09-10T10:41:02Z",
+    "max_verified": "2026-09-10T10:58:53Z",
+    "source_kinds": {
+      "downloadsPage": 3
+    },
+    "extract_methods": {
+      "mfr-corroboration": 2,
+      "github-release-asset-name": 1
+    },
+    "source_hosts": {
+      "thewavewarden.com": 2,
+      "github.com": 1
+    },
+    "playbook": {
+      "method": "Odin2 GitHub; Filter Force/Spline KVR@60.",
+      "urls": "[\"https://www.thewavewarden.com/\"]",
+      "extract": "See playbooks/thewavewarden.md version-chip-expand-5",
+      "cadence": "weekly",
+      "last_scrub": "2026-09-10T10:49:23Z",
+      "success": "expand-5 chip",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 5
+    },
+    "feeds": []
+  },
+  {
+    "id": "venomode",
+    "name": "Venomode",
+    "website": "https://venomode.com",
+    "portal": "https://venomode.com",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 4,
+    "kind_plugin": 4,
+    "kinds": {
+      "plugin": 4
+    },
+    "versioned": 2,
+    "no_ver": 2,
+    "true_gaps": 2,
+    "green": 0,
+    "amber": 2,
+    "yellow": 0,
+    "avg_conf": 80.0,
+    "min_verified": "2026-09-14T05:23:44Z",
+    "max_verified": "2026-09-14T05:23:44Z",
+    "source_kinds": {
+      "productPage": 2
+    },
+    "extract_methods": {
+      "?": 2
+    },
+    "source_hosts": {
+      "venomode.com": 2
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "wedgeforce",
+    "name": "Wedgeforce",
+    "website": "https://www.wedgeforce.com",
+    "portal": "https://www.wedgeforce.com/",
+    "portal_app": null,
+    "changelog_url": "https://www.wedgeforce.com/updates-matcha/",
+    "version_scheme": "semver",
+    "version_example": "1.5.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 4,
+    "kind_plugin": 4,
+    "kinds": {
+      "plugin": 4
+    },
+    "versioned": 4,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 4,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T04:02:35Z",
+    "max_verified": "2026-09-10T04:02:35Z",
+    "source_kinds": {
+      "downloadsPage": 4
+    },
+    "extract_methods": {
+      "html-download-label": 4
+    },
+    "source_hosts": {
+      "www.wedgeforce.com": 4
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 8
+    },
+    "feeds": []
+  },
+  {
+    "id": "audiomovers",
+    "name": "Audiomovers",
+    "website": "https://audiomovers.com",
+    "portal": "https://audiomovers.com/wp/downloads/",
+    "portal_app": null,
+    "changelog_url": "https://audiomovers.com/downloads/",
+    "version_scheme": "semver",
+    "version_example": "2.102",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 3,
+    "kind_plugin": 3,
+    "kinds": {
+      "plugin": 3
+    },
+    "versioned": 3,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 3,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T06:05:49Z",
+    "max_verified": "2026-09-10T06:19:36Z",
+    "source_kinds": {
+      "other": 3
+    },
+    "extract_methods": {
+      "kvr-product-page": 2,
+      "suite-shared-installer-version": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 3
+    },
+    "playbook": {
+      "method": "KVR product page verwin",
+      "urls": null,
+      "extract": "round8 final mop",
+      "cadence": null,
+      "last_scrub": "2026-09-10T06:07:12Z",
+      "success": "r8",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 3
+    },
+    "feeds": []
+  },
+  {
+    "id": "getgood-drums",
+    "name": "GetGood Drums",
+    "website": "https://ggd.co/",
+    "portal": "https://ggd.co/",
+    "portal_app": null,
+    "changelog_url": "https://ggd.co/pages/downloads",
+    "version_scheme": "semver",
+    "version_example": "v1.5.23",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 3,
+    "kind_plugin": 0,
+    "kinds": {
+      "soundset": 3
+    },
+    "versioned": 0,
+    "no_ver": 3,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "klevgrand",
+    "name": "Klevgrand",
+    "website": "https://klevgrand.com",
+    "portal": "https://klevgrand.com/login",
+    "portal_app": null,
+    "changelog_url": "https://klevgrand.com/products/jussi",
+    "version_scheme": "semver (vX.Y.Z)",
+    "version_example": "v1.2.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 3,
+    "kind_plugin": 3,
+    "kinds": {
+      "plugin": 3
+    },
+    "versioned": 3,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 3,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T04:02:35Z",
+    "max_verified": "2026-09-10T04:02:35Z",
+    "source_kinds": {
+      "productPage": 3
+    },
+    "extract_methods": {
+      "html-download-label": 3
+    },
+    "source_hosts": {
+      "klevgrand.com": 3
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 6
+    },
+    "feeds": []
+  },
+  {
+    "id": "kv331-audio",
+    "name": "KV331 Audio",
+    "website": "https://www.kv331audio.com",
+    "portal": "http://synthmaster.com/downloads.aspx",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 3,
+    "kind_plugin": 3,
+    "kinds": {
+      "plugin": 3
+    },
+    "versioned": 3,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 3,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-15T05:51:02Z",
+    "max_verified": "2026-09-15T05:51:03Z",
+    "source_kinds": {
+      "downloadsPage": 3
+    },
+    "extract_methods": {
+      "?": 3
+    },
+    "source_hosts": {
+      "synthmaster.com": 3
+    },
+    "playbook": null,
+    "attempts": {
+      "promoted": 3
+    },
+    "feeds": []
+  },
+  {
+    "id": "refx",
+    "name": "reFX",
+    "website": "https://refx.com",
+    "portal": "https://refx.com",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 3,
+    "kind_plugin": 3,
+    "kinds": {
+      "plugin": 3
+    },
+    "versioned": 0,
+    "no_ver": 3,
+    "true_gaps": 3,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {
+      "observed": 3
+    },
+    "feeds": []
+  },
+  {
+    "id": "slate-ash",
+    "name": "Slate + Ash",
+    "website": "https://slateandash.com/",
+    "portal": "https://slateandash.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 3,
+    "kind_plugin": 0,
+    "kinds": {
+      "soundset": 3
+    },
+    "versioned": 0,
+    "no_ver": 3,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "strezov-sampling",
+    "name": "Strezov Sampling",
+    "website": "https://www.strezov-sampling.com/",
+    "portal": "https://www.strezov-sampling.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 3,
+    "plugins": 3,
+    "kind_plugin": 0,
+    "kinds": {
+      "soundset": 3
+    },
+    "versioned": 0,
+    "no_ver": 3,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "tone-empire",
+    "name": "Tone Empire",
+    "website": "https://tone-empire.com/",
+    "portal": "https://tone-empire.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 3,
+    "plugins": 3,
+    "kind_plugin": 3,
+    "kinds": {
+      "plugin": 3
+    },
+    "versioned": 1,
+    "no_ver": 2,
+    "true_gaps": 2,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 85.0,
+    "min_verified": "2026-09-16T02:51:51Z",
+    "max_verified": "2026-09-16T02:51:51Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "?": 1
+    },
+    "source_hosts": {
+      "tone-empire.com": 1
+    },
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "boom-library",
+    "name": "Boom Library",
+    "website": "https://www.boomlibrary.com/",
+    "portal": "https://www.boomlibrary.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 3,
+    "plugins": 2,
+    "kind_plugin": 2,
+    "kinds": {
+      "plugin": 2
+    },
+    "versioned": 0,
+    "no_ver": 2,
+    "true_gaps": 2,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "forever-89",
+    "name": "Forever 89",
+    "website": "https://forever89.studio/",
+    "portal": "https://forever89.studio/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 3,
+    "plugins": 2,
+    "kind_plugin": 2,
+    "kinds": {
+      "plugin": 2
+    },
+    "versioned": 1,
+    "no_ver": 1,
+    "true_gaps": 1,
+    "green": 0,
+    "amber": 1,
+    "yellow": 0,
+    "avg_conf": 70.0,
+    "min_verified": "2026-09-16T02:51:51Z",
+    "max_verified": "2026-09-16T02:51:51Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "?": 1
+    },
+    "source_hosts": {
+      "forever89.studio": 1
+    },
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "soundtheory",
+    "name": "Soundtheory",
+    "website": "https://www.soundtheory.com/",
+    "portal": "https://www.soundtheory.com/",
+    "portal_app": null,
+    "changelog_url": "https://www.soundtheory.com/static/Gullfoss Changelog.pdf",
+    "version_scheme": "semver",
+    "version_example": "1.11.9",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 2,
+    "kind_plugin": 2,
+    "kinds": {
+      "plugin": 2
+    },
+    "versioned": 0,
+    "no_ver": 2,
+    "true_gaps": 2,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {},
+    "feeds": []
+  },
+  {
+    "id": "aberrant-dsp",
+    "name": "Aberrant DSP",
+    "website": "https://aberrantdsp.com",
+    "portal": "https://aberrantdsp.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver",
+    "version_example": "1.1",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T05:25:57Z",
+    "max_verified": "2026-09-10T05:25:57Z",
+    "source_kinds": {
+      "releaseNotesPage": 1
+    },
+    "extract_methods": {
+      "updatesTable": 1
+    },
+    "source_hosts": {
+      "aberrantdsp.com": 1
+    },
+    "playbook": {
+      "method": "Public Update Log tables with dated vX.Y rows.",
+      "urls": "[\"https://aberrantdsp.com/updates/\"]",
+      "extract": "Installers account-walled; Update Log is the receipt.",
+      "cadence": "quarterly",
+      "last_scrub": "2026-09-10T05:26:44Z",
+      "success": "1/1",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "dexed",
+    "name": "Dexed",
+    "website": "https://asb2m10.github.io/dexed/",
+    "portal": "https://asb2m10.github.io/dexed/",
+    "portal_app": null,
+    "changelog_url": "https://github.com/asb2m10/dexed/releases",
+    "version_scheme": "semver",
+    "version_example": "0.9.8",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 90.0,
+    "min_verified": "2026-09-10T10:41:02Z",
+    "max_verified": "2026-09-10T10:41:02Z",
+    "source_kinds": {
+      "downloadsPage": 1
+    },
+    "extract_methods": {
+      "github-releases-latest-tag": 1
+    },
+    "source_hosts": {
+      "github.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "fiedler-audio",
+    "name": "Fiedler Audio",
+    "website": "https://www.fiedler-audio.com",
+    "portal": "https://www.fiedler-audio.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 95.0,
+    "min_verified": "2026-09-10T04:15:31Z",
+    "max_verified": "2026-09-10T04:15:31Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "live-html-sha256": 1
+    },
+    "source_hosts": {
+      "www.plugin-alliance.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "karanyi",
+    "name": "Karanyi Sounds",
+    "website": "https://karanyisounds.com",
+    "portal": "https://karanyisounds.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T06:29:36Z",
+    "max_verified": "2026-09-10T06:29:36Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "pa-installer-filename": 1
+    },
+    "source_hosts": {
+      "www.plugin-alliance.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "lennardigital",
+    "name": "LennarDigital",
+    "website": "https://www.lennardigital.com",
+    "portal": "https://www.lennardigital.com/downloads/",
+    "portal_app": null,
+    "changelog_url": "https://www.lennardigital.com",
+    "version_scheme": "3-part semver (major.minor.patch)",
+    "version_example": "3.072",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T08:04:27Z",
+    "max_verified": "2026-09-10T08:04:27Z",
+    "source_kinds": {
+      "other": 1
+    },
+    "extract_methods": {
+      "kvr-product-page": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "Product marketing page has no public semver; downloads account-walled. Use KVR verwin.",
+      "urls": "[\"https://www.lennardigital.com/sylenth1/\", \"https://www.kvraudio.com/product/sylenth1-by-lennardigital\"]",
+      "extract": "Sylenth1 KVR verwin only unless account receipts appear.",
+      "cadence": "quarterly",
+      "last_scrub": "2026-09-10T08:06:09Z",
+      "success": "1/1 @60 KVR (Sylenth1 3.0.7.5).",
+      "hub_walled": 1,
+      "portal_app": "LennarDigital account"
+    },
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "louder-than-liftoff",
+    "name": "Louder Than Liftoff",
+    "website": "https://www.louderthanliftoff.com",
+    "portal": "https://www.louderthanliftoff.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T06:29:36Z",
+    "max_verified": "2026-09-10T06:29:36Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "pa-installer-filename": 1
+    },
+    "source_hosts": {
+      "www.plugin-alliance.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "pitchinnovations",
+    "name": "PitchInnovations",
+    "website": null,
+    "portal": "https://pitchinnovations.com",
+    "portal_app": null,
+    "changelog_url": "https://pitchinnovations.com/blog/fluid-chords-v-1-4-update-everything-you-need-to-know/",
+    "version_scheme": "semver",
+    "version_example": "1.4.0",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 1,
+    "yellow": 0,
+    "avg_conf": 70.0,
+    "min_verified": "2026-09-16T08:44:31Z",
+    "max_verified": "2026-09-16T08:44:31Z",
+    "source_kinds": {
+      "other": 1
+    },
+    "extract_methods": {
+      "?": 1
+    },
+    "source_hosts": {
+      "duc.avid.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "promoted": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "reveal-sound",
+    "name": "Reveal Sound",
+    "website": "https://www.reveal-sound.com",
+    "portal": "https://www.reveal-sound.com",
+    "portal_app": null,
+    "changelog_url": "https://www.reveal-sound.com/content/changelog.php?spire",
+    "version_scheme": "3-part semver (major.minor.patch)",
+    "version_example": "1.5.19",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-15T05:51:03Z",
+    "max_verified": "2026-09-15T05:51:03Z",
+    "source_kinds": {
+      "releaseNotesPage": 1
+    },
+    "extract_methods": {
+      "?": 1
+    },
+    "source_hosts": {
+      "www.reveal-sound.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "promoted": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "safari-pedals",
+    "name": "Safari Pedals",
+    "website": "https://www.safaripedals.com",
+    "portal": "https://www.safaripedals.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T06:05:49Z",
+    "max_verified": "2026-09-10T06:05:49Z",
+    "source_kinds": {
+      "other": 1
+    },
+    "extract_methods": {
+      "kvr-product-page": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "KVR product page verwin",
+      "urls": null,
+      "extract": "round8 final mop",
+      "cadence": null,
+      "last_scrub": "2026-09-10T06:07:12Z",
+      "success": "r8",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "scuffham-amps",
+    "name": "Scuffham Amps",
+    "website": "https://www.scuffhamamps.com",
+    "portal": "https://www.scuffhamamps.com/downloads",
+    "portal_app": null,
+    "changelog_url": "https://www.scuffhamamps.com/download/s-gear-v3",
+    "version_scheme": "semver",
+    "version_example": "3.2.4",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-16T11:39:25Z",
+    "max_verified": "2026-09-16T11:39:25Z",
+    "source_kinds": {
+      "releaseNotesPage": 1
+    },
+    "extract_methods": {
+      "?": 1
+    },
+    "source_hosts": {
+      "scuffhamamps.com": 1
+    },
+    "playbook": {
+      "method": "KVR product page verwin",
+      "urls": null,
+      "extract": "round8 final mop",
+      "cadence": null,
+      "last_scrub": "2026-09-10T06:07:12Z",
+      "success": "r8",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "sir-audio-tools",
+    "name": "SIR Audio Tools",
+    "website": "https://www.siraudiotools.com",
+    "portal": "https://www.siraudiotools.com/support.php",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 90.0,
+    "min_verified": "2026-09-10T07:35:26Z",
+    "max_verified": "2026-09-10T07:35:26Z",
+    "source_kinds": {
+      "downloadsPage": 1
+    },
+    "extract_methods": {
+      "installer-filename-official-domain": 1
+    },
+    "source_hosts": {
+      "www.siraudiotools.com": 1
+    },
+    "playbook": {
+      "method": "KVR product page verwin",
+      "urls": null,
+      "extract": "round8 final mop",
+      "cadence": null,
+      "last_scrub": "2026-09-10T06:07:12Z",
+      "success": "r8",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "sonic-academy",
+    "name": "Sonic Academy",
+    "website": "https://www.sonicacademy.com",
+    "portal": "https://www.sonicacademy.com/users/sign_in",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "major.minor.patch with optional 'b' beta suffix",
+    "version_example": "V2.0.994",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 85.0,
+    "min_verified": "2026-09-10T04:43:20Z",
+    "max_verified": "2026-09-10T04:43:20Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "product-page-installer-filename": 1
+    },
+    "source_hosts": {
+      "www.sonicacademy.com": 1
+    },
+    "playbook": {
+      "method": "ANA 2 product page embeds versioned CDN zip filename (e.g. Sonic_Academy_ANA_2.5.6.zip).",
+      "urls": "[\"https://www.sonicacademy.com/products/ana-2\"]",
+      "extract": "Prefer installer filename version over marketing 'ANA 2.5' copy. Signed CDN URL; HEAD to corroborate. See playbooks/sonic-academy.md.",
+      "cadence": "weekly",
+      "last_scrub": null,
+      "success": "Works for ANA 2; other Sonic Academy SKUs not in store yet.",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "soundspot",
+    "name": "Soundspot",
+    "website": "https://www.soundspot.co",
+    "portal": "https://www.soundspot.co/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 0,
+    "kinds": {
+      "discontinued": 1
+    },
+    "versioned": 0,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {
+      "skipped": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "splice",
+    "name": "Splice",
+    "website": "https://splice.com",
+    "portal": "https://splice.com/",
+    "portal_app": "Splice",
+    "changelog_url": null,
+    "version_scheme": "semver 3-part",
+    "version_example": "4.2.9",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 90.0,
+    "min_verified": "2026-09-10T07:46:43Z",
+    "max_verified": "2026-09-10T07:46:43Z",
+    "source_kinds": {
+      "downloadsPage": 1
+    },
+    "extract_methods": {
+      "installer-filename-cdn": 1
+    },
+    "source_hosts": {
+      "desktop.splice.com": 1
+    },
+    "playbook": {
+      "method": "Homebrew cask JSON for Splice app version (formulae.brew.sh).",
+      "urls": "[\"https://formulae.brew.sh/api/cask/splice.json\"]",
+      "extract": "Accept cask version field; installer URL embeds version. content_hash = SHA-256 of cask JSON. See playbooks/splice.md.",
+      "cadence": "weekly",
+      "last_scrub": null,
+      "success": "High for splice--splice hub app only.",
+      "hub_walled": 0,
+      "portal_app": "Splice"
+    },
+    "attempts": {
+      "observed": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "steven-slate",
+    "name": "Steven Slate Audio",
+    "website": "https://stevenslatedrums.com",
+    "portal": "https://my.slateaudio.com/",
+    "portal_app": "Steven Slate account",
+    "changelog_url": null,
+    "version_scheme": "marketing",
+    "version_example": "SSD 5.5",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 0,
+    "kinds": {
+      "gen_ambiguous": 1
+    },
+    "versioned": 0,
+    "no_ver": 1,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": null,
+    "min_verified": null,
+    "max_verified": null,
+    "source_kinds": {},
+    "extract_methods": {},
+    "source_hosts": {},
+    "playbook": null,
+    "attempts": {
+      "skipped": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "supertone",
+    "name": "Supertone",
+    "website": "https://supertone.ai",
+    "portal": "https://supertone.ai/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 0,
+    "amber": 0,
+    "yellow": 1,
+    "avg_conf": 60.0,
+    "min_verified": "2026-09-10T06:05:49Z",
+    "max_verified": "2026-09-10T06:05:49Z",
+    "source_kinds": {
+      "other": 1
+    },
+    "extract_methods": {
+      "kvr-product-page": 1
+    },
+    "source_hosts": {
+      "www.kvraudio.com": 1
+    },
+    "playbook": {
+      "method": "KVR product page verwin",
+      "urls": null,
+      "extract": "round8 final mop",
+      "cadence": null,
+      "last_scrub": "2026-09-10T06:07:12Z",
+      "success": "r8",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "synthogy",
+    "name": "Synthogy",
+    "website": "https://www.synthogy.com",
+    "portal": "https://www.synthogy.com/",
+    "portal_app": null,
+    "changelog_url": "https://synthogy.com/support/updates",
+    "version_scheme": "semver",
+    "version_example": "3.0.9",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 90.0,
+    "min_verified": "2026-09-10T07:35:26Z",
+    "max_verified": "2026-09-10T07:35:26Z",
+    "source_kinds": {
+      "downloadsPage": 1
+    },
+    "extract_methods": {
+      "installer-filename-official-domain": 1
+    },
+    "source_hosts": {
+      "synthogy.com": 1
+    },
+    "playbook": {
+      "method": "KVR product page verwin",
+      "urls": null,
+      "extract": "round8 final mop",
+      "cadence": null,
+      "last_scrub": "2026-09-10T06:07:12Z",
+      "success": "r8",
+      "hub_walled": 0,
+      "portal_app": null
+    },
+    "attempts": {
+      "observed": 2
+    },
+    "feeds": []
+  },
+  {
+    "id": "tbproaudio",
+    "name": "TBProAudio",
+    "website": "https://www.tb-software.com",
+    "portal": "https://www.tb-software.com/TBProAudio/download.html",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": "semver 3-part",
+    "version_example": "3.9.11",
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T04:23:24Z",
+    "max_verified": "2026-09-10T04:23:24Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "manual-html-parse": 1
+    },
+    "source_hosts": {
+      "www.tbproaudio.de": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1,
+      "skipped": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "tekit-audio",
+    "name": "Tek'it Audio",
+    "website": "https://tekit-audio.com",
+    "portal": "https://tekit-audio.com/downloads/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 92.0,
+    "min_verified": "2026-09-10T04:23:24Z",
+    "max_verified": "2026-09-10T04:23:24Z",
+    "source_kinds": {
+      "downloadsPage": 1
+    },
+    "extract_methods": {
+      "manual-html-parse": 1
+    },
+    "source_hosts": {
+      "tekitaudio.itch.io": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  },
+  {
+    "id": "thx",
+    "name": "THX",
+    "website": "https://www.thx.com",
+    "portal": "https://www.thx.com/",
+    "portal_app": null,
+    "changelog_url": null,
+    "version_scheme": null,
+    "version_example": null,
+    "update_channel": null,
+    "m_tier": 2,
+    "plugins": 1,
+    "kind_plugin": 1,
+    "kinds": {
+      "plugin": 1
+    },
+    "versioned": 1,
+    "no_ver": 0,
+    "true_gaps": 0,
+    "green": 1,
+    "amber": 0,
+    "yellow": 0,
+    "avg_conf": 88.0,
+    "min_verified": "2026-09-10T06:29:36Z",
+    "max_verified": "2026-09-10T06:29:36Z",
+    "source_kinds": {
+      "productPage": 1
+    },
+    "extract_methods": {
+      "pa-installer-filename": 1
+    },
+    "source_hosts": {
+      "www.plugin-alliance.com": 1
+    },
+    "playbook": null,
+    "attempts": {
+      "observed": 1
+    },
+    "feeds": []
+  }
+]

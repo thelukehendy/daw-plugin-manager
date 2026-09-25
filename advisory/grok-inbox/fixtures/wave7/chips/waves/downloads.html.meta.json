@@ -1,0 +1,12 @@
+{
+  "url": "https://www.waves.com/downloads",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 114126,
+  "sha256": "c6eb4b1cd316566e552137f977907e3514a2c092bdc60c887e935219a06585f1",
+  "tip": "17.0.4",
+  "display": "V17.0.4",
+  "mac_date": "Aug 02, 2026",
+  "win_date": "Aug 02, 2026",
+  "identity": "waves--waves-central",
+  "hub_app_only": true
+}

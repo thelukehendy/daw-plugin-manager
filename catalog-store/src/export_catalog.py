@@ -54,6 +54,53 @@ IDENTITY_KIND_COL = "identity_kind"
 IDENTITY_KIND_KEY = "identityKind"
 IDENTITY_KIND_DEFAULT = "plugin"
 
+# Match-pattern lint (report-only): bare common words and strict-prefix
+# patterns are the top misidentification hazards. Added 2026-09-25 per
+# Cursor advisory PR #7 — report-only until the flagged set is reviewed.
+COMMON_WORD_PATTERNS = {
+    "reverb", "compressor", "eq", "chorus", "flanger", "limiter", "gate",
+    "tape", "delay", "strings", "drums", "piano", "bass", "synth", "verb",
+    "comp", "filter", "phaser", "tremolo", "vibrato", "distortion",
+    "saturator", "exciter", "stereo", "mono", "mixer", "tuner", "echo",
+}
+
+
+def lint_match_patterns(rows):
+    """Flag hazardous match patterns. rows: list of
+    (plugin_id, name, manufacturer_id, patterns). Returns
+    (prefix_hits, common_word_hits) as lists of strings. Never raises."""
+    prefix_hits = []
+    common_hits = []
+    by_mfr = {}
+    for pid, name, mfr, patterns in rows:
+        by_mfr.setdefault(mfr, []).append((pid, name, patterns))
+    for mfr, items in by_mfr.items():
+        names = [(pid, name) for pid, name, _ in items]
+        for pid, name, patterns in items:
+            lname = name.strip().lower()
+            for pat in patterns:
+                p = pat.strip()
+                if not p:
+                    continue
+                lp = p.lower()
+                if lp in COMMON_WORD_PATTERNS:
+                    common_hits.append(
+                        f"{pid}: pattern {p!r} is a bare common word"
+                    )
+                    continue
+                if lp == lname:
+                    continue  # exact own-name match is fine
+                for opid, oname in names:
+                    if opid == pid:
+                        continue
+                    if oname.strip().lower().startswith(lp):
+                        prefix_hits.append(
+                            f"{pid}: pattern {p!r} is a strict prefix of "
+                            f"{opid} name {oname!r}"
+                        )
+                        break
+    return prefix_hits, common_hits
+
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -136,20 +183,35 @@ def main() -> int:
                 entry["changelogUrl"] = m["changelog_url"]
             if m["notes"]:
                 entry["notes"] = m["notes"]
+            # v6: popularity tier for tier-1-first sorting in the app
+            # (omit when unranked — NULL means unranked, not tier 0)
+            if "popularity_tier" in mcols and m["popularity_tier"] is not None:
+                entry["popularityTier"] = m["popularity_tier"]
             manufacturers_out.append(entry)
 
         plugins_out = []
         versioned = 0
+        with_final_version = 0
         with_successor = 0
         with_confidence = 0
         with_identity_kind = 0
         with_apple_silicon = 0
+        with_tier = 0
+        lint_rows = []  # (plugin_id, name, manufacturer_id, patterns)
         # v5: manufacturer Apple Silicon defaults for per-plugin resolution
         mfr_as = {}
+        # v6: manufacturer popularity tiers for per-plugin effective resolution
+        mfr_tier = {}
         try:
             for row in conn.execute("SELECT id, apple_silicon FROM manufacturers"):
                 if row["apple_silicon"] not in (None, "", "unknown"):
                     mfr_as[row["id"]] = row["apple_silicon"]
+        except sqlite3.OperationalError:
+            pass
+        try:
+            for row in conn.execute("SELECT id, popularity_tier FROM manufacturers"):
+                if row["popularity_tier"] is not None:
+                    mfr_tier[row["id"]] = row["popularity_tier"]
         except sqlite3.OperationalError:
             pass
         for p in conn.execute("SELECT * FROM plugins ORDER BY name"):
@@ -232,6 +294,16 @@ def main() -> int:
                     entry["appleSilicon"] = resolved
                     with_apple_silicon += 1
 
+            # v6: effective popularity tier — plugin tier wins, else manufacturer
+            # tier; omitted when unranked (see DATABASE-ORGANIZATION.md)
+            if "popularity_tier" in pcols:
+                tier = p["popularity_tier"]
+                if tier is None:
+                    tier = mfr_tier.get(p["manufacturer_id"])
+                if tier is not None:
+                    entry["popularityTier"] = tier
+                    with_tier += 1
+
             # Policy A: only attach version fields when current points at accepted obs
             conf_select = ", o.confidence, o.confidence_reasons" if has_confidence else ""
             cur = conn.execute(
@@ -254,7 +326,19 @@ def main() -> int:
                         file=sys.stderr,
                     )
                     return 1
-                entry["latestVersion"] = cur["observed_version"]
+                # Discontinued rows carry finalVersion, never latestVersion, so the
+                # app can't mistake a dead product for a live update target
+                # (agreed 2026-09-25, Cursor advisory PR #7, item 4).
+                is_discontinued = bool(p["discontinued"]) or (
+                    IDENTITY_KIND_COL in pcols
+                    and p[IDENTITY_KIND_COL] == "discontinued"
+                )
+                if is_discontinued:
+                    entry["finalVersion"] = cur["observed_version"]
+                    with_final_version += 1
+                else:
+                    entry["latestVersion"] = cur["observed_version"]
+                    versioned += 1
                 entry["versionSourceUrl"] = cur["source_url"]
                 if cur["verified_at"]:
                     entry["versionVerifiedAt"] = cur["verified_at"]
@@ -275,9 +359,26 @@ def main() -> int:
                     entry["versionConfidenceReasons"] = reasons
                     with_confidence += 1
 
-                versioned += 1
-
             plugins_out.append(entry)
+            lint_rows.append(
+                (p["id"], p["name"], p["manufacturer_id"], patterns)
+            )
+
+        # Match-pattern lint — report-only until the flagged set is reviewed
+        # (Cursor advisory PR #7, item 3). Never fails the export.
+        try:
+            prefix_hits, common_hits = lint_match_patterns(lint_rows)
+        except Exception as e:  # noqa: BLE001 — lint must never break export
+            print(f"LINT-REPORT match-patterns: error {e} (skipped)")
+            prefix_hits, common_hits = [], []
+        print(
+            f"LINT-REPORT match-patterns: {len(prefix_hits)} strict-prefix, "
+            f"{len(common_hits)} common-word (report-only)"
+        )
+        for h in prefix_hits[:60]:
+            print(f"LINT prefix: {h}")
+        for h in common_hits[:60]:
+            print(f"LINT common-word: {h}")
 
         catalog = {
             "schemaVersion": 3,
@@ -297,9 +398,11 @@ def main() -> int:
             f"{len(manufacturers_out)} manufacturers, "
             f"{len(plugins_out)} plugins, "
             f"{versioned} with accepted latestVersion, "
+            f"{with_final_version} discontinued with finalVersion, "
             f"{with_confidence} with versionConfidence, "
             f"{with_successor} with successorPluginId, "
-            f"{with_identity_kind} with identityKind"
+            f"{with_identity_kind} with identityKind, "
+            f"{with_tier} with popularityTier"
         )
     finally:
         conn.close()

@@ -1,0 +1,10 @@
+{
+  "url": "https://wavearts.com/support/version-history/dialog-2-04",
+  "fetched_at": "2026-09-25T19:20:17Z",
+  "fetched_at_pt": "2026-09-25 ~12:18-12:20 PT",
+  "bytes": 71108,
+  "sha256": "590fc98a1fa77382a505a725d27e5624f19d88fdab97a103292249e3cdf0ee10",
+  "http": 200,
+  "scout": "wave7-ask3-tier2-top5",
+  "note": "golden fixture \u2014 operator re-fetch required before catalog write"
+}

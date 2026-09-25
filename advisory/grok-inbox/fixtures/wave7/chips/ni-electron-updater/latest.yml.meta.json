@@ -1,0 +1,8 @@
+{
+  "url": "https://na-update.native-instruments.com/latest.yml",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 346,
+  "sha256": "26539569722dc885bb9cb2ab0c8a50f3141cb272279e8db395fa3c4c29736429",
+  "tip": "3.26.0",
+  "identity": "native-instruments--native-access"
+}

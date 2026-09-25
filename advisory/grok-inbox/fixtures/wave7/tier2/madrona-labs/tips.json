@@ -1,0 +1,134 @@
+{
+  "vendor": "madrona-labs",
+  "oracle_url_pattern": "https://www.madronalabs.com/products/{slug}",
+  "slugs": [
+    "sumu",
+    "aalto",
+    "kaivo",
+    "virta",
+    "aaltoverb"
+  ],
+  "fetched_at_pt": "2026-09-25 12:20 PT",
+  "parse_rule": "Download link text embeds \"Name X.Y.Z [VST/AU installer for macOS|VST installer for Windows]\". Require Mac AND Win. If versions disagree \u2192 HOLD (do not average, do not Mac-wins). Ignore Vutu companion tool versions on Sumu page.",
+  "per_sku": {
+    "sumu": [
+      {
+        "label": "Sumu 1.3.0 [VST/AU installer for macOS]",
+        "product": "Sumu",
+        "version": "1.3.0",
+        "platform_note": "VST/AU installer for macOS",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/sumu/Sumu1.3.0.pkg"
+      },
+      {
+        "label": "Sumu 1.3.0 [VST installer for Windows]",
+        "product": "Sumu",
+        "version": "1.3.0",
+        "platform_note": "VST installer for Windows",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/sumu/SumuInstaller1.3.0.exe"
+      }
+    ],
+    "aalto": [
+      {
+        "label": "Aalto 1.9.5 [VST/AU installer for macOS]",
+        "product": "Aalto",
+        "version": "1.9.5",
+        "platform_note": "VST/AU installer for macOS",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/aalto/Aalto1.9.5.pkg"
+      },
+      {
+        "label": "Aalto 1.9.4 [VST installer for Windows]",
+        "product": "Aalto",
+        "version": "1.9.4",
+        "platform_note": "VST installer for Windows",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/aalto/AaltoInstaller1.9.4.exe"
+      }
+    ],
+    "kaivo": [
+      {
+        "label": "Kaivo 1.9.5 [VST/AU installer for macOS]",
+        "product": "Kaivo",
+        "version": "1.9.5",
+        "platform_note": "VST/AU installer for macOS",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/kaivo/Kaivo1.9.5.pkg"
+      },
+      {
+        "label": "Kaivo 1.9.4 [VST installer for Windows]",
+        "product": "Kaivo",
+        "version": "1.9.4",
+        "platform_note": "VST installer for Windows",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/kaivo/KaivoInstaller1.9.4.exe"
+      }
+    ],
+    "virta": [
+      {
+        "label": "Virta 1.9.5 [VST/AU installer for macOS]",
+        "product": "Virta",
+        "version": "1.9.5",
+        "platform_note": "VST/AU installer for macOS",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/virta/Virta1.9.5.pkg"
+      },
+      {
+        "label": "Virta 1.9.3 [VST installer for Windows]",
+        "product": "Virta",
+        "version": "1.9.3",
+        "platform_note": "VST installer for Windows",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/virta/VirtaInstaller1.9.3.exe"
+      }
+    ],
+    "aaltoverb": [
+      {
+        "label": "Aaltoverb 2.0.3 [VST/AU installer for macOS]",
+        "product": "Aaltoverb",
+        "version": "2.0.3",
+        "platform_note": "VST/AU installer for macOS",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/aaltoverb/Aaltoverb2.0.3.pkg"
+      },
+      {
+        "label": "Aaltoverb 2.0.3 [VST installer for Windows]",
+        "product": "Aaltoverb",
+        "version": "2.0.3",
+        "platform_note": "VST installer for Windows",
+        "href": "https://nyc3.digitaloceanspaces.com/madronalabs/installers/aaltoverb/AaltoverbInstaller2.0.3.exe"
+      }
+    ]
+  },
+  "mac_win_live_2026_09_25": {
+    "sumu": {
+      "mac": "1.3.0",
+      "win": "1.3.0",
+      "agree": true,
+      "catalog": "1.3.0@88"
+    },
+    "aaltoverb": {
+      "mac": "2.0.3",
+      "win": "2.0.3",
+      "agree": true,
+      "catalog": "2.0.3@88"
+    },
+    "aalto": {
+      "mac": "1.9.5",
+      "win": "1.9.4",
+      "agree": false,
+      "action": "HOLD"
+    },
+    "kaivo": {
+      "mac": "1.9.5",
+      "win": "1.9.4",
+      "agree": false,
+      "action": "HOLD"
+    },
+    "virta": {
+      "mac": "1.9.5",
+      "win": "1.9.3",
+      "agree": false,
+      "action": "HOLD"
+    }
+  },
+  "fixture": [
+    "fixtures/tier2/madrona-labs/sumu.html",
+    "fixtures/tier2/madrona-labs/aalto.html",
+    "fixtures/tier2/madrona-labs/kaivo.html",
+    "fixtures/tier2/madrona-labs/virta.html",
+    "fixtures/tier2/madrona-labs/aaltoverb.html"
+  ]
+}

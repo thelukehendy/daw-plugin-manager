@@ -1,0 +1,3 @@
+QUOTE: "All Waves Plugins: Across-the-board software update to V17" @ June 23, 2026
+RULE: emit waves.generation_bump only; NEVER plugin.version=V17 for every SKU
+SOURCE: refs/2026-09-25-waves-incapsula-oracle-deep.md + waves-browser-rn-evidence-deep.md

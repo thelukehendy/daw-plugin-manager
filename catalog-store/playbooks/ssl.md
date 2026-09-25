@@ -11,7 +11,18 @@
 ## universe-expand-3 version chip (2026-09-10 ~2:50 AM PT (expand-3 version chip))
 - New expand3 SKUs: KVR@60 where Win=Mac (4K G, autoSeries, DeEss, X-Orcism II, LMC-1, X-ISM).
 - **Reclassified hardware (500 Series Application on KVR):** UltraViolet EQ, B-Series Dynamics, E-Series Dynamics, SiX Channel, VHD+ Pre — leave unversioned.
+
+## Maintenance recipe (verified 2026-09-19)
+- **Cheapest oracle:** the Zendesk public API — `https://support.solidstatelogic.com/api/v2/help_center/en-gb/articles/4849510029085.json` (no auth, read-only) returns the article body HTML including the `data-link` installer attributes per table cell. Parse per `<tr>`: label cell + both platform cells' data-links → exact installer filenames (Mac `.dmg` / Win `.exe`) + folder date prefixes. The article `updated_at` is the freshness signal (was 2026-09-14T15:53:19Z on 2026-09-19). NOTE: article slug changed from `...-SSL-and-Harrison-Plug-in-Downloads` to `...-SSL-Plug-in-Downloads` (old URL 301s).
+- **Rules:** prefer installer filename over table label when they diverge (table labels go stale — AutoEQ 1.0.41/ AutoDYN 1.0.5/ AutoBUS 1.0.17 labels vs installers 1.0.43/1.0.6/1.0.18); folder paths carry date-version prefixes (`2026.09.01 - v1.3.1`) but legacy folders keep stale names (`X-Comp v6.6.7` folder holds v6.8.2 installers) — always read the FILENAME, not the folder.
+- **Identity:** the 360° table carries BOTH base rows (4K B 1.9.8 / 4K E 1.6.8 / 4K G 1.2.7) and "(sonible add-on)" rows (4K B 1.10.2 / 4K E 1.7.1 / 4K G 1.3.1). Catalog mapping: 4K G row = sonible add-on (installer-confirmed), 4K B/E rows = base. NEVER stamp an add-on version onto a base row.
+- **Dual-mismatch watch RESOLVED 2026-09-22:** article edited 2026-09-22T08:57:30Z and the table label is now EXPLICIT — "Acoustifier v1.0.18 (v1.0.19 Windows only)". Mac data-link: `SSL Acoustifier macOS v1.0.18 Installer.dmg`; Win data-link: `2025.11.24 – v1.0.19/SSL Acoustifier 64-bit v1.0.19.exe`. Raised 1.0.19 → 1.0.18 @92 per the dual-platform Mac-current convention (Win noted in evidence). Vendor explicitly documenting a split Mac/Win version is positive evidence — the mismatch is no longer a watch item; treat split-versioned rows as resolved, not anomalies.
+- **Page bug (2026-09-19):** the "360 Link v1.4.8" Mac cell's data-link is the literal string "data-link" (malformed); Win installer confirms 1.4.8.
 - Meter Pro still SSL Download Manager / Complete Access only (do not map to Meter 1.6.6).
+
+## Maintenance chip 2026-09-24 ~10:18 PT — vendor installer-link ROLLBACK (first sighting)
+- Article `updated_at` still 2026-09-22T08:57:30Z, but the auto-series `data-link`s now point BACKWARD: installers serve AutoEQ **1.0.41** / AutoDYN **1.0.5** / AutoBUS **1.0.17** (BOTH platforms, labels agree) — down from 1.0.43/1.0.6/1.0.18 recorded 2026-09-10. SSL pulled/reverted the newer installers; catalog corrected 1.0.43→1.0.41, 1.0.6→1.0.5, 1.0.18→1.0.17 @92 (green→green data-integrity, old rows superseded).
+- **Standing rule (new class):** a version DECREASE is a legitimate correction when the vendor's own installer links move backward with both platforms + label in agreement. Do NOT treat the old higher version as "the truth" — the catalog mirrors what a user downloads TODAY. Keep watching the auto-series on the next chip for a re-release of the 1.0.43-class installers.
 
 ## Confidence raise 18 (2026-09-10 ~3:50 AM PT)
 - **+5** via support article [SSL Plug-in Downloads](https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads):

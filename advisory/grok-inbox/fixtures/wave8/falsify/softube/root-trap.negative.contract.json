@@ -1,0 +1,7 @@
+{
+  "chip": "softube-central-sc3-yaml",
+  "trap_url": "https://softubestorage.b-cdn.net/softubecentraldata/softubecentral/latest-mac.yml",
+  "live_2026-09-25": {"root": "2.2.0", "sc3": "3.0.5"},
+  "death": "reading non-sc3 path OR brew softube-central livecheck as SoT",
+  "must_not": "stamp Central tip onto Softube plugin SKUs; confuse with suite RN 2.6.x"
+}

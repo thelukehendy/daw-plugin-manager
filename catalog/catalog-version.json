@@ -1,0 +1,17 @@
+{
+  "feedVersion": 1,
+  "buildId": "2026-09-25T20:58:18Z",
+  "catalogCommit": "12680f60",
+  "sha256": "5b8e81b53ec56a178635d429ba155c63d9373563fa66b8cbbfa915bab4bab544",
+  "sizeBytes": 7724262,
+  "schemaVersion": 3,
+  "counts": {
+    "manufacturers": 666,
+    "plugins": 9512,
+    "tier1Plugins": 4459
+  },
+  "endpoints": {
+    "jsdelivrPinned": "https://cdn.jsdelivr.net/gh/thelukehendy/daw-plugin-manager@12680f60/catalog/catalog.json",
+    "rawPinned": "https://raw.githubusercontent.com/thelukehendy/daw-plugin-manager/12680f60/catalog/catalog.json"
+  }
+}

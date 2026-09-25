@@ -123,7 +123,15 @@ EastWest 11 — all worked to zero by the 1918/2218 chips.
   2026-09-16 — Abbey Road Saturator, CLA Effects/Epic/MixHub/Unplugged).
 - BB Tubes is listed as "Magma BB Tubes" in V17 — same product, renamed.
 - Cadence: Waves does across-the-board generation bumps; re-check the
-  installer page monthly for a V18 line.
+  installer page monthly for a V18 line. **2026-09-23 RN diff (zero-drift):**
+  tabs still top at Version 17 — no V18 line; zero new per-plugin version
+  entries since 2026-09-10. Sept entries classified: mixer apps v17 (LV1,
+  eMo IEM, Dugan Speech, MyMon, MyFOH — 09-01), TRACT Measure/SPL Meter
+  suite additions (09-07 — already in catalog @60, no per-product build, no
+  raise), Extreme-C/Axis Scope X15 (09-09 — SoundGrid hardware, skip class),
+  Central v17.0.4 (08-02, already known). Diff template for future passes:
+  look for dated PLUGIN entries with exact builds under v17 tab; app,
+  hardware, and fix-only entries are noise.
 
 ### Arturia — release-notes chip 2026-09-17 (47 rows: 9 promoted / 8 observed / 30 skipped; bands 88 green / 0 amber / 12 yellow / 35 none → 91 / 1 / 13 / 30)
 - RE-FETCH RECIPE (verified 2026-09-17): (1) arturia.com product pages carry a "Software" section with exact builds ("Version X.Y.Z.build | size | date") — but NOT on all pages; some render manual-only, so REQUIRE the Software Version block before raising. (2) Resources pages (`/products/<family>/<slug>/resources`) carry Firmware sections with exact versions + dates (MiniLab 3: "Version 1.2.0 | 356.65 KB | 12/19/2024") AND bundled Software sections — Analog Lab V 5.12.5.6878 (2026-09-16) was found on the MiniLab 3 resources page. (3) support.arturia.com hosts firmware articles (MicroFreak Firmware V5). (4) PACE: SEQUENTIAL fetches with 3–5s gaps, 1 concurrent max; 429s observed 2026-09-16, ZERO 429s with pacing on 2026-09-17. On 429: stop arturia.com for the chip, fall back to KVR/forums/press. (5) Exact software builds live behind Arturia Software Center (auth-walled) — public pages expose marketing generations only for some products; KVR remains the exact-build fallback at the @60 ceiling, never the sole source above 60.
@@ -184,6 +192,25 @@ EastWest 11 — all worked to zero by the 1918/2218 chips.
   pile by product type (real instrument vs content pack).
 - Identity guard: Players ≠ full products; original B4 ≠ B4 II (coordinator
   rejected a predecessor-version stamp 2026-09-16).
+- **Native Access installer-binary oracle (verified 2026-09-20 2218 chip):**
+  support.native-instruments.com publishes NO versioned Native Access
+  article — the support-article-with-direct-links oracle resolved NEGATIVE
+  for NI. The stronger NI-specific oracle is the installer binary itself:
+  `native-instruments.com/pages/native-access` Download-Windows CTA →
+  `https://storage.googleapis.com/ni-assets/downloads/Native-Access_2.exe`
+  (NI's own asset bucket, read-only GET/HEAD). Parse the PE version resource
+  with wide-char strings (`strings -e l` — plain ASCII finds nothing):
+  ProductName `Native Access` + ProductVersion is the exact version
+  (3.26.0 verified 2026-09-20, superseding 3.25.2 @92; installer
+  Last-Modified 2026-09-10). Change detector: `curl -sI` the installer URL —
+  on Last-Modified/size change, re-download + parse. Mac Intel/M1 .dmgs not
+  parsed yet (expected to match; verify on first change). Standing rule for
+  ALL manager-app rows: a vendor support article with direct update links is
+  a legitimate version oracle (Softube Central proven 2026-09-19); where the
+  article has no version line, the vendor's own installer binary metadata is
+  the fallback oracle (NI proven 2026-09-20). Never use the community thread
+  title alone — it's corroboration only (its body changelog lagged behind
+  3.26.0).
 
 #### NI chip 2026-09-17 (tier1-ni-releasenotes-2026-09-17) — 340 rows, 5 promotions, assault closed
 - Bands: 386 yellow / 7 amber / 41 green → 383 yellow / 10 amber / 41 green (434 effective tier-1 NI rows).
@@ -219,6 +246,12 @@ EastWest 11 — all worked to zero by the 1918/2218 chips.
 - **Identity flags (pending Luke ruling):** Dopamine = Drumasonic, VEA = iZotope (NI store API vendor fields —
   recommend re-tag/exclude); Crumbs = identity unconfirmable (no store listing, no KVR, no manual — flagged, not
   cataloged); Scarbee Funk Guitarist NI SKU defunct since Sep 2022; "Alchemy Soft Cell" has no verifiable NI identity.
+  2026-09-18 portal-audit flags: `leotokarev` manufacturer row likely misattributed — its only plugin "GainMatch" is a
+  LetiMix product (letimix.com/products/gainmatch), row may not deserve to exist; `spectralayers-bridge` looks like a
+  bogus manufacturer identity — "SpectraLayers Bridge" is Steinberg's Pro Tools AudioSuite bridge plug-in, not a vendor;
+  `unfilteredaudio` row holds "LTL SILVER BULLET mk2" (that's Louder Than Liftoff, not Unfiltered Audio) — misattributed,
+  do not merge into `unfiltered-audio` without review; `con`, `digidesign`, `mpegh` are single-plugin legacy rows whose
+  portal URLs were google-search placeholders — identity review needed.
 - Amplified Funk 2.0.0 @58 REMOVED from current — sole source was a warez mirror; catalog integrity correction.
 - Wayback is a hard stop for NI (429 on archive.org availability API).
 - NI community "previous versions" thread is a stale-value oracle: Amati Viola 1.2.0, Analog Dreams 2.0.3,
@@ -521,6 +554,14 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   rows are distinct from their UADx native plugin counterparts.
 - **UAD Software row** = hub/installer app; UA publishes no public UA
   Connect app version (only legacy "1.6.2" documented). Principled skip.
+  **2026-09-21 manager-app oracle probe — NEGATIVE:** the standing rule's
+  first source (support article with direct update links) was aimed at UA
+  Connect — the "Getting Started with UA Connect" article
+  (help.uaudio.com/hc/en-us/articles/13178401374612) has NO versioned direct
+  links (just "Download the UA Connect app from:
+  www.uaudio.com/downloads/ua-connect/" + "updates itself automatically"),
+  and the downloads page itself carries no version number (bare CTA +
+  system-requirements link). Probe closed; principled skip stands.
 - LUNA is a separate version family — LUNA bundles (LUNA Pro Bundle 2)
   track LUNA (3.0 / renamed LUNA Studio 2026-09-14), never the DSP bundle.
 - Resolved 2026-09-17: the archives article's "UAD Version History &
@@ -849,7 +890,38 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   (Pro-C 2 etc.) lives at /support/downloads: "Legacy plug-ins are
   superseded by newer plug-in versions, but we still keep them up-to-date" —
   re-check for exact newer builds before any raise; do NOT stamp the
-  current-generation version onto legacy rows.
+  current-generation version onto legacy rows. 2026-09-20: /support/downloads
+  confirmed to carry no per-product legacy version numbers — only frozen
+  bundle snapshots (max Pro-Q 3.21 / Pro-C 2.15, both older than stored
+  3.29/2.22), so legacy-row freshness checks are inherently weak; keep
+  "check for exact newer build before any raise" with no expected movement.
+- **Cytomic (HTML-grep recipe verified 2026-09-18):** installer filenames
+  live in the homepage HTML even though the download buttons are
+  JS-triggered — plain curl of https://cytomic.com/ + grep
+  `The[A-Za-z]*_v[0-9.]*` returns TheGlue_vX.Y.Z / TheDrop_vX.Y.Z /
+  TheScream_vX.Y.Z (verified 1.9.3 / 1.10.5 / 1.3.3, zero churn). No
+  SquidGuard captcha hit from datacenter egress on this endpoint. Diff the
+  three filenames on every 12h pass — no browser fetch needed. Search
+  snippets for Cytomic versions are stale/weak third-party only; ignore.
+- **Klanghelm (rendered-session recipe verified 2026-09-18):** klanghelm.com
+  is JS-gated for fetch-service text extraction but FULLY browsable in a
+  rendered browser session. Download labels on product pages carry exact
+  versions: klanghelm.com/contents/products/DC1A ("Download DC1A:
+  (version X.Y.Z)"), /IVGI, /TENSjr (verified DC1A3 3.5.0, IVGI2 2.5.0,
+  TENSjr 1.0.7). Diff the labels on every 12h pass. **MJUC is a permanent
+  vendor-unconfirmable class:** the vendor publishes NO MJUC version number
+  (product page shows none, demo downloads login-walled, news page last
+  numbered release 1.4.2 Feb 2020; 2021/2023 maintenance updates unnumbered).
+  On each pass check the news page (contents/common/news.html) for a
+  numbered MJUC release; without one, keep MJUC yellow — never re-raise on
+  third-party installer filenames alone (see 2026-09-18 demote @70→@60).
+  **2026-09-22 first-hand re-verification (rendered browser task, 4 pages,
+  first attempt, no blocks):** DC1A3 3.5.0, IVGI2 2.5.0, TENSjr 1.0.7 all
+  match stored exactly; full news-history scan confirms NO numbered MJUC
+  release newer than stored 1.8.1 (latest announced numbered release is
+  1.4.2, Feb 2020; 2021/2023 maintenance updates unnumbered — stored 1.8.1
+  is NEWER than the latest announced). Rendered-session route is healthy
+  and cheap (4 pages); prefer it over search-cache on every 12h pass.
 - **Goodhertz (one-fetch recipe verified 2026-09-17):** the whole line is ONE
   shared bundle — "This is the installer for all Goodhertz plugins (both
   trials and purchased plugins, all versions). No other installer is
@@ -863,19 +935,86 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   the check there.
 - **Valhalla DSP (per-product recipe; pointer only in this file — full
   recipe lives in playbooks/valhalla-dsp.md):** fetch each product page at
-  valhalladsp.com/shop/<reverb|delay>/<slug>/ and read the "Current
-  Version: …" line. Known URLs (verified 2026-09-10):
+  valhalladsp.com/shop/<reverb|delay>/<slug>/ and find the "Current
+  Version: …" line — do NOT assume its position: it sits at L117 on Plate,
+  L205 on VintageVerb, L261 on Delay (below the fold there). Use
+  browser.find for "Current Version" instead of reading from a fixed
+  line_start. Known URLs (verified 2026-09-10):
   shop/reverb/valhalla-room/, shop/reverb/valhalla-plate/,
   shop/reverb/valhalla-vintage-verb/, shop/reverb/valhalla-shimmer/,
   shop/reverb/valhalla-supermassive/, shop/reverb/valhallafutureverb/,
   shop/delay/valhalladelay/, shop/delay/valhalla-freq-echo/ —
   SpaceModulator and ÜberMod page URLs were never written down (record them
-  on next fetch). Dual Mac/Win: accept the Mac current, note Win in evidence
-  (Plate 1.6.8/1.6.3, Shimmer/FreqEcho/SpaceModulator/ÜberMod @88–92).
+  on next fetch; they're not in the main shop flow — try the plugin index
+  pages or search-engine discovery). Dual Mac/Win: accept the Mac current,
+  note Win in evidence (Plate 1.6.8/1.6.3, Shimmer/FreqEcho/SpaceModulator/ÜberMod @88–92).
   demos-downloads/ installer filenames corroborate. /my-account/downloads/
   is login-walled and unnecessary. 2026-09-17: Valhalla freshness block
   (10 rows) could not run — browser-service fetch infra failure, 0/10 pages;
-  values NOT re-confirmed; RE-QUEUE on the 12h loop.
+  values NOT re-confirmed; RE-QUEUE on the 12h loop. 2026-09-18: worker
+  block failed AGAIN (0/10, same pattern); parent single-fetch recovery
+  confirmed 3 rows first-hand (Delay 3.0.5, Plate 1.6.8/1.6.3,
+  VintageVerb 4.0.5 — all stored values held). **valhalladsp.com reads as
+  fetch-service-flaky, not vendor-blocked:** parallel batches die, single
+  sequential fetches sometimes succeed. Recipe: retry individually with a
+  pause, not in parallel bursts; if a page 404s/stalls, mark skipped and
+  re-queue — do not churn the whole block. Remaining 7 (Room, Shimmer,
+  Supermassive, FutureVerb, FreqEcho, SpaceModulator, ÜberMod) re-queued
+  for the next 12h pass. 2026-09-18 2218 chip: THIRD consecutive chip with
+  valhalladsp.com fetch-service failure (first single sequential fetch died
+  before any result; block stopped per no-hammer rule) — 7 rows remain
+  unverified since 2026-09-10, the oldest unverified tier-1 values in the
+  catalog. Consider a CDN-fronted or alternate-egress fetch if a 4th chip
+  fails; do NOT route around via unauthenticated scraping tricks.
+  2026-09-19 1018 chip: FOURTH consecutive chip — browser.open died on the
+  FIRST single sequential fetch (runtime terminated the tool; worker
+  respected the stop and did NOT re-attempt via exec — exec policy forbids
+  re-attempting a failed tool). New-angle stopgap: **search-cache
+  corroboration sanctioned** — query `"Valhalla<ProductName>" "Current
+  Version" site:valhalladsp.com`; the snippet surfaces the vendor page's
+  "Current Version" line and the "Last Crawl" timestamp gives freshness
+  context. All 7 stored values corroborated this way (zero raises).
+  This closes "unverified since 2026-09-10" to search-cache-fresh but is
+  NOT a substitute for the first-hand re-fetch — the direct-fetch re-check
+  stays queued on the 12h loop. SpaceModulator/ÜberMod canonical URLs
+  RESOLVED: shop/modulation/valhalla-space-modulator/ (modulation, not
+  reverb/delay — why they hid) and shop/delay/valhalla-uber-mod/.
+  Full details in playbooks/valhalla-dsp.md. 2026-09-20 1018 chip: SIXTH
+  consecutive chip — browser.open died on the FIRST single sequential
+  fetch; search-cache fallback corroborated ALL 10 stored values
+  (crawls <1h–54d, zero raises). Query refinement: the unspaced
+  `"ValhallaFreqEcho" "Current Version"` query surfaces only tag-archive
+  pages; the SPACED variant `"Valhalla Freq Echo" site:valhalladsp.com
+  "Current Version"` surfaces the product page immediately (fresh crawl).
+  Use the spaced variant for FreqEcho. First-hand direct fetch STILL
+  queued on the 12h loop.
+- **SSL (one-fetch recipe verified 2026-09-19 — full recipe in
+  playbooks/ssl.md):** the Zendesk public API
+  (`/api/v2/help_center/en-gb/articles/4849510029085.json`, no auth)
+  returns the article body HTML with per-cell `data-link` installer
+  attributes — parse per `<tr>` for exact Mac/Win installer filenames
+  (ALWAYS read the filename, not the folder: legacy folders keep stale
+  names, e.g. `X-Comp v6.6.7` folder holds v6.8.2 installers). Article
+  `updated_at` is the freshness signal. Rules: prefer installer filename
+  over table label (labels go stale — AutoEQ/AutoDYN/AutoBUS);
+  360° table carries BOTH base (4K B 1.9.8 / 4K E 1.6.8 / 4K G 1.2.7) and
+  "(sonible add-on)" rows (4K B 1.10.2 / 4K E 1.7.1 / 4K G 1.3.1) — catalog
+  maps 4K G = add-on, 4K B/E = base; never cross-stamp. RESOLVED 2026-09-22 (article edited 2026-09-22T08:57:30Z; label now
+  explicit "Acoustifier v1.0.18 (v1.0.19 Windows only)"): raised 1.0.19 →
+  1.0.18 @92 per the dual-platform Mac-current convention, Win noted in
+  evidence. A vendor EXPLICITLY documenting a split Mac/Win version is
+  positive evidence, not an anomaly — stop watching and raise.
+- **2026-09-24 maintenance chip — vendor installer-link ROLLBACK (first
+  sighting, new standing class):** the article's auto-series data-links
+  moved BACKWARD to AutoEQ **1.0.41** / AutoDYN **1.0.5** / AutoBUS
+  **1.0.17** (both platforms, labels agree) from the 1.0.43/1.0.6/1.0.18
+  recorded 2026-09-10 — SSL pulled the newer installers. Corrected
+  downward @92 (green→green data-integrity). Standing rule: a version
+  DECREASE is a legitimate correction when the vendor's own installer
+  links move backward with both platforms + label in agreement — the
+  catalog mirrors what a user downloads TODAY, not the historical high.
+  Keep watching the auto-series next chip for a re-release of the
+  1.0.43-class installers.
 - **Image-Line legacy VSTs (legacy recipe verified 2026-09-17):** IL
   publishes NO public version data for legacy VSTs — VST SKUs discontinued
   (only sold as part of the discontinued FL Studio + ALL Plugins Bundle),
@@ -896,22 +1035,57 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   page with NO version numbers; iZotope support confirms R2 / R2 Surround / R4
   discontinued (superseded by Stratus/Symphony). FREEZE discontinued
   Exponential Audio products at last observed version — stop re-digging them.
-- **Plugin Alliance:** plugin-alliance.com text fetch is automation-blocked —
+- **Plugin Alliance:** plugin-alliance.com text fetch was automation-blocked —
   route Installer-version reads via an alternate source (never the blocked
   fetch); vendor stopped for the chip per rate-limit rule.
+  **2026-09-23 probe (RESOLVED NEGATIVE):** (a) KVR product pages do NOT
+  surface `verwin` version metadata in rendered-text extraction — KVR is a
+  raw-HTML-only oracle for PA. (b) Shopify `…/collections/all/products.json`
+  (all ~288 handles) is NOT automation-blocked, BUT its `updated_at` is a
+  bulk-sync timestamp (every product showed 2026-09-23T22:22:07-07:00 on
+  2026-09-23) — NOT a per-product version-change signal; never use it as a
+  freshness trigger; use it ONLY for handle discovery.
+  **2026-09-24 probe (RESOLVED POSITIVE — block GONE):** the 09-23
+  automation-block is transient — per-product `…/products/{handle}` pages
+  fetch fine via text fetch today. **New primary oracle: each product page
+  carries a full dated "Changelog" section; the TOP entry is the current
+  version** (800rb → 1.4.0 (Jan 27, 2026) MATCH; attacker-plus → 1.10.1
+  (Mar 20, 2026) MATCH — both held). Changelog-top beats the Installer v
+  label (dated + full history, first-hand, no auth). Next: enumerate the
+  ~261 stale PA rows by walking the handle list and diffing changelog top
+  entries; low-rate sequential; stop + log on any 429/block. Standing
+  lesson: vendor blocks are TRANSIENT — re-probe blocked paths periodically.
 - **Softube:** RN index shows 2.6.42 (2026-08-21) but no article links are
   exposed — CONSTRUCT the article URL from the version/date slug
   (…/release-notes-for-version-2-6-42-(released-on-august-21th-2026)) and
   ALWAYS inspect article scope before ANY raise: 2.6.42 applied ONLY to
   "Monoment Bass, Parallels, and Statement Lead" — no "All plug-ins" scope,
   so the other targets stayed at 2.6.41. Family convention (2.6.x) is not a
-  per-product version.
+  per-product version. **2026-09-19 re-check:** RN index still tops at 2.6.42
+  (2026-08-21), no new "All plug-ins" article — family holds at 2.6.41.
+  **Softube Central version oracle (2026-09-19, RESOLVED POSITIVE):** the
+  official Known Issues page `softube.com/us/support/known-issues/softube-central-3-known-issues`
+  (updated 10 Sep 2026) lists "the latest update via direct links below" —
+  `Softube Central-3.0.5-universal.pkg` (Mac) / `Softube Central Setup 3.0.5.exe`
+  (Win) on the `sc3/` manufacturer CDN (both HEAD 200). Central raised
+  2.2.0 → **3.0.5** @90. Recipe: support known-issues pages can carry the
+  current manager-app version when the vendor publishes direct update links;
+  corroborate with CDN HEAD, never guess from the slug alone.
 - **Universal Audio:** official version-history article is DEGRADED — renders
   oldest-first, tops out at 8.7.4 (2016); v9–v12 entries absent in fetched
   text. Do NOT use it for freshness until a working render is confirmed.
   Replacement angle: official UA software-download page version stamp or
   another UA-owned current-release endpoint. Never use the unofficial GitHub
-  UAD mirror.
+  UAD mirror. **2026-09-19 recipe decay:** the archives article's
+  "UAD XX.X.X (Current)" line is GONE — the page now routes current releases
+  through UA Connect and the compat tables only say "Download" (no version
+  numbers). The "read the (Current) line" recipe no longer works; current
+  bundle version is UA Connect-walled (structural block). Softube UAD-*
+  rows held @12.0 per 2026-09-17 re-verification — no positive evidence of
+  supersession found 2026-09-19 (web search turned up no newer UAD release);
+  no-churn rule keeps stored values. Replacement angle candidates: UA Connect
+  release notes on help.uaudio.com if they ever publish the bundle semver,
+  or an official press release naming the current UAD version.
 - **u-he:** dl.u-he.com/releases/ is FRESHER than the public
   u-he.com/downloads/release-archive/ index — the archive LAGS (Zebra 3:
   3.0.1/build 22165 in archive vs 3.0.2/build 22175 on dl.u-he.com).
@@ -927,7 +1101,10 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   **Beta-stamp trap (caught 2026-09-17):** `TyrellN6_300_public_beta` files
   are PUBLIC BETAS, not stable — never decode a `public_beta` filename into
   a stable version. Last stable Tyrell N6 is v3.0 (Apr 2013); u-he.com's
-  TyrellN6 page is literally titled "TyrellN6 Beta". **Freebie-soundset trap:**
+  TyrellN6 page is literally titled "TyrellN6 Beta". **2026-09-22:** index
+  re-fetched first-hand (75 files) — every decoded stable matches stored
+  exactly (27 held; TyrellN6 trap honored again: only public_beta builds on
+  index; Beatzille absent as expected) — zero drift. **Freebie-soundset trap:**
   Bazille Strobos, Blue Flamingo, RePercussion, Zebratron are preset
   SOUNDSETS (paid except Zebratron), not plugins — KVR lists them as
   "Soundware". Tag soundset; their KVR "Product, Version" is the soundset
@@ -938,7 +1115,9 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   unverified≠disproven.
 - **MeldaProduction:** kernel page ("kernel version: 17.10.01") + MPluginManager
   installer (02.30) are healthy re-fetch paths; installer version is NEVER
-  mapped onto plugins.
+  mapped onto plugins. **2026-09-22:** kernel page re-read first-hand —
+  still `installer version: 02.30 · kernel version: 17.10.01`, all 130 rows
+  held (zero-drift; one fetch covers the whole line).
 - **Eventide (H910 conflict RESOLVED 2026-09-17 — it was misattribution, not
   a genuine 3.12.4):** the stored 3.12.4 on `eventide--h910-harmonizer`
   (2026-09-10, bare "Version 3.12.4" snippet, no product attribution) was a
@@ -959,6 +1138,34 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   (infra, not rate-limiting). Installer rows remain JS-hidden in direct
   fetches; the product-scoped Release Notes section on each
   `downloads/?product=<Name>` page is the working freshness oracle.
+  **2026-09-21 second H910-class catch — Precision Time Align:** stored
+  3.11.4 corrected to **3.7.13 @92** — its own page's single RN section tops
+  at 3.7.13 with a full 3.7.x trail (3.2.1–3.7.13) and no 3.11.x anywhere
+  (verified first-hand; the 2026-09-10 "Version 3.11.4 (Mac/Win match)"
+  evidence was an unattributed framework stamp). Same rule as H910: the
+  product's own version trail wins over the framework family number.
+  **2026-09-21 method notes:** the `?product=` value must be the EXACT
+  product key — `?product=Blackhole` renders "No downloads found for selected
+  product" (the site uses `Blackhole%C2%AE`); valid keys are enumerable from
+  the /downloads/ index page's product links. Per-download permalinks
+  (`/downloads/<slug>/`) serve the raw installer binary — dead end for
+  scraping. H9 series individual versioning CONFIRMED per plugin via their
+  own pages (1.3.4 / 1.3.5 / 1.4.4 / 1.5.4 / 2.10.4); the "H9 Plug-In Series"
+  bundle RN (tops 1.3.5) was never stamped onto rows. **Known skips:**
+  Knife Drop — RESOLVED 2026-09-22 as a DATA-INTEGRITY fix, not a version
+  problem. First-hand read of `?product=Knife+Drop` confirms the page
+  renders the H90 Control changelog (top 1.9.15) — the site ignores the
+  product key. Deeper: Knife Drop is a Third Man Hardware dot9-series
+  analog synth/fuzz PEDAL ($299), i.e. HARDWARE, and the vendor publishes
+  NO per-product Knife Drop firmware — the only versioned artifacts are
+  H90 Control and the dot9 firmware family (2.2.7+/2.2.8+ requirements).
+  identity_kind corrected plugin→hardware (matches h9/h90-harmonizer rows);
+  the KVR-only 2.2.0 observation demoted @92→@60 (dot9-family single source,
+  no vendor per-product attribution — MJUC demote pattern). Future chips:
+  no version re-checks for this row (hardware, no vendor oracle); watch only
+  for a vendor-published Knife Drop firmware channel;
+  Music Mouse — docs-only page (User Guide 1.0.1, Keyboard Map 1.0.1), no
+  Downloads/RN section, no oracle coverage.
 - **Voxengo:** official per-product user-guide PDFs carry exact versions
   (voxengo.com/files/userguides/Voxengo<Product>_en.pdf pattern — verified
   for Elephant 5.8, GlissEQ 3.19, SPAN 3.24, TEOTE 1.16, Voxformer 2.23);
@@ -979,12 +1186,84 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   extraction — grep the page HTML for "latest version". smart:limit KVR
   1.1.6 vs manufacturer-page 1.1.5: manufacturer page wins, KVR
   uncorroborated. No public Sparkle/appcast feed found.
+- **Newfangled Audio (snippet-fallback recipe verified 2026-09-18):**
+  per-product release-notes pages at
+  newfangledaudio.com/<slug>-release-notes; the Eventide downloads portal
+  mirrors versions for free/distributed titles
+  (eventideaudio.com/downloads/?product=<Name>) — prefer Eventide downloads
+  / RN, marketing free-download DMGs can lag. **Fallback when page fetch
+  fails:** search-engine snippets of the RN pages reliably surface the
+  newest "X.Y.Z (M/D/YYYY)" heading when the query names the exact page
+  (e.g. "newfangledaudio.com generate release notes latest version") —
+  viable and cheaper than full fetches for unchanged products. Snippet-only
+  confirms = observed (exact match to stored); never raise from a snippet
+  alone.
+- **oeksound (per-product changelog recipe verified 2026-09-21):**
+  oeksound.com/downloads/ renders ONLY the soothe tab server-side — zero
+  mentions of soothe2/soothe3/spiff/bloom, so it is not a per-product oracle
+  (keep it only as the soothe current-version check). The working oracle is
+  the per-product changelog pages https://oeksound.com/changelog/<slug>/ —
+  soothe2, soothe3, spiff, bloom all render full dated history first-fetch,
+  no blocks. Diff the newest dated entry on every 12h pass.
+- **Antares (per-product Zendesk RN articles; fetch-service failure
+  2026-09-21):** per-product release-notes articles at
+  help.antarestech.com/hc/en-us/articles/<id>-<Product>-Release-Notes carry
+  the newest version in the top heading — diff against stored on every 12h
+  pass. 2026-09-21: 26-article block failed fleet-wide on browser-service
+  tool_failure (infra, not vendor — no 429/automation-block observed);
+  search-cache snippets too noisy for the generic product names; re-queue
+  first-hand fetches next chip. Search-cache fallback corroborated
+  AutoTune Pro 11.6.0 (first-party support recall-issue article, 8d crawl).
+  **2026-09-21 re-fetch (25 rows + AutoTune Pro held):** fetch infra healthy
+  again (zero 429s/tool_failures) — the REAL blocker is article-ID
+  discoverability: only the SoundSoap RN article is search-indexed
+  (help.antarestech.com/hc/en-us/articles/41115437724436 — top heading
+  `## **SoundSoap (6.6.0)**`, held); ~14 exact-title/boilerplate/slug/version
+  searches surfaced none of the other 24 article IDs (pirate/SEO-spam excluded
+  per zero-trust). 2 held (SoundSoap 6.6.0 first-hand; Metamorph stored 1.1.1
+  >= V1.1 Feb 2026 press + official YouTube tutorial), 0 raises. **Access +
+  Artist are DISCONTINUED** (replaced by AutoTune 2026, ~Oct 2025, doubly
+  corroborated press — musicradar + mixing.co.kr): stored 9.6.0 / 10.6.0 are
+  TERMINAL for those products; future chips check only for unexpected new
+  RN-article versions, never expect change. SoundSoap article confirms a
+  portfolio-wide .6.x generation (macOS 26 Tahoe support, licensing-stability
+  fixes) — stored versions across the block are consistent with it, but
+  per-product confirmation still requires each product's own article (no
+  inference as verification). **New angle queued:** a JS-rendered browser
+  task using help.antarestech.com's OWN search box to enumerate the 24
+  missing article IDs — unblocks the now-proven-healthy first-hand fetch
+  recipe. **2026-09-22 RESOLVED:** the own-search enumeration worked — a
+  live browser task searched the help-center search box, then expanded the
+  "Articles in this section" sidebar "See more" link to the master Release
+  Notes section index
+  (https://help.antarestech.com/hc/en-us/sections/47811896963476-Release-Notes,
+  all 28 articles). 21/21 requested products resolved; ALL top headings
+  match stored exactly (zero drift — no raises needed): AVOX nine 4.6.0
+  (47969143783956 … 47969258718228), Auto-Key 2.6.0 (41116876682772),
+  Auto-Tune EFX 10 10.6.1 (41116824103700), Hybrid 9.6.0 (47967906101268),
+  Slice/Vocal Compressor/Vocal EQ/Vocodist 1.6.0 (47969246801044,
+  41117241499028, 47968793385620, 47969287023764), AutoTune 2026 1.2.1
+  (47967370217620, updated 09/10/2026), Harmony Engine 4.6.1 (47969228097300),
+  Mic Mod 4.6.0 (47969213903252), Vocal De-Esser/Reverb 1.6.0 (47968350562196,
+  47968668073236). **Renaming trap for future chips:** several articles
+  dropped the AVOX/Auto-Tune prefixes (Aspire, Choir, Duo, Mutator, Punch,
+  Sybil, Throat, Warm, Slice, Vocal Compressor, Vocal EQ, Vocodist, Mic Mod)
+  and Auto-Key→"Auto-Key 2", AutoTune→"AutoTune 2026" — search the current
+  article title, not the catalog name. The master section index is now the
+  standing enumeration oracle: diff its article list on each pass for NEW
+  articles (new product coverage), then open each article for the top
+  heading. Article IDs are stable Zendesk numeric IDs.
 - **Compat re-verify failures:** Klanghelm (klanghelm.com JS-gated) and TAL
   (statement page not directly addressable) could not be re-verified this
   chip — values KEPT per unverified≠disproven (prior-day vendor quotes on
   record), flagged for JS-rendered browser-task re-confirmation. Cableguys
   and Xfer kept on product-scoped vendor evidence with the line-wide caveat
-  documented in notes.
+  documented in notes. **2026-09-18 KVR-mirror probe (Klanghelm):** KVR
+  product pages found for MJUC and TENS jr but neither snippet surfaced an
+  explicit "Product, Version" value; no KVR product-page URL surfaced for
+  DC1A3 or IVGI2. Probe RESOLVED NEGATIVE for this cycle — the KVR mirror
+  is not a working oracle for Klanghelm. Next angle stays the JS-rendered
+  browser-task route; klanghelm.com/downloads page is the target.
 - **changelog_url zero-trust:** must be a FIXED vendor-wide changelog page —
   cleared Antares (antarestech.com/blog is a blog, not a changelog) and
   Sugar Bytes (per-product Looperator URL). Per-product release notes go in
@@ -1037,3 +1316,14 @@ No invented versions. Exact product identity. Banned: successor-generation,
 suite→component, hub-version stamping, DAW-bundle→plugin, guessed values.
 Coordinator re-verifies every raise. No sign-ins, no purchases, no outreach.
 On 429/block: stop that provider for the chip, log, continue elsewhere.
+
+## Parked idea (2026-09-20): demand-driven research via anonymized telemetry — DROPPED for now
+
+Luke considered and declined: value doesn't justify a permission prompt at this stage.
+
+Design if ever revisited (trigger: hundreds+ of active app users):
+- Opt-in only, never silent. First-run card + Settings toggle.
+- Send ONLY unknown plugins (manufacturer + name + format) + total installed count (one number). Never full plugin lists (fingerprintable, scarier prompt, bigger breach liability).
+- No user/machine identifiers; server aggregates to counts immediately, raw reports deleted.
+- Loop: app POSTs unknowns weekly → engine aggregates into demand queue → researched top-down with zero-trust gates → daily push publishes → immutable feed (catalog-version.json) delivers to apps with no app update.
+- Rationale for parking: signal only meaningful at scale; permission friction costs trust and Cursor time today; tier-1 freshness (the core value prop) doesn't need it.

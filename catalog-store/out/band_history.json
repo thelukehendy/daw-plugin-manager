@@ -47,5 +47,54 @@
   "amber": 348,
   "yellow": 1344,
   "note": "Daily push 06:00 (+94 green, +151 amber, -181 yellow; most band movement from 09-17 midday push's +332 tier-1 promotions; since midday: toxic-iii 1.41 @60->@90, H910 3.12.4->2.5.11 integrity correction)"
+ },
+ {
+  "date": "2026-09-19",
+  "green": 3959,
+  "amber": 347,
+  "yellow": 1345,
+  "note": "Daily push 06:00 (+0 green, -1 amber, +1 yellow; only change: MJUC data-integrity demote 1.8.1 @70->@60 per weak-single-source rule; 247 researched across 1018+2218 chips, zero version churn)"
+ },
+ {
+  "date": "2026-09-20",
+  "green": 3959,
+  "amber": 347,
+  "yellow": 1345,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; softube--central 2.2.0\u21923.0.5 @90 green raise; 265 researched across 09-19 1018+2218 chips, zero other version churn)"
+ },
+ {
+  "date": "2026-09-21",
+  "green": 3959,
+  "amber": 347,
+  "yellow": 1345,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; native-instruments--native-access 3.25.2\u21923.26.0 @92 green raise via installer-binary-metadata oracle; 170 researched across 09-20 1018+2218 chips, zero other version churn)"
+ },
+ {
+  "date": "2026-09-22",
+  "green": 3959,
+  "amber": 347,
+  "yellow": 1345,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; celemony--tonalic 1.0.3.003\u21921.0.4.011 @92 green raise; eventide--precision-time-align 3.11.4\u21923.7.13 @92 green data-integrity correction; 120 researched across 09-21 1018+2218 chips, zero other version churn)"
+ },
+ {
+  "date": "2026-09-23",
+  "green": 3958,
+  "amber": 347,
+  "yellow": 1346,
+  "note": "Daily push 06:00 (-1 green, +1 yellow; ssl--ssl-acoustifier 1.0.19->1.0.18 @92 green correction (Mac-current, Win-only 1.0.19); eventide--knife-drop @92->@60 green->yellow data-integrity correction (hardware pedal, KVR-only evidence); 245 researched across 09-22 1018+2218 chips, zero other version churn)"
+ },
+ {
+  "date": "2026-09-24",
+  "green": 3958,
+  "amber": 347,
+  "yellow": 1346,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; zero-churn push; 263 researched across 09-23 1018+2218 chips, 0 promoted / 263 observed: MeldaProduction 130 @17.10.01, Kilohearts 83 @2.4.6, Soundtoys 27 @5.5.5, Goodhertz 22 @3.14.1, FabFilter Pro-Q 3 probe resolved as observed)"
+ },
+ {
+  "date": "2026-09-25",
+  "green": 3958,
+  "amber": 347,
+  "yellow": 1346,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; 106 researched across 09-24 1018+2218 chips, 3 promoted / 103 observed: SSL auto-series vendor installer-link rollback corrections \u2014 autoeq 1.0.43->1.0.41, autodyn 1.0.6->1.0.5, autobus 1.0.18->1.0.17, all @92 green->green; Plugin Alliance 47-row changelog-top freshness enumeration slice 1, all held; SSL watch confirmed no 1.0.43-class re-release)"
  }
 ]

@@ -1,0 +1,13 @@
+{
+  "url": "https://builds.uaudio.com/apps/UA_Connect/UA_Connect_1_10_0_3844_Mac.dmg",
+  "fetched_at": "2026-09-25T19:20:39.754608+00:00",
+  "bytes": 610,
+  "sha256": "4a506b542c369d9e32e0db3c40521aeea4dcc465c063d438e5b357807e701d9d",
+  "method": "HEAD",
+  "tip": "1.10.0",
+  "build": "3844",
+  "last_modified": "Mon, 14 Sep 2026 18:09:48 GMT",
+  "identity": "universal-audio--ua-connect",
+  "hub_app_only": true,
+  "never": "stamp onto UAD suite 12.0 SKUs"
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "plugin_id": "universal-audio--uad-producer-edition",
+    "name": "UAD Producer Edition",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Commerce native plug-in bundle (16 titles / 22 plugs). Not a DSP tip target; DB tip null/1.0 noise.",
+    "public_url": "https://www.sweetwater.com/store/detail/UADProducerEd--universal-audio-uad-producer-edition-native-plug-in-bundle",
+    "evidence": [
+      "UA Editions template (wave6)",
+      "Sweetwater lists as Plug-in Bundle",
+      "sibling UA Collections already identity_kind=bundle"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uad-studio-edition",
+    "name": "UAD Studio Edition",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Commerce edition pack (UA Editions template).",
+    "public_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "evidence": [
+      "UA Editions template; store/Connect sells as edition pack"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uad-signature-edition-v3",
+    "name": "UAD Signature Edition V3",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Commerce edition pack (UA Editions template).",
+    "public_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "evidence": [
+      "UA Editions template"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uadx-essentials-edition",
+    "name": "UADx Essentials Edition",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Commerce edition pack (UA Editions template).",
+    "public_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "evidence": [
+      "UA Editions template; UA product chrome lists UAD Essentials Edition alongside Producer/Studio/Signature"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uadx-signature-edition-v2",
+    "name": "UADx Signature Edition V2",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Commerce edition pack (UA Editions template).",
+    "public_url": "https://www.uaudio.com/downloads/ua-connect/",
+    "evidence": [
+      "UA Editions template"
+    ]
+  },
+  {
+    "plugin_id": "universal-audio--uadx-pultec-passive-eq-collection",
+    "name": "UADx Pultec Passive EQ Collection",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Multi-EQ collection; sibling UAD Pultec row already bundle. Product page: includes three EQs (EQP-1A / MEQ-5 / HLF-3C).",
+    "public_url": "https://www.uaudio.com/products/pultec-passive-eq-collection",
+    "evidence": [
+      "fixtures/identity/ua-pultec-collection.html",
+      "UAD sibling already identity_kind=bundle",
+      "observed_version 1.2.16 is collection train \u2014 do not treat as single-plugin tip"
+    ]
+  },
+  {
+    "plugin_id": "softube--tube-tech-complete-collection-2",
+    "name": "Tube-Tech Complete Collection 2",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Vendor page: 'includes the following plug-ins' (CL 1B Mk II + PE 1C/ME 1B set). Softube Central 2.6.41 stamp is suite-vs-SKU trap.",
+    "public_url": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2",
+    "evidence": [
+      "fixtures/identity/softube-tube-tech-complete.html",
+      "observed_version 2.6.41 = Softube Central cohort"
+    ]
+  },
+  {
+    "plugin_id": "softube--flow-mastering-suite",
+    "name": "Flow Mastering Suite",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Subscription suite of mastering Flows + Softube plugs; not a single DSP binary.",
+    "public_url": "https://www.softube.com/flow-mastering-suite",
+    "evidence": [
+      "fixtures/identity/softube-flow-mastering.html",
+      "observed_version 2.6.41 Softube Central stamp"
+    ]
+  },
+  {
+    "plugin_id": "softube--flow-mixing-suite",
+    "name": "Flow Mixing Suite",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Vendor: 'includes 70+ plug-ins'. Subscription suite.",
+    "public_url": "https://www.softube.com/flow-mixing-suite",
+    "evidence": [
+      "fixtures/identity/softube-flow-mixing.html",
+      "observed_version 2.6.41 Softube Central stamp"
+    ]
+  },
+  {
+    "plugin_id": "softube--passive-active-pack",
+    "name": "Passive-Active Pack",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Vendor: '3-in-1 collection of EQ plugins' (Passive / Active / Focusing).",
+    "public_url": "https://www.softube.com/plug-ins/passive-active-pack",
+    "evidence": [
+      "fixtures/identity/softube-passive.html",
+      "observed_version 2.6.41 Softube Central stamp"
+    ]
+  },
+  {
+    "plugin_id": "softube--abbey-road-studios-brilliance-pack",
+    "name": "Abbey Road Studios Brilliance Pack",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Three treble EQs (RS127 Rack / RS127 Box / RS135) sold as one pack SKU.",
+    "public_url": "https://www.softube.com/plug-ins/abbey-road-brilliance-pack",
+    "evidence": [
+      "fixtures/identity/softube-abbey.html",
+      "observed_version 2.6.41 Softube Central stamp"
+    ]
+  },
+  {
+    "plugin_id": "softube--uad-softube-amp-room-bundle",
+    "name": "UAD Softube Amp Room Bundle",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Explicit Bundle name; UAD-DSP Softube Amp Room pack under softube manufacturer (also Softube\u2194UAD identity trap).",
+    "public_url": "https://www.softube.com/installers",
+    "evidence": [
+      "Name token Bundle",
+      "Softube Amp Room * Suite siblings already identity_kind=bundle"
+    ]
+  },
+  {
+    "plugin_id": "softube--uad-tube-tech-eq-collection",
+    "name": "UAD Tube-Tech EQ Collection",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "UAD DSP collection under softube mfr; observed_version 12.0 is UAD Version History suite tip \u2014 classic Softube-UAD stamp crime.",
+    "public_url": "https://www.softube.com/installers",
+    "evidence": [
+      "observed_version 12.0 = UAD suite tip",
+      "Collection naming; sibling Softube Amp Room suites already bundle"
+    ]
+  },
+  {
+    "plugin_id": "waves--chris-lord-alge-artist-signature-series",
+    "name": "Chris Lord-Alge Artist Signature Series",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "waves.com marks product-data-type=bundle; 6 multi-effect plugins. Component tips must not inherit Waves Central suite stamp onto the series row.",
+    "public_url": "https://www.waves.com/bundles/chris-lord-alge-signature-series",
+    "evidence": [
+      "fixtures/identity/waves-cla.html",
+      "meta product-data-type=bundle",
+      "observed_version 15.0.70.71 Waves Central cohort"
+    ]
+  },
+  {
+    "plugin_id": "waves--eddie-kramer-signature-series",
+    "name": "Eddie Kramer Signature Series",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Official /bundles/ page; '5 intuitive audio plugins'. Component rows already exist (Bass/Drum/Effects/Guitar/Vocal Channel).",
+    "public_url": "https://www.waves.com/bundles/eddie-kramer-signature-series",
+    "evidence": [
+      "fixtures/identity/waves-eddie.html",
+      "product-data-type=bundle",
+      "5 component plugin rows already in catalog"
+    ]
+  },
+  {
+    "plugin_id": "waves--jack-joseph-puig-signature-series",
+    "name": "Jack Joseph Puig Signature Series",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Official /bundles/ page; product-data-type=bundle.",
+    "public_url": "https://www.waves.com/bundles/jack-joseph-puig-signature-series",
+    "evidence": [
+      "fixtures/identity/waves-jjp.html",
+      "product-data-type=bundle"
+    ]
+  },
+  {
+    "plugin_id": "waves--manny-marroquin-signature-series",
+    "name": "Manny Marroquin Signature Series",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Official /bundles/ page; component rows (Delay/Distortion/EQ/Reverb/Tone Shaper/Triple D) already exist.",
+    "public_url": "https://www.waves.com/bundles/manny-marroquin-signature-series",
+    "evidence": [
+      "fixtures/identity/waves-manny.html",
+      "product-data-type=bundle",
+      "6 component plugin rows"
+    ]
+  },
+  {
+    "plugin_id": "waves--tony-maserati-signature-series",
+    "name": "Tony Maserati Signature Series",
+    "identity_kind": "plugin",
+    "proposed_kind": "bundle",
+    "confidence": "high",
+    "why": "Official /bundles/ page; component rows (ACG/B72/DRM/GRP/GTi/HMX/VX1) already exist.",
+    "public_url": "https://www.waves.com/bundles/tony-maserati-signature-series",
+    "evidence": [
+      "fixtures/identity/waves-tony2.html",
+      "product-data-type=bundle",
+      "7 component plugin rows"
+    ]
+  }
+]

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta id="viewport" content="width=device-width, initial-scale=1">
+    <title>What's new?</title>
+    <meta name="keywords" content="New features, What is new, What's new">
+  <link type="text/css" href="flstudio.css" rel="stylesheet">
+<script src="scripts.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var leftFrame = document.getElementById('leftFrame');
+    var rightCol = document.getElementById('rightcol'); 
+    if (window.self !== window.top || window.location.href.indexOf("FL.chm") !== -1) {
+      rightCol.removeAttribute('id');
+      leftFrame.parentNode.parentNode.parentNode.parentNode.classList.add("fixed");
+	 leftFrame.parentNode.remove();
+    }
+    else if (window.location.href.indexOf("http") !== -1) {
+  	  leftFrame.setAttribute('src','../Index_Frame_Left.html');
+
+      if (window.location.href.indexOf("insideFL") !== -1) {
+        document.body.classList.add("insideFl");
+        leftFrame.classList.add("ifr_bh_float");
+        leftFrame.classList.add("menuClosed");
+        leftFrame.onmouseout = function() {leftFrame.classList.add('menuClosed');};
+        leftFrame.onmouseenter = function() {leftFrame.classList.remove('menuClosed');};
+      }
+    }     
+    else{
+  	  leftFrame.setAttribute('src','../index_frame_left_offline.html');
+    }  	
+  } );
+</script>
+</head>
+<body>
+<table class="container">
+<tr>
+  <td>
+    <iframe src="" id="leftFrame" id="leftFrame" class="ifr_bh" scrolling="auto"></iframe>
+  </td>
+  <td id="rightcol">
+
+<p class="SubTopicOf">FL STUDIO</p> 
+
+<h1>New Features in FL Studio 26<i class="h1boxIcon i_fruit"></i> <i class="h1boxIcon i_search"></i> <i class="h1boxIcon i_good"></i> </h1>
+
+<p><b>FL Studio</b> owners enjoy <font color="red"><b>LIFETIME FREE UPDATES</b></font>, so always check for the latest release <a class="extLink" href="https://support.image-line.com/redirect/FLStudioUpdate" target="_blank">here online</a>. For the <b>complete log</b> (including bug-fixes) please check the <a href="WhatsNew.htm"><b>WhatsNew</b></a> Change Log. You can also view the <img src="img_glob/global_video.gif" width="16"> <a class="extLink" href="https://support.image-line.com/redirect/flstudio20_videos" target="_blank">FL Studio YouTube playlist</a>.
+
+<h2 id="26.0">FL Studio 2026 (7 July 2026)</h2>
+
+<p class="justImages ytVideo"><iframe width="800" height="450" src="https://www.youtube.com/embed/IvJ1EAs8Sxw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h3>WHAT'S NEW?</h3>
+
+<ul>
+
+  <li><b>FL Studio:</b>
+
+   <ul>
+
+     <li><b><a href="browser.htm#flcloud_storage">Backup projects to FL Cloud</a></b> - All customers get access to FL Cloud project backups (Free 500 MB, Plus 5 GB & Pro 1 TB). Use <a href="menu_file.htm">File > Save and backup to FL Cloud</a> or enable the option under <a href="songsettings_settings.htm">Project settings</a> > Project > '<b>Backup to FL Cloud storage</b>' to auto-save to FL Cloud on each save. Saved projects appear in the Browser under 'FL Cloud > <b>Project backups</b>'. You can (<span class="KbdShortcut">Right-Click</span>) any project in the Browser to '<b>Download</b>' or '<b>Delete</b>' it.
+
+     <li><b>Tools Menu</b> - <b><a href="menu_tools.htm#audio_logger">Audio Logger</a></b> tool. Similar to the <a href="menu_tools.htm#midi_scorelogger">MIDI Logger</a>, FL Studio is now always recording audio from the Master Mixer Track.
+
+     <li><b>Audio Settings (macOS)</b> - Now includes separate Audio Input & Output device selectors.
+
+     <li><b>MIDI Recording</b> - FL Studio should now more accurately record incoming MIDI events (much less jitter) and also when the Tempo changes during playback.
+
+     <li><b><a href="menu_help.htm">Help Menu</a></b> - Added some guided tutorials (Loop starter tutorial & Step sequencer tutorial). Removed 'Product information'.
+
+     <li><b><a href="menu_tools.htm">Tools Menu</a></b> - Added '<b>Chord Progression tool</b>' and '<b>Remix a song</b>'. 
+
+     <li><b><a href="menu_options.htm">Options Menu</a></b> - Added '<b><a href="envsettings_account.htm">Account Settings</b></a>' option.
+
+     <li><b>Account Tab</b> - Moved '<b>Show license information in the hint panel</b>' option to the <a href="envsettings_account.htm">Account Tab</a> in the Settings window
+
+     <li><b>Projects</b> - When '<b>License Plate</b>' is selected in <a href="envsettings_account.htm">Accounts Settings</a>, the License Plate rather than User Name will be saved in project files.
+
+     <li><b>Welcome Window</b> - New '<b>Remix a song</b>' option that loads and stem-separates a track in the Playlist with a single click. 
+
+     <li><b>Rename pop-ups</b> - Are now slightly wider. Only slightly so you still have something to complain about.
+
+     <li><b>CPU Performance</b> (Windows) - Changed the way the Windows Performance Plan is requested to avoid CPU throttling. 
+
+     <li><b>Communications Panel</b> - Renamed the Communications Panel, '<b>Downloads</b>' Tab to '<b>Transfers</b>'.
+
+     <li><b><a href="envsettings_account.htm">Account</b></a> - New '<b>Account</b>' Tab in the Settings window. Access Image Line account and FL Cloud information. 
+
+     <li><b>Toolbar Panel</b> - <a href="toolbar_panels.htm#toolbar_chordpanel"><b>Chord Detection</b></a>  panel. Detects chords from MIDI, Typing keyboard to piano and note selections in the Piano roll. <b>NOTE:</b> If it's not visible edit the Toolbar to add this new tool. The maximum number of detected notes is limited to 10. 
+
+     <li><b>Popup messages & options</b> - Changed 'Don't show this in the future' options to a more effective 'Remember my choice'. We remember!
+ 
+     <li><b>Improved envelope preset loading</b> - FL Studio uses .fnv format for multiple enveloper editors in the application, some are incompatible. Now .fnv files now show a clear message instead of failing silently, and drag-and-drop behaves consistently.
+
+     <li><b><a href="envsettings_files.htm#pluginmanager">Plugin Manager:</a></b>
+
+      <ul>
+
+        <li><b>Improved speed</b> – Large plugin lists now load faster for a smoother browsing experience.
+
+        <li><b>Rescan all plugins</b> – Added a warning when 'Rescan all' is enabled to prevent accidental long scans.
+
+        <li><b>Waves plugins</b> – Added an option to control whether Waves plugins are always re-verified.
+
+      </ul>
+
+    <li><b>Audio & Instrument Tracks</b> - FL Studio will now indicate which associated Channels will be deleted when deleting an Audio/Instrument mixer track.
+
+    <li><b>Apple Silicon Performance</b> - macOS now uses Audio Workgroups API to make sure audio threads work toward a common deadline. This reduces the risk of underruns when audio CPU usage suddenly increases.
+
+    <li><b>Speechsynth</b> - Shows an message when trying to load a speech synth preset on macOS as it's not compatible.
+
+    <li><b>Plugin Management</b> - <b>Audio Unit</b> (macOS) plugins are now at the end of the '<b>More</b>' plugins list by default to encourage VST usage for compatibility. 
+
+    <li><b>Plugin & Project Pickers</b> - The search text can now be longer than 40 characters.
+
+  </ul>
+
+ <li><b>New Plugins:</b> 
+
+   <ul>
+
+    <li><b><a href="plugins/Transmitter.htm">Transmitter</a></b> (All Plugins Edition) - Splits the input signal into Transient and Sustained audio streams for independent dynamics, spectral shaping and effects processing. The Transient envelope can also act as an internal <a href="plugins/Transmitter.htm#transmitter_automaton">controller</a>.
+
+    <li><b><a href="plugins/FL%20Studio%20Mobile%20Rack.htm">FL Studio Mobile & Rack</a></b> - Get access to all FL Studio Mobile plugins. Most recently added ...
+
+     <ul>
+
+      <li><a href="https://www.image-line.com/fl-studio-learning/fl-studio-mobile-online-manual/html/plugins/FL Studio Mobile_Module_SoundFont_Player.htm" target="_blank"><b>SoundFont Player</b></a> - Loads SF2 SoundFont banks.
+ 
+      <li><b><a href="https://www.image-line.com/fl-studio-learning/fl-studio-mobile-online-manual/html/plugins/FL%20Studio%20Mobile_Module_Note_Arpeggiator.htm" target="_blank">Note Arpeggiator</a></b> - Turn incoming notes into rhythmic, repeating, and re-pitched patterns.
+       
+    </ul>
+ 
+   </ul>
+
+
+  <li><b>Plugin Updates:</b> 
+
+   <ul>
+
+    <li><b><a href="plugins/FLEX.htm">FLEX</a></b> - FLEX has been rebuilt from the ground up with a new synthesis engine offering up to 50% lower CPU use, when used with 2nd generation Packs, alongside a redesigned UI with simplified controls and improved search at both the pack and preset level. 
+
+    <li><b>Gross Beat</b> - New '<a href="plugins/Gross%20Beat.htm#GrossBeat_MainOptions"><b>Trigger slots from MIDI notes</b></a>' option to turn MIDI notes off so they don't trigger slots when Gross beat is focused. Improved processing during small tempo changes (the delay line no longer resets).
+
+    <li><b><a href="plugins/Patcher.htm#patcher_map_rightclickmenu">Patcher > Menu > Show info inside modules</a></b> - Displays the View data inside the Module UI. Otherwise, when deselected it's shown above the Module UI.
+ 
+    <li><b>FPC</b> - You can now drop multiple samples on an FPC Pad to create layers. 
+
+    <li><b>Video Player</b> - Show the last frame when the playback position is beyond the end so the display is not black.
+
+    <li> <b>Patcher</b> - The window can now be smaller when a Surface Tab is selected, for improved UI design.
+
+    <li><b><a href="plugins/wrapper.htm">Plugin Wrapper Menu</a></b> - Added 'Replace' to select from the Plugin Database. 
+
+    <li><b><a href="plugins/MIDI%20Out.htm#MIDIOut_flushmenu">MIDI Out</a></b> - Added a 'Send program change' option. This can help with certain hardware synthesizers that don't have internal controls to ignore these messages.
+
+    <li><b><a href="plugins/Edison.htm">Edison</a></b> - Scripts are no longer re-applied on accept if a preview already exists.
+
+     <li><b><a href="plugins/LuxeVerb.htm#pitch">Luxeverb</a></b> - Added a Pitch <b>Feedforward mode</b> and 100 new presets. 
+
+    <li><b><a href="plugins/DirectWave.htm">DirectWave</a></b> - Added (<span class="KbdShortcut"><b>Shift+Click</b></span>) support to select multiple Zones in the list. Zones are activated when selected with up/down arrow keys.
+  
+    <li><b><a href="plugins/Emphasis.htm">Emphasis</a></b> - Disabled the Low Latency option when Instant Recovery is enabled.
+
+   </ul>
+
+  <li><b>Piano roll:</b>
+
+    <ul>
+
+     <li><b><a href="pianoroll_menu.htm#PianoRollMenu_View">User key labels</a></b> – You can (<span class="KbdShortcut">Right-Click</span>) any Key and select <b>Rename</b> to enter your own text label in all View modes. Select <b>Key labels</b> to manage Note label presets or choose Keyboard Views.  
+
+     <li><a href="pianoroll.htm#chordstamp_icon"><b>Chord Stamp Tool</a></b> – Added top-down and bottom-up modes with voice-leading. <b>Top-down</b> lets your melody lead the harmony, the note you click becomes part of the chord that's built underneath it. <b>Bottom-up</b> is more harmony-driven where FL Studio chooses a chord for you based on where you click. Great for quick ideas and 'inspire me' workflows.
+ 
+     <li><b><a href="pianoroll_chordprogression.htm">Chord Progression Tool</a></b> - When <a href="toolbar_panels.htm#toolbar_typingtopiano">Typing to piano keyboard</a> is selected, you can preview Chords starting from <b>C5</b>. When editing, <b><a href="pianoroll_chordprogression.htm#cpt_view_controls">Chord nudge</a></b> - Allows to you swap chords by clicking and dragging. 
+
+     <li> <b>Piano roll</b> - <a href="pianoroll.htm#PianoRoll_Toolbar">Tools icon</a> (<span class="KbdShortcut"><b>Right-Click</b></span>) now opens the Chord Progression Tool instead of Riff Machine now moved to (<span class="KbdShortcut"><b>Middle-Click</b></span>).
+
+     <li><b>File > Open score</b> - Shows both <b>.mid</b> files in addition to <b>.fsc</b> files as <b>Supported score files</b> is selected in the Operating System browser. Because, when you want a score you don't really care about the format! 
+
+     <li><b>Note editing</b> - Stretching selections in the Piano roll now snap by default, use (<span class="KbdShortcut"><b>Alt</b></span>) for unsnapped stretching. This harmonizes the behavior with other snapped vs unsnapped editing.
+
+     <li><b><a href="pianoroll_menu.htm">Piano roll menu</a></b> – Exporting to 'MIDI' or 'Score sheet' now defaults to the Project's Data Folder when set. Otherwise '... Documents/Image-Line/FL Studio/Presets/Scores' will be used. 
+
+    </ul>  
+
+  <li><b>Channel Rack</b>
+
+  <ul>
+
+    <li><b><a href="channelrack.htm#channelrack_loopstarter">Loop Starter</a></b> - Added a popup menu arrow button next to the Loop Starter dice controls for better menu visibility. <b></b><b>Files</b> downloaded by Loop Starter are now deleted automatically if they're not used to avoid the pop-up. FL Cloud <b>status badge</b> is now visible when using Loop Starter - allowing easier discovery of an extended loop library available to subscribers. Expanded loop library for FL Cloud <b>Plus</b> and FL Cloud <b>Pro</b> subscribers. Added '<b>Show more from this pack</b>' on the track menu to show the pack from which the samples came. Renamed the '<b>Change project tempo</b>' to '<b>Auto tempo</b>'.
+
+    <li><b>Stepsequencer</b> - Changed the default value of ‘Use both mouse buttons in step sequencer’ off.
+
+    <li><a href="channelrack.htm#channelrack_channelbutton"><b>Channel Button</a></b> - '<b>Replace</b>' option to choose from the favorites list.
+
+    <li><b><a href="channelrack.htm#channelrack_optionsmenu">Channel Rack Menu</a></b> – Sort by > <b>Type</b>. Sorts Channels  by their type: e.g Sampler Channels, Instruments/Generators, Automation Clips, Audio Clips.
+
+  </ul>
+
+  <li><b>Playlist:</b>
+
+  <ul>
+
+    <li><b><a href="playlist_audioclip.htm#audioclip_gain">Audio Clip Gain Controls</a></b> (<span class="KbdShortcut"><b>Right-Click</b></span>) - Added <b>Normalize</b> selected Audio Clips with the option to Normalize selected Clips 
+individually or relative to the loudest Clip in the selection. Updated option names to be clearer, Normalize selection individually, Normalize selection as a group.
+
+    <li><b><a href="playlist_audioclip.htm#clip_properties">Audio Clip Properties</b></a> - Now includes Pan control and adapts to whether they apply to a single Audio Clip or multi-selection. Context dependent options allow changes to be applied in a more granular way.
+
+    <li><b><a href="playlist.htm#Playlist_ClipFocus">Audio Clips</a></b> - Added a new mouse cursor to distinguish <b>Clip Resizing</b> from <b>Clip Stretching</b> modes as selected from the <b>Clip Focus panel</b>.
+ 
+    <li><b>Audio Clip Editing</b> - When the Typing to piano option is deselected, holding '<b>A</b>' temporarily switches between <b>Resizing</b> and <b>Stretching</b> Audio Clips.
+
+    <li><b><a href="playlist.htm#Playlist_Menu">Playlist > Edit Menu</a></b> - Use '<b>Select tracks when samples are dropped</b>' to select or not-select Tracks when samples are dropped.
+
+    <li><b><a href="playlist.htm#Playlist_Menu">Playlist Menu</a></b> - Revised the order of items in the Playlist window menu.
+
+    <li><b>Multi-selected sample dropping</b> - No longer select all Playlist tracks when a group of samples is dropped onto the Playlist
+
+    <li><b>Audio Clip Titlebar</b> - Shows Pan and Pitch values if changed from the default. Improved display of Pitch and Pan values in Audio Clip Title bars.
+
+    <li><b>Menu > Automation clips reset remote controls</b> - Providing the option to takeover manually tweaked controls. Previously playback would need to be restarted to have the Automation Clip regain control.
+
+    <li><b>Menu > Collapse / Expand all grouped tracks</b> - Minimize / Expand the height of all Grouped Playlist Tracks.
+
+    <li><b>Menu > Edit patterns in > Scroll to position</b> - Renamed '<b>Adjust start time</b>' to '<b>Scroll to position</b>' switch to more clearly explain the features action.
+
+    <li><b><a href="playlist_performance.htm">Performance Mode</a></b> – Added a pop-up panel when preparing for Performance Mode to select Marker Count and Spacing. Markers are used to trigger Clip Columns. 
+
+  </ul>
+
+  <li><b><a href="mixer.htm#mixer_fxslot_menu">Mixer</a></b>
+
+   <ul>
+
+     <li><b>Mixer</b> - Reset Input and Output selectors to '(none)' on (<span class="KbdShortcut"><b>Alt+Left-Click</b></span>)
+
+     <li><b>FX Slots</b> - Clicking an unused Mixer Effect Slot now shows only the Plugin selection menu.
+
+     <li><b>Menu</b> - Renamed '<b>Open audio logger</b>' in the Mixer Menu/s to '<b>Open audio editor and record</b>' to disambiguate it from the global <a href="menu_tools.htm#audio_logger">Audio Logger</a> tool.
+
+   </ul>
+
+ <li><b>Browser:</b>
+
+   <ul>
+
+    <li><b>Project Backups</b> - Auto saved projects now include the save date in the file name.
+
+    <li><b>.ZIP files</b> - Now show the same menu as for project files including <b>open</b>.
+
+    <li><b>Browser UI</b> - Increased the default width of the Browser to show 3 packs in a row in the Sounds Tab.
+
+    <li><b><a href="browser.htm#Browser_Tab_Menu">Browser Tab (Menu)</b></a> (<span class="KbdShortcut"><b>Right-Click</b></span>) - Option '<b>Show sample waveform</b>' displays preview waveforms in-line. 
+
+  </ul>
+
+  <li><b>Gopher</b>
+
+  <ul>
+
+    <li><b>Gopher</b> - Gopher can now control <a href="gopher/gopher_control.htm">some features</a> in FL Studio and plugins. <b>NOTE:</b> This is an experimental feature.
+
+    <li><b>Improved Scripting support</b> - <b>Gopher</b> is now able to create improved Piano roll and VFX Scripts on demand. For example, ask Gopher for create a Piano roll script to remove random notes from a score.  
+
+  </ul>
+
+   <li><b>MIDI scripting</b>:
+
+   <ul>
+
+     <li>Added <b><a href="midi_scripting.htm#OnRefreshFlags"><code>HW_Dirty flags"</code></a></b> for undo and redo operations.
+
+     <li>Replaced the built-in <b>MCU support</b> with the new <b>MCU script</b>.
+
+     <li>Added '<b><code>setPatternLength</code></b>' and '<b><code>incrementPatternLength</code></b>' functions.
+
+     <li>Added added '<code><b>get_swing</b></code>' and '<code><b>set_swing</b></code>' functions to set and get swing values.
+
+   </ul>
+
+</ul>
+
+<h3 id="26.1.1">2026.1.1 Maintenance Update (13 July 2026)</h3>
+
+<p><u>Changes</u>
+
+<ul>
+
+  <li><b>FL Studio</b> - Sample and plugin names are shown in the Missing Samples window.
+
+  <li><b>FL Studio</b> - Shows the project backup file name in the notification after a download finishes.
+
+  <li><b>FL Studio</b> - Now cleans up Temp folders of previous FL Studio instance/sessions.
+
+  <li><b>FL Studio</b> - The maximum backup count can now be set as low as 1.
+
+  <li><b>Browser</b> - Added 'Remember my choice' option to the message shown when deleting a file from the Browser.
+
+  <li><b>Browser </b>- Colors of buttons are matched to the Sample preview when in 'Samples' view layout.
+
+  <li><b>Gross Beat</b> - Better handling of Tempo changes.
+
+  <li><b>Love Philter</b> - Added undo for non-automatable controls.
+
+  <li><b>MIDI scripting</b> - Added optional destination index to the ClonePattern function.
+
+  <li><b>Plugin Wrapper</b> - Shows the keyboard focus button for less wide plugins.
+
+</ul>
+
+<h3 id="26.1.2">2026.1.2 Maintenance Update (20 July 2026)</h3>
+
+<p><u>Changes</u>
+
+<ul>
+
+  <li><b>Toolbar</b> - Added an overly optimistic (<span class="KbdShortcut">Right-Click</span>) option; '<b>Show forever</b>' to the <a href="toolbar_panels.htm#toolbar_chordpanel"><b>Chord Detection</b></a> panel.
+
+  <li><b>Mixer (menu)</b> - Added 16 vs 32 Bit recording options to the '<b>Disk recording</b>' menu to set the format of recorded audio.
+
+  <li><b>Loop Starter</b> - FL Cloud Pro-tier sample retrieval filters improved.
+
+  <li><b>Piano roll</b> - Key Label presets will now be organized into folders, when the folder they are saved into uses them.
+
+  <li><b>FLEX</b> - Will now show better information when packs images can't be downloaded.
+
+</ul>
+
+<p><u>Bug Fixes</u>
+
+<p><a href="WhatsNew.htm#26.1.2">See here</a>
+
+
+<h3 id="26.1.2">2026.1.3 Maintenance Update (24 July 2026)</h3>
+
+<p><u>Changes</u>
+
+<ul>
+
+  <li><b>Browser</b> - Show 'Stretch' for <b>undo items</b> created while stretching an Audio Clip.
+
+  <li><b>FLEX</b> - Added a button to open the unlock window when the license should be renewed.
+
+  <li><b>MIDI scripting</b> - Added function to clear a Pattern and a refresh flag for changes to the Stpsequencer's Graph Editor.
+
+</ul>
+
+<p><u>Bug Fixes</u>
+
+<p><a href="WhatsNew.htm#26.1.3">See here</a>
+
+<h3 id="26.1.4">2026.1.4 Maintenance Update (2026/08/06)</h3>
+
+<p><u>Changes</u>
+
+<ul>
+
+ <li><b>Channel Rack</b> - Added 'More plugins' and 'Plugin database' items to the Channel Window's 'Replace' menu.
+ <li><b>FLEX</b> - Added visual analysis modes to the settings menu.
+ <li><b>Gopher</b> -  Some control-related requests now execute faster. 
+ <li><b>Visualizer</b> - Faster video export speed. Updated Spout library to latest version on Windows.
+ <li><b>Chord detection</b> - Don't show the floating detected chord text 'forever'.
+ <li><b>MIDI scripting</b> - Add function to identify if a pad in FPC is empty or not. <b>Stepsequencer</b> added a function, duplicateMidiPatternData(), to duplicate note data.
+ <li><b>Diagnostics</b> - Crash log now detects if Windows ARM was used.
+
+</ul>
+
+<p><u>Bug Fixes</u>
+
+<p><a href="WhatsNew.htm#26.1.4">See here</a>
+
+<h3 id="26.1.5">2026.1.5 Maintenance Update (2026/08/18)</h3>
+
+<p><u>Changes</u>
+
+<ul>
+  <li><b>Audio Recording</b> - Added a 24bit option to the Mixer's Disk Recording menu.
+  <li><b>Channel Rack</b> - Added a Delete option to the Channel Settings Window's menu.
+  <li><b>Files</b> - Now defaults to the Project Data folder when saving from a backup version of the project.
+  <li><b>ZGE Visualizer</b> - New effect 'Dubswitcher Dither'.
+  <li><b>MIDI scripting</b> - Limit the duration of DisplayRect functions to maximum 2 seconds.
+</ul>
+
+<h3 id="26.1.6">2026.1.6 Maintenance Update (2026/09/07)</h3>
+
+<p><u>Changes</u>
+
+<ul>
+
+<ul>
+
+  <li><b><a href="fformats_save_export.htm">Export Dialog</a></b> – Added checkboxes to enable rendering of <i>Master</i> and <i>Current</i> when splitting mixer tracks.
+
+  <li><b><a href="menu_view.htm#tool_pluginperformancemonitor">Plugin Performance Monitor</a></b> – Percent values now display fractional precision for more accurate performance readings.
+
+  <li><b>MIDI Controllers</b> – FL Studio now shows a notification when a new controller is connected with the option to enable it.
+
+  <li><b><a href="plugins/Tuner.htm">Tuner</a></b> – Adjusted the UI to improve readability at a distance.
+
+  <li><b>Akai Fire Controller</b> – The device now uses the dedicated script by default.
+
+</ul>
+
+
+</ul>
+
+<p><u>Bug Fixes</u>
+
+<p><a href="WhatsNew.htm#26.1.5">See here</a>
+
+<h3>Continued</h3>
+
+<p><a href="basics_new_25.htm">Explore FL Studio 25 here...</a>
+
+
+<hr>
+    </td>
+   </tr>
+  </table>
+ <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a40ca0496817c62a',t:'MTc5MDM2NjU0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

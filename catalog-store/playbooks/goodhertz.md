@@ -7,3 +7,6 @@
 
 ## Cadence
 - Weekly downloads page check; one version bump updates the whole manufacturer.
+
+## Maintenance re-verification 2026-09-23 (chip 1018)
+- goodhertz.com/downloads/ re-fetched first-hand: still "Goodhertz 3.14.1" (June 30, 2026). All 22 tier-1 rows held, zero drift. verified_at refreshed on all held rows.

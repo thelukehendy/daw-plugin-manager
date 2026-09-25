@@ -1,0 +1,16 @@
+{
+  "url": "https://www.waves.com/downloads",
+  "fetched_at": "2026-09-25T19:19:50.790429+00:00",
+  "bytes": 212,
+  "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+  "negative": true,
+  "source": "wave6-intermittent-stub-or-synthetic",
+  "detector": {
+    "min_bytes": 500,
+    "reject_substrings": [
+      "Incapsula",
+      "_Incapsula_Resource"
+    ],
+    "require_regex": "Mac:\\\\s*V?\\\\d"
+  }
+}
