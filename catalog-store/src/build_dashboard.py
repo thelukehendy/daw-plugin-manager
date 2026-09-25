@@ -86,6 +86,54 @@ TIER_INFO = {
 }
 
 
+# ---------------------------------------------------------------------------
+# Grok Bot advisory contributions — MANUALLY CURATED.
+# Update this block when a new advisory wave lands: bump the scorecard,
+# add a row to the wave table. It is static on purpose: the section must
+# survive every regeneration of the dashboard.
+# ---------------------------------------------------------------------------
+GROK_SCORECARD = (80, 65, 12, 2)  # reviewed, accepted, rejected, deferred
+
+GROK_WAVES = [
+    ("Waves 1–5 · 2026-09-24", "33 / 48",
+     "Yellow resolvability taxonomy + stop-queries (adopted into the engine); "
+     "vendor-retraction protocol; Waves browser-fetch recipe (never stamp V17 "
+     "across SKUs); Plugin Alliance identity guards; machine-countable "
+     "<code>research_attempts</code> note vocabulary; confidence-band "
+     "correction (green ≥85, not ≥90)."),
+    ("Wave 6 · 2026-09-25", "12 / 12",
+     "Diggable-113 disposition (82 hub-walled / 13 oracle-found / 12 "
+     "oracle-absent / 6 reclass); Moog public oracle (9 slugs); Sonnox "
+     "retirement + freeze; NI electron-updater YAML; Waves downloads canary; "
+     "UA Connect DMG; IK Product Manager CDN Referer behavior; Spitfire "
+     "CloudFront path; UA Editions + Image-Line identity reclass; tier-2 "
+     "recon top-20 (scout only)."),
+    ("Wave 7 · 2026-09-25", "11 / 11",
+     "Seven chip-ready oracle packs (fetch recipe + parse rule + golden and "
+     "negative fixtures); mf-105s fixture gap closed; tier-2 top-5 wiring "
+     "specs (scout only); tier-1 identity sweep — 18 bundle-reclass "
+     "candidates + 17-item false-positive allowlist; KORG news-title version "
+     "feed unlock (TRINITY 1.1.0)."),
+    ("Wave 8 · 2026-09-25", "9 / 9",
+     "Cohort-stamp contamination hunt (178 candidate IDs + honest-train "
+     "guards); vendor-retraction protocol v2 (13 triggers) after v1 broke on "
+     "all three stress incidents; pre-registered falsification conditions "
+     "for every accepted chip; hostile-source gate (caught an amber tip "
+     "sourced from vstorrent.org); successor-URL stamp contamination; "
+     "Mac/Win silent-higher detection (oeksound bloom); identity classifier "
+     "v2 with measured precision/recall."),
+]
+
+_grok_rows = "\n".join(
+    f"<tr><td><b>{w}</b></td><td class=num>{s}</td><td>{d}</td></tr>"
+    for (w, s, d) in GROK_WAVES)
+_rev, _acc, _rej, _dfd = GROK_SCORECARD
+GROK_SECTION = f"""<details><summary>Grok Bot advisory contributions — what the advisor suggested, what the operator accepted</summary><div class="dbody">
+<p class="note">Grok Bot is a second AI working as an <b>advisor only</b>: it posts suggestions to <code>advisory/grok-inbox/</code> on GitHub; the operator reviews every file and posts <b>ACCEPTED / REJECTED / DEFERRED</b> verdicts in <code>advisory/verdicts.md</code>. <b>Nothing it claims becomes catalog data until the operator re-verifies it first-hand.</b> Scorecard so far: <b>{_acc} accepted</b> of {_rev} reviewed ({_rej} rejected, {_dfd} deferred). Accepted items below are designs, detection recipes, and evidence packs — the catalog changes they inform are made separately by the research engine.</p>
+<table><tr><th>Wave</th><th class=num>Accepted / reviewed</th><th>Contributions adopted</th></tr>
+{_grok_rows}</table></div></details>"""
+
+
 def band_counts(con):
     bands = dict(con.execute(BAND_SQL).fetchall())
     return {b: bands.get(b, 0) for b in ("green", "amber", "yellow")}
@@ -201,6 +249,7 @@ input[type=search]{{width:100%;padding:8px;margin-bottom:8px;border:1px solid #d
 {tier_blocks_html}
 <script>function fq(el){{var q=el.value.toLowerCase();var t=el.parentElement.querySelector('table');t.querySelectorAll('tr').forEach(function(r,i){{if(i>0)r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'}})}}</script>
 </div></details>
+{GROK_SECTION}
 <details open><summary>Confidence history</summary><div class="dbody">
 <table><tr><th>Date</th><th class=num>Green</th><th class=num>Amber</th><th class=num>Yellow</th><th>Note</th></tr>
 {hist_rows}</table></div></details>
