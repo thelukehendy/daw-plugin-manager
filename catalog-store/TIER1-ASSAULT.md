@@ -1004,6 +1004,17 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   1.0.18 @92 per the dual-platform Mac-current convention, Win noted in
   evidence. A vendor EXPLICITLY documenting a split Mac/Win version is
   positive evidence, not an anomaly — stop watching and raise.
+- **2026-09-24 maintenance chip — vendor installer-link ROLLBACK (first
+  sighting, new standing class):** the article's auto-series data-links
+  moved BACKWARD to AutoEQ **1.0.41** / AutoDYN **1.0.5** / AutoBUS
+  **1.0.17** (both platforms, labels agree) from the 1.0.43/1.0.6/1.0.18
+  recorded 2026-09-10 — SSL pulled the newer installers. Corrected
+  downward @92 (green→green data-integrity). Standing rule: a version
+  DECREASE is a legitimate correction when the vendor's own installer
+  links move backward with both platforms + label in agreement — the
+  catalog mirrors what a user downloads TODAY, not the historical high.
+  Keep watching the auto-series next chip for a re-release of the
+  1.0.43-class installers.
 - **Image-Line legacy VSTs (legacy recipe verified 2026-09-17):** IL
   publishes NO public version data for legacy VSTs — VST SKUs discontinued
   (only sold as part of the discontinued FL Studio + ALL Plugins Bundle),
@@ -1024,7 +1035,7 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   page with NO version numbers; iZotope support confirms R2 / R2 Surround / R4
   discontinued (superseded by Stratus/Symphony). FREEZE discontinued
   Exponential Audio products at last observed version — stop re-digging them.
-- **Plugin Alliance:** plugin-alliance.com text fetch is automation-blocked —
+- **Plugin Alliance:** plugin-alliance.com text fetch was automation-blocked —
   route Installer-version reads via an alternate source (never the blocked
   fetch); vendor stopped for the chip per rate-limit rule.
   **2026-09-23 probe (RESOLVED NEGATIVE):** (a) KVR product pages do NOT
@@ -1033,10 +1044,17 @@ Bands 252 yellow / 2 amber / 3 green → 243 yellow / 11 amber / 3 green.
   (all ~288 handles) is NOT automation-blocked, BUT its `updated_at` is a
   bulk-sync timestamp (every product showed 2026-09-23T22:22:07-07:00 on
   2026-09-23) — NOT a per-product version-change signal; never use it as a
-  freshness trigger. (c) Per-product `…/products/{handle}` pages remain
-  blocked (browser-service tool_failure). Next angle: rendered-browser
-  enumeration of the Installer v labels, using the products.json handle list
-  for exact target URLs.
+  freshness trigger; use it ONLY for handle discovery.
+  **2026-09-24 probe (RESOLVED POSITIVE — block GONE):** the 09-23
+  automation-block is transient — per-product `…/products/{handle}` pages
+  fetch fine via text fetch today. **New primary oracle: each product page
+  carries a full dated "Changelog" section; the TOP entry is the current
+  version** (800rb → 1.4.0 (Jan 27, 2026) MATCH; attacker-plus → 1.10.1
+  (Mar 20, 2026) MATCH — both held). Changelog-top beats the Installer v
+  label (dated + full history, first-hand, no auth). Next: enumerate the
+  ~261 stale PA rows by walking the handle list and diffing changelog top
+  entries; low-rate sequential; stop + log on any 429/block. Standing
+  lesson: vendor blocks are TRANSIENT — re-probe blocked paths periodically.
 - **Softube:** RN index shows 2.6.42 (2026-08-21) but no article links are
   exposed — CONSTRUCT the article URL from the version/date slug
   (…/release-notes-for-version-2-6-42-(released-on-august-21th-2026)) and

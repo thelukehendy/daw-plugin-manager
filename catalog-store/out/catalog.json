@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-24T13:02:30Z",
+  "updatedAt": "2026-09-25T13:03:51Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -7475,7 +7475,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/flanger",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -15987,7 +15987,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/b-15n",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -28024,7 +28024,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bm60",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -29664,7 +29664,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hg-2",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -30623,7 +30623,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.5",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -39297,7 +39297,7 @@
       "popularityTier": 1,
       "latestVersion": "1.12.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/gav19t",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -42976,7 +42976,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/click-boom",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -48370,7 +48370,7 @@
       "popularityTier": 1,
       "latestVersion": "3.5.0",
       "versionSourceUrl": "https://klanghelm.com/contents/products/DC1A.html",
-      "versionVerifiedAt": "2026-09-10T03:56:59Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -52396,7 +52396,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/herbert",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -57818,7 +57818,7 @@
       "popularityTier": 1,
       "latestVersion": "1.13.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/e646-vs",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -57846,7 +57846,7 @@
       "popularityTier": 1,
       "latestVersion": "1.12.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/e765-rt",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -71632,7 +71632,7 @@
       "popularityTier": 1,
       "latestVersion": "1.5.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/be-100",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -71660,7 +71660,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/buxom-betty",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -71688,7 +71688,7 @@
       "popularityTier": 1,
       "latestVersion": "1.5.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/ds-40",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -73347,7 +73347,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/800rb",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -87263,7 +87263,7 @@
       "popularityTier": 1,
       "latestVersion": "2.5.0",
       "versionSourceUrl": "https://klanghelm.com/contents/products/IVGI.html",
-      "versionVerifiedAt": "2026-09-10T03:56:59Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -104305,7 +104305,7 @@
       "popularityTier": 1,
       "latestVersion": "1.8.1",
       "versionSourceUrl": "https://klanghelm.com/contents/common/news.html",
-      "versionVerifiedAt": "2026-09-19T05:30:33Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -121090,7 +121090,7 @@
       "popularityTier": 1,
       "latestVersion": "1.18.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/character",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -138068,7 +138068,7 @@
       "popularityTier": 1,
       "latestVersion": "3.7.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/dsm-v3",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -150776,7 +150776,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/attacker-plus",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -150919,7 +150919,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/de-verb-plus",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -150947,7 +150947,7 @@
       "popularityTier": 1,
       "latestVersion": "1.16.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/drumxchanger",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -150976,7 +150976,7 @@
       "popularityTier": 1,
       "latestVersion": "1.11.3",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/eq-ranger-plus",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -151129,7 +151129,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/hawkeye",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -151731,7 +151731,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.9",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -151758,7 +151758,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.8",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -151833,7 +151833,7 @@
       "popularityTier": 1,
       "latestVersion": "1.9.8",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -151860,7 +151860,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.8",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -151886,7 +151886,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.1",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T11:02:23Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -151912,7 +151912,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.18",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-23T05:23:09Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -151958,7 +151958,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.1",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T11:02:23Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -151984,7 +151984,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.1",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152010,7 +152010,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.4",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152079,7 +152079,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.3",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152105,7 +152105,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.3",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152131,7 +152131,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.3",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152157,7 +152157,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152183,7 +152183,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.3",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152278,7 +152278,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152304,7 +152304,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152330,7 +152330,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152356,7 +152356,7 @@
       "popularityTier": 1,
       "latestVersion": "1.5.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152404,7 +152404,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.6",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152431,7 +152431,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.7",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-15T05:31:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152457,7 +152457,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152483,7 +152483,7 @@
       "popularityTier": 1,
       "latestVersion": "1.9.6",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152509,7 +152509,7 @@
       "popularityTier": 1,
       "latestVersion": "2.10.6",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152535,7 +152535,7 @@
       "popularityTier": 1,
       "latestVersion": "6.8.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152561,7 +152561,7 @@
       "popularityTier": 1,
       "latestVersion": "6.9.5",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152587,7 +152587,7 @@
       "popularityTier": 1,
       "latestVersion": "6.9.4",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152613,7 +152613,7 @@
       "popularityTier": 1,
       "latestVersion": "6.8.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152639,7 +152639,7 @@
       "popularityTier": 1,
       "latestVersion": "6.8.3",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152666,7 +152666,7 @@
       "popularityTier": 1,
       "latestVersion": "6.8.4",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152692,7 +152692,7 @@
       "popularityTier": 1,
       "latestVersion": "6.10.15",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152718,7 +152718,7 @@
       "popularityTier": 1,
       "latestVersion": "6.9.3",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152744,7 +152744,7 @@
       "popularityTier": 1,
       "latestVersion": "6.9.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152771,7 +152771,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152817,7 +152817,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152843,7 +152843,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.4",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152869,7 +152869,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152936,7 +152936,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.4",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152962,7 +152962,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -152988,7 +152988,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -153035,7 +153035,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.2",
       "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T03:49:36Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -153061,7 +153061,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.4",
       "versionSourceUrl": "https://www.kvraudio.com/product/x-orcism-ii-by-solid-state-logic-ssl",
-      "versionVerifiedAt": "2026-09-10T09:50:22Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -153085,13 +153085,14 @@
       "notes": "KVR product https://www.kvraudio.com/product/autobus-by-solid-state-logic-ssl",
       "appleSilicon": "native",
       "popularityTier": 1,
-      "latestVersion": "1.0.18",
-      "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T11:02:23Z",
+      "latestVersion": "1.0.17",
+      "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "SSL official installer filename 1.0.18 supersedes stale KVR 1.0.17"
+        "installer filename on official vendor domain (88)",
+        "Mac+Win filenames agree and match table label (+4)"
       ]
     },
     {
@@ -153111,13 +153112,14 @@
       "notes": "KVR product https://www.kvraudio.com/product/autodyn-by-solid-state-logic-ssl",
       "appleSilicon": "native",
       "popularityTier": 1,
-      "latestVersion": "1.0.6",
-      "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T11:02:23Z",
+      "latestVersion": "1.0.5",
+      "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "SSL official installer filename 1.0.6 supersedes stale KVR 1.0.5"
+        "installer filename on official vendor domain (88)",
+        "Mac+Win filenames agree and match table label (+4)"
       ]
     },
     {
@@ -153137,13 +153139,14 @@
       "notes": "KVR product https://www.kvraudio.com/product/autoeq-by-solid-state-logic-ssl",
       "appleSilicon": "native",
       "popularityTier": 1,
-      "latestVersion": "1.0.43",
-      "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads",
-      "versionVerifiedAt": "2026-09-10T11:02:23Z",
+      "latestVersion": "1.0.41",
+      "versionSourceUrl": "https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-Plug-in-Downloads",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
-        "SSL official installer filename 1.0.43 supersedes stale KVR 1.0.41"
+        "installer filename on official vendor domain (88)",
+        "Mac+Win filenames agree and match table label (+4)"
       ]
     },
     {
@@ -174842,14 +174845,14 @@
       ],
       "minMacOS": "12.0",
       "updatePortalUrl": "https://www.plugin-alliance.com/products/cenozoix-compressor",
-      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.17.0@https://www.plugin-alliance.com/products/mpressor",
+      "notes": "Seed catalog entry. Refresh remote catalog for live latest versions. verifiedPublic:1.1.3@https://www.plugin-alliance.com/products/cenozoix-compressor",
       "portalApp": "PA Installation Manager",
       "requiresIlok": true,
       "appleSilicon": "native",
       "popularityTier": 1,
       "latestVersion": "1.1.3",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/cenozoix-compressor",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -175502,7 +175505,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.7",
       "versionSourceUrl": "https://klanghelm.com/contents/products/TENSjr.html",
-      "versionVerifiedAt": "2026-09-10T03:56:59Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -209329,7 +209332,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.3",
       "versionSourceUrl": "https://oeksound.com/changelog/bloom/",
-      "versionVerifiedAt": "2026-09-10T05:23:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -209357,7 +209360,7 @@
       "popularityTier": 1,
       "latestVersion": "1.9.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_2098-eq",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209420,7 +209423,7 @@
       "popularityTier": 1,
       "latestVersion": "3.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_xl-v3",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209448,7 +209451,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_aura",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209476,7 +209479,7 @@
       "popularityTier": 1,
       "latestVersion": "1.12.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_bassdude",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209504,7 +209507,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_blackdist2",
-      "versionVerifiedAt": "2026-09-10T04:09:07Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209532,7 +209535,7 @@
       "popularityTier": 1,
       "latestVersion": "1.12.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_bluechorus2",
-      "versionVerifiedAt": "2026-09-10T04:09:07Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209628,7 +209631,7 @@
       "popularityTier": 1,
       "latestVersion": "1.11.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_cleansweep-pro",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209684,7 +209687,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_clipper",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209768,7 +209771,7 @@
       "popularityTier": 1,
       "latestVersion": "1.6.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-focusrite-sc",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209796,7 +209799,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-n",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209880,7 +209883,7 @@
       "popularityTier": 1,
       "latestVersion": "1.5.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_console-ssl-9000-j",
-      "versionVerifiedAt": "2026-09-10T04:09:06Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209908,7 +209911,7 @@
       "popularityTier": 1,
       "latestVersion": "2.16.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_control-v2",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209965,7 +209968,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_crispytuner",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -209993,7 +209996,7 @@
       "popularityTier": 1,
       "latestVersion": "1.9.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_delay-2500",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210161,7 +210164,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_enhancer",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210189,7 +210192,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_glue",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210469,7 +210472,7 @@
       "popularityTier": 1,
       "latestVersion": "1.13.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_megadual",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210581,7 +210584,7 @@
       "popularityTier": 1,
       "latestVersion": "1.7.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_oberhausen",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210665,7 +210668,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_paneq",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210693,7 +210696,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/brainworx-bx_pulsar",
-      "versionVerifiedAt": "2026-09-10T04:06:01Z",
+      "versionVerifiedAt": "2026-09-25T05:28:46Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210789,7 +210792,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rockergain100",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210873,7 +210876,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_rooms",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210901,7 +210904,7 @@
       "popularityTier": 1,
       "latestVersion": "2.13.1",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_saturator-v2",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -210985,7 +210988,7 @@
       "popularityTier": 1,
       "latestVersion": "1.15.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_stereomaker",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -211041,7 +211044,7 @@
       "popularityTier": 1,
       "latestVersion": "1.10.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_subsynth",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -211069,7 +211072,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_tonebox",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -211097,7 +211100,7 @@
       "popularityTier": 1,
       "latestVersion": "1.9.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/bx_townhouse-buss-compressor",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -212544,7 +212547,7 @@
       "popularityTier": 1,
       "latestVersion": "2.2.0",
       "versionSourceUrl": "https://www.plugin-alliance.com/products/elysia-alpha-compressor-v2",
-      "versionVerifiedAt": "2026-09-10T04:06:02Z",
+      "versionVerifiedAt": "2026-09-25T05:38:06Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -216262,7 +216265,7 @@
       "popularityTier": 1,
       "latestVersion": "1.5.1",
       "versionSourceUrl": "https://oeksound.com/downloads/",
-      "versionVerifiedAt": "2026-09-10T04:02:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -216296,7 +216299,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.3",
       "versionSourceUrl": "https://oeksound.com/downloads/",
-      "versionVerifiedAt": "2026-09-10T04:02:35Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 88,
       "versionConfidenceReasons": [
@@ -216322,7 +216325,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.5",
       "versionSourceUrl": "https://oeksound.com/downloads/",
-      "versionVerifiedAt": "2026-09-10T04:56:43Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [
@@ -216342,7 +216345,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.4",
       "versionSourceUrl": "https://oeksound.com/downloads/",
-      "versionVerifiedAt": "2026-09-10T04:56:43Z",
+      "versionVerifiedAt": "2026-09-24T10:18:09-07:00",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 92,
       "versionConfidenceReasons": [

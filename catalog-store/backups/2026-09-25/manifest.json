@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-25",
+  "bands": {
+    "green": 3958,
+    "amber": 347,
+    "yellow": 1346
+  },
+  "manufacturers": 660,
+  "plugins": 9494,
+  "accepted": 5651,
+  "commit_sha": "0c5c949a817b3eac785c01c1114d50be994d7dc3"
+}

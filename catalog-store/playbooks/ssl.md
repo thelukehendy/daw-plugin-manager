@@ -20,6 +20,10 @@
 - **Page bug (2026-09-19):** the "360 Link v1.4.8" Mac cell's data-link is the literal string "data-link" (malformed); Win installer confirms 1.4.8.
 - Meter Pro still SSL Download Manager / Complete Access only (do not map to Meter 1.6.6).
 
+## Maintenance chip 2026-09-24 ~10:18 PT — vendor installer-link ROLLBACK (first sighting)
+- Article `updated_at` still 2026-09-22T08:57:30Z, but the auto-series `data-link`s now point BACKWARD: installers serve AutoEQ **1.0.41** / AutoDYN **1.0.5** / AutoBUS **1.0.17** (BOTH platforms, labels agree) — down from 1.0.43/1.0.6/1.0.18 recorded 2026-09-10. SSL pulled/reverted the newer installers; catalog corrected 1.0.43→1.0.41, 1.0.6→1.0.5, 1.0.18→1.0.17 @92 (green→green data-integrity, old rows superseded).
+- **Standing rule (new class):** a version DECREASE is a legitimate correction when the vendor's own installer links move backward with both platforms + label in agreement. Do NOT treat the old higher version as "the truth" — the catalog mirrors what a user downloads TODAY. Keep watching the auto-series on the next chip for a re-release of the 1.0.43-class installers.
+
 ## Confidence raise 18 (2026-09-10 ~3:50 AM PT)
 - **+5** via support article [SSL Plug-in Downloads](https://support.solidstatelogic.com/hc/en-gb/articles/4849510029085-SSL-and-Harrison-Plug-in-Downloads):
   - Exact: 4K G **1.3.1**, DeEss **1.4.1**

@@ -460,3 +460,15 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - 0 plugin changes since the 09-23 push — zero-churn push: 263 plugins researched across the 09-23 1018 + 2218 chips (0 promoted, 263 observed, all rows held): MeldaProduction 130 @17.10.01, Kilohearts 83 @2.4.6, Soundtoys 27 @5.5.5, Goodhertz 22 @3.14.1; FabFilter Pro-Q 3 probe resolved (3.29 held; 3.31/3.33/3.35 on the page are other products, not Pro-Q 3).
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Push mechanics: backup `backups/2026-09-24/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-25 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **660** (+0), plugins **9,494** (+0), accepted **5,651** (+0); green **3,958** (+0), amber **347** (+0), yellow **1,346** (+0).
+- 106 plugins researched across the 09-24 1018 + 2218 chips (3 promoted, 103 observed). 3 version corrections since the 09-24 push — all SSL auto-series vendor installer-link rollbacks, green→green @92 (documented in the 09-24 chip notes; version decreases are legitimate corrections when the vendor re-points installers):
+  - **ssl--ssl-autoeq** 1.0.43 → **1.0.41**
+  - **ssl--ssl-autodyn** 1.0.6 → **1.0.5**
+  - **ssl--ssl-autobus** 1.0.18 → **1.0.17**
+- Identity/data-integrity fix: plugin-alliance--tbtech-cenozoix-compressor seed notes re-mapped to the correct product page (was pointing at mpressor).
+- Freshness: Plugin Alliance 47-row changelog-top enumeration slice 1 — all held; SSL auto-series Zendesk watch — no 1.0.43-class re-release. 100 export rows carry refreshed `versionVerifiedAt` only.
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-25/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
