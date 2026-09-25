@@ -1,0 +1,1031 @@
+{
+ "source": "luke-studio-mac scan snapshot (opted in by Luke 2026-09-25)",
+ "catalogBuildId": "2026-09-25T21:25:48Z",
+ "basis": "Only golden-verified matches (catalog row id hand-checked; vendor, name and version line agree). Accept or reject row by row.",
+ "count": 57,
+ "proposals": [
+  {
+   "catalogPluginId": "steinberg--reason-rack-plugin",
+   "installedName": "Reason Rack",
+   "installedVersions": [
+    "12.7.4d3"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.propellerheads.reasonrackplugin.au",
+     "se.propellerheads.reasonrackplugin.vst"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Reas",
+      "subtype": "ReEf"
+     },
+     {
+      "manufacturer": "Reas",
+      "subtype": "ReIn"
+     },
+     {
+      "manufacturer": "Reas",
+      "subtype": "ReMI"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "applied-acoustics--ultra-analog-session",
+   "installedName": "Ultra Analog Session",
+   "installedVersions": [
+    "1.1.5"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.applied-acoustics.uas.au",
+     "com.applied-acoustics.uas.vst"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "applied-acoustics--strum-acoustic-session",
+   "installedName": "Strum Acoustic Session",
+   "installedVersions": [
+    "1.0.3"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.applied-acoustics.strum-acoustic-session.au",
+     "com.applied-acoustics.strum-acoustic-session.vst"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "native-instruments--b4",
+   "installedName": "B4 II",
+   "installedVersions": [
+    "2.0.3.009"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "B4 II.MusicDevice.component",
+     "B4 II.Synth.vst"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "native-instruments--b4",
+   "installedName": "B4 II FX",
+   "installedVersions": [
+    "2.0.3.009"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "B4 II.FX.vst"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "wa-production--drifter",
+   "installedName": "Drifter",
+   "installedVersions": [
+    "1.0.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.w.a.production.Drifter"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "WAPr",
+      "subtype": "WDri"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "wa-production--ignition",
+   "installedName": "Ignition",
+   "installedVersions": [
+    "1.0.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.w.a.production.Ignition"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "WAPr",
+      "subtype": "WIgn"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "air--airchorus",
+   "installedName": "AIRChorus",
+   "installedVersions": [
+    "2.0.1"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.wizoo.AIR Chorus"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "digidesign--invert-duplicate",
+   "installedName": "Invert-Duplicate",
+   "installedVersions": [
+    "26.4.1.179"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.digidesign.plugin.Invert-Duplicate"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--lindell-audio-6x-500",
+   "installedName": "6X-500",
+   "installedVersions": [
+    "1.2.0",
+    "1.2.2"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.lindellaudio.6X-500"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "LBp2"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--lindell-audio-7x-500",
+   "installedName": "7X-500",
+   "installedVersions": [
+    "1.2.0",
+    "1.2.2"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.lindellaudio.7X-500"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "LBc2"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--lindell-audio-channelx",
+   "installedName": "ChannelX",
+   "installedVersions": [
+    "1.2.0",
+    "1.2.2"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.lindellaudio.ChannelX"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "LCS1"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--lindell-audio-254e",
+   "installedName": "Lindell 254E",
+   "installedVersions": [
+    "1.2.0",
+    "1.2.2"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.lindellaudio.254E"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "LBc3"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--lindell-audio-354e",
+   "installedName": "Lindell 354E",
+   "installedVersions": [
+    "1.0.0",
+    "1.0.4"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.lindellaudio.Lindell354E"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "LBc4"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--lindell-audio-te-100",
+   "installedName": "Lindell TE-100",
+   "installedVersions": [
+    "1.1.1",
+    "1.1.3"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.lindellaudio.TE-100"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "TEq1"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--lindell-audio-pex-500",
+   "installedName": "PEX-500",
+   "installedVersions": [
+    "1.2.0",
+    "1.2.2"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "se.lindellaudio.PEX-500"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "LBe1"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "antares--auto-key",
+   "installedName": "Auto-Key",
+   "installedVersions": [
+    "2.6.0.84"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.antares.autokey"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Antr",
+      "subtype": "AKey"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "celemony--melodyne",
+   "installedName": "Melodyne",
+   "installedVersions": [
+    "5.4.2"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.celemony.melodyne.aax",
+     "com.celemony.melodyne.au",
+     "com.celemony.melodyne.vst3"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "CLMY",
+      "subtype": "MPLG"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "eventide--quadravox",
+   "installedName": "Quadravox",
+   "installedVersions": [
+    "3.10.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.eventide.quadravox"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Tide",
+      "subtype": "QudW"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "fabfilter--fabfilter-micro",
+   "installedName": "FabFilter Micro",
+   "installedVersions": [
+    "1.32"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.fabfilter.Micro.AAX.1",
+     "com.fabfilter.Micro.AU.1",
+     "com.fabfilter.Micro.Clap.1",
+     "com.fabfilter.Micro.Vst.1",
+     "com.fabfilter.Micro.Vst3.1"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "FabF",
+      "subtype": "FMic"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "ik-multimedia--amplitube-5",
+   "installedName": "AmpliTube 5",
+   "installedVersions": [
+    "5.10.9"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.ikmultimedia.AmpliTube5"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Ikmm",
+      "subtype": "Atb5"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "kilohearts--disperser",
+   "installedName": "Disperser",
+   "installedVersions": [
+    "2.4.5"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.kiloHearts.Disperser"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": " kHs",
+      "subtype": "kdsp"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "klanghelm--dc1a3",
+   "installedName": "DC1A3",
+   "installedVersions": [
+    "3.5.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.klanghelm.DC1A3"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "KlHm",
+      "subtype": "DC13"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "meldaproduction--magc",
+   "installedName": "MAGC",
+   "installedVersions": [
+    "17.09"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.meldaproduction.MAGC"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Meld",
+      "subtype": "Magc"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "newfangled-audio--newfangled-equivocate",
+   "installedName": "Newfangled EQuivocate",
+   "installedVersions": [
+    "1.13.9"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.newfangledaudio.EQuivocate"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Newf",
+      "subtype": "eqv8"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "plugin-alliance--fiedler-audio-stage",
+   "installedName": "fiedler audio stage",
+   "installedVersions": [
+    "1.2.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.fiedler-audio.stage"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "FIAU",
+      "subtype": "STAG"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "slate-digital--slate-digital-fg-x",
+   "installedName": "Slate Digital FG-X",
+   "installedVersions": [
+    "1.4.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.slate-digital.FG-X"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "softube--saturation-knob",
+   "installedName": "Saturation Knob",
+   "installedVersions": [
+    "2.6.4"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.softube.SaturationKnob_AAX_Protect",
+     "com.softube.SaturationKnob_VST_AU_Protect",
+     "com.softube.SaturationKnob_VST_AU_Protect_AU",
+     "com.softube.SaturationKnob_VST_AU_Protect_VST3"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "SfTb",
+      "subtype": "satn"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "ssl--blitzer",
+   "installedName": "Blitzer",
+   "installedVersions": [
+    "1.2.5"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.SSL.Blitzer"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "SSLN",
+      "subtype": "BLTZ"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "sonnox--oxford-drum-gate",
+   "installedName": "Oxford Drum Gate",
+   "installedVersions": [
+    "1.06.0",
+    "2.05.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.sonnox.OxfordDrumGate"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Snnx",
+      "subtype": "OxDG"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "soundtoys--crystallizer",
+   "installedName": "Crystallizer",
+   "installedVersions": [
+    "5.5.5.19885"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.soundtoys.aax.Crystallizer",
+     "com.soundtoys.audiounit.Crystallizer",
+     "com.soundtoys.vst.Crystallizer",
+     "com.soundtoys.vst3.Crystallizer"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "SToy",
+      "subtype": "CR  "
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "spectrasonics--keyscape",
+   "installedName": "Keyscape",
+   "installedVersions": [
+    "1.2.0c",
+    "1.5.2c"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.spectrasonics.Keyscape",
+     "com.spectrasonics.KeyscapeA"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "GOSW",
+      "subtype": "Kstn"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "spitfire-audio--labs",
+   "installedName": "LABS",
+   "installedVersions": [
+    "3.7.29"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.spitfireaudio.Labs"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "SpFi",
+      "subtype": "SfLb"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "tokyo-dawn-labs--tdr-kotelnikov",
+   "installedName": "TDR Kotelnikov",
+   "installedVersions": [
+    "1.6.7"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.TokyoDawnLabs.TDRKotelnikov"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Tdrl",
+      "subtype": "Td96"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "valhalla-dsp--valhalladelay",
+   "installedName": "ValhallaDelay",
+   "installedVersions": [
+    "3.0.5"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.ValhallaDSP.ValhallaDelay"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "oDin",
+      "subtype": "dLay"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "oeksound--soothe",
+   "installedName": "soothe",
+   "installedVersions": [
+    "1.4.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.oeksound.soothe"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "OekS",
+      "subtype": "SthA"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "air--boom",
+   "installedName": "Boom",
+   "installedVersions": [
+    "1.4.1"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.wizoo.Boom"
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "aberrant-dsp--sketchcassette-ii",
+   "installedName": "SketchCassette II",
+   "installedVersions": [
+    "2.3"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.AberrantDSP.SketchCassetteII"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Abrn",
+      "subtype": "SCii"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "accentize--dxrevivepro",
+   "installedName": "dxRevivePro",
+   "installedVersions": [
+    "1.2.8"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.accentize.dxrevivepro"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Actz",
+      "subtype": "dxRP"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "audiothing--things-texture",
+   "installedName": "Things Texture",
+   "installedVersions": [
+    "1.1.1"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.AudioThing.ThingsTexture"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "AdTg",
+      "subtype": "tTx5"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "bbe-sound--harmonic-maximizer",
+   "installedName": "Harmonic Maximizer",
+   "installedVersions": [
+    "4.7.0",
+    "4.7.1"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.bbesound.SWE2"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "BBEs",
+      "subtype": "SWE2"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "hornet--corrosion",
+   "installedName": "Corrosion",
+   "installedVersions": [
+    "1.1.1"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.HoRNet.aax.Corrosion",
+     "com.HoRNet.audiounit.Corrosion",
+     "com.HoRNet.vst.Corrosion",
+     "com.HoRNet.vst3.Corrosion"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "HrNt",
+      "subtype": "Cors"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "kazrog--true-iron",
+   "installedName": "True Iron",
+   "installedVersions": [
+    "1.4.1"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.Kazrog.TrueIron"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Kazr",
+      "subtype": "KPTr"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "klevgrand--dawcassette",
+   "installedName": "DAWCassette",
+   "installedVersions": [
+    "1.2.3"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.klevgrand.DAWCassette"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Klev",
+      "subtype": "Rntt"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "lindell-audio--lindell-50-buss",
+   "installedName": "Lindell 50 Buss",
+   "installedVersions": [
+    "1.0.1",
+    "1.0.4"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.LindellPlugins.Lindell50Buss"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Brwx",
+      "subtype": "LApb"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "liquidsonics--lustrous-plates",
+   "installedName": "Lustrous Plates",
+   "installedVersions": [
+    "1.3.6"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.liquidsonics.lustrousplates"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "LqSn",
+      "subtype": "LsP1"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "louder-than-liftoff--ltl-chop-shop-eq",
+   "installedName": "LTL Chop Shop EQ",
+   "installedVersions": [
+    "1.0.1",
+    "1.4.1"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.louderthanliftoff.ChopShopEQ"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "LtCs",
+      "subtype": "ltCS"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "nugen-audio--aligner",
+   "installedName": "Aligner",
+   "installedVersions": [
+    "1.1.0.6"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.nugenaudio.Aligner_AAX",
+     "com.nugenaudio.Aligner_AU"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "NGAU",
+      "subtype": "NAAL"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "sir-audio-tools--standardclip",
+   "installedName": "StandardCLIP",
+   "installedVersions": [
+    "1.6.053"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.SirAudioTools.StandardCLIP"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "SIRA",
+      "subtype": "SvuN"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "sonic-academy--ana-2",
+   "installedName": "ANA 2",
+   "installedVersions": [
+    "2.5.6"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.sonicacademy.ana2"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "SnAc",
+      "subtype": "ANA2"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "tbproaudio--gsatplus",
+   "installedName": "GSatPlus",
+   "installedVersions": [
+    "1.3.9"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.TBProAudio.aax.GSatPlus",
+     "com.TBProAudio.audiounit.GSatPlus",
+     "com.TBProAudio.vst.GSatPlus",
+     "com.TBProAudio.vst3.GSatPlus"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "TBPA",
+      "subtype": "TB70"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "unfiltered-audio--unfiltered-audio-bass-mint",
+   "installedName": "Unfiltered Audio Bass Mint",
+   "installedVersions": [
+    "1.0.0",
+    "1.1.7"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.UnfilteredAudio.BassMint"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "UnAu",
+      "subtype": "uABM"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "united-plugins--bassmentcore",
+   "installedName": "BassmentCore",
+   "installedVersions": [
+    "2.4"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.unitedplugins.BassmentCore"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Mura",
+      "subtype": "BstC"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "wa-production--heat2",
+   "installedName": "Heat2",
+   "installedVersions": [
+    "2.1.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.WAProduction.Heat2"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "W4pr",
+      "subtype": "H32t"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "wavesfactory--cassette",
+   "installedName": "Cassette",
+   "installedVersions": [
+    "1.0.7"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.wavesfactory.Cassette"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "WsFy",
+      "subtype": "CtTe"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "xln-audio--ds-10-drum-shaper",
+   "installedName": "DS-10 Drum Shaper",
+   "installedVersions": [
+    "1.3.6"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.xlnaudio.ds10drumshaper"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "xlnA",
+      "subtype": "xaDS"
+     }
+    ]
+   }
+  },
+  {
+   "catalogPluginId": "adptr--adptr-hype",
+   "installedName": "ADPTR Hype",
+   "installedVersions": [
+    "1.5.0"
+   ],
+   "identityKeys": {
+    "bundleIds": [
+     "com.ADPTR.ADPTRHype"
+    ],
+    "auComponents": [
+     {
+      "manufacturer": "Adpt",
+      "subtype": "HyP3"
+     }
+    ]
+   }
+  }
+ ]
+}
