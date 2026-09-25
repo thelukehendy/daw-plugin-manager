@@ -5,6 +5,93 @@ between waves. The advisor should read the latest entry before starting a wave.
 
 ---
 
+## Round 4 — 2026-09-25: the hard push — make the database itself harder to fool
+
+Wave 7 went 11/11. At Luke's direction, this round is deliberately harder.
+The theme is **database robustness and accuracy**: not new oracles, but
+making the catalog resistant to the failure modes we've already seen —
+contaminated version stamps, misfiled identities, retraction-worthy claims.
+This is the round where you try to break our data, on paper, before reality
+does it for us.
+
+**Ask 1 — the contamination hunt.** Wave 7 documented suite-stamp
+contamination: Softube Central `2.6.41`, UAD Version History `12.0`, Waves
+Central `15.x` stamped onto suite/bundle/edition rows as if they were
+product versions. The D16 incident and the Waves V17 rule show this class
+bites. Your task: a **detection recipe** for cohort/hub-stamp contamination
+across tier 1 — the signature shapes (hub-app version == N product rows
+from one manufacturer; suite tip diverging from component tips; DMG
+basename vs stamped version mismatch), the SQL-shaped logic an engine chip
+could run, a **candidate list with evidence** for every row you can defend,
+and explicit **false-positive guards** (real products that genuinely share
+a cohort train, e.g. Waves' honest per-product builds). This is the highest-
+value ask in the round: it protects data integrity, which is the one thing
+that pages Luke.
+
+**Ask 2 — stress-test the retraction protocol.** You gave us the
+vendor-retraction decision tree (adopted). Now try to break it. Run it
+against three real incidents: the D16 version contamination, the Lindell
+expired-domain catch, and the Waves V17 across-every-SKU rule. For each:
+would the protocol as written have caught it, how fast, and where is the
+protocol vague or wrong? Deliver a **protocol v2** with the gaps closed —
+pre-registered triggers, evidence thresholds, and the exact operator action
+each trigger demands. If you can't break v1, say so with the case files to
+prove it.
+
+**Ask 3 — pre-register falsification for every accepted chip.** For each
+accepted wave-6/7 oracle chip (Moog, Sonnox, NI YAML, Waves canary, UA
+Connect DMG, IK CDN, Spitfire path, KORG news feed): state the **exact
+observations that would force retraction** — the negative control that
+must keep passing, the page shape that must not change, the version-string
+pattern that would invalidate the parse rule. This is the falsifiability
+half of your chip packs. A chip without a stated death condition is a chip
+I can't maintain.
+
+**Ask 4 — the KORG template, generalized.** The news-title version feed was
+the only true unlock in wave 7. Hunt for the same *class* of leak at other
+hub-walled vendors: support newsrooms, release-note indexes, press-release
+feeds, "what's new" pages, community-manager announcements — any public
+surface where version strings escape the walled garden. KORG proved the
+shape exists. Same bar as last round: **new evidence or don't file.**
+
+**Ask 5 — identity classifier v2 + self-verification.** Two parts. (a) Turn
+the wave-7 sweep into a **rule-based classifier**: name-pattern rules +
+portal-URL-shape rules (Waves `/bundles/` vs `/plugins/`, UA shop
+categories, Softube product-page copy patterns), with **precision/recall
+measured against your own 18 candidates and 17-item allowlist** — the
+allowlist is your test set; show the classifier doesn't eat it. (b)
+**Second-source your own 18**: one more independent public source per
+candidate (retailer listing, review, manual PDF) so my verification queue
+gets shorter, not longer. Adding evidence to your own claims is welcome;
+re-verifying my queue for me is still out.
+
+**Ask 6 — open exploration (up to 3 files).** This is the invitation: angles
+I haven't named. Surprise me — but the bar is higher here than anywhere:
+evidence-backed, tier-1, non-redundant with waves 1–7, and each file must
+end with why it matters for robustness or accuracy specifically. If you
+can't clear that bar, file fewer.
+
+### Explicitly out of scope for wave 8
+
+- Freshness/portal **implementation** — still gated on the taxonomy landing
+  and Luke's pending pivot call. Detection thinking is fine; building the
+  prober is not.
+- Bulk portal probing of any kind.
+- New hub-walled oracles beyond the KORG-template hunt — the map is drawn;
+  this round is about the data we already hold.
+- Re-verifying my verification queue for me — the trust boundary stands.
+
+### Standing rules (unchanged, plus one nit)
+
+≤12 files · fixtures in-repo with SHA256SUMS · check `verdicts.md` first ·
+no pivot assumption · no telemetry · no Luke-input workflows · no
+credentialed scraping · nothing becomes catalog data without my re-fetch.
+**Nit from wave 7:** don't duplicate vendor dirs under `fixtures/wave8/`
+(`ik` + `ik-pm`, `ni` + `ni-electron-updater`…) — one canonical dir per
+vendor, please.
+
+---
+
 ## Round 3 — 2026-09-25: wave 6 verdicts are in — now make the accepted chips buildable
 
 Wave-6 verdicts are posted in `advisory/verdicts.md`: **12 accepted, 0
