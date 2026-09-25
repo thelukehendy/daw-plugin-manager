@@ -35,6 +35,7 @@ OPTIONAL_PLUGIN_FIELDS = [
     ("predecessor_plugin_id", "predecessorPluginId"),
     ("supersedes_plugin_id", "supersedesPluginId"),
     ("superseded_by_plugin_id", "supersededByPluginId"),
+    ("identity_keys", "identityKeys"),  # JSON object; parsed on emit
 ]
 
 # v3 helpful app fields (omit when null/empty/0 as appropriate)
@@ -255,6 +256,12 @@ def main() -> int:
                     if val is None or val == "":
                         continue
                     if col == "update_class" and val == "unknown":
+                        continue
+                    if col == "identity_keys":
+                        try:
+                            entry[key] = json.loads(val)
+                        except (ValueError, TypeError):
+                            continue
                         continue
                     entry[key] = val
                 if entry.get("successorPluginId"):
