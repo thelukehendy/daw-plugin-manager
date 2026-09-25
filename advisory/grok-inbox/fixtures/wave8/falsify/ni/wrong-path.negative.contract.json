@@ -1,0 +1,6 @@
+{
+  "chip": "ni-electron-updater-yml",
+  "negative_url": "https://na-update.native-instruments.com/does-not-exist/latest-mac.yml",
+  "reject_if": ["NoSuchKey", "missing ^version:", "missing ^files:", "HTML"],
+  "detector": "reject_if_missing_^version:_and_files:_or_xml_Error"
+}

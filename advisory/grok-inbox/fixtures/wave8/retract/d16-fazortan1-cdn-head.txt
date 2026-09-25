@@ -1,0 +1,16 @@
+HTTP/2 200 
+content-type: application/x-apple-diskimage
+content-length: 8043631
+date: Fri, 25 Sep 2026 20:02:18 GMT
+last-modified: Mon, 08 Feb 2021 14:18:52 GMT
+etag: "ca64f4d1e5f41edd9f6d6c1bae69e148"
+x-amz-version-id: null
+accept-ranges: bytes
+server: AmazonS3
+x-cache: Hit from cloudfront
+via: 1.1 ffc1e24c06bfbb135c0a4d240b382048.cloudfront.net (CloudFront)
+x-amz-cf-pop: HIO52-P1
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: pm_0DIM5Sn4DPg8rdzdtPoOevfv7Pn1YQDzkhH7DBU4t9o8rbAgMCg==
+age: 29
+

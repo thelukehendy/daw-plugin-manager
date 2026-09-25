@@ -1,0 +1,208 @@
+{
+  "wave": 8,
+  "ask": 3,
+  "lane": 3,
+  "title": "chip falsification / death conditions pre-registration",
+  "mode": "advisor_only",
+  "catalog_action": "none",
+  "no_catalog_write": true,
+  "no_git_commit": true,
+  "no_telemetry": true,
+  "no_logins": true,
+  "generated_at_pt": "2026-09-25T13:03:41-07:00",
+  "generated_at_utc": "2026-09-25T20:03:41Z",
+  "live_refetch_date_pt": "2026-09-25",
+  "deliverable": "inbox-drafts/2026-09-25-chip-falsification-death-conditions-deep.md",
+  "fixtures_root": "fixtures/falsify",
+  "refs_used": [
+    "refs/2026-09-25-chip-moog-softwareupdate-ready.md",
+    "refs/2026-09-25-chip-sonnox-rn-freeze-ready.md",
+    "refs/2026-09-25-chip-ni-electron-updater-yml-ready.md",
+    "refs/2026-09-25-chip-waves-downloads-canary-ready.md",
+    "refs/2026-09-25-chip-ua-connect-dmg-ready.md",
+    "refs/2026-09-25-chip-ik-pm-cdn-referer-ready.md",
+    "refs/2026-09-25-chip-spitfire-cloudfront-path-ready.md",
+    "refs/2026-09-25-hub-walled-creative-pass2-deep.md",
+    "refs/2026-09-25-softube-central-sc3-yaml-deep.md",
+    "refs/2026-09-25-waves-incapsula-oracle-deep.md",
+    "refs/2026-09-25-vendor-retraction-protocol-deep.md"
+  ],
+  "related_accepted_oracles": [
+    {
+      "id": "softube-central-sc3-yaml",
+      "engine_chip": "softube-central-sc3-yaml-v1",
+      "negative_control": "root latest-mac.yml trap stays 2.2.0 while sc3 is 3.0.5",
+      "death_one_liner": "Reading root/brew 2.2.0 trap as SoT \u2192 kill canary; hub_app only",
+      "must_not": [
+        "stamp Central onto plugins",
+        "prefer Homebrew",
+        "confuse with suite RN 2.6.x"
+      ],
+      "fixture": "fixtures/falsify/softube/root-trap.negative.contract.json",
+      "live_2026_09_25": {
+        "sc3": "3.0.5",
+        "root": "2.2.0"
+      }
+    },
+    {
+      "id": "waves-rn-incapsula",
+      "engine_chip": "waves-rn-oracle-v1",
+      "negative_control": "Incapsula stub must never parse as RN success",
+      "death_one_liner": "Stub parsed as success OR generation stamped to all SKUs \u2192 kill rule",
+      "must_not": [
+        "stamp V17 onto every SKU",
+        "clear last snapshot on degraded"
+      ],
+      "fixture": "fixtures/falsify/waves/incapsula-stub.html"
+    }
+  ],
+  "severity_codes": [
+    "KILL",
+    "PARK",
+    "DEMOTE",
+    "RETRACT-WATCH"
+  ],
+  "global_must_not": [
+    "Never write on fetch_degraded/stub/soft-200/WAF body",
+    "Never invent tips between silent oracle events",
+    "Never stamp hub_app tips onto plugin SKUs",
+    "Never decrease solely because parse failed",
+    "Never promote brew/KVR as SoT when death fires"
+  ],
+  "ready_line": "Ready for Muse to attach death monitors before wiring tips green.",
+  "outcome": "ok",
+  "chips_with_death_conditions": 10,
+  "named_eight_covered": true,
+  "priority_chips": [
+    {
+      "id": "moog-softwareupdate",
+      "engine_chip": "moog-softwareupdate-walk-v1",
+      "negative_control": "mf-106s soft-200 without All Formats v (live 200/~15KB/0 matches)",
+      "death_one_liner": "Soft-200 without All Formats v OR site-wide loss of control \u2192 park; never cross-stamp slugs",
+      "must_not": [
+        "cross-stamp Mariana\u2194MF-*S",
+        "invent mf-106s product",
+        "trust HTTP 200 alone"
+      ],
+      "fixture": "fixtures/falsify/moog/mf-106s.negative.contract.json",
+      "live_2026_09_25": {
+        "mf-105s_tip": "1.3.0",
+        "mf-106s_all_formats": 0
+      }
+    },
+    {
+      "id": "sonnox-rn-freeze",
+      "engine_chip": "sonnox-rn-freeze",
+      "negative_control": "wrong RN / missing tip H2; farewell 404 \u21d2 do not invent discontinued_frozen",
+      "death_one_liner": "Missing tip H2 / farewell 404 \u2192 park; never invent discontinued; never Restore\u2192other SKU stamp",
+      "must_not": [
+        "stamp Restore tip onto Pro-Codec/Oxford EQ",
+        "invent discontinued_frozen from silence"
+      ],
+      "fixture": "fixtures/falsify/sonnox/wrong-rn.negative.contract.json",
+      "live_2026_09_25": {
+        "restore_tip": "3.01.0",
+        "pro_codec_tip": "4.00.0",
+        "farewell_mentions_restore_trio": true
+      }
+    },
+    {
+      "id": "ni-electron-updater-yml",
+      "engine_chip": "ni-electron-updater-yml",
+      "negative_control": "wrong-path NoSuchKey XML / missing version+files",
+      "death_one_liner": "Non-YAML / NoSuchKey / missing files: \u2192 degraded keep last-good; hub_app only",
+      "must_not": [
+        "stamp onto Komplete/Kontakt/SKU matrix",
+        "clear last-good on degraded"
+      ],
+      "fixture": "fixtures/falsify/ni/wrong-path.negative.contract.json",
+      "live_2026_09_25": {
+        "arm64": "3.26.0",
+        "intel": "3.26.0",
+        "win": "3.26.0"
+      }
+    },
+    {
+      "id": "waves-downloads-canary",
+      "engine_chip": "waves-downloads-canary",
+      "negative_control": "Incapsula ~212B stub with _Incapsula_Resource",
+      "death_one_liner": "Incapsula/stub or missing Mac canary \u2192 alert-only; never V17 SKU stamp",
+      "must_not": [
+        "stamp Central/V17 onto plugin SKUs",
+        "promote brew to SoT",
+        "clear last-good on stub"
+      ],
+      "fixture": "fixtures/falsify/waves/incapsula-stub.html",
+      "live_2026_09_25": {
+        "central": "17.0.4",
+        "mac_date": "Aug 02, 2026",
+        "bytes_ok": 114119,
+        "incapsula": false
+      }
+    },
+    {
+      "id": "ua-connect-dmg",
+      "engine_chip": "ua-connect-dmg",
+      "negative_control": "latest-mac.yml 403 (no public electron-updater listing)",
+      "death_one_liner": "Invented basename or 403 YAML flipped to competing feed \u2192 kill/park; never stamp UAD 12.0",
+      "must_not": [
+        "invent DMG basename",
+        "stamp Connect tip onto UAD suite 12.0"
+      ],
+      "fixture": "fixtures/falsify/ua/latest-mac.yml.negative.contract.json",
+      "live_2026_09_25": {
+        "brew": "1.10.0,3844",
+        "dmg": "UA_Connect_1_10_0_3844_Mac.dmg",
+        "yml_status": 403
+      }
+    },
+    {
+      "id": "ik-pm-cdn-referer",
+      "engine_chip": "ik-pm-cdn-referer",
+      "negative_control": "HEAD without Referer \u2192 403; with productmanager Referer \u2192 200",
+      "death_one_liner": "HEAD 403 with Referer or page loses versioned DMG \u2192 park; hub_app only",
+      "must_not": [
+        "stamp onto AmpliTube/Syntronik/T-RackS",
+        "omit Referer and treat 403 as no-update"
+      ],
+      "fixture": "fixtures/falsify/ik/pm-dmg-noref.negative.contract.json",
+      "live_2026_09_25": {
+        "ver": "1.1.15",
+        "with_ref": 200,
+        "without_ref": 403,
+        "last_modified": "Tue, 25 Aug 2026 16:25:00 GMT"
+      }
+    },
+    {
+      "id": "spitfire-cloudfront-path",
+      "engine_chip": "spitfire-cloudfront-path",
+      "negative_control": "SpitfireAudio.Mac-0.0.0.dmg \u2192 403",
+      "death_one_liner": "Path 403 without brew rediscovery / open-bucket NC failure \u2192 park/kill; app tip \u2260 libraries",
+      "must_not": [
+        "green library/soundset from app tip",
+        "forge CloudFront epoch/path"
+      ],
+      "fixture": "fixtures/falsify/spitfire/wrong-semver.negative.contract.json",
+      "live_2026_09_25": {
+        "tip": "3.4.17",
+        "epoch": "1770184800"
+      }
+    },
+    {
+      "id": "korg-collection-news-tip-poller",
+      "engine_chip": "korg_collection_news_tip_poller",
+      "negative_control": "hardware/Editor/Gadget/demo version headlines must not map to Collection plugin_ids",
+      "death_one_liner": "Hardware/Editor/demo title mapped to plugin OR silent news invent \u2192 kill/park; not Software Pass",
+      "must_not": [
+        "replace Software Pass",
+        "invent tips when news silent",
+        "stamp Editor/Librarian onto *-native"
+      ],
+      "fixture": "fixtures/falsify/korg/hardware-news-false-positive.examples.json",
+      "live_2026_09_25": {
+        "trinity_headline": "KC - TRINITY version 1.1.0",
+        "posture_default": "hub_walled"
+      }
+    }
+  ]
+}

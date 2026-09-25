@@ -1,0 +1,14 @@
+{
+  "vendor": "slate-digital",
+  "angle": "zendesk_rn_title_version_feed",
+  "korg_class": true,
+  "unlock": false,
+  "why_not_unlock": "RN titles embed versions (VMR 2.10.1.3 etc) and bodies confirm changelogs, but tips LAG catalog/KVR (VMR catalog tip 3.3.10.0). Do not use as primary SKU tip oracle without Installers/Hub cross-check.",
+  "partial": "Complete Access Hub RN body has dated version history ending 2.19.0 (2026-09-21) \u2014 hub_app tip only; no slate hub_app plugin row to unlock.",
+  "api": "https://support.slatedigital.com/api/v2/help_center/en-us/articles.json",
+  "fixtures": [
+    "slate/rn-title-index.json",
+    "slate/rn/article-12998887383315.json",
+    "slate/rn/article-hub-rn.json"
+  ]
+}

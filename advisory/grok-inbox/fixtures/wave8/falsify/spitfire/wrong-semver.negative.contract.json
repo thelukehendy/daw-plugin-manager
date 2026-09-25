@@ -1,0 +1,6 @@
+{
+  "chip": "spitfire-cloudfront-path",
+  "negative_url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-0.0.0.dmg",
+  "expected_status": 403,
+  "on_403_live_path": "rediscover via brew cask spitfire-audio; do not invent epoch/path"
+}

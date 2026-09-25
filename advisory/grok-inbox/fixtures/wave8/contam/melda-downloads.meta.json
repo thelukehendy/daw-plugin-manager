@@ -1,0 +1,11 @@
+{
+  "source_file": "melda-downloads.html",
+  "bytes": 39995,
+  "quotes": {
+    "kernel version: 17.10.01": "gin changes Release notes installer version: 02.30 &middot; kernel version: 17.10.01 Download (Win) Download (Mac) Since version 17.00 we are changing our installation system. All Melda plugins and instruments can only be installed by our new application. MPluginManager makes sur",
+    "installer version": "lda plugins. Installer changes Plugin changes Release notes installer version: 02.30 &middot; kernel version: 17.10.01 Download (Win) Download (Mac) Since version 17.00 we are changing our installation system. All Melda plugins and instruments can only be installed by our new app",
+    "All Melda plugins": "Manager and Installation Guide Download, install and manage all Melda plugins, instruments and addons MPluginManager The new and easy way to manage all Melda plugins. Installer changes Plugin changes Release notes installer version: 02.30 &middot; kernel version: 17.10.01 Downloa"
+  },
+  "url": "https://www.meldaproduction.com/downloads",
+  "role": "false_positive_guard_honest_cohort"
+}

@@ -1,0 +1,6 @@
+{
+  "chip": "ua-connect-dmg",
+  "negative_url": "https://builds.uaudio.com/apps/UA_Connect/latest-mac.yml",
+  "expected_status": 403,
+  "note": "no public electron-updater listing; inventing latest-mac.yml is death"
+}

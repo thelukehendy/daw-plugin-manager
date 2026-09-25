@@ -1,0 +1,102 @@
+{
+  "wave": 8,
+  "ask": 2,
+  "lane": 2,
+  "title": "vendor-retraction protocol stress-test → protocol v2",
+  "generated_at_pt": "2026-09-25T13:05:00-07:00",
+  "advisor_only": true,
+  "no_catalog_write": true,
+  "no_git_commit": true,
+  "no_db_telemetry_credentialed_scrape": true,
+  "v1_broke": true,
+  "draft": "inbox-drafts/2026-09-25-vendor-retraction-protocol-v2-deep.md",
+  "v1_ref": "refs/2026-09-25-vendor-retraction-protocol-deep.md",
+  "companion_refs": [
+    "refs/2026-09-25-waves-incapsula-oracle-deep.md",
+    "refs/2026-09-25-waves-browser-rn-evidence-deep.md",
+    "refs/2026-09-25-waves-diff-algorithm-implementable-deep.md",
+    "refs/2026-09-25-softube-rn-suite-vs-sku-deep.md"
+  ],
+  "fixtures": [
+    "fixtures/retract/d16-fazortan-page-cdn-links.txt",
+    "fixtures/retract/d16-fazortan1-cdn-head.txt",
+    "fixtures/retract/d16-fazortan2-cdn-head.txt",
+    "fixtures/retract/lindellplugins-head.txt",
+    "fixtures/retract/pa-lindell-collection-head.txt",
+    "fixtures/retract/waves-v17-no-stamp-rule.txt",
+    "fixtures/retract/softube-suite-no-stamp-rule.txt"
+  ],
+  "case_outcomes": [
+    {
+      "id": "d16_version_contamination",
+      "broke_v1": true,
+      "break_class": "gen_oracle_identity",
+      "incident": "2026-09-14 PT: d16-group fazortan/redoptor/syntorus/toraverb stamped KVR successor-gen 2.2.2 @60; corrected to gen-1 final 1.4.0 @95 via Products History (identity_correct, not retract)",
+      "sources": [
+        "daw-plugin-manager-publish/catalog-store/NOTES-10x-2026-09-14.md",
+        "playbooks/d16-group.md",
+        "advisory-deep/integrity/RETRACTION.md"
+      ],
+      "live_2026_09_25": {
+        "fazortan_page_cdn_links": ["Fazortan2-2.2.2.dmg", "Fazortan2-2.2.2(x64).msi", "Fazortan2-2.2.2(x86).msi"],
+        "gen1_cdn_head": "200 Fazortan-1.4.0.dmg",
+        "gen2_cdn_head": "200 Fazortan2-2.2.2.dmg"
+      },
+      "v1_analysis": {
+        "prevention": false,
+        "post_stamp_freshness": "FAIL — V==C HOLD on contaminated /fazortan page",
+        "class_if_noticed": "identity_correct intended but 'suspected' predicate undefined",
+        "speed_if_automated": "never"
+      },
+      "v2_triggers": ["T1", "T2", "H", "C"]
+    },
+    {
+      "id": "lindell_expired_domain",
+      "broke_v1": true,
+      "break_class": "url_cta_poison",
+      "incident": "2026-09-14 flag parked gambling on lindellplugins.com; 2026-09-15 confirmed hijack (spam/betting), website_url re-pointed to PA Lindell collection",
+      "sources": [
+        "daw-plugin-manager-publish/catalog-store/NOTES-10x-2026-09-14.md",
+        "daw-plugin-manager-publish/catalog-store/NOTES-10x-2026-09-15.md",
+        "NOTES-lindell-eventide-etc.md"
+      ],
+      "live_2026_09_25": {
+        "lindellplugins_com": "301 → https://www.DropCatch.com/domain/lindellplugins.com",
+        "replacement": "https://www.plugin-alliance.com/collections/lindell-audio HTTP 200"
+      },
+      "v1_analysis": {
+        "in_scope": false,
+        "s1_applies": false,
+        "risk_if_parsed": "hostile HTML could invent garbage tips; guard#1 does not cover soft-200 poison",
+        "speed_historical": "~24h human heal"
+      },
+      "v2_triggers": ["T9", "F"]
+    },
+    {
+      "id": "waves_v17_across_every_sku",
+      "broke_v1": true,
+      "break_class": "bulk_generation_lane",
+      "incident": "Across-the-board V17 @ June 23, 2026 must emit generation_bump only; never plugin.version=V17 for every SKU. Softube 2.6.42 same class.",
+      "sources": [
+        "refs/2026-09-25-waves-incapsula-oracle-deep.md",
+        "refs/2026-09-25-waves-browser-rn-evidence-deep.md",
+        "refs/2026-09-25-softube-rn-suite-vs-sku-deep.md",
+        "NOTES-10x-2026-09-15.md Waves boundary (zero-trust held)"
+      ],
+      "v1_analysis": {
+        "prevention": false,
+        "guard5_asymmetric": "only guards suite tip when lower; does not forbid mass raise",
+        "undo_misroute": "mass V<C → false vendor_retract watches; Acoustifier watch does not scale"
+      },
+      "v2_triggers": ["T3", "T4", "T8", "T12", "G"]
+    }
+  ],
+  "v2_changes": {
+    "new_classes": ["portal_poison (F)", "bulk_stamp_forbid (G)", "oracle_scope_mismatch (H)"],
+    "trigger_registry": ["T0_acoustifier", "T1_gen_cdn_mismatch", "T2_kvr_vs_mfr_gen_final", "T3_bulk_generation", "T4_fixedin_newplugin", "T5_host_framework_stamp", "T6_true_installer_retract", "T7_article_top_regression", "T8_softube_suite_named", "T9_portal_poison", "T10_filename_over_folder", "T11_semver_scheme", "T12_mass_undo_halt"],
+    "shared_raise_and_decrease_gates": true,
+    "wires_portal_liveness": true,
+    "keeps_v1_ab_path": true
+  },
+  "verdict_line": "v1 broke on D16 (silent HOLD), Lindell (out of scope), Waves V17 (no prevent / undo misclass). v2 adds F/G/H + T0–T12 with exact operator actions."
+}

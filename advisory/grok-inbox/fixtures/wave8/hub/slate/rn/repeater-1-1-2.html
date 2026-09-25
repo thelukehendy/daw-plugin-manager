@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v27985 -->
+
+
+  <title>Repeater 1.1.2 - Release Notes &ndash; Slate Digital</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="">
+
+  <meta name="description" content="Hot Fix (1.1.2)  Repairs a bug for properly recalling plugin settings  Bugs Fixed  Logic: Using a stereo Aux fed by a mono track results..." /><meta property="og:image" content="https://support.slatedigital.com/hc/theming_assets/01JCRRF8G9FY1XM4XXRMNKRWNJ" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Slate Digital" />
+<meta property="og:title" content="Repeater 1.1.2 - Release Notes" />
+<meta property="og:description" content="Hot Fix (1.1.2)
+
+Repairs a bug for properly recalling plugin settings
+
+Bugs Fixed
+
+Logic: Using a stereo Aux fed by a mono track results in the left audio channel only
+OS X El Capitan: GUI freezes ..." />
+<meta property="og:url" content="https://support.slatedigital.com/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes" />
+<link rel="canonical" href="https://support.slatedigital.com/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes">
+<link rel="alternate" hreflang="en-us" href="https://support.slatedigital.com/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes">
+<link rel="alternate" hreflang="x-default" href="https://support.slatedigital.com/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes">
+
+  <link rel="stylesheet" href="//static.zdassets.com/hc/assets/application-12c9306025bef7a9722589b3210823ae.css" media="all" id="stylesheet" />
+    <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+    <link rel="stylesheet" href="//static.zdassets.com/hc/assets/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/723543/239648/style.css?digest=52320303287187">
+
+  <link rel="icon" type="image/x-icon" href="/hc/theming_assets/01JCRRCZ19E65YYNEVQCV45S9P">
+
+    <script src="//static.zdassets.com/hc/assets/jquery-ed472032c65bb4295993684c673d706a.js"></script>
+    
+
+  <!-- add code here that should appear in the document head -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300,300italic"  type="text/css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css" />
+<style>
+.hero-bg {
+  background-image: url(/hc/theming_assets/01JYJ5VDXHCBPE4N25695XVZWD);
+}
+</style>
+<script src="//cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.min.js"></script>
+<script src="//cdn.jsdelivr.net/highlight.js/9.10.0/highlight.min.js"></script>
+
+  <script type="text/javascript" src="/hc/theming_assets/723543/239648/script.js?digest=52320303287187"></script>
+</head>
+<body class="">
+  
+  
+  
+
+  <div class="layout">
+  <header class="topbar container" data-topbar>
+    <div class="container-inner">
+      <div class="topbar__inner">
+        <div class="topbar__col clearfix">
+          <div class="logo-wrapper">
+            <div class="logo">
+             <a href="https://slatedigital.com/" target="_blank">
+  <img src="/hc/theming_assets/01JCRRF8G9FY1XM4XXRMNKRWNJ" alt="Logo">
+</a>
+            </div>
+          </div>
+          <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" data-toggle-menu> <span class="lines"></span> </button>
+        </div>
+        <div class="topbar__col topbar__menu">
+          <div class="topbar__collapse" data-menu>
+            <div class="topbar__controls">
+              
+              <a class="btn btn--topbar submit-a-request" href="/hc/en-us/requests/new">Submit a request</a>
+              <a href="https://app.completeaccess.audio/authenticate/sign-in" 
+   target="_blank" 
+   aria-label="My Account"
+   style="margin-left: 12px; display: inline-flex; align-items: center; vertical-align: middle; opacity: 0.85;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" 
+       fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="8" r="4"/>
+    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+  </svg>
+</a>
+                <a class="login" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog" href="https://slatedigital.zendesk.com/access?locale=en-us&amp;brand_id=239648&amp;return_to=https%3A%2F%2Fsupport.slatedigital.com%2Fhc%2Fen-us%2Farticles%2F235270167-Repeater-1-1-2-Release-Notes&amp;locale=en-us">Sign in</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main role="main">
+    <div class="container article-page">
+  <div class="container-inner">
+    <div class="row clearfix">
+  <div class="column column--sm-8">
+    <ol class="breadcrumbs">
+  
+    <li title="Slate Digital">
+      
+        <a href="/hc/en-us">Slate Digital</a>
+      
+    </li>
+  
+    <li title="Repeater">
+      
+        <a href="/hc/en-us/categories/204490727-Repeater">Repeater</a>
+      
+    </li>
+  
+    <li title="Documentation">
+      
+        <a href="/hc/en-us/sections/207109268-Documentation">Documentation</a>
+      
+    </li>
+  
+</ol>
+
+  </div>
+  <div class="column column--sm-4">
+    <div class="search-box search-box--small">
+      <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="row clearfix">
+      <div class="column column--sm-8">
+        <article class="article clearfix" itemscope itemtype="http://schema.org/Article">
+          <header class="article-header">
+            <h1 class="article__title" itemprop="name">
+              
+              Repeater 1.1.2 - Release Notes
+            </h1>
+
+            <div class="article-meta">
+              <div class="article-meta__col article-meta__col--main">
+                <div class="entry-info ">
+                  <div class="entry-info__avatar">
+                    <div class="avatar avatar--agent">
+                      <img class="user-avatar user-avatar--default" src="https://support.slatedigital.com/system/photos/10226451899795/0Y7A7051-2-Edit-2.JPG" alt="Avatar">
+                    </div>
+                  </div>
+                  <div class="entry-info__content">
+                    <b class="author">
+                      
+                        Paul Hessing
+                      
+                    </b>
+                    <div class="meta"><time datetime="2017-07-13T20:58:45Z" title="2017-07-13T20:58:45Z" data-datetime="calendar">July 13, 2017 20:58</time></div>
+                  </div>
+                </div>
+              </div>
+              <div class="article-meta__col article-meta__col--button">
+                <a class="article-subscribe" title="Opens a sign-in dialog" rel="nofollow" role="button" data-auth-action="signin" aria-selected="false" href="/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes/subscription.html">Follow</a>
+              </div>
+            </div>
+          </header>
+
+          <div class="article__body markdown" itemprop="articleBody">
+            <h1><strong><span class="wysiwyg-font-size-large">Hot Fix (1.1.2)</span></strong></h1>
+<ul>
+<li class="p1">Repairs a bug for properly recalling plugin settings</li>
+</ul>
+<h1><strong><span class="wysiwyg-font-size-large">Bugs Fixed</span></strong></h1>
+<ul>
+<li class="p1"><span class="s1">Logic: Using a stereo Aux fed by a mono track results in the left audio channel only</span></li>
+<li class="p1"><span class="s1">OS X El Capitan: GUI freezes when tweaking with controls</span></li>
+<li class="p1"><span class="s1">Reading an automation while in touch/latch mode starts writing the automation again</span></li>
+<li class="p1"><span class="s1">Writing note value automation also writes time automation</span></li>
+<li class="p1"><span class="s1">Pro Tools: Wrong automation values</span></li>
+<li class="p1"><span class="s1">Pro Tools: Flickering knobs when reading automation with linked parameters</span></li>
+<li class="p1"><span class="s1">Ableton Live: Automating any linked knob disables the automation</span></li>
+</ul>
+<h1 class="p1"><span class="wysiwyg-font-size-large"><strong><span class="s1">Known Issues</span></strong></span></h1>
+<ul>
+<li>Stepped parameters are not stepped in the automation lines</li>
+<li>AU: All parameters display values between 0 and 1</li>
+<li>Sequoia: Scroll wheel doesn’t work</li>
+<li>Slight audio click when engaging/disengaging the Ping Pong mode</li>
+</ul>
+<h1><strong><span class="wysiwyg-font-size-large">Special Notes</span></strong></h1>
+<ul>
+<li>No VST3 version</li>
+<li>No value editors</li>
+<li>No mono version</li>
+<li>No Pro Tools shortcuts (automation and reset)</li>
+<li>No dedicated mappings for the Avid Control Surfaces</li>
+</ul>
+<p><strong><span class="wysiwyg-font-size-large">Compatibility</span></strong></p>
+<p class="p2"><strong>Repeater </strong>is installed as<strong> AU</strong>, <strong>VST2</strong>, <strong>AAX</strong> plug-ins. A host application compatible with any of these formats is required to use <strong>Repeater</strong>.</p>
+<p class="p2"><strong>Repeater </strong>is not available as <em>standalone application </em>thus <strong>can’t be accessed</strong> from <strong>Applications</strong> branch in <strong>Finder</strong> as regular program. </p>
+          </div>
+
+          <div class="article__attachments">
+            
+          </div>
+
+        </article>
+
+        <footer class="article-footer clearfix">
+          
+            <div class="article-vote">
+              <span class="article-vote-question">Was this article helpful?</span>
+              <div class="article-vote-controls">
+                <a class="fa fa-thumbs-up article-vote-controls__item article-vote-controls__item--up" data-auth-action="signin" aria-selected="false" role="button" rel="nofollow" title="Yes" href="https://slatedigital.zendesk.com/access?locale=en-us&amp;brand_id=239648&amp;return_to=https%3A%2F%2Fsupport.slatedigital.com%2Fhc%2Fen-us%2Farticles%2F235270167-Repeater-1-1-2-Release-Notes"></a>
+                <a class="fa fa-thumbs-down article-vote-controls__item article-vote-controls__item--down" data-auth-action="signin" aria-selected="false" role="button" rel="nofollow" title="No" href="https://slatedigital.zendesk.com/access?locale=en-us&amp;brand_id=239648&amp;return_to=https%3A%2F%2Fsupport.slatedigital.com%2Fhc%2Fen-us%2Farticles%2F235270167-Repeater-1-1-2-Release-Notes"></a>
+              </div>
+              <small class="article-vote-count">
+                <span class="article-vote-label">0 out of 0 found this helpful</span>
+              </small>
+            </div>
+          
+        </footer>
+
+        <div class="article__share">
+  <ul class="share">
+    <li><a href="https://www.facebook.com/share.php?title=Repeater+1.1.2+-+Release+Notes&u=https%3A%2F%2Fsupport.slatedigital.com%2Fhc%2Fen-us%2Farticles%2F235270167-Repeater-1-1-2-Release-Notes" class="share-facebook">Facebook</a></li>
+    <li><a href="https://twitter.com/share?lang=en&text=Repeater+1.1.2+-+Release+Notes&url=https%3A%2F%2Fsupport.slatedigital.com%2Fhc%2Fen-us%2Farticles%2F235270167-Repeater-1-1-2-Release-Notes" class="share-twitter">Twitter</a></li>
+    <li><a href="https://www.linkedin.com/shareArticle?mini=true&source=Slate+Digital&title=Repeater+1.1.2+-+Release+Notes&url=https%3A%2F%2Fsupport.slatedigital.com%2Fhc%2Fen-us%2Farticles%2F235270167-Repeater-1-1-2-Release-Notes" class="share-linkedin">LinkedIn</a></li>
+  </ul>
+
+</div>
+
+        <div class="article-more-questions">Have more questions? <a href="/hc/en-us/requests/new">Submit a request</a></div>
+
+        
+
+        <section class="comments" id="comments" itemscope itemtype="http://schema.org/UserComments">
+          <div class="comments__header">
+            <h3>Comments</h3>
+
+            <div class="comment-sorter">
+              <div class="comment-sorter__col comment-sorter__col--main">
+                0 comments
+              </div>
+
+              
+            </div>
+          </div>
+
+          
+
+          <p class="comments__callout">Article is closed for comments.</p>
+
+          
+        </section>
+      </div>
+      <div class="column column--sm-4">
+        <div class="article-sidebar">
+          <section class="section-articles">
+            <h3 class="section-articles__title">Articles in this section</h3>
+            <ul class="section-articles__list">
+              
+                <li class="section-articles__item">
+                  <a href="/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes" class="section-articles__link is-active">Repeater 1.1.2 - Release Notes</a>
+                </li>
+              
+                <li class="section-articles__item">
+                  <a href="/hc/en-us/articles/235278447-Repeater-User-Guide" class="section-articles__link ">Repeater User Guide</a>
+                </li>
+              
+            </ul>
+            
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  </div>
+<!-- /.layout -->
+<footer class="footer container">
+  <div class="container-inner footer__inner">
+    <div class="footer__col copyright">
+      <p>&copy; Slate Digital</p>
+      <p>Theme by <a href="https://www.lotusthemes.com" target="_blank">Lotus Themes</a>
+      </p>
+    </div>
+    <div class="footer__col footer__col--social-links">
+      <a href="#" target="_blank" class="footer-social-link fa fa-facebook"></a>
+      <a href="#" target="_blank" class="footer-social-link fa fa-twitter"></a>
+      <a href="#" target="_blank" class="footer-social-link fa fa-google-plus"></a>
+    </div>
+  </div>
+</footer>
+<a href="#" class="scroll-to-top fa fa-angle-up" data-scroll-to-top></a>
+
+
+
+  <!-- / -->
+
+  
+  <script src="//static.zdassets.com/hc/assets/en-us.31c5503f90244460c333.js"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"slatedigital","environment":"production","name":"Slate Digital Help Desk"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":"","role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"external_id":null,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":null,"shared_csrf_token":null},"usage_tracking":{"event":"article_viewed","data":"BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEF/AFDjoKX21ldGF7DDoPYWNjb3VudF9pZGkDVwoLOhNoZWxwX2NlbnRlcl9pZGkEoEbtCzoNYnJhbmRfaWRpAyCoAzoMdXNlcl9pZDA6E3VzZXJfcm9sZV9uYW1lSSIOQU5PTllNT1VTBjsGVDsASSIKZW4tdXMGOwZUOhphbm9ueW1vdXNfdHJhY2tpbmdfaWQw--e3de91b2455f45d7e24779b5361b216e6abf5903","url":"https://support.slatedigital.com/hc/activity"},"current_record_id":"235270167","current_record_url":"/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes","current_record_title":"Repeater 1.1.2 - Release Notes","current_text_direction":"ltr","current_brand_id":239648,"current_brand_name":"Slate Digital","current_brand_url":"https://slatedigital.zendesk.com","current_brand_active":true,"current_path":"/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_multi_language_help_center":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_help_center_auth_enabled":false,"embeddables_connect_ipms":false},"answer_bot_subdomain":"static","gather_plan_state":"subscribed","has_article_verification":false,"has_gather":true,"has_ckeditor":false,"has_community_enabled":false,"has_community_badges":false,"has_community_post_content_tagging":false,"has_gather_content_tags":false,"has_guide_content_tags":true,"has_user_segments":true,"has_answer_bot_web_form_enabled":false,"has_garden_modals":false,"has_auth_email_less_sso":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-2-preview","is_preview":false,"has_search_settings_in_plan":true,"theming_api_version":1,"theming_settings":{"color_1":"#101010","color_2":"#404040","color_3":"#333333","color_4":"rgba(84, 65, 239, 1)","color_5":"#ffffff","font_1":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif","font_2":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif","logo":"/hc/theming_assets/01JCRRF8G9FY1XM4XXRMNKRWNJ","favicon":"/hc/theming_assets/01JCRRCZ19E65YYNEVQCV45S9P"},"has_pci_credit_card_custom_field":true,"help_center_restricted":false,"is_assuming_someone_else":false,"flash_messages":[],"user_photo_editing_enabled":true,"user_preferred_locale":"en-us","base_locale":"en-us","login_url":"https://slatedigital.zendesk.com/access?locale=en-us\u0026brand_id=239648\u0026return_to=https%3A%2F%2Fsupport.slatedigital.com%2Fhc%2Fen-us%2Farticles%2F235270167-Repeater-1-1-2-Release-Notes","has_alternate_templates":false,"has_custom_statuses_enabled":false,"has_hc_generative_answers_setting_enabled":true,"has_suggested_initial_questions_enabled":false,"has_contentful_eap":false,"has_contentful_eap_eligible":false,"has_pdf_ingestion_eap":true,"has_pdf_ingestion_eap_eligible":true,"has_guide_saas_management":false,"has_knowledge_category_translation_modal":false,"has_guide_service_catalog":false,"has_service_catalog_search_poc":true,"has_service_catalog_multibranding":true,"has_csat_reverse_2_scale_in_mobile":false,"has_unified_navigation":true,"has_unified_navigation_eap_access":true,"has_knowledge_locale_display_names":true,"has_csat_bet365_branding":false,"has_csat_flora":false,"has_csat_theming_integration_phase_1":false,"has_help_center_gen_search_follow_up_conversation":true,"chat_page_renderable":false,"version":"v27985","dev_mode":false};
+</script>
+
+  
+  <script src="//static.zdassets.com/hc/assets/moment-3b62525bdab669b7b17d1a9d8b5d46b4.js"></script>
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-88af6295979996e41030a066de2645f6.js"></script>
+  
+  
+</body>
+</html>

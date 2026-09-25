@@ -1,0 +1,16 @@
+[
+  {
+    "id": "native-instruments--action-strikes",
+    "observation_id": "05fc5df6-50a3-46d5-83d3-8aac48605d0a",
+    "observed_version": "1.2",
+    "confidence": 58,
+    "status": "accepted",
+    "source_url": "https://vstorrent.org/native-instruments-action-strikes-v1-2-kontakt/",
+    "extract_method": "coordinator-reverified-ni-worker",
+    "confidence_reasons": "[\"Single weak mirror source; well below corroboration threshold \u2014 yellow\"]",
+    "evidence_snippet": "\"Native Instruments - ACTION STRIKES v1.2 (KONTAKT)\"; NI product page confirms identity only",
+    "verified_at": "2026-09-16T16:28:35Z",
+    "created_at": "2026-09-16T16:28:35Z",
+    "is_tip": 1
+  }
+]

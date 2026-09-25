@@ -1,0 +1,168 @@
+{
+  "source": "https://support.slatedigital.com/api/v2/help_center/en-us/articles.json",
+  "articles_collected": 410,
+  "rn_titled": [
+    {
+      "product": "VBC",
+      "version": "1.3.5.0",
+      "title": "VBC 1.3.5.0 - Release Notes",
+      "id": 33303974771475,
+      "updated": "2024-09-11T17:53:52Z",
+      "created": "2024-09-11T17:53:52Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/33303974771475-VBC-1-3-5-0-Release-Notes",
+      "body_len": 9393
+    },
+    {
+      "product": "VTM",
+      "version": "1.2.6.0",
+      "title": "VTM 1.2.6.0 - Release Notes",
+      "id": 33303375763347,
+      "updated": "2024-09-11T17:40:22Z",
+      "created": "2024-09-11T17:39:25Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/33303375763347-VTM-1-2-6-0-Release-Notes",
+      "body_len": 5655
+    },
+    {
+      "product": null,
+      "version": null,
+      "title": "September 2023 Release Notes",
+      "id": 19356738119955,
+      "updated": "2025-04-26T21:24:45Z",
+      "created": "2023-08-08T21:37:49Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/19356738119955-September-2023-Release-Notes",
+      "body_len": 7220
+    },
+    {
+      "product": "VMR",
+      "version": "2.10.1.3",
+      "title": "VMR 2.10.1.3 - Release Notes",
+      "id": 12998887383315,
+      "updated": "2026-03-26T16:44:11Z",
+      "created": "2023-01-13T00:46:40Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/12998887383315-VMR-2-10-1-3-Release-Notes",
+      "body_len": 2911
+    },
+    {
+      "product": "VMR",
+      "version": "2.7.3.1",
+      "title": "VMR 2.7.3.1 - Release Notes",
+      "id": 4416095649427,
+      "updated": "2023-06-06T15:50:02Z",
+      "created": "2022-01-24T17:05:26Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/4416095649427-VMR-2-7-3-1-Release-Notes",
+      "body_len": 3956
+    },
+    {
+      "product": "VMR",
+      "version": "2.6.4.0",
+      "title": "VMR 2.6.4.0 - Release Notes",
+      "id": 4406145790227,
+      "updated": "2026-03-06T10:37:49Z",
+      "created": "2021-08-30T17:16:08Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/4406145790227-VMR-2-6-4-0-Release-Notes",
+      "body_len": 6171
+    },
+    {
+      "product": "VMR",
+      "version": "2.5.7.0",
+      "title": "VMR 2.5.7.0 - Release Notes",
+      "id": 360061832874,
+      "updated": "2026-03-06T10:30:44Z",
+      "created": "2021-03-04T00:44:41Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/360061832874-VMR-2-5-7-0-Release-Notes",
+      "body_len": 6957
+    },
+    {
+      "product": "VSC",
+      "version": "1.0.8.3",
+      "title": "VSC 1.0.8.3 - Release Notes",
+      "id": 115000803907,
+      "updated": "2017-07-13T20:56:19Z",
+      "created": "2017-01-05T15:11:02Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/115000803907-VSC-1-0-8-3-Release-Notes",
+      "body_len": 4264
+    },
+    {
+      "product": "Repeater",
+      "version": "1.1.2",
+      "title": "Repeater 1.1.2 - Release Notes",
+      "id": 235270167,
+      "updated": "2017-07-13T20:58:45Z",
+      "created": "2016-11-17T17:21:39Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes",
+      "body_len": 2238
+    },
+    {
+      "product": "VTM",
+      "version": "1.1.13.1",
+      "title": "VTM 1.1.13.1 - Release Notes",
+      "id": 226311908,
+      "updated": "2017-06-20T16:59:18Z",
+      "created": "2016-08-26T14:22:14Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/226311908-VTM-1-1-13-1-Release-Notes",
+      "body_len": 5061
+    },
+    {
+      "product": "VBC",
+      "version": "1.2.11.1",
+      "title": "VBC 1.2.11.1 - Release Notes",
+      "id": 224197008,
+      "updated": "2017-07-13T22:28:56Z",
+      "created": "2016-08-01T16:51:39Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/224197008-VBC-1-2-11-1-Release-Notes",
+      "body_len": 3852
+    }
+  ],
+  "latest_per_product": {
+    "VBC": {
+      "product": "VBC",
+      "version": "1.3.5.0",
+      "title": "VBC 1.3.5.0 - Release Notes",
+      "id": 33303974771475,
+      "updated": "2024-09-11T17:53:52Z",
+      "created": "2024-09-11T17:53:52Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/33303974771475-VBC-1-3-5-0-Release-Notes",
+      "body_len": 9393
+    },
+    "VTM": {
+      "product": "VTM",
+      "version": "1.2.6.0",
+      "title": "VTM 1.2.6.0 - Release Notes",
+      "id": 33303375763347,
+      "updated": "2024-09-11T17:40:22Z",
+      "created": "2024-09-11T17:39:25Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/33303375763347-VTM-1-2-6-0-Release-Notes",
+      "body_len": 5655
+    },
+    "VMR": {
+      "product": "VMR",
+      "version": "2.10.1.3",
+      "title": "VMR 2.10.1.3 - Release Notes",
+      "id": 12998887383315,
+      "updated": "2026-03-26T16:44:11Z",
+      "created": "2023-01-13T00:46:40Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/12998887383315-VMR-2-10-1-3-Release-Notes",
+      "body_len": 2911
+    },
+    "VSC": {
+      "product": "VSC",
+      "version": "1.0.8.3",
+      "title": "VSC 1.0.8.3 - Release Notes",
+      "id": 115000803907,
+      "updated": "2017-07-13T20:56:19Z",
+      "created": "2017-01-05T15:11:02Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/115000803907-VSC-1-0-8-3-Release-Notes",
+      "body_len": 4264
+    },
+    "REPEATER": {
+      "product": "Repeater",
+      "version": "1.1.2",
+      "title": "Repeater 1.1.2 - Release Notes",
+      "id": 235270167,
+      "updated": "2017-07-13T20:58:45Z",
+      "created": "2016-11-17T17:21:39Z",
+      "url": "https://support.slatedigital.com/hc/en-us/articles/235270167-Repeater-1-1-2-Release-Notes",
+      "body_len": 2238
+    }
+  }
+}

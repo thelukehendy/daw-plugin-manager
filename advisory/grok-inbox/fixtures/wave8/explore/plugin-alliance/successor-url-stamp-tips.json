@@ -1,0 +1,74 @@
+[
+  {
+    "id": "plugin-alliance--bx-boom",
+    "generation": "1",
+    "generation_rank": 1,
+    "successor_plugin_id": "plugin-alliance--bx-boom-v3",
+    "identity_kind": "plugin",
+    "observed_version": "3.0.0",
+    "confidence": 88,
+    "source_url": "https://www.plugin-alliance.com/products/bx_boom-v3",
+    "evidence_snippet": "Installer v3.0.0 (Mac\u2026)",
+    "verified_at": "2026-09-10T04:07:14Z"
+  },
+  {
+    "id": "plugin-alliance--bx-boom-v3",
+    "generation": "V3",
+    "generation_rank": 3,
+    "successor_plugin_id": null,
+    "identity_kind": "plugin",
+    "observed_version": "3.0.0",
+    "confidence": 88,
+    "source_url": "https://www.plugin-alliance.com/products/bx_boom-v3",
+    "evidence_snippet": "Installer v3.0.0 (Mac\u2026)",
+    "verified_at": "2026-09-10T04:07:15Z"
+  },
+  {
+    "id": "plugin-alliance--bx-refinement",
+    "generation": "1",
+    "generation_rank": 1,
+    "successor_plugin_id": "plugin-alliance--bx-refinement-v3",
+    "identity_kind": "plugin",
+    "observed_version": "3.0.0",
+    "confidence": 88,
+    "source_url": "https://www.plugin-alliance.com/products/bx_refinement-v3",
+    "evidence_snippet": "Installer v3.0.0 (Mac\u2026)",
+    "verified_at": "2026-09-10T04:07:15Z"
+  },
+  {
+    "id": "plugin-alliance--bx-refinement-v3",
+    "generation": "V3",
+    "generation_rank": 3,
+    "successor_plugin_id": null,
+    "identity_kind": "plugin",
+    "observed_version": "3.0.0",
+    "confidence": 88,
+    "source_url": "https://www.plugin-alliance.com/products/bx_refinement-v3",
+    "evidence_snippet": "Installer v3.0.0 (Mac\u2026)",
+    "verified_at": "2026-09-10T04:07:15Z"
+  },
+  {
+    "id": "plugin-alliance--pro-audio-dsp-dsm-v3",
+    "generation": null,
+    "generation_rank": null,
+    "successor_plugin_id": null,
+    "identity_kind": "plugin",
+    "observed_version": "3.7.0",
+    "confidence": 88,
+    "source_url": "https://www.plugin-alliance.com/products/dsm-v3",
+    "evidence_snippet": "Installer v3.7.0 (Mac\u2026)",
+    "verified_at": "2026-09-10T04:06:02Z"
+  },
+  {
+    "id": "plugin-alliance--proaudiodsp-dsm",
+    "generation": null,
+    "generation_rank": null,
+    "successor_plugin_id": "plugin-alliance--pro-audio-dsp-dsm-v3",
+    "identity_kind": "gen_ambiguous",
+    "observed_version": "3.7.0",
+    "confidence": 90,
+    "source_url": "https://www.plugin-alliance.com/products/dsm-v3",
+    "evidence_snippet": null,
+    "verified_at": "2026-09-15T23:46:53Z"
+  }
+]

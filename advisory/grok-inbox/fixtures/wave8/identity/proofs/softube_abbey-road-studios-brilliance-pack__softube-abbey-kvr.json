@@ -1,0 +1,16 @@
+{
+  "plugin_id": "softube--abbey-road-studios-brilliance-pack",
+  "source_url": "https://www.kvraudio.com/product/abbey-road-studios-brilliance-pack-by-softube",
+  "title": "Abbey Road Studios Brilliance Pack by Softube - EQ Plugin VST VST3 Audio Unit AAX",
+  "snippet": "The Brilliance Pack provides authentic emulations of the EMI RS127 and RS135 EQ units, which were built in the early 1960s to supplement the...",
+  "cue_count": 36,
+  "cue_sample": [
+    "RS127",
+    "RS135",
+    "EQ Plugin",
+    "rs127",
+    "rs135"
+  ],
+  "bytes": 84485,
+  "sha256_12": "47d6c6754d82"
+}

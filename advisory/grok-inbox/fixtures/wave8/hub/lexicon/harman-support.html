@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Remote Support Portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<link href="/content/common.css" rel="stylesheet" type="text/css">
+<link href="/content/public.css" rel="stylesheet" type="text/css">
+<link href="/content/mobile.css" rel="stylesheet" type="text/css">
+
+
+<link href="/css/console.css" rel="stylesheet" type="text/css">
+
+<link
+	rel="icon"
+	type="image/svg+xml"
+	href="/login/assets/img/remote-support_duo-favicon.svg"
+>
+
+<link
+	rel="icon"
+	type="image/png"
+	href="/login/assets/img/remote-support_duo.png"
+	media="(prefers-color-scheme: light)"
+>
+<link
+	rel="icon"
+	type="image/png"
+	href="/login/assets/img/remote-support_duo-dark.png"
+	media="(prefers-color-scheme: dark)"
+>
+
+
+
+	<link href="./files/appliance.css" rel="alternate stylesheet" type="text/css" />
+	<link href="./files/style.css" rel="alternate stylesheet" type="text/css" />
+	<link href="./files/screen.css" rel="alternate stylesheet" type="text/css" media="all" />
+	<link href="./files/mobile.css" rel="alternate stylesheet" type="text/css" media="handheld" />
+	<script type="text/javascript" src="./content/nsjs.js"></script>
+<style>
+#bodyContainer {position:relative;top:110px;left 18;width:300px;height:100%;text-align:center;margin:0px auto;z-index:1;}
+#logoContainer {position:absolute;top:22px;left:18px;width:136px;height:66px;z-index:5;}
+#secondlogoContainer {position:absolute;top:41px; right:22px; width:120px;height:28px; z-index:0}
+#headerContainer {position:absolute;top:0px;left:0px;width:100%;height:115px; background-color:#003D4C;}
+#footerlogos {position:absolute;bottom:0px;left:0px;width:100%;height:70px; background-color:#5a5b5e; z-index:4;}
+
+#repListTable {align:center; text-align:center; font-weight: normal; border:0; border-color: black; font-size:20px;}
+#repListTable tr {height: 30px;}
+#repListTable td {font-size:20px;}
+#repListTable a{font-weight: bold; font-size:24px;}
+.sectionTitle {font-size: 20px; font-weight:normal;}
+
+body#gradient {
+font-family:Arial, Helvetica, sans-serif;
+font-size:76.1%; 
+text-align:center;
+color:#000000;
+line-height:1.3em;}
+
+img { border: none; }
+
+</style>
+
+	
+</head>
+<body id=gradient>
+	<div id="headerContainer">
+		<div id="logoContainer">
+			<img src="./files/header-harman-logo.png" width="125" height="66" />
+		</div>
+		<div id="secondlogoContainer">
+			<!--<img src="./files/AMX_logo_white_R_small.png" width="120" height="28" />-->
+		</div>
+	</div>
+<div id="bodyContainer">
+
+<div id="header" class="contentBox">
+	<div style="margin: 10px 0">
+		<div class="pageTitle" style="text-align: right; line-height: 1.5em;">
+			REMOTE SUPPORT PORTAL
+	<br><span>Please visit our Anytime Help Center at <a href="https://help.harmanpro.com" target="_blank">help.harmanpro.com</a></span>		</div>
+		</div>
+		<div style="text-align:right"><img alt="Choose Your Language" title="Choose Your Language" src="./files/globe.png"/><span class="language_selection" id="language_selection">
+	<span class="single">English (US)</span>
+</span>
+</div>
+
+	</div>
+</div>
+
+<div class="contentBox" id="repListBox">
+	<h1 class="sectionTitle">
+		<span>
+		Representatives
+		</span>
+			&nbsp;
+		</h1>
+	<table id="repListTable">
+	<tr>
+		<td>
+			7 -
+		</td>
+		<td>
+			<a
+				href="download_client_connector?id=601&amp;name=Guerrero%2C+Felipe"
+				rel="nofollow"
+				class="repLink"
+				data-rep-id="601"
+				data-rep-name="Guerrero, Felipe"
+				title="Download Remote Support Customer Client for Guerrero, Felipe"
+			>Guerrero, Felipe</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			8 -
+		</td>
+		<td>
+			<a
+				href="download_client_connector?id=606&amp;name=Cruz%2C+JoseLiberio"
+				rel="nofollow"
+				class="repLink"
+				data-rep-id="606"
+				data-rep-name="Cruz, JoseLiberio"
+				title="Download Remote Support Customer Client for Cruz, JoseLiberio"
+			>Cruz, JoseLiberio</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			52 -
+		</td>
+		<td>
+			<a
+				href="download_client_connector?id=479&amp;name=Rowdon%2C+Jeremy"
+				rel="nofollow"
+				class="repLink"
+				data-rep-id="479"
+				data-rep-name="Rowdon, Jeremy"
+				title="Download Remote Support Customer Client for Rowdon, Jeremy"
+			>Rowdon, Jeremy</a>
+		</td>
+	</tr>
+</table>
+
+
+<span
+	class="params" id="repListParams"
+	data-chat-enabled="false"
+></span>
+
+<span
+	class="params" id="repListStrings"
+	data-select-another="Click here to select another rep"
+></span>
+
+<script defer src="/content/rep_list.js"></script>
+
+	</div>
+
+<div class="contentBox" id="sessionKeyBox">
+	<h1 class="sectionTitle">
+		<span>
+		Session Key
+		</span>
+			&nbsp;
+		</h1>
+
+	<div>
+	<form action="/check_access_key" method="get" id="access_key_form">
+	<label
+		id="access_key_pretty:label"
+		for="access_key_pretty"
+		class="accessible"
+	>Session Key</label>
+	<input
+		type="text"
+		name="access_key_pretty"
+		id="access_key_pretty"
+		value=""
+		size="20"
+		maxlength="20"
+		autocomplete="off"
+	>
+	<input
+		type="submit"
+		name="access_key_submit"
+		id="access_key_submit"
+		value="Submit"
+	>
+	<img
+		src="/content/loading.gif"
+		alt=""
+		class="hidden"
+		id="session_key_loading_gif"
+	>
+	<div id="access_key_error" class="hidden error"></div>
+</form>
+
+
+
+<span
+	class="params" id="access_key_params"
+	data-chat-enabled="false"
+></span>
+
+<span
+	class="params" id="access_key_strings"
+	data-invalid-key="The key that you entered is not valid."
+	data-validation-error="Error validating access key."
+></span>
+
+<script defer type="text/javascript" src="/content/access_key_input.js"></script>
+	</div>
+	</div>
+
+
+
+
+
+
+<script defer type="text/javascript" src="/api/start_session.js"></script>
+
+<script defer type="text/javascript" src="/content/portal.js"></script>
+
+
+<div style="margin: 1em;">
+<a
+		id="powered_by_text"
+		href="https://www.beyondtrust.com/"
+		class="inverse"
+		target="_blank"
+		rel="noopener"
+	>BeyondTrust Remote Support</a>
+</div>
+<div id="footer" class="contentBox">
+	Copyright © 2002-2026 BeyondTrust Corporation. Redistribution Prohibited. All Rights Reserved.
+</div>
+</div>
+<div id="footerlogos">
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr height="65">
+<td><A href="http://www.akg.com/" target="_blank"><IMG class="image-gray" alt="AKG" src="./files/akg-logo.png"></A></td>
+<td><A href="http://www.amx.com/" target="_blank"><IMG class="image-gray" alt="AMX" src="./files/amx-logo.png"></A></td>
+<td><A href="http://www.bssaudio.com/" target="_blank"><IMG class="image-gray" alt="BSS" src="./files/bss-logo.png"></A></td>
+<td><A href="http://www.crownaudio.com/" target="_blank"><IMG class="image-gray" alt="Crown" src="./files/crown-logo.png"></A></td>
+<td><A href="http://www.dbxpro.com/" target="_blank"><IMG class="image-gray" alt="dbx" src="./files/dbx-logo.png"></A></td>
+<td><A href="http://www.jblpro.com/" target="_blank"><IMG class="image-gray" alt="JBL pro" src="./files/jblpro-logo.png"></A></td>
+<td><A href="http://www.lexicon.com/" target="_blank"><IMG class="image-gray" alt="Lexicon" src="./files/lexicon-logo.png"></A></td>
+<td><A href="http://www.martin.com" target="_blank"><IMG class="image-gray" alt="Martin" src="./files/martin-logo.png"></A></td>
+<td><A href="http://www.soundcraft.com/" target="_blank"><IMG class="image-gray" alt="Soundcraft" src="./files/soundcraft-logo.png"> </A></td>
+<!--<td><A href="http://www.studer.ch/en-US" target="_blank"><IMG class="image-gray" alt="Studer" src="./files/studer-logo.png"></A></td>-->
+</tr>
+</table>
+</div>
+</body>
+</html>

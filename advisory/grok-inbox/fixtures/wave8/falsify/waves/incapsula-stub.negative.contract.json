@@ -1,0 +1,8 @@
+{
+  "chip": "waves-downloads-canary",
+  "bytes": 212,
+  "reject_substrings": ["Incapsula", "_Incapsula_Resource"],
+  "min_bytes": 500,
+  "require_regex": "Waves Central[\\s\\S]{0,400}?Mac:\\s*V?[\\d.]+",
+  "on_fire": "fetch_degraded; keep last-good; alert-only via DMG LM/brew; NEVER stamp V17 onto SKUs"
+}

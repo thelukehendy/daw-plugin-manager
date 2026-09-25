@@ -1,0 +1,16 @@
+{
+  "chip": "korg-collection-news-tip-poller",
+  "must_reject_title_patterns": [
+    "KRONOS OS",
+    "Keystage",
+    "Pa5X",
+    "microKORG2 hardware",
+    "wavestate Editor",
+    "modwave Editor",
+    "Gadget for",
+    "Nintendo Switch",
+    "demo version"
+  ],
+  "must_require": "allowlisted Collection/native software token + body tip confirm when raising",
+  "silent_news": "rows stay hub_walled; do not invent tips"
+}

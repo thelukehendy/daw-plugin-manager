@@ -1,0 +1,8 @@
+{
+  "chip": "ik-pm-cdn-referer",
+  "url": "https://g1.ikmultimedia.com/plugins/ProductManager/ik_product_manager_1.1.15.dmg",
+  "without_referer_expected": 403,
+  "with_referer": "https://www.ikmultimedia.com/products/productmanager/",
+  "with_referer_expected": 200,
+  "live_2026-09-25": {"with_ref": 200, "without_ref": 403, "last_modified": "Tue, 25 Aug 2026 16:25:00 GMT"}
+}

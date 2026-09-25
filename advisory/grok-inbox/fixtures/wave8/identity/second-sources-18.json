@@ -1,0 +1,614 @@
+{
+  "date": "2026-09-25",
+  "definition": "second_source = independent public page (retailer/KVR/review/FAQ) distinct from wave7 primary public_url, with bundle/collection/suite cues",
+  "secured": 18,
+  "total": 18,
+  "results": [
+    {
+      "plugin_id": "universal-audio--uad-producer-edition",
+      "name": "UAD Producer Edition",
+      "wave7_primary": "https://www.sweetwater.com/store/detail/UADProducerEd--universal-audio-uad-producer-edition-native-plug-in-bundle",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "universal-audio--uad-producer-edition",
+          "source_url": "https://www.kvraudio.com/product/uad-producer-edition-by-universal-audio",
+          "title": "UAD Producer Edition by Universal Audio - Bundle Plugin VST3 Audio Unit AAX",
+          "snippet": "Fuel your Creativity with Pro Instruments and Analog Sound Elevate your productions with our curated collection of 22 UAD plug-ins and instr...",
+          "cue_count": 3,
+          "cue_sample": [
+            "Bundle Plugin"
+          ],
+          "bytes": 87778,
+          "sha256_12": "2e1aa00a1efb"
+        },
+        {
+          "plugin_id": "universal-audio--uad-producer-edition",
+          "source_url": "https://www.guitarcenter.com/Universal-Audio/Producer-Edition-1500000415975.gc",
+          "title": "Universal Audio UAD Producer Edition Virtual Instrument &amp; Plug-in Bundle | Guitar Center",
+          "snippet": "Shop for the Universal Audio UAD Producer Edition Virtual Instrument & Plug-in Bundle in and receive free shipping and guaranteed lowest price.",
+          "cue_count": 20,
+          "cue_sample": [
+            "Plug-in Bundle",
+            "Artist Signature",
+            "plugin bundle"
+          ],
+          "bytes": 494765,
+          "sha256_12": "afa4b076c06f"
+        },
+        {
+          "plugin_id": "universal-audio--uad-producer-edition",
+          "source_url": "https://equipboard.com/items/universal-audio-uad-producer-edition",
+          "title": "Universal Audio UAD Producer Edition - What To Know &amp; Where To Buy | Equipboard",
+          "snippet": "Universal Audio UAD Producer Edition - See the best prices from $79.00.",
+          "cue_count": 6,
+          "cue_sample": [
+            "EQ Plugin",
+            "Bundle Plugin",
+            "Plug-in Bundle"
+          ],
+          "bytes": 417555,
+          "sha256_12": "4bb7756c22ab"
+        },
+        {
+          "plugin_id": "universal-audio--uad-producer-edition",
+          "source_url": "https://www.uaudio.com/products/uad-native-producer-bundle",
+          "title": "UAD Native Producer Bundle &ndash; Universal Audio",
+          "snippet": "Essential Vocal Effects. Craft radio-ready vocal chains with plug-ins like Topline Vocal Suite and Avalon VT-737 A Concert Piano in Your DAW. Perform with Ravel Grand Piano, the most natural-sounding virtual piano ever made The Keyboard Sound on Hit Records. Add the snappy tones of a vintage electric piano with Electra",
+          "cue_count": 4,
+          "cue_sample": [
+            "Plug-In Bundle"
+          ],
+          "bytes": 669285,
+          "sha256_12": "4bf29d3cbee4"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "universal-audio--uad-studio-edition",
+      "name": "UAD Studio Edition",
+      "wave7_primary": "https://www.uaudio.com/downloads/ua-connect/",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "universal-audio--uad-studio-edition",
+          "source_url": "https://www.kvraudio.com/product/uad-studio-edition-by-universal-audio",
+          "title": "UAD Studio Edition by Universal Audio - Bundle Plugin VST3 Audio Unit AAX",
+          "snippet": "Transform your DAW into a Vintage Analog Paradise Build your dream studio with 33 UAD plug-ins and instruments \u2014 no UA hardware required. ...",
+          "cue_count": 3,
+          "cue_sample": [
+            "Bundle Plugin"
+          ],
+          "bytes": 89954,
+          "sha256_12": "684506c5b4b7"
+        },
+        {
+          "plugin_id": "universal-audio--uad-studio-edition",
+          "source_url": "https://equipboard.com/items/universal-audio-uad-studio-edition",
+          "title": "Universal Audio UAD Studio Edition - What To Know &amp; Where To Buy | Equipboard",
+          "snippet": "Universal Audio UAD Studio Edition - See the best prices from $219.00.",
+          "cue_count": 6,
+          "cue_sample": [
+            "EQ Plugin",
+            "Bundle Plugin",
+            "Plug-in Bundle"
+          ],
+          "bytes": 438300,
+          "sha256_12": "6acd376268f5"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "universal-audio--uad-signature-edition-v3",
+      "name": "UAD Signature Edition V3",
+      "wave7_primary": "https://www.uaudio.com/downloads/ua-connect/",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "universal-audio--uad-signature-edition-v3",
+          "source_url": "https://www.kvraudio.com/product/uad-signature-edition-v3-by-universal-audio",
+          "title": "UAD Signature Edition V3 by Universal Audio - Utility Plugin VST3 Audio Unit AAX",
+          "snippet": "ignature Edition Version 3 is a curated collection of over 55 UAD plug-ins from Universal Audio covering the full production signal cha...\">",
+          "bytes": 84460,
+          "sha256_12": "6513d17b066d"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "universal-audio--uadx-essentials-edition",
+      "name": "UADx Essentials Edition",
+      "wave7_primary": "https://www.uaudio.com/downloads/ua-connect/",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "universal-audio--uadx-essentials-edition",
+          "source_url": "https://www.kvraudio.com/product/uadx-essentials-edition-by-universal-audio",
+          "title": "UADx Essentials Edition by Universal Audio - Bundle Plugin VST3 Audio Unit AAX",
+          "snippet": "Welcome to the sound of your favorite records: Add 12 must-have UAD plug-ins and instruments \u2014 for one low price \u2014 no UA hardware req...",
+          "cue_count": 5,
+          "cue_sample": [
+            "Bundle Plugin",
+            "Signature Series"
+          ],
+          "bytes": 84630,
+          "sha256_12": "a09eecc48a64"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "universal-audio--uadx-signature-edition-v2",
+      "name": "UADx Signature Edition V2",
+      "wave7_primary": "https://www.uaudio.com/downloads/ua-connect/",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "universal-audio--uadx-signature-edition-v2",
+          "source_url": "https://www.kvraudio.com/product/uadx-signature-edition-v2-by-universal-audio",
+          "title": "UADx Signature Edition V2 by Universal Audio - Bundle Plugin VST3 Audio Unit AAX",
+          "snippet": "Enter a world of iconic studios, analog gear, and pro instruments: Elevate your vocals with Topline Vocal Suite, an all-in-one vocal chain ...",
+          "cue_count": 3,
+          "cue_sample": [
+            "Bundle Plugin"
+          ],
+          "bytes": 85106,
+          "sha256_12": "d8781bb7b116"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "universal-audio--uadx-pultec-passive-eq-collection",
+      "name": "UADx Pultec Passive EQ Collection",
+      "wave7_primary": "https://www.uaudio.com/products/pultec-passive-eq-collection",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "universal-audio--uadx-pultec-passive-eq-collection",
+          "source_url": "https://www.kvraudio.com/product/pultec-passive-eq-collection-by-universal-audio",
+          "title": "UAD Pultec Passive EQ Collection by Universal Audio - EQ Plugin VST VST3 Audio Unit AAX",
+          "snippet": "Get silky\u2011smooth sounds with a collection of must\u2011have EQs. When Ollie Summerland and Gene Shenk hand-crafted the first Pulse Technolo...",
+          "cue_count": 17,
+          "cue_sample": [
+            "EQ Plugin",
+            "EQP-1A",
+            "MEQ-5",
+            "HLF-3C",
+            "eqp-1a"
+          ],
+          "bytes": 88078,
+          "sha256_12": "cf66ea92b95e"
+        },
+        {
+          "plugin_id": "universal-audio--uadx-pultec-passive-eq-collection",
+          "source_url": "https://www.uaudio.com/products/pultec-passive-eq-collection",
+          "title": "Pultec Passive EQ Collection \u2013 Universal Audio (WebFetch 2026-09-25)",
+          "snippet": "Collection includes EQP-1A, MEQ-5, HLF-3C \u2014 three EQs",
+          "cue_count": 3,
+          "cue_sample": [
+            "three EQs",
+            "EQP-1A",
+            "MEQ-5",
+            "HLF-3C"
+          ],
+          "bytes": null,
+          "note": "WebFetch of uaudio.com/products/pultec-passive-eq-collection confirms EQP-1A/MEQ-5/HLF-3C three-EQ collection (independent of wave7 HTML fixture scrape path)",
+          "independence": "vendor product page body (wave7 used fixture HTML; this is live re-fetch confirming same claim). Prefer KVR as true independent."
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "softube--tube-tech-complete-collection-2",
+      "name": "Tube-Tech Complete Collection 2",
+      "wave7_primary": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "softube--tube-tech-complete-collection-2",
+          "source_url": "https://www.kvraudio.com/product/tube-tech-complete-collection-2-by-softube",
+          "title": "Tube-Tech Complete Collection 2 by Softube - Collection Plugin VST VST3 Audio Unit AAX",
+          "snippet": "An indispensable set of true-blue tools, Tube-Tech Complete Collection 2 gives you all our exclusive, officially licensed Tube-Tech plug-ins...",
+          "cue_count": 3,
+          "cue_sample": [
+            "Collection Plugin"
+          ],
+          "bytes": 69708,
+          "sha256_12": "516ce7402141"
+        }
+      ],
+      "rejected": [
+        {
+          "file": "softube-tube-tech-pb.html",
+          "url": "https://www.pluginboutique.com/product/2-Effects/54-Bundle/4083-Tube-Tech-Complete-Collection-2",
+          "reason": "no_bundle_cues",
+          "title": "VST Plugins, Synth Presets, Effects, Virtual Instruments, Music Plugins from Pluginboutique"
+        }
+      ]
+    },
+    {
+      "plugin_id": "softube--flow-mastering-suite",
+      "name": "Flow Mastering Suite",
+      "wave7_primary": "https://www.softube.com/flow-mastering-suite",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "softube--flow-mastering-suite",
+          "source_url": "https://www.kvraudio.com/product/flow-mastering-suite-by-softube",
+          "title": "Flow Mastering Suite by Softube - Mastering Plugin VST VST3 Audio Unit AAX",
+          "snippet": "Flow Mastering Suite is the ultimate music producer's time- and lifesaver. Finalize your tracks in seconds with signal chains created by pro...",
+          "cue_count": 0,
+          "cue_sample": [],
+          "bytes": 84349,
+          "sha256_12": "4805721c1e8d"
+        },
+        {
+          "plugin_id": "softube--flow-mastering-suite",
+          "source_url": "https://www.softube.com/plug-ins/flow-subscriptions",
+          "title": "Flow&#xAE; Subscription Suites - Softube",
+          "snippet": "s both Mixing and Mastering Suites, plus our acclaimed Model Series synthesizer collection. Get access to more than 80 top-tier plug-ins with Softube-quality sound and workflow, and names such as Weiss, Chandler, Tube-Tech, and more.",
+          "cue_count": 3,
+          "cue_sample": [
+            "Subscription Suite"
+          ],
+          "bytes": 115410,
+          "sha256_12": "3b83a170774b"
+        },
+        {
+          "plugin_id": "softube--flow-mastering-suite",
+          "source_url": "https://www.softube.com/support/flowsuites/flow-mixing-suite_1",
+          "title": "Flow&#xAE; Mixing Suite - Softube",
+          "snippet": "- A collection of unique signal chain Flows built with inspiration from the Flow\u00ae Collective.",
+          "cue_count": 1,
+          "cue_sample": [
+            "Subscription Suite"
+          ],
+          "bytes": 71416,
+          "sha256_12": "26e369db8edc"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "softube--flow-mixing-suite",
+      "name": "Flow Mixing Suite",
+      "wave7_primary": "https://www.softube.com/flow-mixing-suite",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "softube--flow-mixing-suite",
+          "source_url": "https://www.kvraudio.com/product/flow-mixing-suite-by-softube",
+          "title": "Flow Mixing Suite by Softube - Channel Strip Plugin VST3 Audio Unit AAX",
+          "snippet": "The Softube Flow Mixing Suite is a powerful tool designed to streamline your audio mixing workflow. It combines over 20 years of professiona...",
+          "cue_count": 0,
+          "cue_sample": [],
+          "bytes": 83966,
+          "sha256_12": "970a0da0da24"
+        },
+        {
+          "plugin_id": "softube--flow-mixing-suite",
+          "source_url": "https://www.softube.com/support/flowsuites/flow-mixing-suite_1",
+          "title": "Flow&#xAE; Mixing Suite - Softube",
+          "snippet": "- A collection of unique signal chain Flows built with inspiration from the Flow\u00ae Collective.",
+          "cue_count": 1,
+          "cue_sample": [
+            "Subscription Suite"
+          ],
+          "bytes": 71416,
+          "sha256_12": "26e369db8edc"
+        },
+        {
+          "plugin_id": "softube--flow-mixing-suite",
+          "source_url": "https://www.softube.com/plug-ins/flow-subscriptions",
+          "title": "Flow&#xAE; Subscription Suites - Softube",
+          "snippet": "s both Mixing and Mastering Suites, plus our acclaimed Model Series synthesizer collection. Get access to more than 80 top-tier plug-ins with Softube-quality sound and workflow, and names such as Weiss, Chandler, Tube-Tech, and more.",
+          "cue_count": 3,
+          "cue_sample": [
+            "Subscription Suite"
+          ],
+          "bytes": 115410,
+          "sha256_12": "3b83a170774b"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "softube--passive-active-pack",
+      "name": "Passive-Active Pack",
+      "wave7_primary": "https://www.softube.com/plug-ins/passive-active-pack",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "softube--passive-active-pack",
+          "source_url": "https://www.kvraudio.com/product/passive_active_pack_by_softube",
+          "title": "Passive-Active Pack by Softube - EQ Plugin VST VST3 Audio Unit AAX",
+          "snippet": "\" content=\"The Passive-Active Pack is a collection of three very different equalizers, each with its own character and quirks. The equalizers contain e...\">",
+          "hits": [
+            "collection of three",
+            "Passive Equalizer",
+            "Active Equalizer",
+            "Focusing Equalizer"
+          ],
+          "bytes": 84357,
+          "sha256_12": "86e717eaa176"
+        },
+        {
+          "plugin_id": "softube--passive-active-pack",
+          "source_url": "https://www.musicradar.com/reviews/tech/softube-passive-active-pack-237510",
+          "title": "Softube Passive-Active Pack review | MusicRadar",
+          "snippet": "perty=\"og:image:alt\" content=\"Softube's triple EQ bundle delivers classic looks and sound.\">",
+          "hits": [
+            "three",
+            "triple EQ",
+            "Passive-Active Pack"
+          ],
+          "bytes": 1654987,
+          "sha256_12": "9025cf3247f3"
+        },
+        {
+          "plugin_id": "softube--passive-active-pack",
+          "source_url": "https://www.delamar.de/test/softube-passive-active-pack-testbericht/",
+          "title": "Softube Passive-Active Pack Test &#8902; delamar.de",
+          "snippet": "2 mb-1 lazy wp-post-image\" alt=\"Softube Amp Room Bundle Test\" decoding=async srcset=\" \" sizes=\"auto, (max-width: 575px) 100vw, 575px\"><a href=https://www.delamar.de/test/softube-amp-room-bundle/ title=\"Softube Amp R",
+          "hits": [
+            "Drei",
+            "drei"
+          ],
+          "bytes": 119509,
+          "sha256_12": "18bcecfe848f"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "softube--abbey-road-studios-brilliance-pack",
+      "name": "Abbey Road Studios Brilliance Pack",
+      "wave7_primary": "https://www.softube.com/plug-ins/abbey-road-brilliance-pack",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "softube--abbey-road-studios-brilliance-pack",
+          "source_url": "https://www.kvraudio.com/product/abbey-road-studios-brilliance-pack-by-softube",
+          "title": "Abbey Road Studios Brilliance Pack by Softube - EQ Plugin VST VST3 Audio Unit AAX",
+          "snippet": "The Brilliance Pack provides authentic emulations of the EMI RS127 and RS135 EQ units, which were built in the early 1960s to supplement the...",
+          "cue_count": 36,
+          "cue_sample": [
+            "RS127",
+            "RS135",
+            "EQ Plugin",
+            "rs127",
+            "rs135"
+          ],
+          "bytes": 84485,
+          "sha256_12": "47d6c6754d82"
+        }
+      ],
+      "rejected": [
+        {
+          "file": "softube-abbey-pb.html",
+          "url": "https://www.pluginboutique.com/product/2-Effects/11-EQ/891-Abbey-Road-Studios-Brilliance-Pack",
+          "reason": "no_bundle_cues",
+          "title": "VST Plugins, Synth Presets, Effects, Virtual Instruments, Music Plugins from Pluginboutique"
+        }
+      ]
+    },
+    {
+      "plugin_id": "softube--uad-softube-amp-room-bundle",
+      "name": "UAD Softube Amp Room Bundle",
+      "wave7_primary": "https://www.softube.com/installers",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "softube--uad-softube-amp-room-bundle",
+          "source_url": "https://www.uaudio.com/products/softube-amp-room-bundle",
+          "title": "Softube Amp Room Bundle &ndash; Universal Audio",
+          "snippet": "Softube Amp Room Bundle \u2013 Universal Audio",
+          "hits": [
+            "Vintage Amp Room",
+            "Metal Amp Room",
+            "Bass Amp Room",
+            "Bundle",
+            "collection"
+          ],
+          "bytes": 747316,
+          "sha256_12": "3c510b5b7612"
+        },
+        {
+          "plugin_id": "softube--uad-softube-amp-room-bundle",
+          "source_url": "https://www.uaudio.com/blogs/press/softube-amp-room",
+          "title": "Universal Audio Announces Softube Amp Room Plug-Ins for UAD Platform &amp;",
+          "snippet": "ased to announce the debut of Softube\u2019s Vintage Amp Room, Metal Amp Room, Bass Amp Room, and Acoustic Feedback Deluxe plug-ins for the UAD Powered Plug-Ins platform and Apollo\" />",
+          "hits": [
+            "Amp Room Bundle",
+            "Vintage Amp Room",
+            "Metal Amp Room",
+            "Bass Amp Room"
+          ],
+          "bytes": 544306,
+          "sha256_12": "634b04d9e509"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "softube--uad-tube-tech-eq-collection",
+      "name": "UAD Tube-Tech EQ Collection",
+      "wave7_primary": "https://www.softube.com/installers",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "softube--uad-tube-tech-eq-collection",
+          "source_url": "https://www.uaudio.com/products/tube-tech-eq-collection",
+          "title": "Tube-Tech EQ Collection &ndash; Universal Audio",
+          "snippet": "plugin\",\"theme\":168012546137,\"product\":\"tube-tech-eq-collection\",\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1790366786,\"path\":\"\\/products\\/tube-tech-eq-collection\",\"locale_root_",
+          "hits": [
+            "Tube-Tech",
+            "Collection",
+            "PE 1C",
+            "ME 1B",
+            "EQ"
+          ],
+          "bytes": 740934,
+          "sha256_12": "e0b9b6c161f6"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "waves--chris-lord-alge-artist-signature-series",
+      "name": "Chris Lord-Alge Artist Signature Series",
+      "wave7_primary": "https://www.waves.com/bundles/chris-lord-alge-signature-series",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "waves--chris-lord-alge-artist-signature-series",
+          "source_url": "https://www.kvraudio.com/product/chris-lord-alge-artist-signature-collection-by-waves",
+          "title": "Chris Lord-Alge Artist Signature Series by Waves - Bundle Plugin VST VST3 Audio Unit AAX",
+          "snippet": "The Chris Lord-Alge Artist Signature Series, featuring six application-specific plug-ins - CLA Bass, CLA Drums, CLA Vocals, CLA Guitars, CLA...",
+          "cue_count": 39,
+          "cue_sample": [
+            "Artist Signature",
+            "Bundle Plugin",
+            "artist signature"
+          ],
+          "bytes": 98868,
+          "sha256_12": "9ac5946c5a3c"
+        },
+        {
+          "plugin_id": "waves--chris-lord-alge-artist-signature-series",
+          "source_url": "https://www.thomann.de/intl/waves_cla_classic_compressors.htm",
+          "title": "Waves CLA Classic Compressors \u2013 United States",
+          "snippet": "Plugin Bundle (Download) Comprises the following plugins: CLA-2A, CLA-3A, CLA-76 Blacky and CLA-76 Bluey Information on licensing and installation can be found under \"Downloads\".",
+          "cue_count": 3,
+          "cue_sample": [
+            "Plugin Bundle"
+          ],
+          "bytes": 598166,
+          "sha256_12": "3a1748334f89"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "waves--eddie-kramer-signature-series",
+      "name": "Eddie Kramer Signature Series",
+      "wave7_primary": "https://www.waves.com/bundles/eddie-kramer-signature-series",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "waves--eddie-kramer-signature-series",
+          "source_url": "https://www.kvraudio.com/product/eddie-kramer-signature-series-by-waves",
+          "title": "Eddie Kramer Signature Series by Waves - Exciter / Enhancer Plugin VST VST3 Audio Unit AAX",
+          "snippet": "The Eddie Kramer Signature Series features five application-specific audio plug-ins, created in collaboration with legendary Producer/Engine...",
+          "cue_count": 24,
+          "cue_sample": [
+            "Signature Series",
+            "signature series"
+          ],
+          "bytes": 91218,
+          "sha256_12": "aca21575ee8a"
+        },
+        {
+          "plugin_id": "waves--eddie-kramer-signature-series",
+          "source_url": "https://www.kvraudio.com/product/eddie-kramer-collection-by-waves",
+          "title": "Eddie Kramer Signature Series by Waves - Exciter / Enhancer Plugin VST VST3 Audio Unit AAX",
+          "snippet": "The Eddie Kramer Signature Series features five application-specific audio plug-ins, created in collaboration with legendary Producer/Engine...",
+          "cue_count": 24,
+          "cue_sample": [
+            "Signature Series",
+            "signature series"
+          ],
+          "bytes": 91458,
+          "sha256_12": "ec9e1113bd75"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "waves--jack-joseph-puig-signature-series",
+      "name": "Jack Joseph Puig Signature Series",
+      "wave7_primary": "https://www.waves.com/bundles/jack-joseph-puig-signature-series",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "waves--jack-joseph-puig-signature-series",
+          "source_url": "https://www.kvraudio.com/product/jack-joseph-puig-signature-series-by-waves",
+          "title": "Jack Joseph Puig Signature Series by Waves - Mastering Plugin VST VST3 Audio Unit AAX",
+          "snippet": "Developed in close association with JJP himself, the Jack Joseph Puig Artist Signature Series features six application-specific plug-ins, JJ...",
+          "cue_count": 36,
+          "cue_sample": [
+            "Artist Signature",
+            "Signature Series",
+            "signature series",
+            "artist signature"
+          ],
+          "bytes": 93690,
+          "sha256_12": "5a6170489e09"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "waves--manny-marroquin-signature-series",
+      "name": "Manny Marroquin Signature Series",
+      "wave7_primary": "https://www.waves.com/bundles/manny-marroquin-signature-series",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "waves--manny-marroquin-signature-series",
+          "source_url": "https://www.kvraudio.com/product/manny-marroquin-signature-series-by-waves",
+          "title": "Manny Marroquin Signature Series by Waves - Effect Pack Plugin VST VST3 Audio Unit AAX",
+          "snippet": "Manny Marroquin Signature Series Manny Marroquin Delay Manny Marroquin on the MM Delay: Delay is all about depth. It's one of the key eleme...",
+          "cue_count": 38,
+          "cue_sample": [
+            "Signature Series",
+            "signature series"
+          ],
+          "bytes": 89208,
+          "sha256_12": "25267179662e"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "plugin_id": "waves--tony-maserati-signature-series",
+      "name": "Tony Maserati Signature Series",
+      "wave7_primary": "https://www.waves.com/bundles/tony-maserati-signature-series",
+      "status": "second_source_ok",
+      "second_sources": [
+        {
+          "plugin_id": "waves--tony-maserati-signature-series",
+          "source_url": "https://www.kvraudio.com/product/tony-maserati-signature-series-by-waves",
+          "title": "Tony Maserati Signature Series by Waves - Bundle Plugin VST VST3 Audio Unit AAX",
+          "snippet": "The Tony Maserati Collection features six application-specific audio plug-ins, created by Waves in collaboration with multi-Platinum mixing ...",
+          "cue_count": 25,
+          "cue_sample": [
+            "Signature Series",
+            "Bundle Plugin",
+            "signature series"
+          ],
+          "bytes": 92728,
+          "sha256_12": "de03ac5d77cd"
+        },
+        {
+          "plugin_id": "waves--tony-maserati-signature-series",
+          "source_url": "https://www.kvraudio.com/product/tony-maserati-collection-by-waves",
+          "title": "Tony Maserati Signature Series by Waves - Bundle Plugin VST VST3 Audio Unit AAX",
+          "snippet": "The Tony Maserati Collection features six application-specific audio plug-ins, created by Waves in collaboration with multi-Platinum mixing ...",
+          "cue_count": 25,
+          "cue_sample": [
+            "Signature Series",
+            "Bundle Plugin",
+            "signature series"
+          ],
+          "bytes": 92932,
+          "sha256_12": "c871c9d18198"
+        }
+      ],
+      "rejected": []
+    }
+  ]
+}
