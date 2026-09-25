@@ -1,5 +1,5 @@
 37e263f9db5ad89babf3e5ffcebc77dd1617028b1e448b4fb335005646ac8106  ./2026-09-25-diggable-113-disposition-matrix-deep.md
-4ce817e2899124014db6b6ff571e10412f561daea0bef562266d95150db1e614  ./2026-09-25-engine-maintainability-paths-deep.md
+75a286c49f4ce1fc3fb1f5866fe2b8a791201e411cd0f6798e3608e1448d3b16  ./2026-09-25-engine-maintainability-paths-deep.md
 a4ef5f34a1d0d8c1c38a5b8d1f4a6e38ce1a58c8670176cea9adfcc5cd935056  ./2026-09-25-hub-app-cdn-canaries-ua-ik-spitfire-deep.md
 8eaddc0f51650b0b623d170edee95cc2f4b2c024ae974cfcd57369c73560afb1  ./2026-09-25-identity-and-tier2-recon-deep.md
 9953a7913d4dea2fe28a6416411c809b8f58d7b8634457ac857cfe25bddc5627  ./2026-09-25-ik-amplitube-pdf-canary-and-hub-wall-deep.md
