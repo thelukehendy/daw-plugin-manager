@@ -1,0 +1,24 @@
+{
+  "source": "app-feedback",
+  "issueNumber": 22,
+  "issueUrl": "https://github.com/thelukehendy/daw-plugin-manager/issues/22",
+  "receivedAt": "2026-09-26T18:44:00Z",
+  "payload": {
+    "kind": "feedback",
+    "schemaVersion": 1,
+    "message": "token-rotate smoke — ignore",
+    "app": {
+      "version": "1.0.0",
+      "shell": "tauri",
+      "os": "darwin",
+      "osVersion": null,
+      "arch": "arm64"
+    },
+    "catalogUpdatedAt": null,
+    "scan": null,
+    "matches": null,
+    "daws": null,
+    "helpers": null,
+    "summary": null
+  }
+}
