@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-26T15:38:39Z",
+  "updatedAt": "2026-09-26T15:50:23Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -22362,6 +22362,7 @@
       "matchPatterns": [
         "Auto-Tune Central"
       ],
+      "notes": "Vendor publishes no version number for this app (checked 2026-09-26; self-updating or versionless distribution). Row intentionally versionless.",
       "identityKeys": {
         "bundleIds": [
           "com.Antares.AutoTuneCentral"
@@ -44662,7 +44663,15 @@
       },
       "identityKind": "hub_app",
       "appleSilicon": "native",
-      "popularityTier": 1
+      "popularityTier": 1,
+      "latestVersion": "2.19.0",
+      "versionSourceUrl": "https://support.slatedigital.com/hc/en-us/articles/4402433908755-Complete-Access-Hub-formerly-Slate-Digital-Connect-Release-Notes",
+      "versionVerifiedAt": "2026-09-26T15:50:20Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "vendor's own release-notes KB names 2.19.0 (2026-09-21) as newest entry"
+      ]
     },
     {
       "id": "flux--complete-pack",
@@ -105868,14 +105877,28 @@
       "matchPatterns": [
         "MPluginManager"
       ],
+      "notes": "Vendor distinguishes installer version (02.30) from kernel version (17.10.01); installed detection reads the kernel line, so latestVersion tracks the kernel.",
       "identityKeys": {
         "bundleIds": [
           "com.meldaproduction.MPluginManager"
         ]
       },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "identityKind": "hub_app",
       "appleSilicon": "native",
-      "popularityTier": 1
+      "popularityTier": 1,
+      "latestVersion": "17.10.01",
+      "versionSourceUrl": "https://www.meldaproduction.com/downloads",
+      "versionVerifiedAt": "2026-09-26T15:50:20Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 85,
+      "versionConfidenceReasons": [
+        "vendor download page names kernel 17.10.01; app detection reads the kernel line, not the 02.30 installer number"
+      ]
     },
     {
       "id": "meldaproduction--mpolysaturator",
@@ -153025,6 +153048,7 @@
       "matchPatterns": [
         "SSL Download Manager"
       ],
+      "notes": "Vendor publishes no version number for this app (checked 2026-09-26; self-updating or versionless distribution). Row intentionally versionless.",
       "identityKeys": {
         "bundleIds": [
           "com.solidstatelogic.downloadmanager"
@@ -166349,6 +166373,7 @@
         "Steven Slate Audio Center",
         "Slate Audio Center"
       ],
+      "notes": "Vendor publishes no version number for this app (checked 2026-09-26; self-updating or versionless distribution). Row intentionally versionless.",
       "identityKeys": {
         "bundleIds": [
           "com.yme.slateaudio-center"
@@ -193511,6 +193536,7 @@
       "matchPatterns": [
         "UVI Portal"
       ],
+      "notes": "Vendor publishes no version number for this app (checked 2026-09-26; self-updating or versionless distribution). Row intentionally versionless.",
       "identityKeys": {
         "bundleIds": [
           "net.uvi.UVIPortal"
@@ -196066,6 +196092,7 @@
       "matchPatterns": [
         "UnitedPluginsManager"
       ],
+      "notes": "Vendor publishes no version number for this app (checked 2026-09-26; self-updating or versionless distribution). Row intentionally versionless.",
       "identityKind": "hub_app",
       "popularityTier": 2
     },
@@ -207475,7 +207502,15 @@
         "compareSegments": 3
       },
       "identityKind": "hub_app",
-      "popularityTier": 2
+      "popularityTier": 2,
+      "latestVersion": "5.0.0",
+      "versionSourceUrl": "https://www.xlnaudio.com/release_notes",
+      "versionVerifiedAt": "2026-09-26T15:50:20Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 95,
+      "versionConfidenceReasons": [
+        "vendor's own release-notes table lists 5.0.0 (2026-08-29) as newest"
+      ]
     },
     {
       "id": "airwindows--xlowpass",
@@ -214545,6 +214580,7 @@
         "iZotope Product Portal",
         "Product Portal"
       ],
+      "notes": "Vendor publishes no version number for this app (checked 2026-09-26; self-updating or versionless distribution). Row intentionally versionless.",
       "identityKeys": {
         "bundleIds": [
           "com.izotope.productportal"
