@@ -1,0 +1,17 @@
+[build]
+  command = "mkdir -p feedback-relay/public && printf 'DAW Plugin Manager feedback relay\\n' > feedback-relay/public/index.html"
+  publish = "feedback-relay/public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  directory = "netlify/functions"
+
+# No accidental publish of the Electron/Tauri app or catalog DB.
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
