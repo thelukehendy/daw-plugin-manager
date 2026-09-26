@@ -1,0 +1,72 @@
+name: Mirror app feedback into advisory inbox
+
+# When the Netlify relay opens an issue labeled app-feedback, copy the payload
+# JSON into advisory/feedback-inbox/ for Cursor + Muse.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  mirror:
+    if: >-
+      contains(join(github.event.issue.labels.*.name, ','), 'app-feedback')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Extract payload and write inbox file
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue
+            const body = issue.body || ''
+            const marker = '```json'
+            const start = body.indexOf(marker)
+            const end = body.indexOf('```', start + marker.length)
+            if (start < 0 || end < 0) {
+              core.setFailed('No JSON payload block in issue body')
+              return
+            }
+            const jsonText = body.slice(start + marker.length, end).trim()
+            JSON.parse(jsonText) // validate
+            const fs = require('fs')
+            const path = require('path')
+            const created = (issue.created_at || new Date().toISOString()).slice(0, 10)
+            const slug = String(issue.title || 'feedback')
+              .toLowerCase()
+              .replace(/^\[app-feedback\]\s*/, '')
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-|-$/g, '')
+              .slice(0, 40) || 'note'
+            const dir = 'advisory/feedback-inbox'
+            fs.mkdirSync(dir, { recursive: true })
+            const file = path.join(dir, `${created}-${issue.number}-${slug}.json`)
+            const envelope = {
+              source: 'app-feedback',
+              issueNumber: issue.number,
+              issueUrl: issue.html_url,
+              receivedAt: issue.created_at,
+              payload: JSON.parse(jsonText),
+            }
+            fs.writeFileSync(file, JSON.stringify(envelope, null, 2) + '\n')
+            core.info(`Wrote ${file}`)
+            core.setOutput('file', file)
+
+      - name: Commit inbox file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add advisory/feedback-inbox/
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "advisory(feedback): mirror issue #${{ github.event.issue.number }}"
+          git push origin HEAD:main
