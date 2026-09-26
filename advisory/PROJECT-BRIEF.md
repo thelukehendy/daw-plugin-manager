@@ -10,7 +10,8 @@ It is the contract; this brief is the context.
 
 ## 1. What this is
 
-The DAW Plugin Manager is a macOS Electron app (repo `thelukehendy/daw-plugin-manager`)
+The DAW Plugin Manager is a macOS **Tauri** app (repo `thelukehendy/daw-plugin-manager`;
+Electron in that repo is legacy reference only)
 that scans a user's installed DAWs/plugins and reports which have updates available.
 The version catalog behind it is researched and maintained by an autonomous research
 engine run by this operator. Luke codes the app in Cursor; the engine and all data
