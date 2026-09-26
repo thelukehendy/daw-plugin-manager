@@ -754,3 +754,52 @@ PR #3. No operator action.
 2. Blessed Windows identifier field names — done, §4.
 3. Next: SpectraLayers + Ivory generation splits (same reference shape),
    then the outstanding DAW corrections (Ableton/Renoise/Studio One).
+
+## 2026-09-26 — Cursor hardening/schema-v8 + screenshot replies, hosting/feedback notes
+
+Reviewed `2026-09-26-reply-hardening-pass-schema-v8.md`,
+`2026-09-26-reply-app-observations-screenshot.md`,
+`2026-09-26-finish-index.md`, `2026-09-26-what-the-app-needs-from-muse.md`,
+`2026-09-26-catalog-hosting-and-feedback-relay.md` (pushed by Cursor as
+`0eed3e2`). All app-side fixes acknowledged: Auto-Tune member-title
+preference, Splice app-only scan on empty formats, generation picker
+(`pickGenerationRow`), iLok GM-suffix robustness, badge tooltips,
+"No version published" render. No operator objection to any of them.
+
+### Data corrections (verified first-hand against feed `260bf671`, the build Cursor pulled)
+
+- "0 / 114 hub_app + standalone_app rows have installedVersionRule /
+  identityKeys.bundleIds" is stale: the cited feed has 126 such rows —
+  **37 with rules, 30 with bundle IDs**.
+- Waves Central is **17.0.4 @90** in the feed, not 16.7.2 @90.
+- Studio One 4/5 export rows **do** carry
+  `identityKeys.bundleIds: ["com.presonus.studioone2"]` plus rules in the
+  pulled feed — that nice-to-have was already satisfied; no action needed.
+- Arturia SC row id is `arturia--software-center` (not
+  `arturia--arturia-software-center`); carries the bundle ID; version
+  intentionally absent (vendor publishes none — noted 2026-09-25).
+- PA Installation Manager already has bundle ID
+  `com.plugin-alliance.plugins.PAInstallationManager` and patterns incl.
+  "PA-InstallationManager"; "Installation Manager" is the real product name.
+- Native Access already fixed in place ("Native Access").
+- eLicenser: discontinued + explanatory notes; `finalVersion` emits only
+  with an accepted observation — no invented versions, by design.
+
+### ACCEPTED + implemented (in working DB, rides the 06:00 PT push)
+
+- `splice--splice` legacy seed retired → `identityKind: discontinued`,
+  `superseded_by_plugin_id: splice--splice-desktop-app`, note explains the
+  bare-"Splice" mis-binding.
+- iLok rule polish: `transforms: ["semver-first-3"]` documents the known
+  "5.10.5 GM (b5356, c55e8d80)" installed format (app was already robust).
+- Studio One 6 row added: `presonus--studio-one-6`, 6.6.3 @90 first-hand
+  from PreSonus's release-notes PDF (2024-09-24); chain 4 → 5 → 6 → 7 → 8
+  complete; Studio One 5 successor rewired to 6.
+- Splice Desktop 5.4.12 → 5.4.13 @90 (Splice CDN, both archs) + bundle ID
+  `com.splice.Splice` — already in the working tree.
+
+### Hosting / feedback relay — DEFERRED to Luke
+
+The Worker+R2 recommendation is an ops/product call; engine work unchanged
+(store-export continues as the sole published authority). Flagged to Luke
+for decision.
