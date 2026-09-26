@@ -3,8 +3,13 @@
 In-app feedback arrives here after:
 
 1. App `POST`s JSON to the Netlify relay (`/api/feedback`)
-2. Relay opens a GitHub issue labeled `app-feedback`
-3. Workflow `feedback-inbox-mirror.yml` writes `YYYY-MM-DD-<issue>-<slug>.json`
+2. Relay opens a GitHub issue labeled `app-feedback` (short summary only)
+3. Relay commits the **full** envelope to `advisory/feedback-inbox/YYYY-MM-DD-<issue>-<slug>.json` on `main`
+
+The full payload is never truncated for GitHub’s 65KB issue-body limit — that
+limit only applies to the human-readable issue text. Workflow
+`feedback-inbox-mirror.yml` is a fallback for older issues that still embedded
+JSON in the body.
 
 **Muse:** follow **[`MUSE-PLAYBOOK.md`](./MUSE-PLAYBOOK.md)** — cadence, classification,
 how to read `matches` / `scan`, fixture rules.

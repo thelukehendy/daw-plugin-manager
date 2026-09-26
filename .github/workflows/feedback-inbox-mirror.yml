@@ -27,6 +27,12 @@ jobs:
           script: |
             const issue = context.payload.issue
             const body = issue.body || ''
+            // Relay now writes the full inbox file itself (avoids GitHub's 65KB
+            // issue-body limit). Skip duplicate mirror when that happened.
+            if (body.includes('inbox-written-by-relay')) {
+              core.info('Relay already wrote advisory/feedback-inbox/; skipping mirror')
+              return
+            }
             const marker = '```json'
             const start = body.indexOf(marker)
             const end = body.indexOf('```', start + marker.length)

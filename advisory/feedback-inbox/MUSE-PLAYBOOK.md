@@ -13,12 +13,12 @@ only holds the server token). No action required from you on hosting.
 | Stage | Location |
 |---|---|
 | User Send | App → `POST …/api/feedback` (Netlify) |
-| Human-visible | GitHub issues labeled **`app-feedback`** |
-| Operator-readable | **`advisory/feedback-inbox/YYYY-MM-DD-<issue>-<slug>.json` on `main`** |
+| Human-visible | GitHub issues labeled **`app-feedback`** (summary only) |
+| Operator-readable | **`advisory/feedback-inbox/YYYY-MM-DD-<issue>-<slug>.json` on `main`** (full payload — relay writes this directly) |
 
-Pull `main` (or watch new commits under `advisory/feedback-inbox/`). Ignore
-smoke-test noise (`Cursor smoke test`, `sendFeedback()` probes) unless debugging
-the relay.
+The inbox file includes the complete `payload` (message, scan, matches, daws,
+helpers). Nothing is truncated for size; GitHub’s 65KB limit only affects the
+issue text, not this file.
 
 Each file:
 
