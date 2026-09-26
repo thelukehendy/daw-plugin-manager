@@ -1,0 +1,24 @@
+{
+  "source": "app-feedback",
+  "issueNumber": 16,
+  "issueUrl": "https://github.com/thelukehendy/daw-plugin-manager/issues/16",
+  "receivedAt": "2026-09-26T17:50:13Z",
+  "payload": {
+    "kind": "feedback",
+    "schemaVersion": 1,
+    "message": "connectivity probe from Cursor",
+    "app": {
+      "version": "0.0.0",
+      "shell": "tauri",
+      "os": "darwin",
+      "osVersion": null,
+      "arch": "arm64"
+    },
+    "catalogUpdatedAt": null,
+    "scan": null,
+    "matches": null,
+    "daws": null,
+    "helpers": null,
+    "summary": null
+  }
+}
