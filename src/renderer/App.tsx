@@ -5,6 +5,7 @@ import { DetailPanel } from './components/DetailPanel'
 import { AppSidebar } from './components/AppSidebar'
 import { SplashScreen } from './components/SplashScreen'
 import { FeedbackPanel } from './components/FeedbackPanel'
+import { ExtraFoldersField } from './components/ExtraFoldersField'
 import iconUrl from './assets/app-icon.svg'
 import {
   LibraryTable,
@@ -157,6 +158,7 @@ export default function App() {
   const [fromSnapshot, setFromSnapshot] = useState(false)
   const [refreshingCatalog, setRefreshingCatalog] = useState(false)
   const [showSplash, setShowSplash] = useState(true)
+  const [splashSticky, setSplashSticky] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const viewChosenFor = useRef<ScanReport | null>(null)
 
@@ -348,12 +350,24 @@ export default function App() {
 
   return (
     <div className={`app shell mode-${mode}`}>
-      {showSplash && <SplashScreen catalogDate={catalogDate} onDone={() => setShowSplash(false)} />}
+      {showSplash && (
+        <SplashScreen
+          catalogDate={catalogDate}
+          sticky={splashSticky}
+          onDone={() => {
+            setShowSplash(false)
+            setSplashSticky(false)
+          }}
+        />
+      )}
       <header className="topbar">
         <button
           type="button"
           className="brand"
-          onClick={() => setShowSplash(true)}
+          onClick={() => {
+            setSplashSticky(true)
+            setShowSplash(true)
+          }}
           title="About DAW Plugin Manager"
         >
           <img className="brand-icon" src={iconUrl} alt="" width={20} height={20} />
@@ -391,7 +405,7 @@ export default function App() {
             className={`btn btn-quiet ${showSettings ? 'on' : ''}`}
             onClick={() => setShowSettings((s) => !s)}
             aria-expanded={showSettings}
-            title="Extra plugin folders, appearance, and saving an anonymized scan."
+            title="Extra plugin folders, appearance, and feedback."
           >
             Settings
           </button>
@@ -425,15 +439,7 @@ export default function App() {
 
       {showSettings && (
         <div className="settings-strip">
-          <label>
-            Extra plugin folders (one per line)
-            <textarea
-              value={extraRoots}
-              onChange={(e) => setExtraRoots(e.target.value)}
-              rows={2}
-              placeholder="/custom/plugin/path"
-            />
-          </label>
+          <ExtraFoldersField value={extraRoots} onChange={setExtraRoots} />
           <div className="settings-row">
             <span className="settings-label">Appearance</span>
             <div className="seg">
@@ -449,7 +455,7 @@ export default function App() {
               ))}
             </div>
           </div>
-          <FeedbackPanel hasScan={!!report?.plugins?.length} />
+          <FeedbackPanel hasScan={!!report} />
         </div>
       )}
 

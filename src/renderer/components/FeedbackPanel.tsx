@@ -41,30 +41,32 @@ export function FeedbackPanel({ hasScan }: { hasScan: boolean }) {
         placeholder="What's wrong, confusing, or missing? A plugin with the wrong version, a vendor we don't know…"
       />
       <div className="feedback-row">
-        <label
-          className="feedback-check"
-          title={hasScan ? undefined : 'Run a scan first to attach your plugin list.'}
-        >
-          <input
-            type="checkbox"
-            checked={includeScan && hasScan}
-            disabled={!hasScan}
-            onChange={(e) => setIncludeScan(e.target.checked)}
-          />
-          Include my plugin list
-        </label>
         <span className="feedback-note">
           Plugin and app names, vendors, bundle IDs and versions only. No file paths, usernames
           or machine names.
         </span>
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={send}
-          disabled={!message.trim() || state.kind === 'sending'}
-        >
-          {state.kind === 'sending' ? 'Sending…' : 'Send'}
-        </button>
+        <div className="feedback-actions">
+          <label
+            className="feedback-check"
+            title={hasScan ? undefined : 'Scan (or reopen a saved library) first to attach your plugin list.'}
+          >
+            <input
+              type="checkbox"
+              checked={includeScan && hasScan}
+              disabled={!hasScan}
+              onChange={(e) => setIncludeScan(e.target.checked)}
+            />
+            Include my plugin list
+          </label>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={send}
+            disabled={!message.trim() || state.kind === 'sending'}
+          >
+            {state.kind === 'sending' ? 'Sending…' : 'Send'}
+          </button>
+        </div>
       </div>
       {state.text && (
         <p className={`feedback-status ${state.kind === 'error' ? 'is-error' : ''}`} role="status">

@@ -1,6 +1,6 @@
 /**
- * Tauri shell: runs the shared scanner / matcher / catalog code in the web view and
- * exposes the same `window.dawPluginManager` API the Electron preload provides.
+ * Tauri shell (shipping): runs the shared scanner / matcher / catalog code in the web view and
+ * exposes the same `window.dawPluginManager` API. Electron's preload is legacy reference only.
  */
 import { invoke } from '@tauri-apps/api/core'
 import { fetch as tauriFetch } from '@tauri-apps/plugin-http'
@@ -85,8 +85,9 @@ export async function installTauriBridge(): Promise<void> {
       return () => listeners.delete(callback)
     },
     async sendFeedback(input) {
+      const appInfo = await window.dawPluginManager.getAppInfo()
       const payload = buildFeedbackPayload(input, lastScan ?? (await loadLastLibrary()), {
-        version: '1.0.0',
+        version: appInfo.version || '1.0.0',
         shell: 'tauri',
         os: info.os,
         osVersion: info.osVersion,
@@ -102,6 +103,7 @@ export async function installTauriBridge(): Promise<void> {
         return { ok: false, error: 'Could not open that link.' }
       }
     },
+    pickDirectories: () => invoke<string[]>('pick_directories'),
     getAppInfo: async () => ({
       version: '1.0.0',
       name: 'DAW Plugin Manager',
