@@ -74,6 +74,11 @@ CREATE TABLE IF NOT EXISTS plugins (
     -- discontinued | unknown_other
   -- v5 per-plugin Apple Silicon override (NULL = inherit manufacturer default)
   apple_silicon TEXT,       -- native|universal|rosetta|intel-only ; NULL inherits
+  -- v7 installed-version normalization rule for the app's update verdict
+  -- (JSON object; exported as installedVersionRule when set). Shape:
+  -- {"source": "CFBundleShortVersionString", "transforms": [...], "compareSegments": N}
+  -- transforms are applied in listed order; unknown transform = no verdict.
+  installed_version_rule TEXT,
   -- v6 popularity tier for research prioritization (internal; not exported).
   -- NULL = inherit manufacturer tier in queue ordering.
   popularity_tier INTEGER,  -- 1|2|3 ; NULL inherits

@@ -36,6 +36,7 @@ OPTIONAL_PLUGIN_FIELDS = [
     ("supersedes_plugin_id", "supersedesPluginId"),
     ("superseded_by_plugin_id", "supersededByPluginId"),
     ("identity_keys", "identityKeys"),  # JSON object; parsed on emit
+    ("installed_version_rule", "installedVersionRule"),  # JSON object; parsed on emit
 ]
 
 # v3 helpful app fields (omit when null/empty/0 as appropriate)
@@ -101,6 +102,26 @@ def lint_match_patterns(rows):
                         )
                         break
     return prefix_hits, common_hits
+
+
+def lint_orphan_manufacturers(conn):
+    """Report-only: plugins whose manufacturerId has no manufacturers row.
+    Added 2026-09-26 after the S-Gear 2 orphan (manufacturerId 'scuffham'
+    pointed nowhere). Prints LINT lines to stderr; never fails the export."""
+    try:
+        mfr_ids = {r[0] for r in conn.execute("SELECT id FROM manufacturers")}
+        orphans = [
+            (r[0], r[1])
+            for r in conn.execute("SELECT id, manufacturer_id FROM plugins")
+            if r[1] not in mfr_ids
+        ]
+    except sqlite3.OperationalError:
+        return
+    for pid, mfr in sorted(orphans):
+        print(
+            f"LINT: plugin {pid} has orphan manufacturerId {mfr!r}",
+            file=sys.stderr,
+        )
 
 
 def now_iso() -> str:
@@ -215,6 +236,8 @@ def main() -> int:
                     mfr_tier[row["id"]] = row["popularity_tier"]
         except sqlite3.OperationalError:
             pass
+        # Report-only orphan-manufacturerId lint (never fails the export).
+        lint_orphan_manufacturers(conn)
         for p in conn.execute("SELECT * FROM plugins ORDER BY name"):
             patterns = loads_json(p["match_patterns"], [])
             if not patterns:
@@ -257,7 +280,7 @@ def main() -> int:
                         continue
                     if col == "update_class" and val == "unknown":
                         continue
-                    if col == "identity_keys":
+                    if col in ("identity_keys", "installed_version_rule"):
                         try:
                             entry[key] = json.loads(val)
                         except (ValueError, TypeError):

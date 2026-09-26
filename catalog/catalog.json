@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-26T13:02:55Z",
+  "updatedAt": "2026-09-26T15:38:39Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -11646,18 +11646,103 @@
         "Ableton Live"
       ],
       "notes": "Flagship DAW. Editions (Intro/Standard/Suite) share the Live version line.",
+      "generation": "12",
+      "predecessorPluginId": "ableton--ableton-live-11",
+      "identityKeys": {
+        "bundleIds": [
+          "com.ableton.live"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
-      "latestVersion": "12.4.6",
+      "latestVersion": "12.4",
       "versionSourceUrl": "https://www.ableton.com/en/release-notes/live-12/",
-      "versionVerifiedAt": "2026-09-25T20:36:46Z",
+      "versionVerifiedAt": "2026-09-26T15:36:03Z",
       "versionEvidence": "page-confirmed",
-      "versionConfidence": 82,
+      "versionConfidence": 88,
       "versionConfidenceReasons": [
-        "first-party page confirms 12.4 line",
-        "12.4.6 corroborated by 5+ independent mirrors incl. FileHorse trial DMG filename",
-        "vendor patch-level page not directly retrievable"
+        "first-party vendor confirms the 12.4 line",
+        "no newer line announced",
+        "patch level not published on a retrievable vendor page"
+      ]
+    },
+    {
+      "id": "ableton--ableton-live-10",
+      "manufacturerId": "ableton",
+      "name": "Ableton Live 10",
+      "matchPatterns": [
+        "Ableton Live",
+        "Ableton Live 10"
+      ],
+      "generation": "10",
+      "updateClass": "paid_upgrade",
+      "successorPluginId": "ableton--ableton-live-11",
+      "identityKeys": {
+        "bundleIds": [
+          "com.ableton.live"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
+      "notesForUser": "Live 11 and 12 are available as paid upgrades from Live 10.",
+      "identityKind": "standalone_app",
+      "popularityTier": 1,
+      "latestVersion": "10.1.43",
+      "versionSourceUrl": "http://help.ableton.com/hc/en-us/articles/6003767793436",
+      "versionVerifiedAt": "2026-09-26T15:36:03Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-party vendor help article names the exact latest version"
+      ]
+    },
+    {
+      "id": "ableton--ableton-live-11",
+      "manufacturerId": "ableton",
+      "name": "Ableton Live 11",
+      "matchPatterns": [
+        "Ableton Live",
+        "Ableton Live 11"
+      ],
+      "generation": "11",
+      "updateClass": "paid_upgrade",
+      "successorPluginId": "ableton--ableton-live",
+      "predecessorPluginId": "ableton--ableton-live-10",
+      "identityKeys": {
+        "bundleIds": [
+          "com.ableton.live"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
+      "notesForUser": "Live 12 is available as a paid upgrade from Live 11.",
+      "identityKind": "standalone_app",
+      "popularityTier": 1,
+      "latestVersion": "11.3.43",
+      "versionSourceUrl": "https://www.ableton.com/en/release-notes/live-11/",
+      "versionVerifiedAt": "2026-09-26T15:36:03Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-party vendor release notes, newest entry on the page"
       ]
     },
     {
@@ -22271,6 +22356,27 @@
       ]
     },
     {
+      "id": "antares--auto-tune-central",
+      "manufacturerId": "antares",
+      "name": "Auto-Tune Central",
+      "matchPatterns": [
+        "Auto-Tune Central"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.Antares.AutoTuneCentral"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
+      "identityKind": "hub_app",
+      "appleSilicon": "native",
+      "popularityTier": 1
+    },
+    {
       "id": "antares--auto-tune-efx",
       "manufacturerId": "antares",
       "name": "Auto-Tune EFX+",
@@ -22771,6 +22877,18 @@
         "Avid Link"
       ],
       "updatePortalUrl": "https://www.avid.com/",
+      "identityKeys": {
+        "bundleIds": [
+          "com.avid.link"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "prefix-year-2000"
+        ],
+        "compareSegments": 3
+      },
       "identityKind": "hub_app",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -41550,6 +41668,25 @@
       "popularityTier": 2
     },
     {
+      "id": "applied-acoustics--chromaphone-3",
+      "manufacturerId": "applied-acoustics",
+      "name": "Chromaphone 3",
+      "matchPatterns": [
+        "Chromaphone 3"
+      ],
+      "generation": "3",
+      "appleSilicon": "native",
+      "popularityTier": 2,
+      "latestVersion": "3.2.0",
+      "versionSourceUrl": "https://www.applied-acoustics.com/support/",
+      "versionVerifiedAt": "2026-09-26T15:31:09.786388+00:00",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-hand vendor support page: Latest installers and manuals table"
+      ]
+    },
+    {
       "id": "puremagnetik--chromascope-anomaly-manipulation-generators",
       "manufacturerId": "puremagnetik",
       "name": "Chromascope | Anomaly Manipulation Generators",
@@ -44505,6 +44642,27 @@
       "notes": "Fracture Sounds KVR catalog; expand11 soundset.",
       "identityKind": "soundset",
       "popularityTier": 3
+    },
+    {
+      "id": "slate-digital--complete-access-hub",
+      "manufacturerId": "slate-digital",
+      "name": "Complete Access Hub",
+      "matchPatterns": [
+        "Complete Access Hub"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.slatedigital.connect"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
+      "identityKind": "hub_app",
+      "appleSilicon": "native",
+      "popularityTier": 1
     },
     {
       "id": "flux--complete-pack",
@@ -67961,8 +68119,16 @@
       "matchPatterns": [
         "Fender Studio Pro"
       ],
-      "notes": "Successor of PreSonus Studio One (Fender rebrand, Jan 2026). Successor of PreSonus Studio One (renamed Jan 2026); last Studio One release was 7.x.",
-      "predecessorPluginId": "presonus--studio-one-artist",
+      "notes": "Replaces the Studio One line (Pro 7 and Artist editions); Studio One Pro 7 owners explicitly eligible for the Fender Studio Pro upgrade (fender.com).",
+      "generation": "8",
+      "predecessorPluginId": "presonus--studio-one-pro",
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
@@ -73702,6 +73868,16 @@
         "GarageBand"
       ],
       "notes": "Apple free DAW (macOS). Version from App Store release notes.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.apple.garageband10"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
@@ -86871,6 +87047,16 @@
       ],
       "updatePortalUrl": "https://www.ikmultimedia.com/userarea/",
       "notes": "KVR product https://www.kvraudio.com/product/ik-product-manager-by-ik-multimedia",
+      "identityKeys": {
+        "bundleIds": [
+          "com.ikmultimedia.productmanager"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "notesForUser": "IK Product Manager hub app.",
       "identityKind": "hub_app",
       "appleSilicon": "mixed",
@@ -89228,9 +89414,20 @@
       "manufacturerId": "plugin-alliance",
       "name": "Installation Manager",
       "matchPatterns": [
-        "Installation Manager"
+        "Installation Manager",
+        "PA-InstallationManager"
       ],
       "updatePortalUrl": "https://www.plugin-alliance.com/",
+      "identityKeys": {
+        "bundleIds": [
+          "com.plugin-alliance.plugins.PAInstallationManager"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "identityKind": "hub_app",
       "appleSilicon": "native",
       "popularityTier": 1,
@@ -100796,6 +100993,16 @@
         "Logic Pro"
       ],
       "notes": "Apple flagship DAW (macOS). Version from Apple release notes.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.apple.logic10"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
@@ -101409,6 +101616,26 @@
       ]
     },
     {
+      "id": "applied-acoustics--lounge-lizard-ep-4",
+      "manufacturerId": "applied-acoustics",
+      "name": "Lounge Lizard EP-4",
+      "matchPatterns": [
+        "Lounge Lizard EP-4"
+      ],
+      "generation": "4",
+      "notesForUser": "Superseded by Lounge Lizard EP-5.",
+      "appleSilicon": "native",
+      "popularityTier": 2,
+      "latestVersion": "4.4.4",
+      "versionSourceUrl": "https://www.applied-acoustics.com/support/",
+      "versionVerifiedAt": "2026-09-26T15:31:09.786388+00:00",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-hand vendor support page: Latest installers and manuals table"
+      ]
+    },
+    {
       "id": "applied-acoustics--lounge-lizard-ep-4-caffeine",
       "manufacturerId": "applied-acoustics",
       "name": "Lounge Lizard EP-4 - Caffeine",
@@ -101498,16 +101725,17 @@
     {
       "id": "applied-acoustics--lounge-lizard-session",
       "manufacturerId": "applied-acoustics",
-      "name": "Lounge Lizard Session",
+      "name": "Lounge Lizard Session 4",
       "matchPatterns": [
-        "Lounge Lizard Session",
-        "Lounge Lizard"
+        "Lounge Lizard Session 4",
+        "Lounge Lizard Session"
       ],
       "formats": [
         "AU",
         "VST",
         "VST3"
       ],
+      "generation": "4",
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "4.4.5",
@@ -105632,6 +105860,22 @@
         "Melda downloads page publishes shared kernel version for all plugins",
         "changes page states all plugins share kernel version numbers"
       ]
+    },
+    {
+      "id": "meldaproduction--mpluginmanager",
+      "manufacturerId": "meldaproduction",
+      "name": "MPluginManager",
+      "matchPatterns": [
+        "MPluginManager"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.meldaproduction.MPluginManager"
+        ]
+      },
+      "identityKind": "hub_app",
+      "appleSilicon": "native",
+      "popularityTier": 1
     },
     {
       "id": "meldaproduction--mpolysaturator",
@@ -118837,12 +119081,9 @@
     {
       "id": "native-instruments--native-access",
       "manufacturerId": "native-instruments",
-      "name": "Native Access products",
+      "name": "Native Access",
       "matchPatterns": [
-        "Kontakt",
-        "Guitar Rig",
-        "Reaktor",
-        "Massive"
+        "Native Access"
       ],
       "formats": [
         "AAX",
@@ -118850,6 +119091,16 @@
         "VST3"
       ],
       "minMacOS": "12.0",
+      "identityKeys": {
+        "bundleIds": [
+          "com.native-instruments.nativeaccess2"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "portalApp": "Native Access",
       "notesForUser": "Native Access is NI’s product manager / hub app.",
       "identityKind": "hub_app",
@@ -138747,6 +138998,18 @@
         "Pro Tools"
       ],
       "notes": "Avid flagship DAW. Editions (Artist/Studio/Ultimate) share the version line.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.avid.ProTools"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "prefix-year-2000"
+        ],
+        "compareSegments": 2
+      },
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
@@ -142360,6 +142623,18 @@
         "Reaper"
       ],
       "notes": "Cockos flagship DAW. Universal macOS build.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.cockos.reaper"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
@@ -146417,6 +146692,20 @@
         "Reason"
       ],
       "notes": "Reason Studios flagship DAW (also ships as Reason Rack Plugin).",
+      "generation": "14",
+      "predecessorPluginId": "reason-studios--reason-13",
+      "identityKeys": {
+        "bundleIds": [
+          "se.propellerheads.reason"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
       "identityKind": "standalone_app",
       "appleSilicon": "unknown",
       "popularityTier": 1,
@@ -146428,6 +146717,77 @@
       "versionConfidenceReasons": [
         "Vendor release-notes page, version explicit",
         ""
+      ]
+    },
+    {
+      "id": "reason-studios--reason-12",
+      "manufacturerId": "reason-studios",
+      "name": "Reason 12",
+      "matchPatterns": [
+        "Reason",
+        "Reason 12"
+      ],
+      "generation": "12",
+      "updateClass": "paid_upgrade",
+      "successorPluginId": "reason-studios--reason-13",
+      "identityKeys": {
+        "bundleIds": [
+          "se.propellerheads.reason"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
+      "notesForUser": "Reason 13 is available as a paid upgrade from Reason 12.",
+      "identityKind": "standalone_app",
+      "popularityTier": 1,
+      "latestVersion": "12.7.4",
+      "versionSourceUrl": "https://www.reasonstudios.com/reason/updates/release-notes",
+      "versionVerifiedAt": "2026-09-26T15:36:03Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-party vendor release notes, newest 12.x entry"
+      ]
+    },
+    {
+      "id": "reason-studios--reason-13",
+      "manufacturerId": "reason-studios",
+      "name": "Reason 13",
+      "matchPatterns": [
+        "Reason",
+        "Reason 13"
+      ],
+      "generation": "13",
+      "updateClass": "paid_upgrade",
+      "successorPluginId": "reason-studios--reason",
+      "predecessorPluginId": "reason-studios--reason-12",
+      "identityKeys": {
+        "bundleIds": [
+          "se.propellerheads.reason"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
+      "notesForUser": "Reason 14 is available as a paid upgrade from Reason 13.",
+      "identityKind": "standalone_app",
+      "popularityTier": 1,
+      "latestVersion": "13.5.1",
+      "versionSourceUrl": "https://www.reasonstudios.com/reason/updates/release-notes",
+      "versionVerifiedAt": "2026-09-26T15:36:03Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-party vendor release notes, newest 13.x entry"
       ]
     },
     {
@@ -147550,7 +147910,7 @@
       "popularityTier": 1,
       "latestVersion": "3.5.4",
       "versionSourceUrl": "https://www.renoise.com/",
-      "versionVerifiedAt": "2026-09-25T20:36:46Z",
+      "versionVerifiedAt": "2026-09-26T15:36:03Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 90,
       "versionConfidenceReasons": [
@@ -150520,7 +150880,7 @@
     },
     {
       "id": "scuffham--sgear-2",
-      "manufacturerId": "scuffham",
+      "manufacturerId": "scuffham-amps",
       "name": "S-Gear 2",
       "matchPatterns": [
         "S-Gear",
@@ -150532,6 +150892,8 @@
       "updateClass": "paid_upgrade",
       "successorPluginId": "scuffham--sgear",
       "notesForUser": "S-Gear 3 is a paid upgrade: $39 for v2.7-or-earlier licenses, free for v2.9+ (v2.8 not addressed by Scuffham's FAQ). v3 replaces v2 on the same machine.",
+      "appleSilicon": "universal",
+      "popularityTier": 2,
       "latestVersion": "2.9.9",
       "versionSourceUrl": "https://scuffhamamps.com/download/release-history",
       "versionVerifiedAt": "2026-09-25T21:45:47.157137+00:00",
@@ -152655,6 +153017,27 @@
       "versionConfidenceReasons": [
         "page-confirmed manufacturer downloadsPage with clear version (92)"
       ]
+    },
+    {
+      "id": "ssl--ssl-download-manager",
+      "manufacturerId": "ssl",
+      "name": "SSL Download Manager",
+      "matchPatterns": [
+        "SSL Download Manager"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.solidstatelogic.downloadmanager"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
+      "identityKind": "hub_app",
+      "appleSilicon": "native",
+      "popularityTier": 1
     },
     {
       "id": "ssl--ssl-e-series-dynamics",
@@ -165959,6 +166342,27 @@
       ]
     },
     {
+      "id": "steven-slate--steven-slate-audio-center",
+      "manufacturerId": "steven-slate",
+      "name": "Steven Slate Audio Center",
+      "matchPatterns": [
+        "Steven Slate Audio Center",
+        "Slate Audio Center"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.yme.slateaudio-center"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
+      "identityKind": "hub_app",
+      "popularityTier": 2
+    },
+    {
       "id": "full-bucket-music--stigma",
       "manufacturerId": "full-bucket-music",
       "name": "Stigma",
@@ -167147,20 +167551,21 @@
       "manufacturerId": "applied-acoustics",
       "name": "Strum Acoustic Session",
       "matchPatterns": [
-        "Strum Acoustic Session",
-        "Strum Acoustic"
+        "Strum Acoustic Session"
       ],
       "formats": [
         "AU",
         "VST",
         "VST3"
       ],
+      "successorPluginId": "applied-acoustics--strum-session",
       "identityKeys": {
         "bundleIds": [
           "com.applied-acoustics.strum-acoustic-session.au",
           "com.applied-acoustics.strum-acoustic-session.vst"
         ]
       },
+      "notesForUser": "Superseded by Strum Session 2.",
       "appleSilicon": "native",
       "popularityTier": 2
     },
@@ -167512,8 +167917,9 @@
     {
       "id": "applied-acoustics--strum-session",
       "manufacturerId": "applied-acoustics",
-      "name": "Strum Session",
+      "name": "Strum Session 2",
       "matchPatterns": [
+        "Strum Session 2",
         "Strum Session"
       ],
       "formats": [
@@ -167524,10 +167930,18 @@
       ],
       "updatePortalUrl": "https://www.applied-acoustics.com/portal/login/",
       "notes": "KVR product https://www.kvraudio.com/product/strum-session-by-applied-acoustics-systems",
+      "generation": "2",
       "notesForUser": "Generation/title ambiguous vs Strum Session 2 / Strum Acoustic Session. Do not invent latestVersion.",
-      "identityKind": "gen_ambiguous",
       "appleSilicon": "native",
-      "popularityTier": 2
+      "popularityTier": 2,
+      "latestVersion": "2.4.5",
+      "versionSourceUrl": "https://www.applied-acoustics.com/support/",
+      "versionVerifiedAt": "2026-09-26T15:31:09.786388+00:00",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 90,
+      "versionConfidenceReasons": [
+        "first-hand vendor support page: Latest installers and manuals table"
+      ]
     },
     {
       "id": "wavesfactory--strumgtr-electric",
@@ -167707,6 +168121,17 @@
         "Studio One Pro"
       ],
       "notes": "Final 7.x line; rebranded by Fender as Fender Studio Pro 8 (Jan 2026). Patch-level 7.2.2 seen only in changelog mirrors; vendor KB page not directly retrievable.",
+      "generation": "7",
+      "successorPluginId": "fender--fender-studio-pro",
+      "supersededByPluginId": "fender--fender-studio-pro",
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [
+          "strip-build-suffix"
+        ],
+        "compareSegments": 3
+      },
+      "notesForUser": "Studio One Pro 7 is superseded by Fender Studio Pro 8. Studio One Pro 7 owners are eligible for the upgrade (per Fender).",
       "identityKind": "standalone_app",
       "appleSilicon": "universal",
       "popularityTier": 1,
@@ -193080,6 +193505,27 @@
       "popularityTier": 1
     },
     {
+      "id": "uvi--uvi-portal",
+      "manufacturerId": "uvi",
+      "name": "UVI Portal",
+      "matchPatterns": [
+        "UVI Portal"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "net.uvi.UVIPortal"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
+      "identityKind": "hub_app",
+      "appleSilicon": "native",
+      "popularityTier": 1
+    },
+    {
       "id": "uvi--uvi-workstation",
       "manufacturerId": "uvi",
       "name": "UVI Workstation",
@@ -193355,20 +193801,22 @@
       "manufacturerId": "applied-acoustics",
       "name": "Ultra Analog Session",
       "matchPatterns": [
-        "Ultra Analog Session",
-        "Ultra Analog"
+        "Ultra Analog Session"
       ],
       "formats": [
         "AU",
         "VST",
         "VST3"
       ],
+      "generation": "1",
+      "successorPluginId": "applied-acoustics--ultra-analog-session-2",
       "identityKeys": {
         "bundleIds": [
           "com.applied-acoustics.uas.au",
           "com.applied-acoustics.uas.vst"
         ]
       },
+      "notesForUser": "Superseded by Ultra Analog Session 2.",
       "appleSilicon": "native",
       "popularityTier": 2
     },
@@ -193387,6 +193835,8 @@
       ],
       "updatePortalUrl": "https://www.applied-acoustics.com/portal/login/",
       "notes": "KVR product https://www.kvraudio.com/product/ultra-analog-session-2-by-applied-acoustics-systems",
+      "generation": "2",
+      "predecessorPluginId": "applied-acoustics--ultra-analog-session",
       "appleSilicon": "native",
       "popularityTier": 2,
       "latestVersion": "2.3.5",
@@ -195607,6 +196057,16 @@
       "notes": "KVR product https://www.kvraudio.com/product/united-pop-adpak-by-xln-audio",
       "notesForUser": "XLN Audio expansion/content (United Pop ADpak).",
       "identityKind": "expansion",
+      "popularityTier": 2
+    },
+    {
+      "id": "united-plugins--unitedpluginsmanager",
+      "manufacturerId": "united-plugins",
+      "name": "UnitedPluginsManager",
+      "matchPatterns": [
+        "UnitedPluginsManager"
+      ],
+      "identityKind": "hub_app",
       "popularityTier": 2
     },
     {
@@ -205059,16 +205519,27 @@
         "Waves Central"
       ],
       "updatePortalUrl": "https://www.waves.com/downloads",
+      "identityKeys": {
+        "bundleIds": [
+          "com.WavesAudio.central"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "identityKind": "hub_app",
       "appleSilicon": "mixed",
       "popularityTier": 1,
-      "latestVersion": "16.7.2",
-      "versionSourceUrl": "https://www.waves.com/downloads/latest-offline-installer",
-      "versionVerifiedAt": "2026-09-25T20:21:49Z",
+      "latestVersion": "17.0.4",
+      "versionSourceUrl": "https://www.waves.com/downloads/release-notes",
+      "versionVerifiedAt": "2026-09-26T15:36:37Z",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 90,
       "versionConfidenceReasons": [
-        "vendor downloads page; exact version string; first-hand verified 2026-09-25"
+        "first-party vendor release notes name the version",
+        "vendor downloads page lists the same version for Mac/Windows"
       ]
     },
     {
@@ -206983,6 +207454,27 @@
       "notesForUser": "Individual Airwindows algorithm — freeware AU/VST zip on airwindows.com is date-stamped / unversioned (no per-SKU semver). Do not use Airwindows Consolidated (baconpaul/airwin2rack DAWPlugin) version as this SKU version. Consolidated is a separate multi-FX host product.",
       "isFreeware": true,
       "appleSilicon": "universal",
+      "popularityTier": 2
+    },
+    {
+      "id": "xln-audio--xln-online-installer",
+      "manufacturerId": "xln-audio",
+      "name": "XLN Online Installer",
+      "matchPatterns": [
+        "XLN Online Installer",
+        "Online Installer"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.xlnaudio.xlnonlineinstaller"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
+      "identityKind": "hub_app",
       "popularityTier": 2
     },
     {
@@ -213282,7 +213774,7 @@
       "updatePortalUrl": "https://helpcenter.steinberg.de/",
       "discontinued": true,
       "notes": "eLicenser service closed 2025-05-20 per Steinberg; superseded by Steinberg Licensing. No current version.",
-      "identityKind": "standalone_app",
+      "identityKind": "hub_app",
       "appleSilicon": "mixed",
       "popularityTier": 1
     },
@@ -213963,6 +214455,16 @@
       ],
       "updatePortalUrl": "https://www.ilok.com/",
       "notes": " License management utility; identity corrected 2026-09-25.",
+      "identityKeys": {
+        "bundleIds": [
+          "com.paceap.eden.iLokLicenseManager"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
       "identityKind": "hub_app",
       "popularityTier": 1,
       "latestVersion": "6.0.1",
@@ -214032,6 +214534,28 @@
       "notes": "KVR product https://www.kvraudio.com/product/iring-music-maker-by-ik-multimedia",
       "notesForUser": "IK hardware/controller (iRing Music Maker).",
       "identityKind": "hardware",
+      "appleSilicon": "mixed",
+      "popularityTier": 1
+    },
+    {
+      "id": "izotope--izotope-product-portal",
+      "manufacturerId": "izotope",
+      "name": "iZotope Product Portal",
+      "matchPatterns": [
+        "iZotope Product Portal",
+        "Product Portal"
+      ],
+      "identityKeys": {
+        "bundleIds": [
+          "com.izotope.productportal"
+        ]
+      },
+      "installedVersionRule": {
+        "source": "CFBundleShortVersionString",
+        "transforms": [],
+        "compareSegments": 3
+      },
+      "identityKind": "hub_app",
       "appleSilicon": "mixed",
       "popularityTier": 1
     },

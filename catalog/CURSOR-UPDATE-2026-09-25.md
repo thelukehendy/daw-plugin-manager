@@ -1,5 +1,33 @@
 # App update — audited DAW + studio-utility catalog build (2026-09-25)
 
+> **Corrections — 2026-09-26 (operator).** The original text below is kept as the
+> audit trail for the 2026-09-25 build; these corrections supersede it:
+>
+> - **Ableton Live: "12.4.6" → "12.4"** (@88). The 12.4.6 value came from
+>   third-party mirrors, not Ableton — no first-party patch-level source was
+>   retrievable, so it is retracted. Ableton's own release-notes page confirms
+>   the 12.4 line.
+> - **Waves Central: "16.7.2" → "17.0.4"** (@90, Waves release notes
+>   2026-08-02). The 16.7.2 was the version bundled in the offline installer,
+>   not the latest self-updating app.
+> - **"Every version current" was overstated.** The honest framing: first-hand
+>   verified with confidence bands — the 82/80/70 rows were flagged uncertainty,
+>   not certainty. The app's confidence-badge UI (point 3 below) was the right
+>   call; this note just makes the data side match it.
+> - **"Normalize via versionScheme" is superseded** by per-row
+>   `installedVersionRule` (schema v7, see `catalog-store/DATA-DICTIONARY.md`):
+>   `{"source": "CFBundleShortVersionString", "transforms": [...],
+>   "compareSegments": N}`. A present rule always wins; an absent rule means
+>   fall back to the app's conservative inference ("Likely update" at most).
+> - **New since this build (2026-09-26):** generation rows Ableton Live 10/11
+>   and Reason 12/13 (paid majors, S-Gear shape); bundle IDs on all helper-app
+>   rows; 9 new `hub_app` rows (Native Access, iZotope Product Portal,
+>   Auto-Tune Central, SSL Download Manager, Complete Access Hub, Steven Slate
+>   Audio Center, UVI Portal, XLN Online Installer, MPluginManager,
+>   UnitedPluginsManager — the last two versionless); `installedVersionRule`
+>   on 25 DAW + hub-app rows; eLicenser Control Center reclassified
+>   `standalone_app` → `hub_app` (still `discontinued`).
+
 **For:** Cursor, working on the local Electron app.
 **Build:** catalog commit `b19253bf21879ea4a6c5184e76ff6194c0843249`,
 feed pointer commit `6ed4464164daded2c1f78f96162f58ef96232205`.
