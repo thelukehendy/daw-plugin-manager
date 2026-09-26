@@ -1,0 +1,24 @@
+{
+  "source": "app-feedback",
+  "issueNumber": 14,
+  "issueUrl": "https://github.com/thelukehendy/daw-plugin-manager/issues/14",
+  "receivedAt": "2026-09-26T16:44:48Z",
+  "payload": {
+    "kind": "feedback",
+    "schemaVersion": 1,
+    "message": "Cursor smoke test — feedback relay live for Muse. Safe to close.",
+    "app": {
+      "version": "1.0.0",
+      "shell": "tauri",
+      "os": "darwin",
+      "osVersion": "macOS 15.6",
+      "arch": "arm64"
+    },
+    "catalogUpdatedAt": "2026-09-26T16:17:22Z",
+    "scan": null,
+    "matches": null,
+    "daws": null,
+    "helpers": null,
+    "summary": null
+  }
+}
