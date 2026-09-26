@@ -12,18 +12,32 @@
  * Fixtures: `<machine>.json` (ScanSnapshot) + `<machine>.expected.json`.
  * Exit 1 on any unexpected mismatch unless --report-only. Expectations flagged
  * `knownDataIssue` are reported but never fail the run.
+ *
+ * `.expected.json` shape:
+ *   { snapshot, expectations: [{ name, catalogPluginId, status?, statusNotIn?,
+ *                               knownDataIssue?, dataFixedIn?, note? }],
+ *     dawExpectations?: [{ name, catalogPluginId, status?, knownDataIssue?, note? }] }
+ * DAW expectations are checked via dawCatalogInfo() against the snapshot's DAW
+ * list (installed DAWs never produce report rows, so they can't be expectations).
  */
 import { execFileSync } from 'child_process'
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'fs'
 import { join, resolve } from 'path'
 import { buildReportRows } from '../src/main/catalog/catalogService'
 import { parsePluginCatalog } from '../src/main/catalog/catalogParse'
+import { buildCatalogIndex } from '../src/main/catalog/catalogIndex'
+import { dawCatalogInfo } from '../src/main/catalog/dawCatalog'
 import {
   dawsFromSnapshot,
   pluginsFromSnapshot,
   type ScanSnapshot,
 } from '../src/shared/scanSnapshot'
-import type { PluginReportRow, SystemInfo, UpdateStatus } from '../src/shared/types'
+import type {
+  DawCatalogInfo,
+  PluginReportRow,
+  SystemInfo,
+  UpdateStatus,
+} from '../src/shared/types'
 
 interface Expectation {
   /** Installed product name as grouped by the app (row name). */
@@ -42,6 +56,19 @@ interface Expectation {
 interface ExpectedFile {
   snapshot: string
   expectations: Expectation[]
+  /** DAW expectations: checked via dawCatalogInfo against the snapshot's DAW list. */
+  dawExpectations?: DawExpectation[]
+}
+
+interface DawExpectation {
+  /** Installed DAW name as it appears in the snapshot. */
+  name: string
+  /** Expected catalog row id; null = must stay unmatched. */
+  catalogPluginId: string | null
+  /** Expected update status (only for statuses that don't drift with new releases). */
+  status?: DawCatalogInfo['status']
+  knownDataIssue?: boolean
+  note?: string
 }
 
 interface Failure {
@@ -98,6 +125,7 @@ async function main() {
 
   for (const source of sources) {
     const catalog = parsePluginCatalog(JSON.parse(source.json), 'golden')
+    const index = buildCatalogIndex(catalog)
     const manufacturerIds = new Set(catalog.manufacturers.map((m) => m.id))
     const orphans = catalog.plugins.filter((p) => !manufacturerIds.has(p.manufacturerId))
     const failures: Failure[] = []
@@ -182,8 +210,38 @@ async function main() {
           fail(`status not in [${exp.statusNotIn.join(', ')}]`, `status ${row.status}`)
         }
       }
+      const daws = dawsFromSnapshot(snapshot)
+      for (const dexp of expected.dawExpectations ?? []) {
+        checked++
+        const daw = daws.find((d) => d.name === dexp.name)
+        const info = daw ? dawCatalogInfo(daw, index) : null
+        const actualId = info?.catalogPluginId ?? null
+        if (actualId !== dexp.catalogPluginId) {
+          failures.push({
+            machine,
+            name: `DAW ${dexp.name}`,
+            expected: `match ${dexp.catalogPluginId ?? '(none)'}`,
+            actual: `match ${actualId ?? '(none)'}`,
+            knownDataIssue: !!dexp.knownDataIssue,
+            note: dexp.note,
+          })
+          continue
+        }
+        if (dexp.status && info?.status !== dexp.status) {
+          failures.push({
+            machine,
+            name: `DAW ${dexp.name}`,
+            expected: `status ${dexp.status}`,
+            actual: `status ${info?.status ?? '(none)'}`,
+            knownDataIssue: !!dexp.knownDataIssue,
+            note: dexp.note,
+          })
+        }
+      }
+      const dawCount = expected.dawExpectations?.length ?? 0
       console.log(
-        `${machine}: ${rows.length} rows in ${ms} ms, ${expected.expectations.length} expectations`
+        `${machine}: ${rows.length} rows in ${ms} ms, ${expected.expectations.length} expectations` +
+          (dawCount ? ` + ${dawCount} DAW expectations` : '')
       )
     }
 

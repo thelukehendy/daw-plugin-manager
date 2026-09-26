@@ -1,0 +1,98 @@
+{
+ "snapshotVersion": 1,
+ "platform": "darwin",
+ "arch": "arm64",
+ "osVersion": "macOS 15.6",
+ "capturedAt": "2026-09-26T12:00:00Z",
+ "plugins": [
+  {
+   "name": "Auto-Tune Pro",
+   "manufacturer": "Antares",
+   "manufacturerHint": "Antares",
+   "version": "11.5.0",
+   "formats": [
+    "AAX",
+    "AU",
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.antarestech.Auto-TunePro"
+   ]
+  },
+  {
+   "name": "Decapitator",
+   "manufacturer": "Soundtoys",
+   "manufacturerHint": "Soundtoys",
+   "version": "5.5.5",
+   "formats": [
+    "AAX",
+    "AU",
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.soundtoys.Decapitator"
+   ]
+  },
+  {
+   "name": "Arcade",
+   "manufacturer": "Output",
+   "manufacturerHint": "Output",
+   "version": "2.16.1",
+   "formats": [
+    "AU",
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.output.Arcade"
+   ]
+  },
+  {
+   "name": "Limiter",
+   "manufacturer": "Kilohearts",
+   "manufacturerHint": "Kilohearts",
+   "version": "2.4.6",
+   "formats": [
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.kilohearts.Limiter"
+   ]
+  },
+  {
+   "name": "Filter",
+   "manufacturer": "Kilohearts",
+   "manufacturerHint": "Kilohearts",
+   "version": "2.4.4",
+   "formats": [
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.kilohearts.Filter"
+   ]
+  },
+  {
+   "name": "Splice",
+   "manufacturer": "Splice",
+   "manufacturerHint": "Splice",
+   "version": "5.4.10",
+   "formats": [],
+   "bundleIds": [
+    "com.splice.Splice"
+   ]
+  }
+ ],
+ "daws": [
+  {
+   "id": "com.apple.logic10:Logic Pro",
+   "name": "Logic Pro",
+   "version": "11.2.1",
+   "bundleId": "com.apple.logic10"
+  },
+  {
+   "id": "com.ableton.live:Ableton Live 12 Suite",
+   "name": "Ableton Live 12 Suite",
+   "version": "12.2.7",
+   "bundleId": "com.ableton.live"
+  }
+ ]
+}

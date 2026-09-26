@@ -34,6 +34,11 @@ CREATE TABLE IF NOT EXISTS manufacturers (
   changelog_url TEXT,
   -- v6 popularity tier for research prioritization (internal; not exported)
   popularity_tier INTEGER,  -- 1|2|3 ; NULL = unranked long tail, researched last
+  -- v8 manufacturer default installed-version rule (JSON object; exported as the
+  -- plugin's installedVersionRule when the plugin row has no rule of its own).
+  -- Same shape as plugins.installed_version_rule. Only set when the whole
+  -- product line genuinely shares one version scheme.
+  default_installed_version_rule TEXT,
   created_at TEXT,
   updated_at TEXT
 );

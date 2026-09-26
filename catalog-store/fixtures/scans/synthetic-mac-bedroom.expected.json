@@ -1,0 +1,36 @@
+{
+ "snapshot": "synthetic-mac-bedroom.json",
+ "reviewedBy": "operator",
+ "catalogBuildId": "synthetic",
+ "method": "hand-checked synthetic profile",
+ "expectations": [
+  {
+   "name": "Auto-Tune Pro",
+   "catalogPluginId": "antares--auto-tune-pro",
+   "knownDataIssue": true,
+   "note": "matcher bug: group name collapses to product line \"Auto-Tune\" (PRODUCT_LINE_PATTERNS), matchInput carries no member names, fuzzy match picks the first sibling (Auto-Tune Access) instead of Auto-Tune Pro. Fix: pass member names into MatchInput and prefer exact member-name matches."
+  },
+  {
+   "name": "Decapitator",
+   "catalogPluginId": "soundtoys--decapitator"
+  },
+  {
+   "name": "Arcade",
+   "catalogPluginId": "output--arcade"
+  },
+  {
+   "name": "Limiter",
+   "catalogPluginId": "kilohearts--limiter"
+  },
+  {
+   "name": "Filter",
+   "catalogPluginId": "kilohearts--filter"
+  },
+  {
+   "name": "Splice",
+   "catalogPluginId": "splice--splice-desktop-app",
+   "knownDataIssue": true,
+   "note": "bare \"Splice\" scan with no plugin formats matches the seed plugin row splice--splice (220) over the desktop-app row (200). Needs matcher awareness of formats/identityKind (or the desktop bundleId) to prefer standalone_app."
+  }
+ ]
+}

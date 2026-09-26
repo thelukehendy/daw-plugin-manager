@@ -1,0 +1,105 @@
+{
+ "snapshotVersion": 1,
+ "platform": "darwin",
+ "arch": "arm64",
+ "osVersion": "macOS 15.6",
+ "capturedAt": "2026-09-26T12:00:00Z",
+ "plugins": [
+  {
+   "name": "Kontakt",
+   "manufacturer": "Native Instruments",
+   "manufacturerHint": "Native Instruments",
+   "version": "8.12.0",
+   "formats": [
+    "AU",
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.native-instruments.Kontakt"
+   ]
+  },
+  {
+   "name": "BBC Symphony Orchestra Professional",
+   "manufacturer": "Spitfire Audio",
+   "manufacturerHint": "Spitfire Audio",
+   "version": "1.12.10",
+   "formats": [
+    "AU",
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.spitfireaudio.BBCSOProfessional"
+   ]
+  },
+  {
+   "name": "Opus",
+   "manufacturer": "EastWest",
+   "manufacturerHint": "EastWest",
+   "version": "1.6.5",
+   "formats": [
+    "AU",
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.eastwest.Opus"
+   ]
+  },
+  {
+   "name": "Pigments 7",
+   "manufacturer": "Arturia",
+   "manufacturerHint": "Arturia",
+   "version": "7.0.0.6500",
+   "formats": [
+    "AU",
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.arturia.Pigments7"
+   ]
+  },
+  {
+   "name": "Vienna Ensemble Pro 7",
+   "manufacturer": "Vienna Symphonic Library",
+   "manufacturerHint": "Vienna Symphonic Library",
+   "version": "",
+   "formats": [
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.vsl.ViennaEnsemblePro"
+   ]
+  },
+  {
+   "name": "FabFilter Pro-R 2",
+   "manufacturer": "FabFilter",
+   "manufacturerHint": "FabFilter",
+   "version": "2.05",
+   "formats": [
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.fabfilter.Pro-R2"
+   ]
+  },
+  {
+   "name": "Smooth Operator",
+   "manufacturer": "Baby Audio",
+   "manufacturerHint": "Baby Audio",
+   "version": "1.6",
+   "formats": [
+    "VST3"
+   ],
+   "bundleIds": [
+    "com.babyaudio.SmoothOperator"
+   ]
+  }
+ ],
+ "daws": [
+  {
+   "id": "com.steinberg.cubase15:Cubase Pro 15",
+   "name": "Cubase Pro 15",
+   "version": "15.0.30",
+   "bundleId": "com.steinberg.cubase15"
+  }
+ ]
+}

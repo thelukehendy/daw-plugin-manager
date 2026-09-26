@@ -236,6 +236,25 @@ def main() -> int:
                     mfr_tier[row["id"]] = row["popularity_tier"]
         except sqlite3.OperationalError:
             pass
+        # v8: manufacturer default installed-version rule (per-plugin rule wins)
+        mfr_rule = {}
+        try:
+            for row in conn.execute(
+                "SELECT id, default_installed_version_rule FROM manufacturers"
+            ):
+                if row["default_installed_version_rule"] not in (None, ""):
+                    try:
+                        mfr_rule[row["id"]] = json.loads(
+                            row["default_installed_version_rule"]
+                        )
+                    except (ValueError, TypeError):
+                        print(
+                            f"LINT bad-mfr-rule: {row['id']}: "
+                            "default_installed_version_rule is not valid JSON",
+                            file=sys.stderr,
+                        )
+        except sqlite3.OperationalError:
+            pass
         # Report-only orphan-manufacturerId lint (never fails the export).
         lint_orphan_manufacturers(conn)
         for p in conn.execute("SELECT * FROM plugins ORDER BY name"):
@@ -287,6 +306,12 @@ def main() -> int:
                             continue
                         continue
                     entry[key] = val
+                # v8 fallback: manufacturer default rule when the row has none.
+                # Per-plugin installed_version_rule always wins.
+                if "installedVersionRule" not in entry:
+                    default = mfr_rule.get(p["manufacturer_id"])
+                    if isinstance(default, dict) and default:
+                        entry["installedVersionRule"] = default
                 if entry.get("successorPluginId"):
                     with_successor += 1
 

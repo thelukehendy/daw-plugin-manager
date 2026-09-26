@@ -1,0 +1,70 @@
+{
+ "snapshot": "synthetic-win11-flstudio.json",
+ "reviewedBy": "operator",
+ "catalogBuildId": "synthetic",
+ "method": "hand-checked synthetic profile",
+ "expectations": [
+  {
+   "name": "Serum 2",
+   "catalogPluginId": "xfer-records--serum-2"
+  },
+  {
+   "name": "ValhallaSupermassive",
+   "catalogPluginId": "valhalla-dsp--valhallasupermassive"
+  },
+  {
+   "name": "FabFilter Pro-Q 4",
+   "catalogPluginId": "fabfilter--fabfilter-pro-q-4"
+  },
+  {
+   "name": "Chorus",
+   "catalogPluginId": "kilohearts--chorus"
+  },
+  {
+   "name": "Reverb",
+   "catalogPluginId": "kilohearts--reverb"
+  },
+  {
+   "name": "Delay",
+   "catalogPluginId": "kilohearts--delay"
+  },
+  {
+   "name": "Ozone 11",
+   "catalogPluginId": "izotope--ozone-11"
+  },
+  {
+   "name": "Vital",
+   "catalogPluginId": "vital-audio--vital"
+  },
+  {
+   "name": "RC-20 Retro Color",
+   "catalogPluginId": "xln-audio--rc-20-retro-color"
+  },
+  {
+   "name": "ShaperBox 3",
+   "catalogPluginId": "cableguys--shaperbox-3"
+  },
+  {
+   "name": "CLA-76",
+   "catalogPluginId": "waves--cla-76-compressor-limiter"
+  },
+  {
+   "name": "OTT",
+   "catalogPluginId": "xfer-records--ott"
+  },
+  {
+   "name": "MCompressor",
+   "catalogPluginId": "meldaproduction--mcompressor"
+  },
+  {
+   "name": "DreamVerb Pro",
+   "catalogPluginId": null,
+   "note": "no catalog row is close to this name; must stay unmatched"
+  },
+  {
+   "name": "Tape",
+   "catalogPluginId": null,
+   "note": "bare word with 3 catalog owners and no manufacturer must not match"
+  }
+ ]
+}

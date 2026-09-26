@@ -1,0 +1,36 @@
+{
+ "snapshot": "synthetic-mac-cubase-composer.json",
+ "reviewedBy": "operator",
+ "catalogBuildId": "synthetic",
+ "method": "hand-checked synthetic profile",
+ "expectations": [
+  {
+   "name": "Kontakt",
+   "catalogPluginId": "native-instruments--kontakt"
+  },
+  {
+   "name": "BBC Symphony Orchestra Professional",
+   "catalogPluginId": "spitfire-audio--bbc-symphony-orchestra-professional"
+  },
+  {
+   "name": "Opus",
+   "catalogPluginId": "eastwest--opus"
+  },
+  {
+   "name": "Pigments 7",
+   "catalogPluginId": "arturia--pigments-7"
+  },
+  {
+   "name": "Vienna Ensemble Pro 7",
+   "catalogPluginId": "vienna-symphonic-library--vienna-ensemble-pro-7"
+  },
+  {
+   "name": "FabFilter Pro-R 2",
+   "catalogPluginId": "fabfilter--fabfilter-pro-r-2"
+  },
+  {
+   "name": "Smooth Operator",
+   "catalogPluginId": "baby-audio--smooth-operator"
+  }
+ ]
+}
