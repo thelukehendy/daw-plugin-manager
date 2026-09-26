@@ -11,11 +11,12 @@ accept_observation.py CLI. This script only touches identities/manufacturers.
 from __future__ import annotations
 
 import sqlite3
+import os
 import sys
 import uuid
 from datetime import datetime, timezone
 
-DB_PATH = "/home/hatch/workspace/daw-plugin-manager/catalog-store/data/catalog.db"
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "catalog.db")
 
 
 def ts() -> str:
