@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "kind": "catalog-coverage-report",
-  "generatedAt": "2026-09-18T17:05:38.184Z",
+  "generatedAt": "2026-09-25T20:30:25.735Z",
   "freshDays": 60,
-  "plugins_total": 9494,
-  "manufacturers_total": 660,
-  "verified_strong": 5086,
-  "verified_within_7d": 5083,
-  "pending_unverified": 4402,
-  "sticky_eligible": 1034,
-  "cold_eligible": 3368,
+  "plugins_total": 9511,
+  "manufacturers_total": 666,
+  "verified_strong": 5102,
+  "verified_within_7d": 5052,
+  "pending_unverified": 4450,
+  "sticky_eligible": 1081,
+  "cold_eligible": 3369,
   "manual_curation": 9,
   "by_evidence": {
-    "unverified-seed": 3843,
-    "page-confirmed": 5086,
+    "unverified-seed": 3844,
+    "page-confirmed": 5102,
     "manufacturer-feed": 565
   },
   "by_reason": {
-    "unverified_or_missing_source": 3834,
-    "fresh_strong": 5083,
+    "unverified_or_missing_source": 3835,
+    "fresh_strong": 5052,
     "awaiting_page_confirmation": 565,
-    "manual_curation_http_unreachable": 9,
-    "stale_gt_fresh_days": 3
+    "stale_gt_fresh_days": 50,
+    "manual_curation_http_unreachable": 9
   },
   "pending_manufacturers": [
     {
@@ -103,6 +103,15 @@
       "freshStrong": 42,
       "sticky": 0,
       "cold": 74,
+      "manual": 0
+    },
+    {
+      "manufacturer": "Plugin Alliance",
+      "total": 292,
+      "pending": 74,
+      "freshStrong": 218,
+      "sticky": 74,
+      "cold": 0,
       "manual": 0
     },
     {
@@ -196,19 +205,10 @@
       "manual": 0
     },
     {
-      "manufacturer": "Plugin Alliance",
-      "total": 291,
-      "pending": 30,
-      "freshStrong": 261,
-      "sticky": 30,
-      "cold": 0,
-      "manual": 0
-    },
-    {
       "manufacturer": "Arturia",
-      "total": 135,
+      "total": 136,
       "pending": 30,
-      "freshStrong": 105,
+      "freshStrong": 106,
       "sticky": 0,
       "cold": 30,
       "manual": 0
@@ -232,19 +232,19 @@
       "manual": 0
     },
     {
+      "manufacturer": "Steinberg",
+      "total": 81,
+      "pending": 28,
+      "freshStrong": 53,
+      "sticky": 0,
+      "cold": 28,
+      "manual": 0
+    },
+    {
       "manufacturer": "Ugritone",
       "total": 27,
       "pending": 27,
       "freshStrong": 0,
-      "sticky": 0,
-      "cold": 27,
-      "manual": 0
-    },
-    {
-      "manufacturer": "Steinberg",
-      "total": 80,
-      "pending": 27,
-      "freshStrong": 53,
       "sticky": 0,
       "cold": 27,
       "manual": 0
@@ -700,6 +700,15 @@
       "manual": 0
     },
     {
+      "manufacturer": "Solid State Logic",
+      "total": 52,
+      "pending": 10,
+      "freshStrong": 42,
+      "sticky": 10,
+      "cold": 0,
+      "manual": 0
+    },
+    {
       "manufacturer": "sonible",
       "total": 44,
       "pending": 10,
@@ -988,15 +997,6 @@
       "manual": 0
     },
     {
-      "manufacturer": "Solid State Logic",
-      "total": 52,
-      "pending": 7,
-      "freshStrong": 45,
-      "sticky": 7,
-      "cold": 0,
-      "manual": 0
-    },
-    {
       "manufacturer": "Mixed In Key",
       "total": 13,
       "pending": 7,
@@ -1133,9 +1133,9 @@
     },
     {
       "manufacturer": "Tracktion",
-      "total": 34,
+      "total": 35,
       "pending": 6,
-      "freshStrong": 28,
+      "freshStrong": 29,
       "sticky": 0,
       "cold": 6,
       "manual": 0
@@ -1205,9 +1205,9 @@
     },
     {
       "manufacturer": "Waves",
-      "total": 260,
+      "total": 261,
       "pending": 5,
-      "freshStrong": 255,
+      "freshStrong": 256,
       "sticky": 5,
       "cold": 0,
       "manual": 0
@@ -2150,9 +2150,9 @@
     },
     {
       "manufacturer": "Apple",
-      "total": 1,
+      "total": 3,
       "pending": 1,
-      "freshStrong": 0,
+      "freshStrong": 2,
       "sticky": 0,
       "cold": 1,
       "manual": 0

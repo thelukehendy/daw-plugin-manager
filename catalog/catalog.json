@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-25T21:45:55Z",
+  "updatedAt": "2026-09-26T13:02:55Z",
   "catalogSource": "store-export:v4",
   "manufacturers": [
     {
@@ -19566,7 +19566,7 @@
       "popularityTier": 1,
       "latestVersion": "2.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/arachnid-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -21210,7 +21210,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/attracktive-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -28122,7 +28122,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/beta-maxed-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -28945,7 +28945,7 @@
       "popularityTier": 1,
       "latestVersion": "3.2.5",
       "versionSourceUrl": "https://www.kvraudio.com/product/biotek-3-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -40340,7 +40340,7 @@
       "popularityTier": 1,
       "latestVersion": "1.5.0",
       "versionSourceUrl": "https://www.kvraudio.com/product/chop-suey-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -43913,7 +43913,7 @@
       "popularityTier": 1,
       "latestVersion": "2.0.4",
       "versionSourceUrl": "https://www.kvraudio.com/product/collective-2-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -65042,7 +65042,7 @@
       "popularityTier": 1,
       "latestVersion": "1.3.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/f-em-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -80222,7 +80222,7 @@
       "popularityTier": 1,
       "latestVersion": "1.13",
       "versionSourceUrl": "https://www.kvraudio.com/product/hate-by-dawesome-music",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -85487,7 +85487,7 @@
       "popularityTier": 1,
       "latestVersion": "2.7.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/horizen-2-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -86374,7 +86374,7 @@
       "popularityTier": 1,
       "latestVersion": "1.1.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/hyperion-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -91948,7 +91948,7 @@
       "popularityTier": 1,
       "latestVersion": "1.26",
       "versionSourceUrl": "https://www.kvraudio.com/product/kult-by-dawesome-music",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -110020,7 +110020,7 @@
       "popularityTier": 1,
       "latestVersion": "1.0.3",
       "versionSourceUrl": "https://www.kvraudio.com/product/master-mix-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -117537,7 +117537,7 @@
       "popularityTier": 1,
       "latestVersion": "1.63",
       "versionSourceUrl": "https://www.kvraudio.com/product/myth-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -118436,7 +118436,7 @@
       "popularityTier": 1,
       "latestVersion": "1.21",
       "versionSourceUrl": "https://www.kvraudio.com/product/novum-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -125858,7 +125858,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.11",
       "versionSourceUrl": "https://www.kvraudio.com/product/outersect-modeler-by-outersect",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -136159,7 +136159,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/platforms-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -146827,7 +146827,7 @@
       "popularityTier": 1,
       "latestVersion": "1.4.4",
       "versionSourceUrl": "https://www.kvraudio.com/product/redux-by-renoise/details",
-      "versionVerifiedAt": "2026-09-15T17:43:50Z",
+      "versionVerifiedAt": "2026-09-26 05:25:32",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -148280,7 +148280,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-106-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -148306,7 +148306,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-digital-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -148332,7 +148332,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-fat-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -148358,7 +148358,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lead-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -148384,7 +148384,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lofreq-classic-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -148410,7 +148410,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lofreq-modern-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -148436,7 +148436,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2.1",
       "versionSourceUrl": "https://www.kvraudio.com/product/retromod-lofreq-wired-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -160707,7 +160707,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/son-of-a-beta-maxed-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -162333,7 +162333,7 @@
       "popularityTier": 1,
       "latestVersion": "2.1.28",
       "versionSourceUrl": "https://www.kvraudio.com/product/spacecraft-by-delta-v-audio",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -164978,7 +164978,7 @@
       "popularityTier": 1,
       "latestVersion": "1.2",
       "versionSourceUrl": "https://www.kvraudio.com/product/stagebox-by-stagebox-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -180944,7 +180944,7 @@
       "popularityTier": 1,
       "latestVersion": "1.23",
       "versionSourceUrl": "https://www.kvraudio.com/product/theia-by-tracktion-software",
-      "versionVerifiedAt": "2026-09-10T09:25:41Z",
+      "versionVerifiedAt": "2026-09-26 05:32:18",
       "versionEvidence": "page-confirmed",
       "versionConfidence": 60,
       "versionConfidenceReasons": [
@@ -204967,7 +204967,17 @@
       "notesForUser": "Tracktion Waveform DAW edition — hub app.",
       "identityKind": "standalone_app",
       "appleSilicon": "universal",
-      "popularityTier": 1
+      "popularityTier": 1,
+      "latestVersion": "13.3.13",
+      "versionSourceUrl": "https://www.kvraudio.com/product/waveform-free-13-by-tracktion-software",
+      "versionVerifiedAt": "2026-09-26T05:25:14Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 60,
+      "versionConfidenceReasons": [
+        "KVR verwin first-hand, exact page-title identity match",
+        "same 13.3.13 on Waveform Pro 13 page - two agreeing KVR pages",
+        "shadow: KVR forum thread shows 13.5.6 builds existed 2025-07 but no authoritative public source; re-probe if tracktion.com release notes become reachable"
+      ]
     },
     {
       "id": "tracktion--waveform-pro-13",
@@ -204988,7 +204998,17 @@
       "notesForUser": "Tracktion Waveform DAW edition — hub app.",
       "identityKind": "standalone_app",
       "appleSilicon": "universal",
-      "popularityTier": 1
+      "popularityTier": 1,
+      "latestVersion": "13.3.13",
+      "versionSourceUrl": "https://www.kvraudio.com/product/waveform-pro-13-by-tracktion-software",
+      "versionVerifiedAt": "2026-09-26T05:25:23Z",
+      "versionEvidence": "page-confirmed",
+      "versionConfidence": 60,
+      "versionConfidenceReasons": [
+        "KVR verwin first-hand, exact page-title identity match",
+        "same 13.3.13 on Waveform Free 13 page - two agreeing KVR pages",
+        "shadow: KVR forum thread shows 13.5.6 builds existed 2025-07 but no authoritative public source; re-probe if tracktion.com release notes become reachable"
+      ]
     },
     {
       "id": "puremagnetik--waveframe-transwave-synthesis-of-the-ensoniq-fizmo",
