@@ -3,8 +3,11 @@
 In-app feedback arrives here after:
 
 1. App `POST`s JSON to the Netlify relay (`/api/feedback`)
-2. Relay opens a GitHub issue labeled `app-feedback` (short summary only)
-3. Relay commits the **full** envelope to `advisory/feedback-inbox/YYYY-MM-DD-<issue>-<slug>.json` on `main`
+2. Relay opens a GitHub issue labeled `app-feedback` (opaque title like `#42 · darwin`; scrubbed message in body)
+3. Relay commits the **full** envelope to `advisory/feedback-inbox/YYYY-MM-DD-<issue>.json` on `main`
+
+Free-text is scrubbed for emails, home paths, and obvious hostnames (client + server).
+Issue titles and inbox filenames use opaque IDs — not message text.
 
 The full payload is never truncated for GitHub’s 65KB issue-body limit — that
 limit only applies to the human-readable issue text. Workflow

@@ -14,11 +14,12 @@ only holds the server token). No action required from you on hosting.
 |---|---|
 | User Send | App → `POST …/api/feedback` (Netlify) |
 | Human-visible | GitHub issues labeled **`app-feedback`** (summary only) |
-| Operator-readable | **`advisory/feedback-inbox/YYYY-MM-DD-<issue>-<slug>.json` on `main`** (full payload — relay writes this directly) |
+| Operator-readable | **`advisory/feedback-inbox/YYYY-MM-DD-<issue>.json` on `main`** (full payload — relay writes this directly) |
 
 The inbox file includes the complete `payload` (message, scan, matches, daws,
 helpers). Nothing is truncated for size; GitHub’s 65KB limit only affects the
-issue text, not this file.
+issue text, not this file. Issue titles/filenames are opaque (`#42`, not the
+user’s words). Free-text is scrubbed for emails / home paths / `.local` hosts.
 
 Each file:
 
