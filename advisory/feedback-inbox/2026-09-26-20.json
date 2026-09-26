@@ -1,0 +1,24 @@
+{
+  "source": "app-feedback",
+  "issueNumber": 20,
+  "issueUrl": "https://github.com/thelukehendy/daw-plugin-manager/issues/20",
+  "receivedAt": "2026-09-26T18:11:40Z",
+  "payload": {
+    "kind": "feedback",
+    "schemaVersion": 1,
+    "message": "privacy probe email [email] path /Users/[user]/Desktop hostname: [host]",
+    "app": {
+      "version": "1.0.0",
+      "shell": "tauri",
+      "os": "darwin",
+      "osVersion": null,
+      "arch": "arm64"
+    },
+    "catalogUpdatedAt": null,
+    "scan": null,
+    "matches": null,
+    "daws": null,
+    "helpers": null,
+    "summary": null
+  }
+}
