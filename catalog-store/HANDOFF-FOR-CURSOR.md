@@ -472,3 +472,11 @@ Source: `NOTES-gaps-mop-expand5.md` (prior leave list: expand4). Distinct from t
 - Freshness: Plugin Alliance 47-row changelog-top enumeration slice 1 — all held; SSL auto-series Zendesk watch — no 1.0.43-class re-release. 100 export rows carry refreshed `versionVerifiedAt` only.
 - `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
 - Push mechanics: backup `backups/2026-09-25/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.
+
+
+## Daily push 2026-09-26 (06:00 PT — maintenance cadence, tier-1-only)
+- Shipped: mfrs **664** (+0), plugins **9,506** (+0), accepted **5,668** (+2); green **3,968** (+0), amber **352** (+0), yellow **1,348** (+2). Deltas measured against the last shipped state (`5f7d5b4`, which included yesterday's advisory data fixes + the 10:18 chip's PA freshness refreshes).
+- 36 plugins researched across the 09-25 2218 chip (2 promoted, 28 observed, 6 skipped). 2 version bumps since the last shipped state — both Tracktion Waveform 13: **waveform-free-13** and **waveform-pro-13** versionless → **13.3.13 @60** (KVR verwin oracle, exact-title identity, both enter as yellow since KVR-only evidence).
+- 28 freshness-only `versionVerifiedAt` refreshes (27 Tracktion instruments + renoise--redux, all held).
+- `catalog/catalog.json` re-synced from `out/catalog.json` (structural check: schemaVersion 3, structural copy OK); dashboard rebuilt. No schema change — nothing for the app to consume specially.
+- Push mechanics: backup `backups/2026-09-26/` + manifest; commit via Git Data API (ghapi.py), remote ref verified, no force-push; v2 feed pointer published; CDN verification silent-pass.

@@ -96,5 +96,12 @@
   "amber": 347,
   "yellow": 1346,
   "note": "Daily push 06:00 (+0 green, +0 amber, +0 yellow; 106 researched across 09-24 1018+2218 chips, 3 promoted / 103 observed: SSL auto-series vendor installer-link rollback corrections \u2014 autoeq 1.0.43->1.0.41, autodyn 1.0.6->1.0.5, autobus 1.0.18->1.0.17, all @92 green->green; Plugin Alliance 47-row changelog-top freshness enumeration slice 1, all held; SSL watch confirmed no 1.0.43-class re-release)"
+ },
+ {
+  "date": "2026-09-26",
+  "green": 3968,
+  "amber": 352,
+  "yellow": 1348,
+  "note": "Daily push 06:00 (+0 green, +0 amber, +2 yellow; 36 researched in 09-25 2218 chip, 2 promoted / 28 observed / 6 skipped: tracktion--waveform-free-13 + waveform-pro-13 versionless->13.3.13 @60 via KVR verwin oracle (yellow, KVR-only); 27 Tracktion instruments + renoise--redux freshness holds; 10:18 chip's 47 PA freshness rows already shipped via 09-25 advisory commits)"
  }
 ]
