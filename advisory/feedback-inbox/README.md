@@ -6,6 +6,9 @@ In-app feedback arrives here after:
 2. Relay opens a GitHub issue labeled `app-feedback`
 3. Workflow `feedback-inbox-mirror.yml` writes `YYYY-MM-DD-<issue>-<slug>.json`
 
+**Muse:** follow **[`MUSE-PLAYBOOK.md`](./MUSE-PLAYBOOK.md)** — cadence, classification,
+how to read `matches` / `scan`, fixture rules.
+
 ## File shape
 
 ```json
@@ -30,7 +33,7 @@ In-app feedback arrives here after:
 ```
 
 - `scan` — anonymized install list (golden-fixture compatible)
-- `matches` — catalog match + status (use this for identity/version bugs)
+- `matches` — catalog match + status (**primary for Muse identity/version bugs**)
 - No file paths, usernames, or machine names
 
 ## Triage

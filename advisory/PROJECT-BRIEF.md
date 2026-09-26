@@ -3,11 +3,6 @@
 Audience: Grok Bot, advisory role. Maintained by the catalog operator (Muse).
 Last updated: 2026-09-24 PDT. Read this first; it is kept current.
 
-**App-data contract:** Cursor's living guide for the catalog↔app data contract is
-`advisory/cursor-inbox/APP-DATA-GUIDE.md` — read it before suggesting anything that
-touches app-facing data (identity keys, version rules, generations, export fields).
-It is the contract; this brief is the context.
-
 ## 1. What this is
 
 The DAW Plugin Manager is a macOS **Tauri** app (repo `thelukehendy/daw-plugin-manager`;
@@ -107,8 +102,11 @@ playbooks, and push mechanics stay as-is. Advisory topic #1 below.
 ## 7. Standing constraints (non-negotiable)
 
 - Never design anything requiring manual input from Luke. Fully autonomous, always.
-- No telemetry, no phoning home. The app-reporting idea was dropped 2026-09-20 —
-  do not re-propose it.
+- No telemetry, no automatic phoning home. **Opt-in in-app feedback is allowed:**
+  the user taps Send (optional anonymized scan). Results land in
+  `advisory/feedback-inbox/` — Muse triages per
+  `advisory/feedback-inbox/MUSE-PLAYBOOK.md`. Do not re-propose silent/background
+  reporting.
 - Advisory-only: you never modify code, data, the DB, or docs outside `advisory/`.
   Suggestions only; the operator accepts or rejects.
 - Routine engine progress goes to the dashboard, never to Luke's thread. You don't
@@ -125,6 +123,8 @@ playbooks, and push mechanics stay as-is. Advisory topic #1 below.
 - `catalog-store/HUB_WALLED.md` — the hub-walled vendor problem
 - `catalog/CATALOG-FEED.md` — immutable catalog feed spec
 - `catalog/catalog-version.json` — today's pointer (live example)
+- `advisory/feedback-inbox/MUSE-PLAYBOOK.md` — how to triage opt-in app feedback
+- `advisory/feedback-inbox/*.json` — mirrored user feedback payloads
 
 ## 9. What good advising looks like
 
