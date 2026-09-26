@@ -15,6 +15,7 @@ import {
   scrubUserFacingError,
 } from '../main/catalog/publicFacing'
 import { toScanSnapshot } from '../shared/scanSnapshot'
+import { buildFeedbackPayload, sendFeedback } from '../main/feedback'
 import type { ScanProgress, ScanReport } from '../shared/types'
 
 interface SystemInfo {
@@ -83,14 +84,15 @@ export async function installTauriBridge(): Promise<void> {
       listeners.add(callback)
       return () => listeners.delete(callback)
     },
-    async saveScanSnapshot() {
-      if (!lastScan) return { ok: false, error: 'Run a scan first, then save it.' }
-      const snapshot = toScanSnapshot(lastScan.plugins, lastScan.daws, lastScan.system)
-      const saved = await invoke<boolean>('save_text_file', {
-        defaultName: `daw-plugin-scan-${snapshot.capturedAt}.json`,
-        contents: JSON.stringify(snapshot, null, 1) + '\n',
+    async sendFeedback(input) {
+      const payload = buildFeedbackPayload(input, lastScan ?? (await loadLastLibrary()), {
+        version: '1.0.0',
+        shell: 'tauri',
+        os: info.os,
+        osVersion: info.osVersion,
+        arch: info.arch,
       })
-      return saved ? { ok: true, pluginCount: snapshot.plugins.length } : { ok: false, canceled: true }
+      return sendFeedback(payload)
     },
     async openExternal(url) {
       try {

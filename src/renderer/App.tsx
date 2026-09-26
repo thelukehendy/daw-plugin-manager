@@ -2,7 +2,10 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { ConfidenceBand, PluginReportRow, ScanProgress, ScanReport } from '../shared/types'
 import { WelcomeHero } from './components/WelcomeHero'
 import { DetailPanel } from './components/DetailPanel'
-import { DawStrip } from './components/DawStrip'
+import { AppSidebar } from './components/AppSidebar'
+import { SplashScreen } from './components/SplashScreen'
+import { FeedbackPanel } from './components/FeedbackPanel'
+import iconUrl from './assets/app-icon.svg'
 import {
   LibraryTable,
   STATUS_ORDER,
@@ -151,9 +154,9 @@ export default function App() {
   const [selected, setSelected] = useState<PluginReportRow | null>(null)
   const [extraRoots, setExtraRoots] = useState('')
   const [showSettings, setShowSettings] = useState(false)
-  const [snapshotNote, setSnapshotNote] = useState<string | null>(null)
   const [fromSnapshot, setFromSnapshot] = useState(false)
   const [refreshingCatalog, setRefreshingCatalog] = useState(false)
+  const [showSplash, setShowSplash] = useState(true)
   const searchRef = useRef<HTMLInputElement>(null)
   const viewChosenFor = useRef<ScanReport | null>(null)
 
@@ -332,15 +335,6 @@ export default function App() {
     }
   }
 
-  async function handleSaveSnapshot() {
-    const api = window.dawPluginManager
-    if (!api?.saveScanSnapshot) return
-    setSnapshotNote(null)
-    const res = await api.saveScanSnapshot()
-    if (res.ok) setSnapshotNote(`Saved ${res.pluginCount} plugins.`)
-    else if (!res.canceled) setSnapshotNote(res.error || 'Could not save the scan.')
-  }
-
   async function openUpdate(url: string | null) {
     if (!url || !window.dawPluginManager) return
     await window.dawPluginManager.openExternal(url)
@@ -354,15 +348,15 @@ export default function App() {
 
   return (
     <div className={`app shell mode-${mode}`}>
+      {showSplash && <SplashScreen catalogDate={catalogDate} onDone={() => setShowSplash(false)} />}
       <header className="topbar">
         <button
           type="button"
           className="brand"
-          onClick={() => {
-            setMode(report ? 'library' : 'welcome')
-            setSelected(null)
-          }}
+          onClick={() => setShowSplash(true)}
+          title="About DAW Plugin Manager"
         >
+          <img className="brand-icon" src={iconUrl} alt="" width={20} height={20} />
           <span className="brand-mark">DAW Plugin Manager</span>
         </button>
 
@@ -455,46 +449,38 @@ export default function App() {
               ))}
             </div>
           </div>
-          <div className="snapshot-share">
-            <button type="button" className="btn" onClick={handleSaveSnapshot} disabled={scanning}>
-              Save anonymized scan
-            </button>
-            <p className="snapshot-share-note">
-              Saves a file you can share to help improve the catalog: plugin and app names, vendors,
-              bundle IDs and versions only. No file paths, usernames or machine names. Nothing is
-              sent anywhere.
-              {snapshotNote && <strong> {snapshotNote}</strong>}
-            </p>
-          </div>
+          <FeedbackPanel hasScan={!!report?.plugins?.length} />
         </div>
       )}
-
-      {(report?.daws?.length || scanning) && <DawStrip daws={report?.daws || []} onOpenUrl={openUpdate} />}
 
       {mode === 'welcome' && !report && <WelcomeHero onScan={handleScan} scanning={scanning} />}
 
       {showLibrary && (
+        <div className="body">
+        <AppSidebar
+          views={([...TRIAGE_ORDER, 'all'] as TriageFilter[]).map((v) => ({
+            id: v,
+            label: VIEW_LABEL[v],
+            count: counts[v],
+            title: TRIAGE_CHIP_TITLE[v],
+          }))}
+          view={view}
+          onView={(v) => {
+            setView(v)
+            setSelected(null)
+          }}
+          daws={report.daws}
+          helpers={report.helperApps || []}
+          scanning={scanning}
+          onOpenUrl={openUpdate}
+        />
         <div className={`workspace ${selected ? 'with-detail' : ''}`}>
           <div className="workspace-main">
             <div className="view-bar">
-              <nav className="view-tabs" aria-label="Views">
-                {([...TRIAGE_ORDER, 'all'] as TriageFilter[]).map((v) => (
-                  <button
-                    key={v}
-                    type="button"
-                    className={`view-tab tab-${v} ${view === v ? 'on' : ''} ${counts[v] ? '' : 'is-empty'}`}
-                    onClick={() => {
-                      setView(v)
-                      setSelected(null)
-                    }}
-                    title={TRIAGE_CHIP_TITLE[v]}
-                    aria-pressed={view === v}
-                  >
-                    {VIEW_LABEL[v]}
-                    <span className="count">{counts[v]}</span>
-                  </button>
-                ))}
-              </nav>
+              <h1 className="view-title">
+                {VIEW_LABEL[view]}
+                <span className="count mono">{counts[view]}</span>
+              </h1>
               <div className="view-filters">
                 <select
                   value={manufacturerFilter}
@@ -595,6 +581,7 @@ export default function App() {
           {selected && (
             <DetailPanel row={selected} onClose={() => setSelected(null)} onOpenUrl={openUpdate} />
           )}
+        </div>
         </div>
       )}
     </div>

@@ -7,7 +7,6 @@ use std::fs;
 use std::path::{Component, Path, PathBuf};
 use std::time::UNIX_EPOCH;
 use tauri::{AppHandle, Manager};
-use tauri_plugin_dialog::DialogExt;
 
 #[derive(Serialize)]
 struct DirEntry {
@@ -180,29 +179,11 @@ fn open_url(app: AppHandle, url: String) -> Result<(), String> {
     app.opener().open_url(url, None::<&str>).map_err(|e| e.to_string())
 }
 
-/// Ask where to save, then write. Returns false when the user cancels.
-#[tauri::command]
-async fn save_text_file(app: AppHandle, default_name: String, contents: String) -> Result<bool, String> {
-    let Some(path) = app
-        .dialog()
-        .file()
-        .set_file_name(&default_name)
-        .add_filter("JSON", &["json"])
-        .blocking_save_file()
-    else {
-        return Ok(false);
-    };
-    let path = path.into_path().map_err(|e| e.to_string())?;
-    fs::write(path, contents).map_err(|e| e.to_string())?;
-    Ok(true)
-}
-
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_http::init())
         .plugin(tauri_plugin_opener::init())
-        .plugin(tauri_plugin_dialog::init())
         .invoke_handler(tauri::generate_handler![
             read_dir,
             read_plists,
@@ -211,8 +192,7 @@ pub fn run() {
             write_app_file,
             bundled_catalog_text,
             system_info,
-            open_url,
-            save_text_file
+            open_url
         ])
         .run(tauri::generate_context!())
         .expect("error while running DAW Plugin Manager");
