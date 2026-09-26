@@ -18,8 +18,9 @@ import {
   isSupportedSchemaVersion,
   parseCatalogPointer,
   pointerUrlWithCacheBust,
-  sha256Hex,
 } from '../src/main/catalog/catalogFeed'
+import { setPlatform, sha256Hex } from '../src/main/platform'
+import { createNodePlatform } from '../src/main/nodePlatform'
 import { loadCatalog, refreshCatalog } from '../src/main/catalog/catalogService'
 import { rendererCatalogMeta, publicCatalogOrigin } from '../src/main/catalog/publicFacing'
 import { loadInstalledCatalog } from '../src/main/catalog/catalogCache'
@@ -82,6 +83,7 @@ async function fixtureDirs() {
   await writeFile(bundledPath, JSON.stringify(BUNDLED_CATALOG))
   const userDataPath = join(root, 'userData')
   await mkdir(userDataPath, { recursive: true })
+  setPlatform(createNodePlatform({ userDataDir: userDataPath, bundledCatalogPath: bundledPath }))
   return { root, bundledPath, userDataPath }
 }
 
@@ -138,7 +140,7 @@ assert.equal(compareBuildId('2026-09-20T00:00:00Z', '2026-09-18T17:18:28Z'), 1)
 assert.equal(compareBuildId('2026-09-18T17:18:28Z', '2026-09-20T00:00:00Z'), -1)
 assert.equal(compareBuildId('2026-09-20T00:00:00Z', '2026-09-20T00:00:00Z'), 0)
 
-assert.equal(sha256Hex(NEW_BYTES), NEW_HASH)
+sha256Hex(NEW_BYTES).then((h) => assert.equal(h, NEW_HASH))
 assert.equal(pointerUrlWithCacheBust(42), `${CATALOG_VERSION_POINTER_URL}?t=42`)
 
 const verifyErr = new CatalogVerifyError()
@@ -162,7 +164,7 @@ async function main() {
     const bytes = await fetchVerifiedCatalogBytes(parseCatalogPointer(pointer())!, {
       fetch: fetchFn,
     })
-    assert.equal(sha256Hex(bytes), NEW_HASH)
+    assert.equal(await sha256Hex(bytes), NEW_HASH)
     assert.equal(rawHits, 1)
     assert.ok(urls.includes(JSDELIVR))
     assert.ok(urls.includes(RAW))
@@ -194,8 +196,6 @@ async function main() {
       throw new Error(`unexpected ${url}`)
     })
     const catalog = await loadCatalog({
-      bundledCatalogPath: bundledPath,
-      userDataPath,
       fetch: fetchFn,
       now: 99,
     })
@@ -212,7 +212,7 @@ async function main() {
     assert.ok(!urls.some((u) => isMutableBranchCatalogUrl(u)))
     assert.ok(!urls.some((u) => /@main\/catalog\/catalog\.json/.test(u)))
 
-    const installed = await loadInstalledCatalog(userDataPath)
+    const installed = await loadInstalledCatalog()
     assert.ok(installed)
     assert.equal(installed.meta.buildId, '2026-09-20T00:00:00Z')
     const metaJson = JSON.stringify(installed.meta)
@@ -230,8 +230,6 @@ async function main() {
       throw new Error(`body fetch should not run when pointer is older: ${url}`)
     })
     const catalog = await loadCatalog({
-      bundledCatalogPath: bundledPath,
-      userDataPath,
       fetch: fetchFn,
       now: 1,
     })
@@ -246,8 +244,6 @@ async function main() {
     const { bundledPath, userDataPath } = await fixtureDirs()
     const catalog = await loadCatalog({
       preferBundled: true,
-      bundledCatalogPath: bundledPath,
-      userDataPath,
       fetch: async () => {
         throw new Error('fetch must not run when preferBundled')
       },
@@ -267,8 +263,6 @@ async function main() {
     await assert.rejects(
       () =>
         refreshCatalog({
-          bundledCatalogPath: bundledPath,
-          userDataPath,
           fetch: fetchFn,
           now: 2,
         }),
@@ -281,8 +275,6 @@ async function main() {
     )
     const kept = await loadCatalog({
       preferBundled: true,
-      bundledCatalogPath: bundledPath,
-      userDataPath,
     })
     assert.equal(kept.plugins[0].name, 'Old Plug')
   }
@@ -296,8 +288,6 @@ async function main() {
       throw new Error(`unexpected ${url}`)
     })
     const catalog = await loadCatalog({
-      bundledCatalogPath: bundledPath,
-      userDataPath,
       fetch: fetchFn,
       now: 3,
     })
@@ -316,8 +306,6 @@ async function main() {
     await assert.rejects(
       () =>
         refreshCatalog({
-          bundledCatalogPath: bundledPath,
-          userDataPath,
           fetch: fetchFn,
           now: 4,
         }),
@@ -325,8 +313,6 @@ async function main() {
     )
     const kept = await loadCatalog({
       preferBundled: true,
-      bundledCatalogPath: bundledPath,
-      userDataPath,
     })
     assert.equal(kept.plugins[0].name, 'Old Plug')
   }

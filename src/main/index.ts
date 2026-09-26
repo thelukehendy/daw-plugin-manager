@@ -1,7 +1,8 @@
-import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron'
-import { writeFile } from 'fs/promises'
+import { app, BrowserWindow, ipcMain, shell } from 'electron'
 import { join } from 'path'
 import { runFullScan } from './scanService'
+import { setPlatform } from './platform'
+import { createNodePlatform } from './nodePlatform'
 import { loadLastLibrary } from './lastLibrary'
 import { CatalogVerifyError, refreshCatalog } from './catalog/catalogService'
 import {
@@ -10,10 +11,10 @@ import {
   scrubUserFacingError,
 } from './catalog/publicFacing'
 import type { ScanProgress, ScanReport } from '../shared/types'
-import { toScanSnapshot } from '../shared/scanSnapshot'
+import { buildFeedbackPayload, sendFeedback, type FeedbackInput } from './feedback'
 
 let mainWindow: BrowserWindow | null = null
-/** Latest full scan this session; source for the anonymized snapshot export. */
+/** Latest full scan this session; source for the plugin list attached to feedback. */
 let lastScan: ScanReport | null = null
 
 function createWindow(): void {
@@ -46,6 +47,7 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
+  setPlatform(createNodePlatform({ userDataDir: app.getPath('userData'), appPath: app.getAppPath() }))
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
@@ -60,10 +62,7 @@ ipcMain.handle('library:loadLast', async () => loadLastLibrary())
 
 ipcMain.handle('catalog:refresh', async () => {
   try {
-    const catalog = await refreshCatalog({
-      appPath: app.getAppPath(),
-      userDataPath: app.getPath('userData'),
-    })
+    const catalog = await refreshCatalog()
     return rendererCatalogMeta(catalog)
   } catch (err) {
     if (err instanceof CatalogVerifyError) {
@@ -84,27 +83,20 @@ ipcMain.handle('scan:run', async (event, options?: { extraPluginRoots?: string[]
   // progressive DAW/vendor updates via scan:progress.
   const report = await runFullScan(sendProgress, {
     extraPluginRoots: options?.extraPluginRoots,
-    appPath: app.getAppPath(),
-    userDataPath: app.getPath('userData'),
   })
   lastScan = report
   return report
 })
 
-ipcMain.handle('scan:saveSnapshot', async () => {
-  if (!lastScan) return { ok: false, error: 'Run a scan first, then save it.' }
-  const snapshot = toScanSnapshot(lastScan.plugins, lastScan.daws, lastScan.system)
-  const opts = {
-    title: 'Save anonymized scan',
-    defaultPath: `daw-plugin-scan-${snapshot.capturedAt}.json`,
-    filters: [{ name: 'JSON', extensions: ['json'] }],
-  }
-  const result = mainWindow
-    ? await dialog.showSaveDialog(mainWindow, opts)
-    : await dialog.showSaveDialog(opts)
-  if (result.canceled || !result.filePath) return { ok: false, canceled: true }
-  await writeFile(result.filePath, JSON.stringify(snapshot, null, 1) + '\n', 'utf8')
-  return { ok: true, pluginCount: snapshot.plugins.length }
+ipcMain.handle('feedback:send', async (_event, input: FeedbackInput) => {
+  const payload = buildFeedbackPayload(input, lastScan ?? (await loadLastLibrary()), {
+    version: app.getVersion(),
+    shell: 'electron',
+    os: process.platform,
+    osVersion: lastScan?.system.osVersion ?? null,
+    arch: process.arch,
+  })
+  return sendFeedback(payload)
 })
 
 ipcMain.handle('shell:openExternal', async (_event, url: string) => {

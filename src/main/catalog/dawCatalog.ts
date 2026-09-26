@@ -1,15 +1,17 @@
 /**
- * Installed DAWs ↔ catalog `standalone_app` rows.
+ * Installed DAWs and helper apps ↔ catalog `standalone_app` / `hub_app` rows.
  *
- * A DAW only gets an update verdict when its catalog row carries an
- * `installedVersionRule`; installed apps report versions differently from marketing
- * versions (Pro Tools 26.4.1.179 vs 2026.4), so comparing without a rule would mislead.
+ * With an `installedVersionRule` the comparison is exact. Without one it's inferred
+ * conservatively (never a verified "Update"), because installed apps can report versions
+ * differently from marketing versions (Pro Tools 26.4.1.179 vs 2026.4).
  */
 
 import type {
   CatalogPlugin,
   DawCatalogInfo,
   DawInfo,
+  HelperAppInfo,
+  InstalledApp,
   InstalledVersionRule,
 } from '../../shared/types'
 import { HIGH, MEDIUM } from './confidence'
@@ -81,30 +83,143 @@ function findDawRow(daw: DawInfo, index: CatalogIndex): CatalogPlugin | null {
   return prefixed[0] || null
 }
 
-export function dawCatalogInfo(daw: DawInfo, index: CatalogIndex): DawCatalogInfo | null {
-  const row = findDawRow(daw, index)
-  if (!row) return null
+function leadingVersion(v: string): string | null {
+  return v.match(/^\s*(\d+(?:\.\d+)*)/)?.[1] ?? null
+}
+
+/**
+ * No installedVersionRule yet: compare conservatively. Never claims a verified update;
+ * a different number format (26 vs 2026) only lines up when it clearly is the year scheme.
+ */
+function inferredVerdict(
+  installedRaw: string,
+  latestRaw: string,
+  confidence: number,
+  kind: 'daw' | 'helper'
+): DawCatalogInfo['status'] {
+  let installed = leadingVersion(installedRaw)
+  const latest = leadingVersion(latestRaw)
+  if (!installed || !latest) return 'check_in_app'
+  const ia = Number(installed.split('.')[0])
+  const la = Number(latest.split('.')[0])
+  if (String(ia).length !== String(la).length) {
+    const year = 2000 + ia
+    if (ia >= 100 || la < 2000 || la - year < 0 || la - year > 5) return 'check_in_app'
+    installed = [String(year), ...installed.split('.').slice(1)].join('.')
+  }
+  const rel = compareSegments(installed, latest, 0)
+  if (rel == null) return 'check_in_app'
+  if (rel >= 0) return 'current'
+  const sameMajor = installed.split('.')[0] === latest.split('.')[0]
+  if (!sameMajor && kind === 'daw') return 'newer_major'
+  return confidence >= MEDIUM ? 'update_likely' : 'check_in_app'
+}
+
+/** Compare an installed app (DAW or helper) with its catalog row. */
+export function appVerdict(
+  row: CatalogPlugin,
+  installedVersion: string | null,
+  index: CatalogIndex,
+  kind: 'daw' | 'helper'
+): DawCatalogInfo {
   const mfg = index.manufacturerById.get(row.manufacturerId)
   const base: DawCatalogInfo = {
     catalogPluginId: row.id,
     latestVersion: row.latestVersion ?? null,
+    finalVersion: row.finalVersion ?? null,
     confidence: row.versionConfidence ?? null,
     status: 'check_in_app',
+    inferred: false,
     updateUrl: row.updatePortalUrl || mfg?.updatePortalUrl || null,
     portalApp: row.portalApp || mfg?.portalApp || null,
   }
-  const rule = row.installedVersionRule
-  if (!rule || !daw.version || !row.latestVersion) return base
+  if (row.discontinued || row.identityKind === 'discontinued') return { ...base, status: 'discontinued' }
+  if (!row.latestVersion) return { ...base, status: 'not_tracked' }
+  if (!installedVersion) return base
 
-  const installed = applyInstalledVersionRule(daw.version, rule)
+  const rule = row.installedVersionRule
+  if (!rule) {
+    return {
+      ...base,
+      inferred: true,
+      status: inferredVerdict(installedVersion, row.latestVersion, row.versionConfidence ?? 0, kind),
+    }
+  }
+  const installed = applyInstalledVersionRule(installedVersion, rule)
   const latest = applyInstalledVersionRule(row.latestVersion, { transforms: [] })
   if (!installed || !latest) return base
   const rel = compareSegments(installed, latest, rule.compareSegments ?? 0)
   if (rel == null) return base
   if (rel >= 0) return { ...base, status: 'current' }
-
   const conf = row.versionConfidence ?? 0
   if (conf >= HIGH) return { ...base, status: 'update_available' }
   if (conf >= MEDIUM) return { ...base, status: 'update_likely' }
   return base
+}
+
+export function dawCatalogInfo(daw: DawInfo, index: CatalogIndex): DawCatalogInfo | null {
+  const row = findDawRow(daw, index)
+  return row ? appVerdict(row, daw.version, index, 'daw') : null
+}
+
+function compactName(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '')
+}
+
+/**
+ * Installed apps that are vendor helpers (license managers, installers, hub apps).
+ * Matched by bundle ID or exact name against hub_app / standalone_app rows; apps named
+ * after a vendor's `portalApp` are listed as not tracked when no row exists.
+ */
+export function matchHelperApps(
+  apps: InstalledApp[],
+  index: CatalogIndex,
+  exclude: Set<string>
+): HelperAppInfo[] {
+  const rows = index.catalog.plugins.filter(
+    (p) => p.identityKind === 'hub_app' || p.identityKind === 'standalone_app'
+  )
+  const byBundle = new Map<string, CatalogPlugin>()
+  const byName = new Map<string, CatalogPlugin>()
+  for (const row of rows) {
+    for (const id of row.identityKeys?.bundleIds || []) byBundle.set(id.toLowerCase(), row)
+    const mfgName = index.manufacturerById.get(row.manufacturerId)?.name || ''
+    for (const n of [row.name, ...(row.matchPatterns || [])]) {
+      if (!byName.has(compactName(n))) byName.set(compactName(n), row)
+      const withVendor = compactName(`${mfgName} ${n}`)
+      if (!byName.has(withVendor)) byName.set(withVendor, row)
+    }
+  }
+  const portalNames = new Map<string, { url: string | null }>()
+  for (const m of index.catalog.manufacturers) {
+    if (m.portalApp) portalNames.set(compactName(m.portalApp), { url: m.updatePortalUrl || null })
+  }
+
+  const out: HelperAppInfo[] = []
+  for (const app of apps) {
+    if (exclude.has(app.path)) continue
+    const row =
+      (app.bundleId && byBundle.get(app.bundleId.toLowerCase())) || byName.get(compactName(app.name))
+    if (row) {
+      out.push({ ...app, catalog: appVerdict(row, app.version, index, 'helper') })
+      continue
+    }
+    const portal = portalNames.get(compactName(app.name))
+    if (portal) {
+      out.push({
+        ...app,
+        catalog: {
+          catalogPluginId: null,
+          latestVersion: null,
+          finalVersion: null,
+          confidence: null,
+          status: 'not_tracked',
+          inferred: false,
+          updateUrl: portal.url,
+          portalApp: app.name,
+        },
+      })
+    }
+  }
+  return out.sort((a, b) => a.name.localeCompare(b.name))
 }

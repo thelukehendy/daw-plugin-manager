@@ -2,6 +2,7 @@
  * Capture an anonymized scan snapshot of this machine (read-only scan).
  * Usage: npx tsx scripts/capture-scan-snapshot.ts <out.json>
  */
+import '../src/main/registerNodePlatform'
 import { writeFileSync } from 'fs'
 import { arch, platform, release } from 'os'
 import { execFileSync } from 'child_process'

@@ -1,6 +1,3 @@
-import { release, arch, homedir, platform } from 'os'
-import { execFile } from 'child_process'
-import { promisify } from 'util'
 import type {
   DawInfo,
   ManufacturerReportGroup,
@@ -12,28 +9,18 @@ import { scanDaws } from './scanner/dawScanner'
 import { scanPlugins } from './scanner/pluginScanner'
 import { buildManufacturerGroups, buildReportRows, loadCatalog } from './catalog/catalogService'
 import { buildCatalogIndex } from './catalog/catalogIndex'
-import { dawCatalogInfo } from './catalog/dawCatalog'
+import { dawCatalogInfo, matchHelperApps } from './catalog/dawCatalog'
+import { scanApps } from './scanner/appScanner'
 import { rendererCatalogMeta, scrubReportForRenderer } from './catalog/publicFacing'
 import { saveLastLibrary } from './lastLibrary'
-
-const execFileAsync = promisify(execFile)
-
-async function readMacOSVersion(): Promise<string | null> {
-  if (platform() !== 'darwin') return release()
-  try {
-    const { stdout } = await execFileAsync('sw_vers', ['-productVersion'])
-    return stdout.trim() || release()
-  } catch {
-    return release()
-  }
-}
+import { platform } from './platform'
 
 async function getSystemInfo(): Promise<SystemInfo> {
   return {
-    platform: platform(),
-    osVersion: await readMacOSVersion(),
-    arch: arch(),
-    homedir: homedir(),
+    platform: platform().os,
+    osVersion: await platform().osVersion(),
+    arch: platform().arch,
+    homedir: platform().homeDir,
     scannedAt: new Date().toISOString(),
   }
 }
@@ -67,8 +54,6 @@ export async function runFullScan(
   options?: {
     extraPluginRoots?: string[]
     preferBundledCatalog?: boolean
-    appPath?: string
-    userDataPath?: string
   }
 ): Promise<ScanReport> {
   const emit = (
@@ -80,8 +65,8 @@ export async function runFullScan(
     onProgress?.({ phase, message, percent, partial })
   }
 
-  if (platform() !== 'darwin') {
-    emit('error', `Platform ${platform()} is not fully supported yet (macOS scanners active).`, 0)
+  if (platform().os !== 'darwin') {
+    emit('error', `Platform ${platform().os} is not fully supported yet (macOS scanners active).`, 0)
   }
 
   emit('daws', 'Detecting installed DAWs…', 3)
@@ -92,8 +77,6 @@ export async function runFullScan(
   // Warm catalog while plugins scan (overlap I/O). Prefer remote when newer.
   const catalogPromise = loadCatalog({
     preferBundled: options?.preferBundledCatalog,
-    appPath: options?.appPath,
-    userDataPath: options?.userDataPath,
   })
 
   emit('plugins', 'Scanning plugin folders…', 12)
@@ -113,6 +96,7 @@ export async function runFullScan(
 
   const dawIndex = buildCatalogIndex(catalog)
   for (const daw of daws) daw.catalog = dawCatalogInfo(daw, dawIndex)
+  const helperApps = matchHelperApps(await scanApps(), dawIndex, new Set(daws.map((d) => d.path)))
 
   emit('compare', 'Matching library to catalog…', 78, { daws })
   const rows = await buildReportRows(plugins, catalog, system, daws, (done, total) => {
@@ -153,6 +137,7 @@ export async function runFullScan(
   const report: ScanReport = scrubReportForRenderer({
     system,
     daws,
+    helperApps,
     plugins,
     rows,
     manufacturers,
@@ -177,10 +162,10 @@ export async function probeDaws(): Promise<DawInfo[]> {
 export function placeholderReport(daws: DawInfo[]): ScanReport {
   return {
     system: {
-      platform: platform(),
+      platform: platform().os,
       osVersion: null,
-      arch: arch(),
-      homedir: homedir(),
+      arch: platform().arch,
+      homedir: platform().homeDir,
       scannedAt: new Date().toISOString(),
     },
     daws,

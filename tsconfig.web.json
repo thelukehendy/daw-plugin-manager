@@ -17,5 +17,14 @@
       "@shared/*": ["src/shared/*"]
     }
   },
-  "include": ["src/renderer/**/*", "src/shared/**/*"]
+  "include": [
+    "src/renderer/**/*",
+    "src/shared/**/*",
+    "src/main/platform.ts",
+    "src/main/scanService.ts",
+    "src/main/lastLibrary.ts",
+    "src/main/feedback.ts",
+    "src/main/catalog/**/*",
+    "src/main/scanner/**/*"
+  ]
 }

@@ -20,6 +20,7 @@
  * DAW expectations are checked via dawCatalogInfo() against the snapshot's DAW
  * list (installed DAWs never produce report rows, so they can't be expectations).
  */
+import '../src/main/registerNodePlatform'
 import { execFileSync } from 'child_process'
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'fs'
 import { join, resolve } from 'path'

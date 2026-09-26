@@ -2,12 +2,9 @@
  * Atomic on-disk install of a verified v2 catalog. Meta never stores URLs.
  */
 
-import { mkdir, readFile, rename, writeFile } from 'fs/promises'
-import { existsSync } from 'fs'
-import { join } from 'path'
-import { homedir } from 'os'
 import type { PluginCatalog } from '../../shared/types'
 import { parsePluginCatalog } from './catalogParse'
+import { joinPath, platform } from '../platform'
 
 export const CATALOG_CACHE_DIRNAME = 'catalog-cache'
 
@@ -24,55 +21,30 @@ export interface InstalledCatalog {
   bytes: Uint8Array
 }
 
-export function defaultUserDataPath(): string {
-  return join(homedir(), 'Library/Application Support/DAW Plugin Manager')
-}
+const CATALOG_FILE = joinPath(CATALOG_CACHE_DIRNAME, 'catalog.json')
+const META_FILE = joinPath(CATALOG_CACHE_DIRNAME, 'catalog-meta.json')
 
-export function catalogCacheDir(userDataPath: string): string {
-  return join(userDataPath, CATALOG_CACHE_DIRNAME)
-}
-
-function paths(userDataPath: string) {
-  const dir = catalogCacheDir(userDataPath)
-  return {
-    dir,
-    catalog: join(dir, 'catalog.json'),
-    catalogTmp: join(dir, 'catalog.json.tmp'),
-    meta: join(dir, 'catalog-meta.json'),
-    metaTmp: join(dir, 'catalog-meta.json.tmp'),
-  }
-}
-
+/** Catalog bytes first, meta second: a crash between them leaves meta stale, never a torn catalog. */
 export async function atomicInstallCatalog(
-  userDataPath: string,
   bytes: Uint8Array,
   meta: Omit<InstalledCatalogMeta, 'installedAt'>
 ): Promise<InstalledCatalogMeta> {
-  const p = paths(userDataPath)
-  await mkdir(p.dir, { recursive: true })
-  const installed: InstalledCatalogMeta = {
-    ...meta,
-    installedAt: new Date().toISOString(),
-  }
-  await writeFile(p.catalogTmp, Buffer.from(bytes))
-  await writeFile(p.metaTmp, JSON.stringify(installed), 'utf8')
-  await rename(p.catalogTmp, p.catalog)
-  await rename(p.metaTmp, p.meta)
+  const installed: InstalledCatalogMeta = { ...meta, installedAt: new Date().toISOString() }
+  await platform().writeAppFile(CATALOG_FILE, bytes)
+  await platform().writeAppFile(META_FILE, JSON.stringify(installed))
   return installed
 }
 
-export async function loadInstalledCatalog(
-  userDataPath: string
-): Promise<InstalledCatalog | null> {
-  const p = paths(userDataPath)
-  if (!existsSync(p.catalog)) return null
+export async function loadInstalledCatalog(): Promise<InstalledCatalog | null> {
+  const host = platform()
+  const bytes = await host.readBytes(joinPath(host.userDataDir, CATALOG_FILE))
+  if (!bytes) return null
   try {
-    const buf = await readFile(p.catalog)
-    const bytes = new Uint8Array(buf)
-    const catalog = parsePluginCatalog(JSON.parse(buf.toString('utf8')), 'remote:v2')
+    const catalog = parsePluginCatalog(JSON.parse(new TextDecoder().decode(bytes)), 'remote:v2')
     let meta: InstalledCatalogMeta | null = null
-    if (existsSync(p.meta)) {
-      const raw = JSON.parse(await readFile(p.meta, 'utf8')) as Partial<InstalledCatalogMeta>
+    const metaText = await host.readText(joinPath(host.userDataDir, META_FILE))
+    if (metaText) {
+      const raw = JSON.parse(metaText) as Partial<InstalledCatalogMeta>
       if (typeof raw.buildId === 'string' && raw.buildId.trim()) {
         meta = {
           buildId: raw.buildId.trim(),

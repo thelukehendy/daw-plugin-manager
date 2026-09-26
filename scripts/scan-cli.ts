@@ -2,6 +2,7 @@
  * Headless CLI scan for testing / automation.
  * Usage: npm run scan:cli
  */
+import '../src/main/registerNodePlatform'
 import { writeFileSync } from 'fs'
 import { join } from 'path'
 import { runFullScan } from '../src/main/scanService'

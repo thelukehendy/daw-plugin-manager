@@ -54,14 +54,39 @@ export type VersionScheme =
 
 export type AppleSilicon = 'native' | 'universal' | 'rosetta' | 'intel-only' | 'mixed'
 
-/** Catalog view of an installed DAW. `check_in_app` = no trustworthy comparison possible. */
+/**
+ * Catalog view of an installed app (DAW or helper). `check_in_app` = no trustworthy
+ * comparison; `newer_major` = a newer major exists (DAWs: often a paid upgrade).
+ */
 export interface DawCatalogInfo {
-  catalogPluginId: string
+  catalogPluginId: string | null
   latestVersion: string | null
+  finalVersion?: string | null
   confidence: number | null
-  status: 'current' | 'update_available' | 'update_likely' | 'check_in_app'
+  status:
+    | 'current'
+    | 'update_available'
+    | 'update_likely'
+    | 'newer_major'
+    | 'check_in_app'
+    | 'not_tracked'
+    | 'discontinued'
+  /** True when compared without the catalog's installedVersionRule. */
+  inferred?: boolean
   updateUrl: string | null
   portalApp: string | null
+}
+
+/** An application bundle found in /Applications (or ~/Applications). */
+export interface InstalledApp {
+  name: string
+  version: string | null
+  bundleId?: string
+  path: string
+}
+
+export interface HelperAppInfo extends InstalledApp {
+  catalog: DawCatalogInfo
 }
 
 export interface DawInfo {
@@ -324,6 +349,8 @@ export interface SystemInfo {
 export interface ScanReport {
   system: SystemInfo
   daws: DawInfo[]
+  /** Vendor helper apps (license managers, installers, hubs) with catalog verdicts. */
+  helperApps?: HelperAppInfo[]
   plugins: InstalledPlugin[]
   rows: PluginReportRow[]
   manufacturers: ManufacturerReportGroup[]

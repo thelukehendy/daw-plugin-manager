@@ -4,7 +4,7 @@
  * (or hashes / commits) to the renderer.
  */
 
-import { createHash } from 'crypto'
+import { platform, sha256Hex } from '../platform'
 
 export const CATALOG_VERIFY_USER_MESSAGE = "Couldn't verify the catalog"
 
@@ -61,10 +61,6 @@ export function isSupportedSchemaVersion(version: unknown): version is number {
     version >= MIN_SUPPORTED_SCHEMA_VERSION &&
     version <= MAX_SUPPORTED_SCHEMA_VERSION
   )
-}
-
-export function sha256Hex(bytes: Uint8Array | Buffer): string {
-  return createHash('sha256').update(bytes).digest('hex')
 }
 
 /** ISO buildIds compare as timestamps; otherwise lexicographic. */
@@ -177,7 +173,7 @@ export async function fetchCatalogPointer(options?: {
   fetch?: FetchLike
   now?: number
 }): Promise<CatalogPointer> {
-  const fetchFn = options?.fetch || fetch
+  const fetchFn = options?.fetch || platform().fetch
   const url = pointerUrlWithCacheBust(options?.now ?? Date.now())
   let res: Response
   try {
@@ -221,8 +217,8 @@ async function fetchCatalogBytes(
   }
 }
 
-function digestMatches(bytes: Uint8Array, pointer: CatalogPointer): boolean {
-  return sha256Hex(bytes) === pointer.sha256
+async function digestMatches(bytes: Uint8Array, pointer: CatalogPointer): Promise<boolean> {
+  return (await sha256Hex(bytes)) === pointer.sha256
 }
 
 /**
@@ -236,7 +232,7 @@ export async function fetchVerifiedCatalogBytes(
   if (!isSupportedSchemaVersion(pointer.schemaVersion)) {
     throw new CatalogVerifyError()
   }
-  const fetchFn = options?.fetch || fetch
+  const fetchFn = options?.fetch || platform().fetch
   const primary = pointer.endpoints.jsdelivrPinned
   const fallback = pointer.endpoints.rawPinned
 
@@ -244,11 +240,11 @@ export async function fetchVerifiedCatalogBytes(
   if (!bytes) bytes = await fetchCatalogBytes(fetchFn, fallback)
   if (!bytes) throw new CatalogVerifyError()
 
-  if (digestMatches(bytes, pointer)) return bytes
+  if (await digestMatches(bytes, pointer)) return bytes
 
   console.warn('[catalog] v2 digest mismatch; retrying pinned fallback')
   const retry = await fetchCatalogBytes(fetchFn, fallback)
-  if (retry && digestMatches(retry, pointer)) return retry
+  if (retry && (await digestMatches(retry, pointer))) return retry
 
   console.warn('[catalog] v2 digest mismatch after retry; keeping installed catalog')
   throw new CatalogVerifyError()

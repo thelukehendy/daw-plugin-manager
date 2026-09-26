@@ -19,7 +19,7 @@ export function installDevPreviewBridge(): void {
       return r.catalog
     },
     onScanProgress: () => () => {},
-    saveScanSnapshot: async () => ({ ok: false, error: 'Not available in browser preview.' }),
+    sendFeedback: async () => ({ ok: false, error: 'Not available in browser preview.' }),
     openExternal: async (url: string) => {
       window.open(url, '_blank')
       return { ok: true }

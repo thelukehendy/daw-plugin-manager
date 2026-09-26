@@ -6,9 +6,13 @@
   "author": "DAW Plugin Manager",
   "license": "MIT",
   "scripts": {
-    "dev": "env -u ELECTRON_RUN_AS_NODE electron-vite dev",
-    "build": "electron-vite build",
-    "preview": "env -u ELECTRON_RUN_AS_NODE electron-vite preview",
+    "dev": "npm run tauri:dev",
+    "tauri:ui:dev": "vite --config vite.tauri.config.ts",
+    "tauri:ui:build": "vite build --config vite.tauri.config.ts",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "dist:mac": "npm run tauri:build",
+    "build": "npm run tauri:ui:build",
     "scan:cli": "tsx scripts/scan-cli.ts",
     "test:contracts": "tsx scripts/test-catalog-contracts.ts && tsx scripts/test-catalog-feed-v2.ts",
     "test:feed": "tsx scripts/test-catalog-feed-v2.ts",
@@ -17,7 +21,6 @@
     "test": "npm run test:contracts && npm run test:matcher && npm run test:golden",
     "scan:snapshot": "tsx scripts/capture-scan-snapshot.ts",
     "catalog:validate": "tsx scripts/validate-catalog.ts",
-    "electron:fetch": "node scripts/fetch-electron.js",
     "catalog:refresh": "tsx scripts/catalog/refresh.ts",
     "catalog:gaps": "node scripts/catalog/build-gap-queue.js",
     "catalog:sticky-reverify": "node scripts/catalog/sticky-reverify.js",
@@ -26,7 +29,11 @@
     "catalog:smart-scrub": "node scripts/catalog/smart-scrub.js",
     "catalog:install-weekly": "bash scripts/catalog/install-weekly-launchd.sh",
     "catalog:sync-remote-urls": "bash scripts/sync-remote-urls.sh",
-    "dist:mac": "npm run build && env -u ELECTRON_RUN_AS_NODE electron-builder --mac"
+    "electron:dev": "bash scripts/brand-electron-dev.sh && env -u ELECTRON_RUN_AS_NODE electron-vite dev",
+    "electron:build": "electron-vite build",
+    "electron:preview": "env -u ELECTRON_RUN_AS_NODE electron-vite preview",
+    "electron:fetch": "node scripts/fetch-electron.js && bash scripts/brand-electron-dev.sh",
+    "electron:dist": "npm run electron:build && env -u ELECTRON_RUN_AS_NODE electron-builder --mac"
   },
   "build": {
     "appId": "com.dawpluginmanager.app",
@@ -48,9 +55,14 @@
       {
         "from": "catalog/remote-urls.json",
         "to": "catalog/remote-urls.json"
+      },
+      {
+        "from": "build/icon.png",
+        "to": "icon.png"
       }
     ],
     "mac": {
+      "icon": "build/icon.icns",
       "category": "public.app-category.music",
       "target": [
         "dmg",
@@ -59,10 +71,14 @@
     }
   },
   "dependencies": {
+    "@tauri-apps/api": "^2.11.1",
+    "@tauri-apps/plugin-http": "^2.6.1",
     "plist": "^3.1.0",
     "semver": "^7.6.3"
   },
   "devDependencies": {
+    "@netlify/functions": "^6.0.0",
+    "@tauri-apps/cli": "^2.11.5",
     "@types/node": "^22.10.0",
     "@types/plist": "^3.0.5",
     "@types/react": "^18.3.12",

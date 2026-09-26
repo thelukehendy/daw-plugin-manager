@@ -1,16 +1,12 @@
-import { readdir } from 'fs/promises'
-import { existsSync } from 'fs'
-import { join } from 'path'
 import type { DawInfo } from '../../shared/types'
 import { DAW_CANDIDATES } from './paths'
-import { readInfoPlist } from './plistReader'
+import { joinPath as join, platform } from '../platform'
 
 async function readPlistVersion(appPath: string): Promise<{
   version: string | null
   bundleId?: string
 }> {
-  const infoPath = join(appPath, 'Contents', 'Info.plist')
-  const data = await readInfoPlist(infoPath)
+  const [data] = await platform().readPlists([join(appPath, 'Contents', 'Info.plist')])
   if (!data) return { version: null }
   const version =
     (data.CFBundleShortVersionString as string | undefined) ||
@@ -25,24 +21,21 @@ async function readPlistVersion(appPath: string): Promise<{
  * Read-only: never modifies anything.
  */
 export async function scanDaws(): Promise<DawInfo[]> {
-  const home = process.env.HOME || ''
+  const home = platform().homeDir
   const roots = [
     '/Applications',
     join(home, 'Applications'),
-    join(home, 'Applications/Setapp'),
+    join(home, 'Applications', 'Setapp'),
     '/Applications/Setapp',
-  ].filter((p) => p && existsSync(p))
+  ]
   const found: DawInfo[] = []
   const now = new Date().toISOString()
   const seenPaths = new Set<string>()
 
   for (const root of roots) {
-    let entries: string[] = []
-    try {
-      entries = await readdir(root)
-    } catch {
-      continue
-    }
+    const listing = await platform().readDir(root)
+    if (!listing) continue
+    const entries = listing.map((e) => e.name).sort()
 
     for (const entry of entries) {
       if (!entry.endsWith('.app')) continue

@@ -4,7 +4,7 @@
  */
 import assert from 'assert'
 import { buildCatalogIndex, isWeakPattern, matchCatalogPluginIndexed } from '../src/main/catalog/catalogIndex'
-import { applyInstalledVersionRule, compareSegments, dawCatalogInfo } from '../src/main/catalog/dawCatalog'
+import { applyInstalledVersionRule, compareSegments, dawCatalogInfo, matchHelperApps } from '../src/main/catalog/dawCatalog'
 import type { PluginCatalog } from '../src/shared/types'
 
 // —— installedVersionRule transforms ——
@@ -106,7 +106,12 @@ const noRule = buildCatalogIndex({
   ...catalog,
   plugins: catalog.plugins.map((p) => (p.id === 'avid--pro-tools' ? { ...p, installedVersionRule: undefined } : p)),
 })
-assert.strictEqual(dawCatalogInfo(daw('25.12.0'), noRule)?.status, 'check_in_app', 'no rule → no verdict')
+// No rule: inferred, conservative verdicts (never a verified "update_available").
+const inferred = (v: string) => dawCatalogInfo(daw(v), noRule)
+assert.strictEqual(inferred('26.4.1.179')?.status, 'current', 'year scheme lines up: 26.4.1 = 2026.4')
+assert.strictEqual(inferred('26.4.1.179')?.inferred, true)
+assert.strictEqual(inferred('25.12.0')?.status, 'newer_major', 'DAW behind a major: possibly paid')
+assert.strictEqual(inferred('9.0')?.status, 'check_in_app', 'unrelated number formats: no verdict')
 
 const live = buildCatalogIndex({
   ...catalog,
@@ -118,5 +123,31 @@ assert.strictEqual(
   'ableton--live',
   'edition suffix still finds the DAW row'
 )
+
+// Helper apps: majors are free updates; discontinued and versionless rows say so.
+const helperIndex = buildCatalogIndex({
+  ...catalog,
+  manufacturers: [...catalog.manufacturers, { id: 'pace', name: 'PACE', updatePortalUrl: 'https://p' }],
+  plugins: [
+    { id: 'pace--ilok', manufacturerId: 'pace', name: 'iLok License Manager', matchPatterns: ['iLok License Manager'], identityKind: 'hub_app', latestVersion: '6.0.1', versionConfidence: 90 },
+    { id: 'steinberg--elicenser', manufacturerId: 'steinberg', name: 'eLicenser Control Center', matchPatterns: [], identityKind: 'standalone_app', discontinued: true },
+    { id: 'avid--link', manufacturerId: 'avid', name: 'Avid Link', matchPatterns: [], identityKind: 'hub_app' },
+  ],
+})
+const helpers = matchHelperApps(
+  [
+    { name: 'iLok License Manager', version: '5.10.5 GM (b5356, c55e8d80)', path: '/Applications/iLok License Manager.app' },
+    { name: 'eLicenser Control Center', version: '7.3.0', path: '/Applications/eLicenser Control Center.app' },
+    { name: 'Avid Link', version: '26.4.0', path: '/Applications/Avid/Avid Link/Avid Link.app' },
+    { name: 'Safari', version: '26.0', path: '/Applications/Safari.app' },
+  ],
+  helperIndex,
+  new Set()
+)
+const verdictOf = (name: string) => helpers.find((h) => h.name === name)?.catalog.status
+assert.strictEqual(verdictOf('iLok License Manager'), 'update_likely', 'helper major bump is a normal update')
+assert.strictEqual(verdictOf('eLicenser Control Center'), 'discontinued')
+assert.strictEqual(verdictOf('Avid Link'), 'not_tracked')
+assert.strictEqual(verdictOf('Safari'), undefined, 'unrelated apps are not helpers')
 
 console.log('test-matcher-rules: ok')
