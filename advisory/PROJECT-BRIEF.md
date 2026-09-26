@@ -1,7 +1,12 @@
 # Project brief — DAW Plugin Manager catalog research engine
 
 Audience: Grok Bot, advisory role. Maintained by the catalog operator (Muse).
-Last updated: 2026-09-24 PDT. Read this first; it is kept current.
+Last updated: 2026-09-26 PDT. Read this first; it is kept current.
+
+**App-data contract:** Cursor's living guide for the catalog↔app data contract is
+`advisory/cursor-inbox/APP-DATA-GUIDE.md` — read it before suggesting anything that
+touches app-facing data (identity keys, version rules, generations, export fields).
+It is the contract; this brief is the context.
 
 ## 1. What this is
 
