@@ -1,8 +1,38 @@
 import type { Config, Context } from '@netlify/functions'
+import {
+  feedbackPayloadLooksLeaky,
+  scrubFeedbackText,
+} from '../../src/shared/feedbackPrivacy'
 
 const REPO = process.env.FEEDBACK_GITHUB_REPO || 'thelukehendy/daw-plugin-manager'
 const LABEL = 'app-feedback'
+const BRANCH = process.env.FEEDBACK_GITHUB_BRANCH || 'main'
 const MAX_BYTES = 1_000_000
+/** Soft abuse brake — cold starts reset the map; still stops casual floods. */
+const RATE_WINDOW_MS = 60 * 60 * 1000
+const RATE_MAX = 8
+const rateHits = new Map<string, { count: number; resetAt: number }>()
+
+function clientIp(req: Request): string {
+  return (
+    req.headers.get('x-nf-client-connection-ip') ||
+    req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
+    req.headers.get('client-ip') ||
+    'unknown'
+  )
+}
+
+function allowRequest(ip: string): boolean {
+  const now = Date.now()
+  const row = rateHits.get(ip)
+  if (!row || now >= row.resetAt) {
+    rateHits.set(ip, { count: 1, resetAt: now + RATE_WINDOW_MS })
+    return true
+  }
+  if (row.count >= RATE_MAX) return false
+  row.count += 1
+  return true
+}
 
 type FeedbackBody = {
   kind?: string
@@ -30,26 +60,17 @@ function json(status: number, data: unknown): Response {
   )
 }
 
-function slug(message: string): string {
-  const base = message
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '')
-    .slice(0, 48)
-  return base || 'note'
+function issueTitle(issueNumber: number | null, os?: string): string {
+  const id = issueNumber != null ? `#${issueNumber}` : 'new'
+  const osPart = os ? ` · ${os}` : ''
+  return `[app-feedback] ${id}${osPart}`
 }
 
-function issueTitle(body: FeedbackBody): string {
-  const msg = (body.message || '').trim().replace(/\s+/g, ' ')
-  const short = msg.length > 72 ? `${msg.slice(0, 69)}…` : msg
-  const os = body.app?.os ? ` · ${body.app.os}` : ''
-  return `[app-feedback] ${short}${os}`
-}
-
-function issueBody(raw: string, parsed: FeedbackBody): string {
+/** Short human-readable issue — full JSON goes to the inbox file (no 65KB cap). */
+function issueBody(parsed: FeedbackBody, inboxPath: string): string {
   const summary = parsed.summary
   const lines = [
-    '<!-- daw-plugin-manager-feedback schemaVersion=1 -->',
+    '<!-- daw-plugin-manager-feedback schemaVersion=1 inbox-written-by-relay -->',
     '',
     '## Message',
     '',
@@ -69,11 +90,19 @@ function issueBody(raw: string, parsed: FeedbackBody): string {
       `- Plugins: ${summary.pluginCount ?? '?'}`,
       `- Unmatched: ${summary.unmatched ?? '?'}`,
       `- Needs update: ${summary.needsUpdate ?? '?'}`,
-      '',
-      '_Full JSON (scan + matches) is in the details block for Cursor/Muse._'
     )
   }
-  lines.push('', '<details>', '<summary>Payload JSON</summary>', '', '```json', raw, '```', '', '</details>', '')
+  lines.push(
+    '',
+    '## Full payload',
+    '',
+    `Complete JSON (message + scan + matches + daws + helpers) is on \`${BRANCH}\` at:`,
+    '',
+    `\`${inboxPath}\``,
+    '',
+    '_Issue titles and filenames are opaque IDs; free-text is scrubbed for emails/paths/hosts._',
+    ''
+  )
   return lines.join('\n')
 }
 
@@ -102,7 +131,11 @@ async function ensureLabel(token: string): Promise<void> {
   })
 }
 
-async function createIssue(token: string, title: string, body: string): Promise<{ number: number; html_url: string }> {
+async function createIssue(
+  token: string,
+  title: string,
+  body: string
+): Promise<{ number: number; html_url: string; created_at: string }> {
   const res = await fetch(`https://api.github.com/repos/${REPO}/issues`, {
     method: 'POST',
     headers: {
@@ -115,14 +148,67 @@ async function createIssue(token: string, title: string, body: string): Promise<
   })
   if (!res.ok) {
     const text = await res.text()
-    throw new Error(`GitHub ${res.status}: ${text.slice(0, 200)}`)
+    throw new Error(`GitHub issue ${res.status}: ${text.slice(0, 200)}`)
   }
-  return (await res.json()) as { number: number; html_url: string }
+  return (await res.json()) as { number: number; html_url: string; created_at: string }
+}
+
+async function patchIssue(
+  token: string,
+  number: number,
+  update: { title?: string; body?: string }
+): Promise<void> {
+  const res = await fetch(`https://api.github.com/repos/${REPO}/issues/${number}`, {
+    method: 'PATCH',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+      'User-Agent': 'daw-plugin-manager-feedback',
+    },
+    body: JSON.stringify(update),
+  })
+  if (!res.ok) {
+    const text = await res.text()
+    throw new Error(`GitHub issue patch ${res.status}: ${text.slice(0, 200)}`)
+  }
+}
+
+/** Write the full envelope to advisory/feedback-inbox/ on main (no size cap like issue bodies). */
+async function writeInboxFile(
+  token: string,
+  path: string,
+  envelope: unknown,
+  issueNumber: number
+): Promise<void> {
+  const content = Buffer.from(JSON.stringify(envelope, null, 2) + '\n', 'utf8').toString('base64')
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+      'User-Agent': 'daw-plugin-manager-feedback',
+    },
+    body: JSON.stringify({
+      message: `advisory(feedback): mirror issue #${issueNumber}`,
+      content,
+      branch: BRANCH,
+    }),
+  })
+  if (!res.ok) {
+    const text = await res.text()
+    throw new Error(`GitHub contents ${res.status}: ${text.slice(0, 240)}`)
+  }
 }
 
 export default async (req: Request, _context: Context) => {
   if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }))
   if (req.method !== 'POST') return json(405, { error: 'POST only' })
+
+  if (!allowRequest(clientIp(req))) {
+    return json(429, { error: 'Too many feedback requests. Try again later.' })
+  }
 
   const token = process.env.FEEDBACK_GITHUB_TOKEN || process.env.GITHUB_TOKEN
   if (!token) return json(503, { error: 'Feedback relay is not configured.' })
@@ -130,9 +216,9 @@ export default async (req: Request, _context: Context) => {
   const raw = await req.text()
   if (!raw || raw.length > MAX_BYTES) return json(413, { error: 'Payload too large.' })
 
-  let parsed: FeedbackBody
+  let parsed: FeedbackBody & Record<string, unknown>
   try {
-    parsed = JSON.parse(raw) as FeedbackBody
+    parsed = JSON.parse(raw) as FeedbackBody & Record<string, unknown>
   } catch {
     return json(400, { error: 'Invalid JSON.' })
   }
@@ -143,14 +229,46 @@ export default async (req: Request, _context: Context) => {
   }
   if (parsed.message.length > 4000) return json(400, { error: 'Message too long.' })
 
+  // Scrub free-text again server-side; opaque public names below.
+  parsed.message = scrubFeedbackText(parsed.message.trim()).slice(0, 4000)
+  const sealed = JSON.stringify(parsed)
+  if (feedbackPayloadLooksLeaky(sealed)) {
+    return json(400, {
+      error: 'Feedback looks like it includes machine paths. Remove personal folders and try again.',
+    })
+  }
+
+  const day = new Date().toISOString().slice(0, 10)
+  const os = parsed.app?.os
+
   try {
     await ensureLabel(token)
-    const issue = await createIssue(token, issueTitle(parsed), issueBody(raw, parsed))
+    const provisionalPath = `advisory/feedback-inbox/${day}-pending.json`
+    const issue = await createIssue(
+      token,
+      issueTitle(null, os),
+      issueBody(parsed, provisionalPath)
+    )
+    const inboxPath = `advisory/feedback-inbox/${day}-${issue.number}.json`
+    const envelope = {
+      source: 'app-feedback',
+      issueNumber: issue.number,
+      issueUrl: issue.html_url,
+      receivedAt: issue.created_at,
+      payload: parsed,
+    }
+    await writeInboxFile(token, inboxPath, envelope, issue.number)
+    await patchIssue(token, issue.number, {
+      title: issueTitle(issue.number, os),
+      body: issueBody(parsed, inboxPath),
+    })
+
     return json(200, {
       ok: true,
       issue: issue.number,
       url: issue.html_url,
-      id: `${new Date().toISOString().slice(0, 10)}-${slug(parsed.message)}`,
+      inboxPath,
+      id: `${day}-${issue.number}`,
     })
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err)
